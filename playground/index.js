@@ -8,4 +8,5 @@ const gen = new json2jsii.TypeGenerator({
 
 gen.emitType('ClusterProps', schema);
 
+// generate ClusterProps from the CFN registry schema
 fs.writeFileSync('out.ts', gen.render());
