@@ -1,6 +1,11 @@
 ## cfn2ts
 
-Generates CDK L1 constructs for AWS CloudFormation Registry resources and modules.
+```
+WORK IN PROGRESS
+```
+
+> Generates CDK L1 constructs for AWS CloudFormation Registry resources and modules.
+
 
 ## Installation
 
