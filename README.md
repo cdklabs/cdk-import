@@ -1,8 +1,7 @@
-## cdk-import
+# WORK IN PROGRESS 
+This is part of the implementation of [RFC](https://github.com/aws/aws-cdk-rfcs/pull/356)
 
-```
-WORK IN PROGRESS
-```
+# cdk-import
 
 > Generates CDK L1 constructs for AWS CloudFormation Registry resources and modules.
 
