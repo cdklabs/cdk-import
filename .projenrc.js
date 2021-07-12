@@ -1,7 +1,7 @@
 const { TypeScriptProject } = require('projen');
 const project = new TypeScriptProject({
   defaultReleaseBranch: 'main',
-  name: 'cdk-cfn2ts',
+  name: 'cdk-import',
 
   // deps: [],                          /* Runtime dependencies of this module. */
   // description: undefined,            /* The description is just a string that helps people understand the purpose of the package. */

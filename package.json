@@ -1,5 +1,5 @@
 {
-  "name": "cdk-cfn2ts",
+  "name": "cdk-import",
   "scripts": {
     "clobber": "npx projen clobber",
     "compile": "npx projen compile",
