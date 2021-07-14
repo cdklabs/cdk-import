@@ -1,5 +1,9 @@
 {
   "name": "cdk-import",
+  "description": "",
+  "bin": {
+    "cfn-import": "lib/index.js"
+  },
   "scripts": {
     "clobber": "npx projen clobber",
     "compile": "npx projen compile",
@@ -36,7 +40,14 @@
     "projen": "^0.27.0",
     "standard-version": "^9",
     "ts-jest": "^27.0.3",
+    "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.946.0",
+    "json2jsii": "^0.1.267",
+    "minimist": "^1.2.5",
+    "proxy-agent": "^5.0.0"
   },
   "bundledDependencies": [],
   "main": "lib/index.js",
