@@ -1,10 +1,9 @@
-// import { appendFileSync, readFileSync } from 'fs';
-import { Agent } from 'http';
+import * as fs from 'fs';
 // import * as os from 'os';
-// import * as path from 'path';
-import * as AWS from 'aws-sdk';
+import * as path from 'path';
 import * as minimist from 'minimist';
-import * as agent from 'proxy-agent';
+import { getResourceDefinitonFromRegistry } from './cfn-registry';
+import { L1Generator } from './l1-generator';
 
 const args = minimist(process.argv.slice(2), {
   string: [
@@ -14,24 +13,6 @@ const args = minimist(process.argv.slice(2), {
     outdir: 'o',
   },
 });
-
-const awsOptions = {
-  ...(process.env.HTTPS_PROXY || process.env.https_proxy) && {
-    httpOptions: {
-      agent: agent(process.env.HTTPS_PROXY || process.env.https_proxy) as any as Agent,
-    },
-  },
-};
-
-async function getResourceDefinitonFromRegistry(name: string, version?: string): Promise<AWS.CloudFormation.DescribeTypeOutput> {
-  const cfn = new AWS.CloudFormation(awsOptions);
-  const type = await cfn.describeType({
-    Type: name.endsWith('MODULE') ? 'MODULE' : 'RESOURCE',
-    TypeName: name,
-    VersionId: version,
-  }).promise();
-  return type;
-}
 
 void (async () => {
   if (args._.length !== 1) {
@@ -45,9 +26,14 @@ void (async () => {
     console.log(resourceVersion);
     console.log(outdir);
 
-    const schema = await getResourceDefinitonFromRegistry(resourceName, resourceVersion);
-    console.log(schema);
+    const type = await getResourceDefinitonFromRegistry(resourceName, resourceVersion);
+    console.log(type);
 
+    const typeSchema = JSON.parse(type.Schema!);
+
+    const gen = new L1Generator(resourceName, type, typeSchema);
+
+    fs.writeFileSync(path.join(outdir, `${resourceName.replace(/::/g, '-').toLowerCase()}.ts`), gen.render());
   } catch (e) {
     console.log(e);
     process.exit(1);

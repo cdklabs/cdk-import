@@ -44,8 +44,9 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
-    "aws-sdk": "^2.946.0",
-    "json2jsii": "^0.1.267",
+    "aws-sdk": "^2.951.0",
+    "camelcase": "^6.2.0",
+    "json2jsii": "^0.1.272",
     "minimist": "^1.2.5",
     "proxy-agent": "^5.0.0"
   },

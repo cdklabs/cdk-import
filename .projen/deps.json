@@ -77,6 +77,10 @@
       "type": "runtime"
     },
     {
+      "name": "camelcase",
+      "type": "runtime"
+    },
+    {
       "name": "json2jsii",
       "type": "runtime"
     },

@@ -8,6 +8,7 @@ const project = new TypeScriptProject({
     'aws-sdk',
     'minimist',
     'proxy-agent',
+    'camelcase',
   ],
   bin: {
     'cfn-import': 'lib/index.js',
