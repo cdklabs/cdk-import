@@ -2,7 +2,7 @@
   "name": "cdk-import",
   "description": "",
   "bin": {
-    "cfn-import": "lib/index.js"
+    "cfn-import": "lib/cli.js"
   },
   "scripts": {
     "clobber": "npx projen clobber",
@@ -25,6 +25,7 @@
     "start": "npx projen start"
   },
   "devDependencies": {
+    "@aws-cdk/core": "^1.116.0",
     "@types/jest": "^26.0.24",
     "@types/node": "^10.17.0",
     "@typescript-eslint/eslint-plugin": "^4.28.2",

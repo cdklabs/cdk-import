@@ -10,12 +10,17 @@ const project = new TypeScriptProject({
     'proxy-agent',
     'camelcase',
   ],
-  bin: {
-    'cfn-import': 'lib/index.js',
-  },
   devDeps: [
+    '@aws-cdk/core',
     'ts-node',
   ],
-
+  bin: {
+    'cfn-import': 'lib/cli.js',
+  },
+  tsconfig: {
+    compilerOptions: {
+      skipLibCheck: true,
+    },
+  },
 });
 project.synth();
