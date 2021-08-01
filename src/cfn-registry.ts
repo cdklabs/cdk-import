@@ -1,7 +1,7 @@
 import * as AWS from 'aws-sdk';
 import { createAwsClient } from './aws';
 
-export async function getResourceDefinitonFromRegistry(name: string, _version?: string): Promise<AWS.CloudFormation.DescribeTypeOutput> {
+export async function describeResourceType(name: string, _version?: string): Promise<AWS.CloudFormation.DescribeTypeOutput> {
   const cfn = createAwsClient(AWS.CloudFormation);
 
   const types = [];

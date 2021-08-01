@@ -6,10 +6,10 @@ export function sanitizeTypeName(typeName: string) {
   return parts.map(part => part.substr(0, 1).toUpperCase() + part.substr(1).toLowerCase()).join('');
 }
 
-export class L1Generator {
+export class CfnResourceGenerator {
   sanitizedTypeName: string;
 
-  constructor(private typeName: string, private typeDef: AWS.CloudFormation.DescribeTypeOutput, private schema: any) {
+  constructor(private readonly typeName: string, private readonly typeDef: AWS.CloudFormation.DescribeTypeOutput, private readonly schema: any) {
     this.sanitizedTypeName = sanitizeTypeName(typeName);
   }
 
@@ -17,7 +17,6 @@ export class L1Generator {
     const code = new j2j.Code();
     this.generateImports(code);
     this.generateDefinitionTypes(code);
-    // this.generatePropsInterface(code);
     this.generateConstructClass(code);
     return code.render();
   }
@@ -42,20 +41,6 @@ export class L1Generator {
     gen.renderToCode(code);
     code.line();
   }
-
-  // private generatePropsInterface(code: j2j.Code) {
-  //   code.openBlock(`export interface Cfn${this.sanitizedTypeName}Props`);
-  //   Object.keys(this.schema.properties).filter(prop => this.schema.readOnlyProperties.indexOf(`/properties/${prop}`) < 0).forEach(prop => {
-  //     const optionalMarker = this.schema.required.indexOf(prop) < 0 ? '?' : '';
-  //     code.line('/**');
-  //     code.line(` * \`${this.typeName}.${prop}\``);
-  //     code.line(` * @link ${this.typeDef.SourceUrl}`);
-  //     code.line(' */');
-  //     code.line(`readonly ${prop.substr(0, 1).toLowerCase() + prop.substr(1)}${optionalMarker}: ${this.getTypeOfProperty(prop)};`);
-  //   });
-  //   code.closeBlock();
-  //   code.line();
-  // }
 
   private generateConstructClass(code: j2j.Code) {
     code.line('/**');
