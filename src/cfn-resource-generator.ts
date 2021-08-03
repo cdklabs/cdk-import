@@ -50,7 +50,7 @@ export class CfnResourceGenerator {
     code.line(' * @stability external');
     code.line(` * @link ${this.typeDef.SourceUrl}`);
     code.line(' */');
-    code.openBlock(`export class Cfn${this.sanitizedTypeName} extends cdk.CfnResource implements cdk.IInspectable`);
+    code.openBlock(`export class Cfn${this.sanitizedTypeName} extends cdk.CfnResource`);
     code.line('/**');
     code.line('* The CloudFormation resource type name for this resource class.');
     code.line('*/');
@@ -61,6 +61,9 @@ export class CfnResourceGenerator {
       const optionalMarker = this.schema.required.indexOf(prop) < 0 ? ' | undefined' : '';
       code.line('/**');
       code.line(` * \`${this.typeName}.${prop}\``);
+      if (this.schema.properties[prop].description) {
+        code.line(` * ${this.schema.properties[prop].description}`);
+      }
       code.line(` * @link ${this.typeDef.SourceUrl}`);
       code.line(' */');
       code.line(`public ${camelcase(prop)}: ${this.getTypeOfProperty(prop)}${optionalMarker};`);
@@ -72,6 +75,7 @@ export class CfnResourceGenerator {
       code.line(' */');
       code.line(`public attr${camelcase(prop, { pascalCase: true })}: ${this.getTypeOfProperty(prop)};`);
     });
+
     code.line();
 
     code.line('/**');
@@ -82,39 +86,40 @@ export class CfnResourceGenerator {
     code.line(' * @param props - resource properties');
     code.line(' */');
     code.openBlock(`constructor(scope: cdk.Construct, id: string, props: Cfn${this.sanitizedTypeName}Props)`);
-    code.line(`super(scope, id, { type: Cfn${this.sanitizedTypeName}.CFN_RESOURCE_TYPE_NAME, properties: props });`);
+    code.line(`super(scope, id, { type: Cfn${this.sanitizedTypeName}.CFN_RESOURCE_TYPE_NAME, properties: toJson_Cfn${this.sanitizedTypeName}Props(props)! });`);
     this.schema.required.forEach((prop: string) => {
-      code.line(`cdk.requireProperty(props, \'${prop}\', this);`);
+      code.line(`cdk.requireProperty(props, \'${camelcase(prop)}\', this);`);
     });
     code.line('');
     Object.keys(this.schema.properties).filter(prop => this.schema.readOnlyProperties.indexOf(`/properties/${prop}`) < 0).forEach(prop => {
       code.line(`this.${camelcase(prop)} = props.${camelcase(prop)};`);
     });
     Object.keys(this.schema.properties).filter(prop => this.schema.readOnlyProperties.indexOf(`/properties/${prop}`) >= 0).forEach(prop => {
-      const attributeType = this.getTypeOfProperty(prop);
       const propertyName = `attr${camelcase(prop, { pascalCase: true })}`;
-      const constructorArguments = `this.getAtt('${prop}')`;
-      if (attributeType === 'string') {
-        code.line(`this.${propertyName} = cdk.Token.asString(${constructorArguments});`);
-      } else if (attributeType === 'string[]') {
-        code.line(`this.${propertyName} = cdk.Token.asList(${constructorArguments});`);
-      } else if (attributeType === 'number') {
-        code.line(`this.${propertyName} = cdk.Token.asNumber(${constructorArguments});`);
-        // } else if (attributeType === genspec.TOKEN_NAME.fqn) {
-        //   code.line(`this.${propertyName} = ${at.constructorArguments};`);
-      }
+      code.line(`this.${propertyName} = ${this.renderGetAtt(prop)};`);
     });
-    // TODO ref
-
-
     code.closeBlock();
     // constructor
 
-    code.openBlock('protected renderProperties(props: { [key: string]: any }): { [key: string]: any }');
-
     code.closeBlock();
+  }
 
-    code.closeBlock();
+  private renderGetAtt(prop: string): string {
+    const attributeType = this.getTypeOfProperty(prop);
+    const constructorArguments = `this.getAtt('${prop}')`;
+    if (attributeType === 'string') {
+      return `cdk.Token.asString(${constructorArguments})`;
+    }
+    if (attributeType === 'string[]') {
+      return `cdk.Token.asList(${constructorArguments})`;
+    }
+    if (attributeType === 'number') {
+      return `cdk.Token.asNumber(${constructorArguments})`;
+    }
+    // if (attributeType === genspec.TOKEN_NAME.fqn) {
+    //   return `${at.constructorArguments};`;
+    // }
+    return constructorArguments;
   }
 
   private getTypeOfProperty(prop: string) {
@@ -140,32 +145,3 @@ export class CfnResourceGenerator {
   }
 
 }
-
-
-//   /**
-//    * Examines the CloudFormation resource and discloses attributes.
-//    *
-//    * @param inspector - tree inspector to collect and process attributes
-//    *
-//    */
-//   public inspect(inspector: cdk.TreeInspector) {
-//     inspector.addAttribute("aws:cdk:cloudformation:type", CfnCertificate.CFN_RESOURCE_TYPE_NAME);
-//     inspector.addAttribute("aws:cdk:cloudformation:props", this.cfnProperties);
-//   }
-
-//   protected get cfnProperties(): { [key: string]: any } {
-//     return {
-//       domainName: this.domainName,
-//       certificateAuthorityArn: this.certificateAuthorityArn,
-//       certificateTransparencyLoggingPreference: this.certificateTransparencyLoggingPreference,
-//       domainValidationOptions: this.domainValidationOptions,
-//       subjectAlternativeNames: this.subjectAlternativeNames,
-//       tags: this.tags.renderTags(),
-//       validationMethod: this.validationMethod,
-//     };
-//   }
-
-//   protected renderProperties(props: { [key: string]: any }): { [key: string]: any } {
-//     return cfnCertificatePropsToCloudFormation(props);
-//   }
-// }
