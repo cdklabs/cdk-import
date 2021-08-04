@@ -66,14 +66,14 @@ export class CfnResourceGenerator {
       }
       code.line(` * @link ${this.typeDef.SourceUrl}`);
       code.line(' */');
-      code.line(`public ${camelcase(prop)}: ${this.getTypeOfProperty(prop)}${optionalMarker};`);
+      code.line(`public readonly ${camelcase(prop)}: ${this.getTypeOfProperty(prop)}${optionalMarker};`);
     });
     Object.keys(this.schema.properties).filter(prop => this.schema.readOnlyProperties.indexOf(`/properties/${prop}`) >= 0).forEach(prop => {
       code.line('/**');
       code.line(` * Attribute \`${this.typeName}.${prop}\``);
       code.line(` * @link ${this.typeDef.SourceUrl}`);
       code.line(' */');
-      code.line(`public attr${camelcase(prop, { pascalCase: true })}: ${this.getTypeOfProperty(prop)};`);
+      code.line(`public readonly attr${camelcase(prop, { pascalCase: true })}: ${this.getTypeOfProperty(prop)};`);
     });
 
     code.line();
@@ -116,9 +116,6 @@ export class CfnResourceGenerator {
     if (attributeType === 'number') {
       return `cdk.Token.asNumber(${constructorArguments})`;
     }
-    // if (attributeType === genspec.TOKEN_NAME.fqn) {
-    //   return `${at.constructorArguments};`;
-    // }
     return constructorArguments;
   }
 
