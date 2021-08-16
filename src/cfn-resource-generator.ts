@@ -8,7 +8,7 @@ import { TypeInfo } from './type-info';
  */
 export class CfnResourceGenerator {
 
-  sanitizedTypeName: string;
+  private readonly sanitizedTypeName: string;
   readOnlyProperties: string[];
   writeProperties: string[];
   constructClassName: string;
