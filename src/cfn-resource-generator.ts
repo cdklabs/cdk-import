@@ -58,7 +58,7 @@ export class CfnResourceGenerator {
     code.line();
 
     Object.keys(this.schema.properties).filter(prop => this.schema.readOnlyProperties.indexOf(`/properties/${prop}`) < 0).forEach(prop => {
-      const optionalMarker = this.schema.required.indexOf(prop) < 0 ? ' | undefined' : '';
+      const optionalMarker = this.schema.required.indexOf(prop) === -1 ? ' | undefined' : '';
       code.line('/**');
       code.line(` * \`${this.typeName}.${prop}\``);
       if (this.schema.properties[prop].description) {
