@@ -1,7 +1,5 @@
 import { Agent } from 'http';
-// import * as AWS from 'aws-sdk';
 import * as agent from 'proxy-agent';
-
 
 const awsOptions = {
   ...(process.env.HTTPS_PROXY || process.env.https_proxy) && {

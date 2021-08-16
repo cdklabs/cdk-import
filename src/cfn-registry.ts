@@ -1,7 +1,15 @@
 import * as AWS from 'aws-sdk';
 import { createAwsClient } from './aws';
+import { TypeInfo } from './type-info';
 
-export async function describeResourceType(name: string, _version?: string): Promise<AWS.CloudFormation.DescribeTypeOutput> {
+/**
+ * Calls the CFN resource type registry to fetch the type definition
+ *
+ * @param name the name or unique prefix of the resource type
+ * @param _version the version of the type to resolve (NOT YET IMPLEMENTED)
+ * @returns the type definition
+ */
+export async function describeResourceType(name: string, _version?: string): Promise<TypeInfo> {
   const cfn = createAwsClient(AWS.CloudFormation);
 
   const types = [];
