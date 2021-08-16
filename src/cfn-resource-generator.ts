@@ -9,10 +9,10 @@ import { TypeInfo } from './type-info';
 export class CfnResourceGenerator {
 
   private readonly sanitizedTypeName: string;
-  readOnlyProperties: string[];
-  writeProperties: string[];
-  constructClassName: string;
-  propsClassName: string;
+  private readonly resourceAttributes: string[];
+  private readonly resourceProperties: string[];
+  private readonly constructClassName: string;
+  private readonly propsStructName: string;
 
   /**
    * 
@@ -22,10 +22,10 @@ export class CfnResourceGenerator {
    */
   constructor(private readonly typeName: string, private readonly typeDef: TypeInfo, private readonly schema: any) {
     this.sanitizedTypeName = sanitizeTypeName(typeName);
-    this.readOnlyProperties = this.schema.readOnlyProperties.map((prop: string) => prop.replace(/^\/properties\//, ''));
-    this.writeProperties = Object.keys(this.schema.properties).filter(prop => this.schema.readOnlyProperties.indexOf(`/properties/${prop}`) === -1);
+    this.resourceAttributes = this.schema.readOnlyProperties.map((prop: string) => prop.replace(/^\/properties\//, ''));
+    this.resourceProperties = Object.keys(this.schema.properties).filter(prop => this.schema.readOnlyProperties.indexOf(`/properties/${prop}`) === -1);
     this.constructClassName = `Cfn${this.sanitizedTypeName}`;
-    this.propsClassName = `${this.constructClassName}Props`;
+    this.propsStructName = `${this.constructClassName}Props`;
   }
 
   /**
@@ -52,11 +52,13 @@ export class CfnResourceGenerator {
     });
 
     const schema = JSON.parse(JSON.stringify(this.schema));
-    for (const prop of this.readOnlyProperties) {
+    for (const prop of this.resourceAttributes) {
+      // Remove attributes that cannot be written but are used as attributes
+      // These should not be part of the Props struct
       delete schema.properties[prop];
     }
 
-    gen.emitType(this.propsClassName, schema);
+    gen.emitType(this.propsStructName, schema);
 
     gen.renderToCode(code);
     code.line();
@@ -77,7 +79,7 @@ export class CfnResourceGenerator {
     code.line(`public static readonly CFN_RESOURCE_TYPE_NAME = "${this.typeName}";`);
     code.line();
 
-    for (const prop of this.writeProperties) {
+    for (const prop of this.resourceProperties) {
       const optionalMarker = this.schema.required.indexOf(prop) === -1 ? ' | undefined' : '';
       code.line('/**');
       code.line(` * \`${this.typeName}.${prop}\``);
@@ -89,7 +91,7 @@ export class CfnResourceGenerator {
       code.line(`public readonly ${camelcase(prop)}: ${this.getTypeOfProperty(prop)}${optionalMarker};`);
     }
 
-    for (const prop of this.readOnlyProperties) {
+    for (const prop of this.resourceAttributes) {
       code.line('/**');
       code.line(` * Attribute \`${this.typeName}.${prop}\``);
       code.line(` * @link ${this.typeDef.SourceUrl}`);
@@ -109,10 +111,10 @@ export class CfnResourceGenerator {
     code.openBlock(`constructor(scope: cdk.Construct, id: string, props: ${this.propsClassName})`);
     code.line(`super(scope, id, { type: ${this.constructClassName}.CFN_RESOURCE_TYPE_NAME, properties: toJson_${this.propsClassName}(props)! });`);
     code.line('');
-    for (const prop of this.writeProperties) {
+    for (const prop of this.resourceProperties) {
       code.line(`this.${camelcase(prop)} = props.${camelcase(prop)};`);
     }
-    for (const prop of this.readOnlyProperties) {
+    for (const prop of this.resourceAttributes) {
       const propertyName = `attr${camelcase(prop, { pascalCase: true })}`;
       code.line(`this.${propertyName} = ${this.renderGetAtt(prop)};`);
     }
