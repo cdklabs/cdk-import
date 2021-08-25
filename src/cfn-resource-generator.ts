@@ -1,7 +1,7 @@
 import * as camelcase from 'camelcase';
 import * as j2j from 'json2jsii';
-import { sanitizeTypeName } from './util';
 import { TypeInfo } from './type-info';
+import { sanitizeTypeName } from './util';
 
 /**
  * Generator to emit classes and types for the L1 construct of the given resource type
@@ -15,7 +15,7 @@ export class CfnResourceGenerator {
   private readonly propsStructName: string;
 
   /**
-   * 
+   *
    * @param typeName the name of the CFN resource type (e.g. AWSQS::EKS::Cluster)
    * @param typeDef the type info containing the source url
    * @param schema the schema of the resource type for input and output properties
@@ -108,8 +108,8 @@ export class CfnResourceGenerator {
     code.line(' * @param id    - scoped id of the resource');
     code.line(' * @param props - resource properties');
     code.line(' */');
-    code.openBlock(`constructor(scope: cdk.Construct, id: string, props: ${this.propsClassName})`);
-    code.line(`super(scope, id, { type: ${this.constructClassName}.CFN_RESOURCE_TYPE_NAME, properties: toJson_${this.propsClassName}(props)! });`);
+    code.openBlock(`constructor(scope: cdk.Construct, id: string, props: ${this.propsStructName})`);
+    code.line(`super(scope, id, { type: ${this.constructClassName}.CFN_RESOURCE_TYPE_NAME, properties: toJson_${this.propsStructName}(props)! });`);
     code.line('');
     for (const prop of this.resourceProperties) {
       code.line(`this.${camelcase(prop)} = props.${camelcase(prop)};`);
@@ -149,7 +149,6 @@ export class CfnResourceGenerator {
         case 'string':
           return 'string';
         case 'array':
-          // TODO Resolvables
           return `${this.getTypeFromSchema(prop.items)}[]`;
         default:
           return 'any';

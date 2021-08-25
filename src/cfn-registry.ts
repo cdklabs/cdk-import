@@ -40,5 +40,11 @@ export async function describeResourceType(name: string, _version?: string): Pro
   const type = await cfn.describeType({
     Arn: types[0].TypeArn,
   }).promise();
-  return type;
+  if (!type.Schema || !type.SourceUrl) {
+    throw new Error('CloudFormation Type ' + name + ' does not contain schema');
+  }
+  return {
+    Schema: type.Schema,
+    SourceUrl: type.SourceUrl,
+  };
 }
