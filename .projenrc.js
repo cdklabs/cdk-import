@@ -13,6 +13,7 @@ const project = new TypeScriptProject({
   devDeps: [
     '@aws-cdk/core',
     'ts-node',
+    'aws-sdk-mock',
   ],
   bin: {
     'cfn-import': 'lib/cli.js',

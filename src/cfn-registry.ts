@@ -29,8 +29,6 @@ export async function describeResourceType(name: string, _version?: string): Pro
     token = res.NextToken;
   } while (token);
 
-  console.log(types);
-
   // TODO versioning
 
   if (types.length !== 1) {
