@@ -9,6 +9,11 @@ const awsOptions = {
   },
 };
 
+/**
+ * Create an AWS service client
+ * @param cls the class to use to create the client
+ * @returns the created client including proxy settings
+ */
 export function createAwsClient<T extends { new(...args: any[]): InstanceType<T> }>(cls: T): InstanceType<T> {
   return new cls(awsOptions);
 }
