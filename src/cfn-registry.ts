@@ -17,6 +17,7 @@ export async function describeResourceType(name: string, _version?: string): Pro
   do {
     const res: AWS.CloudFormation.ListTypesOutput = await cfn.listTypes({
       NextToken: token,
+      Type: name.endsWith('MODULE') ? 'MODULE' : 'RESOURCE',
       Filters: {
         Category: 'THIRD_PARTY',
         TypeNamePrefix: name,
@@ -38,11 +39,11 @@ export async function describeResourceType(name: string, _version?: string): Pro
   const type = await cfn.describeType({
     Arn: types[0].TypeArn,
   }).promise();
-  if (!type.Schema || !type.SourceUrl) {
+  if (!type.Schema) {
     throw new Error('CloudFormation Type ' + name + ' does not contain schema');
   }
   return {
     Schema: type.Schema,
-    SourceUrl: type.SourceUrl,
+    SourceUrl: type.SourceUrl ?? type.Arn!,
   };
 }

@@ -40,6 +40,7 @@ test('should handle paging correctly', async () => {
 
   AWSMock.mock('CloudFormation', 'listTypes', (params: AWS.CloudFormation.ListTypesInput, cb) => {
     expect(params.Filters!.TypeNamePrefix).toBe(typeName);
+    expect(params.Type).toBe('RESOURCE');
     if (!params.NextToken) {
       cb(null, {
         NextToken: 'PagingToken',
@@ -68,6 +69,65 @@ test('should handle paging correctly', async () => {
 
   expect(typeInfo.Schema).toBe('{}');
   expect(typeInfo.SourceUrl).toBe('https://myurl.com');
+});
+
+test('should use ARN on missing source url', async () => {
+  AWSMock.setSDKInstance(AWS);
+
+  const typeName = 'Test::Resource::Type';
+  const typeArn = 'arn:aws:cloudformation:eu-central-1::type/resource/Test-Resource-Type';
+
+  AWSMock.mock('CloudFormation', 'listTypes', (params: AWS.CloudFormation.ListTypesInput, cb) => {
+    expect(params.Filters!.TypeNamePrefix).toBe(typeName);
+    cb(null, {
+      TypeSummaries: [{
+        TypeName: typeName,
+        TypeArn: typeArn,
+      }],
+    });
+  });
+  AWSMock.mock('CloudFormation', 'describeType', (params: AWS.CloudFormation.DescribeTypeInput, cb) => {
+    expect(params.Arn).toBe(typeArn);
+    cb(null, {
+      Arn: params.Arn,
+      Schema: '{}',
+    });
+  });
+
+  const typeInfo = await testee.describeResourceType(typeName);
+
+  expect(typeInfo.Schema).toBe('{}');
+  expect(typeInfo.SourceUrl).toBe(typeArn);
+});
+
+test('should handle MODULES correctly', async () => {
+  AWSMock.setSDKInstance(AWS);
+
+  const typeName = 'Test::Resource::Type::MODULE';
+  const typeArn = 'arn:aws:cloudformation:eu-central-1::type/module/uuid/Test-Resource-Type-MODULE';
+
+  AWSMock.mock('CloudFormation', 'listTypes', (params: AWS.CloudFormation.ListTypesInput, cb) => {
+    expect(params.Filters!.TypeNamePrefix).toBe(typeName);
+    expect(params.Type).toBe('MODULE');
+    cb(null, {
+      TypeSummaries: [{
+        TypeName: typeName,
+        TypeArn: typeArn,
+      }],
+    });
+  });
+  AWSMock.mock('CloudFormation', 'describeType', (params: AWS.CloudFormation.DescribeTypeInput, cb) => {
+    expect(params.Arn).toBe(typeArn);
+    cb(null, {
+      Arn: params.Arn,
+      Schema: '{}',
+    });
+  });
+
+  const typeInfo = await testee.describeResourceType(typeName);
+
+  expect(typeInfo.Schema).toBe('{}');
+  expect(typeInfo.SourceUrl).toBe(typeArn);
 });
 
 test('should fail on multiple type candidates', async () => {

@@ -22,8 +22,8 @@ export class CfnResourceGenerator {
    */
   constructor(private readonly typeName: string, private readonly typeDef: TypeInfo, private readonly schema: any) {
     this.sanitizedTypeName = sanitizeTypeName(typeName);
-    this.resourceAttributes = this.schema.readOnlyProperties.map((prop: string) => prop.replace(/^\/properties\//, ''));
-    this.resourceProperties = Object.keys(this.schema.properties).filter(prop => this.schema.readOnlyProperties.indexOf(`/properties/${prop}`) === -1);
+    this.resourceAttributes = this.schema.readOnlyProperties ? this.schema.readOnlyProperties.map((prop: string) => prop.replace(/^\/properties\//, '')) : [];
+    this.resourceProperties = Object.keys(this.schema.properties).filter(prop => this.resourceAttributes.indexOf(prop) === -1);
     this.constructClassName = `Cfn${this.sanitizedTypeName}`;
     this.propsStructName = `${this.constructClassName}Props`;
   }
@@ -80,7 +80,7 @@ export class CfnResourceGenerator {
     code.line();
 
     for (const prop of this.resourceProperties) {
-      const optionalMarker = this.schema.required.indexOf(prop) === -1 ? ' | undefined' : '';
+      const optionalMarker = this.schema.required?.indexOf(prop) === -1 ? ' | undefined' : '';
       code.line('/**');
       code.line(` * \`${this.typeName}.${prop}\``);
       if (this.schema.properties[prop].description) {

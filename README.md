@@ -3,7 +3,7 @@ This is part of the implementation of [RFC](https://github.com/aws/aws-cdk-rfcs/
 
 # cdk-import
 
-> Generates CDK L1 constructs for AWS CloudFormation Registry resources and modules.
+> Generates CDK L1 constructs for public CloudFormation Registry types and modules.
 
 
 ## Installation
@@ -22,8 +22,8 @@ Options:
   -o, --outdir       Output directory   [string] [default: "src"]
 
 Examples:
-  cfn2ts AWSQS::EKS::Cluster             Generates an L1 construct for the latest version of this resource under src/awsqs-eks.Cluster.ts
-  cfn2ts AWSQS::EKS::Cluster@1.2.0       Generates an L1 construct for a specific version
+  cdk-import AWSQS::EKS::Cluster             Generates an L1 construct for the latest version of this resource under src/awsqs-eks-cluster.ts
+  cdk-import AWSQS::EKS::Cluster@1.2.0       Generates an L1 construct for a specific version
 ```
 
 This command will query the AWS CloudFormation Registry and will generate L1 constructs for the specified resource. If a version
@@ -39,165 +39,199 @@ $ cdk-import AWSQS::EKS::Cluster
   <summary>src/awsqs-eks-cluster.ts</summary>
 
 ```ts
-export class Cluster extends CfnResource {
-  constructor(scope: Construct, id: string, props: ClusterProps) {
-    super(scope, id, {
-      type: 'AWSQS::EKS::Cluster',
-      properties: capitalize(props),
-    });
-  }
-}
+import * as cdk from '@aws-cdk/core';
 
-// ---------------- output of json2jsii:
 /**
  * A resource that creates Amazon Elastic Kubernetes Service (Amazon EKS) clusters.
  *
- * @schema ClusterProps
+ * @schema CfnAwsqsEksClusterProps
  */
-export interface ClusterProps {
+export interface CfnAwsqsEksClusterProps {
   /**
    * A unique name for your cluster.
    *
-   * @schema ClusterProps#Name
+   * @schema CfnAwsqsEksClusterProps#Name
    */
   readonly name?: string;
+
   /**
    * Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role. This provides permissions for Amazon EKS to call other AWS APIs.
    *
-   * @schema ClusterProps#RoleArn
+   * @schema CfnAwsqsEksClusterProps#RoleArn
    */
-  readonly roleArn?: string;
+  readonly roleArn: string;
+
   /**
    * Name of the AWS Identity and Access Management (IAM) role used for clusters that have the public endpoint disabled. this provides permissions for Lambda to be invoked and attach to the cluster VPC
    *
-   * @schema ClusterProps#LambdaRoleName
+   * @schema CfnAwsqsEksClusterProps#LambdaRoleName
    */
   readonly lambdaRoleName?: string;
+
   /**
    * Desired Kubernetes version for your cluster. If you don't specify this value, the cluster uses the latest version from Amazon EKS.
    *
-   * @schema ClusterProps#Version
+   * @schema CfnAwsqsEksClusterProps#Version
    */
   readonly version?: string;
+
   /**
    * Network configuration for Amazon EKS cluster.
    *
-   * @schema ClusterProps#KubernetesNetworkConfig
+   *
+   *
+   * @schema CfnAwsqsEksClusterProps#KubernetesNetworkConfig
    */
-  readonly kubernetesNetworkConfig?: ClusterPropsKubernetesNetworkConfig;
+  readonly kubernetesNetworkConfig?: CfnAwsqsEksClusterPropsKubernetesNetworkConfig;
+
   /**
    * An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
    *
-   * @schema ClusterProps#ResourcesVpcConfig
+   * @schema CfnAwsqsEksClusterProps#ResourcesVpcConfig
    */
-  readonly resourcesVpcConfig?: ClusterPropsResourcesVpcConfig;
+  readonly resourcesVpcConfig: CfnAwsqsEksClusterPropsResourcesVpcConfig;
+
   /**
    * Enables exporting of logs from the Kubernetes control plane to Amazon CloudWatch Logs. By default, logs from the cluster control plane are not exported to CloudWatch Logs. The valid log types are api, audit, authenticator, controllerManager, and scheduler.
    *
-   * @schema ClusterProps#EnabledClusterLoggingTypes
+   * @schema CfnAwsqsEksClusterProps#EnabledClusterLoggingTypes
    */
   readonly enabledClusterLoggingTypes?: string[];
+
   /**
    * Encryption configuration for the cluster.
    *
-   * @schema ClusterProps#EncryptionConfig
+   * @schema CfnAwsqsEksClusterProps#EncryptionConfig
    */
   readonly encryptionConfig?: EncryptionConfigEntry[];
+
   /**
-   * @schema ClusterProps#KubernetesApiAccess
+   * @schema CfnAwsqsEksClusterProps#KubernetesApiAccess
    */
-  readonly kubernetesApiAccess?: ClusterPropsKubernetesApiAccess;
+  readonly kubernetesApiAccess?: CfnAwsqsEksClusterPropsKubernetesApiAccess;
+
   /**
-   * ARN of the cluster (e.g., `arn:aws:eks:us-west-2:666666666666:cluster/prod`).
-   *
-   * @schema ClusterProps#Arn
+   * @schema CfnAwsqsEksClusterProps#Tags
    */
-  readonly arn?: string;
-  /**
-   * Certificate authority data for your cluster.
-   *
-   * @schema ClusterProps#CertificateAuthorityData
-   */
-  readonly certificateAuthorityData?: string;
-  /**
-   * Security group that was created by Amazon EKS for your cluster. Managed-node groups use this security group for control-plane-to-data-plane communications.
-   *
-   * @schema ClusterProps#ClusterSecurityGroupId
-   */
-  readonly clusterSecurityGroupId?: string;
-  /**
-   * Endpoint for your Kubernetes API server (e.g., https://5E1D0CEXAMPLEA591B746AFC5AB30262.yl4.us-west-2.eks.amazonaws.com).
-   *
-   * @schema ClusterProps#Endpoint
-   */
-  readonly endpoint?: string;
-  /**
-   * ARN or alias of the customer master key (CMK).
-   *
-   * @schema ClusterProps#EncryptionConfigKeyArn
-   */
-  readonly encryptionConfigKeyArn?: string;
-  /**
-   * Issuer URL for the OpenID Connect identity provider.
-   *
-   * @schema ClusterProps#OIDCIssuerURL
-   */
-  readonly oidcIssuerUrl?: string;
-  /**
-   * @schema ClusterProps#Tags
-   */
-  readonly tags?: ClusterPropsTags[];
+  readonly tags?: CfnAwsqsEksClusterPropsTags[];
+
 }
+
+/**
+ * Converts an object of type 'CfnAwsqsEksClusterProps' to JSON representation.
+ */
+/* eslint-disable max-len, quote-props */
+export function toJson_CfnAwsqsEksClusterProps(obj: CfnAwsqsEksClusterProps | undefined): Record<string, any> | undefined {
+  if (obj === undefined) { return undefined; }
+  const result = {
+    'Name': obj.name,
+    'RoleArn': obj.roleArn,
+    'LambdaRoleName': obj.lambdaRoleName,
+    'Version': obj.version,
+    'KubernetesNetworkConfig': toJson_CfnAwsqsEksClusterPropsKubernetesNetworkConfig(obj.kubernetesNetworkConfig),
+    'ResourcesVpcConfig': toJson_CfnAwsqsEksClusterPropsResourcesVpcConfig(obj.resourcesVpcConfig),
+    'EnabledClusterLoggingTypes': obj.enabledClusterLoggingTypes?.map(y => y),
+    'EncryptionConfig': obj.encryptionConfig?.map(y => toJson_EncryptionConfigEntry(y)),
+    'KubernetesApiAccess': toJson_CfnAwsqsEksClusterPropsKubernetesApiAccess(obj.kubernetesApiAccess),
+    'Tags': obj.tags?.map(y => toJson_CfnAwsqsEksClusterPropsTags(y)),
+  };
+  // filter undefined values
+  return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
+}
+/* eslint-enable max-len, quote-props */
+
 /**
  * Network configuration for Amazon EKS cluster.
  *
- * @schema ClusterPropsKubernetesNetworkConfig
+ *
+ *
+ * @schema CfnAwsqsEksClusterPropsKubernetesNetworkConfig
  */
-export interface ClusterPropsKubernetesNetworkConfig {
+export interface CfnAwsqsEksClusterPropsKubernetesNetworkConfig {
   /**
    * Specify the range from which cluster services will receive IPv4 addresses.
    *
-   * @schema ClusterPropsKubernetesNetworkConfig#ServiceIpv4Cidr
+   * @schema CfnAwsqsEksClusterPropsKubernetesNetworkConfig#ServiceIpv4Cidr
    */
   readonly serviceIpv4Cidr?: string;
+
 }
+
+/**
+ * Converts an object of type 'CfnAwsqsEksClusterPropsKubernetesNetworkConfig' to JSON representation.
+ */
+/* eslint-disable max-len, quote-props */
+export function toJson_CfnAwsqsEksClusterPropsKubernetesNetworkConfig(obj: CfnAwsqsEksClusterPropsKubernetesNetworkConfig | undefined): Record<string, any> | undefined {
+  if (obj === undefined) { return undefined; }
+  const result = {
+    'ServiceIpv4Cidr': obj.serviceIpv4Cidr,
+  };
+  // filter undefined values
+  return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
+}
+/* eslint-enable max-len, quote-props */
+
 /**
  * An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
  *
- * @schema ClusterPropsResourcesVpcConfig
+ * @schema CfnAwsqsEksClusterPropsResourcesVpcConfig
  */
-export interface ClusterPropsResourcesVpcConfig {
+export interface CfnAwsqsEksClusterPropsResourcesVpcConfig {
   /**
    * Specify one or more security groups for the cross-account elastic network interfaces that Amazon EKS creates to use to allow communication between your worker nodes and the Kubernetes control plane. If you don't specify a security group, the default security group for your VPC is used.
    *
-   * @schema ClusterPropsResourcesVpcConfig#SecurityGroupIds
+   * @schema CfnAwsqsEksClusterPropsResourcesVpcConfig#SecurityGroupIds
    */
   readonly securityGroupIds?: string[];
+
   /**
    * Specify subnets for your Amazon EKS worker nodes. Amazon EKS creates cross-account elastic network interfaces in these subnets to allow communication between your worker nodes and the Kubernetes control plane.
    *
-   * @schema ClusterPropsResourcesVpcConfig#SubnetIds
+   * @schema CfnAwsqsEksClusterPropsResourcesVpcConfig#SubnetIds
    */
-  readonly subnetIds?: string[];
+  readonly subnetIds: string[];
+
   /**
    * Set this value to false to disable public access to your cluster's Kubernetes API server endpoint. If you disable public access, your cluster's Kubernetes API server can only receive requests from within the cluster VPC. The default value for this parameter is true , which enables public access for your Kubernetes API server.
    *
-   * @schema ClusterPropsResourcesVpcConfig#EndpointPublicAccess
+   * @schema CfnAwsqsEksClusterPropsResourcesVpcConfig#EndpointPublicAccess
    */
   readonly endpointPublicAccess?: boolean;
+
   /**
    * Set this value to true to enable private access for your cluster's Kubernetes API server endpoint. If you enable private access, Kubernetes API requests from within your cluster's VPC use the private VPC endpoint. The default value for this parameter is false , which disables private access for your Kubernetes API server. If you disable private access and you have worker nodes or AWS Fargate pods in the cluster, then ensure that publicAccessCidrs includes the necessary CIDR blocks for communication with the worker nodes or Fargate pods.
    *
-   * @schema ClusterPropsResourcesVpcConfig#EndpointPrivateAccess
+   * @schema CfnAwsqsEksClusterPropsResourcesVpcConfig#EndpointPrivateAccess
    */
   readonly endpointPrivateAccess?: boolean;
+
   /**
    * The CIDR blocks that are allowed access to your cluster's public Kubernetes API server endpoint. Communication to the endpoint from addresses outside of the CIDR blocks that you specify is denied. The default value is 0.0.0.0/0 . If you've disabled private endpoint access and you have worker nodes or AWS Fargate pods in the cluster, then ensure that you specify the necessary CIDR blocks.
    *
-   * @schema ClusterPropsResourcesVpcConfig#PublicAccessCidrs
+   * @schema CfnAwsqsEksClusterPropsResourcesVpcConfig#PublicAccessCidrs
    */
   readonly publicAccessCidrs?: string[];
+
 }
+
+/**
+ * Converts an object of type 'CfnAwsqsEksClusterPropsResourcesVpcConfig' to JSON representation.
+ */
+/* eslint-disable max-len, quote-props */
+export function toJson_CfnAwsqsEksClusterPropsResourcesVpcConfig(obj: CfnAwsqsEksClusterPropsResourcesVpcConfig | undefined): Record<string, any> | undefined {
+  if (obj === undefined) { return undefined; }
+  const result = {
+    'SecurityGroupIds': obj.securityGroupIds?.map(y => y),
+    'SubnetIds': obj.subnetIds?.map(y => y),
+    'EndpointPublicAccess': obj.endpointPublicAccess,
+    'EndpointPrivateAccess': obj.endpointPrivateAccess,
+    'PublicAccessCidrs': obj.publicAccessCidrs?.map(y => y),
+  };
+  // filter undefined values
+  return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
+}
+/* eslint-enable max-len, quote-props */
+
 /**
  * The encryption configuration for the cluster.
  *
@@ -205,42 +239,96 @@ export interface ClusterPropsResourcesVpcConfig {
  */
 export interface EncryptionConfigEntry {
   /**
-   * Specifies the resources to be encrypted. The only supported value is "secrets".
+   * Specifies the resources to be encrypted. The only supported value is \\"secrets\\".
    *
    * @schema EncryptionConfigEntry#Resources
    */
   readonly resources?: string[];
+
   /**
    * @schema EncryptionConfigEntry#Provider
    */
   readonly provider?: Provider;
+
 }
+
 /**
- * @schema ClusterPropsKubernetesApiAccess
+ * Converts an object of type 'EncryptionConfigEntry' to JSON representation.
  */
-export interface ClusterPropsKubernetesApiAccess {
+/* eslint-disable max-len, quote-props */
+export function toJson_EncryptionConfigEntry(obj: EncryptionConfigEntry | undefined): Record<string, any> | undefined {
+  if (obj === undefined) { return undefined; }
+  const result = {
+    'Resources': obj.resources?.map(y => y),
+    'Provider': toJson_Provider(obj.provider),
+  };
+  // filter undefined values
+  return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
+}
+/* eslint-enable max-len, quote-props */
+
+/**
+ * @schema CfnAwsqsEksClusterPropsKubernetesApiAccess
+ */
+export interface CfnAwsqsEksClusterPropsKubernetesApiAccess {
   /**
-   * @schema ClusterPropsKubernetesApiAccess#Roles
+   * @schema CfnAwsqsEksClusterPropsKubernetesApiAccess#Roles
    */
   readonly roles?: KubernetesApiAccessEntry[];
+
   /**
-   * @schema ClusterPropsKubernetesApiAccess#Users
+   * @schema CfnAwsqsEksClusterPropsKubernetesApiAccess#Users
    */
   readonly users?: KubernetesApiAccessEntry[];
+
 }
+
 /**
- * @schema ClusterPropsTags
+ * Converts an object of type 'CfnAwsqsEksClusterPropsKubernetesApiAccess' to JSON representation.
  */
-export interface ClusterPropsTags {
-  /**
-   * @schema ClusterPropsTags#Value
-   */
-  readonly value?: string;
-  /**
-   * @schema ClusterPropsTags#Key
-   */
-  readonly key?: string;
+/* eslint-disable max-len, quote-props */
+export function toJson_CfnAwsqsEksClusterPropsKubernetesApiAccess(obj: CfnAwsqsEksClusterPropsKubernetesApiAccess | undefined): Record<string, any> | undefined {
+  if (obj === undefined) { return undefined; }
+  const result = {
+    'Roles': obj.roles?.map(y => toJson_KubernetesApiAccessEntry(y)),
+    'Users': obj.users?.map(y => toJson_KubernetesApiAccessEntry(y)),
+  };
+  // filter undefined values
+  return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
+/* eslint-enable max-len, quote-props */
+
+/**
+ * @schema CfnAwsqsEksClusterPropsTags
+ */
+export interface CfnAwsqsEksClusterPropsTags {
+  /**
+   * @schema CfnAwsqsEksClusterPropsTags#Value
+   */
+  readonly value: string;
+
+  /**
+   * @schema CfnAwsqsEksClusterPropsTags#Key
+   */
+  readonly key: string;
+
+}
+
+/**
+ * Converts an object of type 'CfnAwsqsEksClusterPropsTags' to JSON representation.
+ */
+/* eslint-disable max-len, quote-props */
+export function toJson_CfnAwsqsEksClusterPropsTags(obj: CfnAwsqsEksClusterPropsTags | undefined): Record<string, any> | undefined {
+  if (obj === undefined) { return undefined; }
+  const result = {
+    'Value': obj.value,
+    'Key': obj.key,
+  };
+  // filter undefined values
+  return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
+}
+/* eslint-enable max-len, quote-props */
+
 /**
  * AWS Key Management Service (AWS KMS) customer master key (CMK). Either the ARN or the alias can be used.
  *
@@ -253,7 +341,23 @@ export interface Provider {
    * @schema Provider#KeyArn
    */
   readonly keyArn?: string;
+
 }
+
+/**
+ * Converts an object of type 'Provider' to JSON representation.
+ */
+/* eslint-disable max-len, quote-props */
+export function toJson_Provider(obj: Provider | undefined): Record<string, any> | undefined {
+  if (obj === undefined) { return undefined; }
+  const result = {
+    'KeyArn': obj.keyArn,
+  };
+  // filter undefined values
+  return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
+}
+/* eslint-enable max-len, quote-props */
+
 /**
  * @schema KubernetesApiAccessEntry
  */
@@ -262,14 +366,165 @@ export interface KubernetesApiAccessEntry {
    * @schema KubernetesApiAccessEntry#Arn
    */
   readonly arn?: string;
+
   /**
    * @schema KubernetesApiAccessEntry#Username
    */
   readonly username?: string;
+
   /**
    * @schema KubernetesApiAccessEntry#Groups
    */
   readonly groups?: string[];
+
+}
+
+/**
+ * Converts an object of type 'KubernetesApiAccessEntry' to JSON representation.
+ */
+/* eslint-disable max-len, quote-props */
+export function toJson_KubernetesApiAccessEntry(obj: KubernetesApiAccessEntry | undefined): Record<string, any> | undefined {
+  if (obj === undefined) { return undefined; }
+  const result = {
+    'Arn': obj.arn,
+    'Username': obj.username,
+    'Groups': obj.groups?.map(y => y),
+  };
+  // filter undefined values
+  return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
+}
+/* eslint-enable max-len, quote-props */
+
+
+/**
+ * A CloudFormation \`AWSQS::EKS::Cluster\`
+ *
+ * @cloudformationResource AWSQS::EKS::Cluster
+ * @stability external
+ * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+ */
+export class CfnAwsqsEksCluster extends cdk.CfnResource {
+  /**
+  * The CloudFormation resource type name for this resource class.
+  */
+  public static readonly CFN_RESOURCE_TYPE_NAME = \\"AWSQS::EKS::Cluster\\";
+
+  /**
+   * \`AWSQS::EKS::Cluster.Name\`
+   * A unique name for your cluster.
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly name: string | undefined;
+  /**
+   * \`AWSQS::EKS::Cluster.RoleArn\`
+   * Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role. This provides permissions for Amazon EKS to call other AWS APIs.
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly roleArn: string;
+  /**
+   * \`AWSQS::EKS::Cluster.LambdaRoleName\`
+   * Name of the AWS Identity and Access Management (IAM) role used for clusters that have the public endpoint disabled. this provides permissions for Lambda to be invoked and attach to the cluster VPC
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly lambdaRoleName: string | undefined;
+  /**
+   * \`AWSQS::EKS::Cluster.Version\`
+   * Desired Kubernetes version for your cluster. If you don't specify this value, the cluster uses the latest version from Amazon EKS.
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly version: string | undefined;
+  /**
+   * \`AWSQS::EKS::Cluster.KubernetesNetworkConfig\`
+   * Network configuration for Amazon EKS cluster.
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly kubernetesNetworkConfig: any | undefined;
+  /**
+   * \`AWSQS::EKS::Cluster.ResourcesVpcConfig\`
+   * An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly resourcesVpcConfig: any;
+  /**
+   * \`AWSQS::EKS::Cluster.EnabledClusterLoggingTypes\`
+   * Enables exporting of logs from the Kubernetes control plane to Amazon CloudWatch Logs. By default, logs from the cluster control plane are not exported to CloudWatch Logs. The valid log types are api, audit, authenticator, controllerManager, and scheduler.
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly enabledClusterLoggingTypes: string[] | undefined;
+  /**
+   * \`AWSQS::EKS::Cluster.EncryptionConfig\`
+   * Encryption configuration for the cluster.
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly encryptionConfig: EncryptionConfigEntry[] | undefined;
+  /**
+   * \`AWSQS::EKS::Cluster.KubernetesApiAccess\`
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly kubernetesApiAccess: any | undefined;
+  /**
+   * \`AWSQS::EKS::Cluster.Tags\`
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly tags: any[] | undefined;
+  /**
+   * Attribute \`AWSQS::EKS::Cluster.Arn\`
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly attrArn: string;
+  /**
+   * Attribute \`AWSQS::EKS::Cluster.Endpoint\`
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly attrEndpoint: string;
+  /**
+   * Attribute \`AWSQS::EKS::Cluster.ClusterSecurityGroupId\`
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly attrClusterSecurityGroupId: string;
+  /**
+   * Attribute \`AWSQS::EKS::Cluster.CertificateAuthorityData\`
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly attrCertificateAuthorityData: string;
+  /**
+   * Attribute \`AWSQS::EKS::Cluster.EncryptionConfigKeyArn\`
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly attrEncryptionConfigKeyArn: string;
+  /**
+   * Attribute \`AWSQS::EKS::Cluster.OIDCIssuerURL\`
+   * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
+   */
+  public readonly attrOidcIssuerUrl: string;
+
+  /**
+   * Create a new \`AWSQS::EKS::Cluster\`.
+   *
+   * @param scope - scope in which this resource is defined
+   * @param id    - scoped id of the resource
+   * @param props - resource properties
+   */
+  constructor(scope: cdk.Construct, id: string, props: CfnAwsqsEksClusterProps) {
+    super(scope, id, { type: CfnAwsqsEksCluster.CFN_RESOURCE_TYPE_NAME, properties: toJson_CfnAwsqsEksClusterProps(props)! });
+
+    this.name = props.name;
+    this.roleArn = props.roleArn;
+    this.lambdaRoleName = props.lambdaRoleName;
+    this.version = props.version;
+    this.kubernetesNetworkConfig = props.kubernetesNetworkConfig;
+    this.resourcesVpcConfig = props.resourcesVpcConfig;
+    this.enabledClusterLoggingTypes = props.enabledClusterLoggingTypes;
+    this.encryptionConfig = props.encryptionConfig;
+    this.kubernetesApiAccess = props.kubernetesApiAccess;
+    this.tags = props.tags;
+    this.attrArn = cdk.Token.asString(this.getAtt('Arn'));
+    this.attrEndpoint = cdk.Token.asString(this.getAtt('Endpoint'));
+    this.attrClusterSecurityGroupId = cdk.Token.asString(this.getAtt('ClusterSecurityGroupId'));
+    this.attrCertificateAuthorityData = cdk.Token.asString(this.getAtt('CertificateAuthorityData'));
+    this.attrEncryptionConfigKeyArn = cdk.Token.asString(this.getAtt('EncryptionConfigKeyArn'));
+    this.attrOidcIssuerUrl = cdk.Token.asString(this.getAtt('OIDCIssuerURL'));
+  }
 }
 ```
 
