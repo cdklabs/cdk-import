@@ -24,4 +24,6 @@ const project = new TypeScriptProject({
     },
   },
 });
+project.release.publisher.publishToNpm();
+
 project.synth();
