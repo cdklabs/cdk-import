@@ -16,7 +16,7 @@ const project = new TypeScriptProject({
     'aws-sdk-mock',
   ],
   bin: {
-    'cfn-import': 'lib/cli.js',
+    'cdk-import': 'lib/cli.js',
   },
   tsconfig: {
     compilerOptions: {

@@ -2,7 +2,7 @@
   "name": "cdk-import",
   "description": "Toolkit to import CFN resource types and generate L1 constructs",
   "bin": {
-    "cfn-import": "lib/cli.js"
+    "cdk-import": "lib/cli.js"
   },
   "scripts": {
     "clobber": "npx projen clobber",
