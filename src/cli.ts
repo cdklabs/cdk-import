@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import * as minimist from 'minimist';
 import { importResourceType } from '.';
 
