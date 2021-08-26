@@ -1,10 +1,10 @@
 import * as testee from '../src/util';
 
 test('should sanitize type names correctly', () => {
-  expect(testee.sanitizeTypeName('Vendor::Service')).toBe('VendorService');
-  expect(testee.sanitizeTypeName('Vendor::Service::Resource')).toBe('VendorServiceResource');
-  expect(testee.sanitizeTypeName('Vendor::ServiceName')).toBe('VendorServicename');
-  expect(testee.sanitizeTypeName('Vendor::ServiceName::Resource')).toBe('VendorServicenameResource');
+  expect(testee.sanitizeTypeName('Vendor::Service')).toBe('Service');
+  expect(testee.sanitizeTypeName('Vendor::Service::Resource')).toBe('Resource');
+  expect(testee.sanitizeTypeName('Vendor::ServiceName')).toBe('Servicename');
+  expect(testee.sanitizeTypeName('Vendor::ServiceName::Resource')).toBe('Resource');
 });
 
 test('should sanitize file names correctly', () => {
