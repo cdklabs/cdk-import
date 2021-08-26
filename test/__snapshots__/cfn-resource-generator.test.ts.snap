@@ -1,45 +1,7 @@
-# WORK IN PROGRESS 
-This is part of the implementation of [RFC](https://github.com/aws/aws-cdk-rfcs/pull/356)
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-# cdk-import
-
-> Generates CDK L1 constructs for public CloudFormation Registry types and modules.
-
-
-## Installation
-
-```shell
-$ npm install -g cdk-import
-```
-
-## Usage
-
-```shell
-$ cdk-import --help
-Usage: cdk-import RESOURCE-NAME[@VERSION]
-
-Options:
-  -o, --outdir       Output directory   [string] [default: "src"]
-
-Examples:
-  cdk-import AWSQS::EKS::Cluster             Generates an L1 construct for the latest version of this resource under src/awsqs-eks-cluster.ts
-  cdk-import AWSQS::EKS::Cluster@1.2.0       Generates an L1 construct for a specific version
-```
-
-This command will query the AWS CloudFormation Registry and will generate L1 constructs for the specified resource. If a version
-is not specified, the latest version will be selected. Otherwise, the specific version will be used.
-
-For example:
-
-```shell
-$ cdk-import AWSQS::EKS::Cluster
-```
-
-<details>
-  <summary>src/awsqs-eks-cluster.ts</summary>
-
-```ts
-import * as cdk from '@aws-cdk/core';
+exports[`should generate correct file for type 1`] = `
+"import * as cdk from '@aws-cdk/core';
 
 /**
  * A resource that creates Amazon Elastic Kubernetes Service (Amazon EKS) clusters.
@@ -525,31 +487,5 @@ export class CfnCluster extends cdk.CfnResource {
     this.attrEncryptionConfigKeyArn = cdk.Token.asString(this.getAtt('EncryptionConfigKeyArn'));
     this.attrOidcIssuerUrl = cdk.Token.asString(this.getAtt('OIDCIssuerURL'));
   }
-}
-```
-
-</details>
-  
-Modules are also supported:
-
-```shell
-$ cdk-import AWSQS::CheckPoint::CloudGuardQS::MODULE
-src/awsqs-checkpoint-cloudguardqs-module.ts
-```
-
-## Roadmap
-
-- [ ] Use `jsii-srcmak` to allow generating sources in multiple languages (first version only supports TypeScript).
-- [ ] Allow library usage
-
-## Contributing
-
-See [CONTRIBUTING](CONTRIBUTING.md)
-
-## Security
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
-
-## License
-
-This project is licensed under the Apache-2.0 License.
+}"
+`;

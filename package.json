@@ -1,5 +1,9 @@
 {
   "name": "cdk-import",
+  "description": "Toolkit to import CFN resource types and generate L1 constructs",
+  "bin": {
+    "cdk-import": "lib/cli.js"
+  },
   "scripts": {
     "clobber": "npx projen clobber",
     "compile": "npx projen compile",
@@ -21,10 +25,12 @@
     "start": "npx projen start"
   },
   "devDependencies": {
+    "@aws-cdk/core": "^1.116.0",
     "@types/jest": "^26.0.24",
     "@types/node": "^10.17.0",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",
+    "aws-sdk-mock": "^5.2.2",
     "eslint": "^7.32.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.4.0",
@@ -36,7 +42,15 @@
     "projen": "^0.27.0",
     "standard-version": "^9",
     "ts-jest": "^27.0.5",
+    "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.951.0",
+    "camelcase": "^6.2.0",
+    "json2jsii": "^0.1.272",
+    "minimist": "^1.2.5",
+    "proxy-agent": "^5.0.0"
   },
   "bundledDependencies": [],
   "main": "lib/index.js",
