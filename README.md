@@ -1,10 +1,8 @@
-# WORK IN PROGRESS 
-This is part of the implementation of [RFC](https://github.com/aws/aws-cdk-rfcs/pull/356)
-
 # cdk-import
 
 > Generates CDK L1 constructs for public CloudFormation Registry types and modules.
 
+NOTE: This is part of the implementation of [RFC](https://github.com/aws/aws-cdk-rfcs/pull/356)
 
 ## Installation
 
