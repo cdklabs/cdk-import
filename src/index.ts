@@ -9,14 +9,16 @@ import { sanitizeFileName } from './util';
  *
  * @param resourceName the name of the resource type
  * @param resourceVersion the version of the resource type
- * @param outdir the out folder to use (defaults to src)
+ * @param outdir the out folder to use (defaults to the current directory)
  */
-export async function importResourceType(resourceName: string, resourceVersion: string, outdir: string = 'src') {
+export async function importResourceType(resourceName: string, resourceVersion: string, outdir: string = '.') {
   const type = await describeResourceType(resourceName, resourceVersion);
 
   const typeSchema = JSON.parse(type.Schema!);
 
   const gen = new CfnResourceGenerator(resourceName, type, typeSchema);
+
+  fs.mkdirSync(outdir, { recursive: true });
 
   fs.writeFileSync(path.join(outdir, sanitizeFileName(resourceName)), gen.render());
 };
