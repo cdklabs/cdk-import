@@ -17,7 +17,8 @@ $ cdk-import --help
 Usage: cdk-import RESOURCE-NAME[@VERSION]
 
 Options:
-  -o, --outdir       Output directory   [string] [default: "src"]
+  -o, --outdir       Output directory      [string]  [default: "."]
+  -h, --help         Show this usage info  [boolean] [default: false]
 
 Examples:
   cdk-import AWSQS::EKS::Cluster             Generates an L1 construct for the latest version of this resource under src/awsqs-eks-cluster.ts
