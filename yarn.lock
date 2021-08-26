@@ -1202,7 +1202,7 @@ at-least-node@^1.0.0:
   resolved "https://registry.yarnpkg.com/at-least-node/-/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
   integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
-aws-sdk-mock@*:
+aws-sdk-mock@^5.2.2:
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/aws-sdk-mock/-/aws-sdk-mock-5.2.2.tgz#a1a815dff7c6a215717e14b099d04ce0a3ab0f2a"
   integrity sha512-0w0w54wuXjuOZ4s5VDaGdggQrLOVlzYITwMdurcw49uqb/HCwAShLpxEkx6bQ8n24CiTQ8fEyR02S8KCqGxXNQ==
