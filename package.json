@@ -26,7 +26,7 @@
     "start": "npx projen start"
   },
   "devDependencies": {
-    "@aws-cdk/core": "^1.116.0",
+    "@aws-cdk/core": "^1.120.0",
     "@types/jest": "^26.0.24",
     "@types/node": "^10.17.0",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
@@ -36,20 +36,20 @@
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.24.2",
-    "jest": "^27.0.6",
+    "jest": "^27.1.0",
     "jest-junit": "^12",
     "json-schema": "^0.3.0",
     "npm-check-updates": "^11",
     "projen": "^0.27.0",
     "standard-version": "^9",
     "ts-jest": "^27.0.5",
-    "ts-node": "^10.1.0",
-    "typescript": "^4.3.5"
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
   },
   "dependencies": {
-    "aws-sdk": "^2.951.0",
+    "aws-sdk": "^2.978.0",
     "camelcase": "^6.2.0",
-    "json2jsii": "^0.1.272",
+    "json2jsii": "^0.2.10",
     "minimist": "^1.2.5",
     "proxy-agent": "^5.0.0"
   },
