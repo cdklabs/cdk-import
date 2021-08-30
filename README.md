@@ -21,7 +21,7 @@ Options:
   -h, --help         Show this usage info  [boolean] [default: false]
 
 Examples:
-  cdk-import AWSQS::EKS::Cluster             Generates an L1 construct for the latest version of this resource under src/awsqs-eks-cluster.ts
+  cdk-import AWSQS::EKS::Cluster             Generates an L1 construct for the latest version of this resource under awsqs-eks-cluster.ts
   cdk-import AWSQS::EKS::Cluster@1.2.0       Generates an L1 construct for a specific version
 ```
 
@@ -35,7 +35,7 @@ $ cdk-import AWSQS::EKS::Cluster
 ```
 
 <details>
-  <summary>src/awsqs-eks-cluster.ts</summary>
+  <summary>awsqs-eks-cluster.ts</summary>
 
 ```ts
 import * as cdk from '@aws-cdk/core';
@@ -533,7 +533,7 @@ Modules are also supported:
 
 ```shell
 $ cdk-import AWSQS::CheckPoint::CloudGuardQS::MODULE
-src/awsqs-checkpoint-cloudguardqs-module.ts
+awsqs-checkpoint-cloudguardqs-module.ts
 ```
 
 ## Roadmap
