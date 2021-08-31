@@ -27,6 +27,7 @@ function showHelp() {
   console.log('  cdk-import AWSQS::EKS::Cluster             Generates an L1 construct for the latest version of this resource under awsqs-eks-cluster.ts');
   console.log('  cdk-import AWSQS::EKS::Cluster@1.2.0       Generates an L1 construct for a specific version');
   console.log('  cdk-import -o src AWSQS::EKS::Cluster      Generates an L1 construct in the src subfolder');
+  console.log('  cdk-import arn:aws:cloudformation:...      Generates an L1 construct and identifies the resource type by its ARN');
 }
 
 void (async () => {

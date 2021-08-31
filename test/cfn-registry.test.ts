@@ -21,6 +21,7 @@ test('should return schema of single registry type', async () => {
     expect(params.Arn).toBe(typeArn);
     cb(null, {
       Arn: params.Arn,
+      TypeName: typeName,
       Schema: '{}',
       SourceUrl: 'https://myurl.com',
     });
@@ -60,6 +61,7 @@ test('should handle paging correctly', async () => {
     expect(params.Arn).toBe(typeArn);
     cb(null, {
       Arn: params.Arn,
+      TypeName: typeName,
       Schema: '{}',
       SourceUrl: 'https://myurl.com',
     });
@@ -90,6 +92,7 @@ test('should use ARN on missing source url', async () => {
     expect(params.Arn).toBe(typeArn);
     cb(null, {
       Arn: params.Arn,
+      TypeName: typeName,
       Schema: '{}',
     });
   });
@@ -120,6 +123,7 @@ test('should handle MODULES correctly', async () => {
     expect(params.Arn).toBe(typeArn);
     cb(null, {
       Arn: params.Arn,
+      TypeName: typeName,
       Schema: '{}',
     });
   });
@@ -173,12 +177,40 @@ test('should fail on missing schema', async () => {
     expect(params.Arn).toBe(typeArn);
     cb(null, {
       Arn: params.Arn,
+      TypeName: typeName,
       SourceUrl: 'https://myurl.com',
     });
   });
 
   await expect(testee.describeResourceType(typeName)).rejects.toThrow(/does not contain schema/);
 });
+
+test('should handle lookup by ARN correctly', async () => {
+  AWSMock.setSDKInstance(AWS);
+
+  const typeName = 'Test::Resource::Type';
+  const typeArn = 'arn:aws:cloudformation:eu-central-1::type/resource/Test-Resource-Type';
+
+  AWSMock.mock('CloudFormation', 'listTypes', (_params: AWS.CloudFormation.ListTypesInput, cb) => {
+    cb(new Error('Should never be called'), {});
+  });
+  AWSMock.mock('CloudFormation', 'describeType', (params: AWS.CloudFormation.DescribeTypeInput, cb) => {
+    expect(params.Arn).toBe(typeArn);
+    cb(null, {
+      Arn: params.Arn,
+      TypeName: typeName,
+      Schema: '{}',
+      SourceUrl: 'https://myurl.com',
+    });
+  });
+
+  const typeInfo = await testee.describeResourceType(typeArn);
+
+  expect(typeInfo.Schema).toBe('{}');
+  expect(typeInfo.TypeName).toBe(typeName);
+  expect(typeInfo.SourceUrl).toBe('https://myurl.com');
+});
+
 
 afterEach(() => {
   AWSMock.restore();
