@@ -39,16 +39,16 @@
     "jest-junit": "^12",
     "json-schema": "^0.3.0",
     "npm-check-updates": "^11",
-    "projen": "^0.28.4",
+    "projen": "^0.28.9",
     "standard-version": "^9",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
   },
   "dependencies": {
-    "aws-sdk": "^2.988.0",
+    "aws-sdk": "^2.989.0",
     "camelcase": "^6.2.0",
-    "json2jsii": "^0.2.18",
+    "json2jsii": "^0.2.19",
     "minimist": "^1.2.5",
     "proxy-agent": "^5.0.0"
   },
