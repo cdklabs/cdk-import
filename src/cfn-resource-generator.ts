@@ -1,4 +1,4 @@
-import * as camelcase from 'camelcase';
+import { camel, pascal } from 'case';
 import * as j2j from 'json2jsii';
 import { TypeInfo } from './type-info';
 import { sanitizeTypeName } from './util';
@@ -88,7 +88,7 @@ export class CfnResourceGenerator {
       }
       code.line(` * @link ${this.typeDef.SourceUrl}`);
       code.line(' */');
-      code.line(`public readonly ${camelcase(prop)}: ${this.getTypeOfProperty(prop)}${optionalMarker};`);
+      code.line(`public readonly ${camel(prop)}: ${this.getTypeOfProperty(prop)}${optionalMarker};`);
     }
 
     for (const prop of this.resourceAttributes) {
@@ -96,7 +96,7 @@ export class CfnResourceGenerator {
       code.line(` * Attribute \`${this.typeName}.${prop}\``);
       code.line(` * @link ${this.typeDef.SourceUrl}`);
       code.line(' */');
-      code.line(`public readonly attr${camelcase(prop, { pascalCase: true })}: ${this.getTypeOfProperty(prop)};`);
+      code.line(`public readonly attr${pascal(prop)}: ${this.getTypeOfProperty(prop)};`);
     }
 
     code.line();
@@ -112,10 +112,10 @@ export class CfnResourceGenerator {
     code.line(`super(scope, id, { type: ${this.constructClassName}.CFN_RESOURCE_TYPE_NAME, properties: toJson_${this.propsStructName}(props)! });`);
     code.line('');
     for (const prop of this.resourceProperties) {
-      code.line(`this.${camelcase(prop)} = props.${camelcase(prop)};`);
+      code.line(`this.${camel(prop)} = props.${camel(prop)};`);
     }
     for (const prop of this.resourceAttributes) {
-      const propertyName = `attr${camelcase(prop, { pascalCase: true })}`;
+      const propertyName = `attr${pascal(prop)}`;
       code.line(`this.${propertyName} = ${this.renderGetAtt(prop)};`);
     }
     code.closeBlock();

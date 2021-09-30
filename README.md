@@ -7,7 +7,7 @@ NOTE: This is part of the implementation of [RFC](https://github.com/aws/aws-cdk
 ## Installation
 
 ```shell
-$ npm install -g cdk-import
+npm install -g cdk-import
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ is not specified, the latest version will be selected. Otherwise, the specific v
 For example:
 
 ```shell
-$ cdk-import AWSQS::EKS::Cluster
+cdk-import AWSQS::EKS::Cluster
 ```
 
 <details>
@@ -538,7 +538,7 @@ awsqs-checkpoint-cloudguardqs-module.ts
 
 ## Roadmap
 
-- [ ] Use `jsii-srcmak` to allow generating sources in multiple languages (first version only supports TypeScript).
+- [x] Use `jsii-srcmak` to allow generating sources in multiple languages (first version only supports TypeScript).
 - [ ] Allow library usage
 
 ## Contributing

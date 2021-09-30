@@ -8,7 +8,8 @@ const project = new TypeScriptProject({
     'aws-sdk',
     'minimist',
     'proxy-agent',
-    'camelcase',
+    'case',
+    'jsii-srcmak',
   ],
   devDeps: [
     '@aws-cdk/core',

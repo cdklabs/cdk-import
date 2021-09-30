@@ -85,7 +85,11 @@
       "type": "runtime"
     },
     {
-      "name": "camelcase",
+      "name": "case",
+      "type": "runtime"
+    },
+    {
+      "name": "jsii-srcmak",
       "type": "runtime"
     },
     {
