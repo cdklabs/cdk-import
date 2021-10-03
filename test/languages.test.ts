@@ -3,6 +3,8 @@ import { tmpdir } from 'os';
 import { join } from 'path';
 import { renderCode, SUPPORTED_LANGUAGES } from '../src/languages';
 
+jest.setTimeout(5 * 60 * 1000);
+
 test.each(SUPPORTED_LANGUAGES)('%s', async language => {
   const outdir = join(tmpdir(), 'cdk-import-test');
 
