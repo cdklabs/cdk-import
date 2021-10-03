@@ -11,6 +11,7 @@ test.each(SUPPORTED_LANGUAGES)('%s', async language => {
     srcdir: join(__dirname, 'fixtures', 'awsqs-eks-cluster'),
     typeName: 'AWSQS::EKS::Cluster',
     outdir: outdir,
+    goModule: 'github.com/my/module',
   });
 
   const out = await captureDirectory(outdir);

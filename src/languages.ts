@@ -24,6 +24,11 @@ export interface RenderCodeOptions {
   readonly outdir: string;
   readonly language: string;
   readonly typeName: string;
+
+  /**
+   * The name of the Go module to use for the generated code. Required if `language` is `golang`.
+   */
+  readonly goModule?: string;
 }
 
 export async function renderCode(options: RenderCodeOptions) {
@@ -55,16 +60,19 @@ export async function renderCode(options: RenderCodeOptions) {
     case 'java':
       srcmakopts.java = {
         outdir: options.outdir,
-        package: snake.replace(/_/g, '.'),
+        package: caseutil.capital(options.typeName, '.'),
       };
       break;
 
     case 'golang':
-    case 'go':
+      if (!options.goModule) {
+        throw new Error('Go module name (--go-module-name) is required (e.g. "github.com/foo/bar")');
+      }
+
       srcmakopts.golang = {
         outdir: options.outdir,
         packageName: hyphenated,
-        moduleName: 'github.com/foo/bar',
+        moduleName: options.goModule,
       };
       break;
 
