@@ -57,8 +57,6 @@ void (async () => {
     process.exit(1);
   }
 
-  console.log(args);
-
   if (!args.language) {
     throw new Error(`Missing required option: --language. Supported languages: ${SUPPORTED_LANGUAGES.join(',')}`);
   }

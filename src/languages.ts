@@ -41,17 +41,15 @@ export async function renderCode(options: RenderCodeOptions) {
     deps: cdkDeps.map(x => path.dirname(require.resolve(`${x}/package.json`))),
   };
 
-  const hyphenated = caseutil.header(options.typeName);
-  const snake = caseutil.snake(options.typeName);
-
   switch (options.language) {
     case 'typescript':
-      return fs.copyFile(path.join(options.srcdir, 'index.ts'), path.join(options.outdir, `${hyphenated.toLowerCase()}.ts`));
+      await fs.mkdir(options.outdir, { recursive: true });
+      return fs.copyFile(path.join(options.srcdir, 'index.ts'), path.join(options.outdir, `${caseutil.header(options.typeName).toLowerCase()}.ts`));
 
     case 'python':
       srcmakopts.python = {
         outdir: options.outdir,
-        moduleName: snake,
+        moduleName: caseutil.snake(options.typeName),
       };
       break;
 
@@ -75,12 +73,12 @@ export async function renderCode(options: RenderCodeOptions) {
 
     case 'golang':
       if (!options.goModule) {
-        throw new Error('Go module name (--go-module-name) is required (e.g. "github.com/foo/bar")');
+        throw new Error('Go module name (--go-module) is required (e.g. "github.com/foo/bar")');
       }
 
       srcmakopts.golang = {
         outdir: options.outdir,
-        packageName: hyphenated,
+        packageName: caseutil.lower(options.typeName, '-'),
         moduleName: options.goModule,
       };
       break;
