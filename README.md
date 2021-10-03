@@ -18,16 +18,19 @@ Usage:
   cdk-import -l LANGUAGE RESOURCE-NAME[@VERSION]
 
 Options:
-  -l, --language     Output programming language                       [string]
-  -o, --outdir       Output directory                                  [string]  [default: "."]
-  --go-module-name   Module name (required if language is "golang")    [string]
-  -h, --help         Show this usage info                              [boolean]
+  -l, --language     Output programming language                        [string]
+  -o, --outdir       Output directory                                   [string]  [default: "."]
+  --go-module        Module name (required if language is "golang")     [string]
+  --java-package     Java package name (required if language is "java") [string]
+  -h, --help         Show this usage info                               [boolean]
 ```
 
 The `--language` option specifies the output programming language. Supported
-languages: `typescript`, `java`, `python`, `csharp` and `golang`. If `golang` is
-used, the `--go-module-name` option is required and should specify the qualified
-project module name (e.g. `github.com/myorg/myproject`).
+languages: `typescript`, `java`, `python`, `csharp` and `golang`.
+
+* If `golang` is used, the `--go-module` option is required and should
+  specify the qualified project module name (e.g. `github.com/myorg/myproject`).
+* If `java` is used, the `--java-package` option is required.
 
 ## Examples
 
@@ -40,7 +43,7 @@ cdk-import -l typescript AWSQS::EKS::Cluster
 Generates construct in Go for a specific resource version:
 
 ```shell
-cdk-import -l golang --go-module-name "github.com/account/repo" AWSQS::EKS::Cluster@1.2.0
+cdk-import -l golang --go-module "github.com/account/repo" AWSQS::EKS::Cluster@1.2.0
 ```
 
 Generates construct in Python under the "src" subfolder instead of working directory:
@@ -52,7 +55,7 @@ cdk-import -l python -o src AWSQS::EKS::Cluster
 Generates construct in Java and identifies the resource type by its ARN:
 
 ```shell
-cdk-import -l java arn:aws:cloudformation:...
+cdk-import -l java --java-package "com.acme.myproject" arn:aws:cloudformation:...
 ```
 
 Modules are also supported:

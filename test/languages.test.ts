@@ -12,6 +12,7 @@ test.each(SUPPORTED_LANGUAGES)('%s', async language => {
     typeName: 'AWSQS::EKS::Cluster',
     outdir: outdir,
     goModule: 'github.com/my/module',
+    javaPacakge: 'com.my.module',
   });
 
   const out = await captureDirectory(outdir);

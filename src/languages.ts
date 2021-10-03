@@ -29,6 +29,11 @@ export interface RenderCodeOptions {
    * The name of the Go module to use for the generated code. Required if `language` is `golang`.
    */
   readonly goModule?: string;
+
+  /**
+   * The name of the Java package to use for the generated code. Required if `language` is `java`.
+   */
+  readonly javaPacakge?: string;
 }
 
 export async function renderCode(options: RenderCodeOptions) {
@@ -58,9 +63,13 @@ export async function renderCode(options: RenderCodeOptions) {
       break;
 
     case 'java':
+      if (!options.javaPacakge) {
+        throw new Error('Java package name (`--java-package`) must be specified (e.g. "com.foo.bar.my.resource")');
+      }
+
       srcmakopts.java = {
         outdir: options.outdir,
-        package: caseutil.capital(options.typeName, '.'),
+        package: options.javaPacakge,
       };
       break;
 
