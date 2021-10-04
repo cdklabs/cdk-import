@@ -2,7 +2,6 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { describeResourceType } from './cfn-registry';
 import { CfnResourceGenerator } from './cfn-resource-generator';
-import { sanitizeFileName } from './util';
 
 /**
  * Entry point to import CFN resource types
@@ -10,8 +9,9 @@ import { sanitizeFileName } from './util';
  * @param resourceName the name or ARN of the resource type
  * @param resourceVersion the version of the resource type
  * @param outdir the out folder to use (defaults to the current directory)
+ * @returns name of the resource type
  */
-export async function importResourceType(resourceName: string, resourceVersion: string, outdir: string = '.') {
+export async function importResourceType(resourceName: string, resourceVersion: string, outdir: string = '.'): Promise<string> {
   const type = await describeResourceType(resourceName, resourceVersion);
 
   const typeSchema = JSON.parse(type.Schema!);
@@ -20,5 +20,7 @@ export async function importResourceType(resourceName: string, resourceVersion: 
 
   fs.mkdirSync(outdir, { recursive: true });
 
-  fs.writeFileSync(path.join(outdir, sanitizeFileName(type.TypeName)), gen.render());
+  fs.writeFileSync(path.join(outdir, 'index.ts'), gen.render());
+
+  return type.TypeName;
 };
