@@ -3035,7 +3035,7 @@ public final class $Module extends JsiiModule {
 /**
  * A CloudFormation \`AWSQS::EKS::Cluster\`.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.862Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.888Z\\")
 @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnCluster\\")
 public class CfnCluster extends software.amazon.awscdk.core.CfnResource {
@@ -3358,7 +3358,7 @@ public class CfnCluster extends software.amazon.awscdk.core.CfnResource {
 /**
  * A resource that creates Amazon Elastic Kubernetes Service (Amazon EKS) clusters.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.872Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.899Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterProps\\")
 @software.amazon.jsii.Jsii.Proxy(CfnClusterProps.Jsii$Proxy.class)
 public interface CfnClusterProps extends software.amazon.jsii.JsiiSerializable {
@@ -3758,7 +3758,7 @@ public interface CfnClusterProps extends software.amazon.jsii.JsiiSerializable {
 
 /**
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.877Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.903Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesApiAccess\\")
 @software.amazon.jsii.Jsii.Proxy(CfnClusterPropsKubernetesApiAccess.Jsii$Proxy.class)
 public interface CfnClusterPropsKubernetesApiAccess extends software.amazon.jsii.JsiiSerializable {
@@ -3907,7 +3907,7 @@ public interface CfnClusterPropsKubernetesApiAccess extends software.amazon.jsii
 /**
  * Network configuration for Amazon EKS cluster.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.877Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.903Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesNetworkConfig\\")
 @software.amazon.jsii.Jsii.Proxy(CfnClusterPropsKubernetesNetworkConfig.Jsii$Proxy.class)
 public interface CfnClusterPropsKubernetesNetworkConfig extends software.amazon.jsii.JsiiSerializable {
@@ -4024,7 +4024,7 @@ public interface CfnClusterPropsKubernetesNetworkConfig extends software.amazon.
 /**
  * An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.878Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.903Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsResourcesVpcConfig\\")
 @software.amazon.jsii.Jsii.Proxy(CfnClusterPropsResourcesVpcConfig.Jsii$Proxy.class)
 public interface CfnClusterPropsResourcesVpcConfig extends software.amazon.jsii.JsiiSerializable {
@@ -4275,7 +4275,7 @@ public interface CfnClusterPropsResourcesVpcConfig extends software.amazon.jsii.
 
 /**
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.880Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.905Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsTags\\")
 @software.amazon.jsii.Jsii.Proxy(CfnClusterPropsTags.Jsii$Proxy.class)
 public interface CfnClusterPropsTags extends software.amazon.jsii.JsiiSerializable {
@@ -4413,7 +4413,7 @@ public interface CfnClusterPropsTags extends software.amazon.jsii.JsiiSerializab
 /**
  * The encryption configuration for the cluster.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.880Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.905Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.EncryptionConfigEntry\\")
 @software.amazon.jsii.Jsii.Proxy(EncryptionConfigEntry.Jsii$Proxy.class)
 public interface EncryptionConfigEntry extends software.amazon.jsii.JsiiSerializable {
@@ -4562,7 +4562,7 @@ public interface EncryptionConfigEntry extends software.amazon.jsii.JsiiSerializ
 
 /**
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.881Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.906Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\")
 @software.amazon.jsii.Jsii.Proxy(KubernetesApiAccessEntry.Jsii$Proxy.class)
 public interface KubernetesApiAccessEntry extends software.amazon.jsii.JsiiSerializable {
@@ -4740,7 +4740,7 @@ public interface KubernetesApiAccessEntry extends software.amazon.jsii.JsiiSeria
  * <p>
  * Either the ARN or the alias can be used.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.881Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.906Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Provider\\")
 @software.amazon.jsii.Jsii.Proxy(Provider.Jsii$Proxy.class)
 public interface Provider extends software.amazon.jsii.JsiiSerializable {
@@ -8854,7 +8854,7 @@ public final class $Module extends JsiiModule {
 /**
  * A CloudFormation \`AWSQS::EKS::Cluster\`.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.862Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.888Z\\")
 @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnCluster\\")
 public class CfnCluster extends software.amazon.awscdk.core.CfnResource {
@@ -9177,7 +9177,7 @@ public class CfnCluster extends software.amazon.awscdk.core.CfnResource {
 /**
  * A resource that creates Amazon Elastic Kubernetes Service (Amazon EKS) clusters.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.872Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.899Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterProps\\")
 @software.amazon.jsii.Jsii.Proxy(CfnClusterProps.Jsii$Proxy.class)
 public interface CfnClusterProps extends software.amazon.jsii.JsiiSerializable {
@@ -9577,7 +9577,7 @@ public interface CfnClusterProps extends software.amazon.jsii.JsiiSerializable {
 
 /**
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.877Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.903Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesApiAccess\\")
 @software.amazon.jsii.Jsii.Proxy(CfnClusterPropsKubernetesApiAccess.Jsii$Proxy.class)
 public interface CfnClusterPropsKubernetesApiAccess extends software.amazon.jsii.JsiiSerializable {
@@ -9726,7 +9726,7 @@ public interface CfnClusterPropsKubernetesApiAccess extends software.amazon.jsii
 /**
  * Network configuration for Amazon EKS cluster.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.877Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.903Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesNetworkConfig\\")
 @software.amazon.jsii.Jsii.Proxy(CfnClusterPropsKubernetesNetworkConfig.Jsii$Proxy.class)
 public interface CfnClusterPropsKubernetesNetworkConfig extends software.amazon.jsii.JsiiSerializable {
@@ -9843,7 +9843,7 @@ public interface CfnClusterPropsKubernetesNetworkConfig extends software.amazon.
 /**
  * An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.878Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.903Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsResourcesVpcConfig\\")
 @software.amazon.jsii.Jsii.Proxy(CfnClusterPropsResourcesVpcConfig.Jsii$Proxy.class)
 public interface CfnClusterPropsResourcesVpcConfig extends software.amazon.jsii.JsiiSerializable {
@@ -10094,7 +10094,7 @@ public interface CfnClusterPropsResourcesVpcConfig extends software.amazon.jsii.
 
 /**
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.880Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.905Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsTags\\")
 @software.amazon.jsii.Jsii.Proxy(CfnClusterPropsTags.Jsii$Proxy.class)
 public interface CfnClusterPropsTags extends software.amazon.jsii.JsiiSerializable {
@@ -10232,7 +10232,7 @@ public interface CfnClusterPropsTags extends software.amazon.jsii.JsiiSerializab
 /**
  * The encryption configuration for the cluster.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.880Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.905Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.EncryptionConfigEntry\\")
 @software.amazon.jsii.Jsii.Proxy(EncryptionConfigEntry.Jsii$Proxy.class)
 public interface EncryptionConfigEntry extends software.amazon.jsii.JsiiSerializable {
@@ -10381,7 +10381,7 @@ public interface EncryptionConfigEntry extends software.amazon.jsii.JsiiSerializ
 
 /**
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.881Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.906Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\")
 @software.amazon.jsii.Jsii.Proxy(KubernetesApiAccessEntry.Jsii$Proxy.class)
 public interface KubernetesApiAccessEntry extends software.amazon.jsii.JsiiSerializable {
@@ -10559,7 +10559,7 @@ public interface KubernetesApiAccessEntry extends software.amazon.jsii.JsiiSeria
  * <p>
  * Either the ARN or the alias can be used.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.881Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.906Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Provider\\")
 @software.amazon.jsii.Jsii.Proxy(Provider.Jsii$Proxy.class)
 public interface Provider extends software.amazon.jsii.JsiiSerializable {
@@ -12139,7 +12139,7 @@ public final class $Module extends JsiiModule {
 /**
  * A CloudFormation \`AWSQS::EKS::Cluster\`.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.862Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.888Z\\")
 @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnCluster\\")
 public class CfnCluster extends software.amazon.awscdk.core.CfnResource {
@@ -12462,7 +12462,7 @@ public class CfnCluster extends software.amazon.awscdk.core.CfnResource {
 /**
  * A resource that creates Amazon Elastic Kubernetes Service (Amazon EKS) clusters.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.872Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.899Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterProps\\")
 @software.amazon.jsii.Jsii.Proxy(CfnClusterProps.Jsii$Proxy.class)
 public interface CfnClusterProps extends software.amazon.jsii.JsiiSerializable {
@@ -12862,7 +12862,7 @@ public interface CfnClusterProps extends software.amazon.jsii.JsiiSerializable {
 
 /**
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.877Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.903Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesApiAccess\\")
 @software.amazon.jsii.Jsii.Proxy(CfnClusterPropsKubernetesApiAccess.Jsii$Proxy.class)
 public interface CfnClusterPropsKubernetesApiAccess extends software.amazon.jsii.JsiiSerializable {
@@ -13011,7 +13011,7 @@ public interface CfnClusterPropsKubernetesApiAccess extends software.amazon.jsii
 /**
  * Network configuration for Amazon EKS cluster.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.877Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.903Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesNetworkConfig\\")
 @software.amazon.jsii.Jsii.Proxy(CfnClusterPropsKubernetesNetworkConfig.Jsii$Proxy.class)
 public interface CfnClusterPropsKubernetesNetworkConfig extends software.amazon.jsii.JsiiSerializable {
@@ -13128,7 +13128,7 @@ public interface CfnClusterPropsKubernetesNetworkConfig extends software.amazon.
 /**
  * An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.878Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.903Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsResourcesVpcConfig\\")
 @software.amazon.jsii.Jsii.Proxy(CfnClusterPropsResourcesVpcConfig.Jsii$Proxy.class)
 public interface CfnClusterPropsResourcesVpcConfig extends software.amazon.jsii.JsiiSerializable {
@@ -13379,7 +13379,7 @@ public interface CfnClusterPropsResourcesVpcConfig extends software.amazon.jsii.
 
 /**
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.880Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.905Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsTags\\")
 @software.amazon.jsii.Jsii.Proxy(CfnClusterPropsTags.Jsii$Proxy.class)
 public interface CfnClusterPropsTags extends software.amazon.jsii.JsiiSerializable {
@@ -13517,7 +13517,7 @@ public interface CfnClusterPropsTags extends software.amazon.jsii.JsiiSerializab
 /**
  * The encryption configuration for the cluster.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.880Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.905Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.EncryptionConfigEntry\\")
 @software.amazon.jsii.Jsii.Proxy(EncryptionConfigEntry.Jsii$Proxy.class)
 public interface EncryptionConfigEntry extends software.amazon.jsii.JsiiSerializable {
@@ -13666,7 +13666,7 @@ public interface EncryptionConfigEntry extends software.amazon.jsii.JsiiSerializ
 
 /**
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.881Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.906Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\")
 @software.amazon.jsii.Jsii.Proxy(KubernetesApiAccessEntry.Jsii$Proxy.class)
 public interface KubernetesApiAccessEntry extends software.amazon.jsii.JsiiSerializable {
@@ -13844,7 +13844,7 @@ public interface KubernetesApiAccessEntry extends software.amazon.jsii.JsiiSeria
  * <p>
  * Either the ARN or the alias can be used.
  */
-@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-03T13:06:21.881Z\\")
+@javax.annotation.Generated(value = \\"jsii-pacmak/1.35.0 (build 6ebef96)\\", date = \\"2021-10-04T17:28:49.906Z\\")
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Provider\\")
 @software.amazon.jsii.Jsii.Proxy(Provider.Jsii$Proxy.class)
 public interface Provider extends software.amazon.jsii.JsiiSerializable {
