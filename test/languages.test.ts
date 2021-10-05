@@ -42,7 +42,7 @@ async function captureDirectory(base: string) {
       if (stat.isDirectory()) {
         await walk(relpath);
       } else {
-        files.set(relpath, await fs.readFile(abspath, 'utf-8'));
+        files.set(relpath, filterGeneratedContent(await fs.readFile(abspath, 'utf-8')));
       }
     }
   };
@@ -50,4 +50,11 @@ async function captureDirectory(base: string) {
   await walk();
 
   return files;
+}
+
+function filterGeneratedContent(content: string) {
+  return content
+    .split('\n')
+    .filter(line => !line.includes('@javax.annotation.Generated'))
+    .join('\n');
 }
