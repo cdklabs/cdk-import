@@ -10,9 +10,9 @@ const project = new TypeScriptProject({
     'proxy-agent',
     'case',
     'jsii-srcmak',
+    '@aws-cdk/core',
   ],
   devDeps: [
-    '@aws-cdk/core',
     'ts-node',
     'aws-sdk-mock',
   ],
