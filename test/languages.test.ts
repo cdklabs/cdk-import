@@ -6,7 +6,7 @@ import { renderCode, SUPPORTED_LANGUAGES } from '../src/languages';
 jest.setTimeout(5 * 60 * 1000);
 
 test.each(SUPPORTED_LANGUAGES)('%s', async language => {
-  const outdir = join(tmpdir(), 'cdk-import-test');
+  const outdir = await fs.mkdtemp(join(tmpdir(), 'cdk-import-test'));
 
   await renderCode({
     language: language,
