@@ -6,7 +6,7 @@ import { renderCode, SUPPORTED_LANGUAGES } from '../src/languages';
 jest.setTimeout(5 * 60 * 1000);
 
 test.each(SUPPORTED_LANGUAGES)('%s', async language => {
-  const outdir = join(tmpdir(), 'cdk-import-test');
+  const outdir = await fs.mkdtemp(join(tmpdir(), 'cdk-import-test'));
 
   await renderCode({
     language: language,
@@ -30,7 +30,7 @@ async function captureDirectory(base: string) {
 
   const walk = async (reldir: string = '.') => {
     const entries = await fs.readdir(join(base, reldir));
-    for (const entry of entries) {
+    for (const entry of entries.sort()) {
       // skip binary files
       if (entry.endsWith('.tar.gz') || entry.endsWith('.zip') || entry.endsWith('.tgz')) {
         continue;
