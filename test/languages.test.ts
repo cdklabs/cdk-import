@@ -30,7 +30,7 @@ async function captureDirectory(base: string) {
 
   const walk = async (reldir: string = '.') => {
     const entries = await fs.readdir(join(base, reldir));
-    for (const entry of entries) {
+    for (const entry of entries.sort()) {
       // skip binary files
       if (entry.endsWith('.tar.gz') || entry.endsWith('.zip') || entry.endsWith('.tgz')) {
         continue;
