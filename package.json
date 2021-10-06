@@ -38,18 +38,18 @@
     "jest-junit": "^12",
     "json-schema": "^0.3.0",
     "npm-check-updates": "^11",
-    "projen": "^0.29.5",
+    "projen": "^0.29.8",
     "standard-version": "^9",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
   },
   "dependencies": {
-    "@aws-cdk/core": "^1.125.0",
-    "aws-sdk": "^2.1000.0",
+    "@aws-cdk/core": "^1.126.0",
+    "aws-sdk": "^2.1001.0",
     "case": "^1.6.3",
-    "jsii-srcmak": "^0.1.357",
-    "json2jsii": "^0.2.33",
+    "jsii-srcmak": "^0.1.358",
+    "json2jsii": "^0.2.34",
     "minimist": "^1.2.5",
     "proxy-agent": "^5.0.0"
   },
