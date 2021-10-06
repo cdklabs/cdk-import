@@ -1566,11 +1566,11 @@ namespace AWSQS::EKS::Cluster
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.36.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[1.125.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK\\" Version=\\"[1.125.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CXAPI\\" Version=\\"[1.125.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.RegionInfo\\" Version=\\"[1.125.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[3.3.156]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[1.126.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK\\" Version=\\"[1.126.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CXAPI\\" Version=\\"[1.126.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.RegionInfo\\" Version=\\"[1.126.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[3.3.160]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2101,6 +2101,14 @@ func (c *jsiiProxy_CfnCluster) AddPropertyOverride(propertyPath *string, value i
 }
 
 // Sets the deletion policy of the resource based on the removal policy specified.
+//
+// The Removal Policy controls what happens to this resource when it stops
+// being managed by CloudFormation, either because you've removed it from the
+// CDK application or because you've made a change that requires the resource
+// to be replaced.
+//
+// The resource can be deleted (\`RemovalPolicy.DESTROY\`), or left in your AWS
+// account for data recovery and cleanup later (\`RemovalPolicy.RETAIN\`).
 func (c *jsiiProxy_CfnCluster) ApplyRemovalPolicy(policy awscdkcore.RemovalPolicy, options *awscdkcore.RemovalPolicyOptions) {
 	_jsii_.InvokeVoid(
 		c,
