@@ -38,7 +38,7 @@
     "jest-junit": "^12",
     "json-schema": "^0.3.0",
     "npm-check-updates": "^11",
-    "projen": "^0.29.10",
+    "projen": "^0.29.11",
     "standard-version": "^9",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
@@ -46,10 +46,10 @@
   },
   "dependencies": {
     "@aws-cdk/core": "^1.126.0",
-    "aws-sdk": "^2.1002.0",
+    "aws-sdk": "^2.1003.0",
     "case": "^1.6.3",
-    "jsii-srcmak": "^0.1.359",
-    "json2jsii": "^0.2.35",
+    "jsii-srcmak": "^0.1.360",
+    "json2jsii": "^0.2.36",
     "minimist": "^1.2.5",
     "proxy-agent": "^5.0.0"
   },
