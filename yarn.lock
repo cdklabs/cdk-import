@@ -4206,10 +4206,10 @@ jsii-rosetta@^1.38.0:
     typescript "~3.9.10"
     yargs "^16.2.0"
 
-jsii-srcmak@^0.1.362:
-  version "0.1.362"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.362.tgz#197b611a2ae7d04d659ed01ccbabaafda2b6a2ed"
-  integrity sha512-h9n1Q2mE66qZe+fa75995+xG+M9ybxOr7vNQJT4grjD7HOZhVY0nENdhE0E4VF2zVCVzN+Bq1Zg4zT+GDBW+xw==
+jsii-srcmak@^0.1.363:
+  version "0.1.363"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.363.tgz#2d69f18eea0fcdda2690070afef8392f9f0b8dea"
+  integrity sha512-k0LcFF6oQzjWl/sPjEwAeZj+AH32KsvwcRHtUkYDyfDOSVMleF8ZX8hJsIbbMSxt4NTJBGZN3x33YEGJU2wSFw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.38.0"
@@ -4288,10 +4288,10 @@ json-stringify-safe@^5.0.1, json-stringify-safe@~5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
-json2jsii@^0.2.38:
-  version "0.2.38"
-  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.2.38.tgz#b0abea9b0776a64f0c452585387fa4295315e9a8"
-  integrity sha512-GYgPV8N1Mtg3xGOcFy8pwMQ17WIGsfN15GP5JJj5cNxA6XZZuSjhcVtA5LugTodpt7TENf+mTeurDRRhzW1CFQ==
+json2jsii@^0.2.39:
+  version "0.2.39"
+  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.2.39.tgz#057b20e66e41029762a96df71851e6773c0b33b7"
+  integrity sha512-hYrZBr4CgHFbok631Ed7UH3mZge1V+VdtDLE5vQvSzTWlXIPXApZ1mZmCiqkWSyaxUxhq19VMxquyMaUPpDhMw==
   dependencies:
     camelcase "^6.2.0"
     json-schema "^0.3.0"
@@ -5388,10 +5388,10 @@ progress@^2.0.0, progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.29.14:
-  version "0.29.14"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.29.14.tgz#5996088056329e3b3174763ea91fb365a03c8f02"
-  integrity sha512-4Cbr0r/Jt676jHQJtqZsk93WytkXODOMQ7Rf5ERUkmx9Z/DnIbCb6+UlrzQxlvZcB/Xb3cn2livZB9D/fLY26A==
+projen@^0.29.17:
+  version "0.29.17"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.29.17.tgz#19622be20aff044f7648dfaecea2ee86a914a26f"
+  integrity sha512-BjPur+KOh8Tqbvhp/+FOfONWXP+i7nB+o0g64eYhlJYvpGw85lGGs3boFZJIC8ZFuzEG1hMx5+YxPp8M5U/hcA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     chalk "^4.1.2"
