@@ -22,10 +22,43 @@ export class CfnResourceGenerator {
    */
   constructor(private readonly typeName: string, private readonly typeDef: TypeInfo, private readonly schema: any) {
     this.sanitizedTypeName = sanitizeTypeName(typeName);
-    this.resourceAttributes = this.schema.readOnlyProperties ? this.schema.readOnlyProperties.map((prop: string) => prop.replace(/^\/properties\//, '')) : [];
-    this.resourceProperties = Object.keys(this.schema.properties).filter(prop => this.resourceAttributes.indexOf(prop) === -1);
+    // this.resourceAttributes = this.schema.readOnlyProperties ? this.schema.readOnlyProperties.map((prop: string) => prop.replace(/^\/properties\//, '')) : [];
+    // this.resourceProperties = Object.keys(this.schema.properties).filter(prop => this.resourceAttributes.indexOf(prop) === -1);
     this.constructClassName = `Cfn${this.sanitizedTypeName}`;
     this.propsStructName = `${this.constructClassName}Props`;
+
+    this.resourceAttributes = new Array<string>();
+    this.resourceProperties = new Array<string>();
+
+    const props = this.schema.properties ?? {};
+    const attributeNames: string[] = this.schema.readOnlyProperties
+      ? this.schema.readOnlyProperties.map((prop: string) => prop.replace(/^\/properties\//, ''))
+      : [];
+
+    for (const attr of attributeNames) {
+      const def = props[attr];
+      if (!def) {
+        console.warn(`Unresolvable read-only property (attribute) ${typeName}.${attr}`);
+        continue;
+      }
+
+      // verify that the type of the attribute is a primitive
+      if (def.type !== 'string' && def.type !== 'number') {
+        console.warn(`Unsupported type ${JSON.stringify(def)} for read-only property (attribute) ${typeName}.${attr}`);
+        continue;
+      }
+
+      this.resourceAttributes.push(attr);
+    }
+
+    for (const prop of Object.keys(props)) {
+      // if this is a read-only property, consider it an attribute
+      if (attributeNames.includes(prop)) {
+        continue;
+      }
+
+      this.resourceProperties.push(prop);
+    }
   }
 
   /**
@@ -71,7 +104,9 @@ export class CfnResourceGenerator {
     code.line(' *');
     code.line(` * @cloudformationResource ${this.typeName}`);
     code.line(' * @stability external');
-    code.line(` * @link ${this.typeDef.SourceUrl}`);
+    if (this.typeDef.SourceUrl) {
+      code.line(` * @link ${this.typeDef.SourceUrl}`);
+    }
     code.line(' */');
     code.openBlock(`export class ${this.constructClassName} extends cdk.CfnResource`);
     code.line('/**');
@@ -87,7 +122,9 @@ export class CfnResourceGenerator {
       if (this.schema.properties[prop].description) {
         code.line(` * ${this.schema.properties[prop].description}`);
       }
-      code.line(` * @link ${this.typeDef.SourceUrl}`);
+      if (this.typeDef.SourceUrl) {
+        code.line(` * @link ${this.typeDef.SourceUrl}`);
+      }
       code.line(' */');
       code.line(`public readonly ${camel(prop)}: ${this.getTypeOfProperty(prop)}${optionalMarker};`);
     }
@@ -95,7 +132,9 @@ export class CfnResourceGenerator {
     for (const prop of this.resourceAttributes) {
       code.line('/**');
       code.line(` * Attribute \`${this.typeName}.${prop}\``);
-      code.line(` * @link ${this.typeDef.SourceUrl}`);
+      if (this.typeDef.SourceUrl) {
+        code.line(` * @link ${this.typeDef.SourceUrl}`);
+      }
       code.line(' */');
       code.line(`public readonly attr${pascal(prop)}: ${this.getTypeOfProperty(prop)};`);
     }
@@ -151,6 +190,10 @@ export class CfnResourceGenerator {
           return 'string';
         case 'array':
           return `${this.getTypeFromSchema(prop.items)}[]`;
+        case 'number':
+          return 'number';
+        case 'integer':
+          return 'number';
         default:
           return 'any';
       }
