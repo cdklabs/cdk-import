@@ -14,13 +14,13 @@ export interface ImportResourceTypeOptions extends DescribeResourceTypeOptions {
  * Entry point to import CFN resource types
  *
  * @param resourceName the name or ARN of the resource type
- * @param resourceVersion the version of the resource type
+ * @param _resourceVersion the version of the resource type (ignored for now)
  * @param outdir the out folder to use (defaults to the current directory)
  * @returns name of the resource type
  */
-export async function importResourceType(resourceName: string, resourceVersion: string, options: ImportResourceTypeOptions): Promise<string> {
+export async function importResourceType(resourceName: string, _resourceVersion: string, options: ImportResourceTypeOptions): Promise<string> {
   const outdir = options.outdir ?? '.';
-  const type = await describeResourceType(resourceName, resourceVersion, options);
+  const type = await describeResourceType(resourceName, options);
 
   const typeSchema = JSON.parse(type.Schema!);
 

@@ -2,6 +2,11 @@ import * as AWS from 'aws-sdk';
 import { createAwsClient } from './aws';
 import { TypeInfo } from './type-info';
 
+export interface ICloudFormationClient {
+  listTypes(input: AWS.CloudFormation.ListTypesInput): Promise<AWS.CloudFormation.ListTypesOutput>;
+  describeType(input: AWS.CloudFormation.DescribeTypeInput): Promise<AWS.CloudFormation.DescribeTypeOutput>;
+}
+
 export interface DescribeResourceTypeOptions {
   /**
    * Query with VISIBILITY=PRIVATE which means you can only import types that
@@ -9,19 +14,25 @@ export interface DescribeResourceTypeOptions {
    * types that you activated).
    */
   readonly private?: boolean;
-}
 
+  /**
+   * A client that performs calls to CloudFormation. You can provide a mock here
+   * for testing.
+   *
+   * @default - A real CloudFormation client
+   */
+  readonly client?: ICloudFormationClient;
+}
 
 /**
  * Calls the CFN resource type registry to fetch the type definition
  *
  * @param name the name or unique prefix of the resource type
- * @param _version the version of the type to resolve (NOT YET IMPLEMENTED)
  * @returns the type definition
  */
-export async function describeResourceType(name: string, _version?: string, options: DescribeResourceTypeOptions = {}): Promise<TypeInfo> {
-  const cfn = createAwsClient(AWS.CloudFormation);
+export async function describeResourceType(name: string, options: DescribeResourceTypeOptions = {}): Promise<TypeInfo> {
   const visibility = options.private ? 'PRIVATE' : 'PUBLIC';
+  const cfn = options.client ?? new CloudFormationClient();
 
   let typeArn;
 
@@ -38,7 +49,8 @@ export async function describeResourceType(name: string, _version?: string, opti
           TypeNamePrefix: name,
         },
         Visibility: visibility,
-      }).promise();
+      });
+
       if (res.TypeSummaries) {
         types.push(...res.TypeSummaries);
       }
@@ -55,7 +67,7 @@ export async function describeResourceType(name: string, _version?: string, opti
   const type = await cfn.describeType({
     Arn: typeArn,
     // TODO versioning
-  }).promise();
+  });
   if (!type.Schema) {
     throw new Error('CloudFormation Type ' + name + ' does not contain schema');
   }
@@ -67,4 +79,20 @@ export async function describeResourceType(name: string, _version?: string, opti
     Schema: type.Schema,
     SourceUrl: type.SourceUrl ?? type.Arn!,
   };
+}
+
+class CloudFormationClient implements ICloudFormationClient {
+  private readonly cfn: AWS.CloudFormation;
+
+  constructor() {
+    this.cfn = createAwsClient(AWS.CloudFormation);
+  }
+
+  public async describeType(input: AWS.CloudFormation.DescribeTypeInput): Promise<AWS.CloudFormation.DescribeTypeOutput> {
+    return this.cfn.describeType(input).promise();
+  }
+
+  public async listTypes(input: AWS.CloudFormation.ListTypesInput): Promise<AWS.CloudFormation.ListTypesOutput> {
+    return this.cfn.listTypes(input).promise();
+  }
 }

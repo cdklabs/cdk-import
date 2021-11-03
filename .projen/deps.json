@@ -18,10 +18,6 @@
       "type": "build"
     },
     {
-      "name": "aws-sdk-mock",
-      "type": "build"
-    },
-    {
       "name": "eslint",
       "type": "build"
     },
