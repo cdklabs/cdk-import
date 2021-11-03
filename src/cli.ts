@@ -2,10 +2,9 @@
 import * as fs from 'fs/promises';
 import * as os from 'os';
 import * as path from 'path';
-import * as minimist from 'minimist';
+import minimist from 'minimist';
 import { importResourceType } from '.';
 import { renderCode, SUPPORTED_LANGUAGES } from './languages';
-
 
 const args = minimist(process.argv.slice(2), {
   string: [

@@ -14,7 +14,6 @@ const project = new TypeScriptProject({
   ],
   devDeps: [
     'ts-node',
-    'aws-sdk-mock',
   ],
   bin: {
     'cdk-import': 'lib/cli.js',
