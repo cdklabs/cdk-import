@@ -2,6 +2,16 @@ import * as AWS from 'aws-sdk';
 import { createAwsClient } from './aws';
 import { TypeInfo } from './type-info';
 
+export interface DescribeResourceTypeOptions {
+  /**
+   * Query with VISIBILITY=PRIVATE which means you can only import types that
+   * are registred in your account (either types that you created or public
+   * types that you activated).
+   */
+  readonly private?: boolean;
+}
+
+
 /**
  * Calls the CFN resource type registry to fetch the type definition
  *
@@ -9,8 +19,9 @@ import { TypeInfo } from './type-info';
  * @param _version the version of the type to resolve (NOT YET IMPLEMENTED)
  * @returns the type definition
  */
-export async function describeResourceType(name: string, _version?: string): Promise<TypeInfo> {
+export async function describeResourceType(name: string, _version?: string, options: DescribeResourceTypeOptions = {}): Promise<TypeInfo> {
   const cfn = createAwsClient(AWS.CloudFormation);
+  const visibility = options.private ? 'PRIVATE' : 'PUBLIC';
 
   let typeArn;
 
@@ -24,10 +35,9 @@ export async function describeResourceType(name: string, _version?: string): Pro
         NextToken: token,
         Type: name.endsWith('MODULE') ? 'MODULE' : 'RESOURCE',
         Filters: {
-          Category: 'THIRD_PARTY',
           TypeNamePrefix: name,
         },
-        Visibility: 'PUBLIC',
+        Visibility: visibility,
       }).promise();
       if (res.TypeSummaries) {
         types.push(...res.TypeSummaries);

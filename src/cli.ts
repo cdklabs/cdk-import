@@ -15,6 +15,7 @@ const args = minimist(process.argv.slice(2), {
   ],
   boolean: [
     'help',
+    'private',
   ],
   alias: {
     outdir: 'o',
@@ -29,11 +30,12 @@ function showHelp() {
   console.log('  cdk-import -l LANGUAGE RESOURCE-NAME[@VERSION]');
   console.log();
   console.log('Options:');
-  console.log('  -l, --language     Output programming language                        [string]');
-  console.log('  -o, --outdir       Output directory                                   [string]  [default: "."]');
-  console.log('  --go-module        Go module name (required if language is "golang")  [string]');
-  console.log('  --java-package     Java package name (required if language is "java") [string]');
-  console.log('  -h, --help         Show this usage info                               [boolean]');
+  console.log('  -l, --language     Output programming language                            [string]');
+  console.log('  -o, --outdir       Output directory                                       [string]  [default: "."]');
+  console.log('  --go-module        Go module name (required if language is "golang")      [string]');
+  console.log('  --java-package     Java package name (required if language is "java")     [string]');
+  console.log('  --private          Import types registered in your AWS account and region [boolean]');
+  console.log('  -h, --help         Show this usage info                                   [boolean]');
   console.log('');
   console.log('Examples:');
   console.log();
@@ -48,6 +50,9 @@ function showHelp() {
   console.log();
   console.log('  Generates construct in Java and identifies the resource type by its ARN:');
   console.log('    cdk-import -l java --java-package "com.acme.myproject" arn:aws:cloudformation:...');
+  console.log();
+  console.log('  Generates construct for a private type:');
+  console.log('    cdk-import -l typescript --private Acme::SuperService::Friend::MODULE');
   console.log();
 }
 
@@ -68,7 +73,11 @@ void (async () => {
   try {
     const [resourceName, resourceVersion] = args._[0].split('@');
     const workdir = await fs.mkdtemp(path.join(os.tmpdir(), 'cdk-import'));
-    const typeName = await importResourceType(resourceName, resourceVersion, workdir);
+    const typeName = await importResourceType(resourceName, resourceVersion, {
+      outdir: workdir,
+      private: args.private,
+    });
+
     await renderCode({
       srcdir: workdir,
       language: args.language,
