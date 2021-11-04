@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@aws-cdk/core": "^1.130.0",
-    "aws-sdk": "^2.1020.0",
+    "aws-sdk": "^2.1021.0",
     "case": "^1.6.3",
     "jsii-srcmak": "^0.1.387",
     "json2jsii": "^0.2.40",
