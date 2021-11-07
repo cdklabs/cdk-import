@@ -15,7 +15,7 @@ export interface CfnEnforcerProps {
    *
    * @schema CfnEnforcerProps#ClusterID
    */
-  readonly clusterId?: string;
+  readonly clusterID?: string;
 
   /**
    * Secrets Manager ARN for kubeconfig file
@@ -71,7 +71,7 @@ export interface CfnEnforcerProps {
    *
    * @schema CfnEnforcerProps#ValueOverrideURL
    */
-  readonly valueOverrideUrl?: string;
+  readonly valueOverrideURL?: string;
 
   /**
    * Timeout for resource provider. Default 60 mins
@@ -85,7 +85,7 @@ export interface CfnEnforcerProps {
    *
    * @schema CfnEnforcerProps#VPCConfiguration
    */
-  readonly vpcConfiguration?: CfnEnforcerPropsVpcConfiguration;
+  readonly vPCConfiguration?: CfnEnforcerPropsVpcConfiguration;
 
 }
 
@@ -96,7 +96,7 @@ export interface CfnEnforcerProps {
 export function toJson_CfnEnforcerProps(obj: CfnEnforcerProps | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
-    'ClusterID': obj.clusterId,
+    'ClusterID': obj.clusterID,
     'KubeConfig': obj.kubeConfig,
     'RoleArn': obj.roleArn,
     'Namespace': obj.namespace,
@@ -104,9 +104,9 @@ export function toJson_CfnEnforcerProps(obj: CfnEnforcerProps | undefined): Reco
     'Values': obj.values,
     'ValueYaml': obj.valueYaml,
     'Version': obj.version,
-    'ValueOverrideURL': obj.valueOverrideUrl,
+    'ValueOverrideURL': obj.valueOverrideURL,
     'TimeOut': obj.timeOut,
-    'VPCConfiguration': toJson_CfnEnforcerPropsVpcConfiguration(obj.vpcConfiguration),
+    'VPCConfiguration': toJson_CfnEnforcerPropsVpcConfiguration(obj.vPCConfiguration),
   };
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
