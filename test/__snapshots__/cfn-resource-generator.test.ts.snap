@@ -15,7 +15,7 @@ export interface CfnEnforcerProps {
    *
    * @schema CfnEnforcerProps#ClusterID
    */
-  readonly clusterID?: string;
+  readonly clusterId?: string;
 
   /**
    * Secrets Manager ARN for kubeconfig file
@@ -71,7 +71,7 @@ export interface CfnEnforcerProps {
    *
    * @schema CfnEnforcerProps#ValueOverrideURL
    */
-  readonly valueOverrideURL?: string;
+  readonly valueOverrideUrl?: string;
 
   /**
    * Timeout for resource provider. Default 60 mins
@@ -85,7 +85,7 @@ export interface CfnEnforcerProps {
    *
    * @schema CfnEnforcerProps#VPCConfiguration
    */
-  readonly vPCConfiguration?: CfnEnforcerPropsVpcConfiguration;
+  readonly vpcConfiguration?: CfnEnforcerPropsVpcConfiguration;
 
 }
 
@@ -96,7 +96,7 @@ export interface CfnEnforcerProps {
 export function toJson_CfnEnforcerProps(obj: CfnEnforcerProps | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
-    'ClusterID': obj.clusterID,
+    'ClusterID': obj.clusterId,
     'KubeConfig': obj.kubeConfig,
     'RoleArn': obj.roleArn,
     'Namespace': obj.namespace,
@@ -104,9 +104,9 @@ export function toJson_CfnEnforcerProps(obj: CfnEnforcerProps | undefined): Reco
     'Values': obj.values,
     'ValueYaml': obj.valueYaml,
     'Version': obj.version,
-    'ValueOverrideURL': obj.valueOverrideURL,
+    'ValueOverrideURL': obj.valueOverrideUrl,
     'TimeOut': obj.timeOut,
-    'VPCConfiguration': toJson_CfnEnforcerPropsVpcConfiguration(obj.vPCConfiguration),
+    'VPCConfiguration': toJson_CfnEnforcerPropsVpcConfiguration(obj.vpcConfiguration),
   };
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
@@ -165,6 +165,11 @@ export class CfnEnforcer extends cdk.CfnResource {
   public static readonly CFN_RESOURCE_TYPE_NAME = \\"Aqua::Enterprise::Enforcer\\";
 
   /**
+   * Resource props.
+   */
+  public readonly props: CfnEnforcerProps;
+
+  /**
    * Attribute \`Aqua::Enterprise::Enforcer.ID\`
    * @link https://github.com/aquasecurity/aqua-helm.git
    */
@@ -179,6 +184,8 @@ export class CfnEnforcer extends cdk.CfnResource {
    */
   constructor(scope: cdk.Construct, id: string, props: CfnEnforcerProps) {
     super(scope, id, { type: CfnEnforcer.CFN_RESOURCE_TYPE_NAME, properties: toJson_CfnEnforcerProps(props)! });
+
+    this.props = props;
 
     this.attrId = cdk.Token.asString(this.getAtt('ID'));
   }
@@ -453,6 +460,11 @@ export class CfnSlo extends cdk.CfnResource {
   public static readonly CFN_RESOURCE_TYPE_NAME = \\"Datadog::SLOs::SLO\\";
 
   /**
+   * Resource props.
+   */
+  public readonly props: CfnSloProps;
+
+  /**
    * Attribute \`Datadog::SLOs::SLO.Modified\`
    */
   public readonly attrModified: string;
@@ -478,6 +490,8 @@ export class CfnSlo extends cdk.CfnResource {
    */
   constructor(scope: cdk.Construct, id: string, props: CfnSloProps) {
     super(scope, id, { type: CfnSlo.CFN_RESOURCE_TYPE_NAME, properties: toJson_CfnSloProps(props)! });
+
+    this.props = props;
 
     this.attrModified = cdk.Token.asString(this.getAtt('Modified'));
     this.attrId = cdk.Token.asString(this.getAtt('Id'));
@@ -860,6 +874,11 @@ export class CfnCluster extends cdk.CfnResource {
   public static readonly CFN_RESOURCE_TYPE_NAME = \\"AWSQS::EKS::Cluster\\";
 
   /**
+   * Resource props.
+   */
+  public readonly props: CfnClusterProps;
+
+  /**
    * Attribute \`AWSQS::EKS::Cluster.Arn\`
    * @link https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
    */
@@ -899,6 +918,8 @@ export class CfnCluster extends cdk.CfnResource {
    */
   constructor(scope: cdk.Construct, id: string, props: CfnClusterProps) {
     super(scope, id, { type: CfnCluster.CFN_RESOURCE_TYPE_NAME, properties: toJson_CfnClusterProps(props)! });
+
+    this.props = props;
 
     this.attrArn = cdk.Token.asString(this.getAtt('Arn'));
     this.attrEndpoint = cdk.Token.asString(this.getAtt('Endpoint'));

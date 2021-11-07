@@ -115,6 +115,13 @@ export class CfnResourceGenerator {
     code.line(`public static readonly CFN_RESOURCE_TYPE_NAME = "${this.typeName}";`);
     code.line();
 
+    // emit a "props" property which includes the set of props passed to the constructor
+    code.line('/**');
+    code.line(' * Resource props.');
+    code.line(' */');
+    code.line(`public readonly props: ${this.propsStructName};`);
+    code.line();
+
     for (const prop of this.resourceAttributes) {
       code.line('/**');
       code.line(` * Attribute \`${this.typeName}.${prop}\``);
@@ -137,6 +144,8 @@ export class CfnResourceGenerator {
     code.openBlock(`constructor(scope: cdk.Construct, id: string, props: ${this.propsStructName})`);
     code.line(`super(scope, id, { type: ${this.constructClassName}.CFN_RESOURCE_TYPE_NAME, properties: toJson_${this.propsStructName}(props)! });`);
     code.line('');
+    code.line('this.props = props;');
+    code.line();
     for (const prop of this.resourceAttributes) {
       const propertyName = `attr${pascal(prop)}`;
       code.line(`this.${propertyName} = ${this.renderGetAtt(prop)};`);
