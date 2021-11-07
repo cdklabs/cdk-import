@@ -10,10 +10,11 @@ const project = new TypeScriptProject({
     'proxy-agent',
     'case',
     'jsii-srcmak',
-    '@aws-cdk/core',
   ],
   devDeps: [
     'ts-node',
+    '@aws-cdk/core',
+    'constructs@^3',
   ],
   bin: {
     'cdk-import': 'lib/cli.js',
@@ -29,5 +30,7 @@ const project = new TypeScriptProject({
   autoApproveOptions: { allowedUsernames: ['cdklabs-automation'], secret: 'GITHUB_TOKEN' },
 });
 project.release.publisher.publishToNpm();
+project.addGitIgnore('/.tmp/');
+project.addPackageIgnore('/.tmp/');
 
 project.synth();
