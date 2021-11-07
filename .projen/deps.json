@@ -1,6 +1,10 @@
 {
   "dependencies": [
     {
+      "name": "@aws-cdk/core",
+      "type": "build"
+    },
+    {
       "name": "@types/jest",
       "type": "build"
     },
@@ -15,6 +19,11 @@
     },
     {
       "name": "@typescript-eslint/parser",
+      "type": "build"
+    },
+    {
+      "name": "constructs",
+      "version": "^3",
       "type": "build"
     },
     {
@@ -71,10 +80,6 @@
     {
       "name": "typescript",
       "type": "build"
-    },
-    {
-      "name": "@aws-cdk/core",
-      "type": "runtime"
     },
     {
       "name": "aws-sdk",

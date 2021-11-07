@@ -46,5 +46,6 @@ junit.xml
 /lib
 /dist/
 !/.eslintrc.json
+/.tmp/
 !/.github/workflows/release.yml
 !/.github/workflows/upgrade-main.yml

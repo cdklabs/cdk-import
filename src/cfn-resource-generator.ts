@@ -1,4 +1,4 @@
-import { camel, pascal } from 'case';
+import { pascal } from 'case';
 import * as j2j from 'json2jsii';
 import { TypeInfo } from './type-info';
 import { sanitizeTypeName } from './util';
@@ -115,19 +115,12 @@ export class CfnResourceGenerator {
     code.line(`public static readonly CFN_RESOURCE_TYPE_NAME = "${this.typeName}";`);
     code.line();
 
-    for (const prop of this.resourceProperties) {
-      const optionalMarker = this.schema.required?.indexOf(prop) === -1 ? ' | undefined' : '';
-      code.line('/**');
-      code.line(` * \`${this.typeName}.${prop}\``);
-      if (this.schema.properties[prop].description) {
-        code.line(` * ${this.schema.properties[prop].description}`);
-      }
-      if (this.typeDef.SourceUrl) {
-        code.line(` * @link ${this.typeDef.SourceUrl}`);
-      }
-      code.line(' */');
-      code.line(`public readonly ${camel(prop)}: ${this.getTypeOfProperty(prop)}${optionalMarker};`);
-    }
+    // emit a "props" property which includes the set of props passed to the constructor
+    code.line('/**');
+    code.line(' * Resource props.');
+    code.line(' */');
+    code.line(`public readonly props: ${this.propsStructName};`);
+    code.line();
 
     for (const prop of this.resourceAttributes) {
       code.line('/**');
@@ -151,9 +144,8 @@ export class CfnResourceGenerator {
     code.openBlock(`constructor(scope: cdk.Construct, id: string, props: ${this.propsStructName})`);
     code.line(`super(scope, id, { type: ${this.constructClassName}.CFN_RESOURCE_TYPE_NAME, properties: toJson_${this.propsStructName}(props)! });`);
     code.line('');
-    for (const prop of this.resourceProperties) {
-      code.line(`this.${camel(prop)} = props.${camel(prop)};`);
-    }
+    code.line('this.props = props;');
+    code.line();
     for (const prop of this.resourceAttributes) {
       const propertyName = `attr${pascal(prop)}`;
       code.line(`this.${propertyName} = ${this.renderGetAtt(prop)};`);
