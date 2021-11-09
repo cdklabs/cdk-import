@@ -1,3 +1,4 @@
+import * as Case from 'case';
 
 /**
  * convert the type name to a TypeScript class name by camel-casing and removing `::`
@@ -7,6 +8,10 @@
  */
 export function sanitizeTypeName(typeName: string) {
   const parts = typeName.split('::');
-  const lastPart = parts[parts.length - 1];
-  return lastPart.substr(0, 1).toUpperCase() + lastPart.substr(1).toLowerCase();
+  const lastParts = [parts[parts.length - 1]];
+  if (lastParts[0].toUpperCase() === 'MODULE') {
+    lastParts.unshift(parts[parts.length - 2]);
+  }
+
+  return lastParts.map(p => Case.pascal(p)).join('');
 }
