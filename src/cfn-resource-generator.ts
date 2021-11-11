@@ -1,5 +1,6 @@
 import { pascal } from 'case';
 import * as j2j from 'json2jsii';
+import { TypeGenerator } from 'json2jsii';
 import { TypeInfo } from './type-info';
 import { sanitizeTypeName } from './util';
 
@@ -24,8 +25,8 @@ export class CfnResourceGenerator {
     this.sanitizedTypeName = sanitizeTypeName(typeName);
     // this.resourceAttributes = this.schema.readOnlyProperties ? this.schema.readOnlyProperties.map((prop: string) => prop.replace(/^\/properties\//, '')) : [];
     // this.resourceProperties = Object.keys(this.schema.properties).filter(prop => this.resourceAttributes.indexOf(prop) === -1);
-    this.constructClassName = `Cfn${this.sanitizedTypeName}`;
-    this.propsStructName = `${this.constructClassName}Props`;
+    this.constructClassName = TypeGenerator.normalizeTypeName(`Cfn${this.sanitizedTypeName}`);
+    this.propsStructName = TypeGenerator.normalizeTypeName(`${this.constructClassName}Props`);
 
     this.resourceAttributes = new Array<string>();
     this.resourceProperties = new Array<string>();
