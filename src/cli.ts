@@ -83,7 +83,7 @@ void (async () => {
       outdir: args.outdir ?? '.',
       typeName: typeName,
       goModule: args['go-module'],
-      javaPacakge: args['java-package'],
+      javaPackage: args['java-package'],
     });
   } catch (e) {
     console.log(e);

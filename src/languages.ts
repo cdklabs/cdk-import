@@ -33,7 +33,7 @@ export interface RenderCodeOptions {
   /**
    * The name of the Java package to use for the generated code. Required if `language` is `java`.
    */
-  readonly javaPacakge?: string;
+  readonly javaPackage?: string;
 }
 
 export async function renderCode(options: RenderCodeOptions) {
@@ -61,13 +61,13 @@ export async function renderCode(options: RenderCodeOptions) {
       break;
 
     case 'java':
-      if (!options.javaPacakge) {
+      if (!options.javaPackage) {
         throw new Error('Java package name (`--java-package`) must be specified (e.g. "com.foo.bar.my.resource")');
       }
 
       srcmakopts.java = {
         outdir: options.outdir,
-        package: options.javaPacakge,
+        package: options.javaPackage,
       };
       break;
 
