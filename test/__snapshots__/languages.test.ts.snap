@@ -1565,7 +1565,7 @@ namespace AWSQS::EKS::Cluster
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.43.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.44.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[1.132.0]\\" />
     <PackageReference Include=\\"Amazon.CDK\\" Version=\\"[1.132.0]\\" />
     <PackageReference Include=\\"Amazon.CDK.CXAPI\\" Version=\\"[1.132.0]\\" />
@@ -3044,16 +3044,16 @@ public interface CfnClusterProps extends software.amazon.jsii.JsiiSerializable {
      * A builder for {@link CfnClusterProps}
      */
     public static final class Builder implements software.amazon.jsii.Builder<CfnClusterProps> {
-        private com.my.module.CfnClusterPropsResourcesVpcConfig resourcesVpcConfig;
-        private java.lang.String roleArn;
-        private java.util.List<java.lang.String> enabledClusterLoggingTypes;
-        private java.util.List<com.my.module.EncryptionConfigEntry> encryptionConfig;
-        private com.my.module.CfnClusterPropsKubernetesApiAccess kubernetesApiAccess;
-        private com.my.module.CfnClusterPropsKubernetesNetworkConfig kubernetesNetworkConfig;
-        private java.lang.String lambdaRoleName;
-        private java.lang.String name;
-        private java.util.List<com.my.module.CfnClusterPropsTags> tags;
-        private java.lang.String version;
+        com.my.module.CfnClusterPropsResourcesVpcConfig resourcesVpcConfig;
+        java.lang.String roleArn;
+        java.util.List<java.lang.String> enabledClusterLoggingTypes;
+        java.util.List<com.my.module.EncryptionConfigEntry> encryptionConfig;
+        com.my.module.CfnClusterPropsKubernetesApiAccess kubernetesApiAccess;
+        com.my.module.CfnClusterPropsKubernetesNetworkConfig kubernetesNetworkConfig;
+        java.lang.String lambdaRoleName;
+        java.lang.String name;
+        java.util.List<com.my.module.CfnClusterPropsTags> tags;
+        java.lang.String version;
 
         /**
          * Sets the value of {@link CfnClusterProps#getResourcesVpcConfig}
@@ -3168,7 +3168,7 @@ public interface CfnClusterProps extends software.amazon.jsii.JsiiSerializable {
          */
         @Override
         public CfnClusterProps build() {
-            return new Jsii$Proxy(resourcesVpcConfig, roleArn, enabledClusterLoggingTypes, encryptionConfig, kubernetesApiAccess, kubernetesNetworkConfig, lambdaRoleName, name, tags, version);
+            return new Jsii$Proxy(this);
         }
     }
 
@@ -3210,18 +3210,18 @@ public interface CfnClusterProps extends software.amazon.jsii.JsiiSerializable {
          * Constructor that initializes the object based on literal property values passed by the {@link Builder}.
          */
         @SuppressWarnings(\\"unchecked\\")
-        protected Jsii$Proxy(final com.my.module.CfnClusterPropsResourcesVpcConfig resourcesVpcConfig, final java.lang.String roleArn, final java.util.List<java.lang.String> enabledClusterLoggingTypes, final java.util.List<? extends com.my.module.EncryptionConfigEntry> encryptionConfig, final com.my.module.CfnClusterPropsKubernetesApiAccess kubernetesApiAccess, final com.my.module.CfnClusterPropsKubernetesNetworkConfig kubernetesNetworkConfig, final java.lang.String lambdaRoleName, final java.lang.String name, final java.util.List<? extends com.my.module.CfnClusterPropsTags> tags, final java.lang.String version) {
+        protected Jsii$Proxy(final Builder builder) {
             super(software.amazon.jsii.JsiiObject.InitializationMode.JSII);
-            this.resourcesVpcConfig = java.util.Objects.requireNonNull(resourcesVpcConfig, \\"resourcesVpcConfig is required\\");
-            this.roleArn = java.util.Objects.requireNonNull(roleArn, \\"roleArn is required\\");
-            this.enabledClusterLoggingTypes = enabledClusterLoggingTypes;
-            this.encryptionConfig = (java.util.List<com.my.module.EncryptionConfigEntry>)encryptionConfig;
-            this.kubernetesApiAccess = kubernetesApiAccess;
-            this.kubernetesNetworkConfig = kubernetesNetworkConfig;
-            this.lambdaRoleName = lambdaRoleName;
-            this.name = name;
-            this.tags = (java.util.List<com.my.module.CfnClusterPropsTags>)tags;
-            this.version = version;
+            this.resourcesVpcConfig = java.util.Objects.requireNonNull(builder.resourcesVpcConfig, \\"resourcesVpcConfig is required\\");
+            this.roleArn = java.util.Objects.requireNonNull(builder.roleArn, \\"roleArn is required\\");
+            this.enabledClusterLoggingTypes = builder.enabledClusterLoggingTypes;
+            this.encryptionConfig = (java.util.List<com.my.module.EncryptionConfigEntry>)builder.encryptionConfig;
+            this.kubernetesApiAccess = builder.kubernetesApiAccess;
+            this.kubernetesNetworkConfig = builder.kubernetesNetworkConfig;
+            this.lambdaRoleName = builder.lambdaRoleName;
+            this.name = builder.name;
+            this.tags = (java.util.List<com.my.module.CfnClusterPropsTags>)builder.tags;
+            this.version = builder.version;
         }
 
         @Override
@@ -3383,8 +3383,8 @@ public interface CfnClusterPropsKubernetesApiAccess extends software.amazon.jsii
      * A builder for {@link CfnClusterPropsKubernetesApiAccess}
      */
     public static final class Builder implements software.amazon.jsii.Builder<CfnClusterPropsKubernetesApiAccess> {
-        private java.util.List<com.my.module.KubernetesApiAccessEntry> roles;
-        private java.util.List<com.my.module.KubernetesApiAccessEntry> users;
+        java.util.List<com.my.module.KubernetesApiAccessEntry> roles;
+        java.util.List<com.my.module.KubernetesApiAccessEntry> users;
 
         /**
          * Sets the value of {@link CfnClusterPropsKubernetesApiAccess#getRoles}
@@ -3415,7 +3415,7 @@ public interface CfnClusterPropsKubernetesApiAccess extends software.amazon.jsii
          */
         @Override
         public CfnClusterPropsKubernetesApiAccess build() {
-            return new Jsii$Proxy(roles, users);
+            return new Jsii$Proxy(this);
         }
     }
 
@@ -3441,10 +3441,10 @@ public interface CfnClusterPropsKubernetesApiAccess extends software.amazon.jsii
          * Constructor that initializes the object based on literal property values passed by the {@link Builder}.
          */
         @SuppressWarnings(\\"unchecked\\")
-        protected Jsii$Proxy(final java.util.List<? extends com.my.module.KubernetesApiAccessEntry> roles, final java.util.List<? extends com.my.module.KubernetesApiAccessEntry> users) {
+        protected Jsii$Proxy(final Builder builder) {
             super(software.amazon.jsii.JsiiObject.InitializationMode.JSII);
-            this.roles = (java.util.List<com.my.module.KubernetesApiAccessEntry>)roles;
-            this.users = (java.util.List<com.my.module.KubernetesApiAccessEntry>)users;
+            this.roles = (java.util.List<com.my.module.KubernetesApiAccessEntry>)builder.roles;
+            this.users = (java.util.List<com.my.module.KubernetesApiAccessEntry>)builder.users;
         }
 
         @Override
@@ -3526,7 +3526,7 @@ public interface CfnClusterPropsKubernetesNetworkConfig extends software.amazon.
      * A builder for {@link CfnClusterPropsKubernetesNetworkConfig}
      */
     public static final class Builder implements software.amazon.jsii.Builder<CfnClusterPropsKubernetesNetworkConfig> {
-        private java.lang.String serviceIpv4Cidr;
+        java.lang.String serviceIpv4Cidr;
 
         /**
          * Sets the value of {@link CfnClusterPropsKubernetesNetworkConfig#getServiceIpv4Cidr}
@@ -3545,7 +3545,7 @@ public interface CfnClusterPropsKubernetesNetworkConfig extends software.amazon.
          */
         @Override
         public CfnClusterPropsKubernetesNetworkConfig build() {
-            return new Jsii$Proxy(serviceIpv4Cidr);
+            return new Jsii$Proxy(this);
         }
     }
 
@@ -3568,9 +3568,9 @@ public interface CfnClusterPropsKubernetesNetworkConfig extends software.amazon.
         /**
          * Constructor that initializes the object based on literal property values passed by the {@link Builder}.
          */
-        protected Jsii$Proxy(final java.lang.String serviceIpv4Cidr) {
+        protected Jsii$Proxy(final Builder builder) {
             super(software.amazon.jsii.JsiiObject.InitializationMode.JSII);
-            this.serviceIpv4Cidr = serviceIpv4Cidr;
+            this.serviceIpv4Cidr = builder.serviceIpv4Cidr;
         }
 
         @Override
@@ -3678,11 +3678,11 @@ public interface CfnClusterPropsResourcesVpcConfig extends software.amazon.jsii.
      * A builder for {@link CfnClusterPropsResourcesVpcConfig}
      */
     public static final class Builder implements software.amazon.jsii.Builder<CfnClusterPropsResourcesVpcConfig> {
-        private java.util.List<java.lang.String> subnetIds;
-        private java.lang.Boolean endpointPrivateAccess;
-        private java.lang.Boolean endpointPublicAccess;
-        private java.util.List<java.lang.String> publicAccessCidrs;
-        private java.util.List<java.lang.String> securityGroupIds;
+        java.util.List<java.lang.String> subnetIds;
+        java.lang.Boolean endpointPrivateAccess;
+        java.lang.Boolean endpointPublicAccess;
+        java.util.List<java.lang.String> publicAccessCidrs;
+        java.util.List<java.lang.String> securityGroupIds;
 
         /**
          * Sets the value of {@link CfnClusterPropsResourcesVpcConfig#getSubnetIds}
@@ -3746,7 +3746,7 @@ public interface CfnClusterPropsResourcesVpcConfig extends software.amazon.jsii.
          */
         @Override
         public CfnClusterPropsResourcesVpcConfig build() {
-            return new Jsii$Proxy(subnetIds, endpointPrivateAccess, endpointPublicAccess, publicAccessCidrs, securityGroupIds);
+            return new Jsii$Proxy(this);
         }
     }
 
@@ -3777,13 +3777,13 @@ public interface CfnClusterPropsResourcesVpcConfig extends software.amazon.jsii.
         /**
          * Constructor that initializes the object based on literal property values passed by the {@link Builder}.
          */
-        protected Jsii$Proxy(final java.util.List<java.lang.String> subnetIds, final java.lang.Boolean endpointPrivateAccess, final java.lang.Boolean endpointPublicAccess, final java.util.List<java.lang.String> publicAccessCidrs, final java.util.List<java.lang.String> securityGroupIds) {
+        protected Jsii$Proxy(final Builder builder) {
             super(software.amazon.jsii.JsiiObject.InitializationMode.JSII);
-            this.subnetIds = java.util.Objects.requireNonNull(subnetIds, \\"subnetIds is required\\");
-            this.endpointPrivateAccess = endpointPrivateAccess;
-            this.endpointPublicAccess = endpointPublicAccess;
-            this.publicAccessCidrs = publicAccessCidrs;
-            this.securityGroupIds = securityGroupIds;
+            this.subnetIds = java.util.Objects.requireNonNull(builder.subnetIds, \\"subnetIds is required\\");
+            this.endpointPrivateAccess = builder.endpointPrivateAccess;
+            this.endpointPublicAccess = builder.endpointPublicAccess;
+            this.publicAccessCidrs = builder.publicAccessCidrs;
+            this.securityGroupIds = builder.securityGroupIds;
         }
 
         @Override
@@ -3893,8 +3893,8 @@ public interface CfnClusterPropsTags extends software.amazon.jsii.JsiiSerializab
      * A builder for {@link CfnClusterPropsTags}
      */
     public static final class Builder implements software.amazon.jsii.Builder<CfnClusterPropsTags> {
-        private java.lang.String key;
-        private java.lang.String value;
+        java.lang.String key;
+        java.lang.String value;
 
         /**
          * Sets the value of {@link CfnClusterPropsTags#getKey}
@@ -3923,7 +3923,7 @@ public interface CfnClusterPropsTags extends software.amazon.jsii.JsiiSerializab
          */
         @Override
         public CfnClusterPropsTags build() {
-            return new Jsii$Proxy(key, value);
+            return new Jsii$Proxy(this);
         }
     }
 
@@ -3948,10 +3948,10 @@ public interface CfnClusterPropsTags extends software.amazon.jsii.JsiiSerializab
         /**
          * Constructor that initializes the object based on literal property values passed by the {@link Builder}.
          */
-        protected Jsii$Proxy(final java.lang.String key, final java.lang.String value) {
+        protected Jsii$Proxy(final Builder builder) {
             super(software.amazon.jsii.JsiiObject.InitializationMode.JSII);
-            this.key = java.util.Objects.requireNonNull(key, \\"key is required\\");
-            this.value = java.util.Objects.requireNonNull(value, \\"value is required\\");
+            this.key = java.util.Objects.requireNonNull(builder.key, \\"key is required\\");
+            this.value = java.util.Objects.requireNonNull(builder.value, \\"value is required\\");
         }
 
         @Override
@@ -4037,8 +4037,8 @@ public interface EncryptionConfigEntry extends software.amazon.jsii.JsiiSerializ
      * A builder for {@link EncryptionConfigEntry}
      */
     public static final class Builder implements software.amazon.jsii.Builder<EncryptionConfigEntry> {
-        private com.my.module.Provider provider;
-        private java.util.List<java.lang.String> resources;
+        com.my.module.Provider provider;
+        java.util.List<java.lang.String> resources;
 
         /**
          * Sets the value of {@link EncryptionConfigEntry#getProvider}
@@ -4068,7 +4068,7 @@ public interface EncryptionConfigEntry extends software.amazon.jsii.JsiiSerializ
          */
         @Override
         public EncryptionConfigEntry build() {
-            return new Jsii$Proxy(provider, resources);
+            return new Jsii$Proxy(this);
         }
     }
 
@@ -4093,10 +4093,10 @@ public interface EncryptionConfigEntry extends software.amazon.jsii.JsiiSerializ
         /**
          * Constructor that initializes the object based on literal property values passed by the {@link Builder}.
          */
-        protected Jsii$Proxy(final com.my.module.Provider provider, final java.util.List<java.lang.String> resources) {
+        protected Jsii$Proxy(final Builder builder) {
             super(software.amazon.jsii.JsiiObject.InitializationMode.JSII);
-            this.provider = provider;
-            this.resources = resources;
+            this.provider = builder.provider;
+            this.resources = builder.resources;
         }
 
         @Override
@@ -4188,9 +4188,9 @@ public interface KubernetesApiAccessEntry extends software.amazon.jsii.JsiiSeria
      * A builder for {@link KubernetesApiAccessEntry}
      */
     public static final class Builder implements software.amazon.jsii.Builder<KubernetesApiAccessEntry> {
-        private java.lang.String arn;
-        private java.util.List<java.lang.String> groups;
-        private java.lang.String username;
+        java.lang.String arn;
+        java.util.List<java.lang.String> groups;
+        java.lang.String username;
 
         /**
          * Sets the value of {@link KubernetesApiAccessEntry#getArn}
@@ -4229,7 +4229,7 @@ public interface KubernetesApiAccessEntry extends software.amazon.jsii.JsiiSeria
          */
         @Override
         public KubernetesApiAccessEntry build() {
-            return new Jsii$Proxy(arn, groups, username);
+            return new Jsii$Proxy(this);
         }
     }
 
@@ -4256,11 +4256,11 @@ public interface KubernetesApiAccessEntry extends software.amazon.jsii.JsiiSeria
         /**
          * Constructor that initializes the object based on literal property values passed by the {@link Builder}.
          */
-        protected Jsii$Proxy(final java.lang.String arn, final java.util.List<java.lang.String> groups, final java.lang.String username) {
+        protected Jsii$Proxy(final Builder builder) {
             super(software.amazon.jsii.JsiiObject.InitializationMode.JSII);
-            this.arn = arn;
-            this.groups = groups;
-            this.username = username;
+            this.arn = builder.arn;
+            this.groups = builder.groups;
+            this.username = builder.username;
         }
 
         @Override
@@ -4356,7 +4356,7 @@ public interface Provider extends software.amazon.jsii.JsiiSerializable {
      * A builder for {@link Provider}
      */
     public static final class Builder implements software.amazon.jsii.Builder<Provider> {
-        private java.lang.String keyArn;
+        java.lang.String keyArn;
 
         /**
          * Sets the value of {@link Provider#getKeyArn}
@@ -4376,7 +4376,7 @@ public interface Provider extends software.amazon.jsii.JsiiSerializable {
          */
         @Override
         public Provider build() {
-            return new Jsii$Proxy(keyArn);
+            return new Jsii$Proxy(this);
         }
     }
 
@@ -4399,9 +4399,9 @@ public interface Provider extends software.amazon.jsii.JsiiSerializable {
         /**
          * Constructor that initializes the object based on literal property values passed by the {@link Builder}.
          */
-        protected Jsii$Proxy(final java.lang.String keyArn) {
+        protected Jsii$Proxy(final Builder builder) {
             super(software.amazon.jsii.JsiiObject.InitializationMode.JSII);
-            this.keyArn = keyArn;
+            this.keyArn = builder.keyArn;
         }
 
         @Override
