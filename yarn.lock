@@ -2219,9 +2219,9 @@ ecc-jsbn@~0.1.1:
     safer-buffer "^2.1.0"
 
 electron-to-chromium@^1.3.896:
-  version "1.3.903"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.903.tgz#e2d3c3809f4ef05fdbe5cc88969dfc94b1bd15b9"
-  integrity sha512-+PnYAyniRRTkNq56cqYDLq9LyklZYk0hqoDy9GpcU11H5QjRmFZVDbxtgHUMK/YzdNTcn1XWP5gb+hFlSCr20g==
+  version "1.3.904"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.904.tgz#52a353994faeb0f2a9fab3606b4e0614d1af7b58"
+  integrity sha512-x5uZWXcVNYkTh4JubD7KSC1VMKz0vZwJUqVwY3ihsW0bst1BXDe494Uqbg3Y0fDGVjJqA8vEeGuvO5foyH2+qw==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -4106,7 +4106,7 @@ jsesc@^2.5.1:
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-2.5.2.tgz#80564d2e483dacf6e8ef209650a67df3f0c283a4"
   integrity sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==
 
-jsii-pacmak@^1.44.2:
+jsii-pacmak@^1.45.0:
   version "1.45.0"
   resolved "https://registry.yarnpkg.com/jsii-pacmak/-/jsii-pacmak-1.45.0.tgz#341509f88c03b2104d8d6f56557cf787ff379fa5"
   integrity sha512-w952TgVg/kRQyoF8zHp6G6y8On3LM5RJXBJ7doWvicWG9v9HXgHA5zfFgkSFCNtM3IcN7htDtg2kVpE7fv+IBw==
@@ -4153,18 +4153,18 @@ jsii-rosetta@^1.45.0:
     workerpool "^6.1.5"
     yargs "^16.2.0"
 
-jsii-srcmak@^0.1.403:
-  version "0.1.403"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.403.tgz#3e1e55d6ba00f8eb449f37cc706c2285f6c164ae"
-  integrity sha512-4zVGSBRedeMdkSuVDp6wrIkm7fepjvnP9abn5M/Jip9b8ShWCmC05Nsb69uOpdqM6nZW6fxPEIrIELH9faVlBg==
+jsii-srcmak@^0.1.404:
+  version "0.1.404"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.404.tgz#f9962cf374c2195e5e2e2cd0e7a48bdee7341915"
+  integrity sha512-HoDB6EcQhQ80GZizajSZPmeNexEcf1jWlLF8EsdX/fxu+CoHdZlXGcMSJA4ReX66h4wM+OPtXd3wslUwnZLmNg==
   dependencies:
     fs-extra "^9.1.0"
-    jsii "^1.44.2"
-    jsii-pacmak "^1.44.2"
+    jsii "^1.45.0"
+    jsii-pacmak "^1.45.0"
     ncp "^2.0.0"
     yargs "^15.4.1"
 
-jsii@1.45.0, jsii@^1.44.2:
+jsii@1.45.0, jsii@^1.45.0:
   version "1.45.0"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-1.45.0.tgz#d37c3dc46594f9c5dc2acb988d8e56179464943c"
   integrity sha512-QaCV8d1pFMcFM+cVRRMXI/tfhgylH2T0+vrn51pIMkmA1ixqrBN4gQwTAskrNcjIKVHVndW5eR8IT4MFDMMOqw==
@@ -4235,10 +4235,10 @@ json-stringify-safe@^5.0.1, json-stringify-safe@~5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
-json2jsii@^0.2.56:
-  version "0.2.56"
-  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.2.56.tgz#d08a3932ea2da4bd5a37f4a3a9d2808a9d0760f2"
-  integrity sha512-mfm0t4CHA4rMxUMDlJAjgHk/zkoz7xjHgEYC0VdXow7AK4ej479uc7Ls6XJ790/YA03upAL42u+4ogbGs1vHAA==
+json2jsii@^0.2.57:
+  version "0.2.57"
+  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.2.57.tgz#6ae9ba4e1b0bffdfcdd068855eb310fb42ebe5b2"
+  integrity sha512-V0vR2SUyrs0xPvPEqSdQSlmupQNO8K6QDGIOLNmQtEcmBXTINuXmOc4bDk9k1XLQBxZFVAnkZopVsFehwoPk2Q==
   dependencies:
     camelcase "^6.2.1"
     json-schema "^0.4.0"
@@ -4354,9 +4354,9 @@ libnpmconfig@^1.2.1:
     ini "^1.3.5"
 
 lines-and-columns@^1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
-  integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.1.tgz#2710d566aed4caeb6761f4c78d94435f15a939e9"
+  integrity sha512-91ZNKhhjixyL5pQ0a6Chny53eg1Q7usO/eaU6Jjws6BhclcINGKG4zDkA6Wq11pZ6oqvElwBV+rnRTfG7t1Xmw==
 
 load-json-file@^4.0.0:
   version "4.0.0"
@@ -5300,10 +5300,10 @@ progress@^2.0.0, progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.34.10:
-  version "0.34.10"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.34.10.tgz#5ab73f3a683dee4b85e49a78997ae7d0325690a4"
-  integrity sha512-jdOvATVXQXCoprHp5sZLrNjO9eVuA3mIcj3PvsrR59l1jQDsd5O4Iuba3VV3Q50KEqciU7YtX/UV+c3NPLt/Cw==
+projen@^0.34.12:
+  version "0.34.12"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.34.12.tgz#35bc8bdbcc498fdfb41f89e0517b9a6009b6151b"
+  integrity sha512-Yagiq79ZC0p1RpHkc68KEidtneHpvn+yzrBK40QShlJ78vQZ2pzK/FN+f0kwoCk0F1OY2TKpGmqtWpe7/daCuA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -6330,9 +6330,9 @@ ts-node@^10.4.0:
     yn "3.1.1"
 
 tsconfig-paths@^3.11.0, tsconfig-paths@^3.9.0:
-  version "3.11.0"
-  resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.11.0.tgz#954c1fe973da6339c78e06b03ce2e48810b65f36"
-  integrity sha512-7ecdYDnIdmv639mmDwslG6KQg1Z9STTz1j7Gcz0xa+nshh/gKDAHcPxRbWOsA3SPp0tXP2leTcY9Kw+NAkfZzA==
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.12.0.tgz#19769aca6ee8f6a1a341e38c8fa45dd9fb18899b"
+  integrity sha512-e5adrnOYT6zqVnWqZu7i/BQ3BnhzvGbjEjejFXO20lKIKpwTaupkCPgEfv4GZK1IBciJUEhYs3J3p75FdaTFVg==
   dependencies:
     "@types/json5" "^0.0.29"
     json5 "^1.0.1"
