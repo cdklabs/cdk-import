@@ -1102,11 +1102,6 @@ ansi-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
   integrity sha1-w7M6te42DYbg5ijwRorn7yfWVN8=
 
-ansi-regex@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-4.1.0.tgz#8b9f8f08cf1acb843756a839ca8c7e3168c51997"
-  integrity sha512-1apePfXM1UOSqw0o9IiFAovVz9M5S1Dg+4TrDwfMewQ6p/rmMueb7tWZjQ1rx4Loy1ArBggoqGpfqqdI4rondg==
-
 ansi-regex@^5.0.0, ansi-regex@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.1.tgz#082cb2c89c9fe8659a311a53bd6a4dc5301db304"
@@ -3787,13 +3782,13 @@ jest-jasmine2@^27.4.2:
     pretty-format "^27.4.2"
     throat "^6.0.1"
 
-jest-junit@^12:
-  version "12.3.0"
-  resolved "https://registry.yarnpkg.com/jest-junit/-/jest-junit-12.3.0.tgz#ee41a74e439eecdc8965f163f83035cce5998d6d"
-  integrity sha512-+NmE5ogsEjFppEl90GChrk7xgz8xzvF0f+ZT5AnhW6suJC93gvQtmQjfyjDnE0Z2nXJqEkxF0WXlvjG/J+wn/g==
+jest-junit@^13:
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/jest-junit/-/jest-junit-13.0.0.tgz#479be347457aad98ae8a5983a23d7c3ec526c9a3"
+  integrity sha512-JSHR+Dhb32FGJaiKkqsB7AR3OqWKtldLd6ZH2+FJ8D4tsweb8Id8zEVReU4+OlrRO1ZluqJLQEETm+Q6/KilBg==
   dependencies:
     mkdirp "^1.0.4"
-    strip-ansi "^5.2.0"
+    strip-ansi "^6.0.1"
     uuid "^8.3.2"
     xml "^1.0.1"
 
@@ -4154,10 +4149,10 @@ jsii-rosetta@^1.46.0:
     workerpool "^6.1.5"
     yargs "^16.2.0"
 
-jsii-srcmak@^0.1.413:
-  version "0.1.413"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.413.tgz#7e9bd37612a6bf1a56c5fa0e343295a2db287750"
-  integrity sha512-q4qD7M0MUGuMG4dq7qkoEyfhYlX/erNmLFeRBfrufjucftEKdNlK22xcAfj0ykh6GWsHh19Ri5NC5D5b5wtGIA==
+jsii-srcmak@^0.1.414:
+  version "0.1.414"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.414.tgz#13b56fb3eef241a2f2f28be0563bd4c44e485b33"
+  integrity sha512-2HzoAqmRjSAjMBPTMX2MeeY+6AclIQYLV+H05N1ihm3OSaLQrM7uoTOtq7XixD/zziKwejEsTps9OG3A4ZK7LA==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.46.0"
@@ -4231,10 +4226,10 @@ json-stringify-safe@^5.0.1, json-stringify-safe@~5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
-json2jsii@^0.2.67:
-  version "0.2.67"
-  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.2.67.tgz#8ab6c10213edec381bc8d12734842dcb239ac7ba"
-  integrity sha512-D9/lkoo2BJ2o3h4Ky/2BEciCOZ5EC1Q9KEZ3ZL1oa49STnNGiNotdrWOLkxMWUVd/VVOxA/WYjtpGDqUMy3jYA==
+json2jsii@^0.2.68:
+  version "0.2.68"
+  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.2.68.tgz#bd4a30f596127fa4e7832cd584184751e4a92edf"
+  integrity sha512-yXRH32haSpy5u4AGD5YHQI9kNtFDt0InZzp37bHUH1CoTAbUfRVoUKL9afC0hiFkHnfUZPH11zqqKJp5+3yG+w==
   dependencies:
     camelcase "^6.2.1"
     json-schema "^0.4.0"
@@ -5296,10 +5291,10 @@ progress@^2.0.0, progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.36.0:
-  version "0.36.0"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.36.0.tgz#e3201f2963a50bb1be16ce37d7a0aa03f5f9907f"
-  integrity sha512-j8bN/CnvuBHDVri2We3lssMHJLWDO2r9lLi2e7RQeYz1UGYu4hu445SEyoi8inkf0D4TZrVFjNk3gLbCslMVBQ==
+projen@^0.36.3:
+  version "0.36.3"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.36.3.tgz#c8c8a25e11215b26785f15f06a4b289ed9944aec"
+  integrity sha512-hxWkaYBXt8CyJnpt0gyIWQr48H7lH2rUkuvv6vUZ48mJ444qWJQt2p0wGimfpVxHE0hCaptwf0r8JTZTrYVQxQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -6081,13 +6076,6 @@ strip-ansi@^3.0.0, strip-ansi@^3.0.1:
   integrity sha1-ajhfuIU9lS1f8F0Oiq+UJ43GPc8=
   dependencies:
     ansi-regex "^2.0.0"
-
-strip-ansi@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-5.2.0.tgz#8c9a536feb6afc962bdfa5b104a5091c1ad9c0ae"
-  integrity sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==
-  dependencies:
-    ansi-regex "^4.1.0"
 
 strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
