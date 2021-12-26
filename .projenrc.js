@@ -25,7 +25,7 @@ const project = new typescript.TypeScriptProject({
     },
   },
 
-  minNodeVersion: '14.0.0',
+  minNodeVersion: '14.17.0',
 
   projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
   autoApproveUpgrades: true,
