@@ -25,6 +25,8 @@ const project = new typescript.TypeScriptProject({
     },
   },
 
+  minNodeVersion: '14.0.0',
+
   projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
   autoApproveUpgrades: true,
   autoApproveOptions: { allowedUsernames: ['cdklabs-automation'], secret: 'GITHUB_TOKEN' },
