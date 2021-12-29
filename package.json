@@ -47,8 +47,8 @@
   "dependencies": {
     "aws-sdk": "^2.1048.0",
     "case": "^1.6.3",
-    "jsii-srcmak": "^0.1.428",
-    "json2jsii": "^0.2.88",
+    "jsii-srcmak": "^0.1.429",
+    "json2jsii": "^0.2.89",
     "minimist": "^1.2.5",
     "proxy-agent": "^5.0.0"
   },
