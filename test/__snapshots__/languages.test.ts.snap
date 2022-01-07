@@ -1565,12 +1565,12 @@ namespace AWSQS::EKS::Cluster
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.50.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.51.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[1.138.0]\\" />
     <PackageReference Include=\\"Amazon.CDK\\" Version=\\"[1.138.0]\\" />
     <PackageReference Include=\\"Amazon.CDK.CXAPI\\" Version=\\"[1.138.0]\\" />
     <PackageReference Include=\\"Amazon.CDK.RegionInfo\\" Version=\\"[1.138.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[3.3.180]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[3.3.181]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2314,42 +2314,42 @@ func (c *jsiiProxy_CfnCluster) ValidateProperties(_properties interface{}) {
 // A resource that creates Amazon Elastic Kubernetes Service (Amazon EKS) clusters.
 type CfnClusterProps struct {
 	// An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
-	ResourcesVpcConfig *CfnClusterPropsResourcesVpcConfig \`json:\\"resourcesVpcConfig\\"\`
+	ResourcesVpcConfig *CfnClusterPropsResourcesVpcConfig \`json:\\"resourcesVpcConfig\\" yaml:\\"resourcesVpcConfig\\"\`
 	// Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role.
 	//
 	// This provides permissions for Amazon EKS to call other AWS APIs.
-	RoleArn *string \`json:\\"roleArn\\"\`
+	RoleArn *string \`json:\\"roleArn\\" yaml:\\"roleArn\\"\`
 	// Enables exporting of logs from the Kubernetes control plane to Amazon CloudWatch Logs.
 	//
 	// By default, logs from the cluster control plane are not exported to CloudWatch Logs. The valid log types are api, audit, authenticator, controllerManager, and scheduler.
-	EnabledClusterLoggingTypes *[]*string \`json:\\"enabledClusterLoggingTypes\\"\`
+	EnabledClusterLoggingTypes *[]*string \`json:\\"enabledClusterLoggingTypes\\" yaml:\\"enabledClusterLoggingTypes\\"\`
 	// Encryption configuration for the cluster.
-	EncryptionConfig *[]*EncryptionConfigEntry \`json:\\"encryptionConfig\\"\`
-	KubernetesApiAccess *CfnClusterPropsKubernetesApiAccess \`json:\\"kubernetesApiAccess\\"\`
+	EncryptionConfig *[]*EncryptionConfigEntry \`json:\\"encryptionConfig\\" yaml:\\"encryptionConfig\\"\`
+	KubernetesApiAccess *CfnClusterPropsKubernetesApiAccess \`json:\\"kubernetesApiAccess\\" yaml:\\"kubernetesApiAccess\\"\`
 	// Network configuration for Amazon EKS cluster.
-	KubernetesNetworkConfig *CfnClusterPropsKubernetesNetworkConfig \`json:\\"kubernetesNetworkConfig\\"\`
+	KubernetesNetworkConfig *CfnClusterPropsKubernetesNetworkConfig \`json:\\"kubernetesNetworkConfig\\" yaml:\\"kubernetesNetworkConfig\\"\`
 	// Name of the AWS Identity and Access Management (IAM) role used for clusters that have the public endpoint disabled.
 	//
 	// this provides permissions for Lambda to be invoked and attach to the cluster VPC
-	LambdaRoleName *string \`json:\\"lambdaRoleName\\"\`
+	LambdaRoleName *string \`json:\\"lambdaRoleName\\" yaml:\\"lambdaRoleName\\"\`
 	// A unique name for your cluster.
-	Name *string \`json:\\"name\\"\`
-	Tags *[]*CfnClusterPropsTags \`json:\\"tags\\"\`
+	Name *string \`json:\\"name\\" yaml:\\"name\\"\`
+	Tags *[]*CfnClusterPropsTags \`json:\\"tags\\" yaml:\\"tags\\"\`
 	// Desired Kubernetes version for your cluster.
 	//
 	// If you don't specify this value, the cluster uses the latest version from Amazon EKS.
-	Version *string \`json:\\"version\\"\`
+	Version *string \`json:\\"version\\" yaml:\\"version\\"\`
 }
 
 type CfnClusterPropsKubernetesApiAccess struct {
-	Roles *[]*KubernetesApiAccessEntry \`json:\\"roles\\"\`
-	Users *[]*KubernetesApiAccessEntry \`json:\\"users\\"\`
+	Roles *[]*KubernetesApiAccessEntry \`json:\\"roles\\" yaml:\\"roles\\"\`
+	Users *[]*KubernetesApiAccessEntry \`json:\\"users\\" yaml:\\"users\\"\`
 }
 
 // Network configuration for Amazon EKS cluster.
 type CfnClusterPropsKubernetesNetworkConfig struct {
 	// Specify the range from which cluster services will receive IPv4 addresses.
-	ServiceIpv4Cidr *string \`json:\\"serviceIpv4Cidr\\"\`
+	ServiceIpv4Cidr *string \`json:\\"serviceIpv4Cidr\\" yaml:\\"serviceIpv4Cidr\\"\`
 }
 
 // An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
@@ -2357,43 +2357,43 @@ type CfnClusterPropsResourcesVpcConfig struct {
 	// Specify subnets for your Amazon EKS worker nodes.
 	//
 	// Amazon EKS creates cross-account elastic network interfaces in these subnets to allow communication between your worker nodes and the Kubernetes control plane.
-	SubnetIds *[]*string \`json:\\"subnetIds\\"\`
+	SubnetIds *[]*string \`json:\\"subnetIds\\" yaml:\\"subnetIds\\"\`
 	// Set this value to true to enable private access for your cluster's Kubernetes API server endpoint.
 	//
 	// If you enable private access, Kubernetes API requests from within your cluster's VPC use the private VPC endpoint. The default value for this parameter is false , which disables private access for your Kubernetes API server. If you disable private access and you have worker nodes or AWS Fargate pods in the cluster, then ensure that publicAccessCidrs includes the necessary CIDR blocks for communication with the worker nodes or Fargate pods.
-	EndpointPrivateAccess *bool \`json:\\"endpointPrivateAccess\\"\`
+	EndpointPrivateAccess *bool \`json:\\"endpointPrivateAccess\\" yaml:\\"endpointPrivateAccess\\"\`
 	// Set this value to false to disable public access to your cluster's Kubernetes API server endpoint.
 	//
 	// If you disable public access, your cluster's Kubernetes API server can only receive requests from within the cluster VPC. The default value for this parameter is true , which enables public access for your Kubernetes API server.
-	EndpointPublicAccess *bool \`json:\\"endpointPublicAccess\\"\`
+	EndpointPublicAccess *bool \`json:\\"endpointPublicAccess\\" yaml:\\"endpointPublicAccess\\"\`
 	// The CIDR blocks that are allowed access to your cluster's public Kubernetes API server endpoint.
 	//
 	// Communication to the endpoint from addresses outside of the CIDR blocks that you specify is denied. The default value is 0.0.0.0/0 . If you've disabled private endpoint access and you have worker nodes or AWS Fargate pods in the cluster, then ensure that you specify the necessary CIDR blocks.
-	PublicAccessCidrs *[]*string \`json:\\"publicAccessCidrs\\"\`
+	PublicAccessCidrs *[]*string \`json:\\"publicAccessCidrs\\" yaml:\\"publicAccessCidrs\\"\`
 	// Specify one or more security groups for the cross-account elastic network interfaces that Amazon EKS creates to use to allow communication between your worker nodes and the Kubernetes control plane.
 	//
 	// If you don't specify a security group, the default security group for your VPC is used.
-	SecurityGroupIds *[]*string \`json:\\"securityGroupIds\\"\`
+	SecurityGroupIds *[]*string \`json:\\"securityGroupIds\\" yaml:\\"securityGroupIds\\"\`
 }
 
 type CfnClusterPropsTags struct {
-	Key *string \`json:\\"key\\"\`
-	Value *string \`json:\\"value\\"\`
+	Key *string \`json:\\"key\\" yaml:\\"key\\"\`
+	Value *string \`json:\\"value\\" yaml:\\"value\\"\`
 }
 
 // The encryption configuration for the cluster.
 type EncryptionConfigEntry struct {
-	Provider *Provider \`json:\\"provider\\"\`
+	Provider *Provider \`json:\\"provider\\" yaml:\\"provider\\"\`
 	// Specifies the resources to be encrypted.
 	//
 	// The only supported value is \\"secrets\\".
-	Resources *[]*string \`json:\\"resources\\"\`
+	Resources *[]*string \`json:\\"resources\\" yaml:\\"resources\\"\`
 }
 
 type KubernetesApiAccessEntry struct {
-	Arn *string \`json:\\"arn\\"\`
-	Groups *[]*string \`json:\\"groups\\"\`
-	Username *string \`json:\\"username\\"\`
+	Arn *string \`json:\\"arn\\" yaml:\\"arn\\"\`
+	Groups *[]*string \`json:\\"groups\\" yaml:\\"groups\\"\`
+	Username *string \`json:\\"username\\" yaml:\\"username\\"\`
 }
 
 // AWS Key Management Service (AWS KMS) customer master key (CMK).
@@ -2403,7 +2403,7 @@ type Provider struct {
 	// Amazon Resource Name (ARN) or alias of the customer master key (CMK).
 	//
 	// The CMK must be symmetric, created in the same region as the cluster, and if the CMK was created in a different account, the user must have access to the CMK.
-	KeyArn *string \`json:\\"keyArn\\"\`
+	KeyArn *string \`json:\\"keyArn\\" yaml:\\"keyArn\\"\`
 }
 
 ",
