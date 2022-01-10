@@ -38,7 +38,7 @@
     "jest-junit": "^13",
     "json-schema": "^0.4.0",
     "npm-check-updates": "^12",
-    "projen": "^0.50.12",
+    "projen": "^0.50.15",
     "standard-version": "^9",
     "ts-jest": "^27.1.2",
     "ts-node": "^10.4.0",
@@ -48,7 +48,7 @@
     "aws-sdk": "^2.1053.0",
     "case": "^1.6.3",
     "jsii-srcmak": "^0.1.441",
-    "json2jsii": "^0.2.100",
+    "json2jsii": "^0.2.101",
     "minimist": "^1.2.5",
     "proxy-agent": "^5.0.0"
   },
