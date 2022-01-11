@@ -24,7 +24,7 @@
     "projen": "npx projen"
   },
   "devDependencies": {
-    "@aws-cdk/core": "^1.138.1",
+    "@aws-cdk/core": "^1.138.2",
     "@types/jest": "^26.0.24",
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
@@ -38,17 +38,17 @@
     "jest-junit": "^13",
     "json-schema": "^0.4.0",
     "npm-check-updates": "^12",
-    "projen": "^0.50.12",
+    "projen": "^0.50.21",
     "standard-version": "^9",
     "ts-jest": "^27.1.2",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "aws-sdk": "^2.1053.0",
+    "aws-sdk": "^2.1054.0",
     "case": "^1.6.3",
     "jsii-srcmak": "^0.1.441",
-    "json2jsii": "^0.2.100",
+    "json2jsii": "^0.2.101",
     "minimist": "^1.2.5",
     "proxy-agent": "^5.0.0"
   },
@@ -69,6 +69,7 @@
       "json",
       "lcov",
       "clover",
+      "cobertura",
       "text"
     ],
     "coverageDirectory": "coverage",
