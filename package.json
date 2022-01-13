@@ -13,6 +13,7 @@
     "eslint": "npx projen eslint",
     "package": "npx projen package",
     "post-compile": "npx projen post-compile",
+    "post-upgrade": "npx projen post-upgrade",
     "pre-compile": "npx projen pre-compile",
     "release": "npx projen release",
     "test": "npx projen test",
@@ -24,7 +25,7 @@
     "projen": "npx projen"
   },
   "devDependencies": {
-    "@aws-cdk/core": "^1.138.2",
+    "@aws-cdk/core": "^1.139.0",
     "@types/jest": "^26.0.24",
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
@@ -38,17 +39,17 @@
     "jest-junit": "^13",
     "json-schema": "^0.4.0",
     "npm-check-updates": "^12",
-    "projen": "^0.50.21",
+    "projen": "^0.50.27",
     "standard-version": "^9",
     "ts-jest": "^27.1.2",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "aws-sdk": "^2.1054.0",
+    "aws-sdk": "^2.1056.0",
     "case": "^1.6.3",
-    "jsii-srcmak": "^0.1.441",
-    "json2jsii": "^0.2.101",
+    "jsii-srcmak": "^0.1.444",
+    "json2jsii": "^0.2.103",
     "minimist": "^1.2.5",
     "proxy-agent": "^5.0.0"
   },
