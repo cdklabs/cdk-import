@@ -4,10 +4,7 @@ import * as caseutil from 'case';
 import { srcmak, Options } from 'jsii-srcmak';
 
 const cdkDeps = [
-  '@aws-cdk/cloud-assembly-schema',
-  '@aws-cdk/core',
-  '@aws-cdk/cx-api',
-  '@aws-cdk/region-info',
+  'aws-cdk-lib',
   'constructs',
 ];
 

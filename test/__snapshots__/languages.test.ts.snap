@@ -14,14 +14,14 @@ namespace AWSQS::EKS::Cluster
     ///
     /// <strong>Link</strong>: https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
     /// </remarks>
-    [JsiiClass(nativeType: typeof(AWSQS::EKS::Cluster.CfnCluster), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnCluster\\", parametersJson: \\"[{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- scope in which this resource is defined.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"scope\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"@aws-cdk/core.Construct\\\\\\"}},{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- scoped id of the resource.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"id\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}},{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- resource properties.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"props\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterProps\\\\\\"}}]\\")]
+    [JsiiClass(nativeType: typeof(AWSQS::EKS::Cluster.CfnCluster), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnCluster\\", parametersJson: \\"[{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- scope in which this resource is defined.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"scope\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"constructs.Construct\\\\\\"}},{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- scoped id of the resource.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"id\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}},{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- resource properties.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"props\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterProps\\\\\\"}}]\\")]
     public class CfnCluster : Amazon.CDK.CfnResource
     {
         /// <summary>Create a new \`AWSQS::EKS::Cluster\`.</summary>
         /// <param name=\\"scope\\">- scope in which this resource is defined.</param>
         /// <param name=\\"id\\">- scoped id of the resource.</param>
         /// <param name=\\"props\\">- resource properties.</param>
-        public CfnCluster(Amazon.CDK.Construct scope, string id, AWSQS::EKS::Cluster.ICfnClusterProps props): base(new DeputyProps(new object?[]{scope, id, props}))
+        public CfnCluster(Constructs.Construct scope, string id, AWSQS::EKS::Cluster.ICfnClusterProps props): base(new DeputyProps(new object?[]{scope, id, props}))
         {
         }
 
@@ -1452,10 +1452,7 @@ namespace AWSQS::EKS::Cluster.Internal.DependencyResolution
     {
         public Anchor()
         {
-            new Amazon.CDK.CloudAssembly.Schema.Internal.DependencyResolution.Anchor();
             new Amazon.CDK.Internal.DependencyResolution.Anchor();
-            new Amazon.CDK.CXAPI.Internal.DependencyResolution.Anchor();
-            new Amazon.CDK.RegionInfo.Internal.DependencyResolution.Anchor();
             new Constructs.Internal.DependencyResolution.Anchor();
         }
     }
@@ -1566,11 +1563,8 @@ namespace AWSQS::EKS::Cluster
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.52.1,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[1.144.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK\\" Version=\\"[1.144.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CXAPI\\" Version=\\"[1.144.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.RegionInfo\\" Version=\\"[1.144.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[3.3.211]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.12.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.0.57]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -1594,25 +1588,24 @@ Map {
 package awsqs-eks-cluster
 
 import (
-	\\"awscdkcore\\"
-
 	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
 	_init_ \\"github.com/my/module/awsqs-eks-cluster/jsii\\"
 
-	\\"github.com/aws/constructs-go/constructs/v3\\"
+	\\"github.com/aws/aws-cdk-go/awscdk/v2\\"
+	\\"github.com/aws/constructs-go/constructs/v10\\"
 	\\"github.com/my/module/awsqs-eks-cluster/internal\\"
 )
 
 // A CloudFormation \`AWSQS::EKS::Cluster\`.
 type CfnCluster interface {
-	awscdkcore.CfnResource
+	awscdk.CfnResource
 	AttrArn() *string
 	AttrCertificateAuthorityData() *string
 	AttrClusterSecurityGroupId() *string
 	AttrEncryptionConfigKeyArn() *string
 	AttrEndpoint() *string
 	AttrOIDCIssuerURL() *string
-	CfnOptions() awscdkcore.ICfnResourceOptions
+	CfnOptions() awscdk.ICfnResourceOptions
 	CfnProperties() *map[string]interface{}
 	CfnResourceType() *string
 	CreationStack() *[]*string
@@ -1623,39 +1616,33 @@ type CfnCluster interface {
 	LambdaRoleName() *string
 	LogicalId() *string
 	Name() *string
-	Node() awscdkcore.ConstructNode
+	Node() constructs.Node
 	Ref() *string
 	ResourcesVpcConfig() interface{}
 	RoleArn() *string
-	Stack() awscdkcore.Stack
+	Stack() awscdk.Stack
 	Tags() *[]interface{}
 	UpdatedProperites() *map[string]interface{}
 	Version() *string
 	AddDeletionOverride(path *string)
-	AddDependsOn(target awscdkcore.CfnResource)
+	AddDependsOn(target awscdk.CfnResource)
 	AddMetadata(key *string, value interface{})
 	AddOverride(path *string, value interface{})
 	AddPropertyDeletionOverride(propertyPath *string)
 	AddPropertyOverride(propertyPath *string, value interface{})
-	ApplyRemovalPolicy(policy awscdkcore.RemovalPolicy, options *awscdkcore.RemovalPolicyOptions)
-	GetAtt(attributeName *string) awscdkcore.Reference
+	ApplyRemovalPolicy(policy awscdk.RemovalPolicy, options *awscdk.RemovalPolicyOptions)
+	GetAtt(attributeName *string) awscdk.Reference
 	GetMetadata(key *string) interface{}
-	OnPrepare()
-	OnSynthesize(session constructs.ISynthesisSession)
-	OnValidate() *[]*string
 	OverrideLogicalId(newLogicalId *string)
-	Prepare()
 	RenderProperties(props *map[string]interface{}) *map[string]interface{}
 	ShouldSynthesize() *bool
-	Synthesize(session awscdkcore.ISynthesisSession)
 	ToString() *string
-	Validate() *[]*string
 	ValidateProperties(_properties interface{})
 }
 
 // The jsii proxy struct for CfnCluster
 type jsiiProxy_CfnCluster struct {
-	internal.Type__awscdkcoreCfnResource
+	internal.Type__awscdkCfnResource
 }
 
 func (j *jsiiProxy_CfnCluster) AttrArn() *string {
@@ -1718,8 +1705,8 @@ func (j *jsiiProxy_CfnCluster) AttrOIDCIssuerURL() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnCluster) CfnOptions() awscdkcore.ICfnResourceOptions {
-	var returns awscdkcore.ICfnResourceOptions
+func (j *jsiiProxy_CfnCluster) CfnOptions() awscdk.ICfnResourceOptions {
+	var returns awscdk.ICfnResourceOptions
 	_jsii_.Get(
 		j,
 		\\"cfnOptions\\",
@@ -1828,8 +1815,8 @@ func (j *jsiiProxy_CfnCluster) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnCluster) Node() awscdkcore.ConstructNode {
-	var returns awscdkcore.ConstructNode
+func (j *jsiiProxy_CfnCluster) Node() constructs.Node {
+	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		\\"node\\",
@@ -1868,8 +1855,8 @@ func (j *jsiiProxy_CfnCluster) RoleArn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnCluster) Stack() awscdkcore.Stack {
-	var returns awscdkcore.Stack
+func (j *jsiiProxy_CfnCluster) Stack() awscdk.Stack {
+	var returns awscdk.Stack
 	_jsii_.Get(
 		j,
 		\\"stack\\",
@@ -1910,7 +1897,7 @@ func (j *jsiiProxy_CfnCluster) Version() *string {
 
 
 // Create a new \`AWSQS::EKS::Cluster\`.
-func NewCfnCluster(scope awscdkcore.Construct, id *string, props *CfnClusterProps) CfnCluster {
+func NewCfnCluster(scope constructs.Construct, id *string, props *CfnClusterProps) CfnCluster {
 	_init_.Initialize()
 
 	j := jsiiProxy_CfnCluster{}
@@ -1925,7 +1912,7 @@ func NewCfnCluster(scope awscdkcore.Construct, id *string, props *CfnClusterProp
 }
 
 // Create a new \`AWSQS::EKS::Cluster\`.
-func NewCfnCluster_Override(c CfnCluster, scope awscdkcore.Construct, id *string, props *CfnClusterProps) {
+func NewCfnCluster_Override(c CfnCluster, scope constructs.Construct, id *string, props *CfnClusterProps) {
 	_init_.Initialize()
 
 	_jsii_.Create(
@@ -1972,7 +1959,10 @@ func CfnCluster_IsCfnResource(construct constructs.IConstruct) *bool {
 	return returns
 }
 
-// Return whether the given object is a Construct.
+// Checks if \`x\` is a construct.
+//
+// Returns: true if \`x\` is an object created from a class which extends \`Construct\`.
+// Deprecated: use \`x instanceof Construct\` instead
 func CfnCluster_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
@@ -2012,7 +2002,7 @@ func (c *jsiiProxy_CfnCluster) AddDeletionOverride(path *string) {
 //
 // This can be used for resources across stacks (or nested stack) boundaries
 // and the dependency will automatically be transferred to the relevant scope.
-func (c *jsiiProxy_CfnCluster) AddDependsOn(target awscdkcore.CfnResource) {
+func (c *jsiiProxy_CfnCluster) AddDependsOn(target awscdk.CfnResource) {
 	_jsii_.InvokeVoid(
 		c,
 		\\"addDependsOn\\",
@@ -2115,7 +2105,7 @@ func (c *jsiiProxy_CfnCluster) AddPropertyOverride(propertyPath *string, value i
 //
 // The resource can be deleted (\`RemovalPolicy.DESTROY\`), or left in your AWS
 // account for data recovery and cleanup later (\`RemovalPolicy.RETAIN\`).
-func (c *jsiiProxy_CfnCluster) ApplyRemovalPolicy(policy awscdkcore.RemovalPolicy, options *awscdkcore.RemovalPolicyOptions) {
+func (c *jsiiProxy_CfnCluster) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, options *awscdk.RemovalPolicyOptions) {
 	_jsii_.InvokeVoid(
 		c,
 		\\"applyRemovalPolicy\\",
@@ -2127,8 +2117,8 @@ func (c *jsiiProxy_CfnCluster) ApplyRemovalPolicy(policy awscdkcore.RemovalPolic
 //
 // Ideally, use generated attribute accessors (e.g. \`resource.arn\`), but this can be used for future compatibility
 // in case there is no generated attribute.
-func (c *jsiiProxy_CfnCluster) GetAtt(attributeName *string) awscdkcore.Reference {
-	var returns awscdkcore.Reference
+func (c *jsiiProxy_CfnCluster) GetAtt(attributeName *string) awscdk.Reference {
+	var returns awscdk.Reference
 
 	_jsii_.Invoke(
 		c,
@@ -2160,75 +2150,12 @@ func (c *jsiiProxy_CfnCluster) GetMetadata(key *string) interface{} {
 	return returns
 }
 
-// Perform final modifications before synthesis.
-//
-// This method can be implemented by derived constructs in order to perform
-// final changes before synthesis. prepare() will be called after child
-// constructs have been prepared.
-//
-// This is an advanced framework feature. Only use this if you
-// understand the implications.
-func (c *jsiiProxy_CfnCluster) OnPrepare() {
-	_jsii_.InvokeVoid(
-		c,
-		\\"onPrepare\\",
-		nil, // no parameters
-	)
-}
-
-// Allows this construct to emit artifacts into the cloud assembly during synthesis.
-//
-// This method is usually implemented by framework-level constructs such as \`Stack\` and \`Asset\`
-// as they participate in synthesizing the cloud assembly.
-func (c *jsiiProxy_CfnCluster) OnSynthesize(session constructs.ISynthesisSession) {
-	_jsii_.InvokeVoid(
-		c,
-		\\"onSynthesize\\",
-		[]interface{}{session},
-	)
-}
-
-// Validate the current construct.
-//
-// This method can be implemented by derived constructs in order to perform
-// validation logic. It is called on all constructs before synthesis.
-//
-// Returns: An array of validation error messages, or an empty array if the construct is valid.
-func (c *jsiiProxy_CfnCluster) OnValidate() *[]*string {
-	var returns *[]*string
-
-	_jsii_.Invoke(
-		c,
-		\\"onValidate\\",
-		nil, // no parameters
-		&returns,
-	)
-
-	return returns
-}
-
 // Overrides the auto-generated logical ID with a specific ID.
 func (c *jsiiProxy_CfnCluster) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		\\"overrideLogicalId\\",
 		[]interface{}{newLogicalId},
-	)
-}
-
-// Perform final modifications before synthesis.
-//
-// This method can be implemented by derived constructs in order to perform
-// final changes before synthesis. prepare() will be called after child
-// constructs have been prepared.
-//
-// This is an advanced framework feature. Only use this if you
-// understand the implications.
-func (c *jsiiProxy_CfnCluster) Prepare() {
-	_jsii_.InvokeVoid(
-		c,
-		\\"prepare\\",
-		nil, // no parameters
 	)
 }
 
@@ -2262,18 +2189,6 @@ func (c *jsiiProxy_CfnCluster) ShouldSynthesize() *bool {
 	return returns
 }
 
-// Allows this construct to emit artifacts into the cloud assembly during synthesis.
-//
-// This method is usually implemented by framework-level constructs such as \`Stack\` and \`Asset\`
-// as they participate in synthesizing the cloud assembly.
-func (c *jsiiProxy_CfnCluster) Synthesize(session awscdkcore.ISynthesisSession) {
-	_jsii_.InvokeVoid(
-		c,
-		\\"synthesize\\",
-		[]interface{}{session},
-	)
-}
-
 // Returns a string representation of this construct.
 //
 // Returns: a string representation of this resource
@@ -2283,25 +2198,6 @@ func (c *jsiiProxy_CfnCluster) ToString() *string {
 	_jsii_.Invoke(
 		c,
 		\\"toString\\",
-		nil, // no parameters
-		&returns,
-	)
-
-	return returns
-}
-
-// Validate the current construct.
-//
-// This method can be implemented by derived constructs in order to perform
-// validation logic. It is called on all constructs before synthesis.
-//
-// Returns: An array of validation error messages, or an empty array if the construct is valid.
-func (c *jsiiProxy_CfnCluster) Validate() *[]*string {
-	var returns *[]*string
-
-	_jsii_.Invoke(
-		c,
-		\\"validate\\",
 		nil, // no parameters
 		&returns,
 	)
@@ -2453,28 +2349,22 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: \\"logicalId\\", GoGetter: \\"LogicalId\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"name\\", GoGetter: \\"Name\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"node\\", GoGetter: \\"Node\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"onPrepare\\", GoMethod: \\"OnPrepare\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"onSynthesize\\", GoMethod: \\"OnSynthesize\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"onValidate\\", GoMethod: \\"OnValidate\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"overrideLogicalId\\", GoMethod: \\"OverrideLogicalId\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"prepare\\", GoMethod: \\"Prepare\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"ref\\", GoGetter: \\"Ref\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"renderProperties\\", GoMethod: \\"RenderProperties\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"resourcesVpcConfig\\", GoGetter: \\"ResourcesVpcConfig\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"roleArn\\", GoGetter: \\"RoleArn\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"shouldSynthesize\\", GoMethod: \\"ShouldSynthesize\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"stack\\", GoGetter: \\"Stack\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"synthesize\\", GoMethod: \\"Synthesize\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"tags\\", GoGetter: \\"Tags\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"toString\\", GoMethod: \\"ToString\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"updatedProperites\\", GoGetter: \\"UpdatedProperites\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"validate\\", GoMethod: \\"Validate\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"validateProperties\\", GoMethod: \\"ValidateProperties\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"version\\", GoGetter: \\"Version\\"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CfnCluster{}
-			_jsii_.InitJsiiProxy(&j.Type__awscdkcoreCfnResource)
+			_jsii_.InitJsiiProxy(&j.Type__awscdkCfnResource)
 			return &j
 		},
 	)
@@ -2514,9 +2404,9 @@ func init() {
 ",
   "awsqs-eks-cluster/internal/types.go" => "package internal
 import (
-	\\"awscdkcore\\"
+	\\"github.com/aws/aws-cdk-go/awscdk/v2\\"
 )
-type Type__awscdkcoreCfnResource = awscdkcore.CfnResource
+type Type__awscdkCfnResource = awscdk.CfnResource
 ",
   "awsqs-eks-cluster/jsii/jsii.go" => "// Package jsii contains the functionaility needed for jsii packages to
 // initialize their dependencies and themselves. Users should never need to use this package
@@ -2525,15 +2415,12 @@ type Type__awscdkcoreCfnResource = awscdkcore.CfnResource
 package jsii
 
 import (
-	awscdkcloudassemblyschema \\"awscdkcloudassemblyschema/jsii\\"
-	awscdkcore                \\"awscdkcore/jsii\\"
-	awscdkcxapi               \\"awscdkcxapi/jsii\\"
-	awscdkregioninfo          \\"awscdkregioninfo/jsii\\"
-	_                         \\"embed\\"
+	_          \\"embed\\"
 
-	_jsii_                    \\"github.com/aws/jsii-runtime-go/runtime\\"
+	_jsii_     \\"github.com/aws/jsii-runtime-go/runtime\\"
 
-	constructs                \\"github.com/aws/constructs-go/constructs/v3/jsii\\"
+	awscdk     \\"github.com/aws/aws-cdk-go/awscdk/v2/jsii\\"
+	constructs \\"github.com/aws/constructs-go/constructs/v10/jsii\\"
 )
 
 //go:embed 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz
@@ -2543,10 +2430,7 @@ var tarball []byte
 // The implementation is idempotent (and hence safe to be called over and over).
 func Initialize() {
 	// Ensure all dependencies are initialized
-	awscdkcloudassemblyschema.Initialize()
-	awscdkcore.Initialize()
-	awscdkcxapi.Initialize()
-	awscdkregioninfo.Initialize()
+	awscdk.Initialize()
 	constructs.Initialize()
 
 	// Load this library into the kernel
@@ -2612,7 +2496,7 @@ public final class $Module extends JsiiModule {
 
     @Override
     public List<Class<? extends JsiiModule>> getDependencies() {
-        return asList(software.amazon.awscdk.cloudassembly.schema.$Module.class, software.amazon.awscdk.core.$Module.class, software.amazon.awscdk.cxapi.$Module.class, software.amazon.awscdk.regioninfo.$Module.class, software.constructs.$Module.class);
+        return asList(software.amazon.awscdk.$Module.class, software.constructs.$Module.class);
     }
 
     @Override
@@ -2644,7 +2528,7 @@ public final class $Module extends JsiiModule {
  */
 @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnCluster\\")
-public class CfnCluster extends software.amazon.awscdk.core.CfnResource {
+public class CfnCluster extends software.amazon.awscdk.CfnResource {
 
     protected CfnCluster(final software.amazon.jsii.JsiiObjectRef objRef) {
         super(objRef);
@@ -2666,7 +2550,7 @@ public class CfnCluster extends software.amazon.awscdk.core.CfnResource {
      * @param props - resource properties. This parameter is required.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
-    public CfnCluster(final @org.jetbrains.annotations.NotNull software.amazon.awscdk.core.Construct scope, final @org.jetbrains.annotations.NotNull java.lang.String id, final @org.jetbrains.annotations.NotNull com.my.module.CfnClusterProps props) {
+    public CfnCluster(final @org.jetbrains.annotations.NotNull software.constructs.Construct scope, final @org.jetbrains.annotations.NotNull java.lang.String id, final @org.jetbrains.annotations.NotNull com.my.module.CfnClusterProps props) {
         super(software.amazon.jsii.JsiiObject.InitializationMode.JSII);
         software.amazon.jsii.JsiiEngine.getInstance().createNewObject(this, new Object[] { java.util.Objects.requireNonNull(scope, \\"scope is required\\"), java.util.Objects.requireNonNull(id, \\"id is required\\"), java.util.Objects.requireNonNull(props, \\"props is required\\") });
     }
@@ -2816,15 +2700,15 @@ public class CfnCluster extends software.amazon.awscdk.core.CfnResource {
          * @param id - scoped id of the resource. This parameter is required.
          */
         @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
-        public static Builder create(final software.amazon.awscdk.core.Construct scope, final java.lang.String id) {
+        public static Builder create(final software.constructs.Construct scope, final java.lang.String id) {
             return new Builder(scope, id);
         }
 
-        private final software.amazon.awscdk.core.Construct scope;
+        private final software.constructs.Construct scope;
         private final java.lang.String id;
         private final com.my.module.CfnClusterProps.Builder props;
 
-        private Builder(final software.amazon.awscdk.core.Construct scope, final java.lang.String id) {
+        private Builder(final software.constructs.Construct scope, final java.lang.String id) {
             this.scope = scope;
             this.id = id;
             this.props = new com.my.module.CfnClusterProps.Builder();
@@ -4480,11 +4364,12 @@ import typing_extensions
 
 from ._jsii import *
 
-import aws_cdk.core
+import aws_cdk
+import constructs
 
 
 class CfnCluster(
-    aws_cdk.core.CfnResource,
+    aws_cdk.CfnResource,
     metaclass=jsii.JSIIMeta,
     jsii_type=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnCluster\\",
 ):
@@ -4496,7 +4381,7 @@ class CfnCluster(
 
     def __init__(
         self,
-        scope: aws_cdk.core.Construct,
+        scope: constructs.Construct,
         id: builtins.str,
         *,
         resources_vpc_config: \\"CfnClusterPropsResourcesVpcConfig\\",
@@ -5327,10 +5212,7 @@ import jsii
 import publication
 import typing_extensions
 
-import aws_cdk.cloud_assembly_schema._jsii
-import aws_cdk.core._jsii
-import aws_cdk.cx_api._jsii
-import aws_cdk.region_info._jsii
+import aws_cdk._jsii
 import constructs._jsii
 
 __jsii_assembly__ = jsii.JSIIAssembly.load(
@@ -5354,7 +5236,8 @@ publication.publish()
 exports[`typescript 1`] = `
 Map {
   "awsqs-eks-cluster.ts" => "// Generated by cdk-import
-import * as cdk from '@aws-cdk/core';
+import * as cdk from 'aws-cdk-lib';
+import * as constructs from 'constructs';
 
 /**
  * A resource that creates Amazon Elastic Kubernetes Service (Amazon EKS) clusters.
@@ -5820,7 +5703,7 @@ export class CfnCluster extends cdk.CfnResource {
    * @param id    - scoped id of the resource
    * @param props - resource properties
    */
-  constructor(scope: cdk.Construct, id: string, props: CfnClusterProps) {
+  constructor(scope: constructs.Construct, id: string, props: CfnClusterProps) {
     super(scope, id, { type: CfnCluster.CFN_RESOURCE_TYPE_NAME, properties: toJson_CfnClusterProps(props)! });
 
     this.name = props.name;
