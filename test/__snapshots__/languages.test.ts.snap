@@ -234,7 +234,7 @@ namespace AWSQS::EKS::Cluster
         /// <remarks>
         /// <strong>Schema</strong>: CfnClusterProps#ResourcesVpcConfig
         /// </remarks>
-        [JsiiProperty(name: \\"resourcesVpcConfig\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsResourcesVpcConfig\\\\\\"}\\", isOverride: true)]
+        [JsiiProperty(name: \\"resourcesVpcConfig\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsResourcesVpcConfig\\\\\\"}\\")]
         public AWSQS::EKS::Cluster.ICfnClusterPropsResourcesVpcConfig ResourcesVpcConfig
         {
             get;
@@ -247,7 +247,7 @@ namespace AWSQS::EKS::Cluster
         ///
         /// <strong>Schema</strong>: CfnClusterProps#RoleArn
         /// </remarks>
-        [JsiiProperty(name: \\"roleArn\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOverride: true)]
+        [JsiiProperty(name: \\"roleArn\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
         public string RoleArn
         {
             get;
@@ -261,7 +261,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterProps#EnabledClusterLoggingTypes
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"enabledClusterLoggingTypes\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"enabledClusterLoggingTypes\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
         public string[]? EnabledClusterLoggingTypes
         {
             get;
@@ -273,7 +273,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterProps#EncryptionConfig
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"encryptionConfig\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.EncryptionConfigEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"encryptionConfig\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.EncryptionConfigEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
         public AWSQS::EKS::Cluster.IEncryptionConfigEntry[]? EncryptionConfig
         {
             get;
@@ -284,7 +284,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterProps#KubernetesApiAccess
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"kubernetesApiAccess\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesApiAccess\\\\\\"}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"kubernetesApiAccess\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesApiAccess\\\\\\"}\\", isOptional: true)]
         public AWSQS::EKS::Cluster.ICfnClusterPropsKubernetesApiAccess? KubernetesApiAccess
         {
             get;
@@ -296,7 +296,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterProps#KubernetesNetworkConfig
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"kubernetesNetworkConfig\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesNetworkConfig\\\\\\"}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"kubernetesNetworkConfig\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesNetworkConfig\\\\\\"}\\", isOptional: true)]
         public AWSQS::EKS::Cluster.ICfnClusterPropsKubernetesNetworkConfig? KubernetesNetworkConfig
         {
             get;
@@ -310,7 +310,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterProps#LambdaRoleName
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"lambdaRoleName\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"lambdaRoleName\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true)]
         public string? LambdaRoleName
         {
             get;
@@ -322,7 +322,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterProps#Name
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"name\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"name\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true)]
         public string? Name
         {
             get;
@@ -333,7 +333,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterProps#Tags
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"tags\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsTags\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"tags\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsTags\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
         public AWSQS::EKS::Cluster.ICfnClusterPropsTags[]? Tags
         {
             get;
@@ -347,7 +347,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterProps#Version
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"version\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"version\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true)]
         public string? Version
         {
             get;
@@ -372,7 +372,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterPropsKubernetesApiAccess#Roles
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"roles\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"roles\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
         public AWSQS::EKS::Cluster.IKubernetesApiAccessEntry[]? Roles
         {
             get;
@@ -383,7 +383,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterPropsKubernetesApiAccess#Users
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"users\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"users\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
         public AWSQS::EKS::Cluster.IKubernetesApiAccessEntry[]? Users
         {
             get;
@@ -410,7 +410,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterPropsKubernetesNetworkConfig#ServiceIpv4Cidr
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"serviceIpv4Cidr\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"serviceIpv4Cidr\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true)]
         public string? ServiceIpv4Cidr
         {
             get;
@@ -440,7 +440,7 @@ namespace AWSQS::EKS::Cluster
         ///
         /// <strong>Schema</strong>: CfnClusterPropsResourcesVpcConfig#SubnetIds
         /// </remarks>
-        [JsiiProperty(name: \\"subnetIds\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOverride: true)]
+        [JsiiProperty(name: \\"subnetIds\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\")]
         public string[] SubnetIds
         {
             get;
@@ -454,7 +454,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterPropsResourcesVpcConfig#EndpointPrivateAccess
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"endpointPrivateAccess\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"boolean\\\\\\"}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"endpointPrivateAccess\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"boolean\\\\\\"}\\", isOptional: true)]
         public bool? EndpointPrivateAccess
         {
             get;
@@ -468,7 +468,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterPropsResourcesVpcConfig#EndpointPublicAccess
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"endpointPublicAccess\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"boolean\\\\\\"}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"endpointPublicAccess\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"boolean\\\\\\"}\\", isOptional: true)]
         public bool? EndpointPublicAccess
         {
             get;
@@ -482,7 +482,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterPropsResourcesVpcConfig#PublicAccessCidrs
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"publicAccessCidrs\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"publicAccessCidrs\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
         public string[]? PublicAccessCidrs
         {
             get;
@@ -496,7 +496,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterPropsResourcesVpcConfig#SecurityGroupIds
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"securityGroupIds\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"securityGroupIds\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
         public string[]? SecurityGroupIds
         {
             get;
@@ -522,7 +522,7 @@ namespace AWSQS::EKS::Cluster
         /// <remarks>
         /// <strong>Schema</strong>: CfnClusterPropsTags#Key
         /// </remarks>
-        [JsiiProperty(name: \\"key\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOverride: true)]
+        [JsiiProperty(name: \\"key\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
         public string Key
         {
             get;
@@ -532,7 +532,7 @@ namespace AWSQS::EKS::Cluster
         /// <remarks>
         /// <strong>Schema</strong>: CfnClusterPropsTags#Value
         /// </remarks>
-        [JsiiProperty(name: \\"value\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOverride: true)]
+        [JsiiProperty(name: \\"value\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
         public string Value
         {
             get;
@@ -558,7 +558,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: EncryptionConfigEntry#Provider
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"provider\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Provider\\\\\\"}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"provider\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Provider\\\\\\"}\\", isOptional: true)]
         public AWSQS::EKS::Cluster.IProvider? Provider
         {
             get;
@@ -572,7 +572,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: EncryptionConfigEntry#Resources
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"resources\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"resources\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
         public string[]? Resources
         {
             get;
@@ -1474,7 +1474,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: KubernetesApiAccessEntry#Arn
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"arn\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"arn\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true)]
         public string? Arn
         {
             get;
@@ -1485,7 +1485,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: KubernetesApiAccessEntry#Groups
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"groups\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"groups\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
         public string[]? Groups
         {
             get;
@@ -1496,7 +1496,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: KubernetesApiAccessEntry#Username
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"username\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"username\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true)]
         public string? Username
         {
             get;
@@ -1527,7 +1527,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: Provider#KeyArn
         /// </remarks>
         [JsiiOptional]
-        [JsiiProperty(name: \\"keyArn\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true, isOverride: true)]
+        [JsiiProperty(name: \\"keyArn\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true)]
         public string? KeyArn
         {
             get;
