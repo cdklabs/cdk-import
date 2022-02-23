@@ -1570,7 +1570,7 @@ namespace AWSQS::EKS::Cluster
     <PackageReference Include=\\"Amazon.CDK\\" Version=\\"[1.145.0]\\" />
     <PackageReference Include=\\"Amazon.CDK.CXAPI\\" Version=\\"[1.145.0]\\" />
     <PackageReference Include=\\"Amazon.CDK.RegionInfo\\" Version=\\"[1.145.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[3.3.223]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[3.3.224]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
