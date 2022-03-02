@@ -1566,11 +1566,11 @@ namespace AWSQS::EKS::Cluster
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.54.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[1.146.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK\\" Version=\\"[1.146.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CXAPI\\" Version=\\"[1.146.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.RegionInfo\\" Version=\\"[1.146.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[3.3.229]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[1.147.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK\\" Version=\\"[1.147.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CXAPI\\" Version=\\"[1.147.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.RegionInfo\\" Version=\\"[1.147.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[3.3.230]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
