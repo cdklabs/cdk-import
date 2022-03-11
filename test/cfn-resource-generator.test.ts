@@ -8,7 +8,7 @@ const SAMPLES_DIR = join(__dirname, 'fixtures', 'samples');
 const SAMPLE_FILES = fs.readdirSync(SAMPLES_DIR);
 const JSII = require.resolve('jsii/bin/jsii');
 const PKG = JSON.parse(fs.readFileSync(join(__dirname, '..', 'package.json'), 'utf-8'));
-const CORE_VERSION = PKG.devDependencies['@aws-cdk/core'];
+const CORE_VERSION = PKG.devDependencies['aws-cdk-lib'];
 const CONSTRUCTS_VERSION = PKG.devDependencies.constructs;
 
 test.each(SAMPLE_FILES)('generate %s', async fixture => {
@@ -36,7 +36,7 @@ test.each(SAMPLE_FILES)('generate %s', async fixture => {
     },
     license: 'UNLICENSED',
     peerDependencies: {
-      '@aws-cdk/core': CORE_VERSION,
+      'aws-cdk-lib': CORE_VERSION,
       'constructs': CONSTRUCTS_VERSION,
     },
     repository: {
