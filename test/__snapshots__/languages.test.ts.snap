@@ -1562,7 +1562,7 @@ namespace AWSQS::EKS::Cluster
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.52.1,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.55.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.12.0]\\" />
     <PackageReference Include=\\"Constructs\\" Version=\\"[10.0.57]\\" />
   </ItemGroup>
@@ -1599,43 +1599,172 @@ import (
 // A CloudFormation \`AWSQS::EKS::Cluster\`.
 type CfnCluster interface {
 	awscdk.CfnResource
+	// Attribute \`AWSQS::EKS::Cluster.Arn\`.
 	AttrArn() *string
+	// Attribute \`AWSQS::EKS::Cluster.CertificateAuthorityData\`.
 	AttrCertificateAuthorityData() *string
+	// Attribute \`AWSQS::EKS::Cluster.ClusterSecurityGroupId\`.
 	AttrClusterSecurityGroupId() *string
+	// Attribute \`AWSQS::EKS::Cluster.EncryptionConfigKeyArn\`.
 	AttrEncryptionConfigKeyArn() *string
+	// Attribute \`AWSQS::EKS::Cluster.Endpoint\`.
 	AttrEndpoint() *string
+	// Attribute \`AWSQS::EKS::Cluster.OIDCIssuerURL\`.
 	AttrOIDCIssuerURL() *string
+	// Options for this resource, such as condition, update policy etc.
 	CfnOptions() awscdk.ICfnResourceOptions
 	CfnProperties() *map[string]interface{}
+	// AWS resource type.
 	CfnResourceType() *string
+	// Returns: the stack trace of the point where this Resource was created from, sourced
+	// from the +metadata+ entry typed +aws:cdk:logicalId+, and with the bottom-most
+	// node +internal+ entries filtered.
 	CreationStack() *[]*string
+	// \`AWSQS::EKS::Cluster.EnabledClusterLoggingTypes\` Enables exporting of logs from the Kubernetes control plane to Amazon CloudWatch Logs. By default, logs from the cluster control plane are not exported to CloudWatch Logs. The valid log types are api, audit, authenticator, controllerManager, and scheduler.
 	EnabledClusterLoggingTypes() *[]*string
+	// \`AWSQS::EKS::Cluster.EncryptionConfig\` Encryption configuration for the cluster.
 	EncryptionConfig() *[]*EncryptionConfigEntry
+	// \`AWSQS::EKS::Cluster.KubernetesApiAccess\`.
 	KubernetesApiAccess() interface{}
+	// \`AWSQS::EKS::Cluster.KubernetesNetworkConfig\` Network configuration for Amazon EKS cluster.
 	KubernetesNetworkConfig() interface{}
+	// \`AWSQS::EKS::Cluster.LambdaRoleName\` Name of the AWS Identity and Access Management (IAM) role used for clusters that have the public endpoint disabled. this provides permissions for Lambda to be invoked and attach to the cluster VPC.
 	LambdaRoleName() *string
+	// The logical ID for this CloudFormation stack element.
+	//
+	// The logical ID of the element
+	// is calculated from the path of the resource node in the construct tree.
+	//
+	// To override this value, use \`overrideLogicalId(newLogicalId)\`.
+	//
+	// Returns: the logical ID as a stringified token. This value will only get
+	// resolved during synthesis.
 	LogicalId() *string
+	// \`AWSQS::EKS::Cluster.Name\` A unique name for your cluster.
 	Name() *string
+	// The tree node.
 	Node() constructs.Node
+	// Return a string that will be resolved to a CloudFormation \`{ Ref }\` for this element.
+	//
+	// If, by any chance, the intrinsic reference of a resource is not a string, you could
+	// coerce it to an IResolvable through \`Lazy.any({ produce: resource.ref })\`.
 	Ref() *string
+	// \`AWSQS::EKS::Cluster.ResourcesVpcConfig\` An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
 	ResourcesVpcConfig() interface{}
+	// \`AWSQS::EKS::Cluster.RoleArn\` Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role. This provides permissions for Amazon EKS to call other AWS APIs.
 	RoleArn() *string
+	// The stack in which this element is defined.
+	//
+	// CfnElements must be defined within a stack scope (directly or indirectly).
 	Stack() awscdk.Stack
+	// \`AWSQS::EKS::Cluster.Tags\`.
 	Tags() *[]interface{}
+	// Return properties modified after initiation.
+	//
+	// Resources that expose mutable properties should override this function to
+	// collect and return the properties object for this resource.
 	UpdatedProperites() *map[string]interface{}
+	// \`AWSQS::EKS::Cluster.Version\` Desired Kubernetes version for your cluster. If you don't specify this value, the cluster uses the latest version from Amazon EKS.
 	Version() *string
+	// Syntactic sugar for \`addOverride(path, undefined)\`.
 	AddDeletionOverride(path *string)
+	// Indicates that this resource depends on another resource and cannot be provisioned unless the other resource has been successfully provisioned.
+	//
+	// This can be used for resources across stacks (or nested stack) boundaries
+	// and the dependency will automatically be transferred to the relevant scope.
 	AddDependsOn(target awscdk.CfnResource)
+	// Add a value to the CloudFormation Resource Metadata.
+	// See: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html
+	//
+	// Note that this is a different set of metadata from CDK node metadata; this
+	// metadata ends up in the stack template under the resource, whereas CDK
+	// node metadata ends up in the Cloud Assembly.
+	//
 	AddMetadata(key *string, value interface{})
+	// Adds an override to the synthesized CloudFormation resource.
+	//
+	// To add a
+	// property override, either use \`addPropertyOverride\` or prefix \`path\` with
+	// \\"Properties.\\" (i.e. \`Properties.TopicName\`).
+	//
+	// If the override is nested, separate each nested level using a dot (.) in the path parameter.
+	// If there is an array as part of the nesting, specify the index in the path.
+	//
+	// To include a literal \`.\` in the property name, prefix with a \`\\\\\`. In most
+	// programming languages you will need to write this as \`\\"\\\\\\\\.\\"\` because the
+	// \`\\\\\` itself will need to be escaped.
+	//
+	// For example,
+	// \`\`\`typescript
+	// cfnResource.addOverride('Properties.GlobalSecondaryIndexes.0.Projection.NonKeyAttributes', ['myattribute']);
+	// cfnResource.addOverride('Properties.GlobalSecondaryIndexes.1.ProjectionType', 'INCLUDE');
+	// \`\`\`
+	// would add the overrides
+	// \`\`\`json
+	// \\"Properties\\": {
+	//    \\"GlobalSecondaryIndexes\\": [
+	//      {
+	//        \\"Projection\\": {
+	//          \\"NonKeyAttributes\\": [ \\"myattribute\\" ]
+	//          ...
+	//        }
+	//        ...
+	//      },
+	//      {
+	//        \\"ProjectionType\\": \\"INCLUDE\\"
+	//        ...
+	//      },
+	//    ]
+	//    ...
+	// }
+	// \`\`\`
+	//
+	// The \`value\` argument to \`addOverride\` will not be processed or translated
+	// in any way. Pass raw JSON values in here with the correct capitalization
+	// for CloudFormation. If you pass CDK classes or structs, they will be
+	// rendered with lowercased key names, and CloudFormation will reject the
+	// template.
 	AddOverride(path *string, value interface{})
+	// Adds an override that deletes the value of a property from the resource definition.
 	AddPropertyDeletionOverride(propertyPath *string)
+	// Adds an override to a resource property.
+	//
+	// Syntactic sugar for \`addOverride(\\"Properties.<...>\\", value)\`.
 	AddPropertyOverride(propertyPath *string, value interface{})
+	// Sets the deletion policy of the resource based on the removal policy specified.
+	//
+	// The Removal Policy controls what happens to this resource when it stops
+	// being managed by CloudFormation, either because you've removed it from the
+	// CDK application or because you've made a change that requires the resource
+	// to be replaced.
+	//
+	// The resource can be deleted (\`RemovalPolicy.DESTROY\`), or left in your AWS
+	// account for data recovery and cleanup later (\`RemovalPolicy.RETAIN\`).
 	ApplyRemovalPolicy(policy awscdk.RemovalPolicy, options *awscdk.RemovalPolicyOptions)
+	// Returns a token for an runtime attribute of this resource.
+	//
+	// Ideally, use generated attribute accessors (e.g. \`resource.arn\`), but this can be used for future compatibility
+	// in case there is no generated attribute.
 	GetAtt(attributeName *string) awscdk.Reference
+	// Retrieve a value value from the CloudFormation Resource Metadata.
+	// See: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html
+	//
+	// Note that this is a different set of metadata from CDK node metadata; this
+	// metadata ends up in the stack template under the resource, whereas CDK
+	// node metadata ends up in the Cloud Assembly.
+	//
 	GetMetadata(key *string) interface{}
+	// Overrides the auto-generated logical ID with a specific ID.
 	OverrideLogicalId(newLogicalId *string)
 	RenderProperties(props *map[string]interface{}) *map[string]interface{}
+	// Can be overridden by subclasses to determine if this resource will be rendered into the cloudformation template.
+	//
+	// Returns: \`true\` if the resource should be included or \`false\` is the resource
+	// should be omitted.
 	ShouldSynthesize() *bool
+	// Returns a string representation of this construct.
+	//
+	// Returns: a string representation of this resource.
 	ToString() *string
 	ValidateProperties(_properties interface{})
 }
@@ -1962,7 +2091,7 @@ func CfnCluster_IsCfnResource(construct constructs.IConstruct) *bool {
 // Checks if \`x\` is a construct.
 //
 // Returns: true if \`x\` is an object created from a class which extends \`Construct\`.
-// Deprecated: use \`x instanceof Construct\` instead
+// Deprecated: use \`x instanceof Construct\` instead.
 func CfnCluster_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
@@ -1989,7 +2118,6 @@ func CfnCluster_CFN_RESOURCE_TYPE_NAME() *string {
 	return returns
 }
 
-// Syntactic sugar for \`addOverride(path, undefined)\`.
 func (c *jsiiProxy_CfnCluster) AddDeletionOverride(path *string) {
 	_jsii_.InvokeVoid(
 		c,
@@ -1998,10 +2126,6 @@ func (c *jsiiProxy_CfnCluster) AddDeletionOverride(path *string) {
 	)
 }
 
-// Indicates that this resource depends on another resource and cannot be provisioned unless the other resource has been successfully provisioned.
-//
-// This can be used for resources across stacks (or nested stack) boundaries
-// and the dependency will automatically be transferred to the relevant scope.
 func (c *jsiiProxy_CfnCluster) AddDependsOn(target awscdk.CfnResource) {
 	_jsii_.InvokeVoid(
 		c,
@@ -2010,13 +2134,6 @@ func (c *jsiiProxy_CfnCluster) AddDependsOn(target awscdk.CfnResource) {
 	)
 }
 
-// Add a value to the CloudFormation Resource Metadata.
-// See: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html
-//
-// Note that this is a different set of metadata from CDK node metadata; this
-// metadata ends up in the stack template under the resource, whereas CDK
-// node metadata ends up in the Cloud Assembly.
-//
 func (c *jsiiProxy_CfnCluster) AddMetadata(key *string, value interface{}) {
 	_jsii_.InvokeVoid(
 		c,
@@ -2025,49 +2142,6 @@ func (c *jsiiProxy_CfnCluster) AddMetadata(key *string, value interface{}) {
 	)
 }
 
-// Adds an override to the synthesized CloudFormation resource.
-//
-// To add a
-// property override, either use \`addPropertyOverride\` or prefix \`path\` with
-// \\"Properties.\\" (i.e. \`Properties.TopicName\`).
-//
-// If the override is nested, separate each nested level using a dot (.) in the path parameter.
-// If there is an array as part of the nesting, specify the index in the path.
-//
-// To include a literal \`.\` in the property name, prefix with a \`\\\\\`. In most
-// programming languages you will need to write this as \`\\"\\\\\\\\.\\"\` because the
-// \`\\\\\` itself will need to be escaped.
-//
-// For example,
-// \`\`\`typescript
-// cfnResource.addOverride('Properties.GlobalSecondaryIndexes.0.Projection.NonKeyAttributes', ['myattribute']);
-// cfnResource.addOverride('Properties.GlobalSecondaryIndexes.1.ProjectionType', 'INCLUDE');
-// \`\`\`
-// would add the overrides
-// \`\`\`json
-// \\"Properties\\": {
-//    \\"GlobalSecondaryIndexes\\": [
-//      {
-//        \\"Projection\\": {
-//          \\"NonKeyAttributes\\": [ \\"myattribute\\" ]
-//          ...
-//        }
-//        ...
-//      },
-//      {
-//        \\"ProjectionType\\": \\"INCLUDE\\"
-//        ...
-//      },
-//    ]
-//    ...
-// }
-// \`\`\`
-//
-// The \`value\` argument to \`addOverride\` will not be processed or translated
-// in any way. Pass raw JSON values in here with the correct capitalization
-// for CloudFormation. If you pass CDK classes or structs, they will be
-// rendered with lowercased key names, and CloudFormation will reject the
-// template.
 func (c *jsiiProxy_CfnCluster) AddOverride(path *string, value interface{}) {
 	_jsii_.InvokeVoid(
 		c,
@@ -2076,7 +2150,6 @@ func (c *jsiiProxy_CfnCluster) AddOverride(path *string, value interface{}) {
 	)
 }
 
-// Adds an override that deletes the value of a property from the resource definition.
 func (c *jsiiProxy_CfnCluster) AddPropertyDeletionOverride(propertyPath *string) {
 	_jsii_.InvokeVoid(
 		c,
@@ -2085,9 +2158,6 @@ func (c *jsiiProxy_CfnCluster) AddPropertyDeletionOverride(propertyPath *string)
 	)
 }
 
-// Adds an override to a resource property.
-//
-// Syntactic sugar for \`addOverride(\\"Properties.<...>\\", value)\`.
 func (c *jsiiProxy_CfnCluster) AddPropertyOverride(propertyPath *string, value interface{}) {
 	_jsii_.InvokeVoid(
 		c,
@@ -2096,15 +2166,6 @@ func (c *jsiiProxy_CfnCluster) AddPropertyOverride(propertyPath *string, value i
 	)
 }
 
-// Sets the deletion policy of the resource based on the removal policy specified.
-//
-// The Removal Policy controls what happens to this resource when it stops
-// being managed by CloudFormation, either because you've removed it from the
-// CDK application or because you've made a change that requires the resource
-// to be replaced.
-//
-// The resource can be deleted (\`RemovalPolicy.DESTROY\`), or left in your AWS
-// account for data recovery and cleanup later (\`RemovalPolicy.RETAIN\`).
 func (c *jsiiProxy_CfnCluster) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, options *awscdk.RemovalPolicyOptions) {
 	_jsii_.InvokeVoid(
 		c,
@@ -2113,10 +2174,6 @@ func (c *jsiiProxy_CfnCluster) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, o
 	)
 }
 
-// Returns a token for an runtime attribute of this resource.
-//
-// Ideally, use generated attribute accessors (e.g. \`resource.arn\`), but this can be used for future compatibility
-// in case there is no generated attribute.
 func (c *jsiiProxy_CfnCluster) GetAtt(attributeName *string) awscdk.Reference {
 	var returns awscdk.Reference
 
@@ -2130,13 +2187,6 @@ func (c *jsiiProxy_CfnCluster) GetAtt(attributeName *string) awscdk.Reference {
 	return returns
 }
 
-// Retrieve a value value from the CloudFormation Resource Metadata.
-// See: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html
-//
-// Note that this is a different set of metadata from CDK node metadata; this
-// metadata ends up in the stack template under the resource, whereas CDK
-// node metadata ends up in the Cloud Assembly.
-//
 func (c *jsiiProxy_CfnCluster) GetMetadata(key *string) interface{} {
 	var returns interface{}
 
@@ -2150,7 +2200,6 @@ func (c *jsiiProxy_CfnCluster) GetMetadata(key *string) interface{} {
 	return returns
 }
 
-// Overrides the auto-generated logical ID with a specific ID.
 func (c *jsiiProxy_CfnCluster) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
@@ -2172,10 +2221,6 @@ func (c *jsiiProxy_CfnCluster) RenderProperties(props *map[string]interface{}) *
 	return returns
 }
 
-// Can be overridden by subclasses to determine if this resource will be rendered into the cloudformation template.
-//
-// Returns: \`true\` if the resource should be included or \`false\` is the resource
-// should be omitted.
 func (c *jsiiProxy_CfnCluster) ShouldSynthesize() *bool {
 	var returns *bool
 
@@ -2189,9 +2234,6 @@ func (c *jsiiProxy_CfnCluster) ShouldSynthesize() *bool {
 	return returns
 }
 
-// Returns a string representation of this construct.
-//
-// Returns: a string representation of this resource
 func (c *jsiiProxy_CfnCluster) ToString() *string {
 	var returns *string
 
@@ -2232,7 +2274,7 @@ type CfnClusterProps struct {
 	KubernetesNetworkConfig *CfnClusterPropsKubernetesNetworkConfig \`json:\\"kubernetesNetworkConfig\\" yaml:\\"kubernetesNetworkConfig\\"\`
 	// Name of the AWS Identity and Access Management (IAM) role used for clusters that have the public endpoint disabled.
 	//
-	// this provides permissions for Lambda to be invoked and attach to the cluster VPC
+	// this provides permissions for Lambda to be invoked and attach to the cluster VPC.
 	LambdaRoleName *string \`json:\\"lambdaRoleName\\" yaml:\\"lambdaRoleName\\"\`
 	// A unique name for your cluster.
 	Name *string \`json:\\"name\\" yaml:\\"name\\"\`
