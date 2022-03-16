@@ -1564,7 +1564,7 @@ namespace AWSQS::EKS::Cluster
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.55.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.16.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.0.88]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.0.89]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
