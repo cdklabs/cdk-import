@@ -1664,9 +1664,9 @@ console-control-strings@^1.1.0:
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
 constructs@^10:
-  version "10.0.96"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.96.tgz#b11861dab821bfac7775cca4ec4a12a924d7a29b"
-  integrity sha512-zUOU9CHjKZ4Qb9Wdfi7/OHXnPU37PqAUDZpHJ98d/PRx2I6Yv9Aud6/hPTgAdAw2i3VUoFp8q2ugULPlr76M7A==
+  version "10.0.97"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.97.tgz#9dd71e6909a9bc8040a31955b80968ddf28447f3"
+  integrity sha512-2193Y3iDLY9sYCd89eb4TfjeDN+oD5ocl5d1LRnbGwlmvMe2fWqd9i84ET6K8K/PXBPSTyRQghnpw+Smn8b9vA==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2143,9 +2143,9 @@ duplexer3@^0.1.4:
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
 
 electron-to-chromium@^1.4.84:
-  version "1.4.94"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.94.tgz#f19206c977361264a51d53a7ea7ef861a94baa10"
-  integrity sha512-CoOKsuACoa0PAG3hQXxbh/XDiFcjGuSyGKUi09cjMHOt6RCi7/EXgXhaFF3I+aC89Omudqmkzd0YOQKxwtf/Bg==
+  version "1.4.95"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.95.tgz#49303dbe037c15e2e0cc851d71c4cb86119a9cd6"
+  integrity sha512-h2VAMV/hPtmAeiDkwA8c5sjS+cWt6GlQL4ERdrOUWu7cRIG5IRk9uwR9f0utP+hPJ9ZZsADTq9HpbuT46eBYAg==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -4001,10 +4001,10 @@ jsii-rosetta@^1.55.1:
     workerpool "^6.2.0"
     yargs "^16.2.0"
 
-jsii-srcmak@^0.1.511:
-  version "0.1.511"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.511.tgz#fffc749ad8da3aa0b56307cdf2acc89beaabea43"
-  integrity sha512-THXQxtZhnYGIIFx5PFsmJRJiGJh3GLKuh4c+8dU+k3mJsuqJhOq4Eg/FMj7ZN9wlwf3LGFXcR58qyvPXe4plKQ==
+jsii-srcmak@^0.1.512:
+  version "0.1.512"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.512.tgz#d631f5e29d94c089f7970fafa2036fe35d09c002"
+  integrity sha512-AA/WSd6ysD6xPrwLvsXOnbgwgN+TlX9ApXBNTsZohQxlKEnyyQAPt945rW9cu/cdNbpc/U/Dnig3CLqDn+PogQ==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.55.1"
@@ -4073,10 +4073,10 @@ json-stringify-safe@^5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
-json2jsii@^0.2.170:
-  version "0.2.170"
-  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.2.170.tgz#d3e5542b43ecb1121ad0d9021d1483039bc2d48d"
-  integrity sha512-ZCU7IyeyS0S8SpDll7ibYinQO0ux0dQghzSkUdgzrZ8S0cf0TeSY02sGPCKh+kFYSFvthuqipMGi3aKtJ7Swjw==
+json2jsii@^0.2.171:
+  version "0.2.171"
+  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.2.171.tgz#b1193fad6b524aacaf1c0f4fc718593da0b5e866"
+  integrity sha512-Di82PH+7h8xe9L5+f6BZ4GQ2zA1qkY+ikZMqA2x1h4/qcgLlYce5ONQA13Bj/1qt7VaCBsDPCKS9dSkxsgKF0w==
   dependencies:
     camelcase "^6.3.0"
     json-schema "^0.4.0"
@@ -5118,10 +5118,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.53.12:
-  version "0.53.12"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.53.12.tgz#a0c777f29202e74f50e37d2f86d7f2af6e2ba5fe"
-  integrity sha512-QdNUvrbSmsWTynSdiFEyACc87yC82jW0/la3poO3rxxVjW4UGel9V7oqMp7cN0WvXrd32Uwxp1wyXxiPle/67Q==
+projen@^0.53.13:
+  version "0.53.13"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.53.13.tgz#e75e33b730c0ca342e53060f7bd54b8b31eba156"
+  integrity sha512-4l/tovL6xXajDwv/PMmZVuj2dxJTq07DPUUhQjt9WUzMzrWC0rFcUk9O7bIczGrYUkch2l8CuGqImNdXIOfD9g==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
