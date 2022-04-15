@@ -209,7 +209,7 @@ test('should handle lookup by ARN correctly', async () => {
   expect(typeInfo.SourceUrl).toBe('https://myurl.com');
 });
 
-test('should look up private typrs if "private" is set to "true"', async () => {
+test('should look up private types if "private" is set to "true"', async () => {
   const typeName = 'Test::Resource::Type::MODULE';
   const typeArn = 'arn:aws:cloudformation:eu-central-1::type/module/uuid/Test-Resource-Type-MODULE';
 
