@@ -2,6 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { describeResourceType, DescribeResourceTypeOptions } from './cfn-registry';
 import { CfnResourceGenerator } from './cfn-resource-generator';
+import { describeProductAggregate, DescribeProductAggregateOptions, fetchAvailableProducts } from './service-catalog';
 
 export interface ImportResourceTypeOptions extends DescribeResourceTypeOptions {
   /**
@@ -31,4 +32,50 @@ export async function importResourceType(resourceName: string, _resourceVersion:
   fs.writeFileSync(path.join(outdir, 'index.ts'), gen.render());
 
   return type.TypeName;
+};
+
+export interface ImportProductOptions extends DescribeProductAggregateOptions {
+  /**
+   * @default "./sc-products"
+   */
+  readonly outdir?: string;
+}
+
+/**
+ * Entry point to import Service Catalog product resource.
+ *
+ * @param outdir the out folder to use (defaults to the current directory under a 'sc-products' folder)
+ * @returns name of the product version
+ */
+export async function importProduct(options: ImportProductOptions): Promise<string> {
+  const outdir = options.outdir ?? '.';
+
+  await describeProductAggregate(options);
+
+  //TODO CodeGen
+
+  return outdir; //just for typechecking
+};
+
+/**
+ * Entry point to import all available Service Catalog product resources with `DEFAULT` parameters.
+ *
+ * @param outdir the out folder to use (defaults to the current directory under a 'sc-products' folder)
+ * @returns names of the product versions
+ */
+export async function importProducts(options: ImportProductOptions): Promise<string[]> {
+  const outdir = options.outdir ?? '.';
+  let productVersions: string[] = [];
+
+  const availableProducts = await fetchAvailableProducts();
+
+  await Promise.all(availableProducts.map(async (product) => {
+    const productVersion = await importProduct( {
+      outdir: outdir,
+      productId: product.Id!,
+    });
+    productVersions.push(productVersion);
+  }));
+
+  return productVersions;
 };
