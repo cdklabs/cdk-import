@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { describeResourceType, DescribeResourceTypeOptions } from './cfn-registry';
 import { CfnResourceGenerator } from './cfn-resource-generator';
-import { DescribeProductAggregateOptions, describeProductAggregate, ProductDataAggregate, fetchAvailableProducts } from './service-catalog';
+import { describeProductAggregate, DescribeProductAggregateOptions, fetchAvailableProducts, ProductDataAggregate } from './service-catalog';
 
 export interface ImportResourceTypeOptions extends DescribeResourceTypeOptions {
   /**

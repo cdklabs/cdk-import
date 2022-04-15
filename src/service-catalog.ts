@@ -59,7 +59,7 @@ export interface DescribeProductAggregateOptions {
 /**
  * Returns the provisioning artifact from list of available artifacts.
  * If no query artifact Id is provided, the artifact marked `DEFAULT` will be returned.
- * If no 'DEFAULT' artifact exists, the most recently created artifact will be returned.
+ * If no `DEFAULT` artifact exists, the most recently created artifact will be returned.
  * @param provisioningArtifacts list of provisioning artifacts for a product
  * @param provisioningArtifactId query artifact Id
  * @returns provisioning artifact detail
@@ -173,7 +173,7 @@ export interface ProductDataAggregate {
   readonly product: AWS.ServiceCatalog.ProductViewSummary;
   readonly provisioningArtifact: AWS.ServiceCatalog.ProvisioningArtifact;
   readonly launchPath: AWS.ServiceCatalog.LaunchPathSummary;
-  params?: AWS.ServiceCatalog.DescribeProvisioningParametersOutput;
+  readonly params: AWS.ServiceCatalog.DescribeProvisioningParametersOutput;
 }
 
 /**
