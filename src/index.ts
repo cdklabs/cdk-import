@@ -42,7 +42,7 @@ export interface ImportProductOptions extends DescribeProductAggregateOptions {
 }
 
 /**
- * Entry point to import Service Catalog provisioned product resource
+ * Entry point to import Service Catalog provisioned product resource.
  *
  * @param outdir the out folder to use (defaults to the current directory under a 'sc-products' folder)
  * @returns the name of the provisioned product version
