@@ -59,7 +59,11 @@ export interface DescribeProductAggregateOptions {
 /**
  * Returns the provisioning artifact from list of available artifacts.
  * If no query artifact Id is provided, the artifact marked `DEFAULT` will be returned.
+<<<<<<< HEAD
  * If no `DEFAULT` artifact exists, the most recently created artifact will be returned.
+=======
+ * If no 'DEFAULT' artifact exists, the most recently created artifact will be returned.
+>>>>>>> ce4e6d71a9e10e7457043ad232284ce88f3873ec
  * @param provisioningArtifacts list of provisioning artifacts for a product
  * @param provisioningArtifactId query artifact Id
  * @returns provisioning artifact detail
