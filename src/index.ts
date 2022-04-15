@@ -58,7 +58,7 @@ export async function importProduct(options: ImportProductOptions): Promise<stri
 };
 
 /**
- * Entry point to import all available Service Catalog provisioned product resources with `DEFAULT` paramaters.
+ * Entry point to import all available Service Catalog provisioned product resources with `DEFAULT` parameters.
  *
  * @param outdir the out folder to use (defaults to the current directory under a 'sc-products' folder)
  * @returns the names of the provisioned product versions
