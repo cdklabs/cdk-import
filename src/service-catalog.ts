@@ -3,10 +3,9 @@ import { createAwsClient } from './aws';
 
 export interface IServiceCatalogClient {
   searchProducts(input: AWS.ServiceCatalog.ListPortfoliosInput): Promise<AWS.ServiceCatalog.ListPortfoliosOutput>;
-  listProvisioningArtifacts(input: AWS.ServiceCatalog.ListProvisioningArtifactsInput): Promise<AWS.ServiceCatalog.ListProvisioningArtifactsOutput>;
-  listLaunchPaths(input: AWS.ServiceCatalog.ListLaunchPathsInput): Promise<AWS.ServiceCatalog.ListLaunchPathsOutput> ;
   describeProvisioningParameters(input: AWS.ServiceCatalog.DescribeProvisioningParametersInput):
   Promise<AWS.ServiceCatalog.DescribeProvisioningParametersOutput>;
+  describeProduct(input: AWS.ServiceCatalog.DescribeProductInput): Promise<AWS.ServiceCatalog.DescribeProductOutput>;
 }
 
 export class ServiceCatalogClient implements IServiceCatalogClient {
@@ -20,18 +19,13 @@ export class ServiceCatalogClient implements IServiceCatalogClient {
     return this.sc.searchProducts(input).promise();
   }
 
-  public async listProvisioningArtifacts(input: AWS.ServiceCatalog.ListProvisioningArtifactsInput):
-  Promise<AWS.ServiceCatalog.ListProvisioningArtifactsOutput> {
-    return this.sc.listProvisioningArtifacts(input).promise();
-  }
-
-  public async listLaunchPaths(input: AWS.ServiceCatalog.ListLaunchPathsInput): Promise<AWS.ServiceCatalog.ListLaunchPathsOutput> {
-    return this.sc.listLaunchPaths(input).promise();
-  }
-
   public async describeProvisioningParameters(input: AWS.ServiceCatalog.DescribeProvisioningParametersInput):
   Promise<AWS.ServiceCatalog.DescribeProvisioningParametersOutput> {
     return this.sc.describeProvisioningParameters(input).promise();
+  }
+
+  public async describeProduct(input: AWS.ServiceCatalog.DescribeProductInput): Promise<AWS.ServiceCatalog.DescribeProductOutput> {
+    return this.sc.describeProduct(input).promise();
   }
 }
 
@@ -39,7 +33,7 @@ export class ServiceCatalogClient implements IServiceCatalogClient {
  * Provide query values for a specific provisionable product.
  * If no specific IDs are declared for a product, we will use the set DEFAULT value for the provisioning artifact and launch path.
  */
-export interface DescribeProvisionedProductOptions {
+export interface DescribeProductAggregateOptions {
   /**
    * A client that performs calls to AWS Service Catalog. You can provide a mock here
    * for testing.
@@ -47,9 +41,9 @@ export interface DescribeProvisionedProductOptions {
   readonly client?: IServiceCatalogClient;
 
   /**
-   * The product Id..
+   * The product Id.
    */
-  readonly productId?: string;
+  readonly productId: string;
 
   /**
    * The provisioning artifact Id.
@@ -63,20 +57,81 @@ export interface DescribeProvisionedProductOptions {
 }
 
 /**
+ * Returns the provisioning artifact from list of available artifacts.
+ * If no query artifact Id is provided, the artifact marked `DEFAULT` will be returned.
+ * If no 'DEFAULT' artifact exists, the most recently created artifact will be returned.
+ * @param provisioningArtifacts list of provisioning artifacts for a product
+ * @param provisioningArtifactId query artifact Id
+ * @returns provisioning artifact detail
+ */
+function resolveProvisioningArtifact(provisioningArtifacts: AWS.ServiceCatalog.ProvisioningArtifacts, provisioningArtifactId?: string):
+AWS.ServiceCatalog.ProvisioningArtifact {
+  if (provisioningArtifactId) {
+    return provisioningArtifacts.filter(pa => pa.Id == provisioningArtifactId).pop()!;
+  } else if (provisioningArtifacts.filter(pa => pa.Guidance == 'DEFAULT').length == 1) {
+    return provisioningArtifacts.filter(pa => pa.Guidance == 'DEFAULT').pop()!;
+  } else {
+    return provisioningArtifacts.sort((a, b) => new Date(a.CreatedTime!).valueOf() - new Date(b.CreatedTime!).valueOf()).pop()!;
+  }
+}
+
+/**
+ * Returns the queried launch path from list of available launch paths.
+ * @param launchPathId the query launch path's Id
+ * @param launchPaths list of available launch paths for the product
+ * @returns the launch path summary for the query launch path
+ */
+function resolveLaunchPath(launchPaths: AWS.ServiceCatalog.LaunchPathSummaries, launchPathId?: string): AWS.ServiceCatalog.LaunchPathSummary {
+  if (launchPathId) {
+    return launchPaths.filter(lp => lp.Id == launchPathId).pop()!;
+  } else if (launchPaths.length == 1) {
+    return launchPaths.pop()!;
+  } else {
+    throw new Error('Unable to resolve between multiple launch paths.');
+  }
+}
+
+/**
  * Fetches the all the available or queried service catalog product(s) for the caller.
  *
  * @returns list of product view summaries
  */
-export async function fetchAvailableProducts(options: DescribeProvisionedProductOptions = {}): Promise<AWS.ServiceCatalog.ProductViewSummaries> {
-  const sc = options.client ?? new ServiceCatalogClient();
+async function describeProduct(options: DescribeProductAggregateOptions): Promise<ProductDataAggregate> {
+  const sc: IServiceCatalogClient = options.client ?? new ServiceCatalogClient();
 
-  const products = [];
+  const describeProductResponse: AWS.ServiceCatalog.DescribeProductOutput = await sc.describeProduct({
+    Id: options.productId,
+  });
+
+  const provisioningArtifact: AWS.ServiceCatalog.ProvisioningArtifact = resolveProvisioningArtifact(describeProductResponse.ProvisioningArtifacts!,
+    options.provisioningArtifactId);
+
+  const launchPath: AWS.ServiceCatalog.LaunchPathSummary = resolveLaunchPath(describeProductResponse.LaunchPaths!, options.launchPathId);
+
+  const parameters: AWS.ServiceCatalog.DescribeProvisioningParametersOutput = await describeProvisioningParameters(options);
+
+  return {
+    product: describeProductResponse.ProductViewSummary!,
+    provisioningArtifact: provisioningArtifact,
+    launchPath: launchPath,
+    params: parameters,
+  };
+}
+
+/**
+ * Fetches all the available service catalog product(s) for the caller.
+ *
+ * @returns list of product view summaries
+ */
+export async function fetchAvailableProducts(client?: IServiceCatalogClient): Promise<AWS.ServiceCatalog.ProductViewSummaries> {
+  const sc = client ?? new ServiceCatalogClient();
+
+  const products: AWS.ServiceCatalog.ProductViewSummaries = [];
   let token;
 
   do {
     const res: AWS.ServiceCatalog.SearchProductsOutput = await sc.searchProducts({
       PageToken: token,
-      ...(options.productId ? { SourceProductId: options.productId } : {}),
     });
 
     if (res.ProductViewSummaries) {
@@ -89,62 +144,6 @@ export async function fetchAvailableProducts(options: DescribeProvisionedProduct
 }
 
 /**
- * Fetches the all the available or queried provisioning artifact(s) for the caller.
- *
- * @param productId the product to fetch provisioning artifacts for
- * @returns list of provisioning artifact details for a product
- */
-export async function listProvisioningArtifacts(
-  productId: string,
-  options: DescribeProvisionedProductOptions = {}): Promise<AWS.ServiceCatalog.ProvisioningArtifactDetail[]> {
-  const sc = options.client ?? new ServiceCatalogClient();
-
-  const provisioningArtifacts: AWS.ServiceCatalog.ListProvisioningArtifactsOutput = await sc.listProvisioningArtifacts({
-    ProductId: productId,
-  });
-
-  if ( options.provisioningArtifactId != null ) {
-    return provisioningArtifacts.ProvisioningArtifactDetails!.filter(pa => pa.Id == options.provisioningArtifactId);
-  } else {
-    return provisioningArtifacts.ProvisioningArtifactDetails!;
-  }
-}
-
-/**
- * Retrieves all the availalbe or queried launch path(s) for a product.
- *
- * @param productId the product to list launch paths for
- * @returns list of launchPathSummaries for a product
- */
-export async function listLaunchPaths(
-  productId: string,
-  options: DescribeProvisionedProductOptions = {}):
-  Promise<AWS.ServiceCatalog.LaunchPathSummaries> {
-  const sc = options.client ?? new ServiceCatalogClient();
-
-  const launchPaths = [];
-  let token;
-
-  do {
-    const res: AWS.ServiceCatalog.ListLaunchPathsOutput = await sc.listLaunchPaths({
-      ProductId: productId,
-      PageToken: token,
-    });
-
-    if (res.LaunchPathSummaries) {
-      launchPaths.push(...res.LaunchPathSummaries);
-    }
-    token = res.NextPageToken;
-  } while (token);
-
-  if ( options.launchPathId != null ) {
-    return launchPaths.filter(lp => lp.Id == options.launchPathId);
-  } else {
-    return launchPaths;
-  }
-}
-
-/**
  * Gets the information required to provision an artifact.
  * Includes information on inputs and outputs of the product.
  *
@@ -153,17 +152,46 @@ export async function listLaunchPaths(
  * @param launchPathId the launch path to get provisioning parameters for
  * @returns the provisoning parameters for an artifact
  */
-export async function describeProvisioningParameters(productId: string, provisioningArtifactId: string, launchPathId: string,
-  options: DescribeProvisionedProductOptions = {}):
-  Promise<AWS.ServiceCatalog.DescribeProvisioningParametersOutput> {
+export async function describeProvisioningParameters(options: DescribeProductAggregateOptions):
+Promise<AWS.ServiceCatalog.DescribeProvisioningParametersOutput> {
 
   const sc = options.client ?? new ServiceCatalogClient();
 
   const provisioningParameters: AWS.ServiceCatalog.DescribeProvisioningParametersOutput = await sc.describeProvisioningParameters({
-    ProductId: productId,
-    ProvisioningArtifactId: provisioningArtifactId,
-    PathId: launchPathId,
+    ProductId: options.productId,
+    ProvisioningArtifactId: options.provisioningArtifactId,
+    PathId: options.launchPathId,
   });
 
   return provisioningParameters;
+}
+
+/**
+ * Holds all the information needed to generate a product artifact to provision.
+ */
+export interface ProductDataAggregate {
+  readonly product: AWS.ServiceCatalog.ProductViewSummary;
+  readonly provisioningArtifact: AWS.ServiceCatalog.ProvisioningArtifact;
+  readonly launchPath: AWS.ServiceCatalog.LaunchPathSummary;
+  params?: AWS.ServiceCatalog.DescribeProvisioningParametersOutput;
+}
+
+/**
+ * Makes a series of calls to service catalog to get all information
+ * required to provision a service catalog product.
+ *
+ * @param options
+ * @returns ProductVersionData aggregate of provisioning artifact details.
+ */
+export async function describeProductAggregate( options: DescribeProductAggregateOptions): Promise<ProductDataAggregate> {
+  const sc = options.client ?? new ServiceCatalogClient();
+
+  const productDataAggregate = await describeProduct({
+    productId: options.productId!,
+    launchPathId: options.launchPathId,
+    provisioningArtifactId: options.provisioningArtifactId,
+    client: sc,
+  });
+
+  return productDataAggregate;
 }
