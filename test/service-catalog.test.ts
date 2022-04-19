@@ -149,6 +149,36 @@ test('should throw error if no provisioning artifacts found', async () => {
   })).rejects.toThrow(/Cannot resolve provisioning artifacts for product: /);
 });
 
+test('should throw error query launch path not found', async () => {
+  const productId = 'prod-abc123';
+  const launchPathId = 'lp-abc123';
+
+  client.describeProduct = jest.fn().mockImplementation( async params => {
+    expect(params.Id).toBe(productId);
+    return {
+      ProductViewSummary: {
+        ProductId: productId,
+      },
+      ProvisioningArtifacts: [
+        {
+          Id: 'pa-abc456',
+          Name: 'v2.0',
+          Description: 'description',
+        },
+      ],
+      LaunchPaths: [{
+        Id: 'lp-abc456',
+      }],
+    };
+  });
+
+  await expect(testee.describeProductAggregate( {
+    productId: productId,
+    launchPathId: launchPathId,
+    client: client,
+  })).rejects.toThrow(/Could not find specified launch path id:/);
+});
+
 test('should throw error if no launch paths found', async () => {
   const productId = 'prod-abc123';
 

@@ -97,7 +97,13 @@ AWS.ServiceCatalog.ProvisioningArtifact {
  */
 function resolveLaunchPath(launchPaths: AWS.ServiceCatalog.LaunchPathSummaries, launchPathId?: string): AWS.ServiceCatalog.LaunchPathSummary {
   if (launchPathId) {
-    return launchPaths.filter(lp => lp.Id == launchPathId).pop()!;
+    const launchPath = launchPaths.filter(lp => lp.Id == launchPathId);
+    if (launchPath.length == 0 ) {
+      throw new Error(`Could not find specified launch path id: ${launchPathId}`);
+    } else {
+      return launchPath.pop()!;
+    }
+
   } else if (launchPaths.length == 1) {
     return launchPaths.pop()!;
   } else {
@@ -164,7 +170,7 @@ export async function fetchAvailableProducts(client?: IServiceCatalogClient): Pr
  *
  * @returns the provisoning parameters for an artifact
  */
-export async function describeProvisioningParameters( options: DescribeProductAggregateOptions):
+export async function describeProvisioningParameters(options: DescribeProductAggregateOptions):
 Promise<AWS.ServiceCatalog.DescribeProvisioningParametersOutput> {
 
   const sc = options.client ?? new ServiceCatalogClient();
@@ -209,7 +215,7 @@ export interface ProductDataAggregate {
  *
  * @returns ProductVersionData aggregate of provisioning artifact details.
  */
-export async function describeProductAggregate( options: DescribeProductAggregateOptions): Promise<ProductDataAggregate> {
+export async function describeProductAggregate(options: DescribeProductAggregateOptions): Promise<ProductDataAggregate> {
   const sc = options.client ?? new ServiceCatalogClient();
 
   const productDataAggregate = await describeProduct({
