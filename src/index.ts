@@ -34,8 +34,12 @@ export async function importResourceType(resourceName: string, _resourceVersion:
   return type.TypeName;
 };
 
+/**
+ * Configure options for importing products into your local workspace
+ */
 export interface ImportProductOptions extends DescribeProductAggregateOptions {
   /**
+   * The folder in which product constructs (as separate class files) will be output to.
    * @default "./sc-products"
    */
   readonly outdir?: string;
@@ -44,7 +48,6 @@ export interface ImportProductOptions extends DescribeProductAggregateOptions {
 /**
  * Entry point to import Service Catalog product resource.
  *
- * @param outdir the out folder to use (defaults to the current directory under a 'sc-products' folder)
  * @returns name of the product version
  */
 export async function importProduct(options: ImportProductOptions): Promise<string> {
@@ -60,7 +63,6 @@ export async function importProduct(options: ImportProductOptions): Promise<stri
 /**
  * Entry point to import all available Service Catalog product resources with `DEFAULT` parameters.
  *
- * @param outdir the out folder to use (defaults to the current directory under a 'sc-products' folder)
  * @returns names of the product versions
  */
 export async function importProducts(options: ImportProductOptions): Promise<string[]> {

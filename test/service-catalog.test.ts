@@ -107,6 +107,73 @@ test('describe product aggregate should create product data aggregate ', async (
   expect(describedProduct.product.ProductId).toBe(productId);
 });
 
+test('should throw error if no product view summary found', async () => {
+  const productId = 'prod-abc123';
+
+  client.describeProduct = jest.fn().mockImplementation( async params => {
+    expect(params.Id).toBe(productId);
+    return {
+      ProvisioningArtifacts: [
+        {
+          Id: 'pa-abc456',
+          Name: 'v2.0',
+          Description: 'description',
+        },
+      ],
+      LaunchPaths: [],
+    };
+  });
+
+  await expect(testee.describeProductAggregate( {
+    productId: productId,
+    client: client,
+  })).rejects.toThrow(/Cannot resolve product details for/);
+});
+
+test('should throw error if no provisioning artifacts found', async () => {
+  const productId = 'prod-abc123';
+
+  client.describeProduct = jest.fn().mockImplementation( async params => {
+    expect(params.Id).toBe(productId);
+    return {
+      ProductViewSummary: {
+        ProductId: productId,
+      },
+      LaunchPaths: [],
+    };
+  });
+
+  await expect(testee.describeProductAggregate( {
+    productId: productId,
+    client: client,
+  })).rejects.toThrow(/Cannot resolve provisioning artifacts for product: /);
+});
+
+test('should throw error if no launch paths found', async () => {
+  const productId = 'prod-abc123';
+
+  client.describeProduct = jest.fn().mockImplementation( async params => {
+    expect(params.Id).toBe(productId);
+    return {
+      ProductViewSummary: {
+        ProductId: productId,
+      },
+      ProvisioningArtifacts: [
+        {
+          Id: 'pa-abc456',
+          Name: 'v2.0',
+          Description: 'description',
+        },
+      ],
+    };
+  });
+
+  await expect(testee.describeProductAggregate( {
+    productId: productId,
+    client: client,
+  })).rejects.toThrow(/Cannot resolve launch paths for product/);
+});
+
 test('should describe provisioning parameters', async () => {
   const productId = 'prod-abc123';
   const launchPathId = 'lp-abc123';
@@ -220,6 +287,65 @@ test('describe product aggregate handle most recently created artifact paths', a
 
   expect(describedProduct.product.ProductId).toBe(productId);
   expect(describedProduct.provisioningArtifact.Id).toBe(provisioningArtifactId);
+});
+
+test('should throw error if query provisioning artifact is not found', async () => {
+  const productId = 'prod-abc123';
+  const provisioningArtifactId = 'pa-abc123';
+
+  client.describeProduct = jest.fn().mockImplementation( async params => {
+    expect(params.Id).toBe(productId);
+    return {
+      ProductViewSummary: {
+        ProductId: productId,
+      },
+      ProvisioningArtifacts: [
+        {
+          Id: 'pa-abc456',
+          Name: 'v2.0',
+          Description: 'description',
+        },
+      ],
+      LaunchPaths: [],
+    };
+  });
+
+  await expect(testee.describeProductAggregate( {
+    productId: productId,
+    provisioningArtifactId: provisioningArtifactId,
+    client: client,
+  })).rejects.toThrow(/Could not find specified provisioning artifact id/);
+});
+
+test('should fail to resolve non default provisioning artifacts without timestamp', async () => {
+  const productId = 'prod-abc123';
+
+  client.describeProduct = jest.fn().mockImplementation( async params => {
+    expect(params.Id).toBe(productId);
+    return {
+      ProductViewSummary: {
+        ProductId: productId,
+      },
+      ProvisioningArtifacts: [
+        {
+          Id: 'pa-abc123',
+          Name: 'v2.0',
+          Description: 'description',
+        },
+        {
+          Id: 'pa-abc456',
+          Name: 'v1.0',
+          Description: 'description',
+        },
+      ],
+      LaunchPaths: [],
+    };
+  });
+
+  await expect(testee.describeProductAggregate( {
+    productId: productId,
+    client: client,
+  })).rejects.toThrow(/Unable to resolve default or latest provisioning artifact./);
 });
 
 test('describe product aggregate should resolve launch path', async () => {

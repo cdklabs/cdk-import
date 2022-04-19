@@ -37,6 +37,8 @@ export interface DescribeProductAggregateOptions {
   /**
    * A client that performs calls to AWS Service Catalog. You can provide a mock here
    * for testing.
+   *
+   * @default - A real Service Catalog client
    */
   readonly client?: IServiceCatalogClient;
 
@@ -60,6 +62,7 @@ export interface DescribeProductAggregateOptions {
  * Returns the provisioning artifact from list of available artifacts.
  * If no query artifact Id is provided, the artifact marked `DEFAULT` will be returned.
  * If no `DEFAULT` artifact exists, the most recently created artifact will be returned.
+ *
  * @param provisioningArtifacts list of provisioning artifacts for a product
  * @param provisioningArtifactId query artifact Id
  * @returns provisioning artifact detail
@@ -67,11 +70,22 @@ export interface DescribeProductAggregateOptions {
 function resolveProvisioningArtifact(provisioningArtifacts: AWS.ServiceCatalog.ProvisioningArtifacts, provisioningArtifactId?: string):
 AWS.ServiceCatalog.ProvisioningArtifact {
   if (provisioningArtifactId) {
-    return provisioningArtifacts.filter(pa => pa.Id == provisioningArtifactId).pop()!;
-  } else if (provisioningArtifacts.filter(pa => pa.Guidance == 'DEFAULT').length == 1) {
-    return provisioningArtifacts.filter(pa => pa.Guidance == 'DEFAULT').pop()!;
+    const provisioningArtifact = provisioningArtifacts.filter(pa => pa.Id == provisioningArtifactId);
+    if (provisioningArtifact.length == 0) {
+      throw new Error(`Could not find specified provisioning artifact id: ${provisioningArtifactId}`);
+    } else {
+      return provisioningArtifact.pop()!;
+    }
   } else {
-    return provisioningArtifacts.sort((a, b) => a.CreatedTime!.valueOf() - b.CreatedTime!.valueOf()).pop()!;
+    try {
+      if (provisioningArtifacts.filter(pa => pa.Guidance == 'DEFAULT').length == 1) {
+        return provisioningArtifacts.filter(pa => pa.Guidance == 'DEFAULT').pop()!;
+      } else {
+        return provisioningArtifacts.sort((a, b) => a.CreatedTime!.valueOf() - b.CreatedTime!.valueOf()).pop()!;
+      }
+    } catch {
+      throw new Error('Unable to resolve default or latest provisioning artifact.');
+    }
   }
 }
 
@@ -102,6 +116,7 @@ async function describeProduct(options: DescribeProductAggregateOptions): Promis
   const describeProductResponse: AWS.ServiceCatalog.DescribeProductOutput = await sc.describeProduct({
     Id: options.productId,
   });
+  validateProductData(options.productId, describeProductResponse);
 
   const provisioningArtifact: AWS.ServiceCatalog.ProvisioningArtifact = resolveProvisioningArtifact(describeProductResponse.ProvisioningArtifacts!,
     options.provisioningArtifactId);
@@ -149,7 +164,7 @@ export async function fetchAvailableProducts(client?: IServiceCatalogClient): Pr
  *
  * @returns the provisoning parameters for an artifact
  */
-export async function describeProvisioningParameters(options: DescribeProductAggregateOptions):
+export async function describeProvisioningParameters( options: DescribeProductAggregateOptions):
 Promise<AWS.ServiceCatalog.DescribeProvisioningParametersOutput> {
 
   const sc = options.client ?? new ServiceCatalogClient();
@@ -167,9 +182,24 @@ Promise<AWS.ServiceCatalog.DescribeProvisioningParametersOutput> {
  * Holds all the information needed to generate a product artifact to provision.
  */
 export interface ProductDataAggregate {
+  /**
+   * Core product details.
+   */
   readonly product: AWS.ServiceCatalog.ProductViewSummary;
+  /**
+   * Details on the selected provisioning artifact for the product.
+   * Represents the actual template that contains resources.
+   */
   readonly provisioningArtifact: AWS.ServiceCatalog.ProvisioningArtifact;
+  /**
+   * Details on the selected launch path for the product.
+   * Represents the permissions/ability for end user to provision the product.
+   */
   readonly launchPath: AWS.ServiceCatalog.LaunchPathSummary;
+  /**
+   * Details on provisioning requirements for the provisioning artifact and launch path.
+   * Holds information on the inputs and outputs for the downstream template.
+   */
   readonly params: AWS.ServiceCatalog.DescribeProvisioningParametersOutput;
 }
 
@@ -183,11 +213,21 @@ export async function describeProductAggregate( options: DescribeProductAggregat
   const sc = options.client ?? new ServiceCatalogClient();
 
   const productDataAggregate = await describeProduct({
-    productId: options.productId!,
+    productId: options.productId,
     launchPathId: options.launchPathId,
     provisioningArtifactId: options.provisioningArtifactId,
     client: sc,
   });
 
   return productDataAggregate;
+}
+
+function validateProductData(productId: string, product: AWS.ServiceCatalog.DescribeProductOutput): void {
+  if (product.ProductViewSummary == undefined) {
+    throw new Error(`Cannot resolve product details for ${productId}`);
+  } else if (product.ProvisioningArtifacts == undefined) {
+    throw new Error(`Cannot resolve provisioning artifacts for product: ${productId}`);
+  } else if (product.LaunchPaths == undefined) {
+    throw new Error(`Cannot resolve launch paths for product: ${productId}`);
+  }
 }
