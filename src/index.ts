@@ -1,7 +1,9 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import * as caseutil from 'case';
 import { describeResourceType, DescribeResourceTypeOptions } from './cfn-registry';
 import { CfnResourceGenerator } from './cfn-resource-generator';
+import { ServiceCatalogProvisioningConstructGenerator } from './sc-construct-generator';
 import { describeProductAggregate, DescribeProductAggregateOptions, fetchAvailableProducts } from './service-catalog';
 
 export interface ImportResourceTypeOptions extends DescribeResourceTypeOptions {
@@ -53,11 +55,13 @@ export interface ImportProductOptions extends DescribeProductAggregateOptions {
 export async function importProduct(options: ImportProductOptions): Promise<string> {
   const outdir = options.outdir ?? '.';
 
-  await describeProductAggregate(options);
+  const product = await describeProductAggregate(options);
 
-  //TODO CodeGen
+  const gen = new ServiceCatalogProvisioningConstructGenerator(product);
+  fs.mkdirSync(outdir, { recursive: true });
+  fs.writeFileSync(path.join(outdir, `${caseutil.header(gen.name).toLowerCase()}.ts`), gen.render());
 
-  return outdir; //just for typechecking
+  return gen.name;
 };
 
 /**
@@ -74,7 +78,7 @@ export async function importProducts(options: ImportProductOptions): Promise<str
   await Promise.all(availableProducts.map(async (product) => {
     const productVersion = await importProduct( {
       outdir: outdir,
-      productId: product.Id!,
+      productId: product.ProductId!,
     });
     productVersions.push(productVersion);
   }));
