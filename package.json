@@ -40,17 +40,17 @@
     "jest-junit": "^13",
     "json-schema": "^0.4.0",
     "npm-check-updates": "^12",
-    "projen": "^0.54.35",
+    "projen": "^0.54.39",
     "standard-version": "^9",
     "ts-jest": "^27.1.4",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
   },
   "dependencies": {
-    "aws-sdk": "^2.1118.0",
+    "aws-sdk": "^2.1119.0",
     "case": "^1.6.3",
-    "jsii-srcmak": "^0.1.537",
-    "json2jsii": "^0.2.197",
+    "jsii-srcmak": "^0.1.538",
+    "json2jsii": "^0.2.198",
     "minimist": "^1.2.6",
     "proxy-agent": "^5.0.0"
   },
