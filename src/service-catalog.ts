@@ -1,5 +1,4 @@
 import * as AWS from 'aws-sdk';
-AWS.config.update( { region: 'ca-central-1' } );
 import { createAwsClient } from './aws';
 
 export interface IServiceCatalogClient {
