@@ -1,0 +1,31 @@
+{
+  "product": {
+    "Id": "prodview-aj6r2gadadibw",
+    "ProductId": "prod-hbil7wbr2z46g",
+    "Name": "BucketProduct",
+    "Owner": "IT",
+    "ShortDescription": "Simple S3 Bucket for storage",
+    "Type": "CLOUD_FORMATION_TEMPLATE",
+    "HasDefaultPath": false
+  },
+  "provisioningArtifact": {
+    "Id": "pa-ox27y6nfnwgti",
+    "Name": "BucketProduct",
+    "Description": "Simple bucket product with no inputs or outputs",
+    "CreatedTime": "2022-04-22T15:43:01.000Z",
+    "Guidance": "DEFAULT"
+  },
+  "launchPath": {
+    "Id": "lpv2-cpvkiyafhmraa",
+    "Name": "DevTools"
+   },
+  "params": {
+    "ProvisioningArtifactParameters": [],
+    "ConstraintSummaries": [],
+    "UsageInstructions": [],
+    "TagOptions": [],
+    "ProvisioningArtifactPreferences": "{}",
+    "ProvisioningArtifactOutputs": [],
+    "ProvisioningArtifactOutputKeys": []
+  }
+}

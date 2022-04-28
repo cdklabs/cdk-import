@@ -1,0 +1,54 @@
+{
+  "product": {
+    "ProductId": "prod-l2sj2aif4z53s",
+    "Name": "Ec2ComputeInstance",
+    "Owner": "IT",
+    "ShortDescription": "Compute instance to be used for experiments, does NOT contain DB access",
+    "Type": "CLOUD_FORMATION_TEMPLATE",
+    "HasDefaultPath": false
+    },
+  "provisioningArtifact": {
+    "Id": "pa-zkgmc6oxnbwoo",
+    "Name": "EC2LargeInstance",
+    "Description": "A VPC containing an EC2 Instance for large compute needs",
+    "CreatedTime": "2022-04-21T15:25:29.000Z",
+    "Guidance": "DEFAULT"
+    },
+  "launchPath": { "Id": "lpv2-tlcb4np72mw3c", "Name": "DevTools" },
+  "params": {
+    "ProvisioningArtifactParameters": [
+      {
+        "ParameterKey": "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter",
+        "DefaultValue": "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-arm64-gp2",
+        "ParameterType": "AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>",
+        "IsNoEcho": false,
+        "ParameterConstraints": []
+      },
+      {
+        "ParameterKey": "InstanceType",
+        "ParameterType": "String",
+        "IsNoEcho": false,
+        "Description": "The instance type of an EC2 instance.",
+        "ParameterConstraints": []
+      }
+    ],
+    "ConstraintSummaries": [ { "Type": "NOTIFICATION" } ],
+    "UsageInstructions": [
+      { "Type": "rules", "Value": "{}" },
+      { "Type": "version", "Value": "2010-09-09" },
+      { "Type": "capabilitiesReason",
+        "Value": "The following resource(s) require capabilities: [AWS::IAM::Role]"
+      },
+    { "Type": "tagUpdateOnProvisionedProduct", "Value": "NOT_ALLOWED" },
+    { "Type": "capability", "Value": "CAPABILITY_IAM" }
+    ],
+    "TagOptions": [],
+    "ProvisioningArtifactPreferences": {},
+    "ProvisioningArtifactOutputs": [],
+    "ProvisioningArtifactOutputKeys": [
+    { "Key": "IPAddress" },
+    { "Key": "DownloadKeyCommand" },
+    { "Key": "sshcommand" }
+    ]
+  }
+}

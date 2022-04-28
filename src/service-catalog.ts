@@ -45,7 +45,7 @@ export interface DescribeProductAggregateOptions {
   /**
    * The product Id.
    */
-  readonly productId: string;
+  readonly productId?: string;
 
   /**
    * The provisioning artifact Id.
@@ -122,14 +122,19 @@ async function describeProduct(options: DescribeProductAggregateOptions): Promis
   const describeProductResponse: AWS.ServiceCatalog.DescribeProductOutput = await sc.describeProduct({
     Id: options.productId,
   });
-  validateProductData(options.productId, describeProductResponse);
+  validateProductData(options.productId!, describeProductResponse);
 
   const provisioningArtifact: AWS.ServiceCatalog.ProvisioningArtifact = resolveProvisioningArtifact(describeProductResponse.ProvisioningArtifacts!,
     options.provisioningArtifactId);
 
   const launchPath: AWS.ServiceCatalog.LaunchPathSummary = resolveLaunchPath(describeProductResponse.LaunchPaths!, options.launchPathId);
 
-  const parameters: AWS.ServiceCatalog.DescribeProvisioningParametersOutput = await describeProvisioningParameters(options);
+  const parameters: AWS.ServiceCatalog.DescribeProvisioningParametersOutput = await describeProvisioningParameters({
+    productId: options.productId!,
+    provisioningArtifactId: provisioningArtifact.Id!,
+    launchPathId: launchPath.Id!,
+    client: sc,
+  });
 
   return {
     product: describeProductResponse.ProductViewSummary!,
