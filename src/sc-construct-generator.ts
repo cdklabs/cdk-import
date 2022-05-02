@@ -70,9 +70,7 @@ export class ServiceCatalogProvisioningConstructGenerator {
       this.emitDefinitionTypes(code);
     }
     this.emitConstructClass(code);
-    if (this.enums.length > 0) {
-      this.emitEnums(code);
-    }
+    this.enums.length && this.emitEnums(code);
     return code.render();
   }
 
@@ -203,21 +201,11 @@ export class ServiceCatalogProvisioningConstructGenerator {
       code.line(` * ${product.ShortDescription}`);
       code.line(' *');
     }
-    if (product.SupportDescription) {
-      code.line(` * ${product.SupportDescription}`);
-    }
-    if (product.SupportEmail) {
-      code.line(` * Support Email: ${product.SupportEmail}`);
-    }
-    if (product.SupportUrl) {
-      code.line(` * Support Url: ${product.SupportUrl}`);
-    }
-    if (product.Distributor) {
-      code.line(` * Distributor: ${product.Distributor}`);
-    }
-    if (product.Owner) {
-      code.line(` * Owner: ${product.Owner}`);
-    }
+    product.SupportDescription && code.line(` * ${product.SupportDescription}`);
+    product.SupportEmail && code.line(` * Support Email: ${product.SupportEmail}`);
+    product.SupportUrl && code.line(` * Support Url: ${product.SupportUrl}`);
+    product.Distributor && code.line(` * Distributor: ${product.Distributor}`);
+    product.Owner && code.line(` * Owner: ${product.Owner}`);
     code.line(' */');
   }
 
