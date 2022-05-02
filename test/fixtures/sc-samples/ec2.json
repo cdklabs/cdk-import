@@ -22,14 +22,38 @@
         "DefaultValue": "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-arm64-gp2",
         "ParameterType": "AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>",
         "IsNoEcho": false,
-        "ParameterConstraints": []
+        "ParameterConstraints": {}
       },
       {
         "ParameterKey": "InstanceType",
         "ParameterType": "String",
         "IsNoEcho": false,
+        "DefaultValue": "t2.micro",
         "Description": "The instance type of an EC2 instance.",
-        "ParameterConstraints": []
+        "ParameterConstraints": {
+            "ConstraintDescription": "Must be t2 micro or small.",
+            "AllowedValues": [
+              "t2.micro",
+              "t2.small"
+            ]
+        }
+      },
+      {
+        "ParameterKey": "Numbers",
+        "ParameterType": "Number",
+        "DefaultValue": "5",
+        "Description": "A number to be selected.",
+        "ParameterConstraints": {
+            "ConstraintDescription": "These are the allowed numbers.",
+            "AllowedValues": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ]
+        }
+        
       }
     ],
     "ConstraintSummaries": [ { "Type": "NOTIFICATION" } ],
@@ -47,7 +71,7 @@
     "ProvisioningArtifactOutputs": [],
     "ProvisioningArtifactOutputKeys": [
     { "Key": "IPAddress" },
-    { "Key": "DownloadKeyCommand" },
+    { "Key": "DownloadKeyCommand", "Description": "The command to download the key" },
     { "Key": "sshcommand" }
     ]
   }

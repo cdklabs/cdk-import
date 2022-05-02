@@ -1,6 +1,15 @@
-import { pascal, camel } from 'case';
+import { ProvisioningArtifactOutputs, ProvisioningArtifactParameters } from 'aws-sdk/clients/servicecatalog';
+import { pascal, camel, constant } from 'case';
 import * as j2j from 'json2jsii';
 import { ProductDataAggregate } from './service-catalog';
+
+/**
+ * Represents an enum for CloudFormation parameter inputs that have predefined allowed values.
+ */
+type EnumDefinition = {
+  name: string;
+  allowedValues: string[];
+};
 
 /**
  * Generator to emit classes and information on provisioning details for a product.
@@ -12,7 +21,11 @@ export class ServiceCatalogProvisioningConstructGenerator {
   private readonly resourceAttributes: string[];
   private readonly constructClassName: string;
   private readonly propsStructName: string;
-  private readonly outputKeys: string[];
+  private readonly enums: EnumDefinition[];
+  private readonly parameters: ProvisioningArtifactParameters;
+  private readonly defaultAttributes: Set<string>;
+  private readonly outputKeys: ProvisioningArtifactOutputs;
+  private readonly outputDescriptions: {[key: string]: string | undefined};
   public readonly name: string;
 
   /**
@@ -25,19 +38,21 @@ export class ServiceCatalogProvisioningConstructGenerator {
     this.propsStructName = j2j.TypeGenerator.normalizeTypeName(`${this.constructClassName}Props`);
     this.name = this.sanitizedTypeName;
     this.resourceAttributes = new Array<string>();
-    this.outputKeys = this.productDataAggregate.params.ProvisioningArtifactOutputKeys!.map(key => key.Key!);
+    this.enums = new Array<EnumDefinition>();
+    this.parameters = this.productDataAggregate.params.ProvisioningArtifactParameters!;
     this.hasParameters = this.productDataAggregate.params.ProvisioningArtifactParameters!.length > 0;
+    this.outputKeys = this.productDataAggregate.params.ProvisioningArtifactOutputKeys!;
+    this.outputDescriptions = this.productDataAggregate.params.ProvisioningArtifactOutputKeys!.reduce((obj, key) => {
+      obj[camel(key.Key!)] = key.Description;
+      return obj;
+    }, {} as {[key: string]: string | undefined});
 
-    const attributeNames: string[] = [
-      'provisionedProductId',
-      'cloudFormationStackArn',
-      'recordId',
-      ...this.outputKeys.map(camel),
-    ];
+    this.defaultAttributes = new Set<string>(['provisionedProductId', 'cloudFormationStackArn', 'recordId']);
 
-    for (const attr of attributeNames) {
-      this.resourceAttributes.push(attr);
-    }
+    this.resourceAttributes.push(
+      ...this.defaultAttributes,
+      ...this.outputKeys.map(key => camel(key.Key!)),
+    );
   }
 
   /**
@@ -55,6 +70,7 @@ export class ServiceCatalogProvisioningConstructGenerator {
       this.emitDefinitionTypes(code);
     }
     this.emitConstructClass(code);
+    this.enums.length && this.emitEnums(code);
     return code.render();
   }
 
@@ -96,7 +112,7 @@ export class ServiceCatalogProvisioningConstructGenerator {
 
   private emitParameterMap(code: j2j.Code) {
     code.openBlock('enum ParameterKeys');
-    this.productDataAggregate.params.ProvisioningArtifactParameters?.forEach(p => {
+    this.parameters?.forEach(p => {
       code.line(`${camel(p.ParameterKey!)} = '${p.ParameterKey}',`);
     });
     code.closeBlock();
@@ -115,38 +131,94 @@ export class ServiceCatalogProvisioningConstructGenerator {
 
   private emitDefinitionTypes(code: j2j.Code) {
     code.openBlock(`export interface ${this.constructClassName}Props`);
-    this.productDataAggregate.params.ProvisioningArtifactParameters!.forEach(pa => {
+    this.parameters!.forEach(pa => {
       let optional = '';
       code.line('/**');
-      (pa.Description != undefined) ? code.line(` * ${pa.Description}`): null;
+      code.line(` * ${pascal(pa.ParameterKey!)}`);
+      if (pa.Description) {
+        code.line(' *');
+        code.line(` * ${pa.Description}`);
+      }
+      if (pa.ParameterConstraints?.ConstraintDescription) {
+        code.line(' *');
+        code.line(` * ${pa.ParameterConstraints?.ConstraintDescription}`);
+      }
       if (pa.DefaultValue) {
         optional += '?';
-        (pa.ParameterConstraints?.ConstraintDescription != undefined) ? code.line(` * ${pa.ParameterConstraints?.ConstraintDescription}`): null;
         code.line(' *');
         code.line(` * @default ${pa.DefaultValue}`);
       }
+      if (pa.ParameterConstraints?.AllowedValues?.length) {
+        this.enums.push({
+          name: pa.ParameterKey!,
+          allowedValues: pa.ParameterConstraints.AllowedValues,
+        });
+      };
 
       code.line(' */');
-      code.line(`readonly ${camel(pa.ParameterKey!)}${optional}: ${pa.ParameterConstraints?.AllowedValues?.length ? pa.ParameterKey : 'string'};`);
+      code.line(`readonly ${camel(pa.ParameterKey!)}${optional}: ${pa.ParameterConstraints?.AllowedValues?.length ? this.constructClassName + '.' + pa.ParameterKey : 'string'};`);
+      code.line();
+    });
+    code.closeBlock();
+  }
+
+  private resolveEnumValue(val: string): string {
+    if (Number(val)) {
+      return constant(`VALUE_${val}`);
+    } else if (Number(val.charAt(0))) {
+      return `'${constant(val)}'`;
+    } else {
+      return constant(val);
+    }
+  }
+
+  private emitEnums(code: j2j.Code) {
+    code.line();
+    code.openBlock(`export namespace ${this.constructClassName}`);
+    this.enums.forEach( e => {
+      code.line();
+      code.openBlock(`export enum ${e.name}`);
+      e.allowedValues.forEach(val => {
+        code.line('/**');
+        code.line(` * ${val}`);
+        code.line(' */');
+        code.line(`${this.resolveEnumValue(val)} = '${val}',`);
+        code.line();
+      });
+      code.closeBlock();
       code.line();
     });
     code.closeBlock();
     code.line();
   }
 
-  private emitConstructClass(code: j2j.Code) {
+  private emitProductDescription(code: j2j.Code) {
+    const product = this.productDataAggregate.product;
     code.line('/**');
-    code.line(` * A Service Catalog CloudFormation \`${this.sanitizedTypeName}\` product.`);
+    code.line(` * ${this.sanitizedTypeName}`);
     code.line(' *');
-    code.line(' * @cloudformationResource AWS::ServiceCatalog::CloudFormationProvisionedProduct');
-    code.line(' * @stability external');
+    if (product.ShortDescription) {
+      code.line(` * ${product.ShortDescription}`);
+      code.line(' *');
+    }
+    product.SupportDescription && code.line(` * ${product.SupportDescription}`);
+    product.SupportEmail && code.line(` * Support Email: ${product.SupportEmail}`);
+    product.SupportUrl && code.line(` * Support Url: ${product.SupportUrl}`);
+    product.Distributor && code.line(` * Distributor: ${product.Distributor}`);
+    product.Owner && code.line(` * Owner: ${product.Owner}`);
     code.line(' */');
+  }
+
+  private emitConstructClass(code: j2j.Code) {
+    this.emitProductDescription(code);
     code.openBlock(`export class ${this.constructClassName} extends ${this.constructClassName}Base`);
     for (const prop of this.resourceAttributes) {
-      code.line('/**');
-      code.line(` * Attribute \`${this.sanitizedTypeName}.${prop}\``);
-      code.line(' */');
-      code.line(`public readonly ${camel(prop)}: string;`);
+      if (this.outputDescriptions[prop]) {
+        code.line('/**');
+        code.line(` * ${this.outputDescriptions[prop]}`);
+        code.line(' */');
+      }
+      code.line(`public readonly ${prop}: string;`);
     }
     code.line('private readonly provisionedProduct: sc.CfnCloudFormationProvisionedProduct;');
     code.line();
@@ -160,29 +232,42 @@ export class ServiceCatalogProvisioningConstructGenerator {
       code.line(' * @param props - resource properties');
     }
     code.line(' */');
-    if (this.hasParameters) {
-      code.openBlock(`constructor(scope: constructs.Construct, id: string, props: ${this.propsStructName})`);
-    } else {
-      code.openBlock('constructor(scope: constructs.Construct, id: string)');
-    }
+    code.openBlock(`constructor(scope: constructs.Construct, id: string${this.hasParameters ? ', props: ' + this.propsStructName : ''})`);
     code.line('super(scope, id);');
     code.line('');
     code.line("this.provisionedProduct = new sc.CfnCloudFormationProvisionedProduct(this, 'Resource', {");
     code.line('  provisionedProductName: this.node.id,');
-    code.line(`  provisioningArtifactName: '${this.productDataAggregate.provisioningArtifact.Name!}',`);
-    code.line(`  productName: '${this.productDataAggregate.product.Name!}',`);
+
+    if (this.productDataAggregate.provisioningArtifact.Name) {
+      code.line(`  provisioningArtifactName: '${this.productDataAggregate.provisioningArtifact.Name!}',`);
+    } else {
+      code.line(`  provisioningArtifactId: '${this.productDataAggregate.provisioningArtifact.Id!}',`);
+    }
+
+    if (this.productDataAggregate.product.Name) {
+      code.line(`  productName: '${this.productDataAggregate.product.Name!}',`);
+    } else {
+      code.line(`  productId: '${this.productDataAggregate.product.ProductId!}',`);
+    }
+
+    if (this.productDataAggregate.launchPath.Name) {
+      code.line(`  pathName: '${this.productDataAggregate.launchPath.Name!}',`);
+    } else {
+      code.line(`  pathId: '${this.productDataAggregate.launchPath.Id!}',`);
+    }
 
     // generate provisioning parameters from props to avoid redundant defaults
     if (this.hasParameters) {
       this.emitParameters(code);
-    };
+    }
+
     code.line('});');
     code.line();
     code.line('this.provisionedProductId = this.provisionedProduct.ref;');
     code.line("this.cloudFormationStackArn = cdk.Token.asString(cdk.Fn.getAtt(this.provisionedProduct.logicalId, 'CloudformationStackArn'));");
     code.line("this.recordId = cdk.Token.asString(cdk.Fn.getAtt(this.provisionedProduct.logicalId, 'RecordId'));");
     this.outputKeys?.forEach(output => {
-      code.line(`this.${camel(output)} = cdk.Token.asString(cdk.Fn.getAtt(this.provisionedProduct.logicalId, 'Outputs.${output}'));`);
+      code.line(`this.${camel(output.Key!)} = cdk.Token.asString(cdk.Fn.getAtt(this.provisionedProduct.logicalId, 'Outputs.${output.Key!}'));`);
     });
     code.closeBlock();
 

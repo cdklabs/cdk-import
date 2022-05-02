@@ -41,66 +41,60 @@ abstract class AiPoweredHealthDataMaskingBase extends cdk.Resource implements IA
 }
 
 /**
- * A Service Catalog CloudFormation \`AIPoweredHealthDataMasking\` product.
+ * AIPoweredHealthDataMasking
  *
- * @cloudformationResource AWS::ServiceCatalog::CloudFormationProvisionedProduct
- * @stability external
+ * The AI-Powered Health Data Masking solution helps healthcare organizations identify and mask health data in images or text. This solution uses Amazon Comprehend Medical to detect health data in a body of text, Amazon Rekognition to identify text in an image, Amazon API Gateway and AWS Lambda to provide an API interface for this functionality, and AWS Identity and Access Management (IAM) to authorize API requests.
+ *
+ * [Service Catalog Reference Architectures] Copyright 2018-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved. Licensed under the Apache License, Version 2.0 (the 'License'); You may not use this product template except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an 'AS IS' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+ * Support Url: https://aws.amazon.com/solutions/ai-powered-health-data-masking
+ * Owner: AWS Solutions
  */
 export class AiPoweredHealthDataMasking extends AiPoweredHealthDataMaskingBase {
-  /**
-   * Attribute \`AIPoweredHealthDataMasking.provisionedProductId\`
-   */
   public readonly provisionedProductId: string;
-  /**
-   * Attribute \`AIPoweredHealthDataMasking.cloudFormationStackArn\`
-   */
   public readonly cloudFormationStackArn: string;
-  /**
-   * Attribute \`AIPoweredHealthDataMasking.recordId\`
-   */
   public readonly recordId: string;
   /**
-   * Attribute \`AIPoweredHealthDataMasking.apiGatewayInvokeURL\`
+   * The URL to invoke the API Gateway Endpoint
    */
   public readonly apiGatewayInvokeURL: string;
   /**
-   * Attribute \`AIPoweredHealthDataMasking.apiGatewayId\`
+   * The ID of the API Gateway
    */
   public readonly apiGatewayId: string;
   /**
-   * Attribute \`AIPoweredHealthDataMasking.apiGatewayStage\`
+   * The Stage of the API Gateway
    */
   public readonly apiGatewayStage: string;
   /**
-   * Attribute \`AIPoweredHealthDataMasking.imageBucketName\`
+   * The name of the bucket containing the image
    */
   public readonly imageBucketName: string;
   /**
-   * Attribute \`AIPoweredHealthDataMasking.logBucketName\`
+   * The name of the bucket containing the logs
    */
   public readonly logBucketName: string;
   /**
-   * Attribute \`AIPoweredHealthDataMasking.imageResourceId\`
+   * The ID of the image resource
    */
   public readonly imageResourceId: string;
   /**
-   * Attribute \`AIPoweredHealthDataMasking.imageTextResourceId\`
+   * The ID of the image text resource
    */
   public readonly imageTextResourceId: string;
   /**
-   * Attribute \`AIPoweredHealthDataMasking.imagePhiResourceId\`
+   * The ID of the image Phi resource
    */
   public readonly imagePhiResourceId: string;
   /**
-   * Attribute \`AIPoweredHealthDataMasking.imageMaskResourceId\`
+   * The ID of the image mask resource
    */
   public readonly imageMaskResourceId: string;
   /**
-   * Attribute \`AIPoweredHealthDataMasking.textPhiResourceId\`
+   * The ID of the text Phi resource
    */
   public readonly textPhiResourceId: string;
   /**
-   * Attribute \`AIPoweredHealthDataMasking.textMaskResourceId\`
+   * The ID of the text mask resource
    */
   public readonly textMaskResourceId: string;
   private readonly provisionedProduct: sc.CfnCloudFormationProvisionedProduct;
@@ -118,6 +112,7 @@ export class AiPoweredHealthDataMasking extends AiPoweredHealthDataMaskingBase {
       provisionedProductName: this.node.id,
       provisioningArtifactName: 'v1.0',
       productName: 'AI-Powered Health Data Masking',
+      pathName: 'DevTools',
     });
 
     this.provisionedProductId = this.provisionedProduct.ref;
@@ -157,23 +152,15 @@ abstract class BucketProductBase extends cdk.Resource implements IBucketProduct 
 }
 
 /**
- * A Service Catalog CloudFormation \`BucketProduct\` product.
+ * BucketProduct
  *
- * @cloudformationResource AWS::ServiceCatalog::CloudFormationProvisionedProduct
- * @stability external
+ * Simple S3 Bucket for storage
+ *
+ * Owner: IT
  */
 export class BucketProduct extends BucketProductBase {
-  /**
-   * Attribute \`BucketProduct.provisionedProductId\`
-   */
   public readonly provisionedProductId: string;
-  /**
-   * Attribute \`BucketProduct.cloudFormationStackArn\`
-   */
   public readonly cloudFormationStackArn: string;
-  /**
-   * Attribute \`BucketProduct.recordId\`
-   */
   public readonly recordId: string;
   private readonly provisionedProduct: sc.CfnCloudFormationProvisionedProduct;
 
@@ -190,6 +177,7 @@ export class BucketProduct extends BucketProductBase {
       provisionedProductName: this.node.id,
       provisioningArtifactName: 'BucketProduct',
       productName: 'BucketProduct',
+      pathName: 'DevTools',
     });
 
     this.provisionedProductId = this.provisionedProduct.ref;
@@ -226,6 +214,7 @@ abstract class Ec2ComputeInstanceBase extends cdk.Resource implements IEc2Comput
 enum ParameterKeys {
   ssmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter = 'SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter',
   instanceType = 'InstanceType',
+  numbers = 'Numbers',
 }
 
 namespace ParameterKeys {
@@ -240,48 +229,51 @@ namespace ParameterKeys {
 }
 export interface Ec2ComputeInstanceProps {
   /**
+   * SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter
    *
    * @default /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-arm64-gp2
    */
   readonly ssmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter?: string;
 
   /**
+   * InstanceType
+   *
    * The instance type of an EC2 instance.
+   *
+   * Must be t2 micro or small.
+   *
+   * @default t2.micro
    */
-  readonly instanceType: string;
+  readonly instanceType?: Ec2ComputeInstance.InstanceType;
+
+  /**
+   * Numbers
+   *
+   * A number to be selected.
+   *
+   * These are the allowed numbers.
+   *
+   * @default 5
+   */
+  readonly numbers?: Ec2ComputeInstance.Numbers;
 
 }
-
 /**
- * A Service Catalog CloudFormation \`Ec2ComputeInstance\` product.
+ * Ec2ComputeInstance
  *
- * @cloudformationResource AWS::ServiceCatalog::CloudFormationProvisionedProduct
- * @stability external
+ * Compute instance to be used for experiments, does NOT contain DB access
+ *
+ * Owner: IT
  */
 export class Ec2ComputeInstance extends Ec2ComputeInstanceBase {
-  /**
-   * Attribute \`Ec2ComputeInstance.provisionedProductId\`
-   */
   public readonly provisionedProductId: string;
-  /**
-   * Attribute \`Ec2ComputeInstance.cloudFormationStackArn\`
-   */
   public readonly cloudFormationStackArn: string;
-  /**
-   * Attribute \`Ec2ComputeInstance.recordId\`
-   */
   public readonly recordId: string;
-  /**
-   * Attribute \`Ec2ComputeInstance.iPAddress\`
-   */
   public readonly iPAddress: string;
   /**
-   * Attribute \`Ec2ComputeInstance.downloadKeyCommand\`
+   * The command to download the key
    */
   public readonly downloadKeyCommand: string;
-  /**
-   * Attribute \`Ec2ComputeInstance.sshcommand\`
-   */
   public readonly sshcommand: string;
   private readonly provisionedProduct: sc.CfnCloudFormationProvisionedProduct;
 
@@ -299,6 +291,7 @@ export class Ec2ComputeInstance extends Ec2ComputeInstanceBase {
       provisionedProductName: this.node.id,
       provisioningArtifactName: 'EC2LargeInstance',
       productName: 'Ec2ComputeInstance',
+      pathName: 'DevTools',
       provisioningParameters:
         Object.entries(props).map(([k, v]) => {
           return {
@@ -315,5 +308,52 @@ export class Ec2ComputeInstance extends Ec2ComputeInstanceBase {
     this.downloadKeyCommand = cdk.Token.asString(cdk.Fn.getAtt(this.provisionedProduct.logicalId, 'Outputs.DownloadKeyCommand'));
     this.sshcommand = cdk.Token.asString(cdk.Fn.getAtt(this.provisionedProduct.logicalId, 'Outputs.sshcommand'));
   }
-}"
+}
+
+export namespace Ec2ComputeInstance {
+
+  export enum InstanceType {
+    /**
+     * t2.micro
+     */
+    T2_MICRO = 't2.micro',
+
+    /**
+     * t2.small
+     */
+    T2_SMALL = 't2.small',
+
+  }
+
+
+  export enum Numbers {
+    /**
+     * 1
+     */
+    VALUE_1 = '1',
+
+    /**
+     * 2
+     */
+    VALUE_2 = '2',
+
+    /**
+     * 3
+     */
+    VALUE_3 = '3',
+
+    /**
+     * 4
+     */
+    VALUE_4 = '4',
+
+    /**
+     * 5
+     */
+    VALUE_5 = '5',
+
+  }
+
+}
+"
 `;
