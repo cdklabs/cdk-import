@@ -71,7 +71,7 @@
     "ProvisioningArtifactOutputs": [],
     "ProvisioningArtifactOutputKeys": [
     { "Key": "IPAddress" },
-    { "Key": "DownloadKeyCommand" },
+    { "Key": "DownloadKeyCommand", "Description": "The command to download the key" },
     { "Key": "sshcommand" }
     ]
   }

@@ -53,16 +53,49 @@ export class AiPoweredHealthDataMasking extends AiPoweredHealthDataMaskingBase {
   public readonly provisionedProductId: string;
   public readonly cloudFormationStackArn: string;
   public readonly recordId: string;
+  /**
+   * The URL to invoke the API Gateway Endpoint
+   */
   public readonly apiGatewayInvokeURL: string;
+  /**
+   * The ID of the API Gateway
+   */
   public readonly apiGatewayId: string;
+  /**
+   * The Stage of the API Gateway
+   */
   public readonly apiGatewayStage: string;
+  /**
+   * The name of the bucket containing the image
+   */
   public readonly imageBucketName: string;
+  /**
+   * The name of the bucket containing the logs
+   */
   public readonly logBucketName: string;
+  /**
+   * The ID of the image resource
+   */
   public readonly imageResourceId: string;
+  /**
+   * The ID of the image text resource
+   */
   public readonly imageTextResourceId: string;
+  /**
+   * The ID of the image Phi resource
+   */
   public readonly imagePhiResourceId: string;
+  /**
+   * The ID of the image mask resource
+   */
   public readonly imageMaskResourceId: string;
+  /**
+   * The ID of the text Phi resource
+   */
   public readonly textPhiResourceId: string;
+  /**
+   * The ID of the text mask resource
+   */
   public readonly textMaskResourceId: string;
   private readonly provisionedProduct: sc.CfnCloudFormationProvisionedProduct;
 
@@ -237,6 +270,9 @@ export class Ec2ComputeInstance extends Ec2ComputeInstanceBase {
   public readonly cloudFormationStackArn: string;
   public readonly recordId: string;
   public readonly iPAddress: string;
+  /**
+   * The command to download the key
+   */
   public readonly downloadKeyCommand: string;
   public readonly sshcommand: string;
   private readonly provisionedProduct: sc.CfnCloudFormationProvisionedProduct;

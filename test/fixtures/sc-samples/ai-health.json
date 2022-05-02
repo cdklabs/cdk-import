@@ -29,17 +29,17 @@
     "ProvisioningArtifactPreferences": {},
     "ProvisioningArtifactOutputs": [ { "Key": "pa-5p66sfmrvky7c", "Description": "" } ],
     "ProvisioningArtifactOutputKeys": [
-      { "Key": "ApiGatewayInvokeURL" },
-      { "Key": "ApiGatewayId" },
-      { "Key": "ApiGatewayStage" },
-      { "Key": "ImageBucketName" },
-      { "Key": "LogBucketName" },
-      { "Key": "ImageResourceId" },
-      { "Key": "ImageTextResourceId" },
-      { "Key": "ImagePhiResourceId" },
-      { "Key": "ImageMaskResourceId" },
-      { "Key": "TextPhiResourceId" },
-      { "Key": "TextMaskResourceId" }
+      { "Key": "ApiGatewayInvokeURL", "Description": "The URL to invoke the API Gateway Endpoint" },
+      { "Key": "ApiGatewayId", "Description": "The ID of the API Gateway" },
+      { "Key": "ApiGatewayStage", "Description": "The Stage of the API Gateway" },
+      { "Key": "ImageBucketName", "Description": "The name of the bucket containing the image" },
+      { "Key": "LogBucketName", "Description": "The name of the bucket containing the logs" },
+      { "Key": "ImageResourceId", "Description": "The ID of the image resource" },
+      { "Key": "ImageTextResourceId", "Description": "The ID of the image text resource" },
+      { "Key": "ImagePhiResourceId", "Description": "The ID of the image Phi resource" },
+      { "Key": "ImageMaskResourceId", "Description": "The ID of the image mask resource" },
+      { "Key": "TextPhiResourceId", "Description": "The ID of the text Phi resource" },
+      { "Key": "TextMaskResourceId", "Description": "The ID of the text mask resource" }
     ]
   }
 }
