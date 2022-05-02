@@ -209,6 +209,15 @@ export class ServiceCatalogProvisioningConstructGenerator {
     code.line(' */');
   }
 
+  private emitSynthesizerValidation(code: j2j.Code) {
+    code.line('const synthesizer: cdk.IStackSynthesizer = cdk.Stack.of(this).synthesizer;');
+    code.line('const supportedSynthesizers = [cdk.CliCredentialsStackSynthesizer, cdk.LegacyStackSynthesizer, cdk.BootstraplessSynthesizer];');
+    code.line();
+    code.line('if (!supportedSynthesizers.some(supportedSynthesizer => synthesizer instanceof supportedSynthesizer)) {');
+    code.line('  throw Error(`${synthesizer.constructor.name} not supported. Please use one of the supported synthesizers: ${supportedSynthesizers.map(synth => synth.name)}`);');
+    code.line('}');
+  }
+
   private emitConstructClass(code: j2j.Code) {
     this.emitProductDescription(code);
     code.openBlock(`export class ${this.constructClassName} extends ${this.constructClassName}Base`);
@@ -234,7 +243,9 @@ export class ServiceCatalogProvisioningConstructGenerator {
     code.line(' */');
     code.openBlock(`constructor(scope: constructs.Construct, id: string${this.hasParameters ? ', props: ' + this.propsStructName : ''})`);
     code.line('super(scope, id);');
-    code.line('');
+    code.line();
+    this.emitSynthesizerValidation(code);
+    code.line();
     code.line("this.provisionedProduct = new sc.CfnCloudFormationProvisionedProduct(this, 'Resource', {");
     code.line('  provisionedProductName: this.node.id,');
 

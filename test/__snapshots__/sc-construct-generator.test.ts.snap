@@ -108,6 +108,13 @@ export class AiPoweredHealthDataMasking extends AiPoweredHealthDataMaskingBase {
   constructor(scope: constructs.Construct, id: string) {
     super(scope, id);
 
+    const synthesizer: cdk.IStackSynthesizer = cdk.Stack.of(this).synthesizer;
+    const supportedSynthesizers = [cdk.CliCredentialsStackSynthesizer, cdk.LegacyStackSynthesizer, cdk.BootstraplessSynthesizer];
+
+    if (!supportedSynthesizers.some(supportedSynthesizer => synthesizer instanceof supportedSynthesizer)) {
+      throw Error(\`\${synthesizer.constructor.name} not supported. Please use one of the supported synthesizers: \${supportedSynthesizers.map(synth => synth.name)}\`);
+    }
+
     this.provisionedProduct = new sc.CfnCloudFormationProvisionedProduct(this, 'Resource', {
       provisionedProductName: this.node.id,
       provisioningArtifactName: 'v1.0',
@@ -172,6 +179,13 @@ export class BucketProduct extends BucketProductBase {
    */
   constructor(scope: constructs.Construct, id: string) {
     super(scope, id);
+
+    const synthesizer: cdk.IStackSynthesizer = cdk.Stack.of(this).synthesizer;
+    const supportedSynthesizers = [cdk.CliCredentialsStackSynthesizer, cdk.LegacyStackSynthesizer, cdk.BootstraplessSynthesizer];
+
+    if (!supportedSynthesizers.some(supportedSynthesizer => synthesizer instanceof supportedSynthesizer)) {
+      throw Error(\`\${synthesizer.constructor.name} not supported. Please use one of the supported synthesizers: \${supportedSynthesizers.map(synth => synth.name)}\`);
+    }
 
     this.provisionedProduct = new sc.CfnCloudFormationProvisionedProduct(this, 'Resource', {
       provisionedProductName: this.node.id,
@@ -286,6 +300,13 @@ export class Ec2ComputeInstance extends Ec2ComputeInstanceBase {
    */
   constructor(scope: constructs.Construct, id: string, props: Ec2ComputeInstanceProps) {
     super(scope, id);
+
+    const synthesizer: cdk.IStackSynthesizer = cdk.Stack.of(this).synthesizer;
+    const supportedSynthesizers = [cdk.CliCredentialsStackSynthesizer, cdk.LegacyStackSynthesizer, cdk.BootstraplessSynthesizer];
+
+    if (!supportedSynthesizers.some(supportedSynthesizer => synthesizer instanceof supportedSynthesizer)) {
+      throw Error(\`\${synthesizer.constructor.name} not supported. Please use one of the supported synthesizers: \${supportedSynthesizers.map(synth => synth.name)}\`);
+    }
 
     this.provisionedProduct = new sc.CfnCloudFormationProvisionedProduct(this, 'Resource', {
       provisionedProductName: this.node.id,
