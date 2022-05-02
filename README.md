@@ -1,7 +1,7 @@
 # cdk-import
 
-> Generates CDK L1 constructs for public CloudFormation Registry types and
-> modules.
+> Generates CDK L1 constructs from sources such as public CloudFormation Registry types and
+> modules as well as AWS Service Catalog product versions.
 
 ## Installation
 
@@ -11,9 +11,30 @@ npm install -g cdk-import
 
 ## Usage
 
+There are currently two sources that resources can be generated from. The subcommand 
+`cfn` is used to import from CloudFormation Registry, 
+`sc` is used to import AWS Service Catalog products.
+There are shared general options for output directories and target language.
+The `cfn` subcommand is optional as it is default import path.
+
+```shell
+Usage:
+  cdk-import SUBCOMMAND (cfn or sc, default is cfn
+
+General Options:
+  -l, --language     Output programming language                               [string]
+  -o, --outdir       Output directory                                          [string]
+  --go-module        Go module name (required if language is "golang")         [string]
+  --java-package     Java package name (required if language is "java")        [string]
+  -h, --help         Show usage info (include subcommand to see specific help) [boolean]
+```
+
+## CloudFormation Registry Usage
+
 ```shell
 Usage:
   cdk-import -l LANGUAGE RESOURCE-NAME[@VERSION]
+  cdk-import cfn -l LANGUAGE RESOURCE-NAME[@VERSION]
 
 Options:
   -l, --language     Output programming language                        [string]
@@ -139,6 +160,40 @@ Modules are also supported:
 ```shell
 cdk-import AWSQS::CheckPoint::CloudGuardQS::MODULE
 ```
+
+## AWS Service Catalog Usage
+
+The cdk-import tool generates a user friendly version of an provisioned product
+that can be used like a normal cdk construct within a cdk app.
+You can currently either specify a specific product version or generate all available products
+The tool will call APIs and attempt to resolve default artifact and launch path for a product,
+if a singular product version or launch path cannot be resolved, it will throw an error.
+
+```shell
+Usage:
+  cdk-import sc -l LANGUAGE
+  cdk-import sc -l LANGUAGE -pr PRODUCT-ID -pa PROVISIONING-ARTIFACT-ID -lp LAUNCH-PATH-ID
+
+Options:
+  -l, --language                 Output programming language                          [string]
+  -o, --outdir                   Output directory (default "./sc-products")           [string]
+  -pr, --productId               Product Id                                           [string]
+  -pa, --provisioningArtifactId  Provisioning artifact Id                             [string]
+  -lp, --launchPathId            Launch path Id                                       [string]
+  --go-module                    Module name (required if language is "golang")       [string]
+  --java-package                 Java package name (required if language is "java")   [string]
+  --csharp-namespace             C# namespace name (required if language is "csharp") [string]
+  -h, --help                     Show this usage info                                 [boolean]
+```
+
+The `--language` option specifies the output programming language. Supported
+languages: `typescript`, `java`, `python`, `csharp` and `golang`.
+
+If you are using `csharp`, you must specify a `--csharp-namespace` within your project.
+
+Output will be generated relative to `--outdir` which defaults to the current
+working directory under `./sc-products`.
+
 
 ## Contributing
 

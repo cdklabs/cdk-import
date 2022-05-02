@@ -1582,6 +1582,476 @@ namespace AWSQS::EKS::Cluster
 }
 `;
 
+exports[`csharp 2`] = `
+Map {
+  "AWS::FOO::BAR/AWS::FOO::BAR/Ec2ComputeInstance.cs" => "using Amazon.JSII.Runtime.Deputy;
+
+#pragma warning disable CS0672,CS0809,CS1591
+
+namespace AWS::FOO::BAR
+{
+    /// <summary>Ec2ComputeInstance.</summary>
+    /// <remarks>
+    /// Compute instance to be used for experiments, does NOT contain DB access
+    ///
+    /// Owner: IT
+    /// </remarks>
+    [JsiiClass(nativeType: typeof(AWS::FOO::BAR.Ec2ComputeInstance), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\", parametersJson: \\"[{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- scope in which this resource is defined.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"scope\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"constructs.Construct\\\\\\"}},{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- scoped id of the resource.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"id\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}},{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- resource properties.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"props\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps\\\\\\"}}]\\")]
+    public class Ec2ComputeInstance : Amazon.CDK.Resource, AWS::FOO::BAR.IEc2ComputeInstance
+    {
+        /// <summary>Create a new Service Catalog \\\\\`Ec2ComputeInstance\\\\\` product.</summary>
+        /// <param name=\\"scope\\">- scope in which this resource is defined.</param>
+        /// <param name=\\"id\\">- scoped id of the resource.</param>
+        /// <param name=\\"props\\">- resource properties.</param>
+        public Ec2ComputeInstance(Constructs.Construct scope, string id, AWS::FOO::BAR.IEc2ComputeInstanceProps props): base(new DeputyProps(new object?[]{scope, id, props}))
+        {
+        }
+
+        /// <summary>Used by jsii to construct an instance of this class from a Javascript-owned object reference</summary>
+        /// <param name=\\"reference\\">The Javascript-owned object reference</param>
+        [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+        protected Ec2ComputeInstance(ByRefValue reference): base(reference)
+        {
+        }
+
+        /// <summary>Used by jsii to construct an instance of this class from DeputyProps</summary>
+        /// <param name=\\"props\\">The deputy props</param>
+        [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+        protected Ec2ComputeInstance(DeputyProps props): base(props)
+        {
+        }
+
+        [JsiiProperty(name: \\"cloudFormationStackArn\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+        public virtual string CloudFormationStackArn
+        {
+            get => GetInstanceProperty<string>()!;
+        }
+
+        /// <summary>The command to download the key.</summary>
+        [JsiiProperty(name: \\"downloadKeyCommand\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+        public virtual string DownloadKeyCommand
+        {
+            get => GetInstanceProperty<string>()!;
+        }
+
+        [JsiiProperty(name: \\"iPAddress\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+        public virtual string IPAddress
+        {
+            get => GetInstanceProperty<string>()!;
+        }
+
+        [JsiiProperty(name: \\"provisionedProductId\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+        public virtual string ProvisionedProductId
+        {
+            get => GetInstanceProperty<string>()!;
+        }
+
+        [JsiiProperty(name: \\"recordId\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+        public virtual string RecordId
+        {
+            get => GetInstanceProperty<string>()!;
+        }
+
+        [JsiiProperty(name: \\"sshcommand\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+        public virtual string Sshcommand
+        {
+            get => GetInstanceProperty<string>()!;
+        }
+
+        [JsiiEnum(nativeType: typeof(InstanceType), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.InstanceType\\")]
+        public enum InstanceType
+        {
+            /// <summary>t2.micro.</summary>
+            [JsiiEnumMember(name: \\"T2_MICRO\\")]
+            T2_MICRO,
+            /// <summary>t2.small.</summary>
+            [JsiiEnumMember(name: \\"T2_SMALL\\")]
+            T2_SMALL
+        }
+
+        [JsiiEnum(nativeType: typeof(Numbers), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.Numbers\\")]
+        public enum Numbers
+        {
+            /// <summary>1.</summary>
+            [JsiiEnumMember(name: \\"VALUE_1\\")]
+            VALUE_1,
+            /// <summary>2.</summary>
+            [JsiiEnumMember(name: \\"VALUE_2\\")]
+            VALUE_2,
+            /// <summary>3.</summary>
+            [JsiiEnumMember(name: \\"VALUE_3\\")]
+            VALUE_3,
+            /// <summary>4.</summary>
+            [JsiiEnumMember(name: \\"VALUE_4\\")]
+            VALUE_4,
+            /// <summary>5.</summary>
+            [JsiiEnumMember(name: \\"VALUE_5\\")]
+            VALUE_5
+        }
+    }
+}
+",
+  "AWS::FOO::BAR/AWS::FOO::BAR/Ec2ComputeInstanceProps.cs" => "using Amazon.JSII.Runtime.Deputy;
+
+#pragma warning disable CS0672,CS0809,CS1591
+
+namespace AWS::FOO::BAR
+{
+    [JsiiByValue(fqn: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps\\")]
+    public class Ec2ComputeInstanceProps : AWS::FOO::BAR.IEc2ComputeInstanceProps
+    {
+        /// <summary>InstanceType.</summary>
+        /// <remarks>
+        /// The instance type of an EC2 instance.
+        ///
+        /// Must be t2 micro or small.
+        ///
+        /// <strong>Default</strong>: t2.micro
+        /// </remarks>
+        [JsiiOptional]
+        [JsiiProperty(name: \\"instanceType\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.InstanceType\\\\\\"}\\", isOptional: true)]
+        public AWS::FOO::BAR.Ec2ComputeInstance.InstanceType? InstanceType
+        {
+            get;
+            set;
+        }
+
+        /// <summary>Numbers.</summary>
+        /// <remarks>
+        /// A number to be selected.
+        ///
+        /// These are the allowed numbers.
+        ///
+        /// <strong>Default</strong>: 5
+        /// </remarks>
+        [JsiiOptional]
+        [JsiiProperty(name: \\"numbers\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.Numbers\\\\\\"}\\", isOptional: true)]
+        public AWS::FOO::BAR.Ec2ComputeInstance.Numbers? Numbers
+        {
+            get;
+            set;
+        }
+
+        /// <summary>SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter.</summary>
+        /// <remarks>
+        /// <strong>Default</strong>: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-arm64-gp2
+        /// </remarks>
+        [JsiiOptional]
+        [JsiiProperty(name: \\"ssmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true)]
+        public string? SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter
+        {
+            get;
+            set;
+        }
+    }
+}
+",
+  "AWS::FOO::BAR/AWS::FOO::BAR/IEc2ComputeInstance.cs" => "using Amazon.JSII.Runtime.Deputy;
+
+#pragma warning disable CS0672,CS0809,CS1591
+
+namespace AWS::FOO::BAR
+{
+    [JsiiInterface(nativeType: typeof(IEc2ComputeInstance), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.IEc2ComputeInstance\\")]
+    public interface IEc2ComputeInstance : Amazon.CDK.IResource
+    {
+        [JsiiProperty(name: \\"cloudFormationStackArn\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+        string CloudFormationStackArn
+        {
+            get;
+        }
+
+        [JsiiProperty(name: \\"downloadKeyCommand\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+        string DownloadKeyCommand
+        {
+            get;
+        }
+
+        [JsiiProperty(name: \\"iPAddress\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+        string IPAddress
+        {
+            get;
+        }
+
+        [JsiiProperty(name: \\"provisionedProductId\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+        string ProvisionedProductId
+        {
+            get;
+        }
+
+        [JsiiProperty(name: \\"recordId\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+        string RecordId
+        {
+            get;
+        }
+
+        [JsiiProperty(name: \\"sshcommand\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+        string Sshcommand
+        {
+            get;
+        }
+
+        [JsiiTypeProxy(nativeType: typeof(IEc2ComputeInstance), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.IEc2ComputeInstance\\")]
+        internal sealed class _Proxy : DeputyBase, AWS::FOO::BAR.IEc2ComputeInstance
+        {
+            private _Proxy(ByRefValue reference): base(reference)
+            {
+            }
+
+            [JsiiProperty(name: \\"cloudFormationStackArn\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+            public string CloudFormationStackArn
+            {
+                get => GetInstanceProperty<string>()!;
+            }
+
+            [JsiiProperty(name: \\"downloadKeyCommand\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+            public string DownloadKeyCommand
+            {
+                get => GetInstanceProperty<string>()!;
+            }
+
+            [JsiiProperty(name: \\"iPAddress\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+            public string IPAddress
+            {
+                get => GetInstanceProperty<string>()!;
+            }
+
+            [JsiiProperty(name: \\"provisionedProductId\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+            public string ProvisionedProductId
+            {
+                get => GetInstanceProperty<string>()!;
+            }
+
+            [JsiiProperty(name: \\"recordId\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+            public string RecordId
+            {
+                get => GetInstanceProperty<string>()!;
+            }
+
+            [JsiiProperty(name: \\"sshcommand\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\")]
+            public string Sshcommand
+            {
+                get => GetInstanceProperty<string>()!;
+            }
+
+            /// <summary>The environment this resource belongs to.</summary>
+            /// <remarks>
+            /// For resources that are created and managed by the CDK
+            /// (generally, those created by creating new class instances like Role, Bucket, etc.),
+            /// this is always the same as the environment of the stack they belong to;
+            /// however, for imported resources
+            /// (those obtained from static methods like fromRoleArn, fromBucketName, etc.),
+            /// that might be different than the stack they were imported into.
+            /// </remarks>
+            [JsiiProperty(name: \\"env\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"aws-cdk-lib.ResourceEnvironment\\\\\\"}\\")]
+            public Amazon.CDK.IResourceEnvironment Env
+            {
+                get => GetInstanceProperty<Amazon.CDK.IResourceEnvironment>()!;
+            }
+
+            /// <summary>The stack in which this resource is defined.</summary>
+            [JsiiProperty(name: \\"stack\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"aws-cdk-lib.Stack\\\\\\"}\\")]
+            public Amazon.CDK.Stack Stack
+            {
+                get => GetInstanceProperty<Amazon.CDK.Stack>()!;
+            }
+
+            /// <summary>The tree node.</summary>
+            [JsiiProperty(name: \\"node\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"constructs.Node\\\\\\"}\\")]
+            public Constructs.Node Node
+            {
+                get => GetInstanceProperty<Constructs.Node>()!;
+            }
+
+            /// <summary>Apply the given removal policy to this resource.</summary>
+            /// <remarks>
+            /// The Removal Policy controls what happens to this resource when it stops
+            /// being managed by CloudFormation, either because you've removed it from the
+            /// CDK application or because you've made a change that requires the resource
+            /// to be replaced.
+            ///
+            /// The resource can be deleted (<c>RemovalPolicy.DESTROY</c>), or left in your AWS
+            /// account for data recovery and cleanup later (<c>RemovalPolicy.RETAIN</c>).
+            /// </remarks>
+            [JsiiMethod(name: \\"applyRemovalPolicy\\", parametersJson: \\"[{\\\\\\"name\\\\\\":\\\\\\"policy\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"aws-cdk-lib.RemovalPolicy\\\\\\"}}]\\")]
+            public void ApplyRemovalPolicy(Amazon.CDK.RemovalPolicy policy)
+            {
+                InvokeInstanceVoidMethod(new System.Type[]{typeof(Amazon.CDK.RemovalPolicy)}, new object[]{policy});
+            }
+        }
+    }
+}
+",
+  "AWS::FOO::BAR/AWS::FOO::BAR/IEc2ComputeInstanceProps.cs" => "using Amazon.JSII.Runtime.Deputy;
+
+#pragma warning disable CS0672,CS0809,CS1591
+
+namespace AWS::FOO::BAR
+{
+    [JsiiInterface(nativeType: typeof(IEc2ComputeInstanceProps), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps\\")]
+    public interface IEc2ComputeInstanceProps
+    {
+        /// <summary>InstanceType.</summary>
+        /// <remarks>
+        /// The instance type of an EC2 instance.
+        ///
+        /// Must be t2 micro or small.
+        ///
+        /// <strong>Default</strong>: t2.micro
+        /// </remarks>
+        [JsiiProperty(name: \\"instanceType\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.InstanceType\\\\\\"}\\", isOptional: true)]
+        [Amazon.JSII.Runtime.Deputy.JsiiOptional]
+        AWS::FOO::BAR.Ec2ComputeInstance.InstanceType? InstanceType
+        {
+            get
+            {
+                return null;
+            }
+        }
+
+        /// <summary>Numbers.</summary>
+        /// <remarks>
+        /// A number to be selected.
+        ///
+        /// These are the allowed numbers.
+        ///
+        /// <strong>Default</strong>: 5
+        /// </remarks>
+        [JsiiProperty(name: \\"numbers\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.Numbers\\\\\\"}\\", isOptional: true)]
+        [Amazon.JSII.Runtime.Deputy.JsiiOptional]
+        AWS::FOO::BAR.Ec2ComputeInstance.Numbers? Numbers
+        {
+            get
+            {
+                return null;
+            }
+        }
+
+        /// <summary>SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter.</summary>
+        /// <remarks>
+        /// <strong>Default</strong>: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-arm64-gp2
+        /// </remarks>
+        [JsiiProperty(name: \\"ssmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true)]
+        [Amazon.JSII.Runtime.Deputy.JsiiOptional]
+        string? SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter
+        {
+            get
+            {
+                return null;
+            }
+        }
+
+        [JsiiTypeProxy(nativeType: typeof(IEc2ComputeInstanceProps), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps\\")]
+        internal sealed class _Proxy : DeputyBase, AWS::FOO::BAR.IEc2ComputeInstanceProps
+        {
+            private _Proxy(ByRefValue reference): base(reference)
+            {
+            }
+
+            /// <summary>InstanceType.</summary>
+            /// <remarks>
+            /// The instance type of an EC2 instance.
+            ///
+            /// Must be t2 micro or small.
+            ///
+            /// <strong>Default</strong>: t2.micro
+            /// </remarks>
+            [JsiiOptional]
+            [JsiiProperty(name: \\"instanceType\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.InstanceType\\\\\\"}\\", isOptional: true)]
+            public AWS::FOO::BAR.Ec2ComputeInstance.InstanceType? InstanceType
+            {
+                get => GetInstanceProperty<AWS::FOO::BAR.Ec2ComputeInstance.InstanceType?>();
+            }
+
+            /// <summary>Numbers.</summary>
+            /// <remarks>
+            /// A number to be selected.
+            ///
+            /// These are the allowed numbers.
+            ///
+            /// <strong>Default</strong>: 5
+            /// </remarks>
+            [JsiiOptional]
+            [JsiiProperty(name: \\"numbers\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.Numbers\\\\\\"}\\", isOptional: true)]
+            public AWS::FOO::BAR.Ec2ComputeInstance.Numbers? Numbers
+            {
+                get => GetInstanceProperty<AWS::FOO::BAR.Ec2ComputeInstance.Numbers?>();
+            }
+
+            /// <summary>SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter.</summary>
+            /// <remarks>
+            /// <strong>Default</strong>: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-arm64-gp2
+            /// </remarks>
+            [JsiiOptional]
+            [JsiiProperty(name: \\"ssmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter\\", typeJson: \\"{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}\\", isOptional: true)]
+            public string? SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter
+            {
+                get => GetInstanceProperty<string?>();
+            }
+        }
+    }
+}
+",
+  "AWS::FOO::BAR/AWS::FOO::BAR/Internal/DependencyResolution/Anchor.cs" => "#pragma warning disable CS0672,CS0809,CS1591
+
+namespace AWS::FOO::BAR.Internal.DependencyResolution
+{
+    public sealed class Anchor
+    {
+        public Anchor()
+        {
+            new Amazon.CDK.Internal.DependencyResolution.Anchor();
+            new Constructs.Internal.DependencyResolution.Anchor();
+        }
+    }
+}
+",
+  "AWS::FOO::BAR/AWS::FOO::BAR.csproj" => "<Project Sdk=\\"Microsoft.NET.Sdk\\">
+  <PropertyGroup>
+    <!-- Package Identification -->
+    <Description>1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6</Description>
+    <PackageId>AWS::FOO::BAR</PackageId>
+    <PackageLicenseExpression>UNLICENSED</PackageLicenseExpression>
+    <PackageVersion>0.0.0</PackageVersion>
+    <!-- Additional Metadata -->
+    <Authors>generated@generated.com</Authors>
+    <Language>en-US</Language>
+    <ProjectUrl>http://generated</ProjectUrl>
+    <RepositoryUrl>http://generated</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <!-- Build Configuration -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <Nullable>enable</Nullable>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.57.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.22.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.0.130]\\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <!-- Silence [Obsolete] warnings -->
+    <NoWarn>0612,0618</NoWarn>
+    <!-- Treat warnings symptomatic of code generation bugs as errors -->
+    <WarningsAsErrors>0108,0109</WarningsAsErrors>
+  </PropertyGroup>
+</Project>
+
+",
+  "AWS::FOO::BAR/AssemblyInfo.cs" => "using Amazon.JSII.Runtime.Deputy;
+
+[assembly: JsiiAssembly(\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6\\", \\"0.0.0\\", \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\")]
+",
+}
+`;
+
 exports[`golang 1`] = `
 Map {
   "awsqs-eks-cluster/awsqs-eks-cluster.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
@@ -2493,6 +2963,565 @@ func Initialize() {
 }
 ",
   "awsqs-eks-cluster/version" => "0.0.0
+",
+}
+`;
+
+exports[`golang 2`] = `
+Map {
+  "ec2-compute-instance/ec2-compute-instance.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package ec2-compute-instance
+
+import (
+	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
+	_init_ \\"github.com/my/module/ec2-compute-instance/jsii\\"
+
+	\\"github.com/aws/aws-cdk-go/awscdk/v2\\"
+	\\"github.com/aws/constructs-go/constructs/v10\\"
+	\\"github.com/my/module/ec2-compute-instance/internal\\"
+)
+
+// Ec2ComputeInstance.
+//
+// Compute instance to be used for experiments, does NOT contain DB access
+//
+// Owner: IT.
+type Ec2ComputeInstance interface {
+	awscdk.Resource
+	IEc2ComputeInstance
+	CloudFormationStackArn() *string
+	// The command to download the key.
+	DownloadKeyCommand() *string
+	// The environment this resource belongs to.
+	//
+	// For resources that are created and managed by the CDK
+	// (generally, those created by creating new class instances like Role, Bucket, etc.),
+	// this is always the same as the environment of the stack they belong to;
+	// however, for imported resources
+	// (those obtained from static methods like fromRoleArn, fromBucketName, etc.),
+	// that might be different than the stack they were imported into.
+	Env() *awscdk.ResourceEnvironment
+	IPAddress() *string
+	// The tree node.
+	Node() constructs.Node
+	// Returns a string-encoded token that resolves to the physical name that should be passed to the CloudFormation resource.
+	//
+	// This value will resolve to one of the following:
+	// - a concrete value (e.g. \`\\"my-awesome-bucket\\"\`)
+	// - \`undefined\`, when a name should be generated by CloudFormation
+	// - a concrete name generated automatically during synthesis, in
+	//    cross-environment scenarios.
+	PhysicalName() *string
+	ProvisionedProductId() *string
+	RecordId() *string
+	Sshcommand() *string
+	// The stack in which this resource is defined.
+	Stack() awscdk.Stack
+	// Apply the given removal policy to this resource.
+	//
+	// The Removal Policy controls what happens to this resource when it stops
+	// being managed by CloudFormation, either because you've removed it from the
+	// CDK application or because you've made a change that requires the resource
+	// to be replaced.
+	//
+	// The resource can be deleted (\`RemovalPolicy.DESTROY\`), or left in your AWS
+	// account for data recovery and cleanup later (\`RemovalPolicy.RETAIN\`).
+	ApplyRemovalPolicy(policy awscdk.RemovalPolicy)
+	GeneratePhysicalName() *string
+	// Returns an environment-sensitive token that should be used for the resource's \\"ARN\\" attribute (e.g. \`bucket.bucketArn\`).
+	//
+	// Normally, this token will resolve to \`arnAttr\`, but if the resource is
+	// referenced across environments, \`arnComponents\` will be used to synthesize
+	// a concrete ARN with the resource's physical name. Make sure to reference
+	// \`this.physicalName\` in \`arnComponents\`.
+	GetResourceArnAttribute(arnAttr *string, arnComponents *awscdk.ArnComponents) *string
+	// Returns an environment-sensitive token that should be used for the resource's \\"name\\" attribute (e.g. \`bucket.bucketName\`).
+	//
+	// Normally, this token will resolve to \`nameAttr\`, but if the resource is
+	// referenced across environments, it will be resolved to \`this.physicalName\`,
+	// which will be a concrete name.
+	GetResourceNameAttribute(nameAttr *string) *string
+	// Returns a string representation of this construct.
+	ToString() *string
+}
+
+// The jsii proxy struct for Ec2ComputeInstance
+type jsiiProxy_Ec2ComputeInstance struct {
+	internal.Type__awscdkResource
+	jsiiProxy_IEc2ComputeInstance
+}
+
+func (j *jsiiProxy_Ec2ComputeInstance) CloudFormationStackArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		\\"cloudFormationStackArn\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ComputeInstance) DownloadKeyCommand() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		\\"downloadKeyCommand\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ComputeInstance) Env() *awscdk.ResourceEnvironment {
+	var returns *awscdk.ResourceEnvironment
+	_jsii_.Get(
+		j,
+		\\"env\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ComputeInstance) IPAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		\\"iPAddress\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ComputeInstance) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		\\"node\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ComputeInstance) PhysicalName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		\\"physicalName\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ComputeInstance) ProvisionedProductId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		\\"provisionedProductId\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ComputeInstance) RecordId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		\\"recordId\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ComputeInstance) Sshcommand() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		\\"sshcommand\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ComputeInstance) Stack() awscdk.Stack {
+	var returns awscdk.Stack
+	_jsii_.Get(
+		j,
+		\\"stack\\",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new Service Catalog \\\\\`Ec2ComputeInstance\\\\\` product.
+func NewEc2ComputeInstance(scope constructs.Construct, id *string, props *Ec2ComputeInstanceProps) Ec2ComputeInstance {
+	_init_.Initialize()
+
+	j := jsiiProxy_Ec2ComputeInstance{}
+
+	_jsii_.Create(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\",
+		[]interface{}{scope, id, props},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new Service Catalog \\\\\`Ec2ComputeInstance\\\\\` product.
+func NewEc2ComputeInstance_Override(e Ec2ComputeInstance, scope constructs.Construct, id *string, props *Ec2ComputeInstanceProps) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\",
+		[]interface{}{scope, id, props},
+		e,
+	)
+}
+
+// Checks if \`x\` is a construct.
+//
+// Use this method instead of \`instanceof\` to properly detect \`Construct\`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the \`constructs\` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class \`Construct\` in each copy of the \`constructs\` library
+// is seen as a different class, and an instance of one class will not test as
+// \`instanceof\` the other class. \`npm install\` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the \`constructs\`
+// library can be accidentally installed, and \`instanceof\` will behave
+// unpredictably. It is safest to avoid using \`instanceof\`, and using
+// this type-testing method instead.
+//
+// Returns: true if \`x\` is an object created from a class which extends \`Construct\`.
+func Ec2ComputeInstance_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\",
+		\\"isConstruct\\",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Check whether the given construct is a Resource.
+func Ec2ComputeInstance_IsResource(construct constructs.IConstruct) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\",
+		\\"isResource\\",
+		[]interface{}{construct},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_Ec2ComputeInstance) ApplyRemovalPolicy(policy awscdk.RemovalPolicy) {
+	_jsii_.InvokeVoid(
+		e,
+		\\"applyRemovalPolicy\\",
+		[]interface{}{policy},
+	)
+}
+
+func (e *jsiiProxy_Ec2ComputeInstance) GeneratePhysicalName() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		e,
+		\\"generatePhysicalName\\",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_Ec2ComputeInstance) GetResourceArnAttribute(arnAttr *string, arnComponents *awscdk.ArnComponents) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		e,
+		\\"getResourceArnAttribute\\",
+		[]interface{}{arnAttr, arnComponents},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_Ec2ComputeInstance) GetResourceNameAttribute(nameAttr *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		e,
+		\\"getResourceNameAttribute\\",
+		[]interface{}{nameAttr},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_Ec2ComputeInstance) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		e,
+		\\"toString\\",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type Ec2ComputeInstance_InstanceType string
+
+const (
+	// t2.micro.
+	Ec2ComputeInstance_InstanceType_T2_MICRO Ec2ComputeInstance_InstanceType = \\"T2_MICRO\\"
+	// t2.small.
+	Ec2ComputeInstance_InstanceType_T2_SMALL Ec2ComputeInstance_InstanceType = \\"T2_SMALL\\"
+)
+
+type Ec2ComputeInstance_Numbers string
+
+const (
+	// 1.
+	Ec2ComputeInstance_Numbers_VALUE_1 Ec2ComputeInstance_Numbers = \\"VALUE_1\\"
+	// 2.
+	Ec2ComputeInstance_Numbers_VALUE_2 Ec2ComputeInstance_Numbers = \\"VALUE_2\\"
+	// 3.
+	Ec2ComputeInstance_Numbers_VALUE_3 Ec2ComputeInstance_Numbers = \\"VALUE_3\\"
+	// 4.
+	Ec2ComputeInstance_Numbers_VALUE_4 Ec2ComputeInstance_Numbers = \\"VALUE_4\\"
+	// 5.
+	Ec2ComputeInstance_Numbers_VALUE_5 Ec2ComputeInstance_Numbers = \\"VALUE_5\\"
+)
+
+type Ec2ComputeInstanceProps struct {
+	// InstanceType.
+	//
+	// The instance type of an EC2 instance.
+	//
+	// Must be t2 micro or small.
+	InstanceType Ec2ComputeInstance_InstanceType \`json:\\"instanceType\\" yaml:\\"instanceType\\"\`
+	// Numbers.
+	//
+	// A number to be selected.
+	//
+	// These are the allowed numbers.
+	Numbers Ec2ComputeInstance_Numbers \`json:\\"numbers\\" yaml:\\"numbers\\"\`
+	// SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter.
+	SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter *string \`json:\\"ssmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter\\" yaml:\\"ssmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter\\"\`
+}
+
+type IEc2ComputeInstance interface {
+	awscdk.IResource
+	CloudFormationStackArn() *string
+	DownloadKeyCommand() *string
+	IPAddress() *string
+	ProvisionedProductId() *string
+	RecordId() *string
+	Sshcommand() *string
+}
+
+// The jsii proxy for IEc2ComputeInstance
+type jsiiProxy_IEc2ComputeInstance struct {
+	internal.Type__awscdkIResource
+}
+
+func (j *jsiiProxy_IEc2ComputeInstance) CloudFormationStackArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		\\"cloudFormationStackArn\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IEc2ComputeInstance) DownloadKeyCommand() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		\\"downloadKeyCommand\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IEc2ComputeInstance) IPAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		\\"iPAddress\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IEc2ComputeInstance) ProvisionedProductId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		\\"provisionedProductId\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IEc2ComputeInstance) RecordId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		\\"recordId\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IEc2ComputeInstance) Sshcommand() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		\\"sshcommand\\",
+		&returns,
+	)
+	return returns
+}
+
+",
+  "ec2-compute-instance/ec2-compute-instance.init.go" => "package ec2-compute-instance
+
+import (
+	\\"reflect\\"
+
+	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
+)
+
+func init() {
+	_jsii_.RegisterClass(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\",
+		reflect.TypeOf((*Ec2ComputeInstance)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: \\"applyRemovalPolicy\\", GoMethod: \\"ApplyRemovalPolicy\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"cloudFormationStackArn\\", GoGetter: \\"CloudFormationStackArn\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"downloadKeyCommand\\", GoGetter: \\"DownloadKeyCommand\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"env\\", GoGetter: \\"Env\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"generatePhysicalName\\", GoMethod: \\"GeneratePhysicalName\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"getResourceArnAttribute\\", GoMethod: \\"GetResourceArnAttribute\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"getResourceNameAttribute\\", GoMethod: \\"GetResourceNameAttribute\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"iPAddress\\", GoGetter: \\"IPAddress\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"node\\", GoGetter: \\"Node\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"physicalName\\", GoGetter: \\"PhysicalName\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"provisionedProductId\\", GoGetter: \\"ProvisionedProductId\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"recordId\\", GoGetter: \\"RecordId\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"sshcommand\\", GoGetter: \\"Sshcommand\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"stack\\", GoGetter: \\"Stack\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"toString\\", GoMethod: \\"ToString\\"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Ec2ComputeInstance{}
+			_jsii_.InitJsiiProxy(&j.Type__awscdkResource)
+			_jsii_.InitJsiiProxy(&j.jsiiProxy_IEc2ComputeInstance)
+			return &j
+		},
+	)
+	_jsii_.RegisterEnum(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.InstanceType\\",
+		reflect.TypeOf((*Ec2ComputeInstance_InstanceType)(nil)).Elem(),
+		map[string]interface{}{
+			\\"T2_MICRO\\": Ec2ComputeInstance_InstanceType_T2_MICRO,
+			\\"T2_SMALL\\": Ec2ComputeInstance_InstanceType_T2_SMALL,
+		},
+	)
+	_jsii_.RegisterEnum(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.Numbers\\",
+		reflect.TypeOf((*Ec2ComputeInstance_Numbers)(nil)).Elem(),
+		map[string]interface{}{
+			\\"VALUE_1\\": Ec2ComputeInstance_Numbers_VALUE_1,
+			\\"VALUE_2\\": Ec2ComputeInstance_Numbers_VALUE_2,
+			\\"VALUE_3\\": Ec2ComputeInstance_Numbers_VALUE_3,
+			\\"VALUE_4\\": Ec2ComputeInstance_Numbers_VALUE_4,
+			\\"VALUE_5\\": Ec2ComputeInstance_Numbers_VALUE_5,
+		},
+	)
+	_jsii_.RegisterStruct(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps\\",
+		reflect.TypeOf((*Ec2ComputeInstanceProps)(nil)).Elem(),
+	)
+	_jsii_.RegisterInterface(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.IEc2ComputeInstance\\",
+		reflect.TypeOf((*IEc2ComputeInstance)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: \\"applyRemovalPolicy\\", GoMethod: \\"ApplyRemovalPolicy\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"cloudFormationStackArn\\", GoGetter: \\"CloudFormationStackArn\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"downloadKeyCommand\\", GoGetter: \\"DownloadKeyCommand\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"env\\", GoGetter: \\"Env\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"iPAddress\\", GoGetter: \\"IPAddress\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"node\\", GoGetter: \\"Node\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"provisionedProductId\\", GoGetter: \\"ProvisionedProductId\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"recordId\\", GoGetter: \\"RecordId\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"sshcommand\\", GoGetter: \\"Sshcommand\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"stack\\", GoGetter: \\"Stack\\"},
+		},
+		func() interface{} {
+			j := jsiiProxy_IEc2ComputeInstance{}
+			_jsii_.InitJsiiProxy(&j.Type__awscdkIResource)
+			return &j
+		},
+	)
+}
+",
+  "ec2-compute-instance/internal/types.go" => "package internal
+import (
+	\\"github.com/aws/aws-cdk-go/awscdk/v2\\"
+)
+type Type__awscdkResource = awscdk.Resource
+type Type__awscdkIResource = awscdk.IResource
+",
+  "ec2-compute-instance/jsii/jsii.go" => "// Package jsii contains the functionaility needed for jsii packages to
+// initialize their dependencies and themselves. Users should never need to use this package
+// directly. If you find you need to - please report a bug at
+// https://github.com/aws/jsii/issues/new/choose
+package jsii
+
+import (
+	_          \\"embed\\"
+
+	_jsii_     \\"github.com/aws/jsii-runtime-go/runtime\\"
+
+	awscdk     \\"github.com/aws/aws-cdk-go/awscdk/v2/jsii\\"
+	constructs \\"github.com/aws/constructs-go/constructs/v10/jsii\\"
+)
+
+//go:embed 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz
+var tarball []byte
+
+// Initialize loads the necessary packages in the @jsii/kernel to support the enclosing module.
+// The implementation is idempotent (and hence safe to be called over and over).
+func Initialize() {
+	// Ensure all dependencies are initialized
+	awscdk.Initialize()
+	constructs.Initialize()
+
+	// Load this library into the kernel
+	_jsii_.Load(\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6\\", \\"0.0.0\\", tarball)
+}
+",
+  "ec2-compute-instance/version" => "0.0.0
 ",
 }
 `;
@@ -4405,6 +5434,674 @@ public interface Provider extends software.amazon.jsii.JsiiSerializable {
 }
 `;
 
+exports[`java 2`] = `
+Map {
+  "src/main/java/com/my/module/$Module.java" => "package com.my.module;
+
+import static java.util.Arrays.asList;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.io.Reader;
+import java.io.UncheckedIOException;
+
+import java.nio.charset.StandardCharsets;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import software.amazon.jsii.JsiiModule;
+
+@software.amazon.jsii.Internal
+public final class $Module extends JsiiModule {
+    private static final Map<String, String> MODULE_TYPES = load();
+
+    private static Map<String, String> load() {
+        final Map<String, String> result = new HashMap<>();
+        final ClassLoader cl = $Module.class.getClassLoader();
+        try (final InputStream is = cl.getResourceAsStream(\\"com/my/module/$Module.txt\\");
+             final Reader rd = new InputStreamReader(is, StandardCharsets.UTF_8);
+             final BufferedReader br = new BufferedReader(rd)) {
+            br.lines()
+              .filter(line -> !line.trim().isEmpty())
+              .forEach(line ->  {
+                final String[] parts = line.split(\\"=\\", 2);
+                final String fqn = parts[0];
+                final String className = parts[1];
+                result.put(fqn, className);
+            });
+        }
+        catch (final IOException exception) {
+            throw new UncheckedIOException(exception);
+        }
+        return result;
+    }
+
+    private final Map<String, Class<?>> cache = new HashMap<>();
+
+    public $Module() {
+        super(\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6\\", \\"0.0.0\\", $Module.class, \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6@0.0.0.jsii.tgz\\");
+    }
+
+    @Override
+    public List<Class<? extends JsiiModule>> getDependencies() {
+        return asList(software.amazon.awscdk.$Module.class, software.constructs.$Module.class);
+    }
+
+    @Override
+    protected Class<?> resolveClass(final String fqn) throws ClassNotFoundException {
+        if (!MODULE_TYPES.containsKey(fqn)) {
+            throw new ClassNotFoundException(\\"Unknown JSII type: \\" + fqn);
+        }
+        String className = MODULE_TYPES.get(fqn);
+        if (!this.cache.containsKey(className)) {
+            this.cache.put(className, this.findClass(className));
+        }
+        return this.cache.get(className);
+    }
+
+    private Class<?> findClass(final String binaryName) {
+        try {
+            return Class.forName(binaryName);
+        }
+        catch (final ClassNotFoundException exception) {
+            throw new RuntimeException(exception);
+        }
+    }
+}
+",
+  "src/main/java/com/my/module/Ec2ComputeInstance.java" => "package com.my.module;
+
+/**
+ * Ec2ComputeInstance.
+ * <p>
+ * Compute instance to be used for experiments, does NOT contain DB access
+ * <p>
+ * Owner: IT
+ */
+@software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\")
+public class Ec2ComputeInstance extends software.amazon.awscdk.Resource implements com.my.module.IEc2ComputeInstance {
+
+    protected Ec2ComputeInstance(final software.amazon.jsii.JsiiObjectRef objRef) {
+        super(objRef);
+    }
+
+    protected Ec2ComputeInstance(final software.amazon.jsii.JsiiObject.InitializationMode initializationMode) {
+        super(initializationMode);
+    }
+
+    /**
+     * Create a new Service Catalog \\\\\`Ec2ComputeInstance\\\\\` product.
+     * <p>
+     * @param scope - scope in which this resource is defined. This parameter is required.
+     * @param id - scoped id of the resource. This parameter is required.
+     * @param props - resource properties. This parameter is required.
+     */
+    public Ec2ComputeInstance(final @org.jetbrains.annotations.NotNull software.constructs.Construct scope, final @org.jetbrains.annotations.NotNull java.lang.String id, final @org.jetbrains.annotations.NotNull com.my.module.Ec2ComputeInstanceProps props) {
+        super(software.amazon.jsii.JsiiObject.InitializationMode.JSII);
+        software.amazon.jsii.JsiiEngine.getInstance().createNewObject(this, new Object[] { java.util.Objects.requireNonNull(scope, \\"scope is required\\"), java.util.Objects.requireNonNull(id, \\"id is required\\"), java.util.Objects.requireNonNull(props, \\"props is required\\") });
+    }
+
+    @Override
+    public @org.jetbrains.annotations.NotNull java.lang.String getCloudFormationStackArn() {
+        return software.amazon.jsii.Kernel.get(this, \\"cloudFormationStackArn\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+    }
+
+    /**
+     * The command to download the key.
+     */
+    @Override
+    public @org.jetbrains.annotations.NotNull java.lang.String getDownloadKeyCommand() {
+        return software.amazon.jsii.Kernel.get(this, \\"downloadKeyCommand\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+    }
+
+    @Override
+    public @org.jetbrains.annotations.NotNull java.lang.String getIPAddress() {
+        return software.amazon.jsii.Kernel.get(this, \\"iPAddress\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+    }
+
+    @Override
+    public @org.jetbrains.annotations.NotNull java.lang.String getProvisionedProductId() {
+        return software.amazon.jsii.Kernel.get(this, \\"provisionedProductId\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+    }
+
+    @Override
+    public @org.jetbrains.annotations.NotNull java.lang.String getRecordId() {
+        return software.amazon.jsii.Kernel.get(this, \\"recordId\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+    }
+
+    @Override
+    public @org.jetbrains.annotations.NotNull java.lang.String getSshcommand() {
+        return software.amazon.jsii.Kernel.get(this, \\"sshcommand\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+    }
+    @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.InstanceType\\")
+    public enum InstanceType {
+        /**
+         * t2.micro.
+         */
+        T2_MICRO,
+        /**
+         * t2.small.
+         */
+        T2_SMALL,
+    }
+    @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.Numbers\\")
+    public enum Numbers {
+        /**
+         * 1.
+         */
+        VALUE_1,
+        /**
+         * 2.
+         */
+        VALUE_2,
+        /**
+         * 3.
+         */
+        VALUE_3,
+        /**
+         * 4.
+         */
+        VALUE_4,
+        /**
+         * 5.
+         */
+        VALUE_5,
+    }
+
+    /**
+     * A fluent builder for {@link com.my.module.Ec2ComputeInstance}.
+     */
+    public static final class Builder implements software.amazon.jsii.Builder<com.my.module.Ec2ComputeInstance> {
+        /**
+         * @return a new instance of {@link Builder}.
+         * @param scope - scope in which this resource is defined. This parameter is required.
+         * @param id - scoped id of the resource. This parameter is required.
+         */
+        public static Builder create(final software.constructs.Construct scope, final java.lang.String id) {
+            return new Builder(scope, id);
+        }
+
+        private final software.constructs.Construct scope;
+        private final java.lang.String id;
+        private final com.my.module.Ec2ComputeInstanceProps.Builder props;
+
+        private Builder(final software.constructs.Construct scope, final java.lang.String id) {
+            this.scope = scope;
+            this.id = id;
+            this.props = new com.my.module.Ec2ComputeInstanceProps.Builder();
+        }
+
+        /**
+         * InstanceType.
+         * <p>
+         * The instance type of an EC2 instance.
+         * <p>
+         * Must be t2 micro or small.
+         * <p>
+         * Default: t2.micro
+         * <p>
+         * @return {@code this}
+         * @param instanceType InstanceType. This parameter is required.
+         */
+        public Builder instanceType(final com.my.module.Ec2ComputeInstance.InstanceType instanceType) {
+            this.props.instanceType(instanceType);
+            return this;
+        }
+
+        /**
+         * Numbers.
+         * <p>
+         * A number to be selected.
+         * <p>
+         * These are the allowed numbers.
+         * <p>
+         * Default: 5
+         * <p>
+         * @return {@code this}
+         * @param numbers Numbers. This parameter is required.
+         */
+        public Builder numbers(final com.my.module.Ec2ComputeInstance.Numbers numbers) {
+            this.props.numbers(numbers);
+            return this;
+        }
+
+        /**
+         * SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter.
+         * <p>
+         * Default: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-arm64-gp2
+         * <p>
+         * @return {@code this}
+         * @param ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter. This parameter is required.
+         */
+        public Builder ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter(final java.lang.String ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter) {
+            this.props.ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter(ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter);
+            return this;
+        }
+
+        /**
+         * @returns a newly built instance of {@link com.my.module.Ec2ComputeInstance}.
+         */
+        @Override
+        public com.my.module.Ec2ComputeInstance build() {
+            return new com.my.module.Ec2ComputeInstance(
+                this.scope,
+                this.id,
+                this.props.build()
+            );
+        }
+    }
+}
+",
+  "src/main/java/com/my/module/Ec2ComputeInstanceProps.java" => "package com.my.module;
+
+@software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps\\")
+@software.amazon.jsii.Jsii.Proxy(Ec2ComputeInstanceProps.Jsii$Proxy.class)
+public interface Ec2ComputeInstanceProps extends software.amazon.jsii.JsiiSerializable {
+
+    /**
+     * InstanceType.
+     * <p>
+     * The instance type of an EC2 instance.
+     * <p>
+     * Must be t2 micro or small.
+     * <p>
+     * Default: t2.micro
+     */
+    default @org.jetbrains.annotations.Nullable com.my.module.Ec2ComputeInstance.InstanceType getInstanceType() {
+        return null;
+    }
+
+    /**
+     * Numbers.
+     * <p>
+     * A number to be selected.
+     * <p>
+     * These are the allowed numbers.
+     * <p>
+     * Default: 5
+     */
+    default @org.jetbrains.annotations.Nullable com.my.module.Ec2ComputeInstance.Numbers getNumbers() {
+        return null;
+    }
+
+    /**
+     * SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter.
+     * <p>
+     * Default: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-arm64-gp2
+     */
+    default @org.jetbrains.annotations.Nullable java.lang.String getSsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter() {
+        return null;
+    }
+
+    /**
+     * @return a {@link Builder} of {@link Ec2ComputeInstanceProps}
+     */
+    static Builder builder() {
+        return new Builder();
+    }
+    /**
+     * A builder for {@link Ec2ComputeInstanceProps}
+     */
+    public static final class Builder implements software.amazon.jsii.Builder<Ec2ComputeInstanceProps> {
+        com.my.module.Ec2ComputeInstance.InstanceType instanceType;
+        com.my.module.Ec2ComputeInstance.Numbers numbers;
+        java.lang.String ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter;
+
+        /**
+         * Sets the value of {@link Ec2ComputeInstanceProps#getInstanceType}
+         * @param instanceType InstanceType.
+         *                     The instance type of an EC2 instance.
+         *                     <p>
+         *                     Must be t2 micro or small.
+         * @return {@code this}
+         */
+        public Builder instanceType(com.my.module.Ec2ComputeInstance.InstanceType instanceType) {
+            this.instanceType = instanceType;
+            return this;
+        }
+
+        /**
+         * Sets the value of {@link Ec2ComputeInstanceProps#getNumbers}
+         * @param numbers Numbers.
+         *                A number to be selected.
+         *                <p>
+         *                These are the allowed numbers.
+         * @return {@code this}
+         */
+        public Builder numbers(com.my.module.Ec2ComputeInstance.Numbers numbers) {
+            this.numbers = numbers;
+            return this;
+        }
+
+        /**
+         * Sets the value of {@link Ec2ComputeInstanceProps#getSsmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter}
+         * @param ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter.
+         * @return {@code this}
+         */
+        public Builder ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter(java.lang.String ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter) {
+            this.ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter = ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter;
+            return this;
+        }
+
+        /**
+         * Builds the configured instance.
+         * @return a new instance of {@link Ec2ComputeInstanceProps}
+         * @throws NullPointerException if any required attribute was not provided
+         */
+        @Override
+        public Ec2ComputeInstanceProps build() {
+            return new Jsii$Proxy(this);
+        }
+    }
+
+    /**
+     * An implementation for {@link Ec2ComputeInstanceProps}
+     */
+    @software.amazon.jsii.Internal
+    final class Jsii$Proxy extends software.amazon.jsii.JsiiObject implements Ec2ComputeInstanceProps {
+        private final com.my.module.Ec2ComputeInstance.InstanceType instanceType;
+        private final com.my.module.Ec2ComputeInstance.Numbers numbers;
+        private final java.lang.String ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter;
+
+        /**
+         * Constructor that initializes the object based on values retrieved from the JsiiObject.
+         * @param objRef Reference to the JSII managed object.
+         */
+        protected Jsii$Proxy(final software.amazon.jsii.JsiiObjectRef objRef) {
+            super(objRef);
+            this.instanceType = software.amazon.jsii.Kernel.get(this, \\"instanceType\\", software.amazon.jsii.NativeType.forClass(com.my.module.Ec2ComputeInstance.InstanceType.class));
+            this.numbers = software.amazon.jsii.Kernel.get(this, \\"numbers\\", software.amazon.jsii.NativeType.forClass(com.my.module.Ec2ComputeInstance.Numbers.class));
+            this.ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter = software.amazon.jsii.Kernel.get(this, \\"ssmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+        }
+
+        /**
+         * Constructor that initializes the object based on literal property values passed by the {@link Builder}.
+         */
+        protected Jsii$Proxy(final Builder builder) {
+            super(software.amazon.jsii.JsiiObject.InitializationMode.JSII);
+            this.instanceType = builder.instanceType;
+            this.numbers = builder.numbers;
+            this.ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter = builder.ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter;
+        }
+
+        @Override
+        public final com.my.module.Ec2ComputeInstance.InstanceType getInstanceType() {
+            return this.instanceType;
+        }
+
+        @Override
+        public final com.my.module.Ec2ComputeInstance.Numbers getNumbers() {
+            return this.numbers;
+        }
+
+        @Override
+        public final java.lang.String getSsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter() {
+            return this.ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter;
+        }
+
+        @Override
+        @software.amazon.jsii.Internal
+        public com.fasterxml.jackson.databind.JsonNode $jsii$toJson() {
+            final com.fasterxml.jackson.databind.ObjectMapper om = software.amazon.jsii.JsiiObjectMapper.INSTANCE;
+            final com.fasterxml.jackson.databind.node.ObjectNode data = com.fasterxml.jackson.databind.node.JsonNodeFactory.instance.objectNode();
+
+            if (this.getInstanceType() != null) {
+                data.set(\\"instanceType\\", om.valueToTree(this.getInstanceType()));
+            }
+            if (this.getNumbers() != null) {
+                data.set(\\"numbers\\", om.valueToTree(this.getNumbers()));
+            }
+            if (this.getSsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter() != null) {
+                data.set(\\"ssmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter\\", om.valueToTree(this.getSsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter()));
+            }
+
+            final com.fasterxml.jackson.databind.node.ObjectNode struct = com.fasterxml.jackson.databind.node.JsonNodeFactory.instance.objectNode();
+            struct.set(\\"fqn\\", om.valueToTree(\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps\\"));
+            struct.set(\\"data\\", data);
+
+            final com.fasterxml.jackson.databind.node.ObjectNode obj = com.fasterxml.jackson.databind.node.JsonNodeFactory.instance.objectNode();
+            obj.set(\\"$jsii.struct\\", struct);
+
+            return obj;
+        }
+
+        @Override
+        public final boolean equals(final Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+
+            Ec2ComputeInstanceProps.Jsii$Proxy that = (Ec2ComputeInstanceProps.Jsii$Proxy) o;
+
+            if (this.instanceType != null ? !this.instanceType.equals(that.instanceType) : that.instanceType != null) return false;
+            if (this.numbers != null ? !this.numbers.equals(that.numbers) : that.numbers != null) return false;
+            return this.ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter != null ? this.ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter.equals(that.ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter) : that.ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter == null;
+        }
+
+        @Override
+        public final int hashCode() {
+            int result = this.instanceType != null ? this.instanceType.hashCode() : 0;
+            result = 31 * result + (this.numbers != null ? this.numbers.hashCode() : 0);
+            result = 31 * result + (this.ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter != null ? this.ssmParameterValueawsserviceamiamazonlinuxlatestamzn2Amihvmarm64Gp2C96584B6F00A464Ead1953Aff4B05118Parameter.hashCode() : 0);
+            return result;
+        }
+    }
+}
+",
+  "src/main/java/com/my/module/IEc2ComputeInstance.java" => "package com.my.module;
+
+@software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.IEc2ComputeInstance\\")
+@software.amazon.jsii.Jsii.Proxy(IEc2ComputeInstance.Jsii$Proxy.class)
+public interface IEc2ComputeInstance extends software.amazon.jsii.JsiiSerializable, software.amazon.awscdk.IResource {
+
+    @org.jetbrains.annotations.NotNull java.lang.String getCloudFormationStackArn();
+
+    @org.jetbrains.annotations.NotNull java.lang.String getDownloadKeyCommand();
+
+    @org.jetbrains.annotations.NotNull java.lang.String getIPAddress();
+
+    @org.jetbrains.annotations.NotNull java.lang.String getProvisionedProductId();
+
+    @org.jetbrains.annotations.NotNull java.lang.String getRecordId();
+
+    @org.jetbrains.annotations.NotNull java.lang.String getSshcommand();
+
+    /**
+     * A proxy class which represents a concrete javascript instance of this type.
+     */
+    @software.amazon.jsii.Internal
+    final class Jsii$Proxy extends software.amazon.jsii.JsiiObject implements com.my.module.IEc2ComputeInstance.Jsii$Default {
+        protected Jsii$Proxy(final software.amazon.jsii.JsiiObjectRef objRef) {
+            super(objRef);
+        }
+
+        /**
+         * The tree node.
+         */
+        @Override
+        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
+        public final @org.jetbrains.annotations.NotNull software.constructs.Node getNode() {
+            return software.amazon.jsii.Kernel.get(this, \\"node\\", software.amazon.jsii.NativeType.forClass(software.constructs.Node.class));
+        }
+
+        /**
+         * The environment this resource belongs to.
+         * <p>
+         * For resources that are created and managed by the CDK
+         * (generally, those created by creating new class instances like Role, Bucket, etc.),
+         * this is always the same as the environment of the stack they belong to;
+         * however, for imported resources
+         * (those obtained from static methods like fromRoleArn, fromBucketName, etc.),
+         * that might be different than the stack they were imported into.
+         */
+        @Override
+        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
+        public final @org.jetbrains.annotations.NotNull software.amazon.awscdk.ResourceEnvironment getEnv() {
+            return software.amazon.jsii.Kernel.get(this, \\"env\\", software.amazon.jsii.NativeType.forClass(software.amazon.awscdk.ResourceEnvironment.class));
+        }
+
+        /**
+         * The stack in which this resource is defined.
+         */
+        @Override
+        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
+        public final @org.jetbrains.annotations.NotNull software.amazon.awscdk.Stack getStack() {
+            return software.amazon.jsii.Kernel.get(this, \\"stack\\", software.amazon.jsii.NativeType.forClass(software.amazon.awscdk.Stack.class));
+        }
+
+        @Override
+        public final @org.jetbrains.annotations.NotNull java.lang.String getCloudFormationStackArn() {
+            return software.amazon.jsii.Kernel.get(this, \\"cloudFormationStackArn\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+        }
+
+        @Override
+        public final @org.jetbrains.annotations.NotNull java.lang.String getDownloadKeyCommand() {
+            return software.amazon.jsii.Kernel.get(this, \\"downloadKeyCommand\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+        }
+
+        @Override
+        public final @org.jetbrains.annotations.NotNull java.lang.String getIPAddress() {
+            return software.amazon.jsii.Kernel.get(this, \\"iPAddress\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+        }
+
+        @Override
+        public final @org.jetbrains.annotations.NotNull java.lang.String getProvisionedProductId() {
+            return software.amazon.jsii.Kernel.get(this, \\"provisionedProductId\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+        }
+
+        @Override
+        public final @org.jetbrains.annotations.NotNull java.lang.String getRecordId() {
+            return software.amazon.jsii.Kernel.get(this, \\"recordId\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+        }
+
+        @Override
+        public final @org.jetbrains.annotations.NotNull java.lang.String getSshcommand() {
+            return software.amazon.jsii.Kernel.get(this, \\"sshcommand\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+        }
+
+        /**
+         * Apply the given removal policy to this resource.
+         * <p>
+         * The Removal Policy controls what happens to this resource when it stops
+         * being managed by CloudFormation, either because you've removed it from the
+         * CDK application or because you've made a change that requires the resource
+         * to be replaced.
+         * <p>
+         * The resource can be deleted (<code>RemovalPolicy.DESTROY</code>), or left in your AWS
+         * account for data recovery and cleanup later (<code>RemovalPolicy.RETAIN</code>).
+         * <p>
+         * @param policy This parameter is required.
+         */
+        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
+        @Override
+        public final void applyRemovalPolicy(final @org.jetbrains.annotations.NotNull software.amazon.awscdk.RemovalPolicy policy) {
+            software.amazon.jsii.Kernel.call(this, \\"applyRemovalPolicy\\", software.amazon.jsii.NativeType.VOID, new Object[] { java.util.Objects.requireNonNull(policy, \\"policy is required\\") });
+        }
+    }
+
+    /**
+     * Internal default implementation for {@link IEc2ComputeInstance}.
+     */
+    @software.amazon.jsii.Internal
+    interface Jsii$Default extends IEc2ComputeInstance, software.amazon.awscdk.IResource.Jsii$Default {
+
+        /**
+         * The tree node.
+         */
+        @Override
+        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
+        default @org.jetbrains.annotations.NotNull software.constructs.Node getNode() {
+            return software.amazon.jsii.Kernel.get(this, \\"node\\", software.amazon.jsii.NativeType.forClass(software.constructs.Node.class));
+        }
+
+        /**
+         * The environment this resource belongs to.
+         * <p>
+         * For resources that are created and managed by the CDK
+         * (generally, those created by creating new class instances like Role, Bucket, etc.),
+         * this is always the same as the environment of the stack they belong to;
+         * however, for imported resources
+         * (those obtained from static methods like fromRoleArn, fromBucketName, etc.),
+         * that might be different than the stack they were imported into.
+         */
+        @Override
+        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
+        default @org.jetbrains.annotations.NotNull software.amazon.awscdk.ResourceEnvironment getEnv() {
+            return software.amazon.jsii.Kernel.get(this, \\"env\\", software.amazon.jsii.NativeType.forClass(software.amazon.awscdk.ResourceEnvironment.class));
+        }
+
+        /**
+         * The stack in which this resource is defined.
+         */
+        @Override
+        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
+        default @org.jetbrains.annotations.NotNull software.amazon.awscdk.Stack getStack() {
+            return software.amazon.jsii.Kernel.get(this, \\"stack\\", software.amazon.jsii.NativeType.forClass(software.amazon.awscdk.Stack.class));
+        }
+
+        @Override
+        default @org.jetbrains.annotations.NotNull java.lang.String getCloudFormationStackArn() {
+            return software.amazon.jsii.Kernel.get(this, \\"cloudFormationStackArn\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+        }
+
+        @Override
+        default @org.jetbrains.annotations.NotNull java.lang.String getDownloadKeyCommand() {
+            return software.amazon.jsii.Kernel.get(this, \\"downloadKeyCommand\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+        }
+
+        @Override
+        default @org.jetbrains.annotations.NotNull java.lang.String getIPAddress() {
+            return software.amazon.jsii.Kernel.get(this, \\"iPAddress\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+        }
+
+        @Override
+        default @org.jetbrains.annotations.NotNull java.lang.String getProvisionedProductId() {
+            return software.amazon.jsii.Kernel.get(this, \\"provisionedProductId\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+        }
+
+        @Override
+        default @org.jetbrains.annotations.NotNull java.lang.String getRecordId() {
+            return software.amazon.jsii.Kernel.get(this, \\"recordId\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+        }
+
+        @Override
+        default @org.jetbrains.annotations.NotNull java.lang.String getSshcommand() {
+            return software.amazon.jsii.Kernel.get(this, \\"sshcommand\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+        }
+
+        /**
+         * Apply the given removal policy to this resource.
+         * <p>
+         * The Removal Policy controls what happens to this resource when it stops
+         * being managed by CloudFormation, either because you've removed it from the
+         * CDK application or because you've made a change that requires the resource
+         * to be replaced.
+         * <p>
+         * The resource can be deleted (<code>RemovalPolicy.DESTROY</code>), or left in your AWS
+         * account for data recovery and cleanup later (<code>RemovalPolicy.RETAIN</code>).
+         * <p>
+         * @param policy This parameter is required.
+         */
+        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
+        @Override
+        default void applyRemovalPolicy(final @org.jetbrains.annotations.NotNull software.amazon.awscdk.RemovalPolicy policy) {
+            software.amazon.jsii.Kernel.call(this, \\"applyRemovalPolicy\\", software.amazon.jsii.NativeType.VOID, new Object[] { java.util.Objects.requireNonNull(policy, \\"policy is required\\") });
+        }
+    }
+}
+",
+  "src/main/resources/com/my/module/$Module.txt" => "1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance=com.my.module.Ec2ComputeInstance
+1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.InstanceType=com.my.module.Ec2ComputeInstance$InstanceType
+1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.Numbers=com.my.module.Ec2ComputeInstance$Numbers
+1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps=com.my.module.Ec2ComputeInstanceProps
+1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.IEc2ComputeInstance=com.my.module.IEc2ComputeInstance
+",
+}
+`;
+
 exports[`python 1`] = `
 Map {
   "awsqs_eks_cluster/__init__.py" => "import abc
@@ -5288,6 +6985,310 @@ publication.publish()
 }
 `;
 
+exports[`python 2`] = `
+Map {
+  "ec2_compute_instance/__init__.py" => "import abc
+import builtins
+import datetime
+import enum
+import typing
+
+import jsii
+import publication
+import typing_extensions
+
+from ._jsii import *
+
+import aws_cdk
+import constructs
+
+
+@jsii.data_type(
+    jsii_type=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps\\",
+    jsii_struct_bases=[],
+    name_mapping={
+        \\"instance_type\\": \\"instanceType\\",
+        \\"numbers\\": \\"numbers\\",
+        \\"ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter\\": \\"ssmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter\\",
+    },
+)
+class Ec2ComputeInstanceProps:
+    def __init__(
+        self,
+        *,
+        instance_type: typing.Optional[\\"Ec2ComputeInstance.InstanceType\\"] = None,
+        numbers: typing.Optional[\\"Ec2ComputeInstance.Numbers\\"] = None,
+        ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter: typing.Optional[builtins.str] = None,
+    ) -> None:
+        '''
+        :param instance_type: InstanceType. The instance type of an EC2 instance. Must be t2 micro or small. Default: t2.micro
+        :param numbers: Numbers. A number to be selected. These are the allowed numbers. Default: 5
+        :param ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter: SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter. Default: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-arm64-gp2
+        '''
+        self._values: typing.Dict[str, typing.Any] = {}
+        if instance_type is not None:
+            self._values[\\"instance_type\\"] = instance_type
+        if numbers is not None:
+            self._values[\\"numbers\\"] = numbers
+        if ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter is not None:
+            self._values[\\"ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter\\"] = ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter
+
+    @builtins.property
+    def instance_type(self) -> typing.Optional[\\"Ec2ComputeInstance.InstanceType\\"]:
+        '''InstanceType.
+
+        The instance type of an EC2 instance.
+
+        Must be t2 micro or small.
+
+        :default: t2.micro
+        '''
+        result = self._values.get(\\"instance_type\\")
+        return typing.cast(typing.Optional[\\"Ec2ComputeInstance.InstanceType\\"], result)
+
+    @builtins.property
+    def numbers(self) -> typing.Optional[\\"Ec2ComputeInstance.Numbers\\"]:
+        '''Numbers.
+
+        A number to be selected.
+
+        These are the allowed numbers.
+
+        :default: 5
+        '''
+        result = self._values.get(\\"numbers\\")
+        return typing.cast(typing.Optional[\\"Ec2ComputeInstance.Numbers\\"], result)
+
+    @builtins.property
+    def ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter(
+        self,
+    ) -> typing.Optional[builtins.str]:
+        '''SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter.
+
+        :default: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-arm64-gp2
+        '''
+        result = self._values.get(\\"ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter\\")
+        return typing.cast(typing.Optional[builtins.str], result)
+
+    def __eq__(self, rhs: typing.Any) -> builtins.bool:
+        return isinstance(rhs, self.__class__) and rhs._values == self._values
+
+    def __ne__(self, rhs: typing.Any) -> builtins.bool:
+        return not (rhs == self)
+
+    def __repr__(self) -> str:
+        return \\"Ec2ComputeInstanceProps(%s)\\" % \\", \\".join(
+            k + \\"=\\" + repr(v) for k, v in self._values.items()
+        )
+
+
+@jsii.interface(
+    jsii_type=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.IEc2ComputeInstance\\"
+)
+class IEc2ComputeInstance(aws_cdk.IResource, typing_extensions.Protocol):
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"cloudFormationStackArn\\")
+    def cloud_formation_stack_arn(self) -> builtins.str:
+        ...
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"downloadKeyCommand\\")
+    def download_key_command(self) -> builtins.str:
+        ...
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"iPAddress\\")
+    def i_p_address(self) -> builtins.str:
+        ...
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"provisionedProductId\\")
+    def provisioned_product_id(self) -> builtins.str:
+        ...
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"recordId\\")
+    def record_id(self) -> builtins.str:
+        ...
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"sshcommand\\")
+    def sshcommand(self) -> builtins.str:
+        ...
+
+
+class _IEc2ComputeInstanceProxy(
+    jsii.proxy_for(aws_cdk.IResource) # type: ignore[misc]
+):
+    __jsii_type__: typing.ClassVar[str] = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.IEc2ComputeInstance\\"
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"cloudFormationStackArn\\")
+    def cloud_formation_stack_arn(self) -> builtins.str:
+        return typing.cast(builtins.str, jsii.get(self, \\"cloudFormationStackArn\\"))
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"downloadKeyCommand\\")
+    def download_key_command(self) -> builtins.str:
+        return typing.cast(builtins.str, jsii.get(self, \\"downloadKeyCommand\\"))
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"iPAddress\\")
+    def i_p_address(self) -> builtins.str:
+        return typing.cast(builtins.str, jsii.get(self, \\"iPAddress\\"))
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"provisionedProductId\\")
+    def provisioned_product_id(self) -> builtins.str:
+        return typing.cast(builtins.str, jsii.get(self, \\"provisionedProductId\\"))
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"recordId\\")
+    def record_id(self) -> builtins.str:
+        return typing.cast(builtins.str, jsii.get(self, \\"recordId\\"))
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"sshcommand\\")
+    def sshcommand(self) -> builtins.str:
+        return typing.cast(builtins.str, jsii.get(self, \\"sshcommand\\"))
+
+# Adding a \\"__jsii_proxy_class__(): typing.Type\\" function to the interface
+typing.cast(typing.Any, IEc2ComputeInstance).__jsii_proxy_class__ = lambda : _IEc2ComputeInstanceProxy
+
+
+@jsii.implements(IEc2ComputeInstance)
+class Ec2ComputeInstance(
+    aws_cdk.Resource,
+    metaclass=jsii.JSIIMeta,
+    jsii_type=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\",
+):
+    '''Ec2ComputeInstance.
+
+    Compute instance to be used for experiments, does NOT contain DB access
+
+    Owner: IT
+    '''
+
+    def __init__(
+        self,
+        scope: constructs.Construct,
+        id: builtins.str,
+        *,
+        instance_type: typing.Optional[\\"Ec2ComputeInstance.InstanceType\\"] = None,
+        numbers: typing.Optional[\\"Ec2ComputeInstance.Numbers\\"] = None,
+        ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter: typing.Optional[builtins.str] = None,
+    ) -> None:
+        '''Create a new Service Catalog \`Ec2ComputeInstance\` product.
+
+        :param scope: - scope in which this resource is defined.
+        :param id: - scoped id of the resource.
+        :param instance_type: InstanceType. The instance type of an EC2 instance. Must be t2 micro or small. Default: t2.micro
+        :param numbers: Numbers. A number to be selected. These are the allowed numbers. Default: 5
+        :param ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter: SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter. Default: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-arm64-gp2
+        '''
+        props = Ec2ComputeInstanceProps(
+            instance_type=instance_type,
+            numbers=numbers,
+            ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter=ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter,
+        )
+
+        jsii.create(self.__class__, self, [scope, id, props])
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"cloudFormationStackArn\\")
+    def cloud_formation_stack_arn(self) -> builtins.str:
+        return typing.cast(builtins.str, jsii.get(self, \\"cloudFormationStackArn\\"))
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"downloadKeyCommand\\")
+    def download_key_command(self) -> builtins.str:
+        '''The command to download the key.'''
+        return typing.cast(builtins.str, jsii.get(self, \\"downloadKeyCommand\\"))
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"iPAddress\\")
+    def i_p_address(self) -> builtins.str:
+        return typing.cast(builtins.str, jsii.get(self, \\"iPAddress\\"))
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"provisionedProductId\\")
+    def provisioned_product_id(self) -> builtins.str:
+        return typing.cast(builtins.str, jsii.get(self, \\"provisionedProductId\\"))
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"recordId\\")
+    def record_id(self) -> builtins.str:
+        return typing.cast(builtins.str, jsii.get(self, \\"recordId\\"))
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name=\\"sshcommand\\")
+    def sshcommand(self) -> builtins.str:
+        return typing.cast(builtins.str, jsii.get(self, \\"sshcommand\\"))
+
+    @jsii.enum(
+        jsii_type=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.InstanceType\\"
+    )
+    class InstanceType(enum.Enum):
+        T2_MICRO = \\"T2_MICRO\\"
+        '''t2.micro.'''
+        T2_SMALL = \\"T2_SMALL\\"
+        '''t2.small.'''
+
+    @jsii.enum(
+        jsii_type=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.Numbers\\"
+    )
+    class Numbers(enum.Enum):
+        VALUE_1 = \\"VALUE_1\\"
+        '''1.'''
+        VALUE_2 = \\"VALUE_2\\"
+        '''2.'''
+        VALUE_3 = \\"VALUE_3\\"
+        '''3.'''
+        VALUE_4 = \\"VALUE_4\\"
+        '''4.'''
+        VALUE_5 = \\"VALUE_5\\"
+        '''5.'''
+
+
+__all__ = [
+    \\"Ec2ComputeInstance\\",
+    \\"Ec2ComputeInstanceProps\\",
+    \\"IEc2ComputeInstance\\",
+]
+
+publication.publish()
+",
+  "ec2_compute_instance/_jsii/__init__.py" => "import abc
+import builtins
+import datetime
+import enum
+import typing
+
+import jsii
+import publication
+import typing_extensions
+
+import aws_cdk._jsii
+import constructs._jsii
+
+__jsii_assembly__ = jsii.JSIIAssembly.load(
+    \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6\\",
+    \\"0.0.0\\",
+    __name__[0:-6],
+    \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6@0.0.0.jsii.tgz\\",
+)
+
+__all__ = [
+    \\"__jsii_assembly__\\",
+]
+
+publication.publish()
+",
+  "ec2_compute_instance/py.typed" => "
+",
+}
+`;
+
 exports[`typescript 1`] = `
 Map {
   "awsqs-eks-cluster.ts" => "// Generated by cdk-import
@@ -5778,6 +7779,178 @@ export class CfnCluster extends cdk.CfnResource {
     this.attrEncryptionConfigKeyArn = cdk.Token.asString(this.getAtt('EncryptionConfigKeyArn'));
     this.attrOIDCIssuerURL = cdk.Token.asString(this.getAtt('OIDCIssuerURL'));
   }
+}",
+}
+`;
+
+exports[`typescript 2`] = `
+Map {
+  "ec2-compute-instance.ts" => "// Generated by cdk-import
+import * as cdk from 'aws-cdk-lib';
+import * as sc from 'aws-cdk-lib/aws-servicecatalog';
+import * as constructs from 'constructs';
+
+export interface IEc2ComputeInstance extends cdk.IResource {
+  readonly provisionedProductId: string;
+  readonly cloudFormationStackArn: string;
+  readonly recordId: string;
+  readonly iPAddress: string;
+  readonly downloadKeyCommand: string;
+  readonly sshcommand: string;
+}
+
+abstract class Ec2ComputeInstanceBase extends cdk.Resource implements IEc2ComputeInstance {
+  public abstract readonly provisionedProductId: string;
+  public abstract readonly cloudFormationStackArn: string;
+  public abstract readonly recordId: string;
+  public abstract readonly iPAddress: string;
+  public abstract readonly downloadKeyCommand: string;
+  public abstract readonly sshcommand: string;
+}
+
+enum ParameterKeys {
+  ssmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter = 'SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter',
+  instanceType = 'InstanceType',
+  numbers = 'Numbers',
+}
+
+namespace ParameterKeys {
+  const reverseMap = new Map<string, ParameterKeys>();
+  Object.keys(ParameterKeys).forEach((s: string) => {
+    const e = (<any>ParameterKeys)[s];
+    reverseMap.set(s, e);
+  });
+  export function valueOf(str: string) {
+    return reverseMap.get(str);
+  }
+}
+export interface Ec2ComputeInstanceProps {
+  /**
+   * SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter
+   *
+   * @default /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-arm64-gp2
+   */
+  readonly ssmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter?: string;
+
+  /**
+   * InstanceType
+   *
+   * The instance type of an EC2 instance.
+   *
+   * Must be t2 micro or small.
+   *
+   * @default t2.micro
+   */
+  readonly instanceType?: Ec2ComputeInstance.InstanceType;
+
+  /**
+   * Numbers
+   *
+   * A number to be selected.
+   *
+   * These are the allowed numbers.
+   *
+   * @default 5
+   */
+  readonly numbers?: Ec2ComputeInstance.Numbers;
+
+}
+/**
+ * Ec2ComputeInstance
+ *
+ * Compute instance to be used for experiments, does NOT contain DB access
+ *
+ * Owner: IT
+ */
+export class Ec2ComputeInstance extends Ec2ComputeInstanceBase {
+  public readonly provisionedProductId: string;
+  public readonly cloudFormationStackArn: string;
+  public readonly recordId: string;
+  public readonly iPAddress: string;
+  /**
+   * The command to download the key
+   */
+  public readonly downloadKeyCommand: string;
+  public readonly sshcommand: string;
+  private readonly provisionedProduct: sc.CfnCloudFormationProvisionedProduct;
+
+  /**
+   * Create a new Service Catalog \\\\\`Ec2ComputeInstance\\\\\` product.
+   *
+   * @param scope - scope in which this resource is defined
+   * @param id    - scoped id of the resource
+   * @param props - resource properties
+   */
+  constructor(scope: constructs.Construct, id: string, props: Ec2ComputeInstanceProps) {
+    super(scope, id);
+
+    this.provisionedProduct = new sc.CfnCloudFormationProvisionedProduct(this, 'Resource', {
+      provisionedProductName: this.node.id,
+      provisioningArtifactName: 'EC2LargeInstance',
+      productName: 'Ec2ComputeInstance',
+      pathName: 'DevTools',
+      provisioningParameters:
+        Object.entries(props).map(([k, v]) => {
+          return {
+            key: ParameterKeys.valueOf(k) as string,
+            value: v as string,
+          };
+        }),
+    });
+
+    this.provisionedProductId = this.provisionedProduct.ref;
+    this.cloudFormationStackArn = cdk.Token.asString(cdk.Fn.getAtt(this.provisionedProduct.logicalId, 'CloudformationStackArn'));
+    this.recordId = cdk.Token.asString(cdk.Fn.getAtt(this.provisionedProduct.logicalId, 'RecordId'));
+    this.iPAddress = cdk.Token.asString(cdk.Fn.getAtt(this.provisionedProduct.logicalId, 'Outputs.IPAddress'));
+    this.downloadKeyCommand = cdk.Token.asString(cdk.Fn.getAtt(this.provisionedProduct.logicalId, 'Outputs.DownloadKeyCommand'));
+    this.sshcommand = cdk.Token.asString(cdk.Fn.getAtt(this.provisionedProduct.logicalId, 'Outputs.sshcommand'));
+  }
+}
+
+export namespace Ec2ComputeInstance {
+
+  export enum InstanceType {
+    /**
+     * t2.micro
+     */
+    T2_MICRO = 't2.micro',
+
+    /**
+     * t2.small
+     */
+    T2_SMALL = 't2.small',
+
+  }
+
+
+  export enum Numbers {
+    /**
+     * 1
+     */
+    VALUE_1 = '1',
+
+    /**
+     * 2
+     */
+    VALUE_2 = '2',
+
+    /**
+     * 3
+     */
+    VALUE_3 = '3',
+
+    /**
+     * 4
+     */
+    VALUE_4 = '4',
+
+    /**
+     * 5
+     */
+    VALUE_5 = '5',
+
+  }
+
 }",
 }
 `;

@@ -59,7 +59,8 @@ export async function importProduct(options: ImportProductOptions): Promise<stri
 
   const gen = new ServiceCatalogProvisioningConstructGenerator(product);
   fs.mkdirSync(outdir, { recursive: true });
-  fs.writeFileSync(path.join(outdir, `${caseutil.header(gen.name).toLowerCase()}.ts`), gen.render());
+  const prodDir = fs.mkdirSync(path.join(outdir, caseutil.header(gen.name).toLowerCase()), { recursive: true });
+  fs.writeFileSync(path.join(prodDir!, 'index.ts'), gen.render());
 
   return gen.name;
 };

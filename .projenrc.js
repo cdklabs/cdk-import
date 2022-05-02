@@ -7,6 +7,7 @@ const project = new typescript.TypeScriptProject({
     'json2jsii',
     'aws-sdk',
     'minimist',
+    'minimist-subcommand',
     'proxy-agent',
     'case',
     'jsii-srcmak',
