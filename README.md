@@ -172,14 +172,14 @@ if a singular product version or launch path cannot be resolved, it will throw a
 ```shell
 Usage:
   cdk-import sc -l LANGUAGE
-  cdk-import sc -l LANGUAGE -pr PRODUCT-ID -pa PROVISIONING-ARTIFACT-ID -lp LAUNCH-PATH-ID
+  cdk-import sc -l LANGUAGE --product-id PRODUCT-ID --provisioning-artifact-id PROVISIONING-ARTIFACT-ID --path-id LAUNCH-PATH-ID
 
 Options:
   -l, --language                 Output programming language                          [string]
   -o, --outdir                   Output directory (default "./sc-products")           [string]
-  -pr, --productId               Product Id                                           [string]
-  -pa, --provisioningArtifactId  Provisioning artifact Id                             [string]
-  -lp, --launchPathId            Launch path Id                                       [string]
+  --product-id                   Product Id                                           [string]
+  --provisioning-artifact-id     Provisioning artifact Id                             [string]
+  --path-id                      Launch path Id                                       [string]
   --go-module                    Module name (required if language is "golang")       [string]
   --java-package                 Java package name (required if language is "java")   [string]
   --csharp-namespace             C# namespace name (required if language is "csharp") [string]
