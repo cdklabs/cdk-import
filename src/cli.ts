@@ -9,7 +9,6 @@ import { importResourceType, importProducts, importProduct } from '.';
 import { renderCode, SUPPORTED_LANGUAGES } from './languages';
 
 const commandDefintion = {
-  default: 'cfn',
   commands: {
     sc: null,
     cfn: null,
@@ -42,7 +41,7 @@ const args = minimist(parsedCommandsAndArgv.argv, {
 function showHelp() {
   console.log('');
   console.log('Usage:');
-  console.log('  cdk-import SUBCOMMAND (cfn or sc, default is cfn)');
+  console.log('  cdk-import SUBCOMMAND (cfn or sc)');
   console.log();
   console.log('General options:');
   console.log('  -l, --language     Output programming language                               [string]');
@@ -59,7 +58,6 @@ function showHelp() {
 function showCfnHelp() {
   console.log('');
   console.log('Usage:');
-  console.log('  cdk-import -l LANGUAGE RESOURCE-NAME[@VERSION]');
   console.log('  cdk-import cfn -l LANGUAGE RESOURCE-NAME[@VERSION]');
   console.log();
   console.log('Options:');
@@ -75,19 +73,19 @@ function showCfnHelp() {
   console.log('Examples:');
   console.log();
   console.log('  Generates constructs for the latest version AWSQS::EKS::Cluster in TypeScript:');
-  console.log('    cdk-import -l typescript AWSQS::EKS::Cluster');
+  console.log('    cdk-import cfn -l typescript AWSQS::EKS::Cluster');
   console.log();
   console.log('  Generates construct in Go for a specific resource version:');
-  console.log('    cdk-import -l golang --go-module "github.com/account/repo" AWSQS::EKS::Cluster@1.2.0');
+  console.log('    cdk-import cfn -l golang --go-module "github.com/account/repo" AWSQS::EKS::Cluster@1.2.0');
   console.log();
   console.log('  Generates construct in Python under the "src" subfolder instead of working directory:');
-  console.log('    cdk-import -l python -o src AWSQS::EKS::Cluster');
+  console.log('    cdk-import cfn -l python -o src AWSQS::EKS::Cluster');
   console.log();
   console.log('  Generates construct in Java and identifies the resource type by its ARN:');
-  console.log('    cdk-import -l java --java-package "com.acme.myproject" arn:aws:cloudformation:...');
+  console.log('    cdk-import cfn -l java --java-package "com.acme.myproject" arn:aws:cloudformation:...');
   console.log();
   console.log('  Generates construct for a private type:');
-  console.log('    cdk-import -l typescript --private Acme::SuperService::Friend::MODULE');
+  console.log('    cdk-import cfn -l typescript --private Acme::SuperService::Friend::MODULE');
   console.log();
 }
 
@@ -123,7 +121,7 @@ function showSCHelp() {
 }
 
 void (async () => {
-  if (args.help) {
+  if (args.help || !subCommand) {
     showHelp();
     process.exit(1);
   }

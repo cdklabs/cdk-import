@@ -15,17 +15,18 @@ There are currently two sources that resources can be generated from. The subcom
 `cfn` is used to import from CloudFormation Registry, 
 `sc` is used to import AWS Service Catalog products.
 There are shared general options for output directories and target language.
-The `cfn` subcommand is optional as it is default import path.
 
 ```shell
 Usage:
-  cdk-import SUBCOMMAND (cfn or sc, default is cfn
+  cdk-import SUBCOMMAND (cfn or sc) [parameters]
 
 General Options:
   -l, --language     Output programming language                               [string]
   -o, --outdir       Output directory                                          [string]
   --go-module        Go module name (required if language is "golang")         [string]
   --java-package     Java package name (required if language is "java")        [string]
+  --csharp-namespace C# namespace (optional for cfn if language is "csharp",   [string]
+                     required for sc if language is "csharp")
   -h, --help         Show usage info (include subcommand to see specific help) [boolean]
 ```
 
@@ -33,7 +34,6 @@ General Options:
 
 ```shell
 Usage:
-  cdk-import -l LANGUAGE RESOURCE-NAME[@VERSION]
   cdk-import cfn -l LANGUAGE RESOURCE-NAME[@VERSION]
 
 Options:
@@ -41,6 +41,8 @@ Options:
   -o, --outdir       Output directory                                   [string]  [default: "."]
   --go-module        Module name (required if language is "golang")     [string]
   --java-package     Java package name (required if language is "java") [string]
+  --csharp-namespace C# namespace (optional if language is "csharp",    [string]
+                     defaults to resource name.)
   -h, --help         Show this usage info                               [boolean]
 ```
 
@@ -133,32 +135,32 @@ Will generate a Go module under: `awsqs-eks-cluster`.
 Generates constructs for the latest version AWSQS::EKS::Cluster in TypeScript:
 
 ```shell
-cdk-import -l typescript AWSQS::EKS::Cluster
+cdk-import cfn -l typescript AWSQS::EKS::Cluster
 ```
 
 Generates construct in Go for a specific resource version:
 
 ```shell
-cdk-import -l golang --go-module "github.com/account/repo" AWSQS::EKS::Cluster@1.2.0
+cdk-import cfn -l golang --go-module "github.com/account/repo" AWSQS::EKS::Cluster@1.2.0
 ```
 
 Generates construct in Python under the "src" subfolder instead of working
 directory:
 
 ```shell
-cdk-import -l python -o src AWSQS::EKS::Cluster
+cdk-import cfn -l python -o src AWSQS::EKS::Cluster
 ```
 
 Generates construct in Java and identifies the resource type by its ARN:
 
 ```shell
-cdk-import -l java --java-package "com.acme.myproject" arn:aws:cloudformation:...
+cdk-import cfn -l java --java-package "com.acme.myproject" arn:aws:cloudformation:...
 ```
 
 Modules are also supported:
 
 ```shell
-cdk-import AWSQS::CheckPoint::CloudGuardQS::MODULE
+cdk-import cfn AWSQS::CheckPoint::CloudGuardQS::MODULE
 ```
 
 ## AWS Service Catalog Usage
