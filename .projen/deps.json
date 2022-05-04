@@ -107,6 +107,10 @@
       "type": "runtime"
     },
     {
+      "name": "minimist-subcommand",
+      "type": "runtime"
+    },
+    {
       "name": "proxy-agent",
       "type": "runtime"
     }

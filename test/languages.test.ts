@@ -15,8 +15,25 @@ test.each(SUPPORTED_LANGUAGES)('%s', async language => {
     outdir: outdir,
     goModule: 'github.com/my/module',
     javaPackage: 'com.my.module',
+    csharpNamespace: 'AWSQS::EKS::Cluster',
   });
 
+  const out = await captureDirectory(outdir);
+  expect(out).toMatchSnapshot();
+});
+
+test.each(SUPPORTED_LANGUAGES)('%s', async language => {
+  const outdir = await fs.mkdtemp(join(tmpdir(), 'cdk-import-test'));
+
+  await renderCode({
+    language: language,
+    srcdir: join(__dirname, 'fixtures', 'sc-ec2-product'),
+    typeName: 'Ec2ComputeInstance',
+    outdir: outdir,
+    goModule: 'github.com/my/module',
+    javaPackage: 'com.my.module',
+    csharpNamespace: 'AWS::FOO::BAR',
+  });
   const out = await captureDirectory(outdir);
   expect(out).toMatchSnapshot();
 });

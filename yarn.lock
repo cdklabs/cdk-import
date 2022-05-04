@@ -4475,6 +4475,11 @@ minimist-options@4.1.0:
     is-plain-obj "^1.1.0"
     kind-of "^6.0.3"
 
+minimist-subcommand@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/minimist-subcommand/-/minimist-subcommand-3.0.2.tgz#903ebcde760c010f35d4c6edbbe10928b7667b6a"
+  integrity sha512-/m8MaH3LekaxuS49buyf+1LwxoSAF7DcTDp6sxxoYMmYl4kLuiZOjQcNBK1Otx6NVo8UWqmnQRoQEBT9viajvQ==
+
 minimist@>=1.2.2, minimist@^1.2.0, minimist@^1.2.3, minimist@^1.2.5, minimist@^1.2.6:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
