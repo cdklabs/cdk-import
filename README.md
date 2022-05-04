@@ -170,6 +170,7 @@ that can be used like a normal cdk construct within a cdk app.
 You can currently either specify a specific product version or generate all available products
 The tool will call APIs and attempt to resolve default artifact and launch path for a product,
 if a singular product version or launch path cannot be resolved, it will throw an error.
+You will need Service Catalog end-user read permissions to call these APIs. 
 
 ```shell
 Usage:
