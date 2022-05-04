@@ -78,7 +78,7 @@ export async function importProducts(options: ImportProductOptions): Promise<str
 
   await Promise.all(availableProducts.map(async (product) => {
     try {
-      const productVersion = await importProduct( {
+      const productVersion = await importProduct({
         outdir: outdir,
         productId: product.ProductId!,
       });
