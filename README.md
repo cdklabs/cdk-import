@@ -1,7 +1,7 @@
 # cdk-import
 
-> Generates CDK L1 constructs from sources such as public CloudFormation Registry types and
-> modules as well as AWS Service Catalog product versions.
+> Generates CDK constructs from sources such as public CloudFormation Registry types and
+> modules (L1s) as well as AWS Service Catalog product versions.
 
 ## Installation
 
