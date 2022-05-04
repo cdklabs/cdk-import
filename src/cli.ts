@@ -41,15 +41,15 @@ const args = minimist(parsedCommandsAndArgv.argv, {
 function showHelp() {
   console.log('');
   console.log('Usage:');
-  console.log('  cdk-import SUBCOMMAND (cfn or sc)');
+  console.log('  cdk-import SUBCOMMAND (cfn or sc) [parameters]');
   console.log();
   console.log('General options:');
   console.log('  -l, --language     Output programming language                               [string]');
   console.log('  -o, --outdir       Output directory                                          [string]');
   console.log('  --go-module        Go module name (required if language is "golang")         [string]');
   console.log('  --java-package     Java package name (required if language is "java")        [string]');
-  console.log('  --csharp-namespace C# namespace (optional for cfn if language is "csharp",   [string]');
-  console.log('                     required for sc if language is "csharp"');
+  console.log('  --csharp-namespace C# namespace (optional if language is "csharp",           [string]');
+  console.log('                     defaults to resource name.');
   console.log('  -h, --help         Show usage info (include subcommand to see specific help) [boolean]');
   console.log('');
   console.log();
@@ -103,7 +103,8 @@ function showSCHelp() {
   console.log('  --path-id                       Launch path Id                                         [string]');
   console.log('  --go-module                     Go module name (required if language is "golang")      [string]');
   console.log('  --java-package                  Java package name (required if language is "java")     [string]');
-  console.log('  --csharp-namespace              C# namespace name (required if language is "csharp")   [string]');
+  console.log('  --csharp-namespace              C# namespace (optional if language is "csharp",        [string]');
+  console.log('                                  defaults to resource name.');
   console.log('  -h, --help                      Show this usage info                                   [boolean]');
   console.log('');
   console.log('Examples:');
@@ -173,10 +174,6 @@ void (async () => {
         process.exit(1);
       }
 
-      if (!args['csharp-namespace'] && args.language == 'csharp') {
-        throw new Error('C# namespace name (`--csharp-namespace`) must be specified (e.g. "AWS::Foo::Bar")');
-      }
-
       let products: string[] = [];
       if (ppArgs.length == 3) {
         products.push(
@@ -203,7 +200,7 @@ void (async () => {
           typeName: product,
           goModule: args['go-module'],
           javaPackage: args['java-package'],
-          csharpNamespace: `${args['csharp-namespace']}::${product}`,
+          csharpNamespace: args['csharp-namespace'] ?? product,
         });
       }));
       process.exit(0);

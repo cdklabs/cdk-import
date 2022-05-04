@@ -25,8 +25,8 @@ General Options:
   -o, --outdir       Output directory                                          [string]
   --go-module        Go module name (required if language is "golang")         [string]
   --java-package     Java package name (required if language is "java")        [string]
-  --csharp-namespace C# namespace (optional for cfn if language is "csharp",   [string]
-                     required for sc if language is "csharp")
+  --csharp-namespace C# namespace (optional if language is "csharp",           [string]
+                     defaults to resource name.)
   -h, --help         Show usage info (include subcommand to see specific help) [boolean]
 ```
 
@@ -184,7 +184,8 @@ Options:
   --path-id                      Launch path Id                                       [string]
   --go-module                    Module name (required if language is "golang")       [string]
   --java-package                 Java package name (required if language is "java")   [string]
-  --csharp-namespace             C# namespace name (required if language is "csharp") [string]
+  --csharp-namespace             C# namespace (optional if language is "csharp",      [string]
+                                 defaults to resource name.)
   -h, --help                     Show this usage info                                 [boolean]
 ```
 
