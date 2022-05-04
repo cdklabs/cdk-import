@@ -77,11 +77,16 @@ export async function importProducts(options: ImportProductOptions): Promise<str
   const availableProducts = await fetchAvailableProducts();
 
   await Promise.all(availableProducts.map(async (product) => {
-    const productVersion = await importProduct( {
-      outdir: outdir,
-      productId: product.ProductId!,
-    });
-    productVersions.push(productVersion);
+    try {
+      const productVersion = await importProduct( {
+        outdir: outdir,
+        productId: product.ProductId!,
+      });
+      productVersions.push(productVersion);
+    } catch (e) {
+      console.log(`${(e as Error).message} Skipping import for ${product.ProductId}...`);
+      console.log('try importing directly via --product-id, --provisioning-artifact-id, --path-id');
+    }
   }));
 
   return productVersions;
