@@ -5,7 +5,9 @@ const project = new typescript.TypeScriptProject({
   defaultReleaseBranch: 'main',
   deps: [
     'json2jsii',
+    'aws-cdk-lib',
     'aws-sdk',
+    'constructs@^10',
     'minimist',
     'minimist-subcommand',
     'proxy-agent',

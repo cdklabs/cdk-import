@@ -87,11 +87,20 @@
       "type": "build"
     },
     {
+      "name": "aws-cdk-lib",
+      "type": "runtime"
+    },
+    {
       "name": "aws-sdk",
       "type": "runtime"
     },
     {
       "name": "case",
+      "type": "runtime"
+    },
+    {
+      "name": "constructs",
+      "version": "^10",
       "type": "runtime"
     },
     {
