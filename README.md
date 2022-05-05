@@ -15,6 +15,7 @@ There are currently two sources that resources can be generated from. The subcom
 `cfn` is used to import from CloudFormation Registry, 
 `sc` is used to import AWS Service Catalog products.
 There are shared general options for output directories and target language.
+You will need `AWS_REGION` variable configured in your environment.
 
 ```shell
 Usage:
@@ -165,9 +166,9 @@ cdk-import cfn AWSQS::CheckPoint::CloudGuardQS::MODULE
 
 ## AWS Service Catalog Usage
 
-The cdk-import tool generates a user friendly version of a provisioned product
-that can be used like a normal cdk construct within a cdk app.
-You can currently either specify a specific product version or generate all available products
+The cdk-import tool generates a user friendly version of a provisioned product that becomes 
+a normal cdk construct that you can use within a cdk app.
+You can currently either specify a specific product version or generate all available products.
 The tool will call APIs and attempt to resolve default artifact and launch path for a product,
 if a singular product version or launch path cannot be resolved, it will throw an error.
 You will need Service Catalog end-user read permissions to call these APIs. 
@@ -197,6 +198,14 @@ If you are using `csharp`, you must specify a `--csharp-namespace` within your p
 
 Output will be generated relative to `--outdir` which defaults to the current
 working directory under `./sc-products`.
+
+## Examples
+
+Generates constructs in python for the latest product versions as importable modules in your local workspace.
+
+```shell
+cdk-import sc -l python -o .
+```
 
 
 ## Contributing
