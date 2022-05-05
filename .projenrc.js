@@ -16,8 +16,6 @@ const project = new typescript.TypeScriptProject({
   ],
   devDeps: [
     'ts-node',
-    'aws-cdk-lib',
-    'constructs@^10',
   ],
   bin: {
     'cdk-import': 'lib/cli.js',
