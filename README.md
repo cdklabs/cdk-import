@@ -1,7 +1,11 @@
 # cdk-import
 
-> Generates CDK constructs from sources such as public CloudFormation Registry types and
-> modules (L1s) as well as AWS Service Catalog product versions.
+Generates CDK constructs from external sources such as public CloudFormation Registry types and
+modules (L1s) as well as AWS Service Catalog product versions.
+
+> **IMPORTANT** The AWS CDK CLI has feature called [`cdk import`](https://github.com/aws/aws-cdk/blob/master/packages/aws-cdk/README.md#cdk-import), which can be used to import ("adopt")
+> existing resources into CloudFormation control, so that they can be mutated by CDK updates later.
+> For more information on that feature, see the [CLI documentation on `cdk import`](https://github.com/aws/aws-cdk/blob/master/packages/aws-cdk/README.md#cdk-import).
 
 ## Installation
 
