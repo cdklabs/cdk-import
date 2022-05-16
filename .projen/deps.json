@@ -56,6 +56,10 @@
       "type": "build"
     },
     {
+      "name": "jsii",
+      "type": "build"
+    },
+    {
       "name": "json-schema",
       "type": "build"
     },

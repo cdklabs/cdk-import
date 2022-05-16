@@ -15,6 +15,7 @@ const project = new typescript.TypeScriptProject({
     'jsii-srcmak',
   ],
   devDeps: [
+    'jsii',
     'ts-node',
     'aws-cdk-lib',
     'constructs@^10',
@@ -37,5 +38,12 @@ const project = new typescript.TypeScriptProject({
 project.release.publisher.publishToNpm();
 project.addGitIgnore('/.tmp/');
 project.addPackageIgnore('/.tmp/');
+
+// we use jsii for testing, and the current jsii
+// compiles projects with typescript < 4.0, which
+// conflicts with @types/prettier
+project.package.addField('resolutions', {
+  '@types/prettier': '2.6.0',
+});
 
 project.synth();
