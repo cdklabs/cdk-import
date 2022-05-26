@@ -34,10 +34,10 @@ const args = minimist(parsedCommandsAndArgv.argv, {
     'private',
   ],
   alias: {
-    outdir: 'o',
+    'outdir': 'o',
     'schema-file': 's',
-    help: 'h',
-    language: 'l',
+    'help': 'h',
+    'language': 'l',
   },
 });
 
@@ -127,11 +127,11 @@ function showSCHelp() {
 }
 
 void (async () => {
-  if (args.help && subCommand === 'cfn')  {
+  if (args.help && subCommand === 'cfn') {
     showCfnHelp();
     process.exit(1);
   }
-  if (args.help && subCommand === 'sc')  {
+  if (args.help && subCommand === 'sc') {
     showSCHelp();
     process.exit(1);
   }
