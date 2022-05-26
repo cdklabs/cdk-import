@@ -5,6 +5,7 @@ import { describeResourceType, DescribeResourceTypeOptions } from './cfn-registr
 import { CfnResourceGenerator } from './cfn-resource-generator';
 import { ServiceCatalogProvisioningConstructGenerator } from './sc-construct-generator';
 import { describeProductAggregate, DescribeProductAggregateOptions, fetchAvailableProducts } from './service-catalog';
+import { TypeInfo } from './type-info';
 
 export interface ImportResourceTypeOptions extends DescribeResourceTypeOptions {
   /**
@@ -14,26 +15,37 @@ export interface ImportResourceTypeOptions extends DescribeResourceTypeOptions {
 }
 
 /**
+ * Load the resource definition from the CFN registry
+ */
+export async function readResourceDefinitionFromRegistry(
+  resourceName: string,
+  _resourceVersion: string,
+  options?: DescribeResourceTypeOptions): Promise<TypeInfo> {
+  const type = await describeResourceType(resourceName, options);
+
+  return {
+    TypeName: resourceName,
+    Schema: type.Schema,
+    SourceUrl: type.SourceUrl,
+  };
+}
+
+/**
  * Entry point to import CFN resource types
  *
- * @param resourceName the name or ARN of the resource type
+ * @param typeName the name or ARN of the resource type
  * @param _resourceVersion the version of the resource type (ignored for now)
  * @param outdir the out folder to use (defaults to the current directory)
  * @returns name of the resource type
  */
-export async function importResourceType(resourceName: string, _resourceVersion: string, options: ImportResourceTypeOptions): Promise<string> {
+export function importResourceType(typeInfo: TypeInfo, options: ImportResourceTypeOptions): string {
+  const gen = new CfnResourceGenerator(typeInfo.TypeName, typeInfo, JSON.parse(typeInfo.Schema));
+
   const outdir = options.outdir ?? '.';
-  const type = await describeResourceType(resourceName, options);
-
-  const typeSchema = JSON.parse(type.Schema!);
-
-  const gen = new CfnResourceGenerator(type.TypeName, type, typeSchema);
-
   fs.mkdirSync(outdir, { recursive: true });
-
   fs.writeFileSync(path.join(outdir, 'index.ts'), gen.render());
 
-  return type.TypeName;
+  return typeInfo.TypeName;
 };
 
 /**
