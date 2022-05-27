@@ -33,9 +33,8 @@ export async function readResourceDefinitionFromRegistry(
 /**
  * Entry point to import CFN resource types
  *
- * @param typeName the name or ARN of the resource type
- * @param _resourceVersion the version of the resource type (ignored for now)
- * @param outdir the out folder to use (defaults to the current directory)
+ * @param typeInfo the schema and metadata information for the type
+ * @param options options for code generation
  * @returns name of the resource type
  */
 export function importResourceType(typeInfo: TypeInfo, options: ImportResourceTypeOptions): string {
