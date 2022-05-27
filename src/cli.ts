@@ -5,8 +5,9 @@ import * as path from 'path';
 import * as caseutil from 'case';
 import minimist from 'minimist';
 import { parseCommands } from 'minimist-subcommand';
-import { importResourceType, importProducts, importProduct } from '.';
+import { importResourceType, importProducts, importProduct, readResourceDefinitionFromRegistry } from '.';
 import { renderCode, SUPPORTED_LANGUAGES } from './languages';
+import { TypeInfo } from './type-info';
 
 const commandDefintion = {
   commands: {
@@ -26,15 +27,17 @@ const args = minimist(parsedCommandsAndArgv.argv, {
     'product-id',
     'provisioning-artifact-id',
     'path-id',
+    'schema-file',
   ],
   boolean: [
     'help',
     'private',
   ],
   alias: {
-    outdir: 'o',
-    help: 'h',
-    language: 'l',
+    'outdir': 'o',
+    'schema-file': 's',
+    'help': 'h',
+    'language': 'l',
   },
 });
 
@@ -46,6 +49,7 @@ function showHelp() {
   console.log('General options:');
   console.log('  -l, --language     Output programming language                               [string]');
   console.log('  -o, --outdir       Output directory                                          [string]');
+  console.log('  -s, --schema-file  Read schema from a file (instead of CFN registry)         [string]');
   console.log('  --go-module        Go module name (required if language is "golang")         [string]');
   console.log('  --java-package     Java package name (required if language is "java")        [string]');
   console.log('  --csharp-namespace C# namespace (optional if language is "csharp",           [string]');
@@ -63,6 +67,7 @@ function showCfnHelp() {
   console.log('Options:');
   console.log('  -l, --language     Output programming language                            [string]');
   console.log('  -o, --outdir       Output directory                                       [string]  [default: "."]');
+  console.log('  -s, --schema-file  Read schema from a file (instead of CFN registry)      [string]');
   console.log('  --go-module        Go module name (required if language is "golang")      [string]');
   console.log('  --java-package     Java package name (required if language is "java")     [string]');
   console.log('  --csharp-namespace C# namespace (optional if language is "csharp",        [string]');
@@ -122,6 +127,14 @@ function showSCHelp() {
 }
 
 void (async () => {
+  if (args.help && subCommand === 'cfn') {
+    showCfnHelp();
+    process.exit(1);
+  }
+  if (args.help && subCommand === 'sc') {
+    showSCHelp();
+    process.exit(1);
+  }
   if (args.help || !subCommand) {
     showHelp();
     process.exit(1);
@@ -144,9 +157,21 @@ void (async () => {
     try {
       const [resourceName, resourceVersion] = args._[0].split('@');
       const workdir = await fs.mkdtemp(path.join(os.tmpdir(), 'cdk-import'));
-      const typeName = await importResourceType(resourceName, resourceVersion, {
-        outdir: workdir,
-        private: args.private,
+
+      let typeInfo: TypeInfo;
+      if (args['schema-file']) {
+        typeInfo = {
+          TypeName: resourceName,
+          Schema: await fs.readFile(args['schema-file'], { encoding: 'utf-8' }),
+        };
+      } else {
+        typeInfo = await readResourceDefinitionFromRegistry(resourceName, resourceVersion, {
+          private: args.private,
+        });
+      }
+
+      const typeName = importResourceType(typeInfo, {
+        outdir: args.outdir,
       });
 
       await renderCode({

@@ -21,7 +21,7 @@ export class CfnResourceGenerator {
    * @param typeDef the type info containing the source url
    * @param schema the schema of the resource type for input and output properties
    */
-  constructor(private readonly typeName: string, private readonly typeDef: TypeInfo, private readonly schema: any) {
+  constructor(private readonly typeName: string, private readonly typeDef: TypeInfo | undefined, private readonly schema: any) {
     this.sanitizedTypeName = sanitizeTypeName(typeName);
     // this.resourceAttributes = this.schema.readOnlyProperties ? this.schema.readOnlyProperties.map((prop: string) => prop.replace(/^\/properties\//, '')) : [];
     // this.resourceProperties = Object.keys(this.schema.properties).filter(prop => this.resourceAttributes.indexOf(prop) === -1);
@@ -106,7 +106,7 @@ export class CfnResourceGenerator {
     code.line(' *');
     code.line(` * @cloudformationResource ${this.typeName}`);
     code.line(' * @stability external');
-    if (this.typeDef.SourceUrl) {
+    if (this.typeDef?.SourceUrl) {
       code.line(` * @link ${this.typeDef.SourceUrl}`);
     }
     code.line(' */');
@@ -127,7 +127,7 @@ export class CfnResourceGenerator {
     for (const prop of this.resourceAttributes) {
       code.line('/**');
       code.line(` * Attribute \`${this.typeName}.${prop}\``);
-      if (this.typeDef.SourceUrl) {
+      if (this.typeDef?.SourceUrl) {
         code.line(` * @link ${this.typeDef.SourceUrl}`);
       }
       code.line(' */');

@@ -15,8 +15,8 @@ npm install -g cdk-import
 
 ## Usage
 
-There are currently two sources that resources can be generated from. The subcommand 
-`cfn` is used to import from CloudFormation Registry, 
+There are currently two sources that resources can be generated from. The subcommand
+`cfn` is used to import from CloudFormation Registry,
 `sc` is used to import AWS Service Catalog products.
 There are shared general options for output directories and target language.
 You will need `AWS_REGION` variable configured in your environment.
@@ -44,6 +44,7 @@ Usage:
 Options:
   -l, --language     Output programming language                        [string]
   -o, --outdir       Output directory                                   [string]  [default: "."]
+  -s, --schema-file  Read schema from a file (instead of CFN registry)  [string]
   --go-module        Module name (required if language is "golang")     [string]
   --java-package     Java package name (required if language is "java") [string]
   --csharp-namespace C# namespace (optional if language is "csharp",    [string]
@@ -56,6 +57,13 @@ languages: `typescript`, `java`, `python`, `csharp` and `golang`.
 
 Output will be generated relative to `--outdir` which defaults to the current
 working directory.
+
+By default, the resource schema will be read from the AWS CloudFormation Registry,
+using the current AWS credentials (configured using environment variables). If
+you have a copy of the JSON schema that describes the resource properties
+in a local file, you can pass `--schema-file` to specify the file. This will
+bypass the query to the CloudFormation Registry. It expects the exact same
+`Schema` contents as returned by `DescribeType`.
 
 The following section describes language-specific behavior.
 
@@ -86,7 +94,7 @@ is based on the name of the resource (`AWSQS::EKS::Cluster` =>
 For example:
 
 ```shell
-cdk-import -l python AWSQS::EKS::Cluster 
+cdk-import -l python AWSQS::EKS::Cluster
 ```
 
 Will generate a subdirectory `awsqs_eks_cluster` with a Python module that can
@@ -100,7 +108,7 @@ resource name (`AWSQS::EKS::Cluster`).
 For example:
 
 ```shell
-cdk-import -l csharp AWSQS::EKS::Cluster 
+cdk-import -l csharp AWSQS::EKS::Cluster
 ```
 
 Will generate a directory `AWSQS::EKS::Cluster` with a `.csproj`. This can be
@@ -170,12 +178,12 @@ cdk-import cfn AWSQS::CheckPoint::CloudGuardQS::MODULE
 
 ## AWS Service Catalog Usage
 
-The cdk-import tool generates a user friendly version of a provisioned product that becomes 
+The cdk-import tool generates a user friendly version of a provisioned product that becomes
 a normal cdk construct that you can use within a cdk app.
 You can currently either specify a specific product version or generate all available products.
 The tool will call APIs and attempt to resolve default artifact and launch path for a product,
 if a singular product version or launch path cannot be resolved, it will throw an error.
-You will need Service Catalog end-user read permissions to call these APIs. 
+You will need Service Catalog end-user read permissions to call these APIs.
 
 ```shell
 Usage:
