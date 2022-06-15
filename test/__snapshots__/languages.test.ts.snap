@@ -1563,8 +1563,8 @@ namespace AWSQS::EKS::Cluster
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.60.1,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.27.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.38]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.28.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.41]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2033,8 +2033,8 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.60.1,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.27.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.38]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.28.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.41]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2209,7 +2209,12 @@ type CfnCluster interface {
 	// to be replaced.
 	//
 	// The resource can be deleted (\`RemovalPolicy.DESTROY\`), or left in your AWS
-	// account for data recovery and cleanup later (\`RemovalPolicy.RETAIN\`).
+	// account for data recovery and cleanup later (\`RemovalPolicy.RETAIN\`). In some
+	// cases, a snapshot can be taken of the resource prior to deletion
+	// (\`RemovalPolicy.SNAPSHOT\`). A list of resources that support this policy
+	// can be found in the following link:.
+	// See: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html#aws-attribute-deletionpolicy-options
+	//
 	ApplyRemovalPolicy(policy awscdk.RemovalPolicy, options *awscdk.RemovalPolicyOptions)
 	// Returns a token for an runtime attribute of this resource.
 	//
