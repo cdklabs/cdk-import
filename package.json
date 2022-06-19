@@ -53,7 +53,7 @@
     "case": "^1.6.3",
     "constructs": "^10",
     "jsii-srcmak": "^0.1.594",
-    "json2jsii": "^0.3.43",
+    "json2jsii": "^0.3.44",
     "minimist": "^1.2.6",
     "minimist-subcommand": "^3.0.2",
     "proxy-agent": "^5.0.0"
