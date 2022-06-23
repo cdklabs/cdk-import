@@ -672,9 +672,9 @@
     infer-owner "^1.0.4"
 
 "@npmcli/run-script@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@npmcli/run-script/-/run-script-4.1.0.tgz#1ecd270f6a14841721848f0a7dba441676fc45ab"
-  integrity sha512-bVX9/2YhQscdlC5WEDQ8HH7bw32klCiAvOSvUHJcmeUTUuaQ7z42KiwmnkXWqhVKKhbWPBp+5H0kN6WDyfknzw==
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@npmcli/run-script/-/run-script-4.1.2.tgz#05847f11016139d22f7185a2003a07870bdee6cc"
+  integrity sha512-fCSOS4L4yKRjX+FoWkGHugihBgUK+EjATJn6gfmZnRCt620OqRB8Mrtu/LMv7m1dMrTFVGdywsDq8wFGpyZKDA==
   dependencies:
     "@npmcli/node-gyp" "^2.0.0"
     "@npmcli/promise-spawn" "^3.0.0"
@@ -1221,10 +1221,10 @@ aws-cdk-lib@^2.28.1:
     semver "^7.3.7"
     yaml "1.10.2"
 
-aws-sdk@^2.1159.0:
-  version "2.1159.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1159.0.tgz#64d585ac608d58e6ff62678be71a4c4ca61ca5dc"
-  integrity sha512-zm3k/ufwZnkWc6M+HDz00CWuILot4L9kJ5VJsuDS9fwsT9To6k91Y1njCtIV4tcgcXvUru0Sbm4D0w5bc2847A==
+aws-sdk@^2.1160.0:
+  version "2.1160.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1160.0.tgz#4af9bcbf044b77e836341fad47627cc0d7c2b854"
+  integrity sha512-aUjpuuVctjoRDnbs/SnDJXS7QeXmBANbYFPNLwm5JXcszkokoGcYzD37PFRNJUHQ30XNBoH451mxdNWZQ606xg==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -2137,9 +2137,9 @@ duplexer3@^0.1.4:
   integrity sha512-CEj8FwwNA4cVH2uFCoHUrmojhYh1vmCdOaneKJXwkeY1i9jnlslVo9dx+hQ5Hl9GnH/Bwy/IjxAyOePyPKYnzA==
 
 electron-to-chromium@^1.4.164:
-  version "1.4.164"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.164.tgz#3d0f5c83557d8ec8a7faa531e498f198c3bd974a"
-  integrity sha512-K7iy5y6XyP9Pzh3uaDti0KC4JUNT6T1tLG5RTOmesqq2YgAJpYYYJ32m+anvZYjCV35llPTEh87kvEV/uSsiyQ==
+  version "1.4.166"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.166.tgz#83cd596e59c1a192425b99e6ecc64d9ffff50aff"
+  integrity sha512-ZPLdq3kcATkD6dwne5M4SgJBHw21t90BqTGzf3AceJwj3cE/ICv6jyDwHYyJoF4JNuXM3pzRxlaRmpO7pdwmcg==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -3967,10 +3967,10 @@ jsii-rosetta@^1.61.0:
     workerpool "^6.2.1"
     yargs "^16.2.0"
 
-jsii-srcmak@^0.1.596:
-  version "0.1.596"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.596.tgz#955b5c19b347923adc8fd1c6743d7b1e223cc772"
-  integrity sha512-rBox18bO4cjGK3RwbA3O486UX24tUpBK6ObJo99FnEsUNtd6/70RcI4nb1hVolRnaA8H/Pe0SmlUSSvNSwdb7w==
+jsii-srcmak@^0.1.597:
+  version "0.1.597"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.597.tgz#8ba248e8705ea7b5a34dae0390d737d5aecfca53"
+  integrity sha512-7qo8EZ9wxvAP6mbJbMYUycKUAs5CxcTTs4gFfv1nBWk89wT2O92u9aFeECUJRhEsR41MrrvPdlGZRjYmMfu1Ng==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.61.0"
@@ -4044,10 +4044,10 @@ json-stringify-safe@^5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
 
-json2jsii@^0.3.45:
-  version "0.3.45"
-  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.3.45.tgz#c5077299ce219866852ff4fa57bcba5206f33148"
-  integrity sha512-bpxMmmikd3LzjZ0NG2kv0ie6q+gn5B6NpGYJNMgy3g+ny4p3d8YgYeav5oSdSsZd3dOk1qIPmpjI04/9Dx+neQ==
+json2jsii@^0.3.46:
+  version "0.3.46"
+  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.3.46.tgz#5f954cf747a75d69fad956f0b6af1a7c5a93d467"
+  integrity sha512-feDOOZEb0l+jL+FjUrBqilxoMP2P6K2I9hGW3snfpl1Y3eXYb37s2MwY1yDzkoG4Q86QQP53JlUdDHu+Lc40Ew==
   dependencies:
     camelcase "^6.3.0"
     json-schema "^0.4.0"
@@ -4661,11 +4661,12 @@ npm-normalize-package-bin@^1.0.1:
   integrity sha512-EPfafl6JL5/rU+ot6P3gRSCpPDW5VmIzX959Ob1+ySFUuuYHWHekXpwdUZcKP5C+DS4GEtdJluwBjnsNDl+fSA==
 
 npm-package-arg@^9.0.0, npm-package-arg@^9.0.1:
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/npm-package-arg/-/npm-package-arg-9.0.2.tgz#f3ef7b1b3b02e82564af2d5228b4c36567dcd389"
-  integrity sha512-v/miORuX8cndiOheW8p2moNuPJ7QhcFh9WGlTorruG8hXSA23vMTEp5hTCmDxic0nD8KHhj/NQgFuySD3GYY3g==
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/npm-package-arg/-/npm-package-arg-9.1.0.tgz#a60e9f1e7c03e4e3e4e994ea87fff8b90b522987"
+  integrity sha512-4J0GL+u2Nh6OnhvUKXRr2ZMG4lR8qtLp+kv7UiV00Y+nGiSxtttCyIRHCt5L5BNkXQld/RceYItau3MDOoGiBw==
   dependencies:
     hosted-git-info "^5.0.0"
+    proc-log "^2.0.1"
     semver "^7.3.5"
     validate-npm-package-name "^4.0.0"
 
@@ -5066,7 +5067,7 @@ pretty-format@^27.5.1:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
-proc-log@^2.0.0:
+proc-log@^2.0.0, proc-log@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/proc-log/-/proc-log-2.0.1.tgz#8f3f69a1f608de27878f91f5c688b225391cb685"
   integrity sha512-Kcmo2FhfDTXdcbfDH76N7uBYHINxc/8GW7UAVuVP9I+Va3uHSerrnKV6dLooga/gh7GlgzuCCr/eoldnL1muGw==
