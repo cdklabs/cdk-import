@@ -3967,10 +3967,10 @@ jsii-rosetta@^1.61.0:
     workerpool "^6.2.1"
     yargs "^16.2.0"
 
-jsii-srcmak@^0.1.599:
-  version "0.1.599"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.599.tgz#09d1e85702a1e7b5cebcd705e9988bfc5c20e765"
-  integrity sha512-mVl0hsg28XFQG/hCzuOfHUjz1+1BBg52p66lffMBHtoRzOHnoVrAvlvy5gL44HOWH/L2PhFRW/koA/wLPXP3nA==
+jsii-srcmak@^0.1.600:
+  version "0.1.600"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.600.tgz#e6fe6cc3084475308c2e019b808e0bce79790bfd"
+  integrity sha512-PwGtoeuW4msDx/iT/Vh3ZJ2JqT70n6EfQ3Br8xjwvXAvrXADeULshl8J4Vmlu2vJRwLwXKVVHmHK57wjl7looA==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.61.0"
@@ -4044,10 +4044,10 @@ json-stringify-safe@^5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
 
-json2jsii@^0.3.48:
-  version "0.3.48"
-  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.3.48.tgz#7290eabb3cf1cf20bb075f1d88805fa3c33fcf1b"
-  integrity sha512-wbgwGpwuXn0At/pwUO3FVpErvO1FWFX3X9KfjywlfOr89HM8E4y2Wi4cgm8l4dDLmSy/Aud3mY2+up/3JNPmPw==
+json2jsii@^0.3.49:
+  version "0.3.49"
+  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.3.49.tgz#7487bd0d2dfeab87f65b8ac133c8ebb0aa17cf9b"
+  integrity sha512-3pQYYqZAb/2Ua+gsQCt8VU8LH7LMT9252EaoO3pK4J2mI64mHlRhlvBarG3dHjcR2op2jH1H+n1am8+GNUyzlw==
   dependencies:
     camelcase "^6.3.0"
     json-schema "^0.4.0"
@@ -4721,9 +4721,9 @@ npmlog@^6.0.0:
     set-blocking "^2.0.0"
 
 nwsapi@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/nwsapi/-/nwsapi-2.2.0.tgz#204879a9e3d068ff2a55139c2c772780681a38b7"
-  integrity sha512-h2AatdwYH+JHiZpv7pt/gSX1XoRGb7L/qSIeuqA6GwYoF9w1vP1cw42TO0aI2pNyshRK5893hNSl+1//vHK7hQ==
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/nwsapi/-/nwsapi-2.2.1.tgz#10a9f268fbf4c461249ebcfe38e359aa36e2577c"
+  integrity sha512-JYOWTeFoS0Z93587vRJgASD5Ut11fYl5NyihP3KrYBvMe1FRRs6RN7m20SA/16GM4P6hTnZjT+UmDOt38UeXNg==
 
 object-inspect@^1.12.0, object-inspect@^1.9.0:
   version "1.12.2"
