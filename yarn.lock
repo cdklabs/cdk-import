@@ -1222,10 +1222,10 @@ aws-cdk-lib@^2.29.1:
     semver "^7.3.7"
     yaml "1.10.2"
 
-aws-sdk@^2.1165.0:
-  version "2.1165.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1165.0.tgz#4da669d1e9020344cef75d961882f52a7931a379"
-  integrity sha512-2oVkSuXsLeErt+H4M2OGIz4p1LPS+QRfY2WnW4QKMndASOcvHKZTfzuY8jmc9ZnDGyguiGdT3idYU8KpNg0sGw==
+aws-sdk@^2.1166.0:
+  version "2.1166.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1166.0.tgz#9bc5ceb3690d2747b941a2e2b8ebacfffb412f41"
+  integrity sha512-9CJQpMtIv2sxvwYTcMCfuCGU8t5qEppnvmo0uFFOm+1Q1uEv5sPg95wQH3Gfj4Mmv4FKWFofgTLksn0u2pDxsw==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -1688,9 +1688,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10:
-  version "10.1.42"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.42.tgz#dc21bfa7d024a1c81c0982b69ed4585e4e9d5712"
-  integrity sha512-5AELa/PFtZG+WTjn9HoXhqsDZYV6l3J7Li9xw6vREYVMasF8cnVbTZvA4crP1gIyKtBAxAlnZCmzmCbicnH6eg==
+  version "10.1.43"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.43.tgz#33d3021ba6bfbbbc244932d4626abcaff740cc1f"
+  integrity sha512-I7CEsYPmcsTpmf+tT3DZq5klCzk2d0Gb6X67P5XxYq0an4+JiWrf8/LCIHV3xqOhnGLAbM/aGZ3bigUNTWeliA==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -4045,10 +4045,10 @@ json-stringify-safe@^5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
 
-json2jsii@^0.3.52:
-  version "0.3.52"
-  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.3.52.tgz#1fd5acc8546030f28afb3c8a18d8d5cb15fe098d"
-  integrity sha512-eQKbXuiEKQhTpc2bitt/haOlA9O0KtkEiyKNqXUrCTiN3M2EDZ05Hn+wbRiVsDWpVpvchpcUcn1kOIvyPBe2EA==
+json2jsii@^0.3.53:
+  version "0.3.53"
+  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.3.53.tgz#400fb44c5744008f90fb8d990e915ce756b6d1a6"
+  integrity sha512-ZVEctYw8+XtWho1hPnIWzlVTfc++0OSva7mLdkVIY9T9SSeL3AgzjeKRDqHyoPoelVNqIMG0SkjgyEuEmp/jIw==
   dependencies:
     camelcase "^6.3.0"
     json-schema "^0.4.0"
