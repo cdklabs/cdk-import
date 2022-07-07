@@ -30,7 +30,7 @@
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk-lib": "^2.30.0",
+    "aws-cdk-lib": "^2.31.0",
     "constructs": "^10",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.6",
@@ -48,12 +48,12 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.30.0",
-    "aws-sdk": "^2.1168.0",
+    "aws-cdk-lib": "^2.31.0",
+    "aws-sdk": "^2.1169.0",
     "case": "^1.6.3",
     "constructs": "^10",
-    "jsii-srcmak": "^0.1.609",
-    "json2jsii": "^0.3.57",
+    "jsii-srcmak": "^0.1.610",
+    "json2jsii": "^0.3.58",
     "minimist": "^1.2.6",
     "minimist-subcommand": "^3.0.2",
     "proxy-agent": "^5.0.0"
