@@ -1207,10 +1207,10 @@ at-least-node@^1.0.0:
   resolved "https://registry.yarnpkg.com/at-least-node/-/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
   integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
-aws-cdk-lib@^2.31.0:
-  version "2.31.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.31.0.tgz#391e8ff70c6de0a0629915e45ae6fcec17cae847"
-  integrity sha512-6GvBmHtUx74uffl6kzvTL1bWN2/qPj4oHQj12gtqPifFBbNNrYGjLEeBY6DuidLhg96OoRoFc3lyJoiB/p7BEw==
+aws-cdk-lib@^2.31.1:
+  version "2.31.1"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.31.1.tgz#97b8a21f14b44875d9424e00758b79c7ec2f765f"
+  integrity sha512-1IFgMxr1PpX90KFzTRZKVwfY+qP/UzLsrNgfylvqveOKy3R6qtGAhAx186+Zy2nx+wYoy+hVz89CZSItGDapMA==
   dependencies:
     "@balena/dockerignore" "^1.0.2"
     case "1.6.3"
@@ -4045,10 +4045,10 @@ json-stringify-safe@^5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
 
-json2jsii@^0.3.60:
-  version "0.3.60"
-  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.3.60.tgz#3273d7881f7fe7a53a14172671bf87b367d36e0e"
-  integrity sha512-mVlVxddk5Jxo5jkoC3JzUvAectuU0V35CPkUECjtUSKRyFm5ahXvJwqk43onKS4I3/Yhkk5DWQk8P8Z1ITo+sQ==
+json2jsii@^0.3.61:
+  version "0.3.61"
+  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.3.61.tgz#12ad3aefe352d2a0f4a3321424baed0ea68b2bee"
+  integrity sha512-dj5ExdZqdWEzOkc/3NAtrMRA7byRegZrzV4+EQBVlOD4n9DtA4qQMO94Wa8YEtqmhEgooubPLNC2yp0YJE2SNA==
   dependencies:
     camelcase "^6.3.0"
     json-schema "^0.4.0"
