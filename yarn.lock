@@ -1469,9 +1469,9 @@ camelcase@^6.2.0, camelcase@^6.3.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001359:
-  version "1.0.30001363"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001363.tgz#26bec2d606924ba318235944e1193304ea7c4f15"
-  integrity sha512-HpQhpzTGGPVMnCjIomjt+jvyUu8vNFo3TaDiZ/RcoTrlOq/5+tC8zHdsbgFB6MxmaY+jCpsH09aD80Bb4Ow3Sg==
+  version "1.0.30001364"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001364.tgz#1e118f0e933ed2b79f8d461796b8ce45398014a0"
+  integrity sha512-9O0xzV3wVyX0SlegIQ6knz+okhBB5pE0PC40MNdwcipjwpxoUEHL24uJ+gG42cgklPjfO5ZjZPme9FTSN3QT2Q==
 
 case@1.6.3, case@^1.6.3:
   version "1.6.3"
@@ -3968,10 +3968,10 @@ jsii-rosetta@^1.61.0:
     workerpool "^6.2.1"
     yargs "^16.2.0"
 
-jsii-srcmak@^0.1.612:
-  version "0.1.612"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.612.tgz#388653b7986466ab7d80fe4b8ef17d27ab51da99"
-  integrity sha512-KKzc/N4j9C8I7n1Opc0dAXS1jILrUT6SZ4MpbgrFmPyM6n4t/RJy0RaMsXpoIQFbqY4fqbFumqc5huoeqWGOjw==
+jsii-srcmak@^0.1.613:
+  version "0.1.613"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.613.tgz#dbec367d18e388bfb72d4b67efdbdcc38f338a32"
+  integrity sha512-f/ZLmUPxmlO/lsgjQFKa5FlQ2R69z8lyJYZXhSagLyPdBDjjwDUXVMBJMkUAImZzXm6P6ItDWO42Fs4pxG+rsg==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.61.0"
