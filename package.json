@@ -41,7 +41,7 @@
     "jsii": "^1.61.0",
     "json-schema": "^0.4.0",
     "npm-check-updates": "^12",
-    "projen": "^0.58.21",
+    "projen": "^0.58.27",
     "standard-version": "^9",
     "ts-jest": "^27",
     "ts-node": "^10.8.2",
@@ -49,11 +49,11 @@
   },
   "dependencies": {
     "aws-cdk-lib": "^2.31.1",
-    "aws-sdk": "^2.1171.0",
+    "aws-sdk": "^2.1172.0",
     "case": "^1.6.3",
     "constructs": "^10",
-    "jsii-srcmak": "^0.1.613",
-    "json2jsii": "^0.3.61",
+    "jsii-srcmak": "^0.1.614",
+    "json2jsii": "^0.3.62",
     "minimist": "^1.2.6",
     "minimist-subcommand": "^3.0.2",
     "proxy-agent": "^5.0.0"
@@ -67,7 +67,7 @@
   "jest": {
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.ts?(x)",
-      "<rootDir>/(test|src)/**/?(*.)+(spec|test).ts?(x)"
+      "<rootDir>/(test|src)/**/*(*.)@(spec|test).ts?(x)"
     ],
     "clearMocks": true,
     "collectCoverage": true,
