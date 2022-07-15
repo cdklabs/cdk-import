@@ -1563,8 +1563,8 @@ namespace AWSQS::EKS::Cluster
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.62.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.31.1]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.45]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.32.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.46]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2033,8 +2033,8 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.62.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.31.1]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.45]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.32.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.46]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2129,11 +2129,19 @@ type CfnCluster interface {
 	Stack() awscdk.Stack
 	// \`AWSQS::EKS::Cluster.Tags\`.
 	Tags() *[]interface{}
-	// Return properties modified after initiation.
+	// Deprecated.
+	// Deprecated: use \`updatedProperties\`
+	//
+	// Return properties modified after initiation
 	//
 	// Resources that expose mutable properties should override this function to
 	// collect and return the properties object for this resource.
 	UpdatedProperites() *map[string]interface{}
+	// Return properties modified after initiation.
+	//
+	// Resources that expose mutable properties should override this function to
+	// collect and return the properties object for this resource.
+	UpdatedProperties() *map[string]interface{}
 	// \`AWSQS::EKS::Cluster.Version\` Desired Kubernetes version for your cluster. If you don't specify this value, the cluster uses the latest version from Amazon EKS.
 	Version() *string
 	// Syntactic sugar for \`addOverride(path, undefined)\`.
@@ -2484,6 +2492,16 @@ func (j *jsiiProxy_CfnCluster) UpdatedProperites() *map[string]interface{} {
 	_jsii_.Get(
 		j,
 		\\"updatedProperites\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnCluster) UpdatedProperties() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		\\"updatedProperties\\",
 		&returns,
 	)
 	return returns
@@ -2889,6 +2907,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: \\"tags\\", GoGetter: \\"Tags\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"toString\\", GoMethod: \\"ToString\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"updatedProperites\\", GoGetter: \\"UpdatedProperites\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"updatedProperties\\", GoGetter: \\"UpdatedProperties\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"validateProperties\\", GoMethod: \\"ValidateProperties\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"version\\", GoGetter: \\"Version\\"},
 		},
@@ -3209,6 +3228,22 @@ func Ec2ComputeInstance_IsConstruct(x interface{}) *bool {
 		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\",
 		\\"isConstruct\\",
 		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Returns true if the construct was created by CDK, and false otherwise.
+func Ec2ComputeInstance_IsOwnedResource(construct constructs.IConstruct) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\",
+		\\"isOwnedResource\\",
+		[]interface{}{construct},
 		&returns,
 	)
 
