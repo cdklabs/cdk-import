@@ -1562,9 +1562,9 @@ namespace AWSQS::EKS::Cluster
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.63.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.63.1,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.33.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.57]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.59]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2032,9 +2032,9 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.63.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.63.1,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.33.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.57]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.59]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -6178,15 +6178,15 @@ class CfnCluster(
         scope: constructs.Construct,
         id: builtins.str,
         *,
-        resources_vpc_config: \\"CfnClusterPropsResourcesVpcConfig\\",
+        resources_vpc_config: typing.Union[\\"CfnClusterPropsResourcesVpcConfig\\", typing.Dict[str, typing.Any]],
         role_arn: builtins.str,
         enabled_cluster_logging_types: typing.Optional[typing.Sequence[builtins.str]] = None,
-        encryption_config: typing.Optional[typing.Sequence[\\"EncryptionConfigEntry\\"]] = None,
-        kubernetes_api_access: typing.Optional[\\"CfnClusterPropsKubernetesApiAccess\\"] = None,
-        kubernetes_network_config: typing.Optional[\\"CfnClusterPropsKubernetesNetworkConfig\\"] = None,
+        encryption_config: typing.Optional[typing.Sequence[typing.Union[\\"EncryptionConfigEntry\\", typing.Dict[str, typing.Any]]]] = None,
+        kubernetes_api_access: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesApiAccess\\", typing.Dict[str, typing.Any]]] = None,
+        kubernetes_network_config: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesNetworkConfig\\", typing.Dict[str, typing.Any]]] = None,
         lambda_role_name: typing.Optional[builtins.str] = None,
         name: typing.Optional[builtins.str] = None,
-        tags: typing.Optional[typing.Sequence[\\"CfnClusterPropsTags\\"]] = None,
+        tags: typing.Optional[typing.Sequence[typing.Union[\\"CfnClusterPropsTags\\", typing.Dict[str, typing.Any]]]] = None,
         version: typing.Optional[builtins.str] = None,
     ) -> None:
         '''Create a new \`\`AWSQS::EKS::Cluster\`\`.
@@ -6398,15 +6398,15 @@ class CfnClusterProps:
     def __init__(
         self,
         *,
-        resources_vpc_config: \\"CfnClusterPropsResourcesVpcConfig\\",
+        resources_vpc_config: typing.Union[\\"CfnClusterPropsResourcesVpcConfig\\", typing.Dict[str, typing.Any]],
         role_arn: builtins.str,
         enabled_cluster_logging_types: typing.Optional[typing.Sequence[builtins.str]] = None,
-        encryption_config: typing.Optional[typing.Sequence[\\"EncryptionConfigEntry\\"]] = None,
-        kubernetes_api_access: typing.Optional[\\"CfnClusterPropsKubernetesApiAccess\\"] = None,
-        kubernetes_network_config: typing.Optional[\\"CfnClusterPropsKubernetesNetworkConfig\\"] = None,
+        encryption_config: typing.Optional[typing.Sequence[typing.Union[\\"EncryptionConfigEntry\\", typing.Dict[str, typing.Any]]]] = None,
+        kubernetes_api_access: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesApiAccess\\", typing.Dict[str, typing.Any]]] = None,
+        kubernetes_network_config: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesNetworkConfig\\", typing.Dict[str, typing.Any]]] = None,
         lambda_role_name: typing.Optional[builtins.str] = None,
         name: typing.Optional[builtins.str] = None,
-        tags: typing.Optional[typing.Sequence[\\"CfnClusterPropsTags\\"]] = None,
+        tags: typing.Optional[typing.Sequence[typing.Union[\\"CfnClusterPropsTags\\", typing.Dict[str, typing.Any]]]] = None,
         version: typing.Optional[builtins.str] = None,
     ) -> None:
         '''A resource that creates Amazon Elastic Kubernetes Service (Amazon EKS) clusters.
@@ -6590,8 +6590,8 @@ class CfnClusterPropsKubernetesApiAccess:
     def __init__(
         self,
         *,
-        roles: typing.Optional[typing.Sequence[\\"KubernetesApiAccessEntry\\"]] = None,
-        users: typing.Optional[typing.Sequence[\\"KubernetesApiAccessEntry\\"]] = None,
+        roles: typing.Optional[typing.Sequence[typing.Union[\\"KubernetesApiAccessEntry\\", typing.Dict[str, typing.Any]]]] = None,
+        users: typing.Optional[typing.Sequence[typing.Union[\\"KubernetesApiAccessEntry\\", typing.Dict[str, typing.Any]]]] = None,
     ) -> None:
         '''
         :param roles: 
@@ -6861,7 +6861,7 @@ class EncryptionConfigEntry:
     def __init__(
         self,
         *,
-        provider: typing.Optional[\\"Provider\\"] = None,
+        provider: typing.Optional[typing.Union[\\"Provider\\", typing.Dict[str, typing.Any]]] = None,
         resources: typing.Optional[typing.Sequence[builtins.str]] = None,
     ) -> None:
         '''The encryption configuration for the cluster.
