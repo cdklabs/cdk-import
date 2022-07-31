@@ -171,7 +171,7 @@ void (async () => {
       }
 
       const typeName = importResourceType(typeInfo, {
-        outdir: args.outdir,
+        outdir: workdir,
       });
 
       await renderCode({
