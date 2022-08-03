@@ -1282,10 +1282,10 @@ available-typed-arrays@^1.0.5:
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
-aws-cdk-lib@^2.34.2:
-  version "2.34.2"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.34.2.tgz#3f95e553853417923ec3198f408472f034f7bee0"
-  integrity sha512-iXalBo+JeQ6jYxNkh5kZhVkX9gzR+eVbujPNIKYbJdSxnQAiE5oHWPMDzxRL2Yxmm2+xUKWkkfOVc2Ql+ZBp2w==
+aws-cdk-lib@^2.35.0:
+  version "2.35.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.35.0.tgz#abbf8af3d85ad2af438f6ce344c26204451f8ec5"
+  integrity sha512-kt3uuuwxblgLCn3VRtC+lcU1VgCVVL8osQ8UXfi3eA2TAKU+8TS/+wMTXGgMKXUTNP+zzo+tfiE4PyPJseWavw==
   dependencies:
     "@balena/dockerignore" "^1.0.2"
     case "1.6.3"
@@ -1297,10 +1297,10 @@ aws-cdk-lib@^2.34.2:
     semver "^7.3.7"
     yaml "1.10.2"
 
-aws-sdk@^2.1186.0:
-  version "2.1186.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1186.0.tgz#f08fc5f1f53defa1fff83177621947dc0ca8d29b"
-  integrity sha512-3yDWwNWgbSH9tRVyan0PlRU938Po9QH+06XHwRNwAa/6bixYl4L48c6YgpfxBpwl0IvcCCTivD7ZqshndwishQ==
+aws-sdk@^2.1187.0:
+  version "2.1187.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1187.0.tgz#eb928d64305630f53b8f6dad5c7b91fec8f04622"
+  integrity sha512-QcxQ3asIhH9QQnN/5JO3MaHRjwcy3/AsBzcAjPU+lHZGV0drnuDmg3ZkZuAa/mOgQ3MEi68G3gYD+481QJgnMg==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -1784,9 +1784,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10:
-  version "10.1.64"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.64.tgz#f2dd258556257928cf41a58e171254ef5dc0bae5"
-  integrity sha512-GXyNny+46Qetc91zWR69j871pEv+P0SS2SGCfN+B5WvB8nXjl2rPtQ9rPgeU9+wIiwDEzFZ1lURFxne30Oo7mA==
+  version "10.1.65"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.65.tgz#383ca30b71e6f47d7f6c66ac1389498a93e16c72"
+  integrity sha512-GTb1xCN4CcUW4UxMvEGqVpmOZsEZYaE3kFN/KHAGTX2eCbMwrJaruEURyB7yttAdkOTwCkmPPDoWhRUMerKDfw==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2243,9 +2243,9 @@ eastasianwidth@^0.2.0:
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
 electron-to-chromium@^1.4.202:
-  version "1.4.207"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.207.tgz#9c3310ebace2952903d05dcaba8abe3a4ed44c01"
-  integrity sha512-piH7MJDJp4rJCduWbVvmUd59AUne1AFBJ8JaRQvk0KzNTSUnZrVXHCZc+eg+CGE4OujkcLJznhGKD6tuAshj5Q==
+  version "1.4.209"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.209.tgz#18ec3a0773fb3e39fc0a5c9373b2e7c72df584af"
+  integrity sha512-SfWI9G/e3rxGIUalHbUCH9yEsTpO+72y+cD1Sw0tYtuTrdOPaFAgZKXM1crWVJwTNmj6KIPbbx0NIoV8a2cFJw==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -4128,10 +4128,10 @@ jsii-rosetta@^1.63.2:
     workerpool "^6.2.1"
     yargs "^16.2.0"
 
-jsii-srcmak@^0.1.635:
-  version "0.1.635"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.635.tgz#207ec4fe9afa519a71ca8492f37555b67c9c8b40"
-  integrity sha512-HUYmFsqUjEx2DVaj42Q0JhvqByz1xmYljKnb5qqeKOjjlRhLxjts1/IbX2oDF5dL9XCQ0MEdvdWS3zAkFTIaLQ==
+jsii-srcmak@^0.1.636:
+  version "0.1.636"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.636.tgz#1cea43ca280e992dc65b781e6d7f52f16283cfb9"
+  integrity sha512-SLYM1eMdLOm0wW+K8bbouIHeEr9YV3973TgQ96WEq9QnRhkSaNzmjP1EuOW0x3YnFy8qc5mNjoFAfoayTh5yLw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.63.2"
@@ -4205,10 +4205,10 @@ json-stringify-safe@^5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
 
-json2jsii@^0.3.83:
-  version "0.3.83"
-  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.3.83.tgz#9f86de98204a6faa158b3b6f54451450b0c2548f"
-  integrity sha512-l5YKdF2b294R75ZHCS/GE2OVsm5iF16Y0CyCy6YZolpt53pn1mC6AmvtHB6+zh6QhRirCPol28+ZPkiwa6kzfw==
+json2jsii@^0.3.84:
+  version "0.3.84"
+  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.3.84.tgz#b8d06b03e8cf705a666f09cf65ac82e576b1dd29"
+  integrity sha512-Oxlh9j+3B34IclTnE8N/8u3pcSQMf9SdnutjJ0WaWRstkkfNnSEyabVOhmxiV14oF/3eEI+WhbT/zsUR7al/DA==
   dependencies:
     camelcase "^6.3.0"
     json-schema "^0.4.0"
@@ -4416,9 +4416,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 lru-cache@^7.4.4, lru-cache@^7.5.1, lru-cache@^7.7.1:
-  version "7.13.1"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.13.1.tgz#267a81fbd0881327c46a81c5922606a2cfe336c4"
-  integrity sha512-CHqbAq7NFlW3RSnoWXLJBxCWaZVBrfa9UEHId2M3AW8iEBurbqduNexEUCGc3SHc6iCYXNJCDi903LajSVAEPQ==
+  version "7.13.2"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.13.2.tgz#bb5d3f1deea3f3a7a35c1c44345566a612e09cd0"
+  integrity sha512-VJL3nIpA79TodY/ctmZEfhASgqekbT574/c4j3jn4bKXbSCnTTCH/KltZyvL2GlV+tGSMtsWyem8DCX7qKTMBA==
 
 make-dir@^3.0.0:
   version "3.1.0"
@@ -5238,10 +5238,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.60.10:
-  version "0.60.10"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.60.10.tgz#9659672a8374c3d386b0655523e6d47919cb6a38"
-  integrity sha512-c4vRC5U/Q59U6rzIK+Oy0/iRYt3419OP1WyiBjP7X6QXuCcNcehstmMcc2QS5uM1zMi4v/Hi82wwTG7juBGHYA==
+projen@^0.60.12:
+  version "0.60.12"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.60.12.tgz#70eab729b0e65791257dc596a36dde0a89bddce2"
+  integrity sha512-y/zix/70I8ovfEJDMAY8+Y+ZuMATB3x/o8DzFVhvBxKBkx1770h3YXCux4vUJMx50FUi/UMNuN+vf5B4Jboaqw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
