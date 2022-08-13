@@ -21,8 +21,14 @@ namespace AWSQS::EKS::Cluster
         /// <param name=\\"scope\\">- scope in which this resource is defined.</param>
         /// <param name=\\"id\\">- scoped id of the resource.</param>
         /// <param name=\\"props\\">- resource properties.</param>
-        public CfnCluster(Constructs.Construct scope, string id, AWSQS::EKS::Cluster.ICfnClusterProps props): base(new DeputyProps(new object?[]{scope, id, props}))
+        public CfnCluster(Constructs.Construct scope, string id, AWSQS::EKS::Cluster.ICfnClusterProps props): base(_MakeDeputyProps(scope, id, props))
         {
+        }
+
+        [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+        private static DeputyProps _MakeDeputyProps(Constructs.Construct scope, string id, AWSQS::EKS::Cluster.ICfnClusterProps props)
+        {
+            return new DeputyProps(new object?[]{scope, id, props});
         }
 
         /// <summary>Used by jsii to construct an instance of this class from a Javascript-owned object reference</summary>
@@ -1562,9 +1568,9 @@ namespace AWSQS::EKS::Cluster
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.63.2,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.64.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.37.1]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.73]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.74]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -1603,8 +1609,14 @@ namespace AWS::FOO::BAR
         /// <param name=\\"scope\\">- scope in which this resource is defined.</param>
         /// <param name=\\"id\\">- scoped id of the resource.</param>
         /// <param name=\\"props\\">- resource properties.</param>
-        public Ec2ComputeInstance(Constructs.Construct scope, string id, AWS::FOO::BAR.IEc2ComputeInstanceProps props): base(new DeputyProps(new object?[]{scope, id, props}))
+        public Ec2ComputeInstance(Constructs.Construct scope, string id, AWS::FOO::BAR.IEc2ComputeInstanceProps props): base(_MakeDeputyProps(scope, id, props))
         {
+        }
+
+        [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+        private static DeputyProps _MakeDeputyProps(Constructs.Construct scope, string id, AWS::FOO::BAR.IEc2ComputeInstanceProps props)
+        {
+            return new DeputyProps(new object?[]{scope, id, props});
         }
 
         /// <summary>Used by jsii to construct an instance of this class from a Javascript-owned object reference</summary>
@@ -2032,9 +2044,9 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.63.2,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.64.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.37.1]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.73]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.74]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2054,7 +2066,101 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
 
 exports[`golang 1`] = `
 Map {
-  "awsqs-eks-cluster/awsqs-eks-cluster.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+  "awsqs-eks-cluster/awsqs-eks-cluster.go" => "package awsqs-eks-cluster
+
+import (
+	\\"reflect\\"
+
+	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
+)
+
+func init() {
+	_jsii_.RegisterClass(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnCluster\\",
+		reflect.TypeOf((*CfnCluster)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: \\"addDeletionOverride\\", GoMethod: \\"AddDeletionOverride\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"addDependsOn\\", GoMethod: \\"AddDependsOn\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"addMetadata\\", GoMethod: \\"AddMetadata\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"addOverride\\", GoMethod: \\"AddOverride\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"addPropertyDeletionOverride\\", GoMethod: \\"AddPropertyDeletionOverride\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"addPropertyOverride\\", GoMethod: \\"AddPropertyOverride\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"applyRemovalPolicy\\", GoMethod: \\"ApplyRemovalPolicy\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"attrArn\\", GoGetter: \\"AttrArn\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"attrCertificateAuthorityData\\", GoGetter: \\"AttrCertificateAuthorityData\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"attrClusterSecurityGroupId\\", GoGetter: \\"AttrClusterSecurityGroupId\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"attrEncryptionConfigKeyArn\\", GoGetter: \\"AttrEncryptionConfigKeyArn\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"attrEndpoint\\", GoGetter: \\"AttrEndpoint\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"attrOIDCIssuerURL\\", GoGetter: \\"AttrOIDCIssuerURL\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"cfnOptions\\", GoGetter: \\"CfnOptions\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"cfnProperties\\", GoGetter: \\"CfnProperties\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"cfnResourceType\\", GoGetter: \\"CfnResourceType\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"creationStack\\", GoGetter: \\"CreationStack\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"enabledClusterLoggingTypes\\", GoGetter: \\"EnabledClusterLoggingTypes\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"encryptionConfig\\", GoGetter: \\"EncryptionConfig\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"getAtt\\", GoMethod: \\"GetAtt\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"getMetadata\\", GoMethod: \\"GetMetadata\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"kubernetesApiAccess\\", GoGetter: \\"KubernetesApiAccess\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"kubernetesNetworkConfig\\", GoGetter: \\"KubernetesNetworkConfig\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"lambdaRoleName\\", GoGetter: \\"LambdaRoleName\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"logicalId\\", GoGetter: \\"LogicalId\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"name\\", GoGetter: \\"Name\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"node\\", GoGetter: \\"Node\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"overrideLogicalId\\", GoMethod: \\"OverrideLogicalId\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"ref\\", GoGetter: \\"Ref\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"renderProperties\\", GoMethod: \\"RenderProperties\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"resourcesVpcConfig\\", GoGetter: \\"ResourcesVpcConfig\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"roleArn\\", GoGetter: \\"RoleArn\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"shouldSynthesize\\", GoMethod: \\"ShouldSynthesize\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"stack\\", GoGetter: \\"Stack\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"tags\\", GoGetter: \\"Tags\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"toString\\", GoMethod: \\"ToString\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"updatedProperites\\", GoGetter: \\"UpdatedProperites\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"updatedProperties\\", GoGetter: \\"UpdatedProperties\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"validateProperties\\", GoMethod: \\"ValidateProperties\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"version\\", GoGetter: \\"Version\\"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CfnCluster{}
+			_jsii_.InitJsiiProxy(&j.Type__awscdkCfnResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterProps\\",
+		reflect.TypeOf((*CfnClusterProps)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesApiAccess\\",
+		reflect.TypeOf((*CfnClusterPropsKubernetesApiAccess)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesNetworkConfig\\",
+		reflect.TypeOf((*CfnClusterPropsKubernetesNetworkConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsResourcesVpcConfig\\",
+		reflect.TypeOf((*CfnClusterPropsResourcesVpcConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsTags\\",
+		reflect.TypeOf((*CfnClusterPropsTags)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.EncryptionConfigEntry\\",
+		reflect.TypeOf((*EncryptionConfigEntry)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\",
+		reflect.TypeOf((*KubernetesApiAccessEntry)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Provider\\",
+		reflect.TypeOf((*Provider)(nil)).Elem(),
+	)
+}
+",
+  "awsqs-eks-cluster/awsqs-eks-cluster_CfnCluster.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
 package awsqs-eks-cluster
 
 import (
@@ -2761,6 +2867,11 @@ func (c *jsiiProxy_CfnCluster) ValidateProperties(_properties interface{}) {
 	)
 }
 
+",
+  "awsqs-eks-cluster/awsqs-eks-cluster_CfnClusterProps.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package awsqs-eks-cluster
+
+
 // A resource that creates Amazon Elastic Kubernetes Service (Amazon EKS) clusters.
 type CfnClusterProps struct {
 	// An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
@@ -2791,16 +2902,31 @@ type CfnClusterProps struct {
 	Version *string \`field:\\"optional\\" json:\\"version\\" yaml:\\"version\\"\`
 }
 
+",
+  "awsqs-eks-cluster/awsqs-eks-cluster_CfnClusterPropsKubernetesApiAccess.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package awsqs-eks-cluster
+
+
 type CfnClusterPropsKubernetesApiAccess struct {
 	Roles *[]*KubernetesApiAccessEntry \`field:\\"optional\\" json:\\"roles\\" yaml:\\"roles\\"\`
 	Users *[]*KubernetesApiAccessEntry \`field:\\"optional\\" json:\\"users\\" yaml:\\"users\\"\`
 }
+
+",
+  "awsqs-eks-cluster/awsqs-eks-cluster_CfnClusterPropsKubernetesNetworkConfig.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package awsqs-eks-cluster
+
 
 // Network configuration for Amazon EKS cluster.
 type CfnClusterPropsKubernetesNetworkConfig struct {
 	// Specify the range from which cluster services will receive IPv4 addresses.
 	ServiceIpv4Cidr *string \`field:\\"optional\\" json:\\"serviceIpv4Cidr\\" yaml:\\"serviceIpv4Cidr\\"\`
 }
+
+",
+  "awsqs-eks-cluster/awsqs-eks-cluster_CfnClusterPropsResourcesVpcConfig.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package awsqs-eks-cluster
+
 
 // An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
 type CfnClusterPropsResourcesVpcConfig struct {
@@ -2826,10 +2952,20 @@ type CfnClusterPropsResourcesVpcConfig struct {
 	SecurityGroupIds *[]*string \`field:\\"optional\\" json:\\"securityGroupIds\\" yaml:\\"securityGroupIds\\"\`
 }
 
+",
+  "awsqs-eks-cluster/awsqs-eks-cluster_CfnClusterPropsTags.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package awsqs-eks-cluster
+
+
 type CfnClusterPropsTags struct {
 	Key *string \`field:\\"required\\" json:\\"key\\" yaml:\\"key\\"\`
 	Value *string \`field:\\"required\\" json:\\"value\\" yaml:\\"value\\"\`
 }
+
+",
+  "awsqs-eks-cluster/awsqs-eks-cluster_EncryptionConfigEntry.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package awsqs-eks-cluster
+
 
 // The encryption configuration for the cluster.
 type EncryptionConfigEntry struct {
@@ -2840,11 +2976,21 @@ type EncryptionConfigEntry struct {
 	Resources *[]*string \`field:\\"optional\\" json:\\"resources\\" yaml:\\"resources\\"\`
 }
 
+",
+  "awsqs-eks-cluster/awsqs-eks-cluster_KubernetesApiAccessEntry.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package awsqs-eks-cluster
+
+
 type KubernetesApiAccessEntry struct {
 	Arn *string \`field:\\"optional\\" json:\\"arn\\" yaml:\\"arn\\"\`
 	Groups *[]*string \`field:\\"optional\\" json:\\"groups\\" yaml:\\"groups\\"\`
 	Username *string \`field:\\"optional\\" json:\\"username\\" yaml:\\"username\\"\`
 }
+
+",
+  "awsqs-eks-cluster/awsqs-eks-cluster_Provider.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package awsqs-eks-cluster
+
 
 // AWS Key Management Service (AWS KMS) customer master key (CMK).
 //
@@ -2856,100 +3002,6 @@ type Provider struct {
 	KeyArn *string \`field:\\"optional\\" json:\\"keyArn\\" yaml:\\"keyArn\\"\`
 }
 
-",
-  "awsqs-eks-cluster/awsqs-eks-cluster.init.go" => "package awsqs-eks-cluster
-
-import (
-	\\"reflect\\"
-
-	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
-)
-
-func init() {
-	_jsii_.RegisterClass(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnCluster\\",
-		reflect.TypeOf((*CfnCluster)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: \\"addDeletionOverride\\", GoMethod: \\"AddDeletionOverride\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"addDependsOn\\", GoMethod: \\"AddDependsOn\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"addMetadata\\", GoMethod: \\"AddMetadata\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"addOverride\\", GoMethod: \\"AddOverride\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"addPropertyDeletionOverride\\", GoMethod: \\"AddPropertyDeletionOverride\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"addPropertyOverride\\", GoMethod: \\"AddPropertyOverride\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"applyRemovalPolicy\\", GoMethod: \\"ApplyRemovalPolicy\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"attrArn\\", GoGetter: \\"AttrArn\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"attrCertificateAuthorityData\\", GoGetter: \\"AttrCertificateAuthorityData\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"attrClusterSecurityGroupId\\", GoGetter: \\"AttrClusterSecurityGroupId\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"attrEncryptionConfigKeyArn\\", GoGetter: \\"AttrEncryptionConfigKeyArn\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"attrEndpoint\\", GoGetter: \\"AttrEndpoint\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"attrOIDCIssuerURL\\", GoGetter: \\"AttrOIDCIssuerURL\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"cfnOptions\\", GoGetter: \\"CfnOptions\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"cfnProperties\\", GoGetter: \\"CfnProperties\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"cfnResourceType\\", GoGetter: \\"CfnResourceType\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"creationStack\\", GoGetter: \\"CreationStack\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"enabledClusterLoggingTypes\\", GoGetter: \\"EnabledClusterLoggingTypes\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"encryptionConfig\\", GoGetter: \\"EncryptionConfig\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"getAtt\\", GoMethod: \\"GetAtt\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"getMetadata\\", GoMethod: \\"GetMetadata\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"kubernetesApiAccess\\", GoGetter: \\"KubernetesApiAccess\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"kubernetesNetworkConfig\\", GoGetter: \\"KubernetesNetworkConfig\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"lambdaRoleName\\", GoGetter: \\"LambdaRoleName\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"logicalId\\", GoGetter: \\"LogicalId\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"name\\", GoGetter: \\"Name\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"node\\", GoGetter: \\"Node\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"overrideLogicalId\\", GoMethod: \\"OverrideLogicalId\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"ref\\", GoGetter: \\"Ref\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"renderProperties\\", GoMethod: \\"RenderProperties\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"resourcesVpcConfig\\", GoGetter: \\"ResourcesVpcConfig\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"roleArn\\", GoGetter: \\"RoleArn\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"shouldSynthesize\\", GoMethod: \\"ShouldSynthesize\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"stack\\", GoGetter: \\"Stack\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"tags\\", GoGetter: \\"Tags\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"toString\\", GoMethod: \\"ToString\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"updatedProperites\\", GoGetter: \\"UpdatedProperites\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"updatedProperties\\", GoGetter: \\"UpdatedProperties\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"validateProperties\\", GoMethod: \\"ValidateProperties\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"version\\", GoGetter: \\"Version\\"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CfnCluster{}
-			_jsii_.InitJsiiProxy(&j.Type__awscdkCfnResource)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterProps\\",
-		reflect.TypeOf((*CfnClusterProps)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesApiAccess\\",
-		reflect.TypeOf((*CfnClusterPropsKubernetesApiAccess)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesNetworkConfig\\",
-		reflect.TypeOf((*CfnClusterPropsKubernetesNetworkConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsResourcesVpcConfig\\",
-		reflect.TypeOf((*CfnClusterPropsResourcesVpcConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsTags\\",
-		reflect.TypeOf((*CfnClusterPropsTags)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.EncryptionConfigEntry\\",
-		reflect.TypeOf((*EncryptionConfigEntry)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\",
-		reflect.TypeOf((*KubernetesApiAccessEntry)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Provider\\",
-		reflect.TypeOf((*Provider)(nil)).Elem(),
-	)
-}
 ",
   "awsqs-eks-cluster/internal/types.go" => "package internal
 import (
@@ -2993,7 +3045,89 @@ func Initialize() {
 
 exports[`golang 2`] = `
 Map {
-  "ec2-compute-instance/ec2-compute-instance.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+  "ec2-compute-instance/ec2-compute-instance.go" => "package ec2-compute-instance
+
+import (
+	\\"reflect\\"
+
+	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
+)
+
+func init() {
+	_jsii_.RegisterClass(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\",
+		reflect.TypeOf((*Ec2ComputeInstance)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: \\"applyRemovalPolicy\\", GoMethod: \\"ApplyRemovalPolicy\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"cloudFormationStackArn\\", GoGetter: \\"CloudFormationStackArn\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"downloadKeyCommand\\", GoGetter: \\"DownloadKeyCommand\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"env\\", GoGetter: \\"Env\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"generatePhysicalName\\", GoMethod: \\"GeneratePhysicalName\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"getResourceArnAttribute\\", GoMethod: \\"GetResourceArnAttribute\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"getResourceNameAttribute\\", GoMethod: \\"GetResourceNameAttribute\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"iPAddress\\", GoGetter: \\"IPAddress\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"node\\", GoGetter: \\"Node\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"physicalName\\", GoGetter: \\"PhysicalName\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"provisionedProductId\\", GoGetter: \\"ProvisionedProductId\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"recordId\\", GoGetter: \\"RecordId\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"sshcommand\\", GoGetter: \\"Sshcommand\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"stack\\", GoGetter: \\"Stack\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"toString\\", GoMethod: \\"ToString\\"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Ec2ComputeInstance{}
+			_jsii_.InitJsiiProxy(&j.Type__awscdkResource)
+			_jsii_.InitJsiiProxy(&j.jsiiProxy_IEc2ComputeInstance)
+			return &j
+		},
+	)
+	_jsii_.RegisterEnum(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.InstanceType\\",
+		reflect.TypeOf((*Ec2ComputeInstance_InstanceType)(nil)).Elem(),
+		map[string]interface{}{
+			\\"T2_MICRO\\": Ec2ComputeInstance_InstanceType_T2_MICRO,
+			\\"T2_SMALL\\": Ec2ComputeInstance_InstanceType_T2_SMALL,
+		},
+	)
+	_jsii_.RegisterEnum(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.Numbers\\",
+		reflect.TypeOf((*Ec2ComputeInstance_Numbers)(nil)).Elem(),
+		map[string]interface{}{
+			\\"VALUE_1\\": Ec2ComputeInstance_Numbers_VALUE_1,
+			\\"VALUE_2\\": Ec2ComputeInstance_Numbers_VALUE_2,
+			\\"VALUE_3\\": Ec2ComputeInstance_Numbers_VALUE_3,
+			\\"VALUE_4\\": Ec2ComputeInstance_Numbers_VALUE_4,
+			\\"VALUE_5\\": Ec2ComputeInstance_Numbers_VALUE_5,
+		},
+	)
+	_jsii_.RegisterStruct(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps\\",
+		reflect.TypeOf((*Ec2ComputeInstanceProps)(nil)).Elem(),
+	)
+	_jsii_.RegisterInterface(
+		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.IEc2ComputeInstance\\",
+		reflect.TypeOf((*IEc2ComputeInstance)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: \\"applyRemovalPolicy\\", GoMethod: \\"ApplyRemovalPolicy\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"cloudFormationStackArn\\", GoGetter: \\"CloudFormationStackArn\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"downloadKeyCommand\\", GoGetter: \\"DownloadKeyCommand\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"env\\", GoGetter: \\"Env\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"iPAddress\\", GoGetter: \\"IPAddress\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"node\\", GoGetter: \\"Node\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"provisionedProductId\\", GoGetter: \\"ProvisionedProductId\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"recordId\\", GoGetter: \\"RecordId\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"sshcommand\\", GoGetter: \\"Sshcommand\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"stack\\", GoGetter: \\"Stack\\"},
+		},
+		func() interface{} {
+			j := jsiiProxy_IEc2ComputeInstance{}
+			_jsii_.InitJsiiProxy(&j.Type__awscdkIResource)
+			return &j
+		},
+	)
+}
+",
+  "ec2-compute-instance/ec2-compute-instance_Ec2ComputeInstance.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
 package ec2-compute-instance
 
 import (
@@ -3326,29 +3460,10 @@ func (e *jsiiProxy_Ec2ComputeInstance) ToString() *string {
 	return returns
 }
 
-type Ec2ComputeInstance_InstanceType string
+",
+  "ec2-compute-instance/ec2-compute-instance_Ec2ComputeInstanceProps.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package ec2-compute-instance
 
-const (
-	// t2.micro.
-	Ec2ComputeInstance_InstanceType_T2_MICRO Ec2ComputeInstance_InstanceType = \\"T2_MICRO\\"
-	// t2.small.
-	Ec2ComputeInstance_InstanceType_T2_SMALL Ec2ComputeInstance_InstanceType = \\"T2_SMALL\\"
-)
-
-type Ec2ComputeInstance_Numbers string
-
-const (
-	// 1.
-	Ec2ComputeInstance_Numbers_VALUE_1 Ec2ComputeInstance_Numbers = \\"VALUE_1\\"
-	// 2.
-	Ec2ComputeInstance_Numbers_VALUE_2 Ec2ComputeInstance_Numbers = \\"VALUE_2\\"
-	// 3.
-	Ec2ComputeInstance_Numbers_VALUE_3 Ec2ComputeInstance_Numbers = \\"VALUE_3\\"
-	// 4.
-	Ec2ComputeInstance_Numbers_VALUE_4 Ec2ComputeInstance_Numbers = \\"VALUE_4\\"
-	// 5.
-	Ec2ComputeInstance_Numbers_VALUE_5 Ec2ComputeInstance_Numbers = \\"VALUE_5\\"
-)
 
 type Ec2ComputeInstanceProps struct {
 	// InstanceType.
@@ -3366,6 +3481,51 @@ type Ec2ComputeInstanceProps struct {
 	// SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter.
 	SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter *string \`field:\\"optional\\" json:\\"ssmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter\\" yaml:\\"ssmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter\\"\`
 }
+
+",
+  "ec2-compute-instance/ec2-compute-instance_Ec2ComputeInstance_InstanceType.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package ec2-compute-instance
+
+
+type Ec2ComputeInstance_InstanceType string
+
+const (
+	// t2.micro.
+	Ec2ComputeInstance_InstanceType_T2_MICRO Ec2ComputeInstance_InstanceType = \\"T2_MICRO\\"
+	// t2.small.
+	Ec2ComputeInstance_InstanceType_T2_SMALL Ec2ComputeInstance_InstanceType = \\"T2_SMALL\\"
+)
+
+",
+  "ec2-compute-instance/ec2-compute-instance_Ec2ComputeInstance_Numbers.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package ec2-compute-instance
+
+
+type Ec2ComputeInstance_Numbers string
+
+const (
+	// 1.
+	Ec2ComputeInstance_Numbers_VALUE_1 Ec2ComputeInstance_Numbers = \\"VALUE_1\\"
+	// 2.
+	Ec2ComputeInstance_Numbers_VALUE_2 Ec2ComputeInstance_Numbers = \\"VALUE_2\\"
+	// 3.
+	Ec2ComputeInstance_Numbers_VALUE_3 Ec2ComputeInstance_Numbers = \\"VALUE_3\\"
+	// 4.
+	Ec2ComputeInstance_Numbers_VALUE_4 Ec2ComputeInstance_Numbers = \\"VALUE_4\\"
+	// 5.
+	Ec2ComputeInstance_Numbers_VALUE_5 Ec2ComputeInstance_Numbers = \\"VALUE_5\\"
+)
+
+",
+  "ec2-compute-instance/ec2-compute-instance_IEc2ComputeInstance.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package ec2-compute-instance
+
+import (
+	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
+
+	\\"github.com/aws/aws-cdk-go/awscdk/v2\\"
+	\\"github.com/my/module/ec2-compute-instance/internal\\"
+)
 
 type IEc2ComputeInstance interface {
 	awscdk.IResource
@@ -3442,88 +3602,6 @@ func (j *jsiiProxy_IEc2ComputeInstance) Sshcommand() *string {
 	return returns
 }
 
-",
-  "ec2-compute-instance/ec2-compute-instance.init.go" => "package ec2-compute-instance
-
-import (
-	\\"reflect\\"
-
-	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
-)
-
-func init() {
-	_jsii_.RegisterClass(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\",
-		reflect.TypeOf((*Ec2ComputeInstance)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: \\"applyRemovalPolicy\\", GoMethod: \\"ApplyRemovalPolicy\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"cloudFormationStackArn\\", GoGetter: \\"CloudFormationStackArn\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"downloadKeyCommand\\", GoGetter: \\"DownloadKeyCommand\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"env\\", GoGetter: \\"Env\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"generatePhysicalName\\", GoMethod: \\"GeneratePhysicalName\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"getResourceArnAttribute\\", GoMethod: \\"GetResourceArnAttribute\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"getResourceNameAttribute\\", GoMethod: \\"GetResourceNameAttribute\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"iPAddress\\", GoGetter: \\"IPAddress\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"node\\", GoGetter: \\"Node\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"physicalName\\", GoGetter: \\"PhysicalName\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"provisionedProductId\\", GoGetter: \\"ProvisionedProductId\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"recordId\\", GoGetter: \\"RecordId\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"sshcommand\\", GoGetter: \\"Sshcommand\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"stack\\", GoGetter: \\"Stack\\"},
-			_jsii_.MemberMethod{JsiiMethod: \\"toString\\", GoMethod: \\"ToString\\"},
-		},
-		func() interface{} {
-			j := jsiiProxy_Ec2ComputeInstance{}
-			_jsii_.InitJsiiProxy(&j.Type__awscdkResource)
-			_jsii_.InitJsiiProxy(&j.jsiiProxy_IEc2ComputeInstance)
-			return &j
-		},
-	)
-	_jsii_.RegisterEnum(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.InstanceType\\",
-		reflect.TypeOf((*Ec2ComputeInstance_InstanceType)(nil)).Elem(),
-		map[string]interface{}{
-			\\"T2_MICRO\\": Ec2ComputeInstance_InstanceType_T2_MICRO,
-			\\"T2_SMALL\\": Ec2ComputeInstance_InstanceType_T2_SMALL,
-		},
-	)
-	_jsii_.RegisterEnum(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.Numbers\\",
-		reflect.TypeOf((*Ec2ComputeInstance_Numbers)(nil)).Elem(),
-		map[string]interface{}{
-			\\"VALUE_1\\": Ec2ComputeInstance_Numbers_VALUE_1,
-			\\"VALUE_2\\": Ec2ComputeInstance_Numbers_VALUE_2,
-			\\"VALUE_3\\": Ec2ComputeInstance_Numbers_VALUE_3,
-			\\"VALUE_4\\": Ec2ComputeInstance_Numbers_VALUE_4,
-			\\"VALUE_5\\": Ec2ComputeInstance_Numbers_VALUE_5,
-		},
-	)
-	_jsii_.RegisterStruct(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps\\",
-		reflect.TypeOf((*Ec2ComputeInstanceProps)(nil)).Elem(),
-	)
-	_jsii_.RegisterInterface(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.IEc2ComputeInstance\\",
-		reflect.TypeOf((*IEc2ComputeInstance)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: \\"applyRemovalPolicy\\", GoMethod: \\"ApplyRemovalPolicy\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"cloudFormationStackArn\\", GoGetter: \\"CloudFormationStackArn\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"downloadKeyCommand\\", GoGetter: \\"DownloadKeyCommand\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"env\\", GoGetter: \\"Env\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"iPAddress\\", GoGetter: \\"IPAddress\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"node\\", GoGetter: \\"Node\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"provisionedProductId\\", GoGetter: \\"ProvisionedProductId\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"recordId\\", GoGetter: \\"RecordId\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"sshcommand\\", GoGetter: \\"Sshcommand\\"},
-			_jsii_.MemberProperty{JsiiProperty: \\"stack\\", GoGetter: \\"Stack\\"},
-		},
-		func() interface{} {
-			j := jsiiProxy_IEc2ComputeInstance{}
-			_jsii_.InitJsiiProxy(&j.Type__awscdkIResource)
-			return &j
-		},
-	)
-}
 ",
   "ec2-compute-instance/internal/types.go" => "package internal
 import (
@@ -6223,13 +6301,13 @@ class CfnCluster(
 
         jsii.create(self.__class__, self, [scope, id, props])
 
-    @jsii.python.classproperty # type: ignore[misc]
+    @jsii.python.classproperty
     @jsii.member(jsii_name=\\"CFN_RESOURCE_TYPE_NAME\\")
     def CFN_RESOURCE_TYPE_NAME(cls) -> builtins.str:
         '''The CloudFormation resource type name for this resource class.'''
         return typing.cast(builtins.str, jsii.sget(cls, \\"CFN_RESOURCE_TYPE_NAME\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"attrArn\\")
     def attr_arn(self) -> builtins.str:
         '''Attribute \`\`AWSQS::EKS::Cluster.Arn\`\`.
@@ -6238,7 +6316,7 @@ class CfnCluster(
         '''
         return typing.cast(builtins.str, jsii.get(self, \\"attrArn\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"attrCertificateAuthorityData\\")
     def attr_certificate_authority_data(self) -> builtins.str:
         '''Attribute \`\`AWSQS::EKS::Cluster.CertificateAuthorityData\`\`.
@@ -6247,7 +6325,7 @@ class CfnCluster(
         '''
         return typing.cast(builtins.str, jsii.get(self, \\"attrCertificateAuthorityData\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"attrClusterSecurityGroupId\\")
     def attr_cluster_security_group_id(self) -> builtins.str:
         '''Attribute \`\`AWSQS::EKS::Cluster.ClusterSecurityGroupId\`\`.
@@ -6256,7 +6334,7 @@ class CfnCluster(
         '''
         return typing.cast(builtins.str, jsii.get(self, \\"attrClusterSecurityGroupId\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"attrEncryptionConfigKeyArn\\")
     def attr_encryption_config_key_arn(self) -> builtins.str:
         '''Attribute \`\`AWSQS::EKS::Cluster.EncryptionConfigKeyArn\`\`.
@@ -6265,7 +6343,7 @@ class CfnCluster(
         '''
         return typing.cast(builtins.str, jsii.get(self, \\"attrEncryptionConfigKeyArn\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"attrEndpoint\\")
     def attr_endpoint(self) -> builtins.str:
         '''Attribute \`\`AWSQS::EKS::Cluster.Endpoint\`\`.
@@ -6274,7 +6352,7 @@ class CfnCluster(
         '''
         return typing.cast(builtins.str, jsii.get(self, \\"attrEndpoint\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"attrOIDCIssuerURL\\")
     def attr_oidc_issuer_url(self) -> builtins.str:
         '''Attribute \`\`AWSQS::EKS::Cluster.OIDCIssuerURL\`\`.
@@ -6283,7 +6361,7 @@ class CfnCluster(
         '''
         return typing.cast(builtins.str, jsii.get(self, \\"attrOIDCIssuerURL\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"kubernetesApiAccess\\")
     def kubernetes_api_access(self) -> typing.Any:
         '''\`\`AWSQS::EKS::Cluster.KubernetesApiAccess\`\`.
@@ -6292,7 +6370,7 @@ class CfnCluster(
         '''
         return typing.cast(typing.Any, jsii.get(self, \\"kubernetesApiAccess\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"kubernetesNetworkConfig\\")
     def kubernetes_network_config(self) -> typing.Any:
         '''\`\`AWSQS::EKS::Cluster.KubernetesNetworkConfig\`\` Network configuration for Amazon EKS cluster.
@@ -6301,7 +6379,7 @@ class CfnCluster(
         '''
         return typing.cast(typing.Any, jsii.get(self, \\"kubernetesNetworkConfig\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"resourcesVpcConfig\\")
     def resources_vpc_config(self) -> typing.Any:
         '''\`\`AWSQS::EKS::Cluster.ResourcesVpcConfig\`\` An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
@@ -6310,7 +6388,7 @@ class CfnCluster(
         '''
         return typing.cast(typing.Any, jsii.get(self, \\"resourcesVpcConfig\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"roleArn\\")
     def role_arn(self) -> builtins.str:
         '''\`\`AWSQS::EKS::Cluster.RoleArn\`\` Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role. This provides permissions for Amazon EKS to call other AWS APIs.
@@ -6319,7 +6397,7 @@ class CfnCluster(
         '''
         return typing.cast(builtins.str, jsii.get(self, \\"roleArn\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"enabledClusterLoggingTypes\\")
     def enabled_cluster_logging_types(
         self,
@@ -6330,7 +6408,7 @@ class CfnCluster(
         '''
         return typing.cast(typing.Optional[typing.List[builtins.str]], jsii.get(self, \\"enabledClusterLoggingTypes\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"encryptionConfig\\")
     def encryption_config(
         self,
@@ -6341,7 +6419,7 @@ class CfnCluster(
         '''
         return typing.cast(typing.Optional[typing.List[\\"EncryptionConfigEntry\\"]], jsii.get(self, \\"encryptionConfig\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"lambdaRoleName\\")
     def lambda_role_name(self) -> typing.Optional[builtins.str]:
         '''\`\`AWSQS::EKS::Cluster.LambdaRoleName\`\` Name of the AWS Identity and Access Management (IAM) role used for clusters that have the public endpoint disabled. this provides permissions for Lambda to be invoked and attach to the cluster VPC.
@@ -6350,7 +6428,7 @@ class CfnCluster(
         '''
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, \\"lambdaRoleName\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"name\\")
     def name(self) -> typing.Optional[builtins.str]:
         '''\`\`AWSQS::EKS::Cluster.Name\`\` A unique name for your cluster.
@@ -6359,7 +6437,7 @@ class CfnCluster(
         '''
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, \\"name\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"tags\\")
     def tags(self) -> typing.Optional[typing.List[typing.Any]]:
         '''\`\`AWSQS::EKS::Cluster.Tags\`\`.
@@ -6368,7 +6446,7 @@ class CfnCluster(
         '''
         return typing.cast(typing.Optional[typing.List[typing.Any]], jsii.get(self, \\"tags\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"version\\")
     def version(self) -> typing.Optional[builtins.str]:
         '''\`\`AWSQS::EKS::Cluster.Version\`\` Desired Kubernetes version for your cluster. If you don't specify this value, the cluster uses the latest version from Amazon EKS.
@@ -7183,68 +7261,68 @@ class Ec2ComputeInstanceProps:
     jsii_type=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.IEc2ComputeInstance\\"
 )
 class IEc2ComputeInstance(aws_cdk.IResource, typing_extensions.Protocol):
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"cloudFormationStackArn\\")
     def cloud_formation_stack_arn(self) -> builtins.str:
         ...
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"downloadKeyCommand\\")
     def download_key_command(self) -> builtins.str:
         ...
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"iPAddress\\")
     def i_p_address(self) -> builtins.str:
         ...
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"provisionedProductId\\")
     def provisioned_product_id(self) -> builtins.str:
         ...
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"recordId\\")
     def record_id(self) -> builtins.str:
         ...
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"sshcommand\\")
     def sshcommand(self) -> builtins.str:
         ...
 
 
 class _IEc2ComputeInstanceProxy(
-    jsii.proxy_for(aws_cdk.IResource) # type: ignore[misc]
+    jsii.proxy_for(aws_cdk.IResource), # type: ignore[misc]
 ):
     __jsii_type__: typing.ClassVar[str] = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.IEc2ComputeInstance\\"
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"cloudFormationStackArn\\")
     def cloud_formation_stack_arn(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, \\"cloudFormationStackArn\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"downloadKeyCommand\\")
     def download_key_command(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, \\"downloadKeyCommand\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"iPAddress\\")
     def i_p_address(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, \\"iPAddress\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"provisionedProductId\\")
     def provisioned_product_id(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, \\"provisionedProductId\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"recordId\\")
     def record_id(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, \\"recordId\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"sshcommand\\")
     def sshcommand(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, \\"sshcommand\\"))
@@ -7295,33 +7373,33 @@ class Ec2ComputeInstance(
 
         jsii.create(self.__class__, self, [scope, id, props])
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"cloudFormationStackArn\\")
     def cloud_formation_stack_arn(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, \\"cloudFormationStackArn\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"downloadKeyCommand\\")
     def download_key_command(self) -> builtins.str:
         '''The command to download the key.'''
         return typing.cast(builtins.str, jsii.get(self, \\"downloadKeyCommand\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"iPAddress\\")
     def i_p_address(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, \\"iPAddress\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"provisionedProductId\\")
     def provisioned_product_id(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, \\"provisionedProductId\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"recordId\\")
     def record_id(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, \\"recordId\\"))
 
-    @builtins.property # type: ignore[misc]
+    @builtins.property
     @jsii.member(jsii_name=\\"sshcommand\\")
     def sshcommand(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, \\"sshcommand\\"))
