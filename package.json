@@ -41,7 +41,7 @@
     "jsii": "^1.65.0",
     "json-schema": "^0.4.0",
     "npm-check-updates": "^15",
-    "projen": "^0.61.22",
+    "projen": "^0.61.23",
     "standard-version": "^9",
     "ts-jest": "^27",
     "ts-node": "^10.9.1",
@@ -49,11 +49,11 @@
   },
   "dependencies": {
     "aws-cdk-lib": "^2.38.1",
-    "aws-sdk": "^2.1199.0",
+    "aws-sdk": "^2.1200.0",
     "case": "^1.6.3",
     "constructs": "^10",
-    "jsii-srcmak": "^0.1.655",
-    "json2jsii": "^0.3.102",
+    "jsii-srcmak": "^0.1.656",
+    "json2jsii": "^0.3.103",
     "minimist": "^1.2.6",
     "minimist-subcommand": "^3.0.2",
     "proxy-agent": "^5.0.0"
