@@ -1568,9 +1568,9 @@ namespace AWSQS::EKS::Cluster
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.65.1,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.66.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.39.1]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.91]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.92]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2044,9 +2044,9 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.65.1,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.66.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.39.1]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.91]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.92]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2628,6 +2628,9 @@ func (j *jsiiProxy_CfnCluster) Version() *string {
 func NewCfnCluster(scope constructs.Construct, id *string, props *CfnClusterProps) CfnCluster {
 	_init_.Initialize()
 
+	if err := validateNewCfnClusterParameters(scope, id, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CfnCluster{}
 
 	_jsii_.Create(
@@ -2659,6 +2662,9 @@ func NewCfnCluster_Override(c CfnCluster, scope constructs.Construct, id *string
 func CfnCluster_IsCfnElement(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCfnCluster_IsCfnElementParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -2675,6 +2681,9 @@ func CfnCluster_IsCfnElement(x interface{}) *bool {
 func CfnCluster_IsCfnResource(construct constructs.IConstruct) *bool {
 	_init_.Initialize()
 
+	if err := validateCfnCluster_IsCfnResourceParameters(construct); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -2707,6 +2716,9 @@ func CfnCluster_IsCfnResource(construct constructs.IConstruct) *bool {
 func CfnCluster_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCfnCluster_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -2731,6 +2743,9 @@ func CfnCluster_CFN_RESOURCE_TYPE_NAME() *string {
 }
 
 func (c *jsiiProxy_CfnCluster) AddDeletionOverride(path *string) {
+	if err := c.validateAddDeletionOverrideParameters(path); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		\\"addDeletionOverride\\",
@@ -2739,6 +2754,9 @@ func (c *jsiiProxy_CfnCluster) AddDeletionOverride(path *string) {
 }
 
 func (c *jsiiProxy_CfnCluster) AddDependsOn(target awscdk.CfnResource) {
+	if err := c.validateAddDependsOnParameters(target); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		\\"addDependsOn\\",
@@ -2747,6 +2765,9 @@ func (c *jsiiProxy_CfnCluster) AddDependsOn(target awscdk.CfnResource) {
 }
 
 func (c *jsiiProxy_CfnCluster) AddMetadata(key *string, value interface{}) {
+	if err := c.validateAddMetadataParameters(key, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		\\"addMetadata\\",
@@ -2755,6 +2776,9 @@ func (c *jsiiProxy_CfnCluster) AddMetadata(key *string, value interface{}) {
 }
 
 func (c *jsiiProxy_CfnCluster) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		\\"addOverride\\",
@@ -2763,6 +2787,9 @@ func (c *jsiiProxy_CfnCluster) AddOverride(path *string, value interface{}) {
 }
 
 func (c *jsiiProxy_CfnCluster) AddPropertyDeletionOverride(propertyPath *string) {
+	if err := c.validateAddPropertyDeletionOverrideParameters(propertyPath); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		\\"addPropertyDeletionOverride\\",
@@ -2771,6 +2798,9 @@ func (c *jsiiProxy_CfnCluster) AddPropertyDeletionOverride(propertyPath *string)
 }
 
 func (c *jsiiProxy_CfnCluster) AddPropertyOverride(propertyPath *string, value interface{}) {
+	if err := c.validateAddPropertyOverrideParameters(propertyPath, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		\\"addPropertyOverride\\",
@@ -2779,6 +2809,9 @@ func (c *jsiiProxy_CfnCluster) AddPropertyOverride(propertyPath *string, value i
 }
 
 func (c *jsiiProxy_CfnCluster) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, options *awscdk.RemovalPolicyOptions) {
+	if err := c.validateApplyRemovalPolicyParameters(options); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		\\"applyRemovalPolicy\\",
@@ -2787,6 +2820,9 @@ func (c *jsiiProxy_CfnCluster) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, o
 }
 
 func (c *jsiiProxy_CfnCluster) GetAtt(attributeName *string) awscdk.Reference {
+	if err := c.validateGetAttParameters(attributeName); err != nil {
+		panic(err)
+	}
 	var returns awscdk.Reference
 
 	_jsii_.Invoke(
@@ -2800,6 +2836,9 @@ func (c *jsiiProxy_CfnCluster) GetAtt(attributeName *string) awscdk.Reference {
 }
 
 func (c *jsiiProxy_CfnCluster) GetMetadata(key *string) interface{} {
+	if err := c.validateGetMetadataParameters(key); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(
@@ -2813,6 +2852,9 @@ func (c *jsiiProxy_CfnCluster) GetMetadata(key *string) interface{} {
 }
 
 func (c *jsiiProxy_CfnCluster) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		\\"overrideLogicalId\\",
@@ -2821,6 +2863,9 @@ func (c *jsiiProxy_CfnCluster) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (c *jsiiProxy_CfnCluster) RenderProperties(props *map[string]interface{}) *map[string]interface{} {
+	if err := c.validateRenderPropertiesParameters(props); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -2860,6 +2905,9 @@ func (c *jsiiProxy_CfnCluster) ToString() *string {
 }
 
 func (c *jsiiProxy_CfnCluster) ValidateProperties(_properties interface{}) {
+	if err := c.validateValidatePropertiesParameters(_properties); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		\\"validateProperties\\",
@@ -2960,6 +3008,246 @@ package awsqs-eks-cluster
 type CfnClusterPropsTags struct {
 	Key *string \`field:\\"required\\" json:\\"key\\" yaml:\\"key\\"\`
 	Value *string \`field:\\"required\\" json:\\"value\\" yaml:\\"value\\"\`
+}
+
+",
+  "awsqs-eks-cluster/awsqs-eks-cluster_CfnCluster__no_runtime_type_checking.go" => "//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package awsqs-eks-cluster
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (c *jsiiProxy_CfnCluster) validateAddDeletionOverrideParameters(path *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateAddDependsOnParameters(target awscdk.CfnResource) error {
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateAddMetadataParameters(key *string, value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateAddPropertyDeletionOverrideParameters(propertyPath *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateAddPropertyOverrideParameters(propertyPath *string, value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateApplyRemovalPolicyParameters(options *awscdk.RemovalPolicyOptions) error {
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateGetAttParameters(attributeName *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateGetMetadataParameters(key *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateRenderPropertiesParameters(props *map[string]interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateValidatePropertiesParameters(_properties interface{}) error {
+	return nil
+}
+
+func validateCfnCluster_IsCfnElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCfnCluster_IsCfnResourceParameters(construct constructs.IConstruct) error {
+	return nil
+}
+
+func validateCfnCluster_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateNewCfnClusterParameters(scope constructs.Construct, id *string, props *CfnClusterProps) error {
+	return nil
+}
+
+",
+  "awsqs-eks-cluster/awsqs-eks-cluster_CfnCluster__runtime_type_checks.go" => "//go:build !no_runtime_type_checking
+// +build !no_runtime_type_checking
+
+// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package awsqs-eks-cluster
+
+import (
+	\\"fmt\\"
+
+	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
+
+	\\"github.com/aws/aws-cdk-go/awscdk/v2\\"
+	\\"github.com/aws/constructs-go/constructs/v10\\"
+)
+
+func (c *jsiiProxy_CfnCluster) validateAddDeletionOverrideParameters(path *string) error {
+	if path == nil {
+		return fmt.Errorf(\\"parameter path is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateAddDependsOnParameters(target awscdk.CfnResource) error {
+	if target == nil {
+		return fmt.Errorf(\\"parameter target is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateAddMetadataParameters(key *string, value interface{}) error {
+	if key == nil {
+		return fmt.Errorf(\\"parameter key is required, but nil was provided\\")
+	}
+
+	if value == nil {
+		return fmt.Errorf(\\"parameter value is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+	if path == nil {
+		return fmt.Errorf(\\"parameter path is required, but nil was provided\\")
+	}
+
+	if value == nil {
+		return fmt.Errorf(\\"parameter value is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateAddPropertyDeletionOverrideParameters(propertyPath *string) error {
+	if propertyPath == nil {
+		return fmt.Errorf(\\"parameter propertyPath is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateAddPropertyOverrideParameters(propertyPath *string, value interface{}) error {
+	if propertyPath == nil {
+		return fmt.Errorf(\\"parameter propertyPath is required, but nil was provided\\")
+	}
+
+	if value == nil {
+		return fmt.Errorf(\\"parameter value is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateApplyRemovalPolicyParameters(options *awscdk.RemovalPolicyOptions) error {
+	if err := _jsii_.ValidateStruct(options, func() string { return \\"parameter options\\" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateGetAttParameters(attributeName *string) error {
+	if attributeName == nil {
+		return fmt.Errorf(\\"parameter attributeName is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateGetMetadataParameters(key *string) error {
+	if key == nil {
+		return fmt.Errorf(\\"parameter key is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	if newLogicalId == nil {
+		return fmt.Errorf(\\"parameter newLogicalId is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateRenderPropertiesParameters(props *map[string]interface{}) error {
+	if props == nil {
+		return fmt.Errorf(\\"parameter props is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateValidatePropertiesParameters(_properties interface{}) error {
+	if _properties == nil {
+		return fmt.Errorf(\\"parameter _properties is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func validateCfnCluster_IsCfnElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf(\\"parameter x is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func validateCfnCluster_IsCfnResourceParameters(construct constructs.IConstruct) error {
+	if construct == nil {
+		return fmt.Errorf(\\"parameter construct is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func validateCfnCluster_IsConstructParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf(\\"parameter x is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func validateNewCfnClusterParameters(scope constructs.Construct, id *string, props *CfnClusterProps) error {
+	if scope == nil {
+		return fmt.Errorf(\\"parameter scope is required, but nil was provided\\")
+	}
+
+	if id == nil {
+		return fmt.Errorf(\\"parameter id is required, but nil was provided\\")
+	}
+
+	if props == nil {
+		return fmt.Errorf(\\"parameter props is required, but nil was provided\\")
+	}
+	if err := _jsii_.ValidateStruct(props, func() string { return \\"parameter props\\" }); err != nil {
+		return err
+	}
+
+	return nil
 }
 
 ",
@@ -3314,6 +3602,9 @@ func (j *jsiiProxy_Ec2ComputeInstance) Stack() awscdk.Stack {
 func NewEc2ComputeInstance(scope constructs.Construct, id *string, props *Ec2ComputeInstanceProps) Ec2ComputeInstance {
 	_init_.Initialize()
 
+	if err := validateNewEc2ComputeInstanceParameters(scope, id, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_Ec2ComputeInstance{}
 
 	_jsii_.Create(
@@ -3356,6 +3647,9 @@ func NewEc2ComputeInstance_Override(e Ec2ComputeInstance, scope constructs.Const
 func Ec2ComputeInstance_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateEc2ComputeInstance_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -3372,6 +3666,9 @@ func Ec2ComputeInstance_IsConstruct(x interface{}) *bool {
 func Ec2ComputeInstance_IsOwnedResource(construct constructs.IConstruct) *bool {
 	_init_.Initialize()
 
+	if err := validateEc2ComputeInstance_IsOwnedResourceParameters(construct); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -3388,6 +3685,9 @@ func Ec2ComputeInstance_IsOwnedResource(construct constructs.IConstruct) *bool {
 func Ec2ComputeInstance_IsResource(construct constructs.IConstruct) *bool {
 	_init_.Initialize()
 
+	if err := validateEc2ComputeInstance_IsResourceParameters(construct); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -3401,6 +3701,9 @@ func Ec2ComputeInstance_IsResource(construct constructs.IConstruct) *bool {
 }
 
 func (e *jsiiProxy_Ec2ComputeInstance) ApplyRemovalPolicy(policy awscdk.RemovalPolicy) {
+	if err := e.validateApplyRemovalPolicyParameters(policy); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		\\"applyRemovalPolicy\\",
@@ -3422,6 +3725,9 @@ func (e *jsiiProxy_Ec2ComputeInstance) GeneratePhysicalName() *string {
 }
 
 func (e *jsiiProxy_Ec2ComputeInstance) GetResourceArnAttribute(arnAttr *string, arnComponents *awscdk.ArnComponents) *string {
+	if err := e.validateGetResourceArnAttributeParameters(arnAttr, arnComponents); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -3435,6 +3741,9 @@ func (e *jsiiProxy_Ec2ComputeInstance) GetResourceArnAttribute(arnAttr *string, 
 }
 
 func (e *jsiiProxy_Ec2ComputeInstance) GetResourceNameAttribute(nameAttr *string) *string {
+	if err := e.validateGetResourceNameAttributeParameters(nameAttr); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -3515,6 +3824,133 @@ const (
 	// 5.
 	Ec2ComputeInstance_Numbers_VALUE_5 Ec2ComputeInstance_Numbers = \\"VALUE_5\\"
 )
+
+",
+  "ec2-compute-instance/ec2-compute-instance_Ec2ComputeInstance__no_runtime_type_checking.go" => "//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package ec2-compute-instance
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (e *jsiiProxy_Ec2ComputeInstance) validateApplyRemovalPolicyParameters(policy awscdk.RemovalPolicy) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ComputeInstance) validateGetResourceArnAttributeParameters(arnAttr *string, arnComponents *awscdk.ArnComponents) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ComputeInstance) validateGetResourceNameAttributeParameters(nameAttr *string) error {
+	return nil
+}
+
+func validateEc2ComputeInstance_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2ComputeInstance_IsOwnedResourceParameters(construct constructs.IConstruct) error {
+	return nil
+}
+
+func validateEc2ComputeInstance_IsResourceParameters(construct constructs.IConstruct) error {
+	return nil
+}
+
+func validateNewEc2ComputeInstanceParameters(scope constructs.Construct, id *string, props *Ec2ComputeInstanceProps) error {
+	return nil
+}
+
+",
+  "ec2-compute-instance/ec2-compute-instance_Ec2ComputeInstance__runtime_type_checks.go" => "//go:build !no_runtime_type_checking
+// +build !no_runtime_type_checking
+
+// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package ec2-compute-instance
+
+import (
+	\\"fmt\\"
+
+	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
+
+	\\"github.com/aws/aws-cdk-go/awscdk/v2\\"
+	\\"github.com/aws/constructs-go/constructs/v10\\"
+)
+
+func (e *jsiiProxy_Ec2ComputeInstance) validateApplyRemovalPolicyParameters(policy awscdk.RemovalPolicy) error {
+	if policy == \\"\\" {
+		return fmt.Errorf(\\"parameter policy is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ComputeInstance) validateGetResourceArnAttributeParameters(arnAttr *string, arnComponents *awscdk.ArnComponents) error {
+	if arnAttr == nil {
+		return fmt.Errorf(\\"parameter arnAttr is required, but nil was provided\\")
+	}
+
+	if arnComponents == nil {
+		return fmt.Errorf(\\"parameter arnComponents is required, but nil was provided\\")
+	}
+	if err := _jsii_.ValidateStruct(arnComponents, func() string { return \\"parameter arnComponents\\" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ComputeInstance) validateGetResourceNameAttributeParameters(nameAttr *string) error {
+	if nameAttr == nil {
+		return fmt.Errorf(\\"parameter nameAttr is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func validateEc2ComputeInstance_IsConstructParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf(\\"parameter x is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func validateEc2ComputeInstance_IsOwnedResourceParameters(construct constructs.IConstruct) error {
+	if construct == nil {
+		return fmt.Errorf(\\"parameter construct is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func validateEc2ComputeInstance_IsResourceParameters(construct constructs.IConstruct) error {
+	if construct == nil {
+		return fmt.Errorf(\\"parameter construct is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func validateNewEc2ComputeInstanceParameters(scope constructs.Construct, id *string, props *Ec2ComputeInstanceProps) error {
+	if scope == nil {
+		return fmt.Errorf(\\"parameter scope is required, but nil was provided\\")
+	}
+
+	if id == nil {
+		return fmt.Errorf(\\"parameter id is required, but nil was provided\\")
+	}
+
+	if props == nil {
+		return fmt.Errorf(\\"parameter props is required, but nil was provided\\")
+	}
+	if err := _jsii_.ValidateStruct(props, func() string { return \\"parameter props\\" }); err != nil {
+		return err
+	}
+
+	return nil
+}
 
 ",
   "ec2-compute-instance/ec2-compute-instance_IEc2ComputeInstance.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
