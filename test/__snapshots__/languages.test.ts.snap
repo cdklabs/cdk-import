@@ -1569,8 +1569,8 @@ namespace AWSQS::EKS::Cluster
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.68.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.43.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.110]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.43.1]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.111]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2045,8 +2045,8 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.68.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.43.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.110]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.43.1]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.111]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
