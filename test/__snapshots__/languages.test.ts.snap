@@ -1568,9 +1568,9 @@ namespace AWSQS::EKS::Cluster
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.70.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.71.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.50.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.154]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.155]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2044,9 +2044,9 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.70.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.71.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.50.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.154]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.155]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -6719,15 +6719,15 @@ class CfnCluster(
                 scope: constructs.Construct,
                 id: builtins.str,
                 *,
-                resources_vpc_config: typing.Union[\\"CfnClusterPropsResourcesVpcConfig\\", typing.Dict[str, typing.Any]],
+                resources_vpc_config: typing.Union[CfnClusterPropsResourcesVpcConfig, typing.Dict[str, typing.Any]],
                 role_arn: builtins.str,
                 enabled_cluster_logging_types: typing.Optional[typing.Sequence[builtins.str]] = None,
-                encryption_config: typing.Optional[typing.Sequence[typing.Union[\\"EncryptionConfigEntry\\", typing.Dict[str, typing.Any]]]] = None,
-                kubernetes_api_access: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesApiAccess\\", typing.Dict[str, typing.Any]]] = None,
-                kubernetes_network_config: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesNetworkConfig\\", typing.Dict[str, typing.Any]]] = None,
+                encryption_config: typing.Optional[typing.Sequence[typing.Union[EncryptionConfigEntry, typing.Dict[str, typing.Any]]]] = None,
+                kubernetes_api_access: typing.Optional[typing.Union[CfnClusterPropsKubernetesApiAccess, typing.Dict[str, typing.Any]]] = None,
+                kubernetes_network_config: typing.Optional[typing.Union[CfnClusterPropsKubernetesNetworkConfig, typing.Dict[str, typing.Any]]] = None,
                 lambda_role_name: typing.Optional[builtins.str] = None,
                 name: typing.Optional[builtins.str] = None,
-                tags: typing.Optional[typing.Sequence[typing.Union[\\"CfnClusterPropsTags\\", typing.Dict[str, typing.Any]]]] = None,
+                tags: typing.Optional[typing.Sequence[typing.Union[CfnClusterPropsTags, typing.Dict[str, typing.Any]]]] = None,
                 version: typing.Optional[builtins.str] = None,
             ) -> None:
                 ...
@@ -6959,15 +6959,15 @@ class CfnClusterProps:
         if __debug__:
             def stub(
                 *,
-                resources_vpc_config: typing.Union[\\"CfnClusterPropsResourcesVpcConfig\\", typing.Dict[str, typing.Any]],
+                resources_vpc_config: typing.Union[CfnClusterPropsResourcesVpcConfig, typing.Dict[str, typing.Any]],
                 role_arn: builtins.str,
                 enabled_cluster_logging_types: typing.Optional[typing.Sequence[builtins.str]] = None,
-                encryption_config: typing.Optional[typing.Sequence[typing.Union[\\"EncryptionConfigEntry\\", typing.Dict[str, typing.Any]]]] = None,
-                kubernetes_api_access: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesApiAccess\\", typing.Dict[str, typing.Any]]] = None,
-                kubernetes_network_config: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesNetworkConfig\\", typing.Dict[str, typing.Any]]] = None,
+                encryption_config: typing.Optional[typing.Sequence[typing.Union[EncryptionConfigEntry, typing.Dict[str, typing.Any]]]] = None,
+                kubernetes_api_access: typing.Optional[typing.Union[CfnClusterPropsKubernetesApiAccess, typing.Dict[str, typing.Any]]] = None,
+                kubernetes_network_config: typing.Optional[typing.Union[CfnClusterPropsKubernetesNetworkConfig, typing.Dict[str, typing.Any]]] = None,
                 lambda_role_name: typing.Optional[builtins.str] = None,
                 name: typing.Optional[builtins.str] = None,
-                tags: typing.Optional[typing.Sequence[typing.Union[\\"CfnClusterPropsTags\\", typing.Dict[str, typing.Any]]]] = None,
+                tags: typing.Optional[typing.Sequence[typing.Union[CfnClusterPropsTags, typing.Dict[str, typing.Any]]]] = None,
                 version: typing.Optional[builtins.str] = None,
             ) -> None:
                 ...
@@ -7142,8 +7142,8 @@ class CfnClusterPropsKubernetesApiAccess:
         if __debug__:
             def stub(
                 *,
-                roles: typing.Optional[typing.Sequence[typing.Union[\\"KubernetesApiAccessEntry\\", typing.Dict[str, typing.Any]]]] = None,
-                users: typing.Optional[typing.Sequence[typing.Union[\\"KubernetesApiAccessEntry\\", typing.Dict[str, typing.Any]]]] = None,
+                roles: typing.Optional[typing.Sequence[typing.Union[KubernetesApiAccessEntry, typing.Dict[str, typing.Any]]]] = None,
+                users: typing.Optional[typing.Sequence[typing.Union[KubernetesApiAccessEntry, typing.Dict[str, typing.Any]]]] = None,
             ) -> None:
                 ...
             type_hints = typing.get_type_hints(stub)
@@ -7438,7 +7438,7 @@ class EncryptionConfigEntry:
         if __debug__:
             def stub(
                 *,
-                provider: typing.Optional[typing.Union[\\"Provider\\", typing.Dict[str, typing.Any]]] = None,
+                provider: typing.Optional[typing.Union[Provider, typing.Dict[str, typing.Any]]] = None,
                 resources: typing.Optional[typing.Sequence[builtins.str]] = None,
             ) -> None:
                 ...
@@ -7697,8 +7697,8 @@ class Ec2ComputeInstanceProps:
         if __debug__:
             def stub(
                 *,
-                instance_type: typing.Optional[\\"Ec2ComputeInstance.InstanceType\\"] = None,
-                numbers: typing.Optional[\\"Ec2ComputeInstance.Numbers\\"] = None,
+                instance_type: typing.Optional[Ec2ComputeInstance.InstanceType] = None,
+                numbers: typing.Optional[Ec2ComputeInstance.Numbers] = None,
                 ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter: typing.Optional[builtins.str] = None,
             ) -> None:
                 ...
@@ -7872,8 +7872,8 @@ class Ec2ComputeInstance(
                 scope: constructs.Construct,
                 id: builtins.str,
                 *,
-                instance_type: typing.Optional[\\"Ec2ComputeInstance.InstanceType\\"] = None,
-                numbers: typing.Optional[\\"Ec2ComputeInstance.Numbers\\"] = None,
+                instance_type: typing.Optional[Ec2ComputeInstance.InstanceType] = None,
+                numbers: typing.Optional[Ec2ComputeInstance.Numbers] = None,
                 ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter: typing.Optional[builtins.str] = None,
             ) -> None:
                 ...
