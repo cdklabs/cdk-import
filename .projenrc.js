@@ -40,10 +40,11 @@ project.addGitIgnore('/.tmp/');
 project.addPackageIgnore('/.tmp/');
 
 // we use jsii for testing, and the current jsii
-// compiles projects with typescript < 4.0, which
-// conflicts with @types/prettier
-project.package.addField('resolutions', {
-  '@types/prettier': '2.6.0',
-});
+// compiles projects with typescript < 4.0
+// need to pin some @types packages to older versions
+project.package.addPackageResolutions(
+  '@types/prettier@2.6.0',
+  '@types/babel__traverse@7.18.2',
+);
 
 project.synth();

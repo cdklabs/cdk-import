@@ -6,6 +6,9 @@ import { srcmak, Options } from 'jsii-srcmak';
 const cdkDeps = [
   'aws-cdk-lib',
   'constructs',
+  '@aws-cdk/asset-awscli-v1',
+  '@aws-cdk/asset-kubectl-v20',
+  '@aws-cdk/asset-node-proxy-agent-v5',
 ];
 
 export const SUPPORTED_LANGUAGES = [
