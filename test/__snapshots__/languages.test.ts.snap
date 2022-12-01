@@ -1458,6 +1458,9 @@ namespace AWSQS::EKS::Cluster.Internal.DependencyResolution
     {
         public Anchor()
         {
+            new Amazon.CDK.Asset.AwsCliV1.Internal.DependencyResolution.Anchor();
+            new Amazon.CDK.Asset.KubectlV20.Internal.DependencyResolution.Anchor();
+            new Amazon.CDK.Asset.NodeProxyAgentV5.Internal.DependencyResolution.Anchor();
             new Amazon.CDK.Internal.DependencyResolution.Anchor();
             new Constructs.Internal.DependencyResolution.Anchor();
         }
@@ -1569,8 +1572,11 @@ namespace AWSQS::EKS::Cluster
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.71.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.50.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.163]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.23]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.29]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.53.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.176]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2012,6 +2018,9 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
     {
         public Anchor()
         {
+            new Amazon.CDK.Asset.AwsCliV1.Internal.DependencyResolution.Anchor();
+            new Amazon.CDK.Asset.KubectlV20.Internal.DependencyResolution.Anchor();
+            new Amazon.CDK.Asset.NodeProxyAgentV5.Internal.DependencyResolution.Anchor();
             new Amazon.CDK.Internal.DependencyResolution.Anchor();
             new Constructs.Internal.DependencyResolution.Anchor();
         }
@@ -2045,8 +2054,11 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.71.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.50.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.163]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.23]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.29]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.53.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.176]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -3302,12 +3314,15 @@ type Type__awscdkCfnResource = awscdk.CfnResource
 package jsii
 
 import (
-	_          \\"embed\\"
+	_                \\"embed\\"
 
-	_jsii_     \\"github.com/aws/jsii-runtime-go/runtime\\"
+	_jsii_           \\"github.com/aws/jsii-runtime-go/runtime\\"
 
-	awscdk     \\"github.com/aws/aws-cdk-go/awscdk/v2/jsii\\"
-	constructs \\"github.com/aws/constructs-go/constructs/v10/jsii\\"
+	awscdk           \\"github.com/aws/aws-cdk-go/awscdk/v2/jsii\\"
+	constructs       \\"github.com/aws/constructs-go/constructs/v10/jsii\\"
+	awscliv1         \\"github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2/jsii\\"
+	kubectlv20       \\"github.com/cdklabs/awscdk-asset-kubectl-go/kubectlv20/v2/jsii\\"
+	nodeproxyagentv5 \\"github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv5/v2/jsii\\"
 )
 
 //go:embed 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz
@@ -3317,6 +3332,9 @@ var tarball []byte
 // The implementation is idempotent (and hence safe to be called over and over).
 func Initialize() {
 	// Ensure all dependencies are initialized
+	awscliv1.Initialize()
+	kubectlv20.Initialize()
+	nodeproxyagentv5.Initialize()
 	awscdk.Initialize()
 	constructs.Initialize()
 
@@ -4049,12 +4067,15 @@ type Type__awscdkIResource = awscdk.IResource
 package jsii
 
 import (
-	_          \\"embed\\"
+	_                \\"embed\\"
 
-	_jsii_     \\"github.com/aws/jsii-runtime-go/runtime\\"
+	_jsii_           \\"github.com/aws/jsii-runtime-go/runtime\\"
 
-	awscdk     \\"github.com/aws/aws-cdk-go/awscdk/v2/jsii\\"
-	constructs \\"github.com/aws/constructs-go/constructs/v10/jsii\\"
+	awscdk           \\"github.com/aws/aws-cdk-go/awscdk/v2/jsii\\"
+	constructs       \\"github.com/aws/constructs-go/constructs/v10/jsii\\"
+	awscliv1         \\"github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2/jsii\\"
+	kubectlv20       \\"github.com/cdklabs/awscdk-asset-kubectl-go/kubectlv20/v2/jsii\\"
+	nodeproxyagentv5 \\"github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv5/v2/jsii\\"
 )
 
 //go:embed 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz
@@ -4064,6 +4085,9 @@ var tarball []byte
 // The implementation is idempotent (and hence safe to be called over and over).
 func Initialize() {
 	// Ensure all dependencies are initialized
+	awscliv1.Initialize()
+	kubectlv20.Initialize()
+	nodeproxyagentv5.Initialize()
 	awscdk.Initialize()
 	constructs.Initialize()
 
@@ -4130,7 +4154,7 @@ public final class $Module extends JsiiModule {
 
     @Override
     public List<Class<? extends JsiiModule>> getDependencies() {
-        return asList(software.amazon.awscdk.$Module.class, software.constructs.$Module.class);
+        return asList(software.amazon.awscdk.cdk.asset.awscli.v1.$Module.class, software.amazon.awscdk.cdk.asset.kubectl.v20.$Module.class, software.amazon.awscdk.cdk.asset.node.proxy.agent.v5.$Module.class, software.amazon.awscdk.$Module.class, software.constructs.$Module.class);
     }
 
     @Override
@@ -6038,7 +6062,7 @@ public final class $Module extends JsiiModule {
 
     @Override
     public List<Class<? extends JsiiModule>> getDependencies() {
-        return asList(software.amazon.awscdk.$Module.class, software.constructs.$Module.class);
+        return asList(software.amazon.awscdk.cdk.asset.awscli.v1.$Module.class, software.amazon.awscdk.cdk.asset.kubectl.v20.$Module.class, software.amazon.awscdk.cdk.asset.node.proxy.agent.v5.$Module.class, software.amazon.awscdk.$Module.class, software.constructs.$Module.class);
     }
 
     @Override
@@ -7632,6 +7656,9 @@ import typing_extensions
 from typeguard import check_type
 
 import aws_cdk._jsii
+import aws_cdk.asset_awscli_v1._jsii
+import aws_cdk.asset_kubectl_v20._jsii
+import aws_cdk.asset_node_proxy_agent_v5._jsii
 import constructs._jsii
 
 __jsii_assembly__ = jsii.JSIIAssembly.load(
@@ -7965,6 +7992,9 @@ import typing_extensions
 from typeguard import check_type
 
 import aws_cdk._jsii
+import aws_cdk.asset_awscli_v1._jsii
+import aws_cdk.asset_kubectl_v20._jsii
+import aws_cdk.asset_node_proxy_agent_v5._jsii
 import constructs._jsii
 
 __jsii_assembly__ = jsii.JSIIAssembly.load(
