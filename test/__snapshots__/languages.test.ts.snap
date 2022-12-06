@@ -1571,12 +1571,12 @@ namespace AWSQS::EKS::Cluster
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.71.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.27]\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.72.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.29]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.33]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.35]\\" />
     <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.53.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.180]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.181]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2053,12 +2053,12 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.71.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.27]\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.72.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.29]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.33]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.35]\\" />
     <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.53.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.180]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.181]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -6692,12 +6692,12 @@ from typeguard import check_type
 
 from ._jsii import *
 
-import aws_cdk
-import constructs
+import aws_cdk as _aws_cdk_ceddda9d
+import constructs as _constructs_77d1e7e8
 
 
 class CfnCluster(
-    aws_cdk.CfnResource,
+    _aws_cdk_ceddda9d.CfnResource,
     metaclass=jsii.JSIIMeta,
     jsii_type=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnCluster\\",
 ):
@@ -6709,18 +6709,18 @@ class CfnCluster(
 
     def __init__(
         self,
-        scope: constructs.Construct,
+        scope: _constructs_77d1e7e8.Construct,
         id: builtins.str,
         *,
-        resources_vpc_config: typing.Union[\\"CfnClusterPropsResourcesVpcConfig\\", typing.Dict[str, typing.Any]],
+        resources_vpc_config: typing.Union[\\"CfnClusterPropsResourcesVpcConfig\\", typing.Dict[builtins.str, typing.Any]],
         role_arn: builtins.str,
         enabled_cluster_logging_types: typing.Optional[typing.Sequence[builtins.str]] = None,
-        encryption_config: typing.Optional[typing.Sequence[typing.Union[\\"EncryptionConfigEntry\\", typing.Dict[str, typing.Any]]]] = None,
-        kubernetes_api_access: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesApiAccess\\", typing.Dict[str, typing.Any]]] = None,
-        kubernetes_network_config: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesNetworkConfig\\", typing.Dict[str, typing.Any]]] = None,
+        encryption_config: typing.Optional[typing.Sequence[typing.Union[\\"EncryptionConfigEntry\\", typing.Dict[builtins.str, typing.Any]]]] = None,
+        kubernetes_api_access: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesApiAccess\\", typing.Dict[builtins.str, typing.Any]]] = None,
+        kubernetes_network_config: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesNetworkConfig\\", typing.Dict[builtins.str, typing.Any]]] = None,
         lambda_role_name: typing.Optional[builtins.str] = None,
         name: typing.Optional[builtins.str] = None,
-        tags: typing.Optional[typing.Sequence[typing.Union[\\"CfnClusterPropsTags\\", typing.Dict[str, typing.Any]]]] = None,
+        tags: typing.Optional[typing.Sequence[typing.Union[\\"CfnClusterPropsTags\\", typing.Dict[builtins.str, typing.Any]]]] = None,
         version: typing.Optional[builtins.str] = None,
     ) -> None:
         '''Create a new \`\`AWSQS::EKS::Cluster\`\`.
@@ -6739,23 +6739,7 @@ class CfnCluster(
         :param version: Desired Kubernetes version for your cluster. If you don't specify this value, the cluster uses the latest version from Amazon EKS.
         '''
         if __debug__:
-            def stub(
-                scope: constructs.Construct,
-                id: builtins.str,
-                *,
-                resources_vpc_config: typing.Union[CfnClusterPropsResourcesVpcConfig, typing.Dict[str, typing.Any]],
-                role_arn: builtins.str,
-                enabled_cluster_logging_types: typing.Optional[typing.Sequence[builtins.str]] = None,
-                encryption_config: typing.Optional[typing.Sequence[typing.Union[EncryptionConfigEntry, typing.Dict[str, typing.Any]]]] = None,
-                kubernetes_api_access: typing.Optional[typing.Union[CfnClusterPropsKubernetesApiAccess, typing.Dict[str, typing.Any]]] = None,
-                kubernetes_network_config: typing.Optional[typing.Union[CfnClusterPropsKubernetesNetworkConfig, typing.Dict[str, typing.Any]]] = None,
-                lambda_role_name: typing.Optional[builtins.str] = None,
-                name: typing.Optional[builtins.str] = None,
-                tags: typing.Optional[typing.Sequence[typing.Union[CfnClusterPropsTags, typing.Dict[str, typing.Any]]]] = None,
-                version: typing.Optional[builtins.str] = None,
-            ) -> None:
-                ...
-            type_hints = typing.get_type_hints(stub)
+            type_hints = typing.get_type_hints(_typecheckingstub__bacecc56333714eb669ab7a48888241533b00927d8923c503a672032982224f1)
             check_type(argname=\\"argument scope\\", value=scope, expected_type=type_hints[\\"scope\\"])
             check_type(argname=\\"argument id\\", value=id, expected_type=type_hints[\\"id\\"])
         props = CfnClusterProps(
@@ -6948,15 +6932,15 @@ class CfnClusterProps:
     def __init__(
         self,
         *,
-        resources_vpc_config: typing.Union[\\"CfnClusterPropsResourcesVpcConfig\\", typing.Dict[str, typing.Any]],
+        resources_vpc_config: typing.Union[\\"CfnClusterPropsResourcesVpcConfig\\", typing.Dict[builtins.str, typing.Any]],
         role_arn: builtins.str,
         enabled_cluster_logging_types: typing.Optional[typing.Sequence[builtins.str]] = None,
-        encryption_config: typing.Optional[typing.Sequence[typing.Union[\\"EncryptionConfigEntry\\", typing.Dict[str, typing.Any]]]] = None,
-        kubernetes_api_access: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesApiAccess\\", typing.Dict[str, typing.Any]]] = None,
-        kubernetes_network_config: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesNetworkConfig\\", typing.Dict[str, typing.Any]]] = None,
+        encryption_config: typing.Optional[typing.Sequence[typing.Union[\\"EncryptionConfigEntry\\", typing.Dict[builtins.str, typing.Any]]]] = None,
+        kubernetes_api_access: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesApiAccess\\", typing.Dict[builtins.str, typing.Any]]] = None,
+        kubernetes_network_config: typing.Optional[typing.Union[\\"CfnClusterPropsKubernetesNetworkConfig\\", typing.Dict[builtins.str, typing.Any]]] = None,
         lambda_role_name: typing.Optional[builtins.str] = None,
         name: typing.Optional[builtins.str] = None,
-        tags: typing.Optional[typing.Sequence[typing.Union[\\"CfnClusterPropsTags\\", typing.Dict[str, typing.Any]]]] = None,
+        tags: typing.Optional[typing.Sequence[typing.Union[\\"CfnClusterPropsTags\\", typing.Dict[builtins.str, typing.Any]]]] = None,
         version: typing.Optional[builtins.str] = None,
     ) -> None:
         '''A resource that creates Amazon Elastic Kubernetes Service (Amazon EKS) clusters.
@@ -6981,21 +6965,7 @@ class CfnClusterProps:
         if isinstance(kubernetes_network_config, dict):
             kubernetes_network_config = CfnClusterPropsKubernetesNetworkConfig(**kubernetes_network_config)
         if __debug__:
-            def stub(
-                *,
-                resources_vpc_config: typing.Union[CfnClusterPropsResourcesVpcConfig, typing.Dict[str, typing.Any]],
-                role_arn: builtins.str,
-                enabled_cluster_logging_types: typing.Optional[typing.Sequence[builtins.str]] = None,
-                encryption_config: typing.Optional[typing.Sequence[typing.Union[EncryptionConfigEntry, typing.Dict[str, typing.Any]]]] = None,
-                kubernetes_api_access: typing.Optional[typing.Union[CfnClusterPropsKubernetesApiAccess, typing.Dict[str, typing.Any]]] = None,
-                kubernetes_network_config: typing.Optional[typing.Union[CfnClusterPropsKubernetesNetworkConfig, typing.Dict[str, typing.Any]]] = None,
-                lambda_role_name: typing.Optional[builtins.str] = None,
-                name: typing.Optional[builtins.str] = None,
-                tags: typing.Optional[typing.Sequence[typing.Union[CfnClusterPropsTags, typing.Dict[str, typing.Any]]]] = None,
-                version: typing.Optional[builtins.str] = None,
-            ) -> None:
-                ...
-            type_hints = typing.get_type_hints(stub)
+            type_hints = typing.get_type_hints(_typecheckingstub__5c9825b6539ead7fd67aff9c082b9af5d5f56e8e41f5947f6cb3b6afe672122f)
             check_type(argname=\\"argument resources_vpc_config\\", value=resources_vpc_config, expected_type=type_hints[\\"resources_vpc_config\\"])
             check_type(argname=\\"argument role_arn\\", value=role_arn, expected_type=type_hints[\\"role_arn\\"])
             check_type(argname=\\"argument enabled_cluster_logging_types\\", value=enabled_cluster_logging_types, expected_type=type_hints[\\"enabled_cluster_logging_types\\"])
@@ -7006,7 +6976,7 @@ class CfnClusterProps:
             check_type(argname=\\"argument name\\", value=name, expected_type=type_hints[\\"name\\"])
             check_type(argname=\\"argument tags\\", value=tags, expected_type=type_hints[\\"tags\\"])
             check_type(argname=\\"argument version\\", value=version, expected_type=type_hints[\\"version\\"])
-        self._values: typing.Dict[str, typing.Any] = {
+        self._values: typing.Dict[builtins.str, typing.Any] = {
             \\"resources_vpc_config\\": resources_vpc_config,
             \\"role_arn\\": role_arn,
         }
@@ -7154,8 +7124,8 @@ class CfnClusterPropsKubernetesApiAccess:
     def __init__(
         self,
         *,
-        roles: typing.Optional[typing.Sequence[typing.Union[\\"KubernetesApiAccessEntry\\", typing.Dict[str, typing.Any]]]] = None,
-        users: typing.Optional[typing.Sequence[typing.Union[\\"KubernetesApiAccessEntry\\", typing.Dict[str, typing.Any]]]] = None,
+        roles: typing.Optional[typing.Sequence[typing.Union[\\"KubernetesApiAccessEntry\\", typing.Dict[builtins.str, typing.Any]]]] = None,
+        users: typing.Optional[typing.Sequence[typing.Union[\\"KubernetesApiAccessEntry\\", typing.Dict[builtins.str, typing.Any]]]] = None,
     ) -> None:
         '''
         :param roles: 
@@ -7164,16 +7134,10 @@ class CfnClusterPropsKubernetesApiAccess:
         :schema: CfnClusterPropsKubernetesApiAccess
         '''
         if __debug__:
-            def stub(
-                *,
-                roles: typing.Optional[typing.Sequence[typing.Union[KubernetesApiAccessEntry, typing.Dict[str, typing.Any]]]] = None,
-                users: typing.Optional[typing.Sequence[typing.Union[KubernetesApiAccessEntry, typing.Dict[str, typing.Any]]]] = None,
-            ) -> None:
-                ...
-            type_hints = typing.get_type_hints(stub)
+            type_hints = typing.get_type_hints(_typecheckingstub__0a50b00c849246852acb04761c601a9c20ed943ed5118e8263ef6978f722ccbf)
             check_type(argname=\\"argument roles\\", value=roles, expected_type=type_hints[\\"roles\\"])
             check_type(argname=\\"argument users\\", value=users, expected_type=type_hints[\\"users\\"])
-        self._values: typing.Dict[str, typing.Any] = {}
+        self._values: typing.Dict[builtins.str, typing.Any] = {}
         if roles is not None:
             self._values[\\"roles\\"] = roles
         if users is not None:
@@ -7225,14 +7189,9 @@ class CfnClusterPropsKubernetesNetworkConfig:
         :schema: CfnClusterPropsKubernetesNetworkConfig
         '''
         if __debug__:
-            def stub(
-                *,
-                service_ipv4_cidr: typing.Optional[builtins.str] = None,
-            ) -> None:
-                ...
-            type_hints = typing.get_type_hints(stub)
+            type_hints = typing.get_type_hints(_typecheckingstub__06f00070852ad34755fd4c5edc1bdb6d1944b8e3703b29a897c392a6f85b5fdf)
             check_type(argname=\\"argument service_ipv4_cidr\\", value=service_ipv4_cidr, expected_type=type_hints[\\"service_ipv4_cidr\\"])
-        self._values: typing.Dict[str, typing.Any] = {}
+        self._values: typing.Dict[builtins.str, typing.Any] = {}
         if service_ipv4_cidr is not None:
             self._values[\\"service_ipv4_cidr\\"] = service_ipv4_cidr
 
@@ -7289,22 +7248,13 @@ class CfnClusterPropsResourcesVpcConfig:
         :schema: CfnClusterPropsResourcesVpcConfig
         '''
         if __debug__:
-            def stub(
-                *,
-                subnet_ids: typing.Sequence[builtins.str],
-                endpoint_private_access: typing.Optional[builtins.bool] = None,
-                endpoint_public_access: typing.Optional[builtins.bool] = None,
-                public_access_cidrs: typing.Optional[typing.Sequence[builtins.str]] = None,
-                security_group_ids: typing.Optional[typing.Sequence[builtins.str]] = None,
-            ) -> None:
-                ...
-            type_hints = typing.get_type_hints(stub)
+            type_hints = typing.get_type_hints(_typecheckingstub__09f33c0f9b4ef6ec1dea52664b0cadda6462872b4e058ca64df4adae7d831528)
             check_type(argname=\\"argument subnet_ids\\", value=subnet_ids, expected_type=type_hints[\\"subnet_ids\\"])
             check_type(argname=\\"argument endpoint_private_access\\", value=endpoint_private_access, expected_type=type_hints[\\"endpoint_private_access\\"])
             check_type(argname=\\"argument endpoint_public_access\\", value=endpoint_public_access, expected_type=type_hints[\\"endpoint_public_access\\"])
             check_type(argname=\\"argument public_access_cidrs\\", value=public_access_cidrs, expected_type=type_hints[\\"public_access_cidrs\\"])
             check_type(argname=\\"argument security_group_ids\\", value=security_group_ids, expected_type=type_hints[\\"security_group_ids\\"])
-        self._values: typing.Dict[str, typing.Any] = {
+        self._values: typing.Dict[builtins.str, typing.Any] = {
             \\"subnet_ids\\": subnet_ids,
         }
         if endpoint_private_access is not None:
@@ -7398,12 +7348,10 @@ class CfnClusterPropsTags:
         :schema: CfnClusterPropsTags
         '''
         if __debug__:
-            def stub(*, key: builtins.str, value: builtins.str) -> None:
-                ...
-            type_hints = typing.get_type_hints(stub)
+            type_hints = typing.get_type_hints(_typecheckingstub__8c0a0ceac7d05d1baddfca750332d05e2ff84b371923312af407a26340290bf0)
             check_type(argname=\\"argument key\\", value=key, expected_type=type_hints[\\"key\\"])
             check_type(argname=\\"argument value\\", value=value, expected_type=type_hints[\\"value\\"])
-        self._values: typing.Dict[str, typing.Any] = {
+        self._values: typing.Dict[builtins.str, typing.Any] = {
             \\"key\\": key,
             \\"value\\": value,
         }
@@ -7447,7 +7395,7 @@ class EncryptionConfigEntry:
     def __init__(
         self,
         *,
-        provider: typing.Optional[typing.Union[\\"Provider\\", typing.Dict[str, typing.Any]]] = None,
+        provider: typing.Optional[typing.Union[\\"Provider\\", typing.Dict[builtins.str, typing.Any]]] = None,
         resources: typing.Optional[typing.Sequence[builtins.str]] = None,
     ) -> None:
         '''The encryption configuration for the cluster.
@@ -7460,16 +7408,10 @@ class EncryptionConfigEntry:
         if isinstance(provider, dict):
             provider = Provider(**provider)
         if __debug__:
-            def stub(
-                *,
-                provider: typing.Optional[typing.Union[Provider, typing.Dict[str, typing.Any]]] = None,
-                resources: typing.Optional[typing.Sequence[builtins.str]] = None,
-            ) -> None:
-                ...
-            type_hints = typing.get_type_hints(stub)
+            type_hints = typing.get_type_hints(_typecheckingstub__47d502d7d0fa6ace2fb16c740510550bbe28ebf723e312188b4db30e7d30cbd2)
             check_type(argname=\\"argument provider\\", value=provider, expected_type=type_hints[\\"provider\\"])
             check_type(argname=\\"argument resources\\", value=resources, expected_type=type_hints[\\"resources\\"])
-        self._values: typing.Dict[str, typing.Any] = {}
+        self._values: typing.Dict[builtins.str, typing.Any] = {}
         if provider is not None:
             self._values[\\"provider\\"] = provider
         if resources is not None:
@@ -7527,18 +7469,11 @@ class KubernetesApiAccessEntry:
         :schema: KubernetesApiAccessEntry
         '''
         if __debug__:
-            def stub(
-                *,
-                arn: typing.Optional[builtins.str] = None,
-                groups: typing.Optional[typing.Sequence[builtins.str]] = None,
-                username: typing.Optional[builtins.str] = None,
-            ) -> None:
-                ...
-            type_hints = typing.get_type_hints(stub)
+            type_hints = typing.get_type_hints(_typecheckingstub__b05ea8544382c89e6eb2e9bbfb81bf5d72f6d330053daa2df7f83f2f22391673)
             check_type(argname=\\"argument arn\\", value=arn, expected_type=type_hints[\\"arn\\"])
             check_type(argname=\\"argument groups\\", value=groups, expected_type=type_hints[\\"groups\\"])
             check_type(argname=\\"argument username\\", value=username, expected_type=type_hints[\\"username\\"])
-        self._values: typing.Dict[str, typing.Any] = {}
+        self._values: typing.Dict[builtins.str, typing.Any] = {}
         if arn is not None:
             self._values[\\"arn\\"] = arn
         if groups is not None:
@@ -7598,11 +7533,9 @@ class Provider:
         :schema: Provider
         '''
         if __debug__:
-            def stub(*, key_arn: typing.Optional[builtins.str] = None) -> None:
-                ...
-            type_hints = typing.get_type_hints(stub)
+            type_hints = typing.get_type_hints(_typecheckingstub__302dcaaeb5b949d5d051618ce402deb83217ae5e9fc48f7ce913119e9508e42e)
             check_type(argname=\\"argument key_arn\\", value=key_arn, expected_type=type_hints[\\"key_arn\\"])
-        self._values: typing.Dict[str, typing.Any] = {}
+        self._values: typing.Dict[builtins.str, typing.Any] = {}
         if key_arn is not None:
             self._values[\\"key_arn\\"] = key_arn
 
@@ -7642,6 +7575,98 @@ __all__ = [
 ]
 
 publication.publish()
+
+def _typecheckingstub__bacecc56333714eb669ab7a48888241533b00927d8923c503a672032982224f1(
+    scope: _constructs_77d1e7e8.Construct,
+    id: builtins.str,
+    *,
+    resources_vpc_config: typing.Union[CfnClusterPropsResourcesVpcConfig, typing.Dict[builtins.str, typing.Any]],
+    role_arn: builtins.str,
+    enabled_cluster_logging_types: typing.Optional[typing.Sequence[builtins.str]] = None,
+    encryption_config: typing.Optional[typing.Sequence[typing.Union[EncryptionConfigEntry, typing.Dict[builtins.str, typing.Any]]]] = None,
+    kubernetes_api_access: typing.Optional[typing.Union[CfnClusterPropsKubernetesApiAccess, typing.Dict[builtins.str, typing.Any]]] = None,
+    kubernetes_network_config: typing.Optional[typing.Union[CfnClusterPropsKubernetesNetworkConfig, typing.Dict[builtins.str, typing.Any]]] = None,
+    lambda_role_name: typing.Optional[builtins.str] = None,
+    name: typing.Optional[builtins.str] = None,
+    tags: typing.Optional[typing.Sequence[typing.Union[CfnClusterPropsTags, typing.Dict[builtins.str, typing.Any]]]] = None,
+    version: typing.Optional[builtins.str] = None,
+) -> None:
+    \\"\\"\\"Type checking stubs\\"\\"\\"
+    pass
+
+def _typecheckingstub__5c9825b6539ead7fd67aff9c082b9af5d5f56e8e41f5947f6cb3b6afe672122f(
+    *,
+    resources_vpc_config: typing.Union[CfnClusterPropsResourcesVpcConfig, typing.Dict[builtins.str, typing.Any]],
+    role_arn: builtins.str,
+    enabled_cluster_logging_types: typing.Optional[typing.Sequence[builtins.str]] = None,
+    encryption_config: typing.Optional[typing.Sequence[typing.Union[EncryptionConfigEntry, typing.Dict[builtins.str, typing.Any]]]] = None,
+    kubernetes_api_access: typing.Optional[typing.Union[CfnClusterPropsKubernetesApiAccess, typing.Dict[builtins.str, typing.Any]]] = None,
+    kubernetes_network_config: typing.Optional[typing.Union[CfnClusterPropsKubernetesNetworkConfig, typing.Dict[builtins.str, typing.Any]]] = None,
+    lambda_role_name: typing.Optional[builtins.str] = None,
+    name: typing.Optional[builtins.str] = None,
+    tags: typing.Optional[typing.Sequence[typing.Union[CfnClusterPropsTags, typing.Dict[builtins.str, typing.Any]]]] = None,
+    version: typing.Optional[builtins.str] = None,
+) -> None:
+    \\"\\"\\"Type checking stubs\\"\\"\\"
+    pass
+
+def _typecheckingstub__0a50b00c849246852acb04761c601a9c20ed943ed5118e8263ef6978f722ccbf(
+    *,
+    roles: typing.Optional[typing.Sequence[typing.Union[KubernetesApiAccessEntry, typing.Dict[builtins.str, typing.Any]]]] = None,
+    users: typing.Optional[typing.Sequence[typing.Union[KubernetesApiAccessEntry, typing.Dict[builtins.str, typing.Any]]]] = None,
+) -> None:
+    \\"\\"\\"Type checking stubs\\"\\"\\"
+    pass
+
+def _typecheckingstub__06f00070852ad34755fd4c5edc1bdb6d1944b8e3703b29a897c392a6f85b5fdf(
+    *,
+    service_ipv4_cidr: typing.Optional[builtins.str] = None,
+) -> None:
+    \\"\\"\\"Type checking stubs\\"\\"\\"
+    pass
+
+def _typecheckingstub__09f33c0f9b4ef6ec1dea52664b0cadda6462872b4e058ca64df4adae7d831528(
+    *,
+    subnet_ids: typing.Sequence[builtins.str],
+    endpoint_private_access: typing.Optional[builtins.bool] = None,
+    endpoint_public_access: typing.Optional[builtins.bool] = None,
+    public_access_cidrs: typing.Optional[typing.Sequence[builtins.str]] = None,
+    security_group_ids: typing.Optional[typing.Sequence[builtins.str]] = None,
+) -> None:
+    \\"\\"\\"Type checking stubs\\"\\"\\"
+    pass
+
+def _typecheckingstub__8c0a0ceac7d05d1baddfca750332d05e2ff84b371923312af407a26340290bf0(
+    *,
+    key: builtins.str,
+    value: builtins.str,
+) -> None:
+    \\"\\"\\"Type checking stubs\\"\\"\\"
+    pass
+
+def _typecheckingstub__47d502d7d0fa6ace2fb16c740510550bbe28ebf723e312188b4db30e7d30cbd2(
+    *,
+    provider: typing.Optional[typing.Union[Provider, typing.Dict[builtins.str, typing.Any]]] = None,
+    resources: typing.Optional[typing.Sequence[builtins.str]] = None,
+) -> None:
+    \\"\\"\\"Type checking stubs\\"\\"\\"
+    pass
+
+def _typecheckingstub__b05ea8544382c89e6eb2e9bbfb81bf5d72f6d330053daa2df7f83f2f22391673(
+    *,
+    arn: typing.Optional[builtins.str] = None,
+    groups: typing.Optional[typing.Sequence[builtins.str]] = None,
+    username: typing.Optional[builtins.str] = None,
+) -> None:
+    \\"\\"\\"Type checking stubs\\"\\"\\"
+    pass
+
+def _typecheckingstub__302dcaaeb5b949d5d051618ce402deb83217ae5e9fc48f7ce913119e9508e42e(
+    *,
+    key_arn: typing.Optional[builtins.str] = None,
+) -> None:
+    \\"\\"\\"Type checking stubs\\"\\"\\"
+    pass
 ",
   "awsqs_eks_cluster/_jsii/__init__.py" => "import abc
 import builtins
@@ -7695,8 +7720,8 @@ from typeguard import check_type
 
 from ._jsii import *
 
-import aws_cdk
-import constructs
+import aws_cdk as _aws_cdk_ceddda9d
+import constructs as _constructs_77d1e7e8
 
 
 @jsii.data_type(
@@ -7722,18 +7747,11 @@ class Ec2ComputeInstanceProps:
         :param ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter: SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter. Default: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-arm64-gp2
         '''
         if __debug__:
-            def stub(
-                *,
-                instance_type: typing.Optional[Ec2ComputeInstance.InstanceType] = None,
-                numbers: typing.Optional[Ec2ComputeInstance.Numbers] = None,
-                ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter: typing.Optional[builtins.str] = None,
-            ) -> None:
-                ...
-            type_hints = typing.get_type_hints(stub)
+            type_hints = typing.get_type_hints(_typecheckingstub__4bc288f73b6f04c4cbe3c81dfe5460cb602875447ace7cbee7c0cf0c364a45dc)
             check_type(argname=\\"argument instance_type\\", value=instance_type, expected_type=type_hints[\\"instance_type\\"])
             check_type(argname=\\"argument numbers\\", value=numbers, expected_type=type_hints[\\"numbers\\"])
             check_type(argname=\\"argument ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter\\", value=ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter, expected_type=type_hints[\\"ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter\\"])
-        self._values: typing.Dict[str, typing.Any] = {}
+        self._values: typing.Dict[builtins.str, typing.Any] = {}
         if instance_type is not None:
             self._values[\\"instance_type\\"] = instance_type
         if numbers is not None:
@@ -7793,7 +7811,7 @@ class Ec2ComputeInstanceProps:
 @jsii.interface(
     jsii_type=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.IEc2ComputeInstance\\"
 )
-class IEc2ComputeInstance(aws_cdk.IResource, typing_extensions.Protocol):
+class IEc2ComputeInstance(_aws_cdk_ceddda9d.IResource, typing_extensions.Protocol):
     @builtins.property
     @jsii.member(jsii_name=\\"cloudFormationStackArn\\")
     def cloud_formation_stack_arn(self) -> builtins.str:
@@ -7826,7 +7844,7 @@ class IEc2ComputeInstance(aws_cdk.IResource, typing_extensions.Protocol):
 
 
 class _IEc2ComputeInstanceProxy(
-    jsii.proxy_for(aws_cdk.IResource), # type: ignore[misc]
+    jsii.proxy_for(_aws_cdk_ceddda9d.IResource), # type: ignore[misc]
 ):
     __jsii_type__: typing.ClassVar[str] = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.IEc2ComputeInstance\\"
 
@@ -7866,7 +7884,7 @@ typing.cast(typing.Any, IEc2ComputeInstance).__jsii_proxy_class__ = lambda : _IE
 
 @jsii.implements(IEc2ComputeInstance)
 class Ec2ComputeInstance(
-    aws_cdk.Resource,
+    _aws_cdk_ceddda9d.Resource,
     metaclass=jsii.JSIIMeta,
     jsii_type=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\",
 ):
@@ -7879,7 +7897,7 @@ class Ec2ComputeInstance(
 
     def __init__(
         self,
-        scope: constructs.Construct,
+        scope: _constructs_77d1e7e8.Construct,
         id: builtins.str,
         *,
         instance_type: typing.Optional[\\"Ec2ComputeInstance.InstanceType\\"] = None,
@@ -7895,16 +7913,7 @@ class Ec2ComputeInstance(
         :param ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter: SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter. Default: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-arm64-gp2
         '''
         if __debug__:
-            def stub(
-                scope: constructs.Construct,
-                id: builtins.str,
-                *,
-                instance_type: typing.Optional[Ec2ComputeInstance.InstanceType] = None,
-                numbers: typing.Optional[Ec2ComputeInstance.Numbers] = None,
-                ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter: typing.Optional[builtins.str] = None,
-            ) -> None:
-                ...
-            type_hints = typing.get_type_hints(stub)
+            type_hints = typing.get_type_hints(_typecheckingstub__0784cfb843b6f72ff9d9cf293d897b54b852a1398816e3d2c2c812c8a4dbf0cf)
             check_type(argname=\\"argument scope\\", value=scope, expected_type=type_hints[\\"scope\\"])
             check_type(argname=\\"argument id\\", value=id, expected_type=type_hints[\\"id\\"])
         props = Ec2ComputeInstanceProps(
@@ -7978,6 +7987,26 @@ __all__ = [
 ]
 
 publication.publish()
+
+def _typecheckingstub__4bc288f73b6f04c4cbe3c81dfe5460cb602875447ace7cbee7c0cf0c364a45dc(
+    *,
+    instance_type: typing.Optional[Ec2ComputeInstance.InstanceType] = None,
+    numbers: typing.Optional[Ec2ComputeInstance.Numbers] = None,
+    ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter: typing.Optional[builtins.str] = None,
+) -> None:
+    \\"\\"\\"Type checking stubs\\"\\"\\"
+    pass
+
+def _typecheckingstub__0784cfb843b6f72ff9d9cf293d897b54b852a1398816e3d2c2c812c8a4dbf0cf(
+    scope: _constructs_77d1e7e8.Construct,
+    id: builtins.str,
+    *,
+    instance_type: typing.Optional[Ec2ComputeInstance.InstanceType] = None,
+    numbers: typing.Optional[Ec2ComputeInstance.Numbers] = None,
+    ssm_parameter_valueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2_c96584_b6_f00_a464_ead1953_aff4_b05118_parameter: typing.Optional[builtins.str] = None,
+) -> None:
+    \\"\\"\\"Type checking stubs\\"\\"\\"
+    pass
 ",
   "ec2_compute_instance/_jsii/__init__.py" => "import abc
 import builtins
