@@ -1574,9 +1574,9 @@ namespace AWSQS::EKS::Cluster
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.72.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.30]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.36]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.37]\\" />
     <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.54.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.188]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.189]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2056,9 +2056,9 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.72.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.30]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.36]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.37]\\" />
     <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.54.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.188]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.189]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
