@@ -1574,9 +1574,9 @@ namespace AWSQS::EKS::Cluster
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.72.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.30]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.37]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.54.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.189]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.38]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.55.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.190]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2056,9 +2056,9 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.72.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.30]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.37]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.54.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.189]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.38]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.55.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.190]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2346,7 +2346,7 @@ type CfnCluster interface {
 	//
 	// Ideally, use generated attribute accessors (e.g. \`resource.arn\`), but this can be used for future compatibility
 	// in case there is no generated attribute.
-	GetAtt(attributeName *string) awscdk.Reference
+	GetAtt(attributeName *string, typeHint awscdk.ResolutionTypeHint) awscdk.Reference
 	// Retrieve a value value from the CloudFormation Resource Metadata.
 	// See: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html
 	//
@@ -2831,7 +2831,7 @@ func (c *jsiiProxy_CfnCluster) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, o
 	)
 }
 
-func (c *jsiiProxy_CfnCluster) GetAtt(attributeName *string) awscdk.Reference {
+func (c *jsiiProxy_CfnCluster) GetAtt(attributeName *string, typeHint awscdk.ResolutionTypeHint) awscdk.Reference {
 	if err := c.validateGetAttParameters(attributeName); err != nil {
 		panic(err)
 	}
@@ -2840,7 +2840,7 @@ func (c *jsiiProxy_CfnCluster) GetAtt(attributeName *string) awscdk.Reference {
 	_jsii_.Invoke(
 		c,
 		\\"getAtt\\",
-		[]interface{}{attributeName},
+		[]interface{}{attributeName, typeHint},
 		&returns,
 	)
 
