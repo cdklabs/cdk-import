@@ -1572,11 +1572,11 @@ namespace AWSQS::EKS::Cluster
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.72.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.35]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.36]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.38]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.55.1]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.196]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.56.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.197]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2054,11 +2054,11 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.72.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.35]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.36]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.38]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.55.1]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.196]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.56.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.197]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2092,6 +2092,7 @@ func init() {
 		reflect.TypeOf((*CfnCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: \\"addDeletionOverride\\", GoMethod: \\"AddDeletionOverride\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"addDependency\\", GoMethod: \\"AddDependency\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"addDependsOn\\", GoMethod: \\"AddDependsOn\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"addMetadata\\", GoMethod: \\"AddMetadata\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"addOverride\\", GoMethod: \\"AddOverride\\"},
@@ -2118,9 +2119,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: \\"logicalId\\", GoGetter: \\"LogicalId\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"name\\", GoGetter: \\"Name\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"node\\", GoGetter: \\"Node\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"obtainDependencies\\", GoMethod: \\"ObtainDependencies\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"obtainResourceDependencies\\", GoMethod: \\"ObtainResourceDependencies\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"overrideLogicalId\\", GoMethod: \\"OverrideLogicalId\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"ref\\", GoGetter: \\"Ref\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"removeDependency\\", GoMethod: \\"RemoveDependency\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"renderProperties\\", GoMethod: \\"RenderProperties\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"replaceDependency\\", GoMethod: \\"ReplaceDependency\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"resourcesVpcConfig\\", GoGetter: \\"ResourcesVpcConfig\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"roleArn\\", GoGetter: \\"RoleArn\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"shouldSynthesize\\", GoMethod: \\"ShouldSynthesize\\"},
@@ -2268,6 +2273,9 @@ type CfnCluster interface {
 	//
 	// This can be used for resources across stacks (or nested stack) boundaries
 	// and the dependency will automatically be transferred to the relevant scope.
+	AddDependency(target awscdk.CfnResource)
+	// Indicates that this resource depends on another resource and cannot be provisioned unless the other resource has been successfully provisioned.
+	// Deprecated: use addDependency.
 	AddDependsOn(target awscdk.CfnResource)
 	// Add a value to the CloudFormation Resource Metadata.
 	// See: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html
@@ -2355,9 +2363,23 @@ type CfnCluster interface {
 	// node metadata ends up in the Cloud Assembly.
 	//
 	GetMetadata(key *string) interface{}
+	// Retrieves an array of resources this resource depends on.
+	//
+	// This assembles dependencies on resources across stacks (including nested stacks)
+	// automatically.
+	ObtainDependencies() *[]interface{}
+	// Get a shallow copy of dependencies between this resource and other resources in the same stack.
+	ObtainResourceDependencies() *[]awscdk.CfnResource
 	// Overrides the auto-generated logical ID with a specific ID.
 	OverrideLogicalId(newLogicalId *string)
+	// Indicates that this resource no longer depends on another resource.
+	//
+	// This can be used for resources across stacks (including nested stacks)
+	// and the dependency will automatically be removed from the relevant scope.
+	RemoveDependency(target awscdk.CfnResource)
 	RenderProperties(props *map[string]interface{}) *map[string]interface{}
+	// Replaces one dependency with another.
+	ReplaceDependency(target awscdk.CfnResource, newTarget awscdk.CfnResource)
 	// Can be overridden by subclasses to determine if this resource will be rendered into the cloudformation template.
 	//
 	// Returns: \`true\` if the resource should be included or \`false\` is the resource
@@ -2765,6 +2787,17 @@ func (c *jsiiProxy_CfnCluster) AddDeletionOverride(path *string) {
 	)
 }
 
+func (c *jsiiProxy_CfnCluster) AddDependency(target awscdk.CfnResource) {
+	if err := c.validateAddDependencyParameters(target); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		\\"addDependency\\",
+		[]interface{}{target},
+	)
+}
+
 func (c *jsiiProxy_CfnCluster) AddDependsOn(target awscdk.CfnResource) {
 	if err := c.validateAddDependsOnParameters(target); err != nil {
 		panic(err)
@@ -2863,6 +2896,32 @@ func (c *jsiiProxy_CfnCluster) GetMetadata(key *string) interface{} {
 	return returns
 }
 
+func (c *jsiiProxy_CfnCluster) ObtainDependencies() *[]interface{} {
+	var returns *[]interface{}
+
+	_jsii_.Invoke(
+		c,
+		\\"obtainDependencies\\",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CfnCluster) ObtainResourceDependencies() *[]awscdk.CfnResource {
+	var returns *[]awscdk.CfnResource
+
+	_jsii_.Invoke(
+		c,
+		\\"obtainResourceDependencies\\",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_CfnCluster) OverrideLogicalId(newLogicalId *string) {
 	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
@@ -2871,6 +2930,17 @@ func (c *jsiiProxy_CfnCluster) OverrideLogicalId(newLogicalId *string) {
 		c,
 		\\"overrideLogicalId\\",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CfnCluster) RemoveDependency(target awscdk.CfnResource) {
+	if err := c.validateRemoveDependencyParameters(target); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		\\"removeDependency\\",
+		[]interface{}{target},
 	)
 }
 
@@ -2888,6 +2958,17 @@ func (c *jsiiProxy_CfnCluster) RenderProperties(props *map[string]interface{}) *
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CfnCluster) ReplaceDependency(target awscdk.CfnResource, newTarget awscdk.CfnResource) {
+	if err := c.validateReplaceDependencyParameters(target, newTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		\\"replaceDependency\\",
+		[]interface{}{target, newTarget},
+	)
 }
 
 func (c *jsiiProxy_CfnCluster) ShouldSynthesize() *bool {
@@ -3034,6 +3115,10 @@ func (c *jsiiProxy_CfnCluster) validateAddDeletionOverrideParameters(path *strin
 	return nil
 }
 
+func (c *jsiiProxy_CfnCluster) validateAddDependencyParameters(target awscdk.CfnResource) error {
+	return nil
+}
+
 func (c *jsiiProxy_CfnCluster) validateAddDependsOnParameters(target awscdk.CfnResource) error {
 	return nil
 }
@@ -3070,7 +3155,15 @@ func (c *jsiiProxy_CfnCluster) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (c *jsiiProxy_CfnCluster) validateRemoveDependencyParameters(target awscdk.CfnResource) error {
+	return nil
+}
+
 func (c *jsiiProxy_CfnCluster) validateRenderPropertiesParameters(props *map[string]interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateReplaceDependencyParameters(target awscdk.CfnResource, newTarget awscdk.CfnResource) error {
 	return nil
 }
 
@@ -3112,6 +3205,14 @@ import (
 func (c *jsiiProxy_CfnCluster) validateAddDeletionOverrideParameters(path *string) error {
 	if path == nil {
 		return fmt.Errorf(\\"parameter path is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateAddDependencyParameters(target awscdk.CfnResource) error {
+	if target == nil {
+		return fmt.Errorf(\\"parameter target is required, but nil was provided\\")
 	}
 
 	return nil
@@ -3201,9 +3302,29 @@ func (c *jsiiProxy_CfnCluster) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (c *jsiiProxy_CfnCluster) validateRemoveDependencyParameters(target awscdk.CfnResource) error {
+	if target == nil {
+		return fmt.Errorf(\\"parameter target is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CfnCluster) validateRenderPropertiesParameters(props *map[string]interface{}) error {
 	if props == nil {
 		return fmt.Errorf(\\"parameter props is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateReplaceDependencyParameters(target awscdk.CfnResource, newTarget awscdk.CfnResource) error {
+	if target == nil {
+		return fmt.Errorf(\\"parameter target is required, but nil was provided\\")
+	}
+
+	if newTarget == nil {
+		return fmt.Errorf(\\"parameter newTarget is required, but nil was provided\\")
 	}
 
 	return nil
