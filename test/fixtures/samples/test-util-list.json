@@ -1,0 +1,20 @@
+{
+  "Arn": "arn:aws:cloudformation:eu-west-1:123456789123:type/resource/TEST-Util-List/00000002",
+  "Type": "RESOURCE",
+  "TypeName": "TEST::Util::List",
+  "DefaultVersionId": "00000002",
+  "IsDefaultVersion": true,
+  "Description": "Simple utility resource to work around some rough edges in Cloudformation",
+  "Schema": "{\n  \"typeName\": \"TEST::Util::List\",\n  \"description\": \"Simple utility resource to work around some rough edges in Cloudformation\",\n  \"sourceUrl\": \"https://github.com/aws-cloudformation/aws-cloudformation-rpdk.git\",\n  \"definitions\": {},\n  \"properties\": {\n    \"Id\": {\n      \"type\": \"string\",\n      \"minLength\": 3\n    },\n    \"Input\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\",\n        \"minLength\": 3\n      },\n      \"minLength\": 1\n    },\n    \"Values\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\",\n        \"minLength\": 3\n      },\n      \"minLength\": 1\n    }\n  },\n  \"additionalProperties\": false,\n  \"required\": [\n    \"Input\"\n  ],\n  \"writeOnlyProperties\": [\n    \"/properties/Input\"\n  ],\n  \"readOnlyProperties\": [\n    \"/properties/Id\",\n    \"/properties/Values\"\n  ],\n  \"primaryIdentifier\": [\n    \"/properties/Id\"\n  ],\n  \"handlers\": {\n    \"create\": {\n      \"permissions\": []\n    },\n    \"read\": {\n      \"permissions\": []\n    },\n    \"delete\": {\n      \"permissions\": []\n    }\n  }\n}\n",
+  "ProvisioningType": "IMMUTABLE",
+  "DeprecatedStatus": "LIVE",
+  "LoggingConfig": {
+    "LogRoleArn": "arn:aws:iam::123456789123:role/test/production/resources/test-cfn-resource-logging-role",
+    "LogGroupName": "cfn-resources"
+  },
+  "ExecutionRoleArn": "arn:aws:iam::123456789123:role/test/production/resources/test-cfn-custom-resource-role",
+  "Visibility": "PRIVATE",
+  "SourceUrl": "https://github.com/aws-cloudformation/aws-cloudformation-rpdk.git",
+  "LastUpdated": "2022-12-20T16:04:15.457000+00:00",
+  "TimeCreated": "2021-01-25T10:00:54.199000+00:00"
+}
