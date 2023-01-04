@@ -43,8 +43,8 @@ export class CfnResourceGenerator {
         continue;
       }
 
-      // verify that the type of the attribute is a primitive
-      if (def.type !== 'string' && def.type !== 'number') {
+      // verify that the type of the attribute is a primitive or array
+      if (def.type !== 'string' && def.type !== 'number' && def.type !== 'array') {
         console.warn(`Unsupported type ${JSON.stringify(def)} for read-only property (attribute) ${typeName}.${attr}`);
         continue;
       }
