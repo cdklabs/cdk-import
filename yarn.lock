@@ -1307,10 +1307,10 @@ aws-cdk-lib@^2.59.0:
     semver "^7.3.8"
     yaml "1.10.2"
 
-aws-sdk@^2.1289.0:
-  version "2.1289.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1289.0.tgz#8efa68a738ce386667aeffbd8679491cfa6e458f"
-  integrity sha512-wT7SZ385NEm6X4VC1Bhf1loBZi2BDVqEET4G9I7E2tyuEdfeubPvZpCV/BgdId3qwqB4LjbMLBje18Op3zpgBA==
+aws-sdk@^2.1290.0:
+  version "2.1290.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1290.0.tgz#cb4e56656cb4ad08a645cd016380df4b324f8261"
+  integrity sha512-qRrXLgK4FpkdxeagjrHuhtEEvYrvRbddTBg1I7KBuMCIhXHzSS3nEUmdZjdyMuQJEvt0BCJjwVkNh8e/5TauDQ==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -1809,9 +1809,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10:
-  version "10.1.211"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.211.tgz#ecc7e20863a305363cc37d048333f10afb505d36"
-  integrity sha512-Ye4SgRf8GXtq1FVzoXDcSObWac55YOTjotbaxxnBFLKHiM0zvZRX0UoN/uwjwx5OMJp63bfoUTcNBB3fZijpPA==
+  version "10.1.212"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.212.tgz#c1eb6b424b0b29b5582359ef24c64363b38cdf84"
+  integrity sha512-75KvfIzTnSQr6kt2pmin/TmtazN5XgGzm6mFVG18+3TTWWL9TwtzPqJLbW2TQo4o1BMf4YkzI8Ka7tIPHsr+3w==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -4207,10 +4207,10 @@ jsii-rosetta@^1.73.0:
     workerpool "^6.3.1"
     yargs "^16.2.0"
 
-jsii-srcmak@^0.1.785:
-  version "0.1.785"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.785.tgz#2632a1fcd70c6019ad63c5cc781fcdb613bcc071"
-  integrity sha512-cZXsaVEjiVf0fOMTqsltcoDFKut71iubMrF4cJXUhiHranARxRSpzsQ63LmglMKEca9iQ7If5PsGVJ8MXsPTjA==
+jsii-srcmak@^0.1.786:
+  version "0.1.786"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.786.tgz#102ac6a4b2eff20e0dc1f2f003c1cf90a948889f"
+  integrity sha512-x5VRz5v+y/lfXIfgRx5HZ1TAOe+ZWWPnIl/iPIfGMHSxBSRLnZScwB5NMhmw4uhClwzZWg3sg7QL6hWZFZvMTw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.73.0"
@@ -4289,10 +4289,10 @@ json-stringify-safe@^5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
 
-json2jsii@^0.3.234:
-  version "0.3.234"
-  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.3.234.tgz#e82ae4b063d5cf8c7f3426a4445453f0c694a3aa"
-  integrity sha512-PT4GysClv5oyEQgmAmiU51EqtAQ39cbIq/A5nXSgMKJdOzEazzN5bcj+52fAid8Oej+//HrPSuJbUFcD18ynxA==
+json2jsii@^0.3.235:
+  version "0.3.235"
+  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.3.235.tgz#fab95d0c1f30e1c413fa5c49eb845a5ace17affe"
+  integrity sha512-8tOKfF2fnZk+xW9tpU0HbtxL5u1ZsRNUvF26/zZk1/EXJHh8hIfGw1XKNRn0HKohSKjXt9igVBqRPDsiAI0Cag==
   dependencies:
     camelcase "^6.3.0"
     json-schema "^0.4.0"
@@ -5356,10 +5356,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.66.4:
-  version "0.66.4"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.66.4.tgz#ce62fdc1bdc690f09fbeb75dbe1fd057b6daea7c"
-  integrity sha512-W2uGYvdJcz8ctRX+NwOwzsnQHv87ZOBH2jDPzI5jfFPNZ8DW0mZbJDavx+YB2OUrrG9ujLUc9TPkaYqKl9QgBQ==
+projen@^0.66.7:
+  version "0.66.7"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.66.7.tgz#3f9d03443406d02ab274735b1fa79bd100d91294"
+  integrity sha512-y/f69J7FAXuIxqFEzVKuORFwSvQLGiuxqQ6qF9nLUfg5RvNpI/ppARZeaOnkPgFZtWY6iHFBcwfU186Is65oXQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
