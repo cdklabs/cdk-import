@@ -51,8 +51,8 @@
     "aws-sdk": "^2.1290.0",
     "case": "^1.6.3",
     "constructs": "^10",
-    "jsii-srcmak": "^0.1.786",
-    "json2jsii": "^0.3.235",
+    "jsii-srcmak": "^0.1.787",
+    "json2jsii": "^0.3.236",
     "minimist": "^1.2.7",
     "minimist-subcommand": "^3.0.2",
     "proxy-agent": "^5.0.0"
