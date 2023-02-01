@@ -43,8 +43,8 @@ export class CfnResourceGenerator {
         continue;
       }
 
-      // verify that the type of the attribute is a primitive or array
-      if (def.type !== 'string' && def.type !== 'number' && def.type !== 'array') {
+      // verify that the type of the attribute is a primitive or a primitive array
+      if (!this.isSupportedPrimitiveType(def)) {
         console.warn(`Unsupported type ${JSON.stringify(def)} for read-only property (attribute) ${typeName}.${attr}`);
         continue;
       }
@@ -91,6 +91,7 @@ export class CfnResourceGenerator {
     for (const prop of this.resourceAttributes) {
       // Remove attributes that cannot be written but are used as attributes
       // These should not be part of the Props struct
+
       delete schema.properties[prop];
     }
 
@@ -188,6 +189,8 @@ export class CfnResourceGenerator {
           return 'number';
         case 'integer':
           return 'number';
+        case 'boolean':
+          return 'cdk.IResolvable';
         default:
           return 'any';
       }
@@ -198,4 +201,10 @@ export class CfnResourceGenerator {
     return 'any';
   }
 
+  private isSupportedPrimitiveType(def: any): boolean {
+    if (def?.type === 'array') {
+      return this.isSupportedPrimitiveType(def?.items);
+    }
+    return def.type && ['string', 'number', 'integer', 'boolean'].includes(def.type);
+  }
 }
