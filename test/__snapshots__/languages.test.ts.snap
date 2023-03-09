@@ -1573,11 +1573,11 @@ namespace AWSQS::EKS::Cluster
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.77.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.97]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.98]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.77]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.67.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.271]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.78]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.68.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.272]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2056,11 +2056,11 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.77.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.97]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.98]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.77]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.67.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.271]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.78]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.68.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.1.272]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
