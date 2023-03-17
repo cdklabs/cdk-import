@@ -37,7 +37,7 @@
     "eslint-plugin-import": "^2.27.5",
     "jest": "^27",
     "jest-junit": "^13",
-    "jsii": "^1.77.0",
+    "jsii": "^1.78.1",
     "npm-check-updates": "^16",
     "projen": "^0.68.5",
     "standard-version": "^9",
@@ -47,11 +47,11 @@
   },
   "dependencies": {
     "aws-cdk-lib": "^2.69.0",
-    "aws-sdk": "^2.1336.0",
+    "aws-sdk": "^2.1337.0",
     "case": "^1.6.3",
     "constructs": "^10",
-    "jsii-srcmak": "^0.1.854",
-    "json2jsii": "^0.3.305",
+    "jsii-srcmak": "^0.1.855",
+    "json2jsii": "^0.3.306",
     "minimist": "^1.2.8",
     "minimist-subcommand": "^3.0.2",
     "proxy-agent": "^5.0.0"
