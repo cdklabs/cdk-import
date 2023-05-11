@@ -1572,12 +1572,12 @@ namespace AWSQS::EKS::Cluster
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.80.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.167]\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.81.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.168]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.140]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.78.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.2.18]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.141]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.79.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.2.19]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2055,12 +2055,12 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.80.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.167]\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.81.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.168]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.140]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.78.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.2.18]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.141]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.79.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.2.19]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2080,8 +2080,7 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
 
 exports[`golang 1`] = `
 Map {
-  "awsqs-eks-cluster/CfnCluster.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package awsqs-eks-cluster
+  "awsqs-eks-cluster/CfnCluster.go" => "package awsqs-eks-cluster
 
 import (
 	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
@@ -2912,8 +2911,7 @@ func (c *jsiiProxy_CfnCluster) ValidateProperties(_properties interface{}) {
 }
 
 ",
-  "awsqs-eks-cluster/CfnClusterProps.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package awsqs-eks-cluster
+  "awsqs-eks-cluster/CfnClusterProps.go" => "package awsqs-eks-cluster
 
 
 // A resource that creates Amazon Elastic Kubernetes Service (Amazon EKS) clusters.
@@ -2947,8 +2945,7 @@ type CfnClusterProps struct {
 }
 
 ",
-  "awsqs-eks-cluster/CfnClusterPropsKubernetesApiAccess.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package awsqs-eks-cluster
+  "awsqs-eks-cluster/CfnClusterPropsKubernetesApiAccess.go" => "package awsqs-eks-cluster
 
 
 type CfnClusterPropsKubernetesApiAccess struct {
@@ -2957,8 +2954,7 @@ type CfnClusterPropsKubernetesApiAccess struct {
 }
 
 ",
-  "awsqs-eks-cluster/CfnClusterPropsKubernetesNetworkConfig.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package awsqs-eks-cluster
+  "awsqs-eks-cluster/CfnClusterPropsKubernetesNetworkConfig.go" => "package awsqs-eks-cluster
 
 
 // Network configuration for Amazon EKS cluster.
@@ -2968,8 +2964,7 @@ type CfnClusterPropsKubernetesNetworkConfig struct {
 }
 
 ",
-  "awsqs-eks-cluster/CfnClusterPropsResourcesVpcConfig.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package awsqs-eks-cluster
+  "awsqs-eks-cluster/CfnClusterPropsResourcesVpcConfig.go" => "package awsqs-eks-cluster
 
 
 // An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
@@ -2997,8 +2992,7 @@ type CfnClusterPropsResourcesVpcConfig struct {
 }
 
 ",
-  "awsqs-eks-cluster/CfnClusterPropsTags.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package awsqs-eks-cluster
+  "awsqs-eks-cluster/CfnClusterPropsTags.go" => "package awsqs-eks-cluster
 
 
 type CfnClusterPropsTags struct {
@@ -3009,7 +3003,6 @@ type CfnClusterPropsTags struct {
 ",
   "awsqs-eks-cluster/CfnCluster__checks.go" => "//go:build !no_runtime_type_checking
 
-// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
 package awsqs-eks-cluster
 
 import (
@@ -3203,7 +3196,6 @@ func validateNewCfnClusterParameters(scope constructs.Construct, id *string, pro
 ",
   "awsqs-eks-cluster/CfnCluster__no_checks.go" => "//go:build no_runtime_type_checking
 
-// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
 package awsqs-eks-cluster
 
 // Building without runtime type checking enabled, so all the below just return nil
@@ -3285,8 +3277,7 @@ func validateNewCfnClusterParameters(scope constructs.Construct, id *string, pro
 }
 
 ",
-  "awsqs-eks-cluster/EncryptionConfigEntry.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package awsqs-eks-cluster
+  "awsqs-eks-cluster/EncryptionConfigEntry.go" => "package awsqs-eks-cluster
 
 
 // The encryption configuration for the cluster.
@@ -3299,8 +3290,7 @@ type EncryptionConfigEntry struct {
 }
 
 ",
-  "awsqs-eks-cluster/KubernetesApiAccessEntry.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package awsqs-eks-cluster
+  "awsqs-eks-cluster/KubernetesApiAccessEntry.go" => "package awsqs-eks-cluster
 
 
 type KubernetesApiAccessEntry struct {
@@ -3310,8 +3300,7 @@ type KubernetesApiAccessEntry struct {
 }
 
 ",
-  "awsqs-eks-cluster/Provider.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package awsqs-eks-cluster
+  "awsqs-eks-cluster/Provider.go" => "package awsqs-eks-cluster
 
 
 // AWS Key Management Service (AWS KMS) customer master key (CMK).
@@ -3366,7 +3355,8 @@ func Initialize() {
 	_jsii_.Load(\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6\\", \\"0.0.0\\", tarball)
 }
 ",
-  "awsqs-eks-cluster/main.go" => "package awsqs-eks-cluster
+  "awsqs-eks-cluster/main.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package awsqs-eks-cluster
 
 import (
 	\\"reflect\\"
@@ -3472,8 +3462,7 @@ func init() {
 
 exports[`golang 2`] = `
 Map {
-  "ec2-compute-instance/Ec2ComputeInstance.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package ec2-compute-instance
+  "ec2-compute-instance/Ec2ComputeInstance.go" => "package ec2-compute-instance
 
 import (
 	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
@@ -3827,8 +3816,7 @@ func (e *jsiiProxy_Ec2ComputeInstance) ToString() *string {
 }
 
 ",
-  "ec2-compute-instance/Ec2ComputeInstanceProps.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package ec2-compute-instance
+  "ec2-compute-instance/Ec2ComputeInstanceProps.go" => "package ec2-compute-instance
 
 
 type Ec2ComputeInstanceProps struct {
@@ -3849,8 +3837,7 @@ type Ec2ComputeInstanceProps struct {
 }
 
 ",
-  "ec2-compute-instance/Ec2ComputeInstance_InstanceType.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package ec2-compute-instance
+  "ec2-compute-instance/Ec2ComputeInstance_InstanceType.go" => "package ec2-compute-instance
 
 
 type Ec2ComputeInstance_InstanceType string
@@ -3863,8 +3850,7 @@ const (
 )
 
 ",
-  "ec2-compute-instance/Ec2ComputeInstance_Numbers.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package ec2-compute-instance
+  "ec2-compute-instance/Ec2ComputeInstance_Numbers.go" => "package ec2-compute-instance
 
 
 type Ec2ComputeInstance_Numbers string
@@ -3885,7 +3871,6 @@ const (
 ",
   "ec2-compute-instance/Ec2ComputeInstance__checks.go" => "//go:build !no_runtime_type_checking
 
-// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
 package ec2-compute-instance
 
 import (
@@ -3974,7 +3959,6 @@ func validateNewEc2ComputeInstanceParameters(scope constructs.Construct, id *str
 ",
   "ec2-compute-instance/Ec2ComputeInstance__no_checks.go" => "//go:build no_runtime_type_checking
 
-// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
 package ec2-compute-instance
 
 // Building without runtime type checking enabled, so all the below just return nil
@@ -4008,8 +3992,7 @@ func validateNewEc2ComputeInstanceParameters(scope constructs.Construct, id *str
 }
 
 ",
-  "ec2-compute-instance/IEc2ComputeInstance.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package ec2-compute-instance
+  "ec2-compute-instance/IEc2ComputeInstance.go" => "package ec2-compute-instance
 
 import (
 	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
@@ -4136,7 +4119,8 @@ func Initialize() {
 	_jsii_.Load(\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6\\", \\"0.0.0\\", tarball)
 }
 ",
-  "ec2-compute-instance/main.go" => "package ec2-compute-instance
+  "ec2-compute-instance/main.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package ec2-compute-instance
 
 import (
 	\\"reflect\\"
