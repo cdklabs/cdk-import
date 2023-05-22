@@ -1,6 +1,10 @@
-const { typescript } = require('projen');
-const project = new typescript.TypeScriptProject({
+import { CdklabsTypeScriptProject } from 'cdklabs-projen-project-types';
+
+const project = new CdklabsTypeScriptProject({
   name: 'cdk-import',
+  projenrcTs: true,
+  private: false,
+  enablePRAutoMerge: true,
   description: 'Toolkit to import CFN resource types and generate L1 constructs',
   defaultReleaseBranch: 'main',
   deps: [
@@ -19,6 +23,7 @@ const project = new typescript.TypeScriptProject({
     'ts-node',
     'aws-cdk-lib',
     'constructs@^10',
+    'cdklabs-projen-project-types',
   ],
   bin: {
     'cdk-import': 'lib/cli.js',
@@ -28,14 +33,15 @@ const project = new typescript.TypeScriptProject({
       skipLibCheck: true,
     },
   },
+  releaseToNpm: true,
 
-  minNodeVersion: '14.18.0',
+  workflowNodeVersion: '16.x',
+  minNodeVersion: '16.0.0',
 
-  projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
   autoApproveUpgrades: true,
   autoApproveOptions: { allowedUsernames: ['cdklabs-automation'], secret: 'GITHUB_TOKEN' },
 });
-project.release.publisher.publishToNpm();
+
 project.addGitIgnore('/.tmp/');
 project.addPackageIgnore('/.tmp/');
 
