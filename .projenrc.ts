@@ -1,6 +1,8 @@
-const { typescript } = require('projen');
+import { typescript } from 'projen';
+
 const project = new typescript.TypeScriptProject({
   name: 'cdk-import',
+  projenrcTs: true,
   description: 'Toolkit to import CFN resource types and generate L1 constructs',
   defaultReleaseBranch: 'main',
   deps: [
@@ -28,14 +30,14 @@ const project = new typescript.TypeScriptProject({
       skipLibCheck: true,
     },
   },
+  // releaseToNpm: true,
 
   minNodeVersion: '14.18.0',
 
-  projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
   autoApproveUpgrades: true,
   autoApproveOptions: { allowedUsernames: ['cdklabs-automation'], secret: 'GITHUB_TOKEN' },
 });
-project.release.publisher.publishToNpm();
+project.release!.publisher.publishToNpm();
 project.addGitIgnore('/.tmp/');
 project.addPackageIgnore('/.tmp/');
 
