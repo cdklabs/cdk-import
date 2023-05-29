@@ -1682,12 +1682,12 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdklabs-projen-project-types@^0.1.113:
-  version "0.1.113"
-  resolved "https://registry.yarnpkg.com/cdklabs-projen-project-types/-/cdklabs-projen-project-types-0.1.113.tgz#9165394a532d33db4b19908c58f8c6042db0be86"
-  integrity sha512-yq43V9EBdM2D9wD7liAX8xq6Aq60uWzZdANpjHZAz0hXv78iOlU3Y/f30VsJyS+pVu4/huJTOz8SB+KMDG1zFg==
+cdklabs-projen-project-types@^0.1.114:
+  version "0.1.114"
+  resolved "https://registry.yarnpkg.com/cdklabs-projen-project-types/-/cdklabs-projen-project-types-0.1.114.tgz#30ba7bb142f8027385f5cb577db3b657dfba88be"
+  integrity sha512-adtOY7hzZKn9SXMVU6XmIDawodFKijISVefcK8b+CoE7HwrEo9NcFrFam3s7Kcn5M/Ds6HEbFxugs2ROzrLycA==
   dependencies:
-    projen "^0.71.72"
+    projen "^0.71.74"
     yaml "^2.3.1"
 
 chalk@^2.0.0, chalk@^2.4.2:
@@ -5552,10 +5552,10 @@ projen@^0.71.67:
     yaml "^2.2.2"
     yargs "^17.7.2"
 
-projen@^0.71.72:
-  version "0.71.72"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.71.72.tgz#09931aba405f2f6d560fd59d02ff3fcd9b988d9f"
-  integrity sha512-9Ar1mR/PGGacd6c9GhFltI8QzE0fa6VwMzXiZekSL63UQlGU5w+Ab9yXwvzclj/Hgj76HnLqCfUrWxdA2qh9lw==
+projen@^0.71.74:
+  version "0.71.74"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.71.74.tgz#b973d2ddaf735cd520ce9e2eb4b9d1c29abe9ccb"
+  integrity sha512-k0jybT3Gi6ImhEKOte5+tQ3TLhECYNxROan6MN4j6iRAmzAcHklsjPhi0K8kOpEG6A2V/jGSen3i7lSueDfqjw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -6387,9 +6387,9 @@ stringify-package@^1.0.1:
     ansi-regex "^5.0.1"
 
 strip-ansi@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-7.0.1.tgz#61740a08ce36b61e50e65653f07060d000975fb2"
-  integrity sha512-cXNxvT8dFNRVfhVME3JAe98mkXDYN2O1l7jmcwMnOslDeESg1rF/OZMtK0nRAhiari1unG5cD4jG3rapUAkLbw==
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-7.1.0.tgz#d5b6568ca689d8561370b0707685d22434faff45"
+  integrity sha512-iq6eVVI64nQQTRYq2KtEg2d2uU7LElhTJwsH4YzIHZshxlgZms/wIc4VoDQTlG/IvVIrBKG06CrZnp0qv7hkcQ==
   dependencies:
     ansi-regex "^6.0.1"
 
