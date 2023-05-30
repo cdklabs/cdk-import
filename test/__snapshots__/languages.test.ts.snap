@@ -1572,12 +1572,12 @@ namespace AWSQS::EKS::Cluster
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.81.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.183]\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.82.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.185]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.153]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.80.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.2.31]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.155]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.81.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.2.37]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2055,12 +2055,12 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.81.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.183]\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.82.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.185]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.KubectlV20\\" Version=\\"[2.1.1]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.153]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.80.0]\\" />
-    <PackageReference Include=\\"Constructs\\" Version=\\"[10.2.31]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV5\\" Version=\\"[2.0.155]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Lib\\" Version=\\"[2.81.0]\\" />
+    <PackageReference Include=\\"Constructs\\" Version=\\"[10.2.37]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -4289,7 +4289,7 @@ public final class $Module extends JsiiModule {
   "src/main/java/com/my/module/CfnCluster.java" => "package com.my.module;
 
 /**
- * A CloudFormation \`AWSQS::EKS::Cluster\`.
+ * A CloudFormation <code>AWSQS::EKS::Cluster</code>.
  */
 @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
 @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnCluster\\")
@@ -4308,11 +4308,11 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * Create a new \`AWSQS::EKS::Cluster\`.
+     * Create a new <code>AWSQS::EKS::Cluster</code>.
      * <p>
-     * @param scope - scope in which this resource is defined. This parameter is required.
-     * @param id - scoped id of the resource. This parameter is required.
-     * @param props - resource properties. This parameter is required.
+     * @param scope <ul><li>scope in which this resource is defined.</li></ul> This parameter is required.
+     * @param id <ul><li>scoped id of the resource.</li></ul> This parameter is required.
+     * @param props <ul><li>resource properties.</li></ul> This parameter is required.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public CfnCluster(final @org.jetbrains.annotations.NotNull software.constructs.Construct scope, final @org.jetbrains.annotations.NotNull java.lang.String id, final @org.jetbrains.annotations.NotNull com.my.module.CfnClusterProps props) {
@@ -4327,7 +4327,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     public final static java.lang.String CFN_RESOURCE_TYPE_NAME;
 
     /**
-     * Attribute \`AWSQS::EKS::Cluster.Arn\`.
+     * Attribute <code>AWSQS::EKS::Cluster.Arn</code>.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.NotNull java.lang.String getAttrArn() {
@@ -4335,7 +4335,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * Attribute \`AWSQS::EKS::Cluster.CertificateAuthorityData\`.
+     * Attribute <code>AWSQS::EKS::Cluster.CertificateAuthorityData</code>.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.NotNull java.lang.String getAttrCertificateAuthorityData() {
@@ -4343,7 +4343,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * Attribute \`AWSQS::EKS::Cluster.ClusterSecurityGroupId\`.
+     * Attribute <code>AWSQS::EKS::Cluster.ClusterSecurityGroupId</code>.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.NotNull java.lang.String getAttrClusterSecurityGroupId() {
@@ -4351,7 +4351,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * Attribute \`AWSQS::EKS::Cluster.EncryptionConfigKeyArn\`.
+     * Attribute <code>AWSQS::EKS::Cluster.EncryptionConfigKeyArn</code>.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.NotNull java.lang.String getAttrEncryptionConfigKeyArn() {
@@ -4359,7 +4359,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * Attribute \`AWSQS::EKS::Cluster.Endpoint\`.
+     * Attribute <code>AWSQS::EKS::Cluster.Endpoint</code>.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.NotNull java.lang.String getAttrEndpoint() {
@@ -4367,7 +4367,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * Attribute \`AWSQS::EKS::Cluster.OIDCIssuerURL\`.
+     * Attribute <code>AWSQS::EKS::Cluster.OIDCIssuerURL</code>.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.NotNull java.lang.String getAttrOIDCIssuerURL() {
@@ -4375,7 +4375,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * \`AWSQS::EKS::Cluster.KubernetesApiAccess\`.
+     * <code>AWSQS::EKS::Cluster.KubernetesApiAccess</code>.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.NotNull java.lang.Object getKubernetesApiAccess() {
@@ -4383,7 +4383,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * \`AWSQS::EKS::Cluster.KubernetesNetworkConfig\` Network configuration for Amazon EKS cluster.
+     * <code>AWSQS::EKS::Cluster.KubernetesNetworkConfig</code> Network configuration for Amazon EKS cluster.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.NotNull java.lang.Object getKubernetesNetworkConfig() {
@@ -4391,7 +4391,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * \`AWSQS::EKS::Cluster.ResourcesVpcConfig\` An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
+     * <code>AWSQS::EKS::Cluster.ResourcesVpcConfig</code> An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.NotNull java.lang.Object getResourcesVpcConfig() {
@@ -4399,7 +4399,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * \`AWSQS::EKS::Cluster.RoleArn\` Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role. This provides permissions for Amazon EKS to call other AWS APIs.
+     * <code>AWSQS::EKS::Cluster.RoleArn</code> Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role. This provides permissions for Amazon EKS to call other AWS APIs.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.NotNull java.lang.String getRoleArn() {
@@ -4407,7 +4407,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * \`AWSQS::EKS::Cluster.EnabledClusterLoggingTypes\` Enables exporting of logs from the Kubernetes control plane to Amazon CloudWatch Logs. By default, logs from the cluster control plane are not exported to CloudWatch Logs. The valid log types are api, audit, authenticator, controllerManager, and scheduler.
+     * <code>AWSQS::EKS::Cluster.EnabledClusterLoggingTypes</code> Enables exporting of logs from the Kubernetes control plane to Amazon CloudWatch Logs. By default, logs from the cluster control plane are not exported to CloudWatch Logs. The valid log types are api, audit, authenticator, controllerManager, and scheduler.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.Nullable java.util.List<java.lang.String> getEnabledClusterLoggingTypes() {
@@ -4415,7 +4415,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * \`AWSQS::EKS::Cluster.EncryptionConfig\` Encryption configuration for the cluster.
+     * <code>AWSQS::EKS::Cluster.EncryptionConfig</code> Encryption configuration for the cluster.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.Nullable java.util.List<com.my.module.EncryptionConfigEntry> getEncryptionConfig() {
@@ -4423,7 +4423,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * \`AWSQS::EKS::Cluster.LambdaRoleName\` Name of the AWS Identity and Access Management (IAM) role used for clusters that have the public endpoint disabled. this provides permissions for Lambda to be invoked and attach to the cluster VPC.
+     * <code>AWSQS::EKS::Cluster.LambdaRoleName</code> Name of the AWS Identity and Access Management (IAM) role used for clusters that have the public endpoint disabled. this provides permissions for Lambda to be invoked and attach to the cluster VPC.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.Nullable java.lang.String getLambdaRoleName() {
@@ -4431,7 +4431,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * \`AWSQS::EKS::Cluster.Name\` A unique name for your cluster.
+     * <code>AWSQS::EKS::Cluster.Name</code> A unique name for your cluster.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.Nullable java.lang.String getName() {
@@ -4439,7 +4439,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * \`AWSQS::EKS::Cluster.Tags\`.
+     * <code>AWSQS::EKS::Cluster.Tags</code>.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.Nullable java.util.List<java.lang.Object> getTags() {
@@ -4447,7 +4447,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     }
 
     /**
-     * \`AWSQS::EKS::Cluster.Version\` Desired Kubernetes version for your cluster. If you don't specify this value, the cluster uses the latest version from Amazon EKS.
+     * <code>AWSQS::EKS::Cluster.Version</code> Desired Kubernetes version for your cluster. If you don't specify this value, the cluster uses the latest version from Amazon EKS.
      */
     @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
     public @org.jetbrains.annotations.Nullable java.lang.String getVersion() {
@@ -4461,8 +4461,8 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
     public static final class Builder implements software.amazon.jsii.Builder<com.my.module.CfnCluster> {
         /**
          * @return a new instance of {@link Builder}.
-         * @param scope - scope in which this resource is defined. This parameter is required.
-         * @param id - scoped id of the resource. This parameter is required.
+         * @param scope <ul><li>scope in which this resource is defined.</li></ul> This parameter is required.
+         * @param id <ul><li>scoped id of the resource.</li></ul> This parameter is required.
          */
         @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
         public static Builder create(final software.constructs.Construct scope, final java.lang.String id) {
@@ -4594,7 +4594,7 @@ public class CfnCluster extends software.amazon.awscdk.CfnResource {
         }
 
         /**
-         * @returns a newly built instance of {@link com.my.module.CfnCluster}.
+         * @return a newly built instance of {@link com.my.module.CfnCluster}.
          */
         @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
         @Override
@@ -6215,11 +6215,11 @@ public class Ec2ComputeInstance extends software.amazon.awscdk.Resource implemen
     }
 
     /**
-     * Create a new Service Catalog \\\\\`Ec2ComputeInstance\\\\\` product.
+     * Create a new Service Catalog \`Ec2ComputeInstance\` product.
      * <p>
-     * @param scope - scope in which this resource is defined. This parameter is required.
-     * @param id - scoped id of the resource. This parameter is required.
-     * @param props - resource properties. This parameter is required.
+     * @param scope <ul><li>scope in which this resource is defined.</li></ul> This parameter is required.
+     * @param id <ul><li>scoped id of the resource.</li></ul> This parameter is required.
+     * @param props <ul><li>resource properties.</li></ul> This parameter is required.
      */
     public Ec2ComputeInstance(final @org.jetbrains.annotations.NotNull software.constructs.Construct scope, final @org.jetbrains.annotations.NotNull java.lang.String id, final @org.jetbrains.annotations.NotNull com.my.module.Ec2ComputeInstanceProps props) {
         super(software.amazon.jsii.JsiiObject.InitializationMode.JSII);
@@ -6272,23 +6272,23 @@ public class Ec2ComputeInstance extends software.amazon.awscdk.Resource implemen
     @software.amazon.jsii.Jsii(module = com.my.module.$Module.class, fqn = \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.Numbers\\")
     public enum Numbers {
         /**
-         * 1.
+         * <ol><li></li></ol>
          */
         VALUE_1,
         /**
-         * 2.
+         * <ol><li></li></ol>
          */
         VALUE_2,
         /**
-         * 3.
+         * <ol><li></li></ol>
          */
         VALUE_3,
         /**
-         * 4.
+         * <ol><li></li></ol>
          */
         VALUE_4,
         /**
-         * 5.
+         * <ol><li></li></ol>
          */
         VALUE_5,
     }
@@ -6299,8 +6299,8 @@ public class Ec2ComputeInstance extends software.amazon.awscdk.Resource implemen
     public static final class Builder implements software.amazon.jsii.Builder<com.my.module.Ec2ComputeInstance> {
         /**
          * @return a new instance of {@link Builder}.
-         * @param scope - scope in which this resource is defined. This parameter is required.
-         * @param id - scoped id of the resource. This parameter is required.
+         * @param scope <ul><li>scope in which this resource is defined.</li></ul> This parameter is required.
+         * @param id <ul><li>scoped id of the resource.</li></ul> This parameter is required.
          */
         public static Builder create(final software.constructs.Construct scope, final java.lang.String id) {
             return new Builder(scope, id);
@@ -6364,7 +6364,7 @@ public class Ec2ComputeInstance extends software.amazon.awscdk.Resource implemen
         }
 
         /**
-         * @returns a newly built instance of {@link com.my.module.Ec2ComputeInstance}.
+         * @return a newly built instance of {@link com.my.module.Ec2ComputeInstance}.
          */
         @Override
         public com.my.module.Ec2ComputeInstance build() {
