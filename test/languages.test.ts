@@ -72,6 +72,10 @@ async function captureDirectory(base: string) {
 function filterGeneratedContent(content: string) {
   return content
     .split('\n')
+    // Ignore dynamic content in .java files
     .filter(line => !line.includes('@javax.annotation.Generated'))
+    // Ignore versions in .csproj otherwise this will fail on every update
+    .filter(line => !line.includes('PackageReference Include=\"Amazon.CDK.Lib\"'))
+    .filter(line => !line.includes('PackageReference Include=\"Constructs\"'))
     .join('\n');
 }
