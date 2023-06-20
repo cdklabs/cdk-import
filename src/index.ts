@@ -24,7 +24,7 @@ export async function readResourceDefinitionFromRegistry(
   const type = await describeResourceType(resourceName, options);
 
   return {
-    TypeName: resourceName,
+    TypeName: type.TypeName,
     Schema: type.Schema,
     SourceUrl: type.SourceUrl,
   };
