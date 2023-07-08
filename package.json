@@ -46,7 +46,7 @@
     "jest-junit": "^15",
     "jsii": "^1.84.0",
     "npm-check-updates": "^16",
-    "projen": "^0.71.126",
+    "projen": "^0.71.127",
     "standard-version": "^9",
     "ts-jest": "^27",
     "ts-node": "^10.9.1",
@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "aws-cdk-lib": "^2.87.0",
-    "aws-sdk": "^2.1412.0",
+    "aws-sdk": "^2.1413.0",
     "case": "^1.6.3",
     "constructs": "^10",
     "jsii-srcmak": "^0.1.949",
