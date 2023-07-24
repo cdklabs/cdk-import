@@ -46,7 +46,7 @@
     "jest-junit": "^15",
     "jsii": "^1.85.0",
     "npm-check-updates": "^16",
-    "projen": "^0.71.147",
+    "projen": "^0.71.148",
     "standard-version": "^9",
     "ts-jest": "^27",
     "ts-node": "^10.9.1",
