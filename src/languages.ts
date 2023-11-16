@@ -8,7 +8,7 @@ const cdkDeps = [
   'constructs',
   '@aws-cdk/asset-awscli-v1',
   '@aws-cdk/asset-kubectl-v20',
-  '@aws-cdk/asset-node-proxy-agent-v5',
+  '@aws-cdk/asset-node-proxy-agent-v6',
 ];
 
 export const SUPPORTED_LANGUAGES = [
