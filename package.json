@@ -53,10 +53,10 @@
   },
   "dependencies": {
     "aws-cdk-lib": "^2.110.1",
-    "aws-sdk": "^2.1501.0",
+    "aws-sdk": "^2.1502.0",
     "case": "^1.6.3",
     "constructs": "^10",
-    "jsii-srcmak": "^0.1.973",
+    "jsii-srcmak": "^0.1.976",
     "json2jsii": "^0.4.1",
     "minimist": "^1.2.8",
     "minimist-subcommand": "^3.0.2",
