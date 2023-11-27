@@ -1214,10 +1214,10 @@ aws-cdk-lib@^2.110.1:
     table "^6.8.1"
     yaml "1.10.2"
 
-aws-sdk@^2.1502.0:
-  version "2.1502.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1502.0.tgz#13bc01d63f19bae4ddc3992d8971861d58a740e0"
-  integrity sha512-mUXUaWmbIyqE6zyIcbUUQIUgw1evK7gV1vQP7ZZEE0qi6hO2Mw99Nc25Bh+187yvRxamMTsFXvvmBViR0Q75SA==
+aws-sdk@^2.1503.0:
+  version "2.1503.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1503.0.tgz#30d6e28cc2b42c65766e1c987a6d8d2b09bfb36c"
+  integrity sha512-tDXgUp8RvVLkCI1cgDWh4zjz5V2N8K5GpCwNszqzFEHf87fSwqjFj11QZbyr+r/xktk78dpPMT0RjB1fOoJjjA==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -3723,10 +3723,10 @@ jsii-rosetta@^1.92.0:
     workerpool "^6.5.1"
     yargs "^16.2.0"
 
-jsii-srcmak@^0.1.977:
-  version "0.1.977"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.977.tgz#bbb6e692498cdfb30964b99199fb6b2ec0e18564"
-  integrity sha512-yEvHIas7IJB48DgzaIjvc8+E27yIMsyZeHdplhjFfT/gi3IO3kCd6QJtGGkhGeYvdJSxfyp5Wy2k3/5JGbwsvg==
+jsii-srcmak@^0.1.978:
+  version "0.1.978"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.978.tgz#340e05d62eebfbbc7d1104a7d3ed9da0c82e40ff"
+  integrity sha512-OXfck4d1dDJHnZ8S49Yajrr1u4y6+gmLg66uvjaxtbe0jebQ7chECL3RWedUZKvIkucslMyfk3YjxUSIJWiVOQ==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.2.32"
@@ -3754,9 +3754,9 @@ jsii@1.92.0, jsii@^1.92.0:
     yargs "^16.2.0"
 
 jsii@~5.2.32:
-  version "5.2.32"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.2.32.tgz#4e07ce3ac92c7ca752e693d2df2f3b6c120ae117"
-  integrity sha512-91g2+havdNomPRVmkkhv7SDxb66t8UybdkWkDH7ESK1SenZZ5VrAievYDSNQG16tBO0YBn1mTCy4G1pbFhPvfQ==
+  version "5.2.35"
+  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.2.35.tgz#d56a9cb8f01f709250df28b61b365c5978652538"
+  integrity sha512-idWKsPquJDpJR8rCxOVtTwUKtvHM4BA6e8SvylTF6ZVDHBxnKbD4wB7cQLeB2JPKKsW31TIG63+fND6HUw2V3w==
   dependencies:
     "@jsii/check-node" "1.92.0"
     "@jsii/spec" "^1.92.0"
@@ -5532,9 +5532,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.4.0-dev.20231126"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.0-dev.20231126.tgz#23d49e837ae43c9db3be3739832aa393633939a3"
-  integrity sha512-H10NDH9sKzdLCICwIO+hhk+La5Kfs4/+Qit1tWjd7Xw7h/42y0Ulqhc6Wm+n8XO5PEkgZeOEY8EUBd/evOhLig==
+  version "5.4.0-dev.20231127"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.0-dev.20231127.tgz#944c1e3be13da87c83ccde78d691823c8c30241d"
+  integrity sha512-uMH221WFT99TGfR5vMcI1AaoMc9CnpzMFps1zxzLkdweS+IKrF6SlMK0y5fYztaf0BdNOHcdpyyET9cEoJy8+w==
 
 typescript@~3.9.10:
   version "3.9.10"
