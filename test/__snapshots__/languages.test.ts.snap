@@ -2609,11 +2609,11 @@ func CfnCluster_IsCfnElement(x interface{}) *bool {
 	return returns
 }
 
-// Check whether the given construct is a CfnResource.
-func CfnCluster_IsCfnResource(construct constructs.IConstruct) *bool {
+// Check whether the given object is a CfnResource.
+func CfnCluster_IsCfnResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnCluster_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnCluster_IsCfnResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
@@ -2621,7 +2621,7 @@ func CfnCluster_IsCfnResource(construct constructs.IConstruct) *bool {
 	_jsii_.StaticInvoke(
 		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnCluster\\",
 		\\"isCfnResource\\",
-		[]interface{}{construct},
+		[]interface{}{x},
 		&returns,
 	)
 
@@ -3154,9 +3154,9 @@ func validateCfnCluster_IsCfnElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCfnCluster_IsCfnResourceParameters(construct constructs.IConstruct) error {
-	if construct == nil {
-		return fmt.Errorf(\\"parameter construct is required, but nil was provided\\")
+func validateCfnCluster_IsCfnResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf(\\"parameter x is required, but nil was provided\\")
 	}
 
 	return nil
@@ -3260,7 +3260,7 @@ func validateCfnCluster_IsCfnElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCfnCluster_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnCluster_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 
