@@ -36,7 +36,7 @@
     "@types/node": "^16",
     "@typescript-eslint/eslint-plugin": "^6",
     "@typescript-eslint/parser": "^6",
-    "aws-cdk-lib": "^2.111.0",
+    "aws-cdk-lib": "^2.113.0",
     "cdklabs-projen-project-types": "^0.1.182",
     "constructs": "^10.0.0",
     "eslint": "^8",
