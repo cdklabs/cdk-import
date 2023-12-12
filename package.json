@@ -45,7 +45,7 @@
     "jest": "^27",
     "jest-junit": "^15",
     "jsii": "^1.93.0",
-    "projen": "^0.77.5",
+    "projen": "^0.77.6",
     "standard-version": "^9",
     "ts-jest": "^27",
     "ts-node": "^10.9.2",
