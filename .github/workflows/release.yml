@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: lts/*
       - name: Install dependencies
         run: yarn install --check-files --frozen-lockfile
       - name: release
@@ -70,7 +70,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: lts/*
       - name: Download build artifacts
         uses: actions/download-artifact@v3
         with:
@@ -95,7 +95,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: lts/*
       - name: Download build artifacts
         uses: actions/download-artifact@v3
         with:
