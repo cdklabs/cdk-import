@@ -35,7 +35,6 @@ const project = new CdklabsTypeScriptProject({
   },
   releaseToNpm: true,
 
-  workflowNodeVersion: 'lts/*',
   minNodeVersion: '16.0.0',
 
   autoApproveUpgrades: true,
