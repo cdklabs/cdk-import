@@ -3724,10 +3724,10 @@ jsii-rosetta@^1.94.0:
     workerpool "^6.5.1"
     yargs "^16.2.0"
 
-jsii-srcmak@^0.1.1018:
-  version "0.1.1018"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1018.tgz#f4380e8b7c3128df289a7c8881e4535b60590137"
-  integrity sha512-4ZZZ0BsnVJHMg79+rEZuSY0rIpIC3esG0zTDSsTqa/fSUsU+4lF0CD6owl9FAxQcvuEfoyhltGKXYSdAIQvKSA==
+jsii-srcmak@^0.1.1019:
+  version "0.1.1019"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1019.tgz#09747c6cd0ec1a01b0913b1e6d5030e1a4c85e0e"
+  integrity sha512-qgwLpgAJiFEMmnlmuZ3ZI1fUN3htDD9CgvATISDFIdQ5SQO5XTIfyrD2hjbKhiyb9ijKOhNZzncgI7cnhzvZAg==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.3.11"
@@ -3755,9 +3755,9 @@ jsii@1.94.0, jsii@^1.94.0:
     yargs "^16.2.0"
 
 jsii@~5.3.11:
-  version "5.3.11"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.3.11.tgz#f885ae14c84d5e1461ba491106f6251d5dcc2c0a"
-  integrity sha512-AhRb6bGYzQ4qeKn0dksJjRY/bQUz1zt/FwPPgb488P0Hr+taUbggNihebZEAzLZCJ3yH0ohgIgtQEAIx+NI/vA==
+  version "5.3.12"
+  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.3.12.tgz#b19ae542ee006148f6d35cc73431f824cf01b942"
+  integrity sha512-G2hWcEIfED1JuP6EwCFO94Ho4LO8j/na7A4I/ekdCEEmdLAFUvgXTZ4rRuZeiMLmvU0rKyb24r8V18gl+BbkNA==
   dependencies:
     "@jsii/check-node" "1.94.0"
     "@jsii/spec" "^1.94.0"
@@ -5541,9 +5541,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.4.0-dev.20240128"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.0-dev.20240128.tgz#d3b4204a4f2ec66eae72d4d969307858c014b24d"
-  integrity sha512-SfSvvhZKrpjP/LSfkjpg/VUFMXElCXEtU7SzfHoPph8e3PBlbjZlQdLczkEr95M7wj8V/iiXWyqAoPuQ6nuI4A==
+  version "5.4.0-dev.20240129"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.0-dev.20240129.tgz#40bc305d1c3a7d84186008a3f83472759bf08a6e"
+  integrity sha512-MCwiuPLBvW2mJYE2/BIwY4xLsLMC+Ov69PFEavtpb5NdGTFcfPoqa++2co9E4GXU7lBjqjDncBs86qjmvcHtDQ==
 
 typescript@~3.9.10:
   version "3.9.10"
