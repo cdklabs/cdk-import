@@ -52,11 +52,11 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.124.0",
-    "aws-sdk": "^2.1547.0",
+    "aws-cdk-lib": "^2.125.0",
+    "aws-sdk": "^2.1548.0",
     "case": "^1.6.3",
     "constructs": "^10",
-    "jsii-srcmak": "^0.1.1021",
+    "jsii-srcmak": "^0.1.1022",
     "json2jsii": "^0.4.3",
     "minimist": "^1.2.8",
     "minimist-subcommand": "^3.0.2",
