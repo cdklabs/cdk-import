@@ -1215,10 +1215,10 @@ aws-cdk-lib@^2.126.0:
     table "^6.8.1"
     yaml "1.10.2"
 
-aws-sdk@^2.1552.0:
-  version "2.1552.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1552.0.tgz#b5b7b1b21d8cbd9647164485095608068b650761"
-  integrity sha512-sRuzlCeSHXUsdLqsV/E+nPrgBn1EI3BoA38D5qfNMRcPTd9j4G8M4AyMymKyNxLoWOKLqz7xFBa801MHflGwEg==
+aws-sdk@^2.1553.0:
+  version "2.1553.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1553.0.tgz#e2df53473b217781bc78960994c75094599224b7"
+  integrity sha512-CfZaw8dR9e642aBOeFhkFL7KoQApeLR15uH2IQqfL/12snWYayAAesYh0tEaU+XbhrH0CUsf2Zro5IraEXEZMg==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -3772,10 +3772,10 @@ jsii-rosetta@^1.94.0:
     workerpool "^6.5.1"
     yargs "^16.2.0"
 
-jsii-srcmak@^0.1.1028:
-  version "0.1.1028"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1028.tgz#4d9505e0daa3f29aafac6d4876edf7d3b30527e9"
-  integrity sha512-wR/yaOWJQuHI0iZsZsIixmBWq9kdnHj27sCcqTnqZo0UXCw57VJIRB043iMqrQAwDq+qGyh9NhZhqgKgvkhekA==
+jsii-srcmak@^0.1.1029:
+  version "0.1.1029"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1029.tgz#b33c94b8b0e76d5d17929b7a4d4894826cddcb0b"
+  integrity sha512-SDmw+A6UkX+OoEIWtUu7gefmMsC7zrKOAnYGFawwhLwVLExb7MIh73kXPdwBoR1iM/xe1Mv8XB1qSjFR2CA3zw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.3.15"
@@ -5597,9 +5597,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.4.0-dev.20240207"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.0-dev.20240207.tgz#901fe5a3f62b28edd511bc15ad325a973f7cc66d"
-  integrity sha512-BD7gF4QnjiTzOPqstgkgBxANkltT6VsZS6gFjXf7haPWTgrcebvCNQr1yGazb0o18RVtNXeHs6lDbXKqhJhiQQ==
+  version "5.4.0-dev.20240208"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.0-dev.20240208.tgz#38a8e92a77a5d65539d283c36f25b1a76e01c41c"
+  integrity sha512-mZzIKm6ytXrGFZWu8Ttzk5aY7pIGD+5MPq32ByuGTv0oCafoi1HqdH229UUFiivIsIW/L2/vGE3kHs/sVL0UNA==
 
 typescript@~3.9.10:
   version "3.9.10"
