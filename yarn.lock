@@ -1191,10 +1191,17 @@ at-least-node@^1.0.0:
   resolved "https://registry.yarnpkg.com/at-least-node/-/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
   integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
-available-typed-arrays@^1.0.5, available-typed-arrays@^1.0.6:
+available-typed-arrays@^1.0.5:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.6.tgz#ac812d8ce5a6b976d738e1c45f08d0b00bc7d725"
   integrity sha512-j1QzY8iPNPG4o4xmO3ptzpRxTciqD3MgEHtifP/YnJpIo58Xu+ne4BejlbkuaLfXn/nz6HFiw29bLpj2PNMdGg==
+
+available-typed-arrays@^1.0.6:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.7.tgz#a5cc375d6a03c2efc87a553f3e0b1522def14846"
+  integrity sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==
+  dependencies:
+    possible-typed-array-names "^1.0.0"
 
 aws-cdk-lib@^2.128.0:
   version "2.128.0"
@@ -1215,10 +1222,10 @@ aws-cdk-lib@^2.128.0:
     table "^6.8.1"
     yaml "1.10.2"
 
-aws-sdk@^2.1560.0:
-  version "2.1560.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1560.0.tgz#f43b2b4d212ecf1da86ce1b1f4f0c5308c74f9e5"
-  integrity sha512-nakTZHytnhKWZpwu9d1crqjoegBRG+j1/rflsVnckXxoIwlKM0D/v/NIe+BJmRnCA2aCdwuMx3dtkgLz/AB6VA==
+aws-sdk@^2.1561.0:
+  version "2.1561.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1561.0.tgz#cfe24c92818f9f4bd4a91a0f45aca26c8688faf6"
+  integrity sha512-YbYQOyvy9mfEGRI4JDZjw6J0zW6bjyV7H3WMWeq69qETvZlkq8koy5CTPMCjnL8i7boDjyW9FuhQzICBbeNgLg==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -2475,7 +2482,12 @@ flat-cache@^3.0.4:
     keyv "^4.5.3"
     rimraf "^3.0.2"
 
-flatted@^3.2.7, flatted@^3.2.9:
+flatted@^3.2.7:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.3.0.tgz#5fdca2b5e671cd38d1537427a10e02a2caa8257e"
+  integrity sha512-noqGuLw158+DuD9UPRKHpJ2hGxpFyDlYYrfM0mWt4XhT4n0lwzTLh70Tkdyy4kyTmyTT9Bv7bWAJqw7cgkEXDg==
+
+flatted@^3.2.9:
   version "3.2.9"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.9.tgz#7eb4c67ca1ba34232ca9d2d93e9886e611ad7daf"
   integrity sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==
@@ -2813,9 +2825,9 @@ has-property-descriptors@^1.0.1:
     es-define-property "^1.0.0"
 
 has-proto@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/has-proto/-/has-proto-1.0.1.tgz#1885c1305538958aff469fef37937c22795408e0"
-  integrity sha512-7qE+iP+O+bgF9clE5+UoBFzE65mlBiVj3tKCrlNQ0Ogwm0BjpT/gK4SlLYDMybDh5I3TCTKnPPa0oMG7JDYrhg==
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/has-proto/-/has-proto-1.0.3.tgz#b31ddfe9b0e6e9914536a6ab286426d0214f77fd"
+  integrity sha512-SJ1amZAJUiZS+PhsVLf5tGydlaVB8EdFpaSO4gmiUKUOxk8qzn5AIy4ZeJUmh22znIdk/uMAUT2pl3FxzVUH+Q==
 
 has-symbols@^1.0.2, has-symbols@^1.0.3:
   version "1.0.3"
@@ -4569,6 +4581,11 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
+possible-typed-array-names@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/possible-typed-array-names/-/possible-typed-array-names-1.0.0.tgz#89bb63c6fada2c3e90adc4a647beeeb39cc7bf8f"
+  integrity sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q==
+
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
@@ -5624,9 +5641,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.4.0-dev.20240219"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.0-dev.20240219.tgz#d12d5997a40ecc9f41e91526ebb867969f337636"
-  integrity sha512-8axQCpRgDdLJRq7TMsX6U4zYXmHY5akkaGMjiQPro76rLIHMhmI7llfnpuV5wAFAtu1vARTTwccmWy4h5qjEDA==
+  version "5.4.0-dev.20240220"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.0-dev.20240220.tgz#eace77e5b4fd613d17dd0e49d2aa924b2d9a3c89"
+  integrity sha512-mUiEcRGUeqXn0/xKi0K01LrBOJ4D1zbn5oVpvofeuo/QUTS/y4+r46h34STyDGMc2KnMYJcWUt2XMalady2J1A==
 
 typescript@~3.9.10:
   version "3.9.10"
