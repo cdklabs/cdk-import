@@ -1222,10 +1222,10 @@ aws-cdk-lib@^2.129.0:
     table "^6.8.1"
     yaml "1.10.2"
 
-aws-sdk@^2.1562.0:
-  version "2.1562.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1562.0.tgz#7e5d42c7857e943edd233e282cdb85a882f08edc"
-  integrity sha512-HsdlDRfVamH4tv+M+d0lnEYdtx+yEpqWA4T2XuJCjtV5JjjHDUQTKm+9C+EoTxLWtuw+SYSVWyuclwETv6CmHQ==
+aws-sdk@^2.1563.0:
+  version "2.1563.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1563.0.tgz#9f19e97111616117cd320f7aaffbe7e309d5632d"
+  integrity sha512-CuxRmrAqsTQnVeiLjiKP+3+UfzBW32TmHT2VS+7qcebvgVDaLZ4s3l0aMmusUwCciRCWOcT+20US/Pic0l9WaA==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -5153,9 +5153,9 @@ spdx-license-ids@^3.0.0:
   integrity sha512-eWN+LnM3GR6gPu35WxNgbGl8rmY1AEmoMDvL/QD6zYmPWgywxWqJWNdLGT+ke8dKNWrcYgYjPpG5gbTfghP8rw==
 
 spdx-license-list@^6.8.0:
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/spdx-license-list/-/spdx-license-list-6.8.0.tgz#92a99cd6c8b97fe98ae83c54deaffd4d9d503f74"
-  integrity sha512-5UdM7r9yJ1EvsPQZWfa41AZjLQngl9iMMysm9XBW7Lqhq7aF8cllfqjS+rFCHB8FFMGSM0yFWue2LUV9mR0QzQ==
+  version "6.9.0"
+  resolved "https://registry.yarnpkg.com/spdx-license-list/-/spdx-license-list-6.9.0.tgz#5543abb3a15f985a12808f642a622d2721c372ad"
+  integrity sha512-L2jl5vc2j6jxWcNCvcVj/BW9A8yGIG02Dw+IUw0ZxDM70f7Ylf5Hq39appV1BI9yxyWQRpq2TQ1qaXvf+yjkqA==
 
 split2@^3.0.0:
   version "3.2.2"
@@ -5641,9 +5641,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.5.0-dev.20240221"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.0-dev.20240221.tgz#13ef0c4cb7a620881530b1753658689bf24c7522"
-  integrity sha512-zAZKYmbJjrjtMiLRDk2y6cDrzziF/ahV0u2ISZ/ZyInDBy/XFIC4R9baJphn6iC004KhdSEKGwy9s+HheBwUlA==
+  version "5.5.0-dev.20240222"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.0-dev.20240222.tgz#143e6e3ca3af0932aab3720acaaab8b90bbfdf3c"
+  integrity sha512-wTT3hD6G2Nx+KZEDA8HvHbCsnLqtr+ye+OfVEtFARqUKtLcZVnHJhGk99OYhuPUhkAv9UgwAUQREBcyZupPhYg==
 
 typescript@~3.9.10:
   version "3.9.10"
