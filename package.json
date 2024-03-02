@@ -52,7 +52,7 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.130.0",
+    "aws-cdk-lib": "^2.131.0",
     "aws-sdk": "^2.1569.0",
     "case": "^1.6.3",
     "constructs": "^10",
