@@ -1231,10 +1231,10 @@ aws-cdk-lib@^2.131.0:
     table "^6.8.1"
     yaml "1.10.2"
 
-aws-sdk@^2.1572.0:
-  version "2.1572.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1572.0.tgz#141bba33f79eb7dd8a475c3db2b38d91ede5651e"
-  integrity sha512-VLYvEv49GLX/HuHqSkbgMt/nYQNAUfmJrPIkwyukoYMdRdKa4s70lV6ct0huliDauR5ur2HqJX91mp0iXaEpbg==
+aws-sdk@^2.1573.0:
+  version "2.1573.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1573.0.tgz#fa2441ada26acd79e89b990b25dc597ba75bbc57"
+  integrity sha512-Bl+rTEnjKdJrd0NfrLRVQq4AbSgK1+7yoWQTnreZTHCbYhzndP/3HLxA/8x0a8NZSb9oPC+7paFaWW00Xz/Gtw==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -5669,9 +5669,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.5.0-dev.20240307"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.0-dev.20240307.tgz#dcd10b4a4d5a274f40cdfa91c75ae7a940ade469"
-  integrity sha512-9QgBAVHg1keeajSXIqq1ngFy3yTA0um5YWoLNVSfPtIwqqYoVqRjmh4oJKJL4YM15C2HY8IXL/UEUBIjXm/tjg==
+  version "5.5.0-dev.20240308"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.0-dev.20240308.tgz#f26398ff159ce430b05adbc77ba184da45ab7f73"
+  integrity sha512-HskK9uC+zmt8wS0GYh2EoP2u2nSJELnbD3mjl1VwPlnjxqwyHkAIV+dO9bnIWA0t/KL9Q7hDUzIIYQ15QlJFtg==
 
 typescript@~3.9.10:
   version "3.9.10"
