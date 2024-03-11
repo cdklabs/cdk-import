@@ -1204,7 +1204,7 @@ available-typed-arrays@^1.0.5:
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.6.tgz#ac812d8ce5a6b976d738e1c45f08d0b00bc7d725"
   integrity sha512-j1QzY8iPNPG4o4xmO3ptzpRxTciqD3MgEHtifP/YnJpIo58Xu+ne4BejlbkuaLfXn/nz6HFiw29bLpj2PNMdGg==
 
-available-typed-arrays@^1.0.6:
+available-typed-arrays@^1.0.6, available-typed-arrays@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.7.tgz#a5cc375d6a03c2efc87a553f3e0b1522def14846"
   integrity sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==
@@ -1397,7 +1397,7 @@ call-bind@^1.0.0, call-bind@^1.0.4:
     get-intrinsic "^1.2.1"
     set-function-length "^1.1.1"
 
-call-bind@^1.0.2, call-bind@^1.0.5:
+call-bind@^1.0.2, call-bind@^1.0.5, call-bind@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/call-bind/-/call-bind-1.0.7.tgz#06016599c40c56498c18769d2730be242b6fa3b9"
   integrity sha512-GHTSNSYICQ7scH7sZ+M2rFopRoLh8t2bLSW6BbgrtLsahOIB5iyAVJf9GjWK3cYTDaMj4XdBpM1cA6pIS0Kv2w==
@@ -2843,7 +2843,7 @@ has-symbols@^1.0.2, has-symbols@^1.0.3:
   resolved "https://registry.yarnpkg.com/has-symbols/-/has-symbols-1.0.3.tgz#bb7b2c4349251dce87b125f7bdf874aa7c8b39f8"
   integrity sha512-l3LCuF6MgDNwTDKkdYGEihYjt5pRPbEg46rtlmnSPlUbgmB8LOIrKJbYYFBSbnPaJexMKtiPO8hmeRjRz2Td+A==
 
-has-tostringtag@^1.0.0, has-tostringtag@^1.0.1:
+has-tostringtag@^1.0.0, has-tostringtag@^1.0.1, has-tostringtag@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/has-tostringtag/-/has-tostringtag-1.0.2.tgz#2cdc42d40bef2e5b4eeab7c01a73c54ce7ab5abc"
   integrity sha512-NqADB8VjPFLM2V0VvHUewwwsw0ZWBaIdgo+ieHtK3hasLz4qeCRjYcqfB6AQrBggRKppKF8L52/VqdVsO47Dlw==
@@ -3865,12 +3865,12 @@ jsii@^1.94.0:
     yargs "^16.2.0"
 
 jsii@~5.3.18:
-  version "5.3.25"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.3.25.tgz#5bf5b492cd276ee354b5f5e63f362d1c58475457"
-  integrity sha512-uTPLKvI3ULJfF6jNL4Juq/h81C/pu1YTI+b7J8C258MPlN6vOIsLXV1aC8ENZBzJh1txqT2VLP28hoGzyETwUQ==
+  version "5.3.27"
+  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.3.27.tgz#d08d84a1184278598870de98440b82e54a6502e9"
+  integrity sha512-YiwepoNKEaxVCJK6eZyc4jp2f3vVub4LpjA4JpqWjPtqt+7w7a7++HYbdS67WepCJjhfO698EHSaW/lRL8yf4g==
   dependencies:
-    "@jsii/check-node" "1.94.0"
-    "@jsii/spec" "^1.94.0"
+    "@jsii/check-node" "1.95.0"
+    "@jsii/spec" "^1.95.0"
     case "^1.6.3"
     chalk "^4"
     downlevel-dts "^0.11.0"
@@ -5681,9 +5681,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.5.0-dev.20240310"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.0-dev.20240310.tgz#358ea39f5a12ad45c404316c8687229ca3a36911"
-  integrity sha512-5cC3ym7BKW/xa0duhXDdO/k3IP+1P6ZlJlZDtsyCJDIf/oX+J63a44EFvrMrpg6GH47JehqPHqJ6eaIlcyQE1Q==
+  version "5.5.0-dev.20240311"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.0-dev.20240311.tgz#98eb4774ff5dc21d821e8b0c60e06ad0c0c7e693"
+  integrity sha512-Cdp0eYgn/19lkcrq7WCqQxmnvCqvuJrd/jGhm1HyPMSYVTGzjxVP0NfXr2A4YVS12IAipt1uO4zgAJeLlYG2JA==
 
 typescript@~3.9.10:
   version "3.9.10"
@@ -5890,7 +5890,7 @@ which-module@^2.0.0:
   resolved "https://registry.yarnpkg.com/which-module/-/which-module-2.0.1.tgz#776b1fe35d90aebe99e8ac15eb24093389a4a409"
   integrity sha512-iBdZ57RDvnOR9AGBhML2vFZf7h8vmBjhoaZqODJBFWHVtKkDmKuHai3cx5PgVMrX5YDNp27AofYbAwctSS+vhQ==
 
-which-typed-array@^1.1.11, which-typed-array@^1.1.14, which-typed-array@^1.1.2:
+which-typed-array@^1.1.11:
   version "1.1.14"
   resolved "https://registry.yarnpkg.com/which-typed-array/-/which-typed-array-1.1.14.tgz#1f78a111aee1e131ca66164d8bdc3ab062c95a06"
   integrity sha512-VnXFiIW8yNn9kIHN88xvZ4yOWchftKDsRJ8fEPacX/wl1lOvBrhsJ/OeJCXq7B0AaijRuqgzSKalJoPk+D8MPg==
@@ -5911,6 +5911,17 @@ which-typed-array@^1.1.13:
     for-each "^0.3.3"
     gopd "^1.0.1"
     has-tostringtag "^1.0.0"
+
+which-typed-array@^1.1.14, which-typed-array@^1.1.2:
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/which-typed-array/-/which-typed-array-1.1.15.tgz#264859e9b11a649b388bfaaf4f767df1f779b38d"
+  integrity sha512-oV0jmFtUky6CXfkqehVvBP/LSWJ2sy4vWMioiENyJLePrBO/yKyV9OyJySfAKosh+RYkIl5zJCNZ8/4JncrpdA==
+  dependencies:
+    available-typed-arrays "^1.0.7"
+    call-bind "^1.0.7"
+    for-each "^0.3.3"
+    gopd "^1.0.1"
+    has-tostringtag "^1.0.2"
 
 which@^2.0.1:
   version "2.0.2"
