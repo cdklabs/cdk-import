@@ -1211,10 +1211,10 @@ available-typed-arrays@^1.0.6, available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-aws-cdk-lib@^2.132.0:
-  version "2.132.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.132.0.tgz#7b91d3e44237b64073bf8bec73a6c2ad833dd980"
-  integrity sha512-auztTTYy8j62MmRZNdM7Vd8eQ5eP3xLMhrrILhDZf3DiSDD0lyYL0hv98VD4XPkWGMQ8yOmo5nZ3s/zD7cnKlw==
+aws-cdk-lib@^2.132.1:
+  version "2.132.1"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.132.1.tgz#d8b7d08add76b1ac7053539818fcb455b726d451"
+  integrity sha512-VheC7WcvmxiteNaZPucS9J9haGQZwbUtwNiNqsbTaEiru6ETUhf/yIOIamLto1kOKEPxCw2bfLkgYrWoCzwOpw==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.202"
     "@aws-cdk/asset-kubectl-v20" "^2.1.2"
@@ -1231,10 +1231,10 @@ aws-cdk-lib@^2.132.0:
     table "^6.8.1"
     yaml "1.10.2"
 
-aws-sdk@^2.1574.0:
-  version "2.1574.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1574.0.tgz#8dd0df463c417410170da2b6164c63e0a3cd47f2"
-  integrity sha512-AC3VptGeggp7AFGj66PIt9GrnLyDBo7Owb5TmbGDe2OIvgeHH3nBD4S3wRZQ9u3Ea6iREnalXxQ2n5rflCeG9g==
+aws-sdk@^2.1575.0:
+  version "2.1575.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1575.0.tgz#3ccf2d0192a26d61ffa008ffb036a23c38b1dce1"
+  integrity sha512-q33w5NN057CYOdcbxpKAgrb7CUSPrtPBxGGzgIo44y1Fi1iEXDawMYcahu5cwSfD6NFzvZkPz2a5Eo1Fu3Az8A==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -5681,9 +5681,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.5.0-dev.20240311"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.0-dev.20240311.tgz#98eb4774ff5dc21d821e8b0c60e06ad0c0c7e693"
-  integrity sha512-Cdp0eYgn/19lkcrq7WCqQxmnvCqvuJrd/jGhm1HyPMSYVTGzjxVP0NfXr2A4YVS12IAipt1uO4zgAJeLlYG2JA==
+  version "5.5.0-dev.20240312"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.0-dev.20240312.tgz#6164816ce937d23391cf87865f25baf8e5b5057c"
+  integrity sha512-CEPqB9IvrkCgyoFCmsmQH4AXsXM+KX32FQvmVk8LYecfoNsow5+nW5ZwI8MiQUoGNZ78uTINFwyM1M6G/aNSrA==
 
 typescript@~3.9.10:
   version "3.9.10"
