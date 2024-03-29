@@ -26,9 +26,9 @@
   integrity sha512-3M2tELJOxQv0apCIiuKQ4pAbncz9GuLwnKFqxifWfe77wuMxyTRPmxssYHs42ePqzap1LT6GDcPygGs+hHstLg==
 
 "@aws-cdk/asset-node-proxy-agent-v6@^2.0.1":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-node-proxy-agent-v6/-/asset-node-proxy-agent-v6-2.0.2.tgz#837a8b758e4f8a54dc35ae69c730c4ff5a934073"
-  integrity sha512-/gZ6Y2K2pUIvLoG2M0ephcT7n1JQM1ijZWQvrv5JrcYFcrAsoWy6AZEwt2MCJF7kvPPaCYIH4eJ+OOi9FKb0qQ==
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-node-proxy-agent-v6/-/asset-node-proxy-agent-v6-2.0.3.tgz#9b5d213b5ce5ad4461f6a4720195ff8de72e6523"
+  integrity sha512-twhuEG+JPOYCYPx/xy5uH2+VUsIEhPTzDY0F1KuB+ocjWWB/KEDiOVL19nHvbPCB6fhWnkykXEMJ4HHcKvjtvg==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.23.5":
   version "7.23.5"
@@ -1238,10 +1238,10 @@ aws-cdk-lib@^2.134.0:
     table "^6.8.1"
     yaml "1.10.2"
 
-aws-sdk@^2.1587.0:
-  version "2.1587.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1587.0.tgz#c6034b07cf7a60d2754d737676588ad84b3ae58a"
-  integrity sha512-C9RUBgAaKWe7t/DqQlkIVAd98FHtYVzywUGBJh0Wd/XpelX4mjNhb9yjGGPNCchk0lEufcEXIEW/fLZRA44grA==
+aws-sdk@^2.1588.0:
+  version "2.1588.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1588.0.tgz#d2f984f81fa131a4e970a4c5d6b7e407b319fddc"
+  integrity sha512-FbayuJZd8xlaVPNpIGfj111pqZ7ZIeWsUkBTQ/nXx4t7y9dTnT41SeOvSObpMCCti8xxkJkN15mIBaI3EkjWbg==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -5688,9 +5688,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.5.0-dev.20240328"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.0-dev.20240328.tgz#7220748b50beb5284d404cccd37e4b7e8e6d8fd2"
-  integrity sha512-psmUop0GPegCmqZqysToBqpX/pKW/0YGwVc/Ma0kDOkruXO40euXu2GL5UM6KbL+nnyHiMtWiTmVQ+7To9s9yQ==
+  version "5.5.0-dev.20240329"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.0-dev.20240329.tgz#88f97713822c730cf2d281964536abfaba06afc0"
+  integrity sha512-T1vHxyzRt1MeCLzQdY8JYOM1K9XRs4YgTOzMjlw8m5K19P9264rc22CyvUB9lA0vBIcMSDjObfh+/GVHMOXhkg==
 
 typescript@~3.9.10:
   version "3.9.10"
