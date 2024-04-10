@@ -1,10 +1,10 @@
 import { Agent } from 'http';
-import ProxyAgent from 'proxy-agent';
+import { ProxyAgent } from 'proxy-agent';
 
 const awsOptions = {
   ...(process.env.HTTPS_PROXY || process.env.https_proxy) && {
     httpOptions: {
-      agent: new ProxyAgent(process.env.HTTPS_PROXY || process.env.https_proxy) as any as Agent,
+      agent: new ProxyAgent({ host: process.env.HTTPS_PROXY || process.env.https_proxy }) as any as Agent,
     },
   },
 };
