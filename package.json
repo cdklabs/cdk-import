@@ -44,7 +44,7 @@
     "eslint-plugin-import": "^2.29.1",
     "jest": "^27",
     "jest-junit": "^15",
-    "jsii": "^1.97.0",
+    "jsii": "^5.4.0",
     "projen": "^0.80.20",
     "standard-version": "^9",
     "ts-jest": "^27",
