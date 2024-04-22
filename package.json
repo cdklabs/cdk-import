@@ -60,7 +60,7 @@
     "json2jsii": "^0.4.3",
     "minimist": "^1.2.8",
     "minimist-subcommand": "^3.0.2",
-    "proxy-agent": "^6.0.0"
+    "proxy-agent": "^6.4.0"
   },
   "resolutions": {
     "@types/babel__traverse": "7.18.2",
