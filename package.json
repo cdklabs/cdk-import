@@ -52,8 +52,8 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.138.0",
-    "aws-sdk": "^2.1605.0",
+    "aws-cdk-lib": "^2.139.0",
+    "aws-sdk": "^2.1606.0",
     "case": "^1.6.3",
     "constructs": "^10",
     "jsii-srcmak": "^0.1.1039",
