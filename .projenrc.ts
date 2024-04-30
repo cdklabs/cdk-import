@@ -52,4 +52,8 @@ project.package.addPackageResolutions(
   '@types/babel__traverse@7.18.2',
 );
 
+// not using `npmAccess` property because projen omits values that are
+// identical to npm defaults.
+project.package.addField('publishConfig', { access: 'public' });
+
 project.synth();
