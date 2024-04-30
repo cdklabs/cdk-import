@@ -2,6 +2,7 @@ import { CdklabsTypeScriptProject } from 'cdklabs-projen-project-types';
 
 const project = new CdklabsTypeScriptProject({
   name: 'cdk-import',
+  repository: 'https://github.com/cdklabs/cdk-import',
   projenrcTs: true,
   private: false,
   enablePRAutoMerge: true,
@@ -51,5 +52,9 @@ project.package.addPackageResolutions(
   '@types/prettier@2.6.0',
   '@types/babel__traverse@7.18.2',
 );
+
+// not using `npmAccess` property because projen omits values that are
+// identical to npm defaults.
+project.package.addField('publishConfig', { access: 'public' });
 
 project.synth();

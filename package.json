@@ -1,6 +1,10 @@
 {
   "name": "cdk-import",
   "description": "Toolkit to import CFN resource types and generate L1 constructs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdklabs/cdk-import"
+  },
   "bin": {
     "cdk-import": "lib/cli.js"
   },
@@ -71,6 +75,9 @@
   },
   "main": "lib/index.js",
   "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.0.0",
   "jest": {
     "testMatch": [
