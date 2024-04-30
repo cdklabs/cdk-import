@@ -2,6 +2,7 @@ import { CdklabsTypeScriptProject } from 'cdklabs-projen-project-types';
 
 const project = new CdklabsTypeScriptProject({
   name: 'cdk-import',
+  repository: 'https://github.com/cdklabs/cdk-import',
   projenrcTs: true,
   private: false,
   enablePRAutoMerge: true,

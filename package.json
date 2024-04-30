@@ -1,6 +1,10 @@
 {
   "name": "cdk-import",
   "description": "Toolkit to import CFN resource types and generate L1 constructs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdklabs/cdk-import"
+  },
   "bin": {
     "cdk-import": "lib/cli.js"
   },
