@@ -2047,9 +2047,9 @@ downlevel-dts@^0.11.0:
     typescript next
 
 electron-to-chromium@^1.4.668:
-  version "1.4.774"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.774.tgz#1017d1758aaeeefe5423aa9d67b4b1e5d1d0a856"
-  integrity sha512-132O1XCd7zcTkzS3FgkAzKmnBuNJjK8WjcTtNuoylj7MYbqw5eXehjQ5OK91g0zm7OTKIPeaAG4CPoRfD9M1Mg==
+  version "1.4.775"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.775.tgz#176e9cc439b76a4c768f44c821eaedd32d055503"
+  integrity sha512-JpOfl1aNAiZ88wFzjPczTLwYIoPIsij8S9/XQH9lqMpiJOf23kxea68B8wje4f68t4rOIq4Bh+vP4I65njiJBw==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -3785,26 +3785,7 @@ jsii-srcmak@^0.1.1128:
     ncp "^2.0.0"
     yargs "^17.7.2"
 
-jsii@^5.4.15:
-  version "5.4.15"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.4.15.tgz#7b2f654f2ccffaf211546f09d4b5d525e25c3ec5"
-  integrity sha512-syw2kfZJyb+A6G9ApsmlTBUd/+xMCAQRjml45NSZs6k7+4ifVByOfiIoA05e8zfkn+nOOC+BcTFlHeYubiBHKQ==
-  dependencies:
-    "@jsii/check-node" "1.98.0"
-    "@jsii/spec" "^1.98.0"
-    case "^1.6.3"
-    chalk "^4"
-    downlevel-dts "^0.11.0"
-    fast-deep-equal "^3.1.3"
-    log4js "^6.9.1"
-    semver "^7.6.2"
-    semver-intersect "^1.5.0"
-    sort-json "^2.0.1"
-    spdx-license-list "^6.9.0"
-    typescript "~5.4"
-    yargs "^17.7.2"
-
-jsii@~5.4.0, jsii@~5.4.15:
+jsii@^5.4.18, jsii@~5.4.0, jsii@~5.4.15:
   version "5.4.18"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.4.18.tgz#82298308de4077b52dba631c891d32a9d21b340d"
   integrity sha512-ocVGqfYmXk0SCKmygQt+OS9dfCnIMIdAfwqdyhwaY3AnNlRxN6d74Yg6Pz9GaB4zeE9skFBlOJLLtn2J+EKULQ==
