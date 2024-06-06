@@ -1240,10 +1240,10 @@ aws-cdk-lib@^2.144.0:
     table "^6.8.2"
     yaml "1.10.2"
 
-aws-sdk@^2.1634.0:
-  version "2.1634.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1634.0.tgz#fde82fe1e9c2754f3b67d8e682089ef5da37ea47"
-  integrity sha512-uSEjzAyGIbfpALzxPYES+hsBK1zuUY/8wSv2mAwijAcQfTMV89jQ4VHI/5KsyyZhDSeS/rV9cn6376KO+HDU2w==
+aws-sdk@^2.1635.0:
+  version "2.1635.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1635.0.tgz#3185c9715aab8215794463c0cdc7ffab70ced26c"
+  integrity sha512-zab4y8ftjgcctYao33c1fr8Yx1wMuRlEbZT7hwEXcK8Ta3+LAEXJs1wKjPpium+KUwl6zw7wxhaIdEibiz6InA==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -3769,10 +3769,10 @@ jsii-rosetta@^5.4.21:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii-srcmak@^0.1.1144:
-  version "0.1.1144"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1144.tgz#bce666238f01ef39789aeea28cb3ab6f0ffcbaf0"
-  integrity sha512-189mjuIM2Dfh+aEfVbCY2JaMmPowabNVaEoRGNCHiskUBwnAukfDedAX6xhwRU5mcvSPJLwcpR/Bt8Q/cMR5xQ==
+jsii-srcmak@^0.1.1145:
+  version "0.1.1145"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1145.tgz#4782253d21af8e1de0dc27feb837d031e2598466"
+  integrity sha512-WvS9fAs1rhLtojjN5vAiXTqFvXEcUNvAE7pzRM9SgojVFLqG+UqqsLSixYiiqrXehoCsZ56SXCDnZaaukFFtVA==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.4.20"
@@ -5510,9 +5510,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.6.0-dev.20240605"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.6.0-dev.20240605.tgz#da0175383eb38829771b81ac62cf3c028fd3c0e5"
-  integrity sha512-T6LUM8t7yOOvOZSJ1CX+yG6u2ijKRPzhICi3GMv5hA4wWQz/fd54zkZLABkSH67DAHIJUFDtDAEt98Hnd30RJg==
+  version "5.6.0-dev.20240606"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.6.0-dev.20240606.tgz#2305c0fafb700558f9053173d623493a7874cbf2"
+  integrity sha512-q7dle76No7lsX4VV/pRjSFZOlCqaOwJaVW0AS9PWKr9rLsxTHPuUC9EmGiiERQnODfh/c2gN+wiNK525JOtemw==
 
 typescript@~5.4:
   version "5.4.5"
