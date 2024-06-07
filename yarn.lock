@@ -1240,10 +1240,10 @@ aws-cdk-lib@^2.144.0:
     table "^6.8.2"
     yaml "1.10.2"
 
-aws-sdk@^2.1635.0:
-  version "2.1635.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1635.0.tgz#3185c9715aab8215794463c0cdc7ffab70ced26c"
-  integrity sha512-zab4y8ftjgcctYao33c1fr8Yx1wMuRlEbZT7hwEXcK8Ta3+LAEXJs1wKjPpium+KUwl6zw7wxhaIdEibiz6InA==
+aws-sdk@^2.1636.0:
+  version "2.1636.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1636.0.tgz#2755de04924d1841bd4f1ea53dee959edc147126"
+  integrity sha512-0w/jOCYnwewLYjH4UCh3GTBjR/NMdvEKNrd1pnM4FvfJSmjfzCinDvmf5Qc6xeIrqPfrdYOoQh7NJhYeJScCIQ==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -3769,10 +3769,10 @@ jsii-rosetta@^5.4.21:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii-srcmak@^0.1.1145:
-  version "0.1.1145"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1145.tgz#4782253d21af8e1de0dc27feb837d031e2598466"
-  integrity sha512-WvS9fAs1rhLtojjN5vAiXTqFvXEcUNvAE7pzRM9SgojVFLqG+UqqsLSixYiiqrXehoCsZ56SXCDnZaaukFFtVA==
+jsii-srcmak@^0.1.1146:
+  version "0.1.1146"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1146.tgz#be19b0912fca96d11d891f0cde6f1852ca7c3ea8"
+  integrity sha512-lzeS9OvkMVHF1PbJ68cUCzgin08POuV4MTTEE8ie5kMrE1ZBXy5Q0pce40cPVCg0CR89iRkmygQbWSApj1+/rA==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.4.20"
@@ -3840,10 +3840,10 @@ json-stringify-safe@^5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
 
-json2jsii@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.4.3.tgz#70ba13fb3a88cc12fbee83555d305315c892f3ae"
-  integrity sha512-9PNmX7v94XVR5RiblCvtoCbFy3HALnRqZWLT8LSXEE7wujudmMXzdSFyyK0YwYd7dxpzNXirPf6eoQG5xL9N5A==
+json2jsii@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.4.4.tgz#8f0191478ae9630e0e5b6ad1b2995389d0497fe5"
+  integrity sha512-jTbmFuxivo20zb/JOKc2U5/qSFWsobJmglvmWVdQoWdR2Ip9KtY9t679QLs7TV/oYSY3VnJU83IWL1QH0eI/4w==
   dependencies:
     camelcase "^6.3.0"
     json-schema "^0.4.0"
@@ -5510,9 +5510,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.6.0-dev.20240606"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.6.0-dev.20240606.tgz#2305c0fafb700558f9053173d623493a7874cbf2"
-  integrity sha512-q7dle76No7lsX4VV/pRjSFZOlCqaOwJaVW0AS9PWKr9rLsxTHPuUC9EmGiiERQnODfh/c2gN+wiNK525JOtemw==
+  version "5.6.0-dev.20240607"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.6.0-dev.20240607.tgz#c2c8d51ca89eeca524cb4914d6540ea76da753fc"
+  integrity sha512-yy+XEQJEu/S3zEkTYTPv/sq3WIh2IIa19WD6+JAZxV+ndNZaalF84Tw742YJXnZEU37SYpgfFVhWCKi0E9Kmtw==
 
 typescript@~5.4:
   version "5.4.5"
