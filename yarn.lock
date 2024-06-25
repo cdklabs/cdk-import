@@ -1199,7 +1199,7 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-aws-cdk-lib@^2.147.0:
+aws-cdk-lib@^2.147.1:
   version "2.147.1"
   resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.147.1.tgz#ec640b8d4a9bacc352ea4d53eb6abc1224a76808"
   integrity sha512-LQBvfq91kW2Sr94Rh07dZqfcZcd8udNpiaaoxmeGYPU1Cu7UD8cAtoYLg8XWDdqeXDPoIsZYUWCzbAVV7j+u9Q==
@@ -1219,10 +1219,10 @@ aws-cdk-lib@^2.147.0:
     table "^6.8.2"
     yaml "1.10.2"
 
-aws-sdk@^2.1646.0:
-  version "2.1646.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1646.0.tgz#5616e367135d8b930cf850c2dc386dff8df984af"
-  integrity sha512-PAvDiR8ow3zjO0T5HMda04kXIzQ5e1zeWxWGSUodRwu9W569gZPBnqzcPX3PJFNAKBZnZBdbNgsci1g2nXCcBg==
+aws-sdk@^2.1647.0:
+  version "2.1647.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1647.0.tgz#a6eb81aacdb6d02ccc12ae5b41f969fb402de8c3"
+  integrity sha512-BKFucC3IKfl40FGRCwJPeJ0cWZEa/Wd9r5HKuNg7h4eAN97G1aBjprDt4hvCHzwwNAVP4r0gBoxKeJ1f3HQWeg==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -3729,7 +3729,7 @@ jsii-reflect@^1.100.0:
     oo-ascii-tree "^1.100.0"
     yargs "^16.2.0"
 
-jsii-rosetta@^5.4.22:
+jsii-rosetta@^5.4.23:
   version "5.4.23"
   resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.4.23.tgz#c07fb7d99e7796c3b9e4d13eff7e37b9d07ea96c"
   integrity sha512-QOObTPIWIwc+q4dvXgRXptdEtkcCb6uQO93sHlz5f3SBJ/E/LdLaIVCqPqZmojkGr+5OnVrU4h58okPFOo4c4w==
@@ -3748,19 +3748,19 @@ jsii-rosetta@^5.4.22:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii-srcmak@^0.1.1163:
-  version "0.1.1163"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1163.tgz#6842976f054328be10507d8554d3036e5a5db8d8"
-  integrity sha512-CNa8HarMlVItEqYvgSMAnwMvwv6XJlSIf7/xnh7i253VBCiIh4H+8apA+LlFkVUqzi1FXULSwocBg1SnYLYbAA==
+jsii-srcmak@^0.1.1164:
+  version "0.1.1164"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1164.tgz#e222d773f9b5c0255b965a58b971da17f3e9b8fd"
+  integrity sha512-nMXr3wLrGFZ3XT8SXOohthOYObbwDpfrBMPxqsFDJ2Op6oB8U7NqzVfyqNBQbvYg47c+OULHzcyBRS0FKBmo5A==
   dependencies:
     fs-extra "^9.1.0"
-    jsii "~5.4.22"
+    jsii "~5.4.23"
     jsii-pacmak "^1.100.0"
-    jsii-rosetta "^5.4.22"
+    jsii-rosetta "^5.4.23"
     ncp "^2.0.0"
     yargs "^17.7.2"
 
-jsii@^5.4.23, jsii@~5.4.0, jsii@~5.4.22:
+jsii@^5.4.23, jsii@~5.4.0, jsii@~5.4.23:
   version "5.4.23"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.4.23.tgz#25e83bac4c55b93d764e01d0f631113b21c00f45"
   integrity sha512-HTJ/xogVNMuk/PhUFba9b8puPJBcvpOE2Je//TO+wGmFaHHTSrIacJPAvXSmVSs5WUNye7Ji2dOz5N2xtzi72Q==
@@ -5489,9 +5489,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.6.0-dev.20240624"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.6.0-dev.20240624.tgz#49c2c79b96b1774a58a06175cffd8b7ab6abb9ac"
-  integrity sha512-PPs1oU5IrlyMBmGLUdD8FpXSqE0O6XXVy1mGMBwVg+38QKe7JF6Ao/T4mlRJQgijMpv+Gn3wILodf0/6oH0cDA==
+  version "5.6.0-dev.20240625"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.6.0-dev.20240625.tgz#5af212a230bcb26df3d888afe08f5da271aa9f70"
+  integrity sha512-oFZTblDS6JxI4fqkiSKhm8uGXjZQ/aTqOiVTkNtttRoKySMDPdchADEl0+AclDFRJt92BGw6NQG5Q5PGs6dDxg==
 
 typescript@~5.4:
   version "5.4.5"
