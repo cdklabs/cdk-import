@@ -9,6 +9,7 @@ const cdkDeps = [
   '@aws-cdk/asset-awscli-v1',
   '@aws-cdk/asset-kubectl-v20',
   '@aws-cdk/asset-node-proxy-agent-v6',
+  '@aws-cdk/cloud-assembly-schema',
 ];
 
 export const SUPPORTED_LANGUAGES = [
