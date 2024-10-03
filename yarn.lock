@@ -3826,10 +3826,10 @@ jsii-rosetta@^5.5.5:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii-srcmak@^0.1.1257:
-  version "0.1.1257"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1257.tgz#3eb5d559d12064020e824e1fabca92546a43f3de"
-  integrity sha512-pvHn5scDhHSGU14jafL4cbkSlY3lAWTdGW2BRudeq6aeACOxoXyiCr6ezecVkJUbIpiz+iEQEYKGfhfoI+CHKA==
+jsii-srcmak@^0.1.1258:
+  version "0.1.1258"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1258.tgz#8941af88556edc93a0f29aff81bbbb2e2add461a"
+  integrity sha512-n5mGR7IZ+C4UNiGAzWnjr1j8eDvQu1oD5bUC9hpeznQQWdwyPYfmNUDE0jCgvj5sJPklgqyWYVUUPh0IKM8uiA==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.5.4"
@@ -5562,9 +5562,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.7.0-dev.20241002"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.0-dev.20241002.tgz#296d940c60a292b9bdafe99f0696976e43d2ba2c"
-  integrity sha512-FHahwICnaTEQZYVLpDwZdoy/lgPn30O+XQ5VbNGk1UQojnr60qb2XgoPOfohDBojGtQGL5iilNhThM4gLxaMjQ==
+  version "5.7.0-dev.20241003"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.0-dev.20241003.tgz#6dad8580c2a79211624eb0f8d1205b57128a5c68"
+  integrity sha512-0aj8jZi+P+uw10g2eQRnJmaMooatg2nDyqy0YlTM3A8QtXBulWuNU/vvPOTiLWCNgaz5wvcodjrmCNsOYFeQag==
 
 typescript@~5.5:
   version "5.5.4"
