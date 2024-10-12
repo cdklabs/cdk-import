@@ -2589,22 +2589,6 @@ func NewCfnCluster_Override(c CfnCluster, scope constructs.Construct, id *string
 	)
 }
 
-// Creates a new root construct node.
-func CfnCluster_CreateRoot(id *string) constructs.Construct {
-	_init_.Initialize()
-
-	var returns constructs.Construct
-
-	_jsii_.StaticInvoke(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnCluster\\",
-		\\"createRoot\\",
-		[]interface{}{id},
-		&returns,
-	)
-
-	return returns
-}
-
 // Returns \`true\` if a construct is a stack element (i.e. part of the synthesized cloudformation template).
 //
 // Uses duck-typing instead of \`instanceof\` to allow stack elements from different
@@ -3689,22 +3673,6 @@ func NewEc2ComputeInstance_Override(e Ec2ComputeInstance, scope constructs.Const
 		[]interface{}{scope, id, props},
 		e,
 	)
-}
-
-// Creates a new root construct node.
-func Ec2ComputeInstance_CreateRoot(id *string) constructs.Construct {
-	_init_.Initialize()
-
-	var returns constructs.Construct
-
-	_jsii_.StaticInvoke(
-		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\",
-		\\"createRoot\\",
-		[]interface{}{id},
-		&returns,
-	)
-
-	return returns
 }
 
 // Checks if \`x\` is a construct.
