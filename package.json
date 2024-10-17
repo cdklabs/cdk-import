@@ -60,7 +60,7 @@
     "aws-sdk": "^2.1691.0",
     "case": "^1.6.3",
     "constructs": "^10",
-    "jsii-srcmak": "^0.1.1271",
+    "jsii-srcmak": "^0.1.1272",
     "json2jsii": "^0.5.1",
     "minimist": "^1.2.8",
     "minimist-subcommand": "^3.0.2",
