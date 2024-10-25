@@ -1209,7 +1209,7 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-aws-cdk-lib@^2.163.1:
+aws-cdk-lib@^2.164.0:
   version "2.164.0"
   resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.164.0.tgz#8f3c974939486ba2ec7e58b42949e74bc6575843"
   integrity sha512-BfiQ4hhOw1+y1fqn67UwrmSsjKVIy3BPTQV9etkoFnCofltYpIrPVrLem39TVF+mto1d+xMJ6vEHPzsm2lx1eg==
@@ -3839,10 +3839,10 @@ jsii-rosetta@^5.5.5:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii-srcmak@^0.1.1279:
-  version "0.1.1279"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1279.tgz#21feba0d4fa1a29f008f37aa7677e3f480815343"
-  integrity sha512-UywDLXEmKPWE88zFr1YeZXLRVS9ZZPzIFS3kgAf8ulpI8Xp4Ll12sFQO4vknQ8tYv7D7AncVCsrcYg/gIdO5Ng==
+jsii-srcmak@^0.1.1280:
+  version "0.1.1280"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1280.tgz#456ffdc1baca0b0634cc21bd7032049b5eb28e4e"
+  integrity sha512-7+pTg7JBbKIIoWvZqe66EtM2SUxbPqd72n6WF90ax/exq3/rnaCd7inPwG+nDYB0du6ahKrZ/p8whBEysZvZ/Q==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.5.4"
@@ -5570,9 +5570,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.7.0-dev.20241024"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.0-dev.20241024.tgz#c9da3808cf8742a84cadd2d6cd5bade147ad23ec"
-  integrity sha512-PffMQ+uB2IVWjH3/OvtOCjfuZZc+dcIP1HtlEPTsaT6T0EZFmqR+urMPNVFbw0KtiyFWzuSquxb7Uz3NlrfHFg==
+  version "5.7.0-dev.20241025"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.0-dev.20241025.tgz#19e9bc0d69824af6811e6ca41c7052996e59a460"
+  integrity sha512-2Byc/3ywylhhYPpag3uxhRxz6bZSKyS7jBsRkkFFhs0DeH3xlkQu+TElWOvhxtAfPNm7nB74xAqs++a3Iv18cg==
 
 typescript@~5.5:
   version "5.5.4"
