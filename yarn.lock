@@ -11,9 +11,9 @@
     "@jridgewell/trace-mapping" "^0.3.24"
 
 "@aws-cdk/asset-awscli-v1@^2.2.208":
-  version "2.2.210"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.210.tgz#1bea0c6b4742ab2ed529c2f8344d41ae502a5679"
-  integrity sha512-yxuGP52ZtdAGkcAik5mW79FKKv6yvc5QuCZbsKMyICk48alqs+ni7Iv2UnuGLkVSLh09+ixoHHu4o5rIv8X9jg==
+  version "2.2.211"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.211.tgz#e33c1bab8e45ea3e4100fff1a0f4430a3ba2164d"
+  integrity sha512-56G1FYTiKyec3bEfEI/5UcU0XPnaGUlaDDH7OYClyvqss0HlnmoSulHK2gwai2PGAD1Nk+scPrdfH/MVAkSKuw==
 
 "@aws-cdk/asset-kubectl-v20@^2.1.3":
   version "2.1.3"
@@ -3822,10 +3822,10 @@ jsii-rosetta@^5.5.5:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii-srcmak@^0.1.1296:
-  version "0.1.1296"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1296.tgz#a4c1eb3c9d4fdc5fc43c00c515188d6f391c15de"
-  integrity sha512-XN+pFcnGLjySQEDDvh5alaEWBSlm8bggf6TREAAv3W55mJ0Z8Gf4GD7hOTP32xweGheCehBYYQt/b1xWAcxzvw==
+jsii-srcmak@^0.1.1297:
+  version "0.1.1297"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1297.tgz#933648a13bb27c63b434af110ab25f73da07f738"
+  integrity sha512-byKKWjHDFq295sVFRij9biiS+vnmIFKcbc8LvCxcjaO8H8JA+fOrk2hWSUs5+7Ho2zOM/8fb8cbgueDgr6B0LA==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.5.9"
@@ -5555,9 +5555,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.8.0-dev.20241110"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.8.0-dev.20241110.tgz#0bf464a4d3389b3fe8bf8afe30769ca45ae7105b"
-  integrity sha512-0OdrDNPQVyHr/LRSAFbGnuI1a+J72vMFrAsEN2ge8MhW9eihGcqodQrkllBqBLt7dqFUexbK2qOxFun1SUFtQA==
+  version "5.8.0-dev.20241111"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.8.0-dev.20241111.tgz#8a481638472882e0c0bb6faec641a71b1858c76c"
+  integrity sha512-deGbPJipGG/DiJ4nR0NhFuccD2XD6xfUAQCvqMLWxVsM4p9zmhKNMWotkMQEm/l9HjXhnVr0dFJ8u4B9y3y+ZA==
 
 typescript@~5.5:
   version "5.5.4"
