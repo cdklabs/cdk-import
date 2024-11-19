@@ -1192,10 +1192,10 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-aws-cdk-lib@^2.167.1:
-  version "2.167.1"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.167.1.tgz#011a2776e768b28f97779c86b1a893959886e827"
-  integrity sha512-Ck7Wlc37DDx0aZ7Ho1SIQAF+QKwJ479fmIuR490X1gbx4YquQ9ZQ4Jo0XJqgwyneRpAfE3OISDzTB0cyNyiCYA==
+aws-cdk-lib@^2.167.2:
+  version "2.167.2"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.167.2.tgz#db4d3a7d37452d772a51b20fbb5fcb6c7a1b4c1f"
+  integrity sha512-Izvg4VnuzKe2JPDRBlZtMYnOTe6qymtqU642SPeV8tAoBTQPfhZ0d34mXtxCRc9YQk1SoMPGO5VJ8H4Z2CE8Iw==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.208"
     "@aws-cdk/asset-kubectl-v20" "^2.1.3"
@@ -3813,10 +3813,10 @@ jsii-rosetta@^5.6.0:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii-srcmak@^0.1.1303:
-  version "0.1.1303"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1303.tgz#59ef6c4b88ddabc08ed549df4d462f84b8d28a6f"
-  integrity sha512-CYdlxqCQRPCWBOtO4zIQuA6/H8Hr0IgFNz9mc4g2wm7kZMOWoI8bvWxT4NpDAq7TGVrpb6U86yUA23dWSxcg8A==
+jsii-srcmak@^0.1.1304:
+  version "0.1.1304"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1304.tgz#a2681daf69765e4ff51d96e1264099e0db5ceda9"
+  integrity sha512-vqnTfGrT2thnetvtgu+BqidbUcPOShSf5VweCBhDApMDSZFtVJEjj/SxKuiG9iu9VNcYjlC5bpxwqcgY5aAbog==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.6.0"
