@@ -11,9 +11,9 @@
     "@jridgewell/trace-mapping" "^0.3.24"
 
 "@aws-cdk/asset-awscli-v1@^2.2.208":
-  version "2.2.214"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.214.tgz#7d3554aae08f5b51fc1373bb39e5b4549b4c25c7"
-  integrity sha512-JeuX1xoYWXEeFD4RyAyvv8OD/NPdbLD6leKKpFLECWqsKY1YrwX0U8lr753CskflwaDGpU42pyyjPdiMZ7NiWA==
+  version "2.2.215"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.215.tgz#430a39a597d79f6652192f3cee2700faa2b60dd9"
+  integrity sha512-D+Jzwpl+zlBGjJf7nuRcz6JFNwqDQ+IzwIq0VSC4LMRRvrkhGE/ZE+zab3EnjmVkipcQqtQe+PVKefgmxETbvA==
 
 "@aws-cdk/asset-kubectl-v20@^2.1.3":
   version "2.1.3"
@@ -1381,12 +1381,12 @@ call-bind@^1.0.2, call-bind@^1.0.5, call-bind@^1.0.6, call-bind@^1.0.7, call-bin
     set-function-length "^1.2.2"
 
 call-bound@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/call-bound/-/call-bound-1.0.2.tgz#9dbd4daf9f5f753bec3e4c8fbb8a2ecc4de6c39b"
-  integrity sha512-0lk0PHFe/uz0vl527fG9CgdE9WdafjDbCXvBbs+LUv000TVt2Jjhqbs4Jwm8gz070w8xXyEAxrPOMullsxXeGg==
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/call-bound/-/call-bound-1.0.3.tgz#41cfd032b593e39176a71533ab4f384aa04fd681"
+  integrity sha512-YTd+6wGlNlPxSuri7Y6X8tY2dmm12UMH66RpKMhiX6rsk5wXXnYgbUcOt8kiS31/AjfoTOvCsE+w8nZQLQnzHA==
   dependencies:
-    call-bind "^1.0.8"
-    get-intrinsic "^1.2.5"
+    call-bind-apply-helpers "^1.0.1"
+    get-intrinsic "^1.2.6"
 
 callsites@^3.0.0:
   version "3.1.0"
@@ -3887,10 +3887,28 @@ jsii-srcmak@^0.1.1308:
     ncp "^2.0.0"
     yargs "^17.7.2"
 
-jsii@^5.7.1, jsii@~5.7.0, jsii@~5.7.1:
+jsii@^5.7.1:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.7.1.tgz#f13624c0098ddd0aac6b7f35d9430731659b1cf7"
   integrity sha512-EQ9HWmzD+Xpe+yciMQUx3i3Rm1ZVVeIXADbA53KSCDDbd9tqHvZ9kTOrFXakCXcaWIOqXFro+2TLiIIx5HtJhQ==
+  dependencies:
+    "@jsii/check-node" "1.105.0"
+    "@jsii/spec" "^1.105.0"
+    case "^1.6.3"
+    chalk "^4"
+    fast-deep-equal "^3.1.3"
+    log4js "^6.9.1"
+    semver "^7.6.3"
+    semver-intersect "^1.5.0"
+    sort-json "^2.0.1"
+    spdx-license-list "^6.9.0"
+    typescript "~5.7"
+    yargs "^17.7.2"
+
+jsii@~5.7.0, jsii@~5.7.1:
+  version "5.7.2"
+  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.7.2.tgz#19d2d5c48b4b09a5fed1c0b5c4cde25bfe6ea57b"
+  integrity sha512-kt0ePwNLcDRx7iu0DkKM3Xr+DCjds9XIS5jtvyr/beUG0Ke2EUsGJH7ERpTwBs5EKLMmHyCt3n72vRtZeacaSg==
   dependencies:
     "@jsii/check-node" "1.105.0"
     "@jsii/spec" "^1.105.0"
