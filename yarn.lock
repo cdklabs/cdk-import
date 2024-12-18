@@ -1189,10 +1189,10 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-aws-cdk-lib@^2.173.1:
-  version "2.173.1"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.173.1.tgz#7729eeaf5dc85b3e9b8b08ea6fca8e23488ca761"
-  integrity sha512-xlbom4s3sbJDoHzIQmvunTufDQoJHQK8PTh653TE3338PysMX3liZ7efET9/FSQn50S2U3nINDGhrMvjkMBoKw==
+aws-cdk-lib@^2.173.2:
+  version "2.173.2"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.173.2.tgz#9e51332973163eb0d0a89cb67973a89b75c5f0b1"
+  integrity sha512-cL9+z8Pl3VZGoO7BwdsrFAOeud/vSl3at7OvmhihbNprMN15XuFUx/rViAU5OI1m92NbV4NBzYSLbSeCwYLNyw==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.208"
     "@aws-cdk/asset-kubectl-v20" "^2.1.3"
@@ -3223,10 +3223,17 @@ is-text-path@^1.0.1:
   dependencies:
     text-extensions "^1.0.0"
 
-is-typed-array@^1.1.13, is-typed-array@^1.1.14, is-typed-array@^1.1.3:
+is-typed-array@^1.1.13, is-typed-array@^1.1.14:
   version "1.1.14"
   resolved "https://registry.yarnpkg.com/is-typed-array/-/is-typed-array-1.1.14.tgz#205d51d499d5e336f4a3aa480c8ead5ff9e2e3e8"
   integrity sha512-lQUsHzcTb7rH57dajbOuZEuMDXjs9f04ZloER4QOpjpKcaw4f98BRUrs8aiO9Z4G7i7B0Xhgarg6SCgYcYi8Nw==
+  dependencies:
+    which-typed-array "^1.1.16"
+
+is-typed-array@^1.1.3:
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/is-typed-array/-/is-typed-array-1.1.15.tgz#4bfb4a45b61cee83a5a46fba778e4e8d59c0ce0b"
+  integrity sha512-p3EcsicXjit7SaskXHs1hA91QxgTw46Fv6EFKKGS5DRFLD8yKnohjF3hxoju94b/OcMZoQukzpPpBE9uLVKzgQ==
   dependencies:
     which-typed-array "^1.1.16"
 
@@ -3898,13 +3905,31 @@ jsii-srcmak@^0.1.1308:
     ncp "^2.0.0"
     yargs "^17.7.2"
 
-jsii@^5.7.2, jsii@~5.7.0, jsii@~5.7.1:
+jsii@^5.7.2:
   version "5.7.2"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.7.2.tgz#19d2d5c48b4b09a5fed1c0b5c4cde25bfe6ea57b"
   integrity sha512-kt0ePwNLcDRx7iu0DkKM3Xr+DCjds9XIS5jtvyr/beUG0Ke2EUsGJH7ERpTwBs5EKLMmHyCt3n72vRtZeacaSg==
   dependencies:
     "@jsii/check-node" "1.105.0"
     "@jsii/spec" "^1.105.0"
+    case "^1.6.3"
+    chalk "^4"
+    fast-deep-equal "^3.1.3"
+    log4js "^6.9.1"
+    semver "^7.6.3"
+    semver-intersect "^1.5.0"
+    sort-json "^2.0.1"
+    spdx-license-list "^6.9.0"
+    typescript "~5.7"
+    yargs "^17.7.2"
+
+jsii@~5.7.0, jsii@~5.7.1:
+  version "5.7.3"
+  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.7.3.tgz#5f35be6529cf316cd903692112ad8321aa710ab4"
+  integrity sha512-YhXN1vNHDHbGMkER9CpCFyleeOA4SuFS+J8U0LCyKOAqtmw8DkbBiHP/6kYyJBd/Wl0Z7CdapMoL7UDAQBWUuA==
+  dependencies:
+    "@jsii/check-node" "1.106.0"
+    "@jsii/spec" "^1.106.0"
     case "^1.6.3"
     chalk "^4"
     fast-deep-equal "^3.1.3"
@@ -5925,14 +5950,15 @@ which-collection@^1.0.2:
     is-weakset "^2.0.3"
 
 which-typed-array@^1.1.16, which-typed-array@^1.1.2:
-  version "1.1.16"
-  resolved "https://registry.yarnpkg.com/which-typed-array/-/which-typed-array-1.1.16.tgz#db4db429c4706feca2f01677a144278e4a8c216b"
-  integrity sha512-g+N+GAWiRj66DngFwHvISJd+ITsyphZvD1vChfVg6cEdnzy53GzB3oy0fUNlvhz7H7+MiqhYr26qxQShCpKTTQ==
+  version "1.1.18"
+  resolved "https://registry.yarnpkg.com/which-typed-array/-/which-typed-array-1.1.18.tgz#df2389ebf3fbb246a71390e90730a9edb6ce17ad"
+  integrity sha512-qEcY+KJYlWyLH9vNbsr6/5j59AXk5ni5aakf8ldzBvGde6Iz4sxZGkJyWSAueTG7QhOvNRYb1lDdFmL5Td0QKA==
   dependencies:
     available-typed-arrays "^1.0.7"
-    call-bind "^1.0.7"
+    call-bind "^1.0.8"
+    call-bound "^1.0.3"
     for-each "^0.3.3"
-    gopd "^1.0.1"
+    gopd "^1.2.0"
     has-tostringtag "^1.0.2"
 
 which@^2.0.1:
