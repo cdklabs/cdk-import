@@ -37,12 +37,12 @@
   integrity sha512-7bY3J8GCVxLupn/kNmpPc5VJz8grx+4RKfnnJiO1LG+uxkZfANZG3RMHhE+qQxxwkyQ9/MfPtTpf748UhR425A==
 
 "@aws-cdk/cloud-assembly-schema@^39.2.0":
-  version "39.2.13"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-39.2.13.tgz#b76674ad27b41ab18e8e0968043616451d03069e"
-  integrity sha512-wZ+b55jwGhUrhyR1VIyFkA2zv/6vMpnXX5vAs6KWN5LtGk06//b11eefGHULgKuTGdOEKk1PhoDg07oWW22/Gw==
+  version "39.2.14"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-39.2.14.tgz#bcb0f9634e1388e558df5279794ef09f55ed78ef"
+  integrity sha512-G6hudyROAI95rdsKjhOkt3pPC54yx2rqkadeqk5e/xnSX+4NgixK36HJ8giVYNUVFtP12GUeFsQ8NC4ME3GgYg==
   dependencies:
     jsonschema "~1.4.1"
-    semver "^7.7.0"
+    semver "^7.7.1"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.25.9", "@babel/code-frame@^7.26.2":
   version "7.26.2"
@@ -5101,7 +5101,7 @@ semver-intersect@^1.5.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.2.tgz#48d55db737c3287cd4835e17fa13feace1c41ef8"
   integrity sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==
 
-semver@7.x, semver@^7.0.0, semver@^7.3.2, semver@^7.3.4, semver@^7.5.3, semver@^7.6.0, semver@^7.6.3, semver@^7.7.0:
+semver@7.x, semver@^7.0.0, semver@^7.3.2, semver@^7.3.4, semver@^7.5.3, semver@^7.6.0, semver@^7.6.3, semver@^7.7.0, semver@^7.7.1:
   version "7.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.7.1.tgz#abd5098d82b18c6c81f6074ff2647fd3e7220c9f"
   integrity sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==
