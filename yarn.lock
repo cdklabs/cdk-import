@@ -37,9 +37,9 @@
   integrity sha512-7bY3J8GCVxLupn/kNmpPc5VJz8grx+4RKfnnJiO1LG+uxkZfANZG3RMHhE+qQxxwkyQ9/MfPtTpf748UhR425A==
 
 "@aws-cdk/cloud-assembly-schema@^39.2.0":
-  version "39.2.17"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-39.2.17.tgz#d73f0a763a8f1641f91fca8a718188aa563f8b9e"
-  integrity sha512-1lP3D3V8dRNg3cxCn1dOolv/e9bUiqQlhAFBLa6M7hn1NFDcothPdCNzNqG7Gj73GmWT15LIrce5U5MsBDpepQ==
+  version "39.2.18"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-39.2.18.tgz#e78e3d0cb3520601667530f98d4200cdd2ff5b51"
+  integrity sha512-ljdHC1krmhgyxR8LACAO9LB0JpdYrZKry7l8mywj8V8DGXfdLrV+yFsNSPhyZf9kwA/de3g1fH8dspZG8U1ikA==
   dependencies:
     jsonschema "~1.4.1"
     semver "^7.7.1"
