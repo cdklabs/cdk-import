@@ -1220,7 +1220,7 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-aws-cdk-lib@^2.181.1:
+aws-cdk-lib@^2.182.0:
   version "2.182.0"
   resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.182.0.tgz#9b2d51f41d1c7846a62c1d6f6a7da5e677db43d3"
   integrity sha512-emymzTJiCpPz8oF++oiFvFuLH1QZjv6NRNQGn7VuDrEewZFTM4VpiVco5NrxH+KCWnXquDBPF5sQIUo6HY7jLg==
