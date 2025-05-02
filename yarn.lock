@@ -22,9 +22,9 @@
     lru-cache "^10.4.3"
 
 "@aws-cdk/asset-awscli-v1@^2.2.229":
-  version "2.2.233"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.233.tgz#2c5943463b14507d30bbf967b9cf2481848e6eaf"
-  integrity sha512-OH5ZN1F/0wwOUwzVUSvE0/syUOi44H9the6IG16anlSptfeQ1fvduJazZAKRuJLtautPbiqxllyOrtWh6LhX8A==
+  version "2.2.234"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.234.tgz#806a8926981b548617d4b07b861d9dedbe888406"
+  integrity sha512-8ayvzYK7Acy9KvqXJp2vjw0z+HCJWBSqPmsaLbmdTtB/eYHn89UCNPurrj4KFWhM5+pGnSU6r7BPyRiYEjSU3w==
 
 "@aws-cdk/asset-node-proxy-agent-v6@^2.1.0":
   version "2.1.0"
@@ -1221,10 +1221,10 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-aws-cdk-lib@^2.193.0:
-  version "2.193.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.193.0.tgz#2c97ac6794c955fbf62981de7d02c369fc9af967"
-  integrity sha512-Bsf11FM85+s9jSAT8JfDNlrSz6LF3Xa2eSNOyMLcXNopI7eVXP1U6opRHK0waaZGLmQfOwsbSp/9XRMKikkazg==
+aws-cdk-lib@^2.194.0:
+  version "2.194.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.194.0.tgz#9480155eb80caff3e1013ca9aaa8a2cd6c4f133b"
+  integrity sha512-v12l31Rx/BDjXEyMsfSmDRsjZu0AzHMoRHDqbcSzDcvSYHjnEW/nuFR0R1+tat9nEX8h54GDctduL6pFcJ8xUg==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.229"
     "@aws-cdk/asset-node-proxy-agent-v6" "^2.1.0"
