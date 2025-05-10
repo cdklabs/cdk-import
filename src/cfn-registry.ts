@@ -1,10 +1,15 @@
-import * as AWS from 'aws-sdk';
-import { createAwsClient } from './aws';
+import {
+  DescribeTypeCommandInput,
+  DescribeTypeCommandOutput,
+  ListTypesCommandInput,
+  ListTypesCommandOutput,
+} from '@aws-sdk/client-cloudformation';
+
 import { TypeInfo } from './type-info';
 
 export interface ICloudFormationClient {
-  listTypes(input: AWS.CloudFormation.ListTypesInput): Promise<AWS.CloudFormation.ListTypesOutput>;
-  describeType(input: AWS.CloudFormation.DescribeTypeInput): Promise<AWS.CloudFormation.DescribeTypeOutput>;
+  listTypes(input: ListTypesCommandInput): Promise<ListTypesCommandOutput>;
+  describeType(input: DescribeTypeCommandInput): Promise<DescribeTypeCommandOutput>;
 }
 
 export interface DescribeResourceTypeOptions {
@@ -42,7 +47,7 @@ export async function describeResourceType(name: string, options: DescribeResour
     const types = [];
     let token;
     do {
-      const res: AWS.CloudFormation.ListTypesOutput = await cfn.listTypes({
+      const res: ListTypesCommandOutput = await cfn.listTypes({
         NextToken: token,
         Type: name.endsWith('MODULE') ? 'MODULE' : 'RESOURCE',
         Filters: {
@@ -82,17 +87,17 @@ export async function describeResourceType(name: string, options: DescribeResour
 }
 
 class CloudFormationClient implements ICloudFormationClient {
-  private readonly cfn: AWS.CloudFormation;
+  private readonly cfn: CloudFormationClient;
 
   constructor() {
-    this.cfn = createAwsClient(AWS.CloudFormation);
+    this.cfn = new CloudFormationClient();
   }
 
-  public async describeType(input: AWS.CloudFormation.DescribeTypeInput): Promise<AWS.CloudFormation.DescribeTypeOutput> {
-    return this.cfn.describeType(input).promise();
+  public async describeType(input: DescribeTypeCommandInput): Promise<DescribeTypeCommandOutput> {
+    return this.cfn.describeType(input);
   }
 
-  public async listTypes(input: AWS.CloudFormation.ListTypesInput): Promise<AWS.CloudFormation.ListTypesOutput> {
-    return this.cfn.listTypes(input).promise();
+  public async listTypes(input: ListTypesCommandInput): Promise<ListTypesCommandOutput> {
+    return this.cfn.listTypes(input);
   }
 }
