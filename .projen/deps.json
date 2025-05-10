@@ -90,11 +90,15 @@
       "type": "override"
     },
     {
-      "name": "aws-cdk-lib",
+      "name": "@aws-sdk/client-cloudformation",
       "type": "runtime"
     },
     {
-      "name": "aws-sdk",
+      "name": "@aws-sdk/client-service-catalog",
+      "type": "runtime"
+    },
+    {
+      "name": "aws-cdk-lib",
       "type": "runtime"
     },
     {
