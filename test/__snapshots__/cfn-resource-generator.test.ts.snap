@@ -93,7 +93,7 @@ export interface CfnEnforcerProps {
 /**
  * Converts an object of type 'CfnEnforcerProps' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnEnforcerProps(obj: CfnEnforcerProps | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -112,7 +112,7 @@ export function toJson_CfnEnforcerProps(obj: CfnEnforcerProps | undefined): Reco
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * For network connectivity to Cluster inside VPC
@@ -139,7 +139,7 @@ export interface CfnEnforcerPropsVpcConfiguration {
 /**
  * Converts an object of type 'CfnEnforcerPropsVpcConfiguration' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnEnforcerPropsVpcConfiguration(obj: CfnEnforcerPropsVpcConfiguration | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -149,7 +149,7 @@ export function toJson_CfnEnforcerPropsVpcConfiguration(obj: CfnEnforcerPropsVpc
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 
 /**
@@ -219,7 +219,7 @@ export interface CfnCloudGuardQsModuleProps {
 /**
  * Converts an object of type 'CfnCloudGuardQsModuleProps' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModuleProps(obj: CfnCloudGuardQsModuleProps | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -229,7 +229,7 @@ export function toJson_CfnCloudGuardQsModuleProps(obj: CfnCloudGuardQsModuleProp
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsParameters
@@ -744,7 +744,7 @@ export interface CfnCloudGuardQsModulePropsParameters {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParameters' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParameters(obj: CfnCloudGuardQsModulePropsParameters | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -824,7 +824,7 @@ export function toJson_CfnCloudGuardQsModulePropsParameters(obj: CfnCloudGuardQs
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResources
@@ -1120,7 +1120,7 @@ export interface CfnCloudGuardQsModulePropsResources {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResources' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResources(obj: CfnCloudGuardQsModulePropsResources | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1185,7 +1185,7 @@ export function toJson_CfnCloudGuardQsModulePropsResources(obj: CfnCloudGuardQsM
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * List of Availability Zones (AZs) to use for the subnets in the VPC. Select at least two
@@ -1208,7 +1208,7 @@ export interface CfnCloudGuardQsModulePropsParametersAvailabilityZones {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersAvailabilityZones' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersAvailabilityZones(obj: CfnCloudGuardQsModulePropsParametersAvailabilityZones | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1218,7 +1218,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersAvailabilityZones(obj
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Number of Availability Zones to use in the VPC. This must match your selections in the list of Availability Zones parameter.  Default: 2
@@ -1241,7 +1241,7 @@ export interface CfnCloudGuardQsModulePropsParametersNumberOfAZs {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersNumberOfAZs' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersNumberOfAZs(obj: CfnCloudGuardQsModulePropsParametersNumberOfAZs | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1251,7 +1251,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersNumberOfAZs(obj: CfnC
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * CIDR block for the VPC. Default: 10.0.0.0/16
@@ -1274,7 +1274,7 @@ export interface CfnCloudGuardQsModulePropsParametersVpccidr {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersVpccidr' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersVpccidr(obj: CfnCloudGuardQsModulePropsParametersVpccidr | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1284,7 +1284,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersVpccidr(obj: CfnCloud
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * CIDR block for public subnet 1 located in the 1st Availability Zone. If you choose to deploy a Security Management Server it will be deployed in this subnet. Default: 10.0.10.0/24
@@ -1307,7 +1307,7 @@ export interface CfnCloudGuardQsModulePropsParametersPublicSubnet1Cidr {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersPublicSubnet1Cidr' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersPublicSubnet1Cidr(obj: CfnCloudGuardQsModulePropsParametersPublicSubnet1Cidr | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1317,7 +1317,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersPublicSubnet1Cidr(obj
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * CIDR block for public subnet 2 located in the 2nd Availability Zone. Default: 10.0.20.0/24
@@ -1340,7 +1340,7 @@ export interface CfnCloudGuardQsModulePropsParametersPublicSubnet2Cidr {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersPublicSubnet2Cidr' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersPublicSubnet2Cidr(obj: CfnCloudGuardQsModulePropsParametersPublicSubnet2Cidr | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1350,7 +1350,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersPublicSubnet2Cidr(obj
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * CIDR block for public subnet 3 located in the 3rd Availability Zone. Default: 10.0.30.0/24
@@ -1373,7 +1373,7 @@ export interface CfnCloudGuardQsModulePropsParametersPublicSubnet3Cidr {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersPublicSubnet3Cidr' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersPublicSubnet3Cidr(obj: CfnCloudGuardQsModulePropsParametersPublicSubnet3Cidr | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1383,7 +1383,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersPublicSubnet3Cidr(obj
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * CIDR block for public subnet 4 located in the 4th Availability Zone. Default: 10.0.40.0/24
@@ -1406,7 +1406,7 @@ export interface CfnCloudGuardQsModulePropsParametersPublicSubnet4Cidr {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersPublicSubnet4Cidr' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersPublicSubnet4Cidr(obj: CfnCloudGuardQsModulePropsParametersPublicSubnet4Cidr | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1416,7 +1416,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersPublicSubnet4Cidr(obj
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * CIDR block for private subnet 1 located in the 1st Availability Zone. Default: 10.0.11.0/24
@@ -1439,7 +1439,7 @@ export interface CfnCloudGuardQsModulePropsParametersPrivateSubnet1Cidr {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersPrivateSubnet1Cidr' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersPrivateSubnet1Cidr(obj: CfnCloudGuardQsModulePropsParametersPrivateSubnet1Cidr | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1449,7 +1449,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersPrivateSubnet1Cidr(ob
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * CIDR block for private subnet 2 located in the 2nd Availability Zone. Default: 10.0.21.0/24
@@ -1472,7 +1472,7 @@ export interface CfnCloudGuardQsModulePropsParametersPrivateSubnet2Cidr {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersPrivateSubnet2Cidr' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersPrivateSubnet2Cidr(obj: CfnCloudGuardQsModulePropsParametersPrivateSubnet2Cidr | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1482,7 +1482,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersPrivateSubnet2Cidr(ob
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * CIDR block for private subnet 3 located in the 3rd Availability Zone. Default: 10.0.31.0/24
@@ -1505,7 +1505,7 @@ export interface CfnCloudGuardQsModulePropsParametersPrivateSubnet3Cidr {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersPrivateSubnet3Cidr' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersPrivateSubnet3Cidr(obj: CfnCloudGuardQsModulePropsParametersPrivateSubnet3Cidr | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1515,7 +1515,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersPrivateSubnet3Cidr(ob
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * CIDR block for private subnet 4 located in the 4th Availability Zone. Default: 10.0.41.0/24
@@ -1538,7 +1538,7 @@ export interface CfnCloudGuardQsModulePropsParametersPrivateSubnet4Cidr {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersPrivateSubnet4Cidr' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersPrivateSubnet4Cidr(obj: CfnCloudGuardQsModulePropsParametersPrivateSubnet4Cidr | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1548,7 +1548,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersPrivateSubnet4Cidr(ob
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The EC2 Key Pair to allow SSH access to the instances. For more detail visit: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html
@@ -1571,7 +1571,7 @@ export interface CfnCloudGuardQsModulePropsParametersKeyName {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersKeyName' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersKeyName(obj: CfnCloudGuardQsModulePropsParametersKeyName | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1581,7 +1581,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersKeyName(obj: CfnCloud
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Encrypt Environment instances volume with default AWS KMS key. Default: true
@@ -1604,7 +1604,7 @@ export interface CfnCloudGuardQsModulePropsParametersEnableVolumeEncryption {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersEnableVolumeEncryption' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersEnableVolumeEncryption(obj: CfnCloudGuardQsModulePropsParametersEnableVolumeEncryption | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1614,7 +1614,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersEnableVolumeEncryptio
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Enable SSH connection over AWS web console. Default: false
@@ -1637,7 +1637,7 @@ export interface CfnCloudGuardQsModulePropsParametersEnableInstanceConnect {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersEnableInstanceConnect' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersEnableInstanceConnect(obj: CfnCloudGuardQsModulePropsParametersEnableInstanceConnect | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1647,7 +1647,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersEnableInstanceConnect
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Automatically download Blade Contracts and other important data. Improve product experience by sending data to Check Point. Default: true
@@ -1670,7 +1670,7 @@ export interface CfnCloudGuardQsModulePropsParametersAllowUploadDownload {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersAllowUploadDownload' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersAllowUploadDownload(obj: CfnCloudGuardQsModulePropsParametersAllowUploadDownload | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1680,7 +1680,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersAllowUploadDownload(o
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The tag is used by the Security Management Server to automatically provision the Security Gateways. Must be up to 12 alphanumeric characters and unique for each Quick Start deployment. Default: quickstart
@@ -1703,7 +1703,7 @@ export interface CfnCloudGuardQsModulePropsParametersProvisionTag {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersProvisionTag' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersProvisionTag(obj: CfnCloudGuardQsModulePropsParametersProvisionTag | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1713,7 +1713,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersProvisionTag(obj: Cfn
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Use Network Load Balancer if you wish to preserve the source IP address and Application Load Balancer if you wish to perform SSL Offloading. Default: Network Load Balancer. Allowed values: Network Load Balancer, Application Load Balancer
@@ -1736,7 +1736,7 @@ export interface CfnCloudGuardQsModulePropsParametersLoadBalancersType {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersLoadBalancersType' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersLoadBalancersType(obj: CfnCloudGuardQsModulePropsParametersLoadBalancersType | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1746,7 +1746,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersLoadBalancersType(obj
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The protocol to use on the Application Load Balancer. If Network Load Balancer was selected this section will be ignored. Default: HTTP. Allowed values: HTTP, HTTPS
@@ -1769,7 +1769,7 @@ export interface CfnCloudGuardQsModulePropsParametersAlbProtocol {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersAlbProtocol' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersAlbProtocol(obj: CfnCloudGuardQsModulePropsParametersAlbProtocol | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1779,7 +1779,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersAlbProtocol(obj: CfnC
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The protocol to use on the Network Load Balancer. If Application Load Balancer was selected this section will be ignored. Default: TCP. Allowed values: TCP, TLS, UDP, TCP_UDP
@@ -1802,7 +1802,7 @@ export interface CfnCloudGuardQsModulePropsParametersNlbProtocol {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersNlbProtocol' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersNlbProtocol(obj: CfnCloudGuardQsModulePropsParametersNlbProtocol | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1812,7 +1812,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersNlbProtocol(obj: CfnC
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Amazon Resource Name (ARN) of an HTTPS Certificate, ignored if the selected protocol is HTTP (for the ALBProtocol parameter)
@@ -1835,7 +1835,7 @@ export interface CfnCloudGuardQsModulePropsParametersCertificate {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersCertificate' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersCertificate(obj: CfnCloudGuardQsModulePropsParametersCertificate | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1845,7 +1845,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersCertificate(obj: CfnC
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The external Load Balancer listens to this port. Leave this field blank to use default ports: 80 for HTTP and 443 for HTTPS
@@ -1868,7 +1868,7 @@ export interface CfnCloudGuardQsModulePropsParametersServicePort {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersServicePort' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersServicePort(obj: CfnCloudGuardQsModulePropsParametersServicePort | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1878,7 +1878,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersServicePort(obj: CfnC
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Notifications about scaling events will be sent to this email address (optional)
@@ -1901,7 +1901,7 @@ export interface CfnCloudGuardQsModulePropsParametersAdminEmail {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersAdminEmail' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersAdminEmail(obj: CfnCloudGuardQsModulePropsParametersAdminEmail | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1911,7 +1911,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersAdminEmail(obj: CfnCl
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The EC2 instance type for the Security Gateways. Default: c5.xlarge. Allowed values: c5.xlarge, c5.xlarge, c5.2xlarge, c5.4xlarge, c5.9xlarge, c5.18xlarge, c5n.large, c5n.xlarge, c5n.2xlarge, c5n.4xlarge, c5n.9xlarge, c5n.18xlarge
@@ -1934,7 +1934,7 @@ export interface CfnCloudGuardQsModulePropsParametersGatewayInstanceType {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersGatewayInstanceType' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersGatewayInstanceType(obj: CfnCloudGuardQsModulePropsParametersGatewayInstanceType | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1944,7 +1944,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersGatewayInstanceType(o
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The minimal number of Security Gateways
@@ -1967,7 +1967,7 @@ export interface CfnCloudGuardQsModulePropsParametersGatewaysMinSize {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersGatewaysMinSize' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersGatewaysMinSize(obj: CfnCloudGuardQsModulePropsParametersGatewaysMinSize | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -1977,7 +1977,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersGatewaysMinSize(obj: 
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The maximal number of Security Gateways
@@ -2000,7 +2000,7 @@ export interface CfnCloudGuardQsModulePropsParametersGatewaysMaxSize {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersGatewaysMaxSize' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersGatewaysMaxSize(obj: CfnCloudGuardQsModulePropsParametersGatewaysMaxSize | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2010,7 +2010,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersGatewaysMaxSize(obj: 
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The version and license to install on the Security Gateways. Default: R80.40-PAYG-NGTP-GW. Allowed values: R80.40-BYOL-GW, R80.40-PAYG-NGTP-GW, R80.40-PAYG-NGTX-GW, R81-BYOL-GW, R81-PAYG-NGTP-GW, R81-PAYG-NGTX-GW
@@ -2033,7 +2033,7 @@ export interface CfnCloudGuardQsModulePropsParametersGatewayVersion {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersGatewayVersion' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersGatewayVersion(obj: CfnCloudGuardQsModulePropsParametersGatewayVersion | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2043,7 +2043,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersGatewayVersion(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Admin user's password hash (use command \\"openssl passwd -1 PASSWORD\\" to get the PASSWORD's hash) (optional)
@@ -2066,7 +2066,7 @@ export interface CfnCloudGuardQsModulePropsParametersGatewayPasswordHash {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersGatewayPasswordHash' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersGatewayPasswordHash(obj: CfnCloudGuardQsModulePropsParametersGatewayPasswordHash | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2076,7 +2076,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersGatewayPasswordHash(o
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The Secure Internal Communication key creates trusted connections between Check Point components.  Choose a random string consisting of at least 8 alphanumeric characters.
@@ -2099,7 +2099,7 @@ export interface CfnCloudGuardQsModulePropsParametersGatewaySicKey {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersGatewaySicKey' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersGatewaySicKey(obj: CfnCloudGuardQsModulePropsParametersGatewaySicKey | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2109,7 +2109,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersGatewaySicKey(obj: Cf
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Report Check Point specific CloudWatch metrics. Default: false
@@ -2132,7 +2132,7 @@ export interface CfnCloudGuardQsModulePropsParametersCloudWatch {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersCloudWatch' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersCloudWatch(obj: CfnCloudGuardQsModulePropsParametersCloudWatch | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2142,7 +2142,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersCloudWatch(obj: CfnCl
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Select false to use an existing Security Management Server or to deploy one later and to ignore the other parameters of this section. Default: true
@@ -2165,7 +2165,7 @@ export interface CfnCloudGuardQsModulePropsParametersManagementDeploy {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersManagementDeploy' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersManagementDeploy(obj: CfnCloudGuardQsModulePropsParametersManagementDeploy | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2175,7 +2175,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersManagementDeploy(obj:
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The EC2 instance type of the Security Management Server. Default: m5.xlarge. Allowed values: m5.large, m5.xlarge, m5.2xlarge, m5.4xlarge, m5.12xlarge, m5.24xlarge
@@ -2198,7 +2198,7 @@ export interface CfnCloudGuardQsModulePropsParametersManagementInstanceType {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersManagementInstanceType' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersManagementInstanceType(obj: CfnCloudGuardQsModulePropsParametersManagementInstanceType | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2208,7 +2208,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersManagementInstanceTyp
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The version and license to install on the Security Management Server. Default: R80.40-PAYG-MGMT. Allowed values: R80.40-BYOL-MGMT, R80.40-PAYG-MGMT, R81-BYOL-MGMT, R81-PAYG-MGMT
@@ -2231,7 +2231,7 @@ export interface CfnCloudGuardQsModulePropsParametersManagementVersion {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersManagementVersion' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersManagementVersion(obj: CfnCloudGuardQsModulePropsParametersManagementVersion | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2241,7 +2241,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersManagementVersion(obj
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Admin user's password hash (use command \\"openssl passwd -1 PASSWORD\\" to get the PASSWORD's hash) (optional)
@@ -2264,7 +2264,7 @@ export interface CfnCloudGuardQsModulePropsParametersManagementPasswordHash {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersManagementPasswordHash' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersManagementPasswordHash(obj: CfnCloudGuardQsModulePropsParametersManagementPasswordHash | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2274,7 +2274,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersManagementPasswordHas
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The name of the Security Policy package to be installed on the gateways in the Security Gateways Auto Scaling group. Default: Standard
@@ -2297,7 +2297,7 @@ export interface CfnCloudGuardQsModulePropsParametersGatewaysPolicy {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersGatewaysPolicy' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersGatewaysPolicy(obj: CfnCloudGuardQsModulePropsParametersGatewaysPolicy | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2307,7 +2307,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersGatewaysPolicy(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Turn on the Intrusion Prevention System, Application Control, Anti-Virus and Anti-Bot Blades (these and additional Blades can be manually turned on or off later). Default: true
@@ -2330,7 +2330,7 @@ export interface CfnCloudGuardQsModulePropsParametersGatewaysBlades {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersGatewaysBlades' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersGatewaysBlades(obj: CfnCloudGuardQsModulePropsParametersGatewaysBlades | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2340,7 +2340,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersGatewaysBlades(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Allow web, SSH, and graphical clients only from this network to communicate with the Security Management Server
@@ -2363,7 +2363,7 @@ export interface CfnCloudGuardQsModulePropsParametersAdminCidr {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersAdminCidr' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersAdminCidr(obj: CfnCloudGuardQsModulePropsParametersAdminCidr | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2373,7 +2373,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersAdminCidr(obj: CfnClo
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Allow gateways only from this network to communicate with the Security Management Server
@@ -2396,7 +2396,7 @@ export interface CfnCloudGuardQsModulePropsParametersGatewaysAddresses {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersGatewaysAddresses' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersGatewaysAddresses(obj: CfnCloudGuardQsModulePropsParametersGatewaysAddresses | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2406,7 +2406,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersGatewaysAddresses(obj
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Select true to deploy web servers and an internal Application Load Balancer. If you select false the other parameters of this section will be ignored. Default: false
@@ -2429,7 +2429,7 @@ export interface CfnCloudGuardQsModulePropsParametersServersDeploy {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersServersDeploy' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersServersDeploy(obj: CfnCloudGuardQsModulePropsParametersServersDeploy | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2439,7 +2439,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersServersDeploy(obj: Cf
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The EC2 instance type for the web servers. Default: t3.micro. Allowed values: t3.nano, t3.micro, t3.small, t3.medium, t3.large, t3.xlarge, t3.2xlarge
@@ -2462,7 +2462,7 @@ export interface CfnCloudGuardQsModulePropsParametersServerInstanceType {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersServerInstanceType' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersServerInstanceType(obj: CfnCloudGuardQsModulePropsParametersServerInstanceType | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2472,7 +2472,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersServerInstanceType(ob
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The Amazon Machine Image ID of a preconfigured web server (e.g. ami-0dc7dc63)
@@ -2495,7 +2495,7 @@ export interface CfnCloudGuardQsModulePropsParametersServerAmi {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersServerAmi' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersServerAmi(obj: CfnCloudGuardQsModulePropsParametersServerAmi | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2505,7 +2505,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersServerAmi(obj: CfnClo
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Set to false to create only public subnets. If false, the CIDR parameters for ALL private subnets will be ignored. Default: true
@@ -2528,7 +2528,7 @@ export interface CfnCloudGuardQsModulePropsParametersCreatePrivateSubnets {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersCreatePrivateSubnets' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersCreatePrivateSubnets(obj: CfnCloudGuardQsModulePropsParametersCreatePrivateSubnets | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2538,7 +2538,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersCreatePrivateSubnets(
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Set true for creating designated subnets for VPC TGW attachments. If false, the CIDR parameters for the TGW subnets will be ignored. Default: false
@@ -2561,7 +2561,7 @@ export interface CfnCloudGuardQsModulePropsParametersCreateTgwSubnets {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersCreateTgwSubnets' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersCreateTgwSubnets(obj: CfnCloudGuardQsModulePropsParametersCreateTgwSubnets | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2571,7 +2571,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersCreateTgwSubnets(obj:
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * CIDR block for TGW subnet 1 located in Availability Zone 1. Default: 10.0.12.0/24
@@ -2594,7 +2594,7 @@ export interface CfnCloudGuardQsModulePropsParametersTgwSubnet1Cidr {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersTgwSubnet1Cidr' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersTgwSubnet1Cidr(obj: CfnCloudGuardQsModulePropsParametersTgwSubnet1Cidr | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2604,7 +2604,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersTgwSubnet1Cidr(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * CIDR block for TGW subnet 2 located in Availability Zone 2. Default: 10.0.22.0/24
@@ -2627,7 +2627,7 @@ export interface CfnCloudGuardQsModulePropsParametersTgwSubnet2Cidr {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersTgwSubnet2Cidr' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersTgwSubnet2Cidr(obj: CfnCloudGuardQsModulePropsParametersTgwSubnet2Cidr | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2637,7 +2637,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersTgwSubnet2Cidr(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * CIDR block for TGW subnet 3 located in Availability Zone 3. Default: 10.0.32.0/24
@@ -2660,7 +2660,7 @@ export interface CfnCloudGuardQsModulePropsParametersTgwSubnet3Cidr {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersTgwSubnet3Cidr' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersTgwSubnet3Cidr(obj: CfnCloudGuardQsModulePropsParametersTgwSubnet3Cidr | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2670,7 +2670,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersTgwSubnet3Cidr(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * CIDR block for TGW subnet 4 located in Availability Zone 4. Default: 10.0.42.0/24
@@ -2693,7 +2693,7 @@ export interface CfnCloudGuardQsModulePropsParametersTgwSubnet4Cidr {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersTgwSubnet4Cidr' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersTgwSubnet4Cidr(obj: CfnCloudGuardQsModulePropsParametersTgwSubnet4Cidr | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2703,7 +2703,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersTgwSubnet4Cidr(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Port for the ELB. Default: 8080
@@ -2726,7 +2726,7 @@ export interface CfnCloudGuardQsModulePropsParametersElbPort {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersElbPort' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersElbPort(obj: CfnCloudGuardQsModulePropsParametersElbPort | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2736,7 +2736,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersElbPort(obj: CfnCloud
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Allocate an elastic IP for the Management. Default: true
@@ -2759,7 +2759,7 @@ export interface CfnCloudGuardQsModulePropsParametersAllocatePublicAddress {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersAllocatePublicAddress' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersAllocatePublicAddress(obj: CfnCloudGuardQsModulePropsParametersAllocatePublicAddress | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2769,7 +2769,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersAllocatePublicAddress
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * IAM role to attach to the instance profile of the Management Server. Default: Create with read permissions. Allowed values: None (configure later), Use existing (specify an existing IAM role name), Create with assume role permissions (specify an STS role ARN), Create with read permissions, Create with read-write permissions
@@ -2792,7 +2792,7 @@ export interface CfnCloudGuardQsModulePropsParametersManagementPermissions {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersManagementPermissions' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersManagementPermissions(obj: CfnCloudGuardQsModulePropsParametersManagementPermissions | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2802,7 +2802,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersManagementPermissions
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Select 'Over the internet' if any of the gateways you wish to manage are not directly accessed via their private IP address. Default: 'Locally managed'. Allowed values: Locally managed, Over the internet
@@ -2825,7 +2825,7 @@ export interface CfnCloudGuardQsModulePropsParametersGatewayManagement {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersGatewayManagement' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersGatewayManagement(obj: CfnCloudGuardQsModulePropsParametersGatewayManagement | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2835,7 +2835,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersGatewayManagement(obj
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Mandatory only if deploying a secondary Management Server, the Secure Internal Communication key creates trusted connections between Check Point components. Choose a random string consisting of at least 8 alphanumeric characters
@@ -2858,7 +2858,7 @@ export interface CfnCloudGuardQsModulePropsParametersManagementSicKey {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersManagementSicKey' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersManagementSicKey(obj: CfnCloudGuardQsModulePropsParametersManagementSicKey | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2868,7 +2868,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersManagementSicKey(obj:
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * A predefined IAM role to attach to the instance profile. Ignored if IAM role is not set to 'Use existing'
@@ -2891,7 +2891,7 @@ export interface CfnCloudGuardQsModulePropsParametersManagementPredefinedRole {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersManagementPredefinedRole' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersManagementPredefinedRole(obj: CfnCloudGuardQsModulePropsParametersManagementPredefinedRole | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2901,7 +2901,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersManagementPredefinedR
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * (optional). Default: 169.254.169.123
@@ -2924,7 +2924,7 @@ export interface CfnCloudGuardQsModulePropsParametersNtpPrimary {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersNtpPrimary' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersNtpPrimary(obj: CfnCloudGuardQsModulePropsParametersNtpPrimary | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2934,7 +2934,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersNtpPrimary(obj: CfnCl
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * (optional). Default: 0.pool.ntp.org
@@ -2957,7 +2957,7 @@ export interface CfnCloudGuardQsModulePropsParametersNtpSecondary {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersNtpSecondary' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersNtpSecondary(obj: CfnCloudGuardQsModulePropsParametersNtpSecondary | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -2967,7 +2967,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersNtpSecondary(obj: Cfn
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * (optional). Default: mgmt-aws
@@ -2990,7 +2990,7 @@ export interface CfnCloudGuardQsModulePropsParametersManagementHostname {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersManagementHostname' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersManagementHostname(obj: CfnCloudGuardQsModulePropsParametersManagementHostname | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3000,7 +3000,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersManagementHostname(ob
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Determines if this is the primary Management Server or not. Default: true
@@ -3023,7 +3023,7 @@ export interface CfnCloudGuardQsModulePropsParametersPrimaryManagement {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersPrimaryManagement' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersPrimaryManagement(obj: CfnCloudGuardQsModulePropsParametersPrimaryManagement | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3033,7 +3033,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersPrimaryManagement(obj
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * EBS Volume size of the management server
@@ -3056,7 +3056,7 @@ export interface CfnCloudGuardQsModulePropsParametersManagementStackVolumeSize {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersManagementStackVolumeSize' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersManagementStackVolumeSize(obj: CfnCloudGuardQsModulePropsParametersManagementStackVolumeSize | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3066,7 +3066,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersManagementStackVolume
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Change the admin shell to enable advanced command line configuration. Default: /etc/cli.sh. Allowed values: /etc/cli.sh, /bin/bash, /bin/csh, /bin/tcsh
@@ -3089,7 +3089,7 @@ export interface CfnCloudGuardQsModulePropsParametersShellManagementStack {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersShellManagementStack' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersShellManagementStack(obj: CfnCloudGuardQsModulePropsParametersShellManagementStack | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3099,7 +3099,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersShellManagementStack(
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The Elasitc Load Balancer Type. Default: none. Allowed values: none, internal, internet-facing
@@ -3122,7 +3122,7 @@ export interface CfnCloudGuardQsModulePropsParametersElbType {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersElbType' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersElbType(obj: CfnCloudGuardQsModulePropsParametersElbType | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3132,7 +3132,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersElbType(obj: CfnCloud
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * A list of Target Groups to associate with the Auto Scaling group (comma separated list of ARNs, without spaces) (optional)
@@ -3155,7 +3155,7 @@ export interface CfnCloudGuardQsModulePropsParametersGatewaysTargetGroups {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersGatewaysTargetGroups' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersGatewaysTargetGroups(obj: CfnCloudGuardQsModulePropsParametersGatewaysTargetGroups | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3165,7 +3165,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersGatewaysTargetGroups(
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Determines if the gateways are provisioned using their private or public address. Default: private. Allowed values: private, public
@@ -3188,7 +3188,7 @@ export interface CfnCloudGuardQsModulePropsParametersControlGatewayOverPrivateOr
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersControlGatewayOverPrivateOrPublicAddress' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersControlGatewayOverPrivateOrPublicAddress(obj: CfnCloudGuardQsModulePropsParametersControlGatewayOverPrivateOrPublicAddress | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3198,7 +3198,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersControlGatewayOverPri
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * EBS Volume size of the security gateway server
@@ -3221,7 +3221,7 @@ export interface CfnCloudGuardQsModulePropsParametersSecurityGatewayVolumeSize {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersSecurityGatewayVolumeSize' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersSecurityGatewayVolumeSize(obj: CfnCloudGuardQsModulePropsParametersSecurityGatewayVolumeSize | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3231,7 +3231,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersSecurityGatewayVolume
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Allow clients only from this network to communicate with the Web Servers. Default: 0.0.0.0/0
@@ -3254,7 +3254,7 @@ export interface CfnCloudGuardQsModulePropsParametersElbClients {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersElbClients' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersElbClients(obj: CfnCloudGuardQsModulePropsParametersElbClients | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3264,7 +3264,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersElbClients(obj: CfnCl
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Change the admin shell to enable advanced command line configuration. Default: /etc/cli.sh. Allowed Values: /etc/cli.sh /bin/bash /bin/csh /bin/tcsh
@@ -3287,7 +3287,7 @@ export interface CfnCloudGuardQsModulePropsParametersShellSecurityGatewayStack {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersShellSecurityGatewayStack' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersShellSecurityGatewayStack(obj: CfnCloudGuardQsModulePropsParametersShellSecurityGatewayStack | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3297,7 +3297,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersShellSecurityGatewayS
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * IAM Permissions for the management server. Default: Create with read permissions. Allowed values: Create with read permissions Create with read-write permissions Create with assume role permissions (specify an STS role ARN)
@@ -3320,7 +3320,7 @@ export interface CfnCloudGuardQsModulePropsParametersPermissions {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersPermissions' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersPermissions(obj: CfnCloudGuardQsModulePropsParametersPermissions | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3330,7 +3330,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersPermissions(obj: CfnC
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The IAM role will be able to assume these STS Roles (comma separated list of ARNs, without spaces)
@@ -3353,7 +3353,7 @@ export interface CfnCloudGuardQsModulePropsParametersStsRoles {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersStsRoles' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersStsRoles(obj: CfnCloudGuardQsModulePropsParametersStsRoles | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3363,7 +3363,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersStsRoles(obj: CfnClou
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * A 12 digits number that represents the ID of a trusted account. IAM users in this account will be able assume the IAM role and receive the permissions attached to it.
@@ -3386,7 +3386,7 @@ export interface CfnCloudGuardQsModulePropsParametersTrustedAccount {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersTrustedAccount' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersTrustedAccount(obj: CfnCloudGuardQsModulePropsParametersTrustedAccount | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3396,7 +3396,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersTrustedAccount(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * An optional list of Target Groups to associate with the Auto Scaling group (comma separated list of ARNs, without spaces)
@@ -3419,7 +3419,7 @@ export interface CfnCloudGuardQsModulePropsParametersServersTargetGroups {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersServersTargetGroups' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersServersTargetGroups(obj: CfnCloudGuardQsModulePropsParametersServersTargetGroups | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3429,7 +3429,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersServersTargetGroups(o
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The ID of Security Group from which access will be allowed to the instances in this Auto Scaling group
@@ -3452,7 +3452,7 @@ export interface CfnCloudGuardQsModulePropsParametersSourceSecurityGroup {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersSourceSecurityGroup' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersSourceSecurityGroup(obj: CfnCloudGuardQsModulePropsParametersSourceSecurityGroup | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3462,7 +3462,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersSourceSecurityGroup(o
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The minimal number of servers in the Auto Scaling group. Default: 2
@@ -3485,7 +3485,7 @@ export interface CfnCloudGuardQsModulePropsParametersServersMinSize {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersServersMinSize' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersServersMinSize(obj: CfnCloudGuardQsModulePropsParametersServersMinSize | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3495,7 +3495,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersServersMinSize(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The maximal number of servers in the Auto Scaling group. Default: 10
@@ -3518,7 +3518,7 @@ export interface CfnCloudGuardQsModulePropsParametersServersMaxSize {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersServersMaxSize' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersServersMaxSize(obj: CfnCloudGuardQsModulePropsParametersServersMaxSize | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3528,7 +3528,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersServersMaxSize(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The servers name tag. Default: Server
@@ -3551,7 +3551,7 @@ export interface CfnCloudGuardQsModulePropsParametersServerName {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsParametersServerName' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsParametersServerName(obj: CfnCloudGuardQsModulePropsParametersServerName | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3561,7 +3561,7 @@ export function toJson_CfnCloudGuardQsModulePropsParametersServerName(obj: CfnCl
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesVpc
@@ -3582,7 +3582,7 @@ export interface CfnCloudGuardQsModulePropsResourcesVpc {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesVpc' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesVpc(obj: CfnCloudGuardQsModulePropsResourcesVpc | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3592,7 +3592,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesVpc(obj: CfnCloudGuard
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesInternetGateway
@@ -3613,7 +3613,7 @@ export interface CfnCloudGuardQsModulePropsResourcesInternetGateway {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesInternetGateway' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesInternetGateway(obj: CfnCloudGuardQsModulePropsResourcesInternetGateway | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3623,7 +3623,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesInternetGateway(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesVpcGatewayAttachment
@@ -3644,7 +3644,7 @@ export interface CfnCloudGuardQsModulePropsResourcesVpcGatewayAttachment {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesVpcGatewayAttachment' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesVpcGatewayAttachment(obj: CfnCloudGuardQsModulePropsResourcesVpcGatewayAttachment | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3654,7 +3654,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesVpcGatewayAttachment(o
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet1
@@ -3675,7 +3675,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet1 {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPublicSubnet1' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet1(obj: CfnCloudGuardQsModulePropsResourcesPublicSubnet1 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3685,7 +3685,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet1(obj: Cfn
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet2
@@ -3706,7 +3706,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet2 {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPublicSubnet2' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet2(obj: CfnCloudGuardQsModulePropsResourcesPublicSubnet2 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3716,7 +3716,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet2(obj: Cfn
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet3
@@ -3737,7 +3737,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet3 {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPublicSubnet3' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet3(obj: CfnCloudGuardQsModulePropsResourcesPublicSubnet3 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3747,7 +3747,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet3(obj: Cfn
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet4
@@ -3768,7 +3768,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet4 {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPublicSubnet4' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet4(obj: CfnCloudGuardQsModulePropsResourcesPublicSubnet4 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3778,7 +3778,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet4(obj: Cfn
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnetRouteTable
@@ -3799,7 +3799,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnetRouteTable {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPublicSubnetRouteTable' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnetRouteTable(obj: CfnCloudGuardQsModulePropsResourcesPublicSubnetRouteTable | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3809,7 +3809,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnetRouteTable
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnetRoute
@@ -3830,7 +3830,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnetRoute {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPublicSubnetRoute' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnetRoute(obj: CfnCloudGuardQsModulePropsResourcesPublicSubnetRoute | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3840,7 +3840,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnetRoute(obj:
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet1RouteTableAssociation
@@ -3861,7 +3861,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet1RouteTableAssoc
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPublicSubnet1RouteTableAssociation' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet1RouteTableAssociation(obj: CfnCloudGuardQsModulePropsResourcesPublicSubnet1RouteTableAssociation | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3871,7 +3871,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet1RouteTabl
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet2RouteTableAssociation
@@ -3892,7 +3892,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet2RouteTableAssoc
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPublicSubnet2RouteTableAssociation' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet2RouteTableAssociation(obj: CfnCloudGuardQsModulePropsResourcesPublicSubnet2RouteTableAssociation | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3902,7 +3902,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet2RouteTabl
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet3RouteTableAssociation
@@ -3923,7 +3923,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet3RouteTableAssoc
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPublicSubnet3RouteTableAssociation' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet3RouteTableAssociation(obj: CfnCloudGuardQsModulePropsResourcesPublicSubnet3RouteTableAssociation | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3933,7 +3933,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet3RouteTabl
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet4RouteTableAssociation
@@ -3954,7 +3954,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet4RouteTableAssoc
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPublicSubnet4RouteTableAssociation' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet4RouteTableAssociation(obj: CfnCloudGuardQsModulePropsResourcesPublicSubnet4RouteTableAssociation | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3964,7 +3964,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPublicSubnet4RouteTabl
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPrivateSubnet1
@@ -3985,7 +3985,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPrivateSubnet1 {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPrivateSubnet1' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPrivateSubnet1(obj: CfnCloudGuardQsModulePropsResourcesPrivateSubnet1 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -3995,7 +3995,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPrivateSubnet1(obj: Cf
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPrivateSubnet2
@@ -4016,7 +4016,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPrivateSubnet2 {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPrivateSubnet2' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPrivateSubnet2(obj: CfnCloudGuardQsModulePropsResourcesPrivateSubnet2 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4026,7 +4026,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPrivateSubnet2(obj: Cf
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPrivateSubnet3
@@ -4047,7 +4047,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPrivateSubnet3 {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPrivateSubnet3' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPrivateSubnet3(obj: CfnCloudGuardQsModulePropsResourcesPrivateSubnet3 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4057,7 +4057,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPrivateSubnet3(obj: Cf
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPrivateSubnet4
@@ -4078,7 +4078,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPrivateSubnet4 {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPrivateSubnet4' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPrivateSubnet4(obj: CfnCloudGuardQsModulePropsResourcesPrivateSubnet4 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4088,7 +4088,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPrivateSubnet4(obj: Cf
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesTgwSubnet1
@@ -4109,7 +4109,7 @@ export interface CfnCloudGuardQsModulePropsResourcesTgwSubnet1 {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesTgwSubnet1' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesTgwSubnet1(obj: CfnCloudGuardQsModulePropsResourcesTgwSubnet1 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4119,7 +4119,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesTgwSubnet1(obj: CfnClo
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesTgwSubnet2
@@ -4140,7 +4140,7 @@ export interface CfnCloudGuardQsModulePropsResourcesTgwSubnet2 {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesTgwSubnet2' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesTgwSubnet2(obj: CfnCloudGuardQsModulePropsResourcesTgwSubnet2 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4150,7 +4150,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesTgwSubnet2(obj: CfnClo
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesTgwSubnet3
@@ -4171,7 +4171,7 @@ export interface CfnCloudGuardQsModulePropsResourcesTgwSubnet3 {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesTgwSubnet3' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesTgwSubnet3(obj: CfnCloudGuardQsModulePropsResourcesTgwSubnet3 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4181,7 +4181,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesTgwSubnet3(obj: CfnClo
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesTgwSubnet4
@@ -4202,7 +4202,7 @@ export interface CfnCloudGuardQsModulePropsResourcesTgwSubnet4 {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesTgwSubnet4' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesTgwSubnet4(obj: CfnCloudGuardQsModulePropsResourcesTgwSubnet4 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4212,7 +4212,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesTgwSubnet4(obj: CfnClo
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesExternalAlbSecurityGroup
@@ -4233,7 +4233,7 @@ export interface CfnCloudGuardQsModulePropsResourcesExternalAlbSecurityGroup {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesExternalAlbSecurityGroup' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesExternalAlbSecurityGroup(obj: CfnCloudGuardQsModulePropsResourcesExternalAlbSecurityGroup | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4243,7 +4243,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesExternalAlbSecurityGro
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesExternalLoadBalancer
@@ -4264,7 +4264,7 @@ export interface CfnCloudGuardQsModulePropsResourcesExternalLoadBalancer {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesExternalLoadBalancer' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesExternalLoadBalancer(obj: CfnCloudGuardQsModulePropsResourcesExternalLoadBalancer | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4274,7 +4274,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesExternalLoadBalancer(o
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesExternalLbTargetGroup
@@ -4295,7 +4295,7 @@ export interface CfnCloudGuardQsModulePropsResourcesExternalLbTargetGroup {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesExternalLbTargetGroup' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesExternalLbTargetGroup(obj: CfnCloudGuardQsModulePropsResourcesExternalLbTargetGroup | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4305,7 +4305,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesExternalLbTargetGroup(
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesExternalLbListener
@@ -4326,7 +4326,7 @@ export interface CfnCloudGuardQsModulePropsResourcesExternalLbListener {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesExternalLbListener' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesExternalLbListener(obj: CfnCloudGuardQsModulePropsResourcesExternalLbListener | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4336,7 +4336,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesExternalLbListener(obj
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesChkpGatewayRole
@@ -4357,7 +4357,7 @@ export interface CfnCloudGuardQsModulePropsResourcesChkpGatewayRole {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesChkpGatewayRole' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesChkpGatewayRole(obj: CfnCloudGuardQsModulePropsResourcesChkpGatewayRole | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4367,7 +4367,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesChkpGatewayRole(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesInstanceProfileSecurityGatewayStack
@@ -4388,7 +4388,7 @@ export interface CfnCloudGuardQsModulePropsResourcesInstanceProfileSecurityGatew
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesInstanceProfileSecurityGatewayStack' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesInstanceProfileSecurityGatewayStack(obj: CfnCloudGuardQsModulePropsResourcesInstanceProfileSecurityGatewayStack | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4398,7 +4398,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesInstanceProfileSecurit
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesNotificationTopicSecurityGatewayStack
@@ -4419,7 +4419,7 @@ export interface CfnCloudGuardQsModulePropsResourcesNotificationTopicSecurityGat
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesNotificationTopicSecurityGatewayStack' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesNotificationTopicSecurityGatewayStack(obj: CfnCloudGuardQsModulePropsResourcesNotificationTopicSecurityGatewayStack | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4429,7 +4429,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesNotificationTopicSecur
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesElasticLoadBalancer
@@ -4450,7 +4450,7 @@ export interface CfnCloudGuardQsModulePropsResourcesElasticLoadBalancer {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesElasticLoadBalancer' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesElasticLoadBalancer(obj: CfnCloudGuardQsModulePropsResourcesElasticLoadBalancer | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4460,7 +4460,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesElasticLoadBalancer(ob
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPermissiveSecurityGroup
@@ -4481,7 +4481,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPermissiveSecurityGroup {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPermissiveSecurityGroup' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPermissiveSecurityGroup(obj: CfnCloudGuardQsModulePropsResourcesPermissiveSecurityGroup | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4491,7 +4491,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPermissiveSecurityGrou
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesGatewayGroup
@@ -4512,7 +4512,7 @@ export interface CfnCloudGuardQsModulePropsResourcesGatewayGroup {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesGatewayGroup' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesGatewayGroup(obj: CfnCloudGuardQsModulePropsResourcesGatewayGroup | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4522,7 +4522,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesGatewayGroup(obj: CfnC
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesGatewayLaunchConfig
@@ -4543,7 +4543,7 @@ export interface CfnCloudGuardQsModulePropsResourcesGatewayLaunchConfig {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesGatewayLaunchConfig' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesGatewayLaunchConfig(obj: CfnCloudGuardQsModulePropsResourcesGatewayLaunchConfig | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4553,7 +4553,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesGatewayLaunchConfig(ob
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesGatewayScaleUpPolicy
@@ -4574,7 +4574,7 @@ export interface CfnCloudGuardQsModulePropsResourcesGatewayScaleUpPolicy {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesGatewayScaleUpPolicy' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesGatewayScaleUpPolicy(obj: CfnCloudGuardQsModulePropsResourcesGatewayScaleUpPolicy | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4584,7 +4584,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesGatewayScaleUpPolicy(o
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesGatewayScaleDownPolicy
@@ -4605,7 +4605,7 @@ export interface CfnCloudGuardQsModulePropsResourcesGatewayScaleDownPolicy {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesGatewayScaleDownPolicy' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesGatewayScaleDownPolicy(obj: CfnCloudGuardQsModulePropsResourcesGatewayScaleDownPolicy | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4615,7 +4615,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesGatewayScaleDownPolicy
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesCpuAlarmHighSecurityGatewayStack
@@ -4636,7 +4636,7 @@ export interface CfnCloudGuardQsModulePropsResourcesCpuAlarmHighSecurityGatewayS
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesCpuAlarmHighSecurityGatewayStack' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesCpuAlarmHighSecurityGatewayStack(obj: CfnCloudGuardQsModulePropsResourcesCpuAlarmHighSecurityGatewayStack | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4646,7 +4646,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesCpuAlarmHighSecurityGa
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesCpuAlarmLowSecurityGatewayStack
@@ -4667,7 +4667,7 @@ export interface CfnCloudGuardQsModulePropsResourcesCpuAlarmLowSecurityGatewaySt
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesCpuAlarmLowSecurityGatewayStack' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesCpuAlarmLowSecurityGatewayStack(obj: CfnCloudGuardQsModulePropsResourcesCpuAlarmLowSecurityGatewayStack | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4677,7 +4677,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesCpuAlarmLowSecurityGat
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesElbSecurityGroup
@@ -4698,7 +4698,7 @@ export interface CfnCloudGuardQsModulePropsResourcesElbSecurityGroup {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesElbSecurityGroup' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesElbSecurityGroup(obj: CfnCloudGuardQsModulePropsResourcesElbSecurityGroup | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4708,7 +4708,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesElbSecurityGroup(obj: 
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesManagementReadyHandle
@@ -4729,7 +4729,7 @@ export interface CfnCloudGuardQsModulePropsResourcesManagementReadyHandle {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesManagementReadyHandle' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesManagementReadyHandle(obj: CfnCloudGuardQsModulePropsResourcesManagementReadyHandle | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4739,7 +4739,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesManagementReadyHandle(
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesManagementReadyCondition
@@ -4760,7 +4760,7 @@ export interface CfnCloudGuardQsModulePropsResourcesManagementReadyCondition {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesManagementReadyCondition' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesManagementReadyCondition(obj: CfnCloudGuardQsModulePropsResourcesManagementReadyCondition | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4770,7 +4770,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesManagementReadyConditi
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesManagementSecurityGroup
@@ -4791,7 +4791,7 @@ export interface CfnCloudGuardQsModulePropsResourcesManagementSecurityGroup {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesManagementSecurityGroup' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesManagementSecurityGroup(obj: CfnCloudGuardQsModulePropsResourcesManagementSecurityGroup | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4801,7 +4801,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesManagementSecurityGrou
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesCmeiamRole
@@ -4822,7 +4822,7 @@ export interface CfnCloudGuardQsModulePropsResourcesCmeiamRole {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesCmeiamRole' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesCmeiamRole(obj: CfnCloudGuardQsModulePropsResourcesCmeiamRole | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4832,7 +4832,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesCmeiamRole(obj: CfnClo
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesInstanceProfile
@@ -4853,7 +4853,7 @@ export interface CfnCloudGuardQsModulePropsResourcesInstanceProfile {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesInstanceProfile' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesInstanceProfile(obj: CfnCloudGuardQsModulePropsResourcesInstanceProfile | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4863,7 +4863,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesInstanceProfile(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesManagementInstance
@@ -4884,7 +4884,7 @@ export interface CfnCloudGuardQsModulePropsResourcesManagementInstance {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesManagementInstance' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesManagementInstance(obj: CfnCloudGuardQsModulePropsResourcesManagementInstance | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4894,7 +4894,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesManagementInstance(obj
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesPublicAddress
@@ -4915,7 +4915,7 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicAddress {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesPublicAddress' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesPublicAddress(obj: CfnCloudGuardQsModulePropsResourcesPublicAddress | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4925,7 +4925,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesPublicAddress(obj: Cfn
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesAddressAssoc
@@ -4946,7 +4946,7 @@ export interface CfnCloudGuardQsModulePropsResourcesAddressAssoc {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesAddressAssoc' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesAddressAssoc(obj: CfnCloudGuardQsModulePropsResourcesAddressAssoc | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4956,7 +4956,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesAddressAssoc(obj: CfnC
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesInternalSecurityGroup
@@ -4977,7 +4977,7 @@ export interface CfnCloudGuardQsModulePropsResourcesInternalSecurityGroup {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesInternalSecurityGroup' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesInternalSecurityGroup(obj: CfnCloudGuardQsModulePropsResourcesInternalSecurityGroup | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -4987,7 +4987,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesInternalSecurityGroup(
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesInternalLbTargetGroup
@@ -5008,7 +5008,7 @@ export interface CfnCloudGuardQsModulePropsResourcesInternalLbTargetGroup {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesInternalLbTargetGroup' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesInternalLbTargetGroup(obj: CfnCloudGuardQsModulePropsResourcesInternalLbTargetGroup | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5018,7 +5018,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesInternalLbTargetGroup(
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesInternalLoadBalancer
@@ -5039,7 +5039,7 @@ export interface CfnCloudGuardQsModulePropsResourcesInternalLoadBalancer {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesInternalLoadBalancer' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesInternalLoadBalancer(obj: CfnCloudGuardQsModulePropsResourcesInternalLoadBalancer | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5049,7 +5049,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesInternalLoadBalancer(o
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesInternalLbListener
@@ -5070,7 +5070,7 @@ export interface CfnCloudGuardQsModulePropsResourcesInternalLbListener {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesInternalLbListener' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesInternalLbListener(obj: CfnCloudGuardQsModulePropsResourcesInternalLbListener | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5080,7 +5080,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesInternalLbListener(obj
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesNotificationTopic
@@ -5101,7 +5101,7 @@ export interface CfnCloudGuardQsModulePropsResourcesNotificationTopic {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesNotificationTopic' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesNotificationTopic(obj: CfnCloudGuardQsModulePropsResourcesNotificationTopic | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5111,7 +5111,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesNotificationTopic(obj:
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesServersSecurityGroup
@@ -5132,7 +5132,7 @@ export interface CfnCloudGuardQsModulePropsResourcesServersSecurityGroup {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesServersSecurityGroup' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesServersSecurityGroup(obj: CfnCloudGuardQsModulePropsResourcesServersSecurityGroup | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5142,7 +5142,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesServersSecurityGroup(o
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesServersLaunchConfiguration
@@ -5163,7 +5163,7 @@ export interface CfnCloudGuardQsModulePropsResourcesServersLaunchConfiguration {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesServersLaunchConfiguration' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesServersLaunchConfiguration(obj: CfnCloudGuardQsModulePropsResourcesServersLaunchConfiguration | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5173,7 +5173,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesServersLaunchConfigura
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesServersGroup
@@ -5194,7 +5194,7 @@ export interface CfnCloudGuardQsModulePropsResourcesServersGroup {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesServersGroup' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesServersGroup(obj: CfnCloudGuardQsModulePropsResourcesServersGroup | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5204,7 +5204,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesServersGroup(obj: CfnC
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesScaleUpPolicy
@@ -5225,7 +5225,7 @@ export interface CfnCloudGuardQsModulePropsResourcesScaleUpPolicy {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesScaleUpPolicy' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesScaleUpPolicy(obj: CfnCloudGuardQsModulePropsResourcesScaleUpPolicy | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5235,7 +5235,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesScaleUpPolicy(obj: Cfn
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesScaleDownPolicy
@@ -5256,7 +5256,7 @@ export interface CfnCloudGuardQsModulePropsResourcesScaleDownPolicy {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesScaleDownPolicy' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesScaleDownPolicy(obj: CfnCloudGuardQsModulePropsResourcesScaleDownPolicy | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5266,7 +5266,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesScaleDownPolicy(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesCpuAlarmHigh
@@ -5287,7 +5287,7 @@ export interface CfnCloudGuardQsModulePropsResourcesCpuAlarmHigh {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesCpuAlarmHigh' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesCpuAlarmHigh(obj: CfnCloudGuardQsModulePropsResourcesCpuAlarmHigh | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5297,7 +5297,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesCpuAlarmHigh(obj: CfnC
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnCloudGuardQsModulePropsResourcesCpuAlarmLow
@@ -5318,7 +5318,7 @@ export interface CfnCloudGuardQsModulePropsResourcesCpuAlarmLow {
 /**
  * Converts an object of type 'CfnCloudGuardQsModulePropsResourcesCpuAlarmLow' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnCloudGuardQsModulePropsResourcesCpuAlarmLow(obj: CfnCloudGuardQsModulePropsResourcesCpuAlarmLow | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5328,7 +5328,7 @@ export function toJson_CfnCloudGuardQsModulePropsResourcesCpuAlarmLow(obj: CfnCl
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 
 /**
@@ -5438,7 +5438,7 @@ export interface CfnSloProps {
 /**
  * Converts an object of type 'CfnSloProps' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnSloProps(obj: CfnSloProps | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5455,7 +5455,7 @@ export function toJson_CfnSloProps(obj: CfnSloProps | undefined): Record<string,
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema Creator
@@ -5487,7 +5487,7 @@ export interface Creator {
 /**
  * Converts an object of type 'Creator' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_Creator(obj: Creator | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5498,7 +5498,7 @@ export function toJson_Creator(obj: Creator | undefined): Record<string, any> | 
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema Query
@@ -5523,7 +5523,7 @@ export interface Query {
 /**
  * Converts an object of type 'Query' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_Query(obj: Query | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5533,7 +5533,7 @@ export function toJson_Query(obj: Query | undefined): Record<string, any> | unde
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema Threshold
@@ -5579,7 +5579,7 @@ export interface Threshold {
 /**
  * Converts an object of type 'Threshold' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_Threshold(obj: Threshold | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5592,7 +5592,7 @@ export function toJson_Threshold(obj: Threshold | undefined): Record<string, any
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The type of the slo
@@ -5759,7 +5759,7 @@ export interface CfnClusterProps {
 /**
  * Converts an object of type 'CfnClusterProps' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnClusterProps(obj: CfnClusterProps | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5777,7 +5777,7 @@ export function toJson_CfnClusterProps(obj: CfnClusterProps | undefined): Record
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Network configuration for Amazon EKS cluster.
@@ -5799,7 +5799,7 @@ export interface CfnClusterPropsKubernetesNetworkConfig {
 /**
  * Converts an object of type 'CfnClusterPropsKubernetesNetworkConfig' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnClusterPropsKubernetesNetworkConfig(obj: CfnClusterPropsKubernetesNetworkConfig | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5808,7 +5808,7 @@ export function toJson_CfnClusterPropsKubernetesNetworkConfig(obj: CfnClusterPro
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
@@ -5856,7 +5856,7 @@ export interface CfnClusterPropsResourcesVpcConfig {
 /**
  * Converts an object of type 'CfnClusterPropsResourcesVpcConfig' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnClusterPropsResourcesVpcConfig(obj: CfnClusterPropsResourcesVpcConfig | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5869,7 +5869,7 @@ export function toJson_CfnClusterPropsResourcesVpcConfig(obj: CfnClusterPropsRes
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The encryption configuration for the cluster.
@@ -5894,7 +5894,7 @@ export interface EncryptionConfigEntry {
 /**
  * Converts an object of type 'EncryptionConfigEntry' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_EncryptionConfigEntry(obj: EncryptionConfigEntry | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5904,7 +5904,7 @@ export function toJson_EncryptionConfigEntry(obj: EncryptionConfigEntry | undefi
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnClusterPropsKubernetesApiAccess
@@ -5925,7 +5925,7 @@ export interface CfnClusterPropsKubernetesApiAccess {
 /**
  * Converts an object of type 'CfnClusterPropsKubernetesApiAccess' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnClusterPropsKubernetesApiAccess(obj: CfnClusterPropsKubernetesApiAccess | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5935,7 +5935,7 @@ export function toJson_CfnClusterPropsKubernetesApiAccess(obj: CfnClusterPropsKu
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnClusterPropsTags
@@ -5956,7 +5956,7 @@ export interface CfnClusterPropsTags {
 /**
  * Converts an object of type 'CfnClusterPropsTags' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnClusterPropsTags(obj: CfnClusterPropsTags | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5966,7 +5966,7 @@ export function toJson_CfnClusterPropsTags(obj: CfnClusterPropsTags | undefined)
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * AWS Key Management Service (AWS KMS) customer master key (CMK). Either the ARN or the alias can be used.
@@ -5986,7 +5986,7 @@ export interface Provider {
 /**
  * Converts an object of type 'Provider' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_Provider(obj: Provider | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -5995,7 +5995,7 @@ export function toJson_Provider(obj: Provider | undefined): Record<string, any> 
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema KubernetesApiAccessEntry
@@ -6021,7 +6021,7 @@ export interface KubernetesApiAccessEntry {
 /**
  * Converts an object of type 'KubernetesApiAccessEntry' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_KubernetesApiAccessEntry(obj: KubernetesApiAccessEntry | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6032,7 +6032,7 @@ export function toJson_KubernetesApiAccessEntry(obj: KubernetesApiAccessEntry | 
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 
 /**
@@ -6150,7 +6150,7 @@ export interface CfnAccessTokenProps {
 /**
  * Converts an object of type 'CfnAccessTokenProps' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnAccessTokenProps(obj: CfnAccessTokenProps | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6162,7 +6162,7 @@ export function toJson_CfnAccessTokenProps(obj: CfnAccessTokenProps | undefined)
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 
 /**
@@ -6230,7 +6230,7 @@ export interface CfnBastionModuleProps {
 /**
  * Converts an object of type 'CfnBastionModuleProps' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModuleProps(obj: CfnBastionModuleProps | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6240,7 +6240,7 @@ export function toJson_CfnBastionModuleProps(obj: CfnBastionModuleProps | undefi
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnBastionModulePropsParameters
@@ -6405,7 +6405,7 @@ export interface CfnBastionModulePropsParameters {
 /**
  * Converts an object of type 'CfnBastionModulePropsParameters' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParameters(obj: CfnBastionModulePropsParameters | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6435,7 +6435,7 @@ export function toJson_CfnBastionModulePropsParameters(obj: CfnBastionModuleProp
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnBastionModulePropsResources
@@ -6506,7 +6506,7 @@ export interface CfnBastionModulePropsResources {
 /**
  * Converts an object of type 'CfnBastionModulePropsResources' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsResources(obj: CfnBastionModulePropsResources | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6526,7 +6526,7 @@ export function toJson_CfnBastionModulePropsResources(obj: CfnBastionModuleProps
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Logical Id of the MODULE
@@ -6549,7 +6549,7 @@ export interface CfnBastionModulePropsParametersLogicalId {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersLogicalId' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersLogicalId(obj: CfnBastionModulePropsParametersLogicalId | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6559,7 +6559,7 @@ export function toJson_CfnBastionModulePropsParametersLogicalId(obj: CfnBastionM
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The Linux distribution for the AMI to be used for the bastion instances.
@@ -6582,7 +6582,7 @@ export interface CfnBastionModulePropsParametersBastionAmios {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersBastionAmios' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersBastionAmios(obj: CfnBastionModulePropsParametersBastionAmios | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6592,7 +6592,7 @@ export function toJson_CfnBastionModulePropsParametersBastionAmios(obj: CfnBasti
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The value used for the name tag of the bastion host
@@ -6615,7 +6615,7 @@ export interface CfnBastionModulePropsParametersBastionHostName {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersBastionHostName' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersBastionHostName(obj: CfnBastionModulePropsParametersBastionHostName | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6625,7 +6625,7 @@ export function toJson_CfnBastionModulePropsParametersBastionHostName(obj: CfnBa
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Banner text to display upon login.
@@ -6648,7 +6648,7 @@ export interface CfnBastionModulePropsParametersBastionBanner {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersBastionBanner' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersBastionBanner(obj: CfnBastionModulePropsParametersBastionBanner | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6658,7 +6658,7 @@ export function toJson_CfnBastionModulePropsParametersBastionBanner(obj: CfnBast
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * VPC tenancy to launch the bastion in. Options: 'dedicated' or 'default'
@@ -6681,7 +6681,7 @@ export interface CfnBastionModulePropsParametersBastionTenancy {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersBastionTenancy' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersBastionTenancy(obj: CfnBastionModulePropsParametersBastionTenancy | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6691,7 +6691,7 @@ export function toJson_CfnBastionModulePropsParametersBastionTenancy(obj: CfnBas
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Amazon EC2 instance type for the bastion instances.
@@ -6714,7 +6714,7 @@ export interface CfnBastionModulePropsParametersBastionInstanceType {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersBastionInstanceType' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersBastionInstanceType(obj: CfnBastionModulePropsParametersBastionInstanceType | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6724,7 +6724,7 @@ export function toJson_CfnBastionModulePropsParametersBastionInstanceType(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * To include a banner to be displayed when connecting via SSH to the bastion, choose true.
@@ -6747,7 +6747,7 @@ export interface CfnBastionModulePropsParametersEnableBanner {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersEnableBanner' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersEnableBanner(obj: CfnBastionModulePropsParametersEnableBanner | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6757,7 +6757,7 @@ export function toJson_CfnBastionModulePropsParametersEnableBanner(obj: CfnBasti
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * To enable TCP forwarding, choose true.
@@ -6780,7 +6780,7 @@ export interface CfnBastionModulePropsParametersEnableTcpForwarding {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersEnableTcpForwarding' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersEnableTcpForwarding(obj: CfnBastionModulePropsParametersEnableTcpForwarding | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6790,7 +6790,7 @@ export function toJson_CfnBastionModulePropsParametersEnableTcpForwarding(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * To enable X11 forwarding, choose true.
@@ -6813,7 +6813,7 @@ export interface CfnBastionModulePropsParametersEnableX11Forwarding {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersEnableX11Forwarding' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersEnableX11Forwarding(obj: CfnBastionModulePropsParametersEnableX11Forwarding | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6823,7 +6823,7 @@ export function toJson_CfnBastionModulePropsParametersEnableX11Forwarding(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Name of an existing public/private key pair. If you do not have one in this AWS Region, please create it before continuing.
@@ -6846,7 +6846,7 @@ export interface CfnBastionModulePropsParametersKeyPairName {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersKeyPairName' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersKeyPairName(obj: CfnBastionModulePropsParametersKeyPairName | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6856,7 +6856,7 @@ export function toJson_CfnBastionModulePropsParametersKeyPairName(obj: CfnBastio
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The number of bastion hosts to create. The maximum number is four.
@@ -6879,7 +6879,7 @@ export interface CfnBastionModulePropsParametersNumBastionHosts {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersNumBastionHosts' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersNumBastionHosts(obj: CfnBastionModulePropsParametersNumBastionHosts | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6889,7 +6889,7 @@ export function toJson_CfnBastionModulePropsParametersNumBastionHosts(obj: CfnBa
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * ID of the public subnet in Availability Zone 1 of your existing VPC (e.g., subnet-z0376dab).
@@ -6912,7 +6912,7 @@ export interface CfnBastionModulePropsParametersPublicSubnet1Id {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersPublicSubnet1Id' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersPublicSubnet1Id(obj: CfnBastionModulePropsParametersPublicSubnet1Id | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6922,7 +6922,7 @@ export function toJson_CfnBastionModulePropsParametersPublicSubnet1Id(obj: CfnBa
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * ID of the public subnet in Availability Zone 1 of your existing VPC (e.g., subnet-z0376dab).
@@ -6945,7 +6945,7 @@ export interface CfnBastionModulePropsParametersPublicSubnet2Id {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersPublicSubnet2Id' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersPublicSubnet2Id(obj: CfnBastionModulePropsParametersPublicSubnet2Id | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6955,7 +6955,7 @@ export function toJson_CfnBastionModulePropsParametersPublicSubnet2Id(obj: CfnBa
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * S3 bucket name for the Quick Start assets. Quick Start bucket name can include numbers, lowercase letters, uppercase letters, and hyphens (-). It cannot start or end with a hyphen (-).
@@ -6978,7 +6978,7 @@ export interface CfnBastionModulePropsParametersQss3BucketName {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersQss3BucketName' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersQss3BucketName(obj: CfnBastionModulePropsParametersQss3BucketName | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -6988,7 +6988,7 @@ export function toJson_CfnBastionModulePropsParametersQss3BucketName(obj: CfnBas
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The AWS Region where the Quick Start S3 bucket (QSS3BucketName) is hosted. When using your own bucket, you must specify this value.
@@ -7011,7 +7011,7 @@ export interface CfnBastionModulePropsParametersQss3BucketRegion {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersQss3BucketRegion' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersQss3BucketRegion(obj: CfnBastionModulePropsParametersQss3BucketRegion | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7021,7 +7021,7 @@ export function toJson_CfnBastionModulePropsParametersQss3BucketRegion(obj: CfnB
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * S3 key prefix for the Quick Start assets. Quick Start key prefix can include numbers, lowercase letters, uppercase letters, hyphens (-), dots (.) and forward slash (/) and it should end with a forward slash (/).
@@ -7044,7 +7044,7 @@ export interface CfnBastionModulePropsParametersQss3KeyPrefix {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersQss3KeyPrefix' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersQss3KeyPrefix(obj: CfnBastionModulePropsParametersQss3KeyPrefix | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7054,7 +7054,7 @@ export function toJson_CfnBastionModulePropsParametersQss3KeyPrefix(obj: CfnBast
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * Allowed CIDR block for external SSH access to the bastions.
@@ -7077,7 +7077,7 @@ export interface CfnBastionModulePropsParametersRemoteAccessCidr {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersRemoteAccessCidr' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersRemoteAccessCidr(obj: CfnBastionModulePropsParametersRemoteAccessCidr | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7087,7 +7087,7 @@ export function toJson_CfnBastionModulePropsParametersRemoteAccessCidr(obj: CfnB
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * ID of the VPC (e.g., vpc-0343606e).
@@ -7110,7 +7110,7 @@ export interface CfnBastionModulePropsParametersVpcid {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersVpcid' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersVpcid(obj: CfnBastionModulePropsParametersVpcid | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7120,7 +7120,7 @@ export function toJson_CfnBastionModulePropsParametersVpcid(obj: CfnBastionModul
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * An alternative initialization script to run during setup.
@@ -7143,7 +7143,7 @@ export interface CfnBastionModulePropsParametersAlternativeInitializationScript 
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersAlternativeInitializationScript' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersAlternativeInitializationScript(obj: CfnBastionModulePropsParametersAlternativeInitializationScript | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7153,7 +7153,7 @@ export function toJson_CfnBastionModulePropsParametersAlternativeInitializationS
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The Region-specific image to use for the instance.
@@ -7176,7 +7176,7 @@ export interface CfnBastionModulePropsParametersOsImageOverride {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersOsImageOverride' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersOsImageOverride(obj: CfnBastionModulePropsParametersOsImageOverride | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7186,7 +7186,7 @@ export function toJson_CfnBastionModulePropsParametersOsImageOverride(obj: CfnBa
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * A comma-separated list of environment variables for use in bootstrapping. Variables must be in the format KEY=VALUE. VALUE cannot contain commas.
@@ -7209,7 +7209,7 @@ export interface CfnBastionModulePropsParametersEnvironmentVariables {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersEnvironmentVariables' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersEnvironmentVariables(obj: CfnBastionModulePropsParametersEnvironmentVariables | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7219,7 +7219,7 @@ export function toJson_CfnBastionModulePropsParametersEnvironmentVariables(obj: 
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * The size in GB for the root EBS volume.
@@ -7242,7 +7242,7 @@ export interface CfnBastionModulePropsParametersRootVolumeSize {
 /**
  * Converts an object of type 'CfnBastionModulePropsParametersRootVolumeSize' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsParametersRootVolumeSize(obj: CfnBastionModulePropsParametersRootVolumeSize | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7252,7 +7252,7 @@ export function toJson_CfnBastionModulePropsParametersRootVolumeSize(obj: CfnBas
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnBastionModulePropsResourcesBastionMainLogGroup
@@ -7273,7 +7273,7 @@ export interface CfnBastionModulePropsResourcesBastionMainLogGroup {
 /**
  * Converts an object of type 'CfnBastionModulePropsResourcesBastionMainLogGroup' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsResourcesBastionMainLogGroup(obj: CfnBastionModulePropsResourcesBastionMainLogGroup | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7283,7 +7283,7 @@ export function toJson_CfnBastionModulePropsResourcesBastionMainLogGroup(obj: Cf
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnBastionModulePropsResourcesSshMetricFilter
@@ -7304,7 +7304,7 @@ export interface CfnBastionModulePropsResourcesSshMetricFilter {
 /**
  * Converts an object of type 'CfnBastionModulePropsResourcesSshMetricFilter' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsResourcesSshMetricFilter(obj: CfnBastionModulePropsResourcesSshMetricFilter | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7314,7 +7314,7 @@ export function toJson_CfnBastionModulePropsResourcesSshMetricFilter(obj: CfnBas
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnBastionModulePropsResourcesBastionHostRole
@@ -7335,7 +7335,7 @@ export interface CfnBastionModulePropsResourcesBastionHostRole {
 /**
  * Converts an object of type 'CfnBastionModulePropsResourcesBastionHostRole' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsResourcesBastionHostRole(obj: CfnBastionModulePropsResourcesBastionHostRole | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7345,7 +7345,7 @@ export function toJson_CfnBastionModulePropsResourcesBastionHostRole(obj: CfnBas
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnBastionModulePropsResourcesBastionHostPolicy
@@ -7366,7 +7366,7 @@ export interface CfnBastionModulePropsResourcesBastionHostPolicy {
 /**
  * Converts an object of type 'CfnBastionModulePropsResourcesBastionHostPolicy' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsResourcesBastionHostPolicy(obj: CfnBastionModulePropsResourcesBastionHostPolicy | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7376,7 +7376,7 @@ export function toJson_CfnBastionModulePropsResourcesBastionHostPolicy(obj: CfnB
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnBastionModulePropsResourcesBastionHostProfile
@@ -7397,7 +7397,7 @@ export interface CfnBastionModulePropsResourcesBastionHostProfile {
 /**
  * Converts an object of type 'CfnBastionModulePropsResourcesBastionHostProfile' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsResourcesBastionHostProfile(obj: CfnBastionModulePropsResourcesBastionHostProfile | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7407,7 +7407,7 @@ export function toJson_CfnBastionModulePropsResourcesBastionHostProfile(obj: Cfn
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnBastionModulePropsResourcesEip1
@@ -7428,7 +7428,7 @@ export interface CfnBastionModulePropsResourcesEip1 {
 /**
  * Converts an object of type 'CfnBastionModulePropsResourcesEip1' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsResourcesEip1(obj: CfnBastionModulePropsResourcesEip1 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7438,7 +7438,7 @@ export function toJson_CfnBastionModulePropsResourcesEip1(obj: CfnBastionModuleP
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnBastionModulePropsResourcesEip2
@@ -7459,7 +7459,7 @@ export interface CfnBastionModulePropsResourcesEip2 {
 /**
  * Converts an object of type 'CfnBastionModulePropsResourcesEip2' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsResourcesEip2(obj: CfnBastionModulePropsResourcesEip2 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7469,7 +7469,7 @@ export function toJson_CfnBastionModulePropsResourcesEip2(obj: CfnBastionModuleP
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnBastionModulePropsResourcesEip3
@@ -7490,7 +7490,7 @@ export interface CfnBastionModulePropsResourcesEip3 {
 /**
  * Converts an object of type 'CfnBastionModulePropsResourcesEip3' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsResourcesEip3(obj: CfnBastionModulePropsResourcesEip3 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7500,7 +7500,7 @@ export function toJson_CfnBastionModulePropsResourcesEip3(obj: CfnBastionModuleP
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnBastionModulePropsResourcesEip4
@@ -7521,7 +7521,7 @@ export interface CfnBastionModulePropsResourcesEip4 {
 /**
  * Converts an object of type 'CfnBastionModulePropsResourcesEip4' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsResourcesEip4(obj: CfnBastionModulePropsResourcesEip4 | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7531,7 +7531,7 @@ export function toJson_CfnBastionModulePropsResourcesEip4(obj: CfnBastionModuleP
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnBastionModulePropsResourcesBastionAutoScalingGroup
@@ -7552,7 +7552,7 @@ export interface CfnBastionModulePropsResourcesBastionAutoScalingGroup {
 /**
  * Converts an object of type 'CfnBastionModulePropsResourcesBastionAutoScalingGroup' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsResourcesBastionAutoScalingGroup(obj: CfnBastionModulePropsResourcesBastionAutoScalingGroup | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7562,7 +7562,7 @@ export function toJson_CfnBastionModulePropsResourcesBastionAutoScalingGroup(obj
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnBastionModulePropsResourcesBastionLaunchConfiguration
@@ -7583,7 +7583,7 @@ export interface CfnBastionModulePropsResourcesBastionLaunchConfiguration {
 /**
  * Converts an object of type 'CfnBastionModulePropsResourcesBastionLaunchConfiguration' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsResourcesBastionLaunchConfiguration(obj: CfnBastionModulePropsResourcesBastionLaunchConfiguration | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7593,7 +7593,7 @@ export function toJson_CfnBastionModulePropsResourcesBastionLaunchConfiguration(
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema CfnBastionModulePropsResourcesBastionSecurityGroup
@@ -7614,7 +7614,7 @@ export interface CfnBastionModulePropsResourcesBastionSecurityGroup {
 /**
  * Converts an object of type 'CfnBastionModulePropsResourcesBastionSecurityGroup' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnBastionModulePropsResourcesBastionSecurityGroup(obj: CfnBastionModulePropsResourcesBastionSecurityGroup | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7624,7 +7624,7 @@ export function toJson_CfnBastionModulePropsResourcesBastionSecurityGroup(obj: C
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 
 /**
@@ -7682,7 +7682,7 @@ export interface CfnListProps {
 /**
  * Converts an object of type 'CfnListProps' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnListProps(obj: CfnListProps | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7691,7 +7691,7 @@ export function toJson_CfnListProps(obj: CfnListProps | undefined): Record<strin
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 
 /**
@@ -7823,7 +7823,7 @@ export interface CfnRecordProps {
 /**
  * Converts an object of type 'CfnRecordProps' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_CfnRecordProps(obj: CfnRecordProps | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7841,7 +7841,7 @@ export function toJson_CfnRecordProps(obj: CfnRecordProps | undefined): Record<s
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema DataDefinition
@@ -7862,7 +7862,7 @@ export interface DataDefinition {
 /**
  * Converts an object of type 'DataDefinition' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_DataDefinition(obj: DataDefinition | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7872,7 +7872,7 @@ export function toJson_DataDefinition(obj: DataDefinition | undefined): Record<s
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema MetadataDefinition
@@ -7893,7 +7893,7 @@ export interface MetadataDefinition {
 /**
  * Converts an object of type 'MetadataDefinition' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_MetadataDefinition(obj: MetadataDefinition | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7903,7 +7903,7 @@ export function toJson_MetadataDefinition(obj: MetadataDefinition | undefined): 
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 /**
  * @schema TimeoutsDefinition
@@ -7924,7 +7924,7 @@ export interface TimeoutsDefinition {
 /**
  * Converts an object of type 'TimeoutsDefinition' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 export function toJson_TimeoutsDefinition(obj: TimeoutsDefinition | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
@@ -7934,7 +7934,7 @@ export function toJson_TimeoutsDefinition(obj: TimeoutsDefinition | undefined): 
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
 }
-/* eslint-enable max-len, quote-props */
+/* eslint-enable max-len, @stylistic/max-len, quote-props, @stylistic/quote-props */
 
 
 /**
