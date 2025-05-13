@@ -4031,10 +4031,10 @@ json-stringify-safe@^5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
 
-json2jsii@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.5.2.tgz#3dd2c8db8fd560288bd706a42bdd5e3964f70ccc"
-  integrity sha512-q1uT9GgUnzcbBcIdLujA6OiHjznUZxU5j3cbGv13+/mDW2cwvLNpGvXr2ziGngXPXRBiE9gqhMiI9ziI50JKEA==
+json2jsii@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.5.3.tgz#2639c9409d2add57769691f3b07fa4c5f680ffb4"
+  integrity sha512-AZQp65rhuZvyVBJF4SEPLcq+HEakvPk8fH5GqgrflNjCOChT7Fm2Z0vPu//PUvwm1BPw1XcGbppjZ1DHa4bUTQ==
   dependencies:
     camelcase "^6.3.0"
     json-schema "^0.4.0"
