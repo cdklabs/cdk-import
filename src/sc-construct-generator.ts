@@ -1,4 +1,4 @@
-import { ProvisioningArtifactOutputs, ProvisioningArtifactParameters } from 'aws-sdk/clients/servicecatalog';
+import { ProvisioningArtifactOutput, ProvisioningArtifactParameter } from '@aws-sdk/client-service-catalog';
 import { pascal, camel, constant } from 'case';
 import * as j2j from 'json2jsii';
 import { ProductDataAggregate } from './service-catalog';
@@ -22,9 +22,9 @@ export class ServiceCatalogProvisioningConstructGenerator {
   private readonly constructClassName: string;
   private readonly propsStructName: string;
   private readonly enums: EnumDefinition[];
-  private readonly parameters: ProvisioningArtifactParameters;
+  private readonly parameters: Array<ProvisioningArtifactParameter>;
   private readonly defaultAttributes: Set<string>;
-  private readonly outputKeys: ProvisioningArtifactOutputs;
+  private readonly outputKeys: Array<ProvisioningArtifactOutput>;
   private readonly outputDescriptions: {[key: string]: string | undefined};
   public readonly name: string;
 

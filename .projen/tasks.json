@@ -229,13 +229,13 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=prod --filter=aws-cdk-lib,aws-sdk,case,jsii-srcmak,json2jsii,minimist,minimist-subcommand,proxy-agent"
+          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=prod --filter=@aws-sdk/client-cloudformation,@aws-sdk/client-service-catalog,aws-cdk-lib,case,jsii-srcmak,json2jsii,minimist,minimist-subcommand,proxy-agent"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade aws-cdk-lib aws-sdk case constructs jsii-srcmak json2jsii minimist minimist-subcommand proxy-agent"
+          "exec": "yarn upgrade @aws-sdk/client-cloudformation @aws-sdk/client-service-catalog aws-cdk-lib case constructs jsii-srcmak json2jsii minimist minimist-subcommand proxy-agent"
         },
         {
           "exec": "npx projen"

@@ -10,8 +10,9 @@ const project = new CdklabsTypeScriptProject({
   defaultReleaseBranch: 'main',
   deps: [
     'json2jsii',
+    '@aws-sdk/client-cloudformation',
+    '@aws-sdk/client-service-catalog',
     'aws-cdk-lib',
-    'aws-sdk',
     'constructs@^10',
     'minimist',
     'minimist-subcommand',
