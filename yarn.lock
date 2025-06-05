@@ -32,9 +32,9 @@
   integrity sha512-7bY3J8GCVxLupn/kNmpPc5VJz8grx+4RKfnnJiO1LG+uxkZfANZG3RMHhE+qQxxwkyQ9/MfPtTpf748UhR425A==
 
 "@aws-cdk/cloud-assembly-schema@^44.1.0":
-  version "44.1.0"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-44.1.0.tgz#4100f98e3e28b57527bb3f5ec22685cf8bf7456a"
-  integrity sha512-WvesvSbBw5FrVbH8LZfjX5iDDRdixDkEnbsFGN8H2GNR9geBo4kIBI1nlOiqoGB6dwPwif8qDEM/4NOfuzIChQ==
+  version "44.2.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-44.2.0.tgz#1fa94dd99d6d9d0a7ae3abe353f5edb156451323"
+  integrity sha512-oB3fq8yudGMHsSOyh2rFge5HVUMS6MOiAqK/6a9pyG4kHPkza0xCPlpvLFVCliD8y/VrsfxIcA584x9O0cxDiQ==
   dependencies:
     jsonschema "~1.4.1"
     semver "^7.7.2"
@@ -3896,7 +3896,7 @@ jsesc@^3.0.2:
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-3.1.0.tgz#74d335a234f67ed19907fdadfac7ccf9d409825d"
   integrity sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==
 
-jsii-pacmak@^1.105.0:
+jsii-pacmak@^1.112.0:
   version "1.112.0"
   resolved "https://registry.yarnpkg.com/jsii-pacmak/-/jsii-pacmak-1.112.0.tgz#5002e788f584c2155e11d2b40fcff43ff8040380"
   integrity sha512-awdZ4Hb9pc8cKp2RVhJntoppgo5KnqP8f9YCmoHPPpPCS1hB3joxpVbNS6t2PYdGt1R+j7EcO7TJdah95cxE3w==
@@ -3926,7 +3926,7 @@ jsii-reflect@^1.112.0:
     oo-ascii-tree "^1.112.0"
     yargs "^16.2.0"
 
-jsii-rosetta@^5.6.2:
+jsii-rosetta@^5.8.9:
   version "5.8.9"
   resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.8.9.tgz#6ca9437efd34a383791dc3cd9c089e6e63eeea34"
   integrity sha512-bVVi4638FUeRHzHYu13yZGqgaaWeegHIPs2Sx+F8bvicWWtC8BQlQvKIsnErnd4+yRKxC+J0g+7EQrHA+8qT8w==
@@ -3945,19 +3945,19 @@ jsii-rosetta@^5.6.2:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii-srcmak@^0.1.1308:
-  version "0.1.1308"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1308.tgz#8aa9f9366e2e65ec40531b57b9a82d3e8ba8a34e"
-  integrity sha512-+jSOHWXE/nmA5c2B3tQ3bsuaXXVWnvFq3bq+2cbNCHjX6wiJggNfJ6WEm9LVvCeOg4eJAaJV8NgeT/nE83zOlw==
+jsii-srcmak@^0.1.1310:
+  version "0.1.1310"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1310.tgz#76f71cea051adc8215ffc8681cd87805efcc337d"
+  integrity sha512-6dfR/Yi+NLDnqMXTNXRfQ8MbPmjJMi9QG/F7dIxT/81UI9yuQjoKfX4ufPXB2PH6OK4dIuvf1E+v/nc9szW4GQ==
   dependencies:
     fs-extra "^9.1.0"
-    jsii "~5.7.1"
-    jsii-pacmak "^1.105.0"
-    jsii-rosetta "^5.6.2"
+    jsii "~5.8.11"
+    jsii-pacmak "^1.112.0"
+    jsii-rosetta "^5.8.9"
     ncp "^2.0.0"
     yargs "^17.7.2"
 
-jsii@^5.8.11, jsii@~5.8.0:
+jsii@^5.8.11, jsii@~5.8.0, jsii@~5.8.11:
   version "5.8.11"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.8.11.tgz#3c3feab45190d3490de9e56e098f757a0bea328b"
   integrity sha512-ga00MSW4ZTk5kuPAilxw0l4/g52XM5Dw+THDMXHKnYcgxtNsFnj9ffVjnIBpcD+Ufridjxobnqf9t0WuOSvrww==
@@ -3973,24 +3973,6 @@ jsii@^5.8.11, jsii@~5.8.0:
     sort-json "^2.0.1"
     spdx-license-list "^6.10.0"
     typescript "~5.8"
-    yargs "^17.7.2"
-
-jsii@~5.7.1:
-  version "5.7.17"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.7.17.tgz#43c7416c7252f522c57e931be6417572536caaef"
-  integrity sha512-ZScIngNYuaetbA313WSPXTwBxruoFHSDQ2Ty+Ldal05n6gF93WhE1XhJNGxkYKzrFQKXO/dp8nsewO9VZKol/A==
-  dependencies:
-    "@jsii/check-node" "1.112.0"
-    "@jsii/spec" "^1.112.0"
-    case "^1.6.3"
-    chalk "^4"
-    fast-deep-equal "^3.1.3"
-    log4js "^6.9.1"
-    semver "^7.7.2"
-    semver-intersect "^1.5.0"
-    sort-json "^2.0.1"
-    spdx-license-list "^6.10.0"
-    typescript "~5.7"
     yargs "^17.7.2"
 
 json-buffer@3.0.1:
@@ -5811,11 +5793,6 @@ typescript@^4.9.5:
   version "4.9.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
-
-typescript@~5.7:
-  version "5.7.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.3.tgz#919b44a7dbb8583a9b856d162be24a54bf80073e"
-  integrity sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==
 
 typescript@~5.8:
   version "5.8.3"
