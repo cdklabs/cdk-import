@@ -3958,10 +3958,28 @@ jsii-srcmak@^0.1.1310:
     ncp "^2.0.0"
     yargs "^17.7.2"
 
-jsii@^5.8.11, jsii@~5.8.0, jsii@~5.8.11:
+jsii@^5.8.11:
   version "5.8.11"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.8.11.tgz#3c3feab45190d3490de9e56e098f757a0bea328b"
   integrity sha512-ga00MSW4ZTk5kuPAilxw0l4/g52XM5Dw+THDMXHKnYcgxtNsFnj9ffVjnIBpcD+Ufridjxobnqf9t0WuOSvrww==
+  dependencies:
+    "@jsii/check-node" "1.112.0"
+    "@jsii/spec" "^1.112.0"
+    case "^1.6.3"
+    chalk "^4"
+    fast-deep-equal "^3.1.3"
+    log4js "^6.9.1"
+    semver "^7.7.2"
+    semver-intersect "^1.5.0"
+    sort-json "^2.0.1"
+    spdx-license-list "^6.10.0"
+    typescript "~5.8"
+    yargs "^17.7.2"
+
+jsii@~5.8.0, jsii@~5.8.11:
+  version "5.8.12"
+  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.8.12.tgz#5565a4fc0d7e95400007c0a53bda62b6fe62c3d5"
+  integrity sha512-4EDpRiVDJ7iXSksebwi1/k5QXKG0ZiLyXcQNBFomD57Gb0Ph7VpKHhIt53GQ2cUwigZUJ09pO4LTf3DJUivDCg==
   dependencies:
     "@jsii/check-node" "1.112.0"
     "@jsii/spec" "^1.112.0"
