@@ -3946,19 +3946,19 @@ jsii-rosetta@^5.8.9:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii-srcmak@^0.1.1310:
-  version "0.1.1310"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1310.tgz#76f71cea051adc8215ffc8681cd87805efcc337d"
-  integrity sha512-6dfR/Yi+NLDnqMXTNXRfQ8MbPmjJMi9QG/F7dIxT/81UI9yuQjoKfX4ufPXB2PH6OK4dIuvf1E+v/nc9szW4GQ==
+jsii-srcmak@^0.1.1311:
+  version "0.1.1311"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1311.tgz#3263053c614cadd9600ef30495202989c2897ff1"
+  integrity sha512-qxAybSgb/lJSNbuw0MD57VsvA4i8ynjwZJ9Oi/MsAPeWnRa2Ha5h7Cavu/taHYwvTjngdgvYYF3kQEZnwKv5LA==
   dependencies:
     fs-extra "^9.1.0"
-    jsii "~5.8.11"
+    jsii "~5.8.12"
     jsii-pacmak "^1.112.0"
     jsii-rosetta "^5.8.9"
     ncp "^2.0.0"
     yargs "^17.7.2"
 
-jsii@^5.8.12, jsii@~5.8.0, jsii@~5.8.11:
+jsii@^5.8.12, jsii@~5.8.0, jsii@~5.8.12:
   version "5.8.12"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.8.12.tgz#5565a4fc0d7e95400007c0a53bda62b6fe62c3d5"
   integrity sha512-4EDpRiVDJ7iXSksebwi1/k5QXKG0ZiLyXcQNBFomD57Gb0Ph7VpKHhIt53GQ2cUwigZUJ09pO4LTf3DJUivDCg==
@@ -5266,9 +5266,9 @@ socks-proxy-agent@^8.0.5:
     socks "^2.8.3"
 
 socks@^2.8.3:
-  version "2.8.4"
-  resolved "https://registry.yarnpkg.com/socks/-/socks-2.8.4.tgz#07109755cdd4da03269bda4725baa061ab56d5cc"
-  integrity sha512-D3YaD0aRxR3mEcqnidIs7ReYJFVzWdd6fXJYUM8ixcQcJRGTka/b3saV0KflYhyVJXKhb947GndU35SxYNResQ==
+  version "2.8.5"
+  resolved "https://registry.yarnpkg.com/socks/-/socks-2.8.5.tgz#bfe18f5ead1efc93f5ec90c79fa8bdccbcee2e64"
+  integrity sha512-iF+tNDQla22geJdTyJB1wM/qrX9DMRwWrciEPwWLPRWAUEM8sQiyxgckLxWT1f7+9VabJS0jTGGr4QgBuvi6Ww==
   dependencies:
     ip-address "^9.0.5"
     smart-buffer "^4.2.0"
