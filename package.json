@@ -40,7 +40,7 @@
     "@types/node": "^16",
     "@typescript-eslint/eslint-plugin": "^7",
     "@typescript-eslint/parser": "^7",
-    "aws-cdk-lib": "^2.200.1",
+    "aws-cdk-lib": "^2.200.2",
     "cdklabs-projen-project-types": "^0.1.205",
     "commit-and-tag-version": "^12",
     "constructs": "^10",
