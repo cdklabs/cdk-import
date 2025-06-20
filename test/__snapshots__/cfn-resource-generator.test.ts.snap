@@ -87,7 +87,6 @@ export interface CfnEnforcerProps {
    * @schema CfnEnforcerProps#VPCConfiguration
    */
   readonly vpcConfiguration?: CfnEnforcerPropsVpcConfiguration;
-
 }
 
 /**
@@ -133,7 +132,6 @@ export interface CfnEnforcerPropsVpcConfiguration {
    * @schema CfnEnforcerPropsVpcConfiguration#SubnetIds
    */
   readonly subnetIds?: string[];
-
 }
 
 /**
@@ -213,7 +211,6 @@ export interface CfnCloudGuardQsModuleProps {
    * @schema CfnCloudGuardQsModuleProps#Resources
    */
   readonly resources?: CfnCloudGuardQsModulePropsResources;
-
 }
 
 /**
@@ -738,7 +735,6 @@ export interface CfnCloudGuardQsModulePropsParameters {
    * @schema CfnCloudGuardQsModulePropsParameters#ServerName
    */
   readonly serverName?: CfnCloudGuardQsModulePropsParametersServerName;
-
 }
 
 /**
@@ -1114,7 +1110,6 @@ export interface CfnCloudGuardQsModulePropsResources {
    * @schema CfnCloudGuardQsModulePropsResources#CPUAlarmLow
    */
   readonly cpuAlarmLow?: CfnCloudGuardQsModulePropsResourcesCpuAlarmLow;
-
 }
 
 /**
@@ -1202,7 +1197,6 @@ export interface CfnCloudGuardQsModulePropsParametersAvailabilityZones {
    * @schema CfnCloudGuardQsModulePropsParametersAvailabilityZones#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1235,7 +1229,6 @@ export interface CfnCloudGuardQsModulePropsParametersNumberOfAZs {
    * @schema CfnCloudGuardQsModulePropsParametersNumberOfAZs#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1268,7 +1261,6 @@ export interface CfnCloudGuardQsModulePropsParametersVpccidr {
    * @schema CfnCloudGuardQsModulePropsParametersVpccidr#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1301,7 +1293,6 @@ export interface CfnCloudGuardQsModulePropsParametersPublicSubnet1Cidr {
    * @schema CfnCloudGuardQsModulePropsParametersPublicSubnet1Cidr#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1334,7 +1325,6 @@ export interface CfnCloudGuardQsModulePropsParametersPublicSubnet2Cidr {
    * @schema CfnCloudGuardQsModulePropsParametersPublicSubnet2Cidr#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1367,7 +1357,6 @@ export interface CfnCloudGuardQsModulePropsParametersPublicSubnet3Cidr {
    * @schema CfnCloudGuardQsModulePropsParametersPublicSubnet3Cidr#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1400,7 +1389,6 @@ export interface CfnCloudGuardQsModulePropsParametersPublicSubnet4Cidr {
    * @schema CfnCloudGuardQsModulePropsParametersPublicSubnet4Cidr#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1433,7 +1421,6 @@ export interface CfnCloudGuardQsModulePropsParametersPrivateSubnet1Cidr {
    * @schema CfnCloudGuardQsModulePropsParametersPrivateSubnet1Cidr#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1466,7 +1453,6 @@ export interface CfnCloudGuardQsModulePropsParametersPrivateSubnet2Cidr {
    * @schema CfnCloudGuardQsModulePropsParametersPrivateSubnet2Cidr#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1499,7 +1485,6 @@ export interface CfnCloudGuardQsModulePropsParametersPrivateSubnet3Cidr {
    * @schema CfnCloudGuardQsModulePropsParametersPrivateSubnet3Cidr#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1532,7 +1517,6 @@ export interface CfnCloudGuardQsModulePropsParametersPrivateSubnet4Cidr {
    * @schema CfnCloudGuardQsModulePropsParametersPrivateSubnet4Cidr#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1565,7 +1549,6 @@ export interface CfnCloudGuardQsModulePropsParametersKeyName {
    * @schema CfnCloudGuardQsModulePropsParametersKeyName#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1598,7 +1581,6 @@ export interface CfnCloudGuardQsModulePropsParametersEnableVolumeEncryption {
    * @schema CfnCloudGuardQsModulePropsParametersEnableVolumeEncryption#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1631,7 +1613,6 @@ export interface CfnCloudGuardQsModulePropsParametersEnableInstanceConnect {
    * @schema CfnCloudGuardQsModulePropsParametersEnableInstanceConnect#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1664,7 +1645,6 @@ export interface CfnCloudGuardQsModulePropsParametersAllowUploadDownload {
    * @schema CfnCloudGuardQsModulePropsParametersAllowUploadDownload#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1697,7 +1677,6 @@ export interface CfnCloudGuardQsModulePropsParametersProvisionTag {
    * @schema CfnCloudGuardQsModulePropsParametersProvisionTag#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1730,7 +1709,6 @@ export interface CfnCloudGuardQsModulePropsParametersLoadBalancersType {
    * @schema CfnCloudGuardQsModulePropsParametersLoadBalancersType#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1763,7 +1741,6 @@ export interface CfnCloudGuardQsModulePropsParametersAlbProtocol {
    * @schema CfnCloudGuardQsModulePropsParametersAlbProtocol#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1796,7 +1773,6 @@ export interface CfnCloudGuardQsModulePropsParametersNlbProtocol {
    * @schema CfnCloudGuardQsModulePropsParametersNlbProtocol#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1829,7 +1805,6 @@ export interface CfnCloudGuardQsModulePropsParametersCertificate {
    * @schema CfnCloudGuardQsModulePropsParametersCertificate#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1862,7 +1837,6 @@ export interface CfnCloudGuardQsModulePropsParametersServicePort {
    * @schema CfnCloudGuardQsModulePropsParametersServicePort#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1895,7 +1869,6 @@ export interface CfnCloudGuardQsModulePropsParametersAdminEmail {
    * @schema CfnCloudGuardQsModulePropsParametersAdminEmail#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1928,7 +1901,6 @@ export interface CfnCloudGuardQsModulePropsParametersGatewayInstanceType {
    * @schema CfnCloudGuardQsModulePropsParametersGatewayInstanceType#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1961,7 +1933,6 @@ export interface CfnCloudGuardQsModulePropsParametersGatewaysMinSize {
    * @schema CfnCloudGuardQsModulePropsParametersGatewaysMinSize#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -1994,7 +1965,6 @@ export interface CfnCloudGuardQsModulePropsParametersGatewaysMaxSize {
    * @schema CfnCloudGuardQsModulePropsParametersGatewaysMaxSize#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2027,7 +1997,6 @@ export interface CfnCloudGuardQsModulePropsParametersGatewayVersion {
    * @schema CfnCloudGuardQsModulePropsParametersGatewayVersion#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2060,7 +2029,6 @@ export interface CfnCloudGuardQsModulePropsParametersGatewayPasswordHash {
    * @schema CfnCloudGuardQsModulePropsParametersGatewayPasswordHash#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2093,7 +2061,6 @@ export interface CfnCloudGuardQsModulePropsParametersGatewaySicKey {
    * @schema CfnCloudGuardQsModulePropsParametersGatewaySicKey#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2126,7 +2093,6 @@ export interface CfnCloudGuardQsModulePropsParametersCloudWatch {
    * @schema CfnCloudGuardQsModulePropsParametersCloudWatch#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2159,7 +2125,6 @@ export interface CfnCloudGuardQsModulePropsParametersManagementDeploy {
    * @schema CfnCloudGuardQsModulePropsParametersManagementDeploy#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2192,7 +2157,6 @@ export interface CfnCloudGuardQsModulePropsParametersManagementInstanceType {
    * @schema CfnCloudGuardQsModulePropsParametersManagementInstanceType#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2225,7 +2189,6 @@ export interface CfnCloudGuardQsModulePropsParametersManagementVersion {
    * @schema CfnCloudGuardQsModulePropsParametersManagementVersion#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2258,7 +2221,6 @@ export interface CfnCloudGuardQsModulePropsParametersManagementPasswordHash {
    * @schema CfnCloudGuardQsModulePropsParametersManagementPasswordHash#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2291,7 +2253,6 @@ export interface CfnCloudGuardQsModulePropsParametersGatewaysPolicy {
    * @schema CfnCloudGuardQsModulePropsParametersGatewaysPolicy#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2324,7 +2285,6 @@ export interface CfnCloudGuardQsModulePropsParametersGatewaysBlades {
    * @schema CfnCloudGuardQsModulePropsParametersGatewaysBlades#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2357,7 +2317,6 @@ export interface CfnCloudGuardQsModulePropsParametersAdminCidr {
    * @schema CfnCloudGuardQsModulePropsParametersAdminCidr#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2390,7 +2349,6 @@ export interface CfnCloudGuardQsModulePropsParametersGatewaysAddresses {
    * @schema CfnCloudGuardQsModulePropsParametersGatewaysAddresses#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2423,7 +2381,6 @@ export interface CfnCloudGuardQsModulePropsParametersServersDeploy {
    * @schema CfnCloudGuardQsModulePropsParametersServersDeploy#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2456,7 +2413,6 @@ export interface CfnCloudGuardQsModulePropsParametersServerInstanceType {
    * @schema CfnCloudGuardQsModulePropsParametersServerInstanceType#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2489,7 +2445,6 @@ export interface CfnCloudGuardQsModulePropsParametersServerAmi {
    * @schema CfnCloudGuardQsModulePropsParametersServerAmi#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2522,7 +2477,6 @@ export interface CfnCloudGuardQsModulePropsParametersCreatePrivateSubnets {
    * @schema CfnCloudGuardQsModulePropsParametersCreatePrivateSubnets#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2555,7 +2509,6 @@ export interface CfnCloudGuardQsModulePropsParametersCreateTgwSubnets {
    * @schema CfnCloudGuardQsModulePropsParametersCreateTgwSubnets#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2588,7 +2541,6 @@ export interface CfnCloudGuardQsModulePropsParametersTgwSubnet1Cidr {
    * @schema CfnCloudGuardQsModulePropsParametersTgwSubnet1Cidr#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2621,7 +2573,6 @@ export interface CfnCloudGuardQsModulePropsParametersTgwSubnet2Cidr {
    * @schema CfnCloudGuardQsModulePropsParametersTgwSubnet2Cidr#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2654,7 +2605,6 @@ export interface CfnCloudGuardQsModulePropsParametersTgwSubnet3Cidr {
    * @schema CfnCloudGuardQsModulePropsParametersTgwSubnet3Cidr#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2687,7 +2637,6 @@ export interface CfnCloudGuardQsModulePropsParametersTgwSubnet4Cidr {
    * @schema CfnCloudGuardQsModulePropsParametersTgwSubnet4Cidr#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2720,7 +2669,6 @@ export interface CfnCloudGuardQsModulePropsParametersElbPort {
    * @schema CfnCloudGuardQsModulePropsParametersElbPort#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2753,7 +2701,6 @@ export interface CfnCloudGuardQsModulePropsParametersAllocatePublicAddress {
    * @schema CfnCloudGuardQsModulePropsParametersAllocatePublicAddress#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2786,7 +2733,6 @@ export interface CfnCloudGuardQsModulePropsParametersManagementPermissions {
    * @schema CfnCloudGuardQsModulePropsParametersManagementPermissions#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2819,7 +2765,6 @@ export interface CfnCloudGuardQsModulePropsParametersGatewayManagement {
    * @schema CfnCloudGuardQsModulePropsParametersGatewayManagement#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2852,7 +2797,6 @@ export interface CfnCloudGuardQsModulePropsParametersManagementSicKey {
    * @schema CfnCloudGuardQsModulePropsParametersManagementSicKey#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2885,7 +2829,6 @@ export interface CfnCloudGuardQsModulePropsParametersManagementPredefinedRole {
    * @schema CfnCloudGuardQsModulePropsParametersManagementPredefinedRole#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2918,7 +2861,6 @@ export interface CfnCloudGuardQsModulePropsParametersNtpPrimary {
    * @schema CfnCloudGuardQsModulePropsParametersNtpPrimary#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2951,7 +2893,6 @@ export interface CfnCloudGuardQsModulePropsParametersNtpSecondary {
    * @schema CfnCloudGuardQsModulePropsParametersNtpSecondary#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -2984,7 +2925,6 @@ export interface CfnCloudGuardQsModulePropsParametersManagementHostname {
    * @schema CfnCloudGuardQsModulePropsParametersManagementHostname#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3017,7 +2957,6 @@ export interface CfnCloudGuardQsModulePropsParametersPrimaryManagement {
    * @schema CfnCloudGuardQsModulePropsParametersPrimaryManagement#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3050,7 +2989,6 @@ export interface CfnCloudGuardQsModulePropsParametersManagementStackVolumeSize {
    * @schema CfnCloudGuardQsModulePropsParametersManagementStackVolumeSize#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3083,7 +3021,6 @@ export interface CfnCloudGuardQsModulePropsParametersShellManagementStack {
    * @schema CfnCloudGuardQsModulePropsParametersShellManagementStack#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3116,7 +3053,6 @@ export interface CfnCloudGuardQsModulePropsParametersElbType {
    * @schema CfnCloudGuardQsModulePropsParametersElbType#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3149,7 +3085,6 @@ export interface CfnCloudGuardQsModulePropsParametersGatewaysTargetGroups {
    * @schema CfnCloudGuardQsModulePropsParametersGatewaysTargetGroups#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3182,7 +3117,6 @@ export interface CfnCloudGuardQsModulePropsParametersControlGatewayOverPrivateOr
    * @schema CfnCloudGuardQsModulePropsParametersControlGatewayOverPrivateOrPublicAddress#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3215,7 +3149,6 @@ export interface CfnCloudGuardQsModulePropsParametersSecurityGatewayVolumeSize {
    * @schema CfnCloudGuardQsModulePropsParametersSecurityGatewayVolumeSize#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3248,7 +3181,6 @@ export interface CfnCloudGuardQsModulePropsParametersElbClients {
    * @schema CfnCloudGuardQsModulePropsParametersElbClients#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3281,7 +3213,6 @@ export interface CfnCloudGuardQsModulePropsParametersShellSecurityGatewayStack {
    * @schema CfnCloudGuardQsModulePropsParametersShellSecurityGatewayStack#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3314,7 +3245,6 @@ export interface CfnCloudGuardQsModulePropsParametersPermissions {
    * @schema CfnCloudGuardQsModulePropsParametersPermissions#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3347,7 +3277,6 @@ export interface CfnCloudGuardQsModulePropsParametersStsRoles {
    * @schema CfnCloudGuardQsModulePropsParametersStsRoles#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3380,7 +3309,6 @@ export interface CfnCloudGuardQsModulePropsParametersTrustedAccount {
    * @schema CfnCloudGuardQsModulePropsParametersTrustedAccount#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3413,7 +3341,6 @@ export interface CfnCloudGuardQsModulePropsParametersServersTargetGroups {
    * @schema CfnCloudGuardQsModulePropsParametersServersTargetGroups#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3446,7 +3373,6 @@ export interface CfnCloudGuardQsModulePropsParametersSourceSecurityGroup {
    * @schema CfnCloudGuardQsModulePropsParametersSourceSecurityGroup#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3479,7 +3405,6 @@ export interface CfnCloudGuardQsModulePropsParametersServersMinSize {
    * @schema CfnCloudGuardQsModulePropsParametersServersMinSize#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3512,7 +3437,6 @@ export interface CfnCloudGuardQsModulePropsParametersServersMaxSize {
    * @schema CfnCloudGuardQsModulePropsParametersServersMaxSize#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3545,7 +3469,6 @@ export interface CfnCloudGuardQsModulePropsParametersServerName {
    * @schema CfnCloudGuardQsModulePropsParametersServerName#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -3576,7 +3499,6 @@ export interface CfnCloudGuardQsModulePropsResourcesVpc {
    * @schema CfnCloudGuardQsModulePropsResourcesVpc#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -3607,7 +3529,6 @@ export interface CfnCloudGuardQsModulePropsResourcesInternetGateway {
    * @schema CfnCloudGuardQsModulePropsResourcesInternetGateway#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -3638,7 +3559,6 @@ export interface CfnCloudGuardQsModulePropsResourcesVpcGatewayAttachment {
    * @schema CfnCloudGuardQsModulePropsResourcesVpcGatewayAttachment#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -3669,7 +3589,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet1 {
    * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet1#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -3700,7 +3619,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet2 {
    * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet2#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -3731,7 +3649,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet3 {
    * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet3#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -3762,7 +3679,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet4 {
    * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet4#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -3793,7 +3709,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnetRouteTable {
    * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnetRouteTable#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -3824,7 +3739,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnetRoute {
    * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnetRoute#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -3855,7 +3769,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet1RouteTableAssoc
    * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet1RouteTableAssociation#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -3886,7 +3799,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet2RouteTableAssoc
    * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet2RouteTableAssociation#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -3917,7 +3829,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet3RouteTableAssoc
    * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet3RouteTableAssociation#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -3948,7 +3859,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicSubnet4RouteTableAssoc
    * @schema CfnCloudGuardQsModulePropsResourcesPublicSubnet4RouteTableAssociation#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -3979,7 +3889,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPrivateSubnet1 {
    * @schema CfnCloudGuardQsModulePropsResourcesPrivateSubnet1#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4010,7 +3919,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPrivateSubnet2 {
    * @schema CfnCloudGuardQsModulePropsResourcesPrivateSubnet2#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4041,7 +3949,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPrivateSubnet3 {
    * @schema CfnCloudGuardQsModulePropsResourcesPrivateSubnet3#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4072,7 +3979,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPrivateSubnet4 {
    * @schema CfnCloudGuardQsModulePropsResourcesPrivateSubnet4#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4103,7 +4009,6 @@ export interface CfnCloudGuardQsModulePropsResourcesTgwSubnet1 {
    * @schema CfnCloudGuardQsModulePropsResourcesTgwSubnet1#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4134,7 +4039,6 @@ export interface CfnCloudGuardQsModulePropsResourcesTgwSubnet2 {
    * @schema CfnCloudGuardQsModulePropsResourcesTgwSubnet2#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4165,7 +4069,6 @@ export interface CfnCloudGuardQsModulePropsResourcesTgwSubnet3 {
    * @schema CfnCloudGuardQsModulePropsResourcesTgwSubnet3#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4196,7 +4099,6 @@ export interface CfnCloudGuardQsModulePropsResourcesTgwSubnet4 {
    * @schema CfnCloudGuardQsModulePropsResourcesTgwSubnet4#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4227,7 +4129,6 @@ export interface CfnCloudGuardQsModulePropsResourcesExternalAlbSecurityGroup {
    * @schema CfnCloudGuardQsModulePropsResourcesExternalAlbSecurityGroup#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4258,7 +4159,6 @@ export interface CfnCloudGuardQsModulePropsResourcesExternalLoadBalancer {
    * @schema CfnCloudGuardQsModulePropsResourcesExternalLoadBalancer#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4289,7 +4189,6 @@ export interface CfnCloudGuardQsModulePropsResourcesExternalLbTargetGroup {
    * @schema CfnCloudGuardQsModulePropsResourcesExternalLbTargetGroup#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4320,7 +4219,6 @@ export interface CfnCloudGuardQsModulePropsResourcesExternalLbListener {
    * @schema CfnCloudGuardQsModulePropsResourcesExternalLbListener#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4351,7 +4249,6 @@ export interface CfnCloudGuardQsModulePropsResourcesChkpGatewayRole {
    * @schema CfnCloudGuardQsModulePropsResourcesChkpGatewayRole#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4382,7 +4279,6 @@ export interface CfnCloudGuardQsModulePropsResourcesInstanceProfileSecurityGatew
    * @schema CfnCloudGuardQsModulePropsResourcesInstanceProfileSecurityGatewayStack#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4413,7 +4309,6 @@ export interface CfnCloudGuardQsModulePropsResourcesNotificationTopicSecurityGat
    * @schema CfnCloudGuardQsModulePropsResourcesNotificationTopicSecurityGatewayStack#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4444,7 +4339,6 @@ export interface CfnCloudGuardQsModulePropsResourcesElasticLoadBalancer {
    * @schema CfnCloudGuardQsModulePropsResourcesElasticLoadBalancer#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4475,7 +4369,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPermissiveSecurityGroup {
    * @schema CfnCloudGuardQsModulePropsResourcesPermissiveSecurityGroup#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4506,7 +4399,6 @@ export interface CfnCloudGuardQsModulePropsResourcesGatewayGroup {
    * @schema CfnCloudGuardQsModulePropsResourcesGatewayGroup#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4537,7 +4429,6 @@ export interface CfnCloudGuardQsModulePropsResourcesGatewayLaunchConfig {
    * @schema CfnCloudGuardQsModulePropsResourcesGatewayLaunchConfig#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4568,7 +4459,6 @@ export interface CfnCloudGuardQsModulePropsResourcesGatewayScaleUpPolicy {
    * @schema CfnCloudGuardQsModulePropsResourcesGatewayScaleUpPolicy#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4599,7 +4489,6 @@ export interface CfnCloudGuardQsModulePropsResourcesGatewayScaleDownPolicy {
    * @schema CfnCloudGuardQsModulePropsResourcesGatewayScaleDownPolicy#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4630,7 +4519,6 @@ export interface CfnCloudGuardQsModulePropsResourcesCpuAlarmHighSecurityGatewayS
    * @schema CfnCloudGuardQsModulePropsResourcesCpuAlarmHighSecurityGatewayStack#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4661,7 +4549,6 @@ export interface CfnCloudGuardQsModulePropsResourcesCpuAlarmLowSecurityGatewaySt
    * @schema CfnCloudGuardQsModulePropsResourcesCpuAlarmLowSecurityGatewayStack#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4692,7 +4579,6 @@ export interface CfnCloudGuardQsModulePropsResourcesElbSecurityGroup {
    * @schema CfnCloudGuardQsModulePropsResourcesElbSecurityGroup#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4723,7 +4609,6 @@ export interface CfnCloudGuardQsModulePropsResourcesManagementReadyHandle {
    * @schema CfnCloudGuardQsModulePropsResourcesManagementReadyHandle#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4754,7 +4639,6 @@ export interface CfnCloudGuardQsModulePropsResourcesManagementReadyCondition {
    * @schema CfnCloudGuardQsModulePropsResourcesManagementReadyCondition#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4785,7 +4669,6 @@ export interface CfnCloudGuardQsModulePropsResourcesManagementSecurityGroup {
    * @schema CfnCloudGuardQsModulePropsResourcesManagementSecurityGroup#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4816,7 +4699,6 @@ export interface CfnCloudGuardQsModulePropsResourcesCmeiamRole {
    * @schema CfnCloudGuardQsModulePropsResourcesCmeiamRole#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4847,7 +4729,6 @@ export interface CfnCloudGuardQsModulePropsResourcesInstanceProfile {
    * @schema CfnCloudGuardQsModulePropsResourcesInstanceProfile#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4878,7 +4759,6 @@ export interface CfnCloudGuardQsModulePropsResourcesManagementInstance {
    * @schema CfnCloudGuardQsModulePropsResourcesManagementInstance#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4909,7 +4789,6 @@ export interface CfnCloudGuardQsModulePropsResourcesPublicAddress {
    * @schema CfnCloudGuardQsModulePropsResourcesPublicAddress#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4940,7 +4819,6 @@ export interface CfnCloudGuardQsModulePropsResourcesAddressAssoc {
    * @schema CfnCloudGuardQsModulePropsResourcesAddressAssoc#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -4971,7 +4849,6 @@ export interface CfnCloudGuardQsModulePropsResourcesInternalSecurityGroup {
    * @schema CfnCloudGuardQsModulePropsResourcesInternalSecurityGroup#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -5002,7 +4879,6 @@ export interface CfnCloudGuardQsModulePropsResourcesInternalLbTargetGroup {
    * @schema CfnCloudGuardQsModulePropsResourcesInternalLbTargetGroup#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -5033,7 +4909,6 @@ export interface CfnCloudGuardQsModulePropsResourcesInternalLoadBalancer {
    * @schema CfnCloudGuardQsModulePropsResourcesInternalLoadBalancer#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -5064,7 +4939,6 @@ export interface CfnCloudGuardQsModulePropsResourcesInternalLbListener {
    * @schema CfnCloudGuardQsModulePropsResourcesInternalLbListener#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -5095,7 +4969,6 @@ export interface CfnCloudGuardQsModulePropsResourcesNotificationTopic {
    * @schema CfnCloudGuardQsModulePropsResourcesNotificationTopic#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -5126,7 +4999,6 @@ export interface CfnCloudGuardQsModulePropsResourcesServersSecurityGroup {
    * @schema CfnCloudGuardQsModulePropsResourcesServersSecurityGroup#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -5157,7 +5029,6 @@ export interface CfnCloudGuardQsModulePropsResourcesServersLaunchConfiguration {
    * @schema CfnCloudGuardQsModulePropsResourcesServersLaunchConfiguration#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -5188,7 +5059,6 @@ export interface CfnCloudGuardQsModulePropsResourcesServersGroup {
    * @schema CfnCloudGuardQsModulePropsResourcesServersGroup#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -5219,7 +5089,6 @@ export interface CfnCloudGuardQsModulePropsResourcesScaleUpPolicy {
    * @schema CfnCloudGuardQsModulePropsResourcesScaleUpPolicy#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -5250,7 +5119,6 @@ export interface CfnCloudGuardQsModulePropsResourcesScaleDownPolicy {
    * @schema CfnCloudGuardQsModulePropsResourcesScaleDownPolicy#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -5281,7 +5149,6 @@ export interface CfnCloudGuardQsModulePropsResourcesCpuAlarmHigh {
    * @schema CfnCloudGuardQsModulePropsResourcesCpuAlarmHigh#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -5312,7 +5179,6 @@ export interface CfnCloudGuardQsModulePropsResourcesCpuAlarmLow {
    * @schema CfnCloudGuardQsModulePropsResourcesCpuAlarmLow#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -5432,7 +5298,6 @@ export interface CfnSloProps {
    * @schema CfnSloProps#Type
    */
   readonly type: CfnSloPropsType;
-
 }
 
 /**
@@ -5481,7 +5346,6 @@ export interface Creator {
    * @schema Creator#Email
    */
   readonly email?: string;
-
 }
 
 /**
@@ -5517,7 +5381,6 @@ export interface Query {
    * @schema Query#Denominator
    */
   readonly denominator?: string;
-
 }
 
 /**
@@ -5573,7 +5436,6 @@ export interface Threshold {
    * @schema Threshold#WarningDisplay
    */
   readonly warningDisplay?: string;
-
 }
 
 /**
@@ -5753,7 +5615,6 @@ export interface CfnClusterProps {
    * @schema CfnClusterProps#Tags
    */
   readonly tags?: CfnClusterPropsTags[];
-
 }
 
 /**
@@ -5793,7 +5654,6 @@ export interface CfnClusterPropsKubernetesNetworkConfig {
    * @schema CfnClusterPropsKubernetesNetworkConfig#ServiceIpv4Cidr
    */
   readonly serviceIpv4Cidr?: string;
-
 }
 
 /**
@@ -5850,7 +5710,6 @@ export interface CfnClusterPropsResourcesVpcConfig {
    * @schema CfnClusterPropsResourcesVpcConfig#PublicAccessCidrs
    */
   readonly publicAccessCidrs?: string[];
-
 }
 
 /**
@@ -5888,7 +5747,6 @@ export interface EncryptionConfigEntry {
    * @schema EncryptionConfigEntry#Provider
    */
   readonly provider?: Provider;
-
 }
 
 /**
@@ -5919,7 +5777,6 @@ export interface CfnClusterPropsKubernetesApiAccess {
    * @schema CfnClusterPropsKubernetesApiAccess#Users
    */
   readonly users?: KubernetesApiAccessEntry[];
-
 }
 
 /**
@@ -5950,7 +5807,6 @@ export interface CfnClusterPropsTags {
    * @schema CfnClusterPropsTags#Key
    */
   readonly key: string;
-
 }
 
 /**
@@ -5980,7 +5836,6 @@ export interface Provider {
    * @schema Provider#KeyArn
    */
   readonly keyArn?: string;
-
 }
 
 /**
@@ -6015,7 +5870,6 @@ export interface KubernetesApiAccessEntry {
    * @schema KubernetesApiAccessEntry#Groups
    */
   readonly groups?: string[];
-
 }
 
 /**
@@ -6144,7 +5998,6 @@ export interface CfnAccessTokenProps {
    * @schema CfnAccessTokenProps#Scopes
    */
   readonly scopes: string[];
-
 }
 
 /**
@@ -6224,7 +6077,6 @@ export interface CfnBastionModuleProps {
    * @schema CfnBastionModuleProps#Resources
    */
   readonly resources?: CfnBastionModulePropsResources;
-
 }
 
 /**
@@ -6399,7 +6251,6 @@ export interface CfnBastionModulePropsParameters {
    * @schema CfnBastionModulePropsParameters#RootVolumeSize
    */
   readonly rootVolumeSize?: CfnBastionModulePropsParametersRootVolumeSize;
-
 }
 
 /**
@@ -6500,7 +6351,6 @@ export interface CfnBastionModulePropsResources {
    * @schema CfnBastionModulePropsResources#BastionSecurityGroup
    */
   readonly bastionSecurityGroup?: CfnBastionModulePropsResourcesBastionSecurityGroup;
-
 }
 
 /**
@@ -6543,7 +6393,6 @@ export interface CfnBastionModulePropsParametersLogicalId {
    * @schema CfnBastionModulePropsParametersLogicalId#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -6576,7 +6425,6 @@ export interface CfnBastionModulePropsParametersBastionAmios {
    * @schema CfnBastionModulePropsParametersBastionAmios#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -6609,7 +6457,6 @@ export interface CfnBastionModulePropsParametersBastionHostName {
    * @schema CfnBastionModulePropsParametersBastionHostName#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -6642,7 +6489,6 @@ export interface CfnBastionModulePropsParametersBastionBanner {
    * @schema CfnBastionModulePropsParametersBastionBanner#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -6675,7 +6521,6 @@ export interface CfnBastionModulePropsParametersBastionTenancy {
    * @schema CfnBastionModulePropsParametersBastionTenancy#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -6708,7 +6553,6 @@ export interface CfnBastionModulePropsParametersBastionInstanceType {
    * @schema CfnBastionModulePropsParametersBastionInstanceType#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -6741,7 +6585,6 @@ export interface CfnBastionModulePropsParametersEnableBanner {
    * @schema CfnBastionModulePropsParametersEnableBanner#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -6774,7 +6617,6 @@ export interface CfnBastionModulePropsParametersEnableTcpForwarding {
    * @schema CfnBastionModulePropsParametersEnableTcpForwarding#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -6807,7 +6649,6 @@ export interface CfnBastionModulePropsParametersEnableX11Forwarding {
    * @schema CfnBastionModulePropsParametersEnableX11Forwarding#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -6840,7 +6681,6 @@ export interface CfnBastionModulePropsParametersKeyPairName {
    * @schema CfnBastionModulePropsParametersKeyPairName#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -6873,7 +6713,6 @@ export interface CfnBastionModulePropsParametersNumBastionHosts {
    * @schema CfnBastionModulePropsParametersNumBastionHosts#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -6906,7 +6745,6 @@ export interface CfnBastionModulePropsParametersPublicSubnet1Id {
    * @schema CfnBastionModulePropsParametersPublicSubnet1Id#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -6939,7 +6777,6 @@ export interface CfnBastionModulePropsParametersPublicSubnet2Id {
    * @schema CfnBastionModulePropsParametersPublicSubnet2Id#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -6972,7 +6809,6 @@ export interface CfnBastionModulePropsParametersQss3BucketName {
    * @schema CfnBastionModulePropsParametersQss3BucketName#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -7005,7 +6841,6 @@ export interface CfnBastionModulePropsParametersQss3BucketRegion {
    * @schema CfnBastionModulePropsParametersQss3BucketRegion#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -7038,7 +6873,6 @@ export interface CfnBastionModulePropsParametersQss3KeyPrefix {
    * @schema CfnBastionModulePropsParametersQss3KeyPrefix#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -7071,7 +6905,6 @@ export interface CfnBastionModulePropsParametersRemoteAccessCidr {
    * @schema CfnBastionModulePropsParametersRemoteAccessCidr#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -7104,7 +6937,6 @@ export interface CfnBastionModulePropsParametersVpcid {
    * @schema CfnBastionModulePropsParametersVpcid#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -7137,7 +6969,6 @@ export interface CfnBastionModulePropsParametersAlternativeInitializationScript 
    * @schema CfnBastionModulePropsParametersAlternativeInitializationScript#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -7170,7 +7001,6 @@ export interface CfnBastionModulePropsParametersOsImageOverride {
    * @schema CfnBastionModulePropsParametersOsImageOverride#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -7203,7 +7033,6 @@ export interface CfnBastionModulePropsParametersEnvironmentVariables {
    * @schema CfnBastionModulePropsParametersEnvironmentVariables#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -7236,7 +7065,6 @@ export interface CfnBastionModulePropsParametersRootVolumeSize {
    * @schema CfnBastionModulePropsParametersRootVolumeSize#Description
    */
   readonly description: string;
-
 }
 
 /**
@@ -7267,7 +7095,6 @@ export interface CfnBastionModulePropsResourcesBastionMainLogGroup {
    * @schema CfnBastionModulePropsResourcesBastionMainLogGroup#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -7298,7 +7125,6 @@ export interface CfnBastionModulePropsResourcesSshMetricFilter {
    * @schema CfnBastionModulePropsResourcesSshMetricFilter#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -7329,7 +7155,6 @@ export interface CfnBastionModulePropsResourcesBastionHostRole {
    * @schema CfnBastionModulePropsResourcesBastionHostRole#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -7360,7 +7185,6 @@ export interface CfnBastionModulePropsResourcesBastionHostPolicy {
    * @schema CfnBastionModulePropsResourcesBastionHostPolicy#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -7391,7 +7215,6 @@ export interface CfnBastionModulePropsResourcesBastionHostProfile {
    * @schema CfnBastionModulePropsResourcesBastionHostProfile#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -7422,7 +7245,6 @@ export interface CfnBastionModulePropsResourcesEip1 {
    * @schema CfnBastionModulePropsResourcesEip1#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -7453,7 +7275,6 @@ export interface CfnBastionModulePropsResourcesEip2 {
    * @schema CfnBastionModulePropsResourcesEip2#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -7484,7 +7305,6 @@ export interface CfnBastionModulePropsResourcesEip3 {
    * @schema CfnBastionModulePropsResourcesEip3#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -7515,7 +7335,6 @@ export interface CfnBastionModulePropsResourcesEip4 {
    * @schema CfnBastionModulePropsResourcesEip4#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -7546,7 +7365,6 @@ export interface CfnBastionModulePropsResourcesBastionAutoScalingGroup {
    * @schema CfnBastionModulePropsResourcesBastionAutoScalingGroup#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -7577,7 +7395,6 @@ export interface CfnBastionModulePropsResourcesBastionLaunchConfiguration {
    * @schema CfnBastionModulePropsResourcesBastionLaunchConfiguration#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -7608,7 +7425,6 @@ export interface CfnBastionModulePropsResourcesBastionSecurityGroup {
    * @schema CfnBastionModulePropsResourcesBastionSecurityGroup#Properties
    */
   readonly properties?: any;
-
 }
 
 /**
@@ -7676,7 +7492,6 @@ export interface CfnListProps {
    * @schema CfnListProps#Input
    */
   readonly input: string[];
-
 }
 
 /**
@@ -7817,7 +7632,6 @@ export interface CfnRecordProps {
    * @schema CfnRecordProps#Timeouts
    */
   readonly timeouts?: TimeoutsDefinition;
-
 }
 
 /**
@@ -7856,7 +7670,6 @@ export interface DataDefinition {
    * @schema DataDefinition#MapValue
    */
   readonly mapValue: string;
-
 }
 
 /**
@@ -7887,7 +7700,6 @@ export interface MetadataDefinition {
    * @schema MetadataDefinition#MapValue
    */
   readonly mapValue: string;
-
 }
 
 /**
@@ -7918,7 +7730,6 @@ export interface TimeoutsDefinition {
    * @schema TimeoutsDefinition#Update
    */
   readonly update?: string;
-
 }
 
 /**
