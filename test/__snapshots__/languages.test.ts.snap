@@ -1575,7 +1575,7 @@ namespace AWSQS::EKS::Cluster
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.112.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.242]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[44.9.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[45.1.0]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2056,7 +2056,7 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.112.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.242]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[44.9.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[45.1.0]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -3331,7 +3331,7 @@ import (
 	constructs                \\"github.com/aws/constructs-go/constructs/v10/jsii\\"
 	awscliv1                  \\"github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2/jsii\\"
 	nodeproxyagentv6          \\"github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2/jsii\\"
-	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v44/jsii\\"
+	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v45/jsii\\"
 )
 
 //go:embed 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz
@@ -4101,7 +4101,7 @@ import (
 	constructs                \\"github.com/aws/constructs-go/constructs/v10/jsii\\"
 	awscliv1                  \\"github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2/jsii\\"
 	nodeproxyagentv6          \\"github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2/jsii\\"
-	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v44/jsii\\"
+	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v45/jsii\\"
 )
 
 //go:embed 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz
