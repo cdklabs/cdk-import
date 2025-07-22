@@ -2086,9 +2086,9 @@ dunder-proto@^1.0.0, dunder-proto@^1.0.1:
     gopd "^1.2.0"
 
 electron-to-chromium@^1.5.173:
-  version "1.5.187"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.187.tgz#8c58854e065962351dc87e95614dd78d50425966"
-  integrity sha512-cl5Jc9I0KGUoOoSbxvTywTa40uspGJt/BDBoDLoxJRSBpWh4FFXBsjNRHfQrONsV/OoEjDfHUmZQa2d6Ze4YgA==
+  version "1.5.188"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.188.tgz#38033691f27b1ad914f8ba9812634fa4c4f5b4f9"
+  integrity sha512-pfEx5CBFAocOKNrc+i5fSvhDaI1Vr9R9aT5uX1IzM3hhdL6k649wfuUcdUd9EZnmbE1xdfA51CwqQ61CO3Xl3g==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -3953,25 +3953,7 @@ jsii-srcmak@^0.1.1313:
     ncp "^2.0.0"
     yargs "^17.7.2"
 
-jsii@^5.8.15:
-  version "5.8.15"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.8.15.tgz#6a00b738e5543a834f8eb9d0b67dcdfc68f635f2"
-  integrity sha512-PMA+JhuuXMqGgfb3cGndlr+5NAYoOFHZRMD5uoq+oYNoPvsIejwJbw83Al1BYXhl59f/CI3xTzo5ev3krkqHoQ==
-  dependencies:
-    "@jsii/check-node" "1.112.0"
-    "@jsii/spec" "^1.112.0"
-    case "^1.6.3"
-    chalk "^4"
-    fast-deep-equal "^3.1.3"
-    log4js "^6.9.1"
-    semver "^7.7.2"
-    semver-intersect "^1.5.0"
-    sort-json "^2.0.1"
-    spdx-license-list "^6.10.0"
-    typescript "~5.8"
-    yargs "^17.7.2"
-
-jsii@~5.8.0, jsii@~5.8.14:
+jsii@^5.8.16, jsii@~5.8.0, jsii@~5.8.14:
   version "5.8.16"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.8.16.tgz#387a4c07a4d74bc3936ddda9f504d3719007d965"
   integrity sha512-22Ax6rHg+EDiGfzIP7XtUbrD6Tszhe7o0ws3SfDROkCPKFOiSy73I3tQNP182e1C3zLXemja2WQ3DYIE+sCZew==
