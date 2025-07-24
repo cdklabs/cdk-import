@@ -1222,10 +1222,10 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-aws-cdk-lib@^2.206.0:
-  version "2.206.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.206.0.tgz#39da3b9147eeb9bb07df12cdca85ba9ef09d2f37"
-  integrity sha512-WQGSSzSX+CvIG3j4GICxCAARGaB2dbB2ZiAn8dqqWdUkF6G9pedlSd3bjB0NHOqrxJMu3jYQCYf3gLYTaJuR8A==
+aws-cdk-lib@^2.207.0:
+  version "2.207.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.207.0.tgz#a9ed5b1a96732173d39191708e86471feca5ba71"
+  integrity sha512-DlXUeg6cK6T71jyf6UQAUquRVnG388dIsxb4IuW0Wkn+9t6z4NO39sGCs91mV2RZtPChWy+e8BRVtQx/uBdLww==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "2.2.242"
     "@aws-cdk/asset-node-proxy-agent-v6" "^2.1.0"
