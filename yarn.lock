@@ -3922,7 +3922,7 @@ jsii-reflect@^1.112.0:
     oo-ascii-tree "^1.112.0"
     yargs "^16.2.0"
 
-jsii-rosetta@^5.8.12:
+jsii-rosetta@^5.8.13:
   version "5.8.13"
   resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.8.13.tgz#9ac4bfa39b623207e215f1b340ca6922d7201ca6"
   integrity sha512-nOhl5H40fl0djG1a5xwjXdx/ysGx4blUcD+RjARaAw/k9b7zR7MPsGCLqw7mAW8LMuQFUF27c69R+4QLAmdfRA==
@@ -3941,15 +3941,15 @@ jsii-rosetta@^5.8.12:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii-srcmak@^0.1.1314:
-  version "0.1.1314"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1314.tgz#cfdbeb5283c0ed5dc8d050ecc09996d5076ac7ed"
-  integrity sha512-Qh5QIUS80BSoN6/bT5IC2JbD+r1wgZ0//1y/ESDp5bnQ7RZPYvqHvCMLtRNF1VWbiYJfwqrJnY32HrGY32QaZA==
+jsii-srcmak@^0.1.1315:
+  version "0.1.1315"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1315.tgz#f0b924bc44fc29794025d7c7717d80580bbf0c2e"
+  integrity sha512-lcso/cgN2zhbl09aJ/hOGTTCDV7L7A1l8ydy/wadIcHsiXmqkoYkuDLaNTBtGuTsW3fp7VOrHbIeDJbd6maMAw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.8.16"
     jsii-pacmak "^1.112.0"
-    jsii-rosetta "^5.8.12"
+    jsii-rosetta "^5.8.13"
     ncp "^2.0.0"
     yargs "^17.7.2"
 
