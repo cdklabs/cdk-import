@@ -2086,9 +2086,9 @@ dunder-proto@^1.0.0, dunder-proto@^1.0.1:
     gopd "^1.2.0"
 
 electron-to-chromium@^1.5.173:
-  version "1.5.197"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.197.tgz#117f9d1afd82ae84bbfedd168ddcf52e4afb6216"
-  integrity sha512-m1xWB3g7vJ6asIFz+2pBUbq3uGmfmln1M9SSvBe4QIFWYrRHylP73zL/3nMjDmwz8V+1xAXQDfBd6+HPW0WvDQ==
+  version "1.5.199"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.199.tgz#4d8be9c78362c05f095eb7392e9a54f1fb14fd3a"
+  integrity sha512-3gl0S7zQd88kCAZRO/DnxtBKuhMO4h0EaQIN3YgZfV6+pW+5+bf2AdQeHNESCoaQqo/gjGVYEf2YM4O5HJQqpQ==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -3953,10 +3953,10 @@ jsii-srcmak@^0.1.1316:
     ncp "^2.0.0"
     yargs "^17.7.2"
 
-jsii@^5.9.0:
-  version "5.9.0"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.9.0.tgz#ae4d6b21e2b5f7db5c3f01fe1e384ff1a2191fd9"
-  integrity sha512-g4kDIZjK8e6urtrtzOMQ99Gpb6NMPjNY/fLDpeOlTqSKdcYds+C8jpYU7jFFbhgyQKN05HRY1HpqlKDOzXGr1g==
+jsii@^5.9.1, jsii@~5.9.1:
+  version "5.9.1"
+  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.9.1.tgz#0b90ab43d82dbf025bfdd4077b892cbbe7c8d3c2"
+  integrity sha512-0fosDxjcd2DTslZ2Thsx8t+kmXYPRTcgPNVYxj3qPV+OGocjIRV8jdBAw5HoGXN/h8eq2eiQKaCs6zSjtFI3RQ==
   dependencies:
     "@jsii/check-node" "1.113.0"
     "@jsii/spec" "^1.113.0"
@@ -3987,24 +3987,6 @@ jsii@~5.8.17:
     sort-json "^2.0.1"
     spdx-license-list "^6.10.0"
     typescript "~5.8"
-    yargs "^17.7.2"
-
-jsii@~5.9.1:
-  version "5.9.1"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.9.1.tgz#0b90ab43d82dbf025bfdd4077b892cbbe7c8d3c2"
-  integrity sha512-0fosDxjcd2DTslZ2Thsx8t+kmXYPRTcgPNVYxj3qPV+OGocjIRV8jdBAw5HoGXN/h8eq2eiQKaCs6zSjtFI3RQ==
-  dependencies:
-    "@jsii/check-node" "1.113.0"
-    "@jsii/spec" "^1.113.0"
-    case "^1.6.3"
-    chalk "^4"
-    fast-deep-equal "^3.1.3"
-    log4js "^6.9.1"
-    semver "^7.7.2"
-    semver-intersect "^1.5.0"
-    sort-json "^2.0.1"
-    spdx-license-list "^6.10.0"
-    typescript "~5.9"
     yargs "^17.7.2"
 
 json-buffer@3.0.1:
