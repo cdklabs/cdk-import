@@ -3933,10 +3933,10 @@ jsii-rosetta@^5.9.3:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii-srcmak@^0.1.1318:
-  version "0.1.1318"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1318.tgz#399847cfcd915e451050a47a1e1644c4878cfa4b"
-  integrity sha512-SvDvPYZTuQ9bzoFr9DcRYvK2k0Y1WYLxyJJVTLxo/TMN0Ujr60AA8ahW/kL0qtL5gztRlMP7/XVLuqWG5van9g==
+jsii-srcmak@^0.1.1319:
+  version "0.1.1319"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1319.tgz#c4a7dd8737e841c999f89072beac4d8d43bcade9"
+  integrity sha512-gF/3PZX+iQDyZ2aybbWOmQR3UiYAKLWUzIuuHV/0hprctiBlbQMmZ+PPr5Ix7HuRYqT7UdlIAt06rySrqhefzg==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.9.3"
