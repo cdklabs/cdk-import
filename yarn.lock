@@ -31,7 +31,7 @@
   resolved "https://registry.yarnpkg.com/@aws-cdk/asset-node-proxy-agent-v6/-/asset-node-proxy-agent-v6-2.1.0.tgz#6d3c7860354d4856a7e75375f2f0ecab313b4989"
   integrity sha512-7bY3J8GCVxLupn/kNmpPc5VJz8grx+4RKfnnJiO1LG+uxkZfANZG3RMHhE+qQxxwkyQ9/MfPtTpf748UhR425A==
 
-"@aws-cdk/cloud-assembly-schema@^48.3.0":
+"@aws-cdk/cloud-assembly-schema@^48.6.0":
   version "48.6.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-48.6.0.tgz#cf43578759175d44c282b9863b575121700af2bd"
   integrity sha512-VwAHw5G/meFQsiReu1drD+mkL+jiCL7FMD/xoWDjvKcvFf4Xszl22zVskhfcekeU6+9cUe5Uy+QKkwOwMi1vGg==
@@ -1222,14 +1222,14 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-aws-cdk-lib@^2.213.0:
-  version "2.213.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.213.0.tgz#e5b4f1ee8dbfcf21d1b482daa506222a2ef47b6a"
-  integrity sha512-U6/1RnVu9R7bpb9gJoEl0tie4+f7/5MIWkolWhsoaaEjQ3XwKicaLxzGPZaU4hShDOG+pp6+1Lp9pofOdV0t8A==
+aws-cdk-lib@^2.214.0:
+  version "2.214.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.214.0.tgz#26bc0091585a195302775a2d446a1c46be180feb"
+  integrity sha512-Mj9GSJkkXj8wjiy2pKARquOsiiHsu7tK1WDfdA8Db39hIznWWP+/KscI2iqnntDMeEmcj1QX25PbYT+6rq8zkw==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "2.2.242"
     "@aws-cdk/asset-node-proxy-agent-v6" "^2.1.0"
-    "@aws-cdk/cloud-assembly-schema" "^48.3.0"
+    "@aws-cdk/cloud-assembly-schema" "^48.6.0"
     "@balena/dockerignore" "^1.0.2"
     case "1.6.3"
     fs-extra "^11.3.1"
@@ -3914,7 +3914,7 @@ jsii-reflect@^1.113.0:
     oo-ascii-tree "^1.113.0"
     yargs "^16.2.0"
 
-jsii-rosetta@^5.9.3:
+jsii-rosetta@^5.9.4:
   version "5.9.4"
   resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.9.4.tgz#82ce40c5ed2817b65eb75f2b98deb7b036592db2"
   integrity sha512-UHwCmY2uM1dWlOBsGtq6615bOdmrMzEW2VWc5EwiWCTTFZMpuodc4mlbgZWHkXnZvpEKr5sHpmXP8eJyeUtp/Q==
@@ -3933,19 +3933,19 @@ jsii-rosetta@^5.9.3:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii-srcmak@^0.1.1319:
-  version "0.1.1319"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1319.tgz#c4a7dd8737e841c999f89072beac4d8d43bcade9"
-  integrity sha512-gF/3PZX+iQDyZ2aybbWOmQR3UiYAKLWUzIuuHV/0hprctiBlbQMmZ+PPr5Ix7HuRYqT7UdlIAt06rySrqhefzg==
+jsii-srcmak@^0.1.1320:
+  version "0.1.1320"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1320.tgz#e2ef03bbdff0502292516d0db97af74b90275947"
+  integrity sha512-Y5SRgZOnkJT1B8vJSdyLJ8Goo6we/695r6SQodDLQvQUeVEsOcXljWi4I+hb5fGStdjKgPEn9mkbI6QhkEBEGw==
   dependencies:
     fs-extra "^9.1.0"
-    jsii "~5.9.3"
+    jsii "~5.9.4"
     jsii-pacmak "^1.113.0"
-    jsii-rosetta "^5.9.3"
+    jsii-rosetta "^5.9.4"
     ncp "^2.0.0"
     yargs "^17.7.2"
 
-jsii@^5.9.4, jsii@~5.9.1, jsii@~5.9.3:
+jsii@^5.9.4, jsii@~5.9.1, jsii@~5.9.4:
   version "5.9.4"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.9.4.tgz#22b38ffa1359dee12e2fd8c5bacb3f9b324f9fa6"
   integrity sha512-YLNzhSwLyFU6R3DRAykJOM7hTQbRXqPH4/2uBpFJ4y5/Kj/blrK6mKO2W7bG7oRG6crw/Ui5gUTk4/eLuFJguA==
