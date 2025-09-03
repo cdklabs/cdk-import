@@ -1575,7 +1575,7 @@ namespace AWSQS::EKS::Cluster
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.113.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.242]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[48.6.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[48.7.0]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2056,7 +2056,7 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.113.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.242]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[48.6.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[48.7.0]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
