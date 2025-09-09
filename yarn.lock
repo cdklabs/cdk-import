@@ -3892,7 +3892,7 @@ jsesc@^3.0.2:
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-3.1.0.tgz#74d335a234f67ed19907fdadfac7ccf9d409825d"
   integrity sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==
 
-jsii-pacmak@^1.113.0:
+jsii-pacmak@^1.114.1:
   version "1.114.1"
   resolved "https://registry.yarnpkg.com/jsii-pacmak/-/jsii-pacmak-1.114.1.tgz#6723a4c148c5c050b7697744298987db15dd1956"
   integrity sha512-Ks/PmxhznYhLIbQIo4fFPgWAa/cQb6RPudvvT08IKVIJE7i9LbzXE3go0hjbDjuhNFF6r8eYOAd1mqtbIyVB2g==
@@ -3941,14 +3941,14 @@ jsii-rosetta@^5.9.4:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii-srcmak@^0.1.1320:
-  version "0.1.1320"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1320.tgz#e2ef03bbdff0502292516d0db97af74b90275947"
-  integrity sha512-Y5SRgZOnkJT1B8vJSdyLJ8Goo6we/695r6SQodDLQvQUeVEsOcXljWi4I+hb5fGStdjKgPEn9mkbI6QhkEBEGw==
+jsii-srcmak@^0.1.1321:
+  version "0.1.1321"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1321.tgz#53e91595a459edb7ee49a96050f394e0de595b42"
+  integrity sha512-O12iVPUXdZtLooJzPWb+Bjb3GwXqN5Fs9VR87UfLRrAivYsJ3AvbJWaAzGFzewqKLKuXZTQrMAIZPOSU9mV16A==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.9.4"
-    jsii-pacmak "^1.113.0"
+    jsii-pacmak "^1.114.1"
     jsii-rosetta "^5.9.4"
     ncp "^2.0.0"
     yargs "^17.7.2"
