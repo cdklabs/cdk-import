@@ -1230,10 +1230,10 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-aws-cdk-lib@^2.214.0:
-  version "2.214.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.214.0.tgz#26bc0091585a195302775a2d446a1c46be180feb"
-  integrity sha512-Mj9GSJkkXj8wjiy2pKARquOsiiHsu7tK1WDfdA8Db39hIznWWP+/KscI2iqnntDMeEmcj1QX25PbYT+6rq8zkw==
+aws-cdk-lib@^2.215.0:
+  version "2.215.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.215.0.tgz#32b9b5eee27097c216da3355ce28b0df9d3d434c"
+  integrity sha512-DvRiUEsZSc4voeqfkYGrjP0f4NJ1u94JvbVCUQ+Fci4rf25xLRSEVPzyaH9Tf7V38i0Otts1+u7seunqe+R19g==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "2.2.242"
     "@aws-cdk/asset-node-proxy-agent-v6" "^2.1.0"
@@ -3929,9 +3929,9 @@ jsii-reflect@^1.114.1:
     yargs "^17.7.2"
 
 jsii-rosetta@^5.9.4:
-  version "5.9.4"
-  resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.9.4.tgz#82ce40c5ed2817b65eb75f2b98deb7b036592db2"
-  integrity sha512-UHwCmY2uM1dWlOBsGtq6615bOdmrMzEW2VWc5EwiWCTTFZMpuodc4mlbgZWHkXnZvpEKr5sHpmXP8eJyeUtp/Q==
+  version "5.9.5"
+  resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.9.5.tgz#48e5f559b43f146069ea234c7fa496833dfe29a0"
+  integrity sha512-CpkaRtf/7sX8zbPUjGuqzCK3jjp3Ph5mvWReTZ/N/lUcn9OPE+/5/Uxy9c6N9Ht9lr8/CMgCWhI+VCp9WVprnA==
   dependencies:
     "@jsii/check-node" "1.113.0"
     "@jsii/spec" "^1.113.0"
