@@ -24,9 +24,9 @@
   integrity sha512-7bY3J8GCVxLupn/kNmpPc5VJz8grx+4RKfnnJiO1LG+uxkZfANZG3RMHhE+qQxxwkyQ9/MfPtTpf748UhR425A==
 
 "@aws-cdk/cloud-assembly-schema@^48.6.0":
-  version "48.13.0"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-48.13.0.tgz#43e25476029b1de096d6d88539b456682ff6de20"
-  integrity sha512-xzcNCfygJRJJ+S1DI82hNcUgNWcwj0Z4tnTeBJ+5uW7f5rpyP9objT4L3OaEGdumLuOSuuvy5+iQQNAjCic0zA==
+  version "48.14.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-48.14.0.tgz#ba1a00961451966a79e505a3964f03b7774c95ce"
+  integrity sha512-mo1MaPKsNVh3QSuosREcwIh8TrVZ9deHVLAjzbjkQuTxb/7LGqkf1E5HHxlAt6Z0+z+DZt7dTPIJ92NcR0tjDQ==
   dependencies:
     jsonschema "~1.4.1"
     semver "^7.7.2"
@@ -3941,7 +3941,7 @@ jsii-reflect@^1.115.0:
     oo-ascii-tree "^1.115.0"
     yargs "^17.7.2"
 
-jsii-rosetta@^5.9.7:
+jsii-rosetta@^5.9.8:
   version "5.9.8"
   resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.9.8.tgz#dbe2bb9ea89b4793e3ff8f5c3fea7fcbb93a1bba"
   integrity sha512-QpCE+5CmYPidfgtDztlFeYcfr2LuTYh3o9H58qhtFHHtTxY3PaRDxZGB4LwcuO6lRnz1a9INlgE2O6AafffReg==
@@ -3960,15 +3960,15 @@ jsii-rosetta@^5.9.7:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii-srcmak@^0.1.1323:
-  version "0.1.1323"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1323.tgz#b3eedef12b3f8ccf8dc78eb6ab4f6cc384b0aa41"
-  integrity sha512-w/a1kdrkODWpsm4PG1c3gDWIOZi+zfFCK3HZEJV0OwLilA+klvAYupYSJoSTntL6tjXmLjfxY5m10wxaoQeLsw==
+jsii-srcmak@^0.1.1324:
+  version "0.1.1324"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1324.tgz#6b61e8fe07c5a99cbcd8b53f3c2dd6cf25234235"
+  integrity sha512-JSdK0dmJTe123ak5g4Bmc6OhCuAXVh5d3UgLM4A10tyCSCzSRvT1MUad2NJJPbkV688DFPy+SbUhak5IkJiwLA==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.9.7"
     jsii-pacmak "^1.115.0"
-    jsii-rosetta "^5.9.7"
+    jsii-rosetta "^5.9.8"
     ncp "^2.0.0"
     yargs "^17.7.2"
 
