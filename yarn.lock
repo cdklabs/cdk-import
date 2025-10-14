@@ -647,13 +647,6 @@
     chalk "^4.1.2"
     semver "^7.7.2"
 
-"@jsii/spec@1.114.1":
-  version "1.114.1"
-  resolved "https://registry.yarnpkg.com/@jsii/spec/-/spec-1.114.1.tgz#9c064d57f062d913bcfda25b5496bdf4c9c95c46"
-  integrity sha512-SdjVQaNqLkTUK+2R0/t/MnM/NBvv1vzqxO5sn1nnoFD5Wlih8TFOIjl+Q8npzYmOtN+et3D+BMVYrxmVfq4X0w==
-  dependencies:
-    ajv "^8.17.1"
-
 "@jsii/spec@1.115.0", "@jsii/spec@^1.114.1":
   version "1.115.0"
   resolved "https://registry.yarnpkg.com/@jsii/spec/-/spec-1.115.0.tgz#be0818bd31509687cb6445873d1ec65e8d24bd24"
@@ -2107,9 +2100,9 @@ dunder-proto@^1.0.0, dunder-proto@^1.0.1:
     gopd "^1.2.0"
 
 electron-to-chromium@^1.5.227:
-  version "1.5.234"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.234.tgz#d895b6dba84269f4e83b3a1149dcc55e27848c30"
-  integrity sha512-RXfEp2x+VRYn8jbKfQlRImzoJU01kyDvVPBmG39eU2iuRVhuS6vQNocB8J0/8GrIMLnPzgz4eW6WiRnJkTuNWg==
+  version "1.5.235"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.235.tgz#778dac70537ed9e9e0abf25a49cc94b5a23aaa0e"
+  integrity sha512-i/7ntLFwOdoHY7sgjlTIDo4Sl8EdoTjWIaKinYOVfC6bOp71bmwenyZthWHcasxgHDNWbWxvG9M3Ia116zIaYQ==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -3972,25 +3965,7 @@ jsii-srcmak@^0.1.1324:
     ncp "^2.0.0"
     yargs "^17.7.2"
 
-jsii@^5.9.7:
-  version "5.9.7"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.9.7.tgz#26be467316e6ae2034ccd1f5f9f7559b05c731d3"
-  integrity sha512-ozdEz7gF5uxlYvC+Ze8IkcpQI6svLvusqNSfhl7l5nzi1gYdPedzEQp0Vl8M4cSDxkOmgh2Bz3/K/d7HkGM2qQ==
-  dependencies:
-    "@jsii/check-node" "1.114.1"
-    "@jsii/spec" "1.114.1"
-    case "^1.6.3"
-    chalk "^4"
-    fast-deep-equal "^3.1.3"
-    log4js "^6.9.1"
-    semver "^7.7.2"
-    semver-intersect "^1.5.0"
-    sort-json "^2.0.1"
-    spdx-license-list "^6.10.0"
-    typescript "~5.9"
-    yargs "^17.7.2"
-
-jsii@~5.9.1, jsii@~5.9.7:
+jsii@^5.9.8, jsii@~5.9.1, jsii@~5.9.7:
   version "5.9.8"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.9.8.tgz#f451b876cacf49ffe7a6fcd261819123de9615bd"
   integrity sha512-aV+ikLxz6BPtcm5Px6tedfLYGn9+Kg2ObVfpEz9MxMKzptlLT1WAP0juR8H2n3krqEb7aa0j3Sahs/QoQKtDaA==
