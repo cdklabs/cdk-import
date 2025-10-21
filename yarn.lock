@@ -3896,7 +3896,7 @@ jsesc@^3.0.2:
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-3.1.0.tgz#74d335a234f67ed19907fdadfac7ccf9d409825d"
   integrity sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==
 
-jsii-pacmak@^1.115.0:
+jsii-pacmak@^1.116.0:
   version "1.116.0"
   resolved "https://registry.yarnpkg.com/jsii-pacmak/-/jsii-pacmak-1.116.0.tgz#c94d0141d56dbd4f3e9c0d6a5234a9a72ab28215"
   integrity sha512-X3UQouUnp05/CbtZzORrBIDQBb26ChX6Ms5q3dXxsJyk5/DEJaCkd6pAnU3wiya7Tsrd8K09mSiuseMzxFvs8Q==
@@ -3926,7 +3926,7 @@ jsii-reflect@^1.116.0:
     oo-ascii-tree "^1.116.0"
     yargs "^17.7.2"
 
-jsii-rosetta@^5.9.8:
+jsii-rosetta@^5.9.11:
   version "5.9.11"
   resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.9.11.tgz#999a3fa0309db50de3464dca96ee75b0286f93c7"
   integrity sha512-J0WXTYm6XEq+yyifSA5Wu9H8w3forNU1Efn4kOb8P5FZLDdZHGy5IpX0nWaYejlNMPVwy1ZoLjaJSHADVoul5Q==
@@ -3945,19 +3945,19 @@ jsii-rosetta@^5.9.8:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii-srcmak@^0.1.1325:
-  version "0.1.1325"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1325.tgz#84eddfac5b4ba0f7a6e9bdfb94ad8d98bdc138b4"
-  integrity sha512-UoPimzELFdv4AgIz6jzT88K8XYg/ePB/p7GYBPdq2JCM4YK1QCzgE7ahw2eATB+fIHYEeD98YP/bn0/jjdFIXA==
+jsii-srcmak@^0.1.1326:
+  version "0.1.1326"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1326.tgz#12ea2cf64ed96bf966a5cced4881a7fd43674c2f"
+  integrity sha512-gSS4EVKJhLRWeFsgZs3H5YuBEfxuZDzBB1HIJ4TK5ts1U7TE+yHGD/VmaSNnkkz8m8P+8wY1oUvFsHr3K+fQ5w==
   dependencies:
     fs-extra "^9.1.0"
-    jsii "~5.9.8"
-    jsii-pacmak "^1.115.0"
-    jsii-rosetta "^5.9.8"
+    jsii "~5.9.10"
+    jsii-pacmak "^1.116.0"
+    jsii-rosetta "^5.9.11"
     ncp "^2.0.0"
     yargs "^17.7.2"
 
-jsii@^5.9.10, jsii@~5.9.1, jsii@~5.9.8:
+jsii@^5.9.10, jsii@~5.9.1, jsii@~5.9.10:
   version "5.9.10"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.9.10.tgz#0324c973a9f259b14e78e7018be4cf02ba10a2a8"
   integrity sha512-5CcN7hMRJArrVWL9RCYlTtKf6ZXO4Oi6NNxtuAyjAESF/uxy8i/maDdR72Ot1r8GlFq2bUFK0nimE3+ZP2UCHA==
