@@ -108,6 +108,10 @@
     "eslint": {
       "name": "eslint",
       "description": "Runs eslint against the codebase",
+      "env": {
+        "ESLINT_USE_FLAT_CONFIG": "false",
+        "NODE_NO_WARNINGS": "1"
+      },
       "steps": [
         {
           "exec": "eslint --ext .ts,.tsx --fix --no-error-on-unmatched-pattern $@ src test build-tools projenrc .projenrc.ts",
@@ -229,7 +233,7 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=prod --filter=aws-cdk-lib,aws-sdk,case,jsii-srcmak,json2jsii,minimist,minimist-subcommand,proxy-agent"
+          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --no-deprecated --dep=prod --filter=aws-cdk-lib,aws-sdk,case,jsii-srcmak,json2jsii,minimist,minimist-subcommand,proxy-agent"
         },
         {
           "exec": "yarn install --check-files"
@@ -253,7 +257,7 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@16 --upgrade --target=latest --peer --dep=dev,peer,prod,optional --filter=cdklabs-projen-project-types,projen"
+          "exec": "npx npm-check-updates@16 --upgrade --target=latest --peer --no-deprecated --dep=dev,peer,prod,optional --filter=cdklabs-projen-project-types,projen"
         },
         {
           "exec": "yarn install --check-files"
@@ -277,13 +281,13 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev --filter=@types/jest,aws-cdk-lib,eslint-import-resolver-typescript,eslint-plugin-import,jest,jsii,ts-jest,ts-node,typescript"
+          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --no-deprecated --dep=dev --filter=@types/jest,aws-cdk-lib,eslint-import-resolver-typescript,eslint-plugin-import,jest,jsii,ts-jest,ts-node,typescript"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser aws-cdk-lib commit-and-tag-version constructs eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit jsii ts-jest ts-node typescript"
+          "exec": "yarn upgrade @stylistic/eslint-plugin @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser aws-cdk-lib commit-and-tag-version constructs eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit jsii ts-jest ts-node typescript"
         },
         {
           "exec": "npx projen"
