@@ -8317,16 +8317,16 @@ export interface CfnClusterProps {
 export function toJson_CfnClusterProps(obj: CfnClusterProps | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
-    'Name': obj.name,
-    'RoleArn': obj.roleArn,
-    'LambdaRoleName': obj.lambdaRoleName,
-    'Version': obj.version,
-    'KubernetesNetworkConfig': toJson_CfnClusterPropsKubernetesNetworkConfig(obj.kubernetesNetworkConfig),
-    'ResourcesVpcConfig': toJson_CfnClusterPropsResourcesVpcConfig(obj.resourcesVpcConfig),
-    'EnabledClusterLoggingTypes': obj.enabledClusterLoggingTypes?.map(y => y),
-    'EncryptionConfig': obj.encryptionConfig?.map(y => toJson_EncryptionConfigEntry(y)),
-    'KubernetesApiAccess': toJson_CfnClusterPropsKubernetesApiAccess(obj.kubernetesApiAccess),
-    'Tags': obj.tags?.map(y => toJson_CfnClusterPropsTags(y)),
+    Name: obj.name,
+    RoleArn: obj.roleArn,
+    LambdaRoleName: obj.lambdaRoleName,
+    Version: obj.version,
+    KubernetesNetworkConfig: toJson_CfnClusterPropsKubernetesNetworkConfig(obj.kubernetesNetworkConfig),
+    ResourcesVpcConfig: toJson_CfnClusterPropsResourcesVpcConfig(obj.resourcesVpcConfig),
+    EnabledClusterLoggingTypes: obj.enabledClusterLoggingTypes?.map(y => y),
+    EncryptionConfig: obj.encryptionConfig?.map(y => toJson_EncryptionConfigEntry(y)),
+    KubernetesApiAccess: toJson_CfnClusterPropsKubernetesApiAccess(obj.kubernetesApiAccess),
+    Tags: obj.tags?.map(y => toJson_CfnClusterPropsTags(y)),
   };
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
@@ -8353,11 +8353,11 @@ export interface CfnClusterPropsKubernetesNetworkConfig {
 /**
  * Converts an object of type 'CfnClusterPropsKubernetesNetworkConfig' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable @stylistic/max-len, quote-props */
 export function toJson_CfnClusterPropsKubernetesNetworkConfig(obj: CfnClusterPropsKubernetesNetworkConfig | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
-    'ServiceIpv4Cidr': obj.serviceIpv4Cidr,
+    ServiceIpv4Cidr: obj.serviceIpv4Cidr,
   };
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
@@ -8414,11 +8414,11 @@ export interface CfnClusterPropsResourcesVpcConfig {
 export function toJson_CfnClusterPropsResourcesVpcConfig(obj: CfnClusterPropsResourcesVpcConfig | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
-    'SecurityGroupIds': obj.securityGroupIds?.map(y => y),
-    'SubnetIds': obj.subnetIds?.map(y => y),
-    'EndpointPublicAccess': obj.endpointPublicAccess,
-    'EndpointPrivateAccess': obj.endpointPrivateAccess,
-    'PublicAccessCidrs': obj.publicAccessCidrs?.map(y => y),
+    SecurityGroupIds: obj.securityGroupIds?.map(y => y),
+    SubnetIds: obj.subnetIds?.map(y => y),
+    EndpointPublicAccess: obj.endpointPublicAccess,
+    EndpointPrivateAccess: obj.endpointPrivateAccess,
+    PublicAccessCidrs: obj.publicAccessCidrs?.map(y => y),
   };
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
@@ -8452,8 +8452,8 @@ export interface EncryptionConfigEntry {
 export function toJson_EncryptionConfigEntry(obj: EncryptionConfigEntry | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
-    'Resources': obj.resources?.map(y => y),
-    'Provider': toJson_Provider(obj.provider),
+    Resources: obj.resources?.map(y => y),
+    Provider: toJson_Provider(obj.provider),
   };
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
@@ -8483,8 +8483,8 @@ export interface CfnClusterPropsKubernetesApiAccess {
 export function toJson_CfnClusterPropsKubernetesApiAccess(obj: CfnClusterPropsKubernetesApiAccess | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
-    'Roles': obj.roles?.map(y => toJson_KubernetesApiAccessEntry(y)),
-    'Users': obj.users?.map(y => toJson_KubernetesApiAccessEntry(y)),
+    Roles: obj.roles?.map(y => toJson_KubernetesApiAccessEntry(y)),
+    Users: obj.users?.map(y => toJson_KubernetesApiAccessEntry(y)),
   };
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
@@ -8514,8 +8514,8 @@ export interface CfnClusterPropsTags {
 export function toJson_CfnClusterPropsTags(obj: CfnClusterPropsTags | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
-    'Value': obj.value,
-    'Key': obj.key,
+    Value: obj.value,
+    Key: obj.key,
   };
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
@@ -8544,7 +8544,7 @@ export interface Provider {
 export function toJson_Provider(obj: Provider | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
-    'KeyArn': obj.keyArn,
+    KeyArn: obj.keyArn,
   };
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
@@ -8579,9 +8579,9 @@ export interface KubernetesApiAccessEntry {
 export function toJson_KubernetesApiAccessEntry(obj: KubernetesApiAccessEntry | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {
-    'Arn': obj.arn,
-    'Username': obj.username,
-    'Groups': obj.groups?.map(y => y),
+    Arn: obj.arn,
+    Username: obj.username,
+    Groups: obj.groups?.map(y => y),
   };
   // filter undefined values
   return Object.entries(result).reduce((r, i) => (i[1] === undefined) ? r : ({ ...r, [i[0]]: i[1] }), {});
