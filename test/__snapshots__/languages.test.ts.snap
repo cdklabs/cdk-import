@@ -8353,7 +8353,7 @@ export interface CfnClusterPropsKubernetesNetworkConfig {
 /**
  * Converts an object of type 'CfnClusterPropsKubernetesNetworkConfig' to JSON representation.
  */
-/* eslint-disable max-len, quote-props */
+/* eslint-disable @stylistic/max-len, quote-props */
 export function toJson_CfnClusterPropsKubernetesNetworkConfig(obj: CfnClusterPropsKubernetesNetworkConfig | undefined): Record<string, any> | undefined {
   if (obj === undefined) { return undefined; }
   const result = {

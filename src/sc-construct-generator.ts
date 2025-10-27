@@ -25,7 +25,7 @@ export class ServiceCatalogProvisioningConstructGenerator {
   private readonly parameters: ProvisioningArtifactParameters;
   private readonly defaultAttributes: Set<string>;
   private readonly outputKeys: ProvisioningArtifactOutputs;
-  private readonly outputDescriptions: {[key: string]: string | undefined};
+  private readonly outputDescriptions: { [key: string]: string | undefined };
   public readonly name: string;
 
   /**
@@ -45,7 +45,7 @@ export class ServiceCatalogProvisioningConstructGenerator {
     this.outputDescriptions = this.productDataAggregate.params.ProvisioningArtifactOutputKeys!.reduce((obj, key) => {
       obj[camel(key.Key!)] = key.Description;
       return obj;
-    }, {} as {[key: string]: string | undefined});
+    }, {} as { [key: string]: string | undefined });
 
     this.defaultAttributes = new Set<string>(['provisionedProductId', 'cloudFormationStackArn', 'recordId']);
 
