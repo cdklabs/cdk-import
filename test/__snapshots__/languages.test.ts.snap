@@ -1575,7 +1575,7 @@ namespace AWSQS::EKS::Cluster
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.118.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.242]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[48.17.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[48.18.0]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -1851,21 +1851,6 @@ namespace AWS::FOO::BAR
                 get => GetInstanceProperty<string>()!;
             }
 
-            /// <summary>The environment this resource belongs to.</summary>
-            /// <remarks>
-            /// For resources that are created and managed by the CDK
-            /// (generally, those created by creating new class instances like Role, Bucket, etc.),
-            /// this is always the same as the environment of the stack they belong to;
-            /// however, for imported resources
-            /// (those obtained from static methods like fromRoleArn, fromBucketName, etc.),
-            /// that might be different than the stack they were imported into.
-            /// </remarks>
-            [JsiiProperty(name: \\"env\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"aws-cdk-lib.ResourceEnvironment\\\\\\"}\\")]
-            public Amazon.CDK.IResourceEnvironment Env
-            {
-                get => GetInstanceProperty<Amazon.CDK.IResourceEnvironment>()!;
-            }
-
             /// <summary>The stack in which this resource is defined.</summary>
             [JsiiProperty(name: \\"stack\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"aws-cdk-lib.Stack\\\\\\"}\\")]
             public Amazon.CDK.Stack Stack
@@ -1878,6 +1863,22 @@ namespace AWS::FOO::BAR
             public Constructs.Node Node
             {
                 get => GetInstanceProperty<Constructs.Node>()!;
+            }
+
+            /// <summary>The environment this resource belongs to.</summary>
+            /// <remarks>
+            /// For resources that are created and managed in a Stack (those created by
+            /// creating new class instances like <c>new Role()</c>, <c>new Bucket()</c>, etc.), this
+            /// is always the same as the environment of the stack they belong to.
+            ///
+            /// For referenced resources (those obtained from referencing methods like
+            /// <c>Role.fromRoleArn()</c>, <c>Bucket.fromBucketName()</c>, etc.), they might be
+            /// different than the stack they were imported into.
+            /// </remarks>
+            [JsiiProperty(name: \\"env\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"aws-cdk-lib.ResourceEnvironment\\\\\\"}\\")]
+            public Amazon.CDK.IResourceEnvironment Env
+            {
+                get => GetInstanceProperty<Amazon.CDK.IResourceEnvironment>()!;
             }
 
             /// <summary>Apply the given removal policy to this resource.</summary>
@@ -2056,7 +2057,7 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.118.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.242]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[48.17.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[48.18.0]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2115,6 +2116,7 @@ type CfnCluster interface {
 	EnabledClusterLoggingTypes() *[]*string
 	// \`AWSQS::EKS::Cluster.EncryptionConfig\` Encryption configuration for the cluster.
 	EncryptionConfig() *[]*EncryptionConfigEntry
+	Env() *awscdk.ResourceEnvironment
 	// \`AWSQS::EKS::Cluster.KubernetesApiAccess\`.
 	KubernetesApiAccess() interface{}
 	// \`AWSQS::EKS::Cluster.KubernetesNetworkConfig\` Network configuration for Amazon EKS cluster.
@@ -2410,6 +2412,16 @@ func (j *jsiiProxy_CfnCluster) EncryptionConfig() *[]*EncryptionConfigEntry {
 	_jsii_.Get(
 		j,
 		\\"encryptionConfig\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnCluster) Env() *awscdk.ResourceEnvironment {
+	var returns *awscdk.ResourceEnvironment
+	_jsii_.Get(
+		j,
+		\\"env\\",
 		&returns,
 	)
 	return returns
@@ -3385,6 +3397,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: \\"creationStack\\", GoGetter: \\"CreationStack\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"enabledClusterLoggingTypes\\", GoGetter: \\"EnabledClusterLoggingTypes\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"encryptionConfig\\", GoGetter: \\"EncryptionConfig\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"env\\", GoGetter: \\"Env\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"getAtt\\", GoMethod: \\"GetAtt\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"getMetadata\\", GoMethod: \\"GetMetadata\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"kubernetesApiAccess\\", GoGetter: \\"KubernetesApiAccess\\"},
@@ -3482,12 +3495,13 @@ type Ec2ComputeInstance interface {
 	DownloadKeyCommand() *string
 	// The environment this resource belongs to.
 	//
-	// For resources that are created and managed by the CDK
-	// (generally, those created by creating new class instances like Role, Bucket, etc.),
-	// this is always the same as the environment of the stack they belong to;
-	// however, for imported resources
-	// (those obtained from static methods like fromRoleArn, fromBucketName, etc.),
-	// that might be different than the stack they were imported into.
+	// For resources that are created and managed in a Stack (those created by
+	// creating new class instances like \`new Role()\`, \`new Bucket()\`, etc.), this
+	// is always the same as the environment of the stack they belong to.
+	//
+	// For referenced resources (those obtained from referencing methods like
+	// \`Role.fromRoleArn()\`, \`Bucket.fromBucketName()\`, etc.), they might be
+	// different than the stack they were imported into.
 	Env() *awscdk.ResourceEnvironment
 	IPAddress() *string
 	// The tree node.
@@ -6613,12 +6627,13 @@ public interface IEc2ComputeInstance extends software.amazon.jsii.JsiiSerializab
         /**
          * The environment this resource belongs to.
          * <p>
-         * For resources that are created and managed by the CDK
-         * (generally, those created by creating new class instances like Role, Bucket, etc.),
-         * this is always the same as the environment of the stack they belong to;
-         * however, for imported resources
-         * (those obtained from static methods like fromRoleArn, fromBucketName, etc.),
-         * that might be different than the stack they were imported into.
+         * For resources that are created and managed in a Stack (those created by
+         * creating new class instances like <code>new Role()</code>, <code>new Bucket()</code>, etc.), this
+         * is always the same as the environment of the stack they belong to.
+         * <p>
+         * For referenced resources (those obtained from referencing methods like
+         * <code>Role.fromRoleArn()</code>, <code>Bucket.fromBucketName()</code>, etc.), they might be
+         * different than the stack they were imported into.
          */
         @Override
         @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
@@ -6703,12 +6718,13 @@ public interface IEc2ComputeInstance extends software.amazon.jsii.JsiiSerializab
         /**
          * The environment this resource belongs to.
          * <p>
-         * For resources that are created and managed by the CDK
-         * (generally, those created by creating new class instances like Role, Bucket, etc.),
-         * this is always the same as the environment of the stack they belong to;
-         * however, for imported resources
-         * (those obtained from static methods like fromRoleArn, fromBucketName, etc.),
-         * that might be different than the stack they were imported into.
+         * For resources that are created and managed in a Stack (those created by
+         * creating new class instances like <code>new Role()</code>, <code>new Bucket()</code>, etc.), this
+         * is always the same as the environment of the stack they belong to.
+         * <p>
+         * For referenced resources (those obtained from referencing methods like
+         * <code>Role.fromRoleArn()</code>, <code>Bucket.fromBucketName()</code>, etc.), they might be
+         * different than the stack they were imported into.
          */
         @Override
         @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
