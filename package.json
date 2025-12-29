@@ -50,7 +50,7 @@
     "eslint-plugin-import": "^2.32.0",
     "jest": "^27",
     "jest-junit": "^16",
-    "jsii": "^5.9.20",
+    "jsii": "^5.9.21",
     "projen": "^0.98.4",
     "ts-jest": "^27",
     "ts-node": "^10.9.2",
