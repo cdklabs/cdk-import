@@ -57,12 +57,12 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.221.1",
-    "aws-sdk": "^2.1692.0",
+    "aws-cdk-lib": "^2.233.0",
+    "aws-sdk": "^2.1693.0",
     "case": "^1.6.3",
     "constructs": "^10",
-    "jsii-srcmak": "^0.1.1327",
-    "json2jsii": "^0.5.12",
+    "jsii-srcmak": "^0.1.1334",
+    "json2jsii": "^0.5.13",
     "minimist": "^1.2.8",
     "minimist-subcommand": "^3.0.2",
     "proxy-agent": "^6.5.0"
