@@ -2,11 +2,11 @@
 
 exports[`csharp 1`] = `
 Map {
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/CfnCluster.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/CfnCluster.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     /// <summary>A CloudFormation \`AWSQS::EKS::Cluster\`.</summary>
     /// <remarks>
@@ -14,19 +14,19 @@ namespace AWSQS::EKS::Cluster
     ///
     /// <strong>Link</strong>: https://github.com/aws-quickstart/quickstart-amazon-eks-cluster-resource-provider.git
     /// </remarks>
-    [JsiiClass(nativeType: typeof(AWSQS::EKS::Cluster.CfnCluster), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnCluster\\", parametersJson: \\"[{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- scope in which this resource is defined.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"scope\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"constructs.Construct\\\\\\"}},{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- scoped id of the resource.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"id\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}},{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- resource properties.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"props\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterProps\\\\\\"}}]\\")]
+    [JsiiClass(nativeType: typeof(AWSQS.EKS.Cluster.CfnCluster), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnCluster\\", parametersJson: \\"[{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- scope in which this resource is defined.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"scope\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"constructs.Construct\\\\\\"}},{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- scoped id of the resource.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"id\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}},{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- resource properties.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"props\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterProps\\\\\\"}}]\\")]
     public class CfnCluster : Amazon.CDK.CfnResource
     {
         /// <summary>Create a new \`AWSQS::EKS::Cluster\`.</summary>
         /// <param name=\\"scope\\">- scope in which this resource is defined.</param>
         /// <param name=\\"id\\">- scoped id of the resource.</param>
         /// <param name=\\"props\\">- resource properties.</param>
-        public CfnCluster(Constructs.Construct scope, string id, AWSQS::EKS::Cluster.ICfnClusterProps props): base(_MakeDeputyProps(scope, id, props))
+        public CfnCluster(Constructs.Construct scope, string id, AWSQS.EKS.Cluster.ICfnClusterProps props): base(_MakeDeputyProps(scope, id, props))
         {
         }
 
         [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-        private static DeputyProps _MakeDeputyProps(Constructs.Construct scope, string id, AWSQS::EKS::Cluster.ICfnClusterProps props)
+        private static DeputyProps _MakeDeputyProps(Constructs.Construct scope, string id, AWSQS.EKS.Cluster.ICfnClusterProps props)
         {
             return new DeputyProps(new object?[]{scope, id, props});
         }
@@ -51,7 +51,7 @@ namespace AWSQS::EKS::Cluster
         {
             get;
         }
-        = GetStaticProperty<string>(typeof(AWSQS::EKS::Cluster.CfnCluster))!;
+        = GetStaticProperty<string>(typeof(AWSQS.EKS.Cluster.CfnCluster))!;
 
         /// <summary>Attribute \`AWSQS::EKS::Cluster.Arn\`.</summary>
         /// <remarks>
@@ -170,9 +170,9 @@ namespace AWSQS::EKS::Cluster
         /// </remarks>
         [JsiiOptional]
         [JsiiProperty(name: \\"encryptionConfig\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.EncryptionConfigEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
-        public virtual AWSQS::EKS::Cluster.IEncryptionConfigEntry[]? EncryptionConfig
+        public virtual AWSQS.EKS.Cluster.IEncryptionConfigEntry[]? EncryptionConfig
         {
-            get => GetInstanceProperty<AWSQS::EKS::Cluster.IEncryptionConfigEntry[]?>();
+            get => GetInstanceProperty<AWSQS.EKS.Cluster.IEncryptionConfigEntry[]?>();
         }
 
         /// <summary>\`AWSQS::EKS::Cluster.LambdaRoleName\` Name of the AWS Identity and Access Management (IAM) role used for clusters that have the public endpoint disabled. this provides permissions for Lambda to be invoked and attach to the cluster VPC.</summary>
@@ -221,11 +221,11 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/CfnClusterProps.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/CfnClusterProps.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     #pragma warning disable CS8618
 
@@ -234,14 +234,14 @@ namespace AWSQS::EKS::Cluster
     /// <strong>Schema</strong>: CfnClusterProps
     /// </remarks>
     [JsiiByValue(fqn: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterProps\\")]
-    public class CfnClusterProps : AWSQS::EKS::Cluster.ICfnClusterProps
+    public class CfnClusterProps : AWSQS.EKS.Cluster.ICfnClusterProps
     {
         /// <summary>An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.</summary>
         /// <remarks>
         /// <strong>Schema</strong>: CfnClusterProps#ResourcesVpcConfig
         /// </remarks>
         [JsiiProperty(name: \\"resourcesVpcConfig\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsResourcesVpcConfig\\\\\\"}\\")]
-        public AWSQS::EKS::Cluster.ICfnClusterPropsResourcesVpcConfig ResourcesVpcConfig
+        public AWSQS.EKS.Cluster.ICfnClusterPropsResourcesVpcConfig ResourcesVpcConfig
         {
             get;
             set;
@@ -280,7 +280,7 @@ namespace AWSQS::EKS::Cluster
         /// </remarks>
         [JsiiOptional]
         [JsiiProperty(name: \\"encryptionConfig\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.EncryptionConfigEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
-        public AWSQS::EKS::Cluster.IEncryptionConfigEntry[]? EncryptionConfig
+        public AWSQS.EKS.Cluster.IEncryptionConfigEntry[]? EncryptionConfig
         {
             get;
             set;
@@ -291,7 +291,7 @@ namespace AWSQS::EKS::Cluster
         /// </remarks>
         [JsiiOptional]
         [JsiiProperty(name: \\"kubernetesApiAccess\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesApiAccess\\\\\\"}\\", isOptional: true)]
-        public AWSQS::EKS::Cluster.ICfnClusterPropsKubernetesApiAccess? KubernetesApiAccess
+        public AWSQS.EKS.Cluster.ICfnClusterPropsKubernetesApiAccess? KubernetesApiAccess
         {
             get;
             set;
@@ -303,7 +303,7 @@ namespace AWSQS::EKS::Cluster
         /// </remarks>
         [JsiiOptional]
         [JsiiProperty(name: \\"kubernetesNetworkConfig\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesNetworkConfig\\\\\\"}\\", isOptional: true)]
-        public AWSQS::EKS::Cluster.ICfnClusterPropsKubernetesNetworkConfig? KubernetesNetworkConfig
+        public AWSQS.EKS.Cluster.ICfnClusterPropsKubernetesNetworkConfig? KubernetesNetworkConfig
         {
             get;
             set;
@@ -340,7 +340,7 @@ namespace AWSQS::EKS::Cluster
         /// </remarks>
         [JsiiOptional]
         [JsiiProperty(name: \\"tags\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsTags\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
-        public AWSQS::EKS::Cluster.ICfnClusterPropsTags[]? Tags
+        public AWSQS.EKS.Cluster.ICfnClusterPropsTags[]? Tags
         {
             get;
             set;
@@ -362,24 +362,24 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/CfnClusterPropsKubernetesApiAccess.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/CfnClusterPropsKubernetesApiAccess.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     /// <remarks>
     /// <strong>Schema</strong>: CfnClusterPropsKubernetesApiAccess
     /// </remarks>
     [JsiiByValue(fqn: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesApiAccess\\")]
-    public class CfnClusterPropsKubernetesApiAccess : AWSQS::EKS::Cluster.ICfnClusterPropsKubernetesApiAccess
+    public class CfnClusterPropsKubernetesApiAccess : AWSQS.EKS.Cluster.ICfnClusterPropsKubernetesApiAccess
     {
         /// <remarks>
         /// <strong>Schema</strong>: CfnClusterPropsKubernetesApiAccess#Roles
         /// </remarks>
         [JsiiOptional]
         [JsiiProperty(name: \\"roles\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
-        public AWSQS::EKS::Cluster.IKubernetesApiAccessEntry[]? Roles
+        public AWSQS.EKS.Cluster.IKubernetesApiAccessEntry[]? Roles
         {
             get;
             set;
@@ -390,7 +390,7 @@ namespace AWSQS::EKS::Cluster
         /// </remarks>
         [JsiiOptional]
         [JsiiProperty(name: \\"users\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
-        public AWSQS::EKS::Cluster.IKubernetesApiAccessEntry[]? Users
+        public AWSQS.EKS.Cluster.IKubernetesApiAccessEntry[]? Users
         {
             get;
             set;
@@ -398,18 +398,18 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/CfnClusterPropsKubernetesNetworkConfig.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/CfnClusterPropsKubernetesNetworkConfig.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     /// <summary>Network configuration for Amazon EKS cluster.</summary>
     /// <remarks>
     /// <strong>Schema</strong>: CfnClusterPropsKubernetesNetworkConfig
     /// </remarks>
     [JsiiByValue(fqn: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesNetworkConfig\\")]
-    public class CfnClusterPropsKubernetesNetworkConfig : AWSQS::EKS::Cluster.ICfnClusterPropsKubernetesNetworkConfig
+    public class CfnClusterPropsKubernetesNetworkConfig : AWSQS.EKS.Cluster.ICfnClusterPropsKubernetesNetworkConfig
     {
         /// <summary>Specify the range from which cluster services will receive IPv4 addresses.</summary>
         /// <remarks>
@@ -425,11 +425,11 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/CfnClusterPropsResourcesVpcConfig.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/CfnClusterPropsResourcesVpcConfig.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     #pragma warning disable CS8618
 
@@ -438,7 +438,7 @@ namespace AWSQS::EKS::Cluster
     /// <strong>Schema</strong>: CfnClusterPropsResourcesVpcConfig
     /// </remarks>
     [JsiiByValue(fqn: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsResourcesVpcConfig\\")]
-    public class CfnClusterPropsResourcesVpcConfig : AWSQS::EKS::Cluster.ICfnClusterPropsResourcesVpcConfig
+    public class CfnClusterPropsResourcesVpcConfig : AWSQS.EKS.Cluster.ICfnClusterPropsResourcesVpcConfig
     {
         /// <summary>Specify subnets for your Amazon EKS worker nodes.</summary>
         /// <remarks>
@@ -511,11 +511,11 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/CfnClusterPropsTags.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/CfnClusterPropsTags.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     #pragma warning disable CS8618
 
@@ -523,7 +523,7 @@ namespace AWSQS::EKS::Cluster
     /// <strong>Schema</strong>: CfnClusterPropsTags
     /// </remarks>
     [JsiiByValue(fqn: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsTags\\")]
-    public class CfnClusterPropsTags : AWSQS::EKS::Cluster.ICfnClusterPropsTags
+    public class CfnClusterPropsTags : AWSQS.EKS.Cluster.ICfnClusterPropsTags
     {
         /// <remarks>
         /// <strong>Schema</strong>: CfnClusterPropsTags#Key
@@ -547,25 +547,25 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/EncryptionConfigEntry.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/EncryptionConfigEntry.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     /// <summary>The encryption configuration for the cluster.</summary>
     /// <remarks>
     /// <strong>Schema</strong>: EncryptionConfigEntry
     /// </remarks>
     [JsiiByValue(fqn: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.EncryptionConfigEntry\\")]
-    public class EncryptionConfigEntry : AWSQS::EKS::Cluster.IEncryptionConfigEntry
+    public class EncryptionConfigEntry : AWSQS.EKS.Cluster.IEncryptionConfigEntry
     {
         /// <remarks>
         /// <strong>Schema</strong>: EncryptionConfigEntry#Provider
         /// </remarks>
         [JsiiOptional]
         [JsiiProperty(name: \\"provider\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Provider\\\\\\"}\\", isOptional: true)]
-        public AWSQS::EKS::Cluster.IProvider? Provider
+        public AWSQS.EKS.Cluster.IProvider? Provider
         {
             get;
             set;
@@ -587,11 +587,11 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/ICfnClusterProps.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/ICfnClusterProps.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     /// <summary>A resource that creates Amazon Elastic Kubernetes Service (Amazon EKS) clusters.</summary>
     /// <remarks>
@@ -605,7 +605,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterProps#ResourcesVpcConfig
         /// </remarks>
         [JsiiProperty(name: \\"resourcesVpcConfig\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsResourcesVpcConfig\\\\\\"}\\")]
-        AWSQS::EKS::Cluster.ICfnClusterPropsResourcesVpcConfig ResourcesVpcConfig
+        AWSQS.EKS.Cluster.ICfnClusterPropsResourcesVpcConfig ResourcesVpcConfig
         {
             get;
         }
@@ -644,7 +644,7 @@ namespace AWSQS::EKS::Cluster
         /// </remarks>
         [JsiiProperty(name: \\"encryptionConfig\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.EncryptionConfigEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
         [Amazon.JSII.Runtime.Deputy.JsiiOptional]
-        AWSQS::EKS::Cluster.IEncryptionConfigEntry[]? EncryptionConfig
+        AWSQS.EKS.Cluster.IEncryptionConfigEntry[]? EncryptionConfig
         {
             get
             {
@@ -657,7 +657,7 @@ namespace AWSQS::EKS::Cluster
         /// </remarks>
         [JsiiProperty(name: \\"kubernetesApiAccess\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesApiAccess\\\\\\"}\\", isOptional: true)]
         [Amazon.JSII.Runtime.Deputy.JsiiOptional]
-        AWSQS::EKS::Cluster.ICfnClusterPropsKubernetesApiAccess? KubernetesApiAccess
+        AWSQS.EKS.Cluster.ICfnClusterPropsKubernetesApiAccess? KubernetesApiAccess
         {
             get
             {
@@ -671,7 +671,7 @@ namespace AWSQS::EKS::Cluster
         /// </remarks>
         [JsiiProperty(name: \\"kubernetesNetworkConfig\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesNetworkConfig\\\\\\"}\\", isOptional: true)]
         [Amazon.JSII.Runtime.Deputy.JsiiOptional]
-        AWSQS::EKS::Cluster.ICfnClusterPropsKubernetesNetworkConfig? KubernetesNetworkConfig
+        AWSQS.EKS.Cluster.ICfnClusterPropsKubernetesNetworkConfig? KubernetesNetworkConfig
         {
             get
             {
@@ -714,7 +714,7 @@ namespace AWSQS::EKS::Cluster
         /// </remarks>
         [JsiiProperty(name: \\"tags\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsTags\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
         [Amazon.JSII.Runtime.Deputy.JsiiOptional]
-        AWSQS::EKS::Cluster.ICfnClusterPropsTags[]? Tags
+        AWSQS.EKS.Cluster.ICfnClusterPropsTags[]? Tags
         {
             get
             {
@@ -743,7 +743,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterProps
         /// </remarks>
         [JsiiTypeProxy(nativeType: typeof(ICfnClusterProps), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterProps\\")]
-        internal sealed class _Proxy : DeputyBase, AWSQS::EKS::Cluster.ICfnClusterProps
+        internal sealed class _Proxy : DeputyBase, AWSQS.EKS.Cluster.ICfnClusterProps
         {
             private _Proxy(ByRefValue reference): base(reference)
             {
@@ -754,9 +754,9 @@ namespace AWSQS::EKS::Cluster
             /// <strong>Schema</strong>: CfnClusterProps#ResourcesVpcConfig
             /// </remarks>
             [JsiiProperty(name: \\"resourcesVpcConfig\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsResourcesVpcConfig\\\\\\"}\\")]
-            public AWSQS::EKS::Cluster.ICfnClusterPropsResourcesVpcConfig ResourcesVpcConfig
+            public AWSQS.EKS.Cluster.ICfnClusterPropsResourcesVpcConfig ResourcesVpcConfig
             {
-                get => GetInstanceProperty<AWSQS::EKS::Cluster.ICfnClusterPropsResourcesVpcConfig>()!;
+                get => GetInstanceProperty<AWSQS.EKS.Cluster.ICfnClusterPropsResourcesVpcConfig>()!;
             }
 
             /// <summary>Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role.</summary>
@@ -790,9 +790,9 @@ namespace AWSQS::EKS::Cluster
             /// </remarks>
             [JsiiOptional]
             [JsiiProperty(name: \\"encryptionConfig\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.EncryptionConfigEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
-            public AWSQS::EKS::Cluster.IEncryptionConfigEntry[]? EncryptionConfig
+            public AWSQS.EKS.Cluster.IEncryptionConfigEntry[]? EncryptionConfig
             {
-                get => GetInstanceProperty<AWSQS::EKS::Cluster.IEncryptionConfigEntry[]?>();
+                get => GetInstanceProperty<AWSQS.EKS.Cluster.IEncryptionConfigEntry[]?>();
             }
 
             /// <remarks>
@@ -800,9 +800,9 @@ namespace AWSQS::EKS::Cluster
             /// </remarks>
             [JsiiOptional]
             [JsiiProperty(name: \\"kubernetesApiAccess\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesApiAccess\\\\\\"}\\", isOptional: true)]
-            public AWSQS::EKS::Cluster.ICfnClusterPropsKubernetesApiAccess? KubernetesApiAccess
+            public AWSQS.EKS.Cluster.ICfnClusterPropsKubernetesApiAccess? KubernetesApiAccess
             {
-                get => GetInstanceProperty<AWSQS::EKS::Cluster.ICfnClusterPropsKubernetesApiAccess?>();
+                get => GetInstanceProperty<AWSQS.EKS.Cluster.ICfnClusterPropsKubernetesApiAccess?>();
             }
 
             /// <summary>Network configuration for Amazon EKS cluster.</summary>
@@ -811,9 +811,9 @@ namespace AWSQS::EKS::Cluster
             /// </remarks>
             [JsiiOptional]
             [JsiiProperty(name: \\"kubernetesNetworkConfig\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesNetworkConfig\\\\\\"}\\", isOptional: true)]
-            public AWSQS::EKS::Cluster.ICfnClusterPropsKubernetesNetworkConfig? KubernetesNetworkConfig
+            public AWSQS.EKS.Cluster.ICfnClusterPropsKubernetesNetworkConfig? KubernetesNetworkConfig
             {
-                get => GetInstanceProperty<AWSQS::EKS::Cluster.ICfnClusterPropsKubernetesNetworkConfig?>();
+                get => GetInstanceProperty<AWSQS.EKS.Cluster.ICfnClusterPropsKubernetesNetworkConfig?>();
             }
 
             /// <summary>Name of the AWS Identity and Access Management (IAM) role used for clusters that have the public endpoint disabled.</summary>
@@ -845,9 +845,9 @@ namespace AWSQS::EKS::Cluster
             /// </remarks>
             [JsiiOptional]
             [JsiiProperty(name: \\"tags\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsTags\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
-            public AWSQS::EKS::Cluster.ICfnClusterPropsTags[]? Tags
+            public AWSQS.EKS.Cluster.ICfnClusterPropsTags[]? Tags
             {
-                get => GetInstanceProperty<AWSQS::EKS::Cluster.ICfnClusterPropsTags[]?>();
+                get => GetInstanceProperty<AWSQS.EKS.Cluster.ICfnClusterPropsTags[]?>();
             }
 
             /// <summary>Desired Kubernetes version for your cluster.</summary>
@@ -866,11 +866,11 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/ICfnClusterPropsKubernetesApiAccess.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/ICfnClusterPropsKubernetesApiAccess.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     /// <remarks>
     /// <strong>Schema</strong>: CfnClusterPropsKubernetesApiAccess
@@ -883,7 +883,7 @@ namespace AWSQS::EKS::Cluster
         /// </remarks>
         [JsiiProperty(name: \\"roles\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
         [Amazon.JSII.Runtime.Deputy.JsiiOptional]
-        AWSQS::EKS::Cluster.IKubernetesApiAccessEntry[]? Roles
+        AWSQS.EKS.Cluster.IKubernetesApiAccessEntry[]? Roles
         {
             get
             {
@@ -896,7 +896,7 @@ namespace AWSQS::EKS::Cluster
         /// </remarks>
         [JsiiProperty(name: \\"users\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
         [Amazon.JSII.Runtime.Deputy.JsiiOptional]
-        AWSQS::EKS::Cluster.IKubernetesApiAccessEntry[]? Users
+        AWSQS.EKS.Cluster.IKubernetesApiAccessEntry[]? Users
         {
             get
             {
@@ -908,7 +908,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterPropsKubernetesApiAccess
         /// </remarks>
         [JsiiTypeProxy(nativeType: typeof(ICfnClusterPropsKubernetesApiAccess), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesApiAccess\\")]
-        internal sealed class _Proxy : DeputyBase, AWSQS::EKS::Cluster.ICfnClusterPropsKubernetesApiAccess
+        internal sealed class _Proxy : DeputyBase, AWSQS.EKS.Cluster.ICfnClusterPropsKubernetesApiAccess
         {
             private _Proxy(ByRefValue reference): base(reference)
             {
@@ -919,9 +919,9 @@ namespace AWSQS::EKS::Cluster
             /// </remarks>
             [JsiiOptional]
             [JsiiProperty(name: \\"roles\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
-            public AWSQS::EKS::Cluster.IKubernetesApiAccessEntry[]? Roles
+            public AWSQS.EKS.Cluster.IKubernetesApiAccessEntry[]? Roles
             {
-                get => GetInstanceProperty<AWSQS::EKS::Cluster.IKubernetesApiAccessEntry[]?>();
+                get => GetInstanceProperty<AWSQS.EKS.Cluster.IKubernetesApiAccessEntry[]?>();
             }
 
             /// <remarks>
@@ -929,19 +929,19 @@ namespace AWSQS::EKS::Cluster
             /// </remarks>
             [JsiiOptional]
             [JsiiProperty(name: \\"users\\", typeJson: \\"{\\\\\\"collection\\\\\\":{\\\\\\"elementtype\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\\\\\"},\\\\\\"kind\\\\\\":\\\\\\"array\\\\\\"}}\\", isOptional: true)]
-            public AWSQS::EKS::Cluster.IKubernetesApiAccessEntry[]? Users
+            public AWSQS.EKS.Cluster.IKubernetesApiAccessEntry[]? Users
             {
-                get => GetInstanceProperty<AWSQS::EKS::Cluster.IKubernetesApiAccessEntry[]?>();
+                get => GetInstanceProperty<AWSQS.EKS.Cluster.IKubernetesApiAccessEntry[]?>();
             }
         }
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/ICfnClusterPropsKubernetesNetworkConfig.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/ICfnClusterPropsKubernetesNetworkConfig.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     /// <summary>Network configuration for Amazon EKS cluster.</summary>
     /// <remarks>
@@ -969,7 +969,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterPropsKubernetesNetworkConfig
         /// </remarks>
         [JsiiTypeProxy(nativeType: typeof(ICfnClusterPropsKubernetesNetworkConfig), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsKubernetesNetworkConfig\\")]
-        internal sealed class _Proxy : DeputyBase, AWSQS::EKS::Cluster.ICfnClusterPropsKubernetesNetworkConfig
+        internal sealed class _Proxy : DeputyBase, AWSQS.EKS.Cluster.ICfnClusterPropsKubernetesNetworkConfig
         {
             private _Proxy(ByRefValue reference): base(reference)
             {
@@ -989,11 +989,11 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/ICfnClusterPropsResourcesVpcConfig.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/ICfnClusterPropsResourcesVpcConfig.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     /// <summary>An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.</summary>
     /// <remarks>
@@ -1083,7 +1083,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterPropsResourcesVpcConfig
         /// </remarks>
         [JsiiTypeProxy(nativeType: typeof(ICfnClusterPropsResourcesVpcConfig), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsResourcesVpcConfig\\")]
-        internal sealed class _Proxy : DeputyBase, AWSQS::EKS::Cluster.ICfnClusterPropsResourcesVpcConfig
+        internal sealed class _Proxy : DeputyBase, AWSQS.EKS.Cluster.ICfnClusterPropsResourcesVpcConfig
         {
             private _Proxy(ByRefValue reference): base(reference)
             {
@@ -1156,11 +1156,11 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/ICfnClusterPropsTags.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/ICfnClusterPropsTags.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     /// <remarks>
     /// <strong>Schema</strong>: CfnClusterPropsTags
@@ -1190,7 +1190,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: CfnClusterPropsTags
         /// </remarks>
         [JsiiTypeProxy(nativeType: typeof(ICfnClusterPropsTags), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.CfnClusterPropsTags\\")]
-        internal sealed class _Proxy : DeputyBase, AWSQS::EKS::Cluster.ICfnClusterPropsTags
+        internal sealed class _Proxy : DeputyBase, AWSQS.EKS.Cluster.ICfnClusterPropsTags
         {
             private _Proxy(ByRefValue reference): base(reference)
             {
@@ -1217,11 +1217,11 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/IEncryptionConfigEntry.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/IEncryptionConfigEntry.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     /// <summary>The encryption configuration for the cluster.</summary>
     /// <remarks>
@@ -1235,7 +1235,7 @@ namespace AWSQS::EKS::Cluster
         /// </remarks>
         [JsiiProperty(name: \\"provider\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Provider\\\\\\"}\\", isOptional: true)]
         [Amazon.JSII.Runtime.Deputy.JsiiOptional]
-        AWSQS::EKS::Cluster.IProvider? Provider
+        AWSQS.EKS.Cluster.IProvider? Provider
         {
             get
             {
@@ -1264,7 +1264,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: EncryptionConfigEntry
         /// </remarks>
         [JsiiTypeProxy(nativeType: typeof(IEncryptionConfigEntry), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.EncryptionConfigEntry\\")]
-        internal sealed class _Proxy : DeputyBase, AWSQS::EKS::Cluster.IEncryptionConfigEntry
+        internal sealed class _Proxy : DeputyBase, AWSQS.EKS.Cluster.IEncryptionConfigEntry
         {
             private _Proxy(ByRefValue reference): base(reference)
             {
@@ -1275,9 +1275,9 @@ namespace AWSQS::EKS::Cluster
             /// </remarks>
             [JsiiOptional]
             [JsiiProperty(name: \\"provider\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Provider\\\\\\"}\\", isOptional: true)]
-            public AWSQS::EKS::Cluster.IProvider? Provider
+            public AWSQS.EKS.Cluster.IProvider? Provider
             {
-                get => GetInstanceProperty<AWSQS::EKS::Cluster.IProvider?>();
+                get => GetInstanceProperty<AWSQS.EKS.Cluster.IProvider?>();
             }
 
             /// <summary>Specifies the resources to be encrypted.</summary>
@@ -1296,11 +1296,11 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/IKubernetesApiAccessEntry.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/IKubernetesApiAccessEntry.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     /// <remarks>
     /// <strong>Schema</strong>: KubernetesApiAccessEntry
@@ -1351,7 +1351,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: KubernetesApiAccessEntry
         /// </remarks>
         [JsiiTypeProxy(nativeType: typeof(IKubernetesApiAccessEntry), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\")]
-        internal sealed class _Proxy : DeputyBase, AWSQS::EKS::Cluster.IKubernetesApiAccessEntry
+        internal sealed class _Proxy : DeputyBase, AWSQS.EKS.Cluster.IKubernetesApiAccessEntry
         {
             private _Proxy(ByRefValue reference): base(reference)
             {
@@ -1390,11 +1390,11 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/IProvider.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/IProvider.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     /// <summary>AWS Key Management Service (AWS KMS) customer master key (CMK).</summary>
     /// <remarks>
@@ -1428,7 +1428,7 @@ namespace AWSQS::EKS::Cluster
         /// <strong>Schema</strong>: Provider
         /// </remarks>
         [JsiiTypeProxy(nativeType: typeof(IProvider), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Provider\\")]
-        internal sealed class _Proxy : DeputyBase, AWSQS::EKS::Cluster.IProvider
+        internal sealed class _Proxy : DeputyBase, AWSQS.EKS.Cluster.IProvider
         {
             private _Proxy(ByRefValue reference): base(reference)
             {
@@ -1450,9 +1450,9 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/Internal/DependencyResolution/Anchor.cs" => "#pragma warning disable CS0672,CS0809,CS1591
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/Internal/DependencyResolution/Anchor.cs" => "#pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster.Internal.DependencyResolution
+namespace AWSQS.EKS.Cluster.Internal.DependencyResolution
 {
     public sealed class Anchor
     {
@@ -1467,17 +1467,17 @@ namespace AWSQS::EKS::Cluster.Internal.DependencyResolution
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/KubernetesApiAccessEntry.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/KubernetesApiAccessEntry.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     /// <remarks>
     /// <strong>Schema</strong>: KubernetesApiAccessEntry
     /// </remarks>
     [JsiiByValue(fqn: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.KubernetesApiAccessEntry\\")]
-    public class KubernetesApiAccessEntry : AWSQS::EKS::Cluster.IKubernetesApiAccessEntry
+    public class KubernetesApiAccessEntry : AWSQS.EKS.Cluster.IKubernetesApiAccessEntry
     {
         /// <remarks>
         /// <strong>Schema</strong>: KubernetesApiAccessEntry#Arn
@@ -1514,11 +1514,11 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster/Provider.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AWSQS/EKS/Cluster/Provider.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWSQS::EKS::Cluster
+namespace AWSQS.EKS.Cluster
 {
     /// <summary>AWS Key Management Service (AWS KMS) customer master key (CMK).</summary>
     /// <remarks>
@@ -1527,7 +1527,7 @@ namespace AWSQS::EKS::Cluster
     /// <strong>Schema</strong>: Provider
     /// </remarks>
     [JsiiByValue(fqn: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Provider\\")]
-    public class Provider : AWSQS::EKS::Cluster.IProvider
+    public class Provider : AWSQS.EKS.Cluster.IProvider
     {
         /// <summary>Amazon Resource Name (ARN) or alias of the customer master key (CMK).</summary>
         /// <remarks>
@@ -1545,11 +1545,11 @@ namespace AWSQS::EKS::Cluster
     }
 }
 ",
-  "AWSQS::EKS::Cluster/AWSQS::EKS::Cluster.csproj" => "<Project Sdk=\\"Microsoft.NET.Sdk\\">
+  "AWSQS.EKS.Cluster/AWSQS.EKS.Cluster.csproj" => "<Project Sdk=\\"Microsoft.NET.Sdk\\">
   <PropertyGroup>
     <!-- Package Identification -->
     <Description>1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6</Description>
-    <PackageId>AWSQS::EKS::Cluster</PackageId>
+    <PackageId>AWSQS.EKS.Cluster</PackageId>
     <PackageLicenseExpression>UNLICENSED</PackageLicenseExpression>
     <PackageVersion>0.0.0</PackageVersion>
     <!-- Additional Metadata -->
@@ -1572,7 +1572,7 @@ namespace AWSQS::EKS::Cluster
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.118.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.125.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.242]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.0]\\" />
     <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[48.20.0]\\" />
@@ -1586,7 +1586,7 @@ namespace AWSQS::EKS::Cluster
 </Project>
 
 ",
-  "AWSQS::EKS::Cluster/AssemblyInfo.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWSQS.EKS.Cluster/AssemblyInfo.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 [assembly: JsiiAssembly(\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6\\", \\"0.0.0\\", \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\")]
 ",
@@ -1595,11 +1595,11 @@ namespace AWSQS::EKS::Cluster
 
 exports[`csharp 2`] = `
 Map {
-  "AWS::FOO::BAR/AWS::FOO::BAR/Ec2ComputeInstance.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWS.FOO.BAR/AWS/FOO/BAR/Ec2ComputeInstance.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWS::FOO::BAR
+namespace AWS.FOO.BAR
 {
     /// <summary>Ec2ComputeInstance.</summary>
     /// <remarks>
@@ -1607,19 +1607,19 @@ namespace AWS::FOO::BAR
     ///
     /// Owner: IT
     /// </remarks>
-    [JsiiClass(nativeType: typeof(AWS::FOO::BAR.Ec2ComputeInstance), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\", parametersJson: \\"[{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- scope in which this resource is defined.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"scope\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"constructs.Construct\\\\\\"}},{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- scoped id of the resource.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"id\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}},{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- resource properties.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"props\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps\\\\\\"}}]\\")]
-    public class Ec2ComputeInstance : Amazon.CDK.Resource, AWS::FOO::BAR.IEc2ComputeInstance
+    [JsiiClass(nativeType: typeof(AWS.FOO.BAR.Ec2ComputeInstance), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\", parametersJson: \\"[{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- scope in which this resource is defined.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"scope\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"constructs.Construct\\\\\\"}},{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- scoped id of the resource.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"id\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"primitive\\\\\\":\\\\\\"string\\\\\\"}},{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"- resource properties.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"props\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps\\\\\\"}}]\\")]
+    public class Ec2ComputeInstance : Amazon.CDK.Resource, AWS.FOO.BAR.IEc2ComputeInstance
     {
         /// <summary>Create a new Service Catalog \\\\\`Ec2ComputeInstance\\\\\` product.</summary>
         /// <param name=\\"scope\\">- scope in which this resource is defined.</param>
         /// <param name=\\"id\\">- scoped id of the resource.</param>
         /// <param name=\\"props\\">- resource properties.</param>
-        public Ec2ComputeInstance(Constructs.Construct scope, string id, AWS::FOO::BAR.IEc2ComputeInstanceProps props): base(_MakeDeputyProps(scope, id, props))
+        public Ec2ComputeInstance(Constructs.Construct scope, string id, AWS.FOO.BAR.IEc2ComputeInstanceProps props): base(_MakeDeputyProps(scope, id, props))
         {
         }
 
         [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-        private static DeputyProps _MakeDeputyProps(Constructs.Construct scope, string id, AWS::FOO::BAR.IEc2ComputeInstanceProps props)
+        private static DeputyProps _MakeDeputyProps(Constructs.Construct scope, string id, AWS.FOO.BAR.IEc2ComputeInstanceProps props)
         {
             return new DeputyProps(new object?[]{scope, id, props});
         }
@@ -1708,14 +1708,14 @@ namespace AWS::FOO::BAR
     }
 }
 ",
-  "AWS::FOO::BAR/AWS::FOO::BAR/Ec2ComputeInstanceProps.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWS.FOO.BAR/AWS/FOO/BAR/Ec2ComputeInstanceProps.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWS::FOO::BAR
+namespace AWS.FOO.BAR
 {
     [JsiiByValue(fqn: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps\\")]
-    public class Ec2ComputeInstanceProps : AWS::FOO::BAR.IEc2ComputeInstanceProps
+    public class Ec2ComputeInstanceProps : AWS.FOO.BAR.IEc2ComputeInstanceProps
     {
         /// <summary>InstanceType.</summary>
         /// <remarks>
@@ -1727,7 +1727,7 @@ namespace AWS::FOO::BAR
         /// </remarks>
         [JsiiOptional]
         [JsiiProperty(name: \\"instanceType\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.InstanceType\\\\\\"}\\", isOptional: true)]
-        public AWS::FOO::BAR.Ec2ComputeInstance.InstanceType? InstanceType
+        public AWS.FOO.BAR.Ec2ComputeInstance.InstanceType? InstanceType
         {
             get;
             set;
@@ -1743,7 +1743,7 @@ namespace AWS::FOO::BAR
         /// </remarks>
         [JsiiOptional]
         [JsiiProperty(name: \\"numbers\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.Numbers\\\\\\"}\\", isOptional: true)]
-        public AWS::FOO::BAR.Ec2ComputeInstance.Numbers? Numbers
+        public AWS.FOO.BAR.Ec2ComputeInstance.Numbers? Numbers
         {
             get;
             set;
@@ -1763,11 +1763,11 @@ namespace AWS::FOO::BAR
     }
 }
 ",
-  "AWS::FOO::BAR/AWS::FOO::BAR/IEc2ComputeInstance.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWS.FOO.BAR/AWS/FOO/BAR/IEc2ComputeInstance.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWS::FOO::BAR
+namespace AWS.FOO.BAR
 {
     [JsiiInterface(nativeType: typeof(IEc2ComputeInstance), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.IEc2ComputeInstance\\")]
     public interface IEc2ComputeInstance : Amazon.CDK.IResource
@@ -1809,7 +1809,7 @@ namespace AWS::FOO::BAR
         }
 
         [JsiiTypeProxy(nativeType: typeof(IEc2ComputeInstance), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.IEc2ComputeInstance\\")]
-        internal sealed class _Proxy : DeputyBase, AWS::FOO::BAR.IEc2ComputeInstance
+        internal sealed class _Proxy : DeputyBase, AWS.FOO.BAR.IEc2ComputeInstance
         {
             private _Proxy(ByRefValue reference): base(reference)
             {
@@ -1900,11 +1900,11 @@ namespace AWS::FOO::BAR
     }
 }
 ",
-  "AWS::FOO::BAR/AWS::FOO::BAR/IEc2ComputeInstanceProps.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWS.FOO.BAR/AWS/FOO/BAR/IEc2ComputeInstanceProps.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 #pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWS::FOO::BAR
+namespace AWS.FOO.BAR
 {
     [JsiiInterface(nativeType: typeof(IEc2ComputeInstanceProps), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps\\")]
     public interface IEc2ComputeInstanceProps
@@ -1919,7 +1919,7 @@ namespace AWS::FOO::BAR
         /// </remarks>
         [JsiiProperty(name: \\"instanceType\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.InstanceType\\\\\\"}\\", isOptional: true)]
         [Amazon.JSII.Runtime.Deputy.JsiiOptional]
-        AWS::FOO::BAR.Ec2ComputeInstance.InstanceType? InstanceType
+        AWS.FOO.BAR.Ec2ComputeInstance.InstanceType? InstanceType
         {
             get
             {
@@ -1937,7 +1937,7 @@ namespace AWS::FOO::BAR
         /// </remarks>
         [JsiiProperty(name: \\"numbers\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.Numbers\\\\\\"}\\", isOptional: true)]
         [Amazon.JSII.Runtime.Deputy.JsiiOptional]
-        AWS::FOO::BAR.Ec2ComputeInstance.Numbers? Numbers
+        AWS.FOO.BAR.Ec2ComputeInstance.Numbers? Numbers
         {
             get
             {
@@ -1960,7 +1960,7 @@ namespace AWS::FOO::BAR
         }
 
         [JsiiTypeProxy(nativeType: typeof(IEc2ComputeInstanceProps), fullyQualifiedName: \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstanceProps\\")]
-        internal sealed class _Proxy : DeputyBase, AWS::FOO::BAR.IEc2ComputeInstanceProps
+        internal sealed class _Proxy : DeputyBase, AWS.FOO.BAR.IEc2ComputeInstanceProps
         {
             private _Proxy(ByRefValue reference): base(reference)
             {
@@ -1976,9 +1976,9 @@ namespace AWS::FOO::BAR
             /// </remarks>
             [JsiiOptional]
             [JsiiProperty(name: \\"instanceType\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.InstanceType\\\\\\"}\\", isOptional: true)]
-            public AWS::FOO::BAR.Ec2ComputeInstance.InstanceType? InstanceType
+            public AWS.FOO.BAR.Ec2ComputeInstance.InstanceType? InstanceType
             {
-                get => GetInstanceProperty<AWS::FOO::BAR.Ec2ComputeInstance.InstanceType?>();
+                get => GetInstanceProperty<AWS.FOO.BAR.Ec2ComputeInstance.InstanceType?>();
             }
 
             /// <summary>Numbers.</summary>
@@ -1991,9 +1991,9 @@ namespace AWS::FOO::BAR
             /// </remarks>
             [JsiiOptional]
             [JsiiProperty(name: \\"numbers\\", typeJson: \\"{\\\\\\"fqn\\\\\\":\\\\\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance.Numbers\\\\\\"}\\", isOptional: true)]
-            public AWS::FOO::BAR.Ec2ComputeInstance.Numbers? Numbers
+            public AWS.FOO.BAR.Ec2ComputeInstance.Numbers? Numbers
             {
-                get => GetInstanceProperty<AWS::FOO::BAR.Ec2ComputeInstance.Numbers?>();
+                get => GetInstanceProperty<AWS.FOO.BAR.Ec2ComputeInstance.Numbers?>();
             }
 
             /// <summary>SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter.</summary>
@@ -2010,9 +2010,9 @@ namespace AWS::FOO::BAR
     }
 }
 ",
-  "AWS::FOO::BAR/AWS::FOO::BAR/Internal/DependencyResolution/Anchor.cs" => "#pragma warning disable CS0672,CS0809,CS1591
+  "AWS.FOO.BAR/AWS/FOO/BAR/Internal/DependencyResolution/Anchor.cs" => "#pragma warning disable CS0672,CS0809,CS1591
 
-namespace AWS::FOO::BAR.Internal.DependencyResolution
+namespace AWS.FOO.BAR.Internal.DependencyResolution
 {
     public sealed class Anchor
     {
@@ -2027,11 +2027,11 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
     }
 }
 ",
-  "AWS::FOO::BAR/AWS::FOO::BAR.csproj" => "<Project Sdk=\\"Microsoft.NET.Sdk\\">
+  "AWS.FOO.BAR/AWS.FOO.BAR.csproj" => "<Project Sdk=\\"Microsoft.NET.Sdk\\">
   <PropertyGroup>
     <!-- Package Identification -->
     <Description>1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6</Description>
-    <PackageId>AWS::FOO::BAR</PackageId>
+    <PackageId>AWS.FOO.BAR</PackageId>
     <PackageLicenseExpression>UNLICENSED</PackageLicenseExpression>
     <PackageVersion>0.0.0</PackageVersion>
     <!-- Additional Metadata -->
@@ -2054,7 +2054,7 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.118.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.125.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.242]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.0]\\" />
     <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[48.20.0]\\" />
@@ -2068,7 +2068,7 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
 </Project>
 
 ",
-  "AWS::FOO::BAR/AssemblyInfo.cs" => "using Amazon.JSII.Runtime.Deputy;
+  "AWS.FOO.BAR/AssemblyInfo.cs" => "using Amazon.JSII.Runtime.Deputy;
 
 [assembly: JsiiAssembly(\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6\\", \\"0.0.0\\", \\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\")]
 ",
@@ -2077,16 +2077,16 @@ namespace AWS::FOO::BAR.Internal.DependencyResolution
 
 exports[`golang 1`] = `
 Map {
-  "awsqs-eks-cluster/CfnCluster.go" => "package awsqs-eks-cluster
+  "awsqsekscluster/CfnCluster.go" => "package awsqsekscluster
 
 import (
 	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
-	_init_ \\"github.com/my/module/awsqs-eks-cluster/jsii\\"
+	_init_ \\"github.com/my/module/awsqsekscluster/jsii\\"
 
 	\\"github.com/aws/aws-cdk-go/awscdk/v2\\"
 	\\"github.com/aws/aws-cdk-go/awscdk/v2/interfaces\\"
 	\\"github.com/aws/constructs-go/constructs/v10\\"
-	\\"github.com/my/module/awsqs-eks-cluster/internal\\"
+	\\"github.com/my/module/awsqsekscluster/internal\\"
 )
 
 // A CloudFormation \`AWSQS::EKS::Cluster\`.
@@ -2920,7 +2920,7 @@ func (c *jsiiProxy_CfnCluster) ValidateProperties(_properties interface{}) {
 }
 
 ",
-  "awsqs-eks-cluster/CfnClusterProps.go" => "package awsqs-eks-cluster
+  "awsqsekscluster/CfnClusterProps.go" => "package awsqsekscluster
 
 
 // A resource that creates Amazon Elastic Kubernetes Service (Amazon EKS) clusters.
@@ -2954,7 +2954,7 @@ type CfnClusterProps struct {
 }
 
 ",
-  "awsqs-eks-cluster/CfnClusterPropsKubernetesApiAccess.go" => "package awsqs-eks-cluster
+  "awsqsekscluster/CfnClusterPropsKubernetesApiAccess.go" => "package awsqsekscluster
 
 
 type CfnClusterPropsKubernetesApiAccess struct {
@@ -2963,7 +2963,7 @@ type CfnClusterPropsKubernetesApiAccess struct {
 }
 
 ",
-  "awsqs-eks-cluster/CfnClusterPropsKubernetesNetworkConfig.go" => "package awsqs-eks-cluster
+  "awsqsekscluster/CfnClusterPropsKubernetesNetworkConfig.go" => "package awsqsekscluster
 
 
 // Network configuration for Amazon EKS cluster.
@@ -2973,7 +2973,7 @@ type CfnClusterPropsKubernetesNetworkConfig struct {
 }
 
 ",
-  "awsqs-eks-cluster/CfnClusterPropsResourcesVpcConfig.go" => "package awsqs-eks-cluster
+  "awsqsekscluster/CfnClusterPropsResourcesVpcConfig.go" => "package awsqsekscluster
 
 
 // An object that represents the virtual private cloud (VPC) configuration to use for an Amazon EKS cluster.
@@ -3001,7 +3001,7 @@ type CfnClusterPropsResourcesVpcConfig struct {
 }
 
 ",
-  "awsqs-eks-cluster/CfnClusterPropsTags.go" => "package awsqs-eks-cluster
+  "awsqsekscluster/CfnClusterPropsTags.go" => "package awsqsekscluster
 
 
 type CfnClusterPropsTags struct {
@@ -3010,9 +3010,9 @@ type CfnClusterPropsTags struct {
 }
 
 ",
-  "awsqs-eks-cluster/CfnCluster__checks.go" => "//go:build !no_runtime_type_checking
+  "awsqsekscluster/CfnCluster__checks.go" => "//go:build !no_runtime_type_checking
 
-package awsqs-eks-cluster
+package awsqsekscluster
 
 import (
 	\\"fmt\\"
@@ -3203,9 +3203,9 @@ func validateNewCfnClusterParameters(scope constructs.Construct, id *string, pro
 }
 
 ",
-  "awsqs-eks-cluster/CfnCluster__no_checks.go" => "//go:build no_runtime_type_checking
+  "awsqsekscluster/CfnCluster__no_checks.go" => "//go:build no_runtime_type_checking
 
-package awsqs-eks-cluster
+package awsqsekscluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
@@ -3286,7 +3286,7 @@ func validateNewCfnClusterParameters(scope constructs.Construct, id *string, pro
 }
 
 ",
-  "awsqs-eks-cluster/EncryptionConfigEntry.go" => "package awsqs-eks-cluster
+  "awsqsekscluster/EncryptionConfigEntry.go" => "package awsqsekscluster
 
 
 // The encryption configuration for the cluster.
@@ -3299,7 +3299,7 @@ type EncryptionConfigEntry struct {
 }
 
 ",
-  "awsqs-eks-cluster/KubernetesApiAccessEntry.go" => "package awsqs-eks-cluster
+  "awsqsekscluster/KubernetesApiAccessEntry.go" => "package awsqsekscluster
 
 
 type KubernetesApiAccessEntry struct {
@@ -3309,7 +3309,7 @@ type KubernetesApiAccessEntry struct {
 }
 
 ",
-  "awsqs-eks-cluster/Provider.go" => "package awsqs-eks-cluster
+  "awsqsekscluster/Provider.go" => "package awsqsekscluster
 
 
 // AWS Key Management Service (AWS KMS) customer master key (CMK).
@@ -3323,13 +3323,13 @@ type Provider struct {
 }
 
 ",
-  "awsqs-eks-cluster/internal/types.go" => "package internal
+  "awsqsekscluster/internal/types.go" => "package internal
 import (
 	\\"github.com/aws/aws-cdk-go/awscdk/v2\\"
 )
 type Type__awscdkCfnResource = awscdk.CfnResource
 ",
-  "awsqs-eks-cluster/jsii/jsii.go" => "// Package jsii contains the functionaility needed for jsii packages to
+  "awsqsekscluster/jsii/jsii.go" => "// Package jsii contains the functionaility needed for jsii packages to
 // initialize their dependencies and themselves. Users should never need to use this package
 // directly. If you find you need to - please report a bug at
 // https://github.com/aws/jsii/issues/new/choose
@@ -3364,8 +3364,8 @@ func Initialize() {
 	_jsii_.Load(\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6\\", \\"0.0.0\\", tarball)
 }
 ",
-  "awsqs-eks-cluster/main.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package awsqs-eks-cluster
+  "awsqsekscluster/main.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package awsqsekscluster
 
 import (
 	\\"reflect\\"
@@ -3465,23 +3465,23 @@ func init() {
 	)
 }
 ",
-  "awsqs-eks-cluster/version" => "0.0.0
+  "awsqsekscluster/version" => "0.0.0
 ",
 }
 `;
 
 exports[`golang 2`] = `
 Map {
-  "ec2-compute-instance/Ec2ComputeInstance.go" => "package ec2-compute-instance
+  "ec2computeinstance/Ec2ComputeInstance.go" => "package ec2computeinstance
 
 import (
 	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
-	_init_ \\"github.com/my/module/ec2-compute-instance/jsii\\"
+	_init_ \\"github.com/my/module/ec2computeinstance/jsii\\"
 
 	\\"github.com/aws/aws-cdk-go/awscdk/v2\\"
 	\\"github.com/aws/aws-cdk-go/awscdk/v2/interfaces\\"
 	\\"github.com/aws/constructs-go/constructs/v10\\"
-	\\"github.com/my/module/ec2-compute-instance/internal\\"
+	\\"github.com/my/module/ec2computeinstance/internal\\"
 )
 
 // Ec2ComputeInstance.
@@ -3828,7 +3828,7 @@ func (e *jsiiProxy_Ec2ComputeInstance) ToString() *string {
 }
 
 ",
-  "ec2-compute-instance/Ec2ComputeInstanceProps.go" => "package ec2-compute-instance
+  "ec2computeinstance/Ec2ComputeInstanceProps.go" => "package ec2computeinstance
 
 
 type Ec2ComputeInstanceProps struct {
@@ -3855,7 +3855,7 @@ type Ec2ComputeInstanceProps struct {
 }
 
 ",
-  "ec2-compute-instance/Ec2ComputeInstance_InstanceType.go" => "package ec2-compute-instance
+  "ec2computeinstance/Ec2ComputeInstance_InstanceType.go" => "package ec2computeinstance
 
 
 type Ec2ComputeInstance_InstanceType string
@@ -3868,7 +3868,7 @@ const (
 )
 
 ",
-  "ec2-compute-instance/Ec2ComputeInstance_Numbers.go" => "package ec2-compute-instance
+  "ec2computeinstance/Ec2ComputeInstance_Numbers.go" => "package ec2computeinstance
 
 
 type Ec2ComputeInstance_Numbers string
@@ -3887,9 +3887,9 @@ const (
 )
 
 ",
-  "ec2-compute-instance/Ec2ComputeInstance__checks.go" => "//go:build !no_runtime_type_checking
+  "ec2computeinstance/Ec2ComputeInstance__checks.go" => "//go:build !no_runtime_type_checking
 
-package ec2-compute-instance
+package ec2computeinstance
 
 import (
 	\\"fmt\\"
@@ -3975,9 +3975,9 @@ func validateNewEc2ComputeInstanceParameters(scope constructs.Construct, id *str
 }
 
 ",
-  "ec2-compute-instance/Ec2ComputeInstance__no_checks.go" => "//go:build no_runtime_type_checking
+  "ec2computeinstance/Ec2ComputeInstance__no_checks.go" => "//go:build no_runtime_type_checking
 
-package ec2-compute-instance
+package ec2computeinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
@@ -4010,13 +4010,13 @@ func validateNewEc2ComputeInstanceParameters(scope constructs.Construct, id *str
 }
 
 ",
-  "ec2-compute-instance/IEc2ComputeInstance.go" => "package ec2-compute-instance
+  "ec2computeinstance/IEc2ComputeInstance.go" => "package ec2computeinstance
 
 import (
 	_jsii_ \\"github.com/aws/jsii-runtime-go/runtime\\"
 
 	\\"github.com/aws/aws-cdk-go/awscdk/v2\\"
-	\\"github.com/my/module/ec2-compute-instance/internal\\"
+	\\"github.com/my/module/ec2computeinstance/internal\\"
 )
 
 type IEc2ComputeInstance interface {
@@ -4095,14 +4095,14 @@ func (j *jsiiProxy_IEc2ComputeInstance) Sshcommand() *string {
 }
 
 ",
-  "ec2-compute-instance/internal/types.go" => "package internal
+  "ec2computeinstance/internal/types.go" => "package internal
 import (
 	\\"github.com/aws/aws-cdk-go/awscdk/v2\\"
 )
 type Type__awscdkResource = awscdk.Resource
 type Type__awscdkIResource = awscdk.IResource
 ",
-  "ec2-compute-instance/jsii/jsii.go" => "// Package jsii contains the functionaility needed for jsii packages to
+  "ec2computeinstance/jsii/jsii.go" => "// Package jsii contains the functionaility needed for jsii packages to
 // initialize their dependencies and themselves. Users should never need to use this package
 // directly. If you find you need to - please report a bug at
 // https://github.com/aws/jsii/issues/new/choose
@@ -4137,8 +4137,8 @@ func Initialize() {
 	_jsii_.Load(\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6\\", \\"0.0.0\\", tarball)
 }
 ",
-  "ec2-compute-instance/main.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
-package ec2-compute-instance
+  "ec2computeinstance/main.go" => "// 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6
+package ec2computeinstance
 
 import (
 	\\"reflect\\"
@@ -4220,7 +4220,7 @@ func init() {
 	)
 }
 ",
-  "ec2-compute-instance/version" => "0.0.0
+  "ec2computeinstance/version" => "0.0.0
 ",
 }
 `;
@@ -4991,7 +4991,7 @@ public interface CfnClusterProps extends software.amazon.jsii.JsiiSerializable {
         }
 
         @Override
-        public final boolean equals(final Object o) {
+        public final boolean equals(final java.lang.Object o) {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
 
@@ -5154,7 +5154,7 @@ public interface CfnClusterPropsKubernetesApiAccess extends software.amazon.jsii
         }
 
         @Override
-        public final boolean equals(final Object o) {
+        public final boolean equals(final java.lang.Object o) {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
 
@@ -5272,7 +5272,7 @@ public interface CfnClusterPropsKubernetesNetworkConfig extends software.amazon.
         }
 
         @Override
-        public final boolean equals(final Object o) {
+        public final boolean equals(final java.lang.Object o) {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
 
@@ -5515,7 +5515,7 @@ public interface CfnClusterPropsResourcesVpcConfig extends software.amazon.jsii.
         }
 
         @Override
-        public final boolean equals(final Object o) {
+        public final boolean equals(final java.lang.Object o) {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
 
@@ -5657,7 +5657,7 @@ public interface CfnClusterPropsTags extends software.amazon.jsii.JsiiSerializab
         }
 
         @Override
-        public final boolean equals(final Object o) {
+        public final boolean equals(final java.lang.Object o) {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
 
@@ -5806,7 +5806,7 @@ public interface EncryptionConfigEntry extends software.amazon.jsii.JsiiSerializ
         }
 
         @Override
-        public final boolean equals(final Object o) {
+        public final boolean equals(final java.lang.Object o) {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
 
@@ -5978,7 +5978,7 @@ public interface KubernetesApiAccessEntry extends software.amazon.jsii.JsiiSeria
         }
 
         @Override
-        public final boolean equals(final Object o) {
+        public final boolean equals(final java.lang.Object o) {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
 
@@ -6103,7 +6103,7 @@ public interface Provider extends software.amazon.jsii.JsiiSerializable {
         }
 
         @Override
-        public final boolean equals(final Object o) {
+        public final boolean equals(final java.lang.Object o) {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
 
@@ -6569,7 +6569,7 @@ public interface Ec2ComputeInstanceProps extends software.amazon.jsii.JsiiSerial
         }
 
         @Override
-        public final boolean equals(final Object o) {
+        public final boolean equals(final java.lang.Object o) {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
 
@@ -6616,90 +6616,6 @@ public interface IEc2ComputeInstance extends software.amazon.jsii.JsiiSerializab
         protected Jsii$Proxy(final software.amazon.jsii.JsiiObjectRef objRef) {
             super(objRef);
         }
-
-        /**
-         * The tree node.
-         */
-        @Override
-        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
-        public final @org.jetbrains.annotations.NotNull software.constructs.Node getNode() {
-            return software.amazon.jsii.Kernel.get(this, \\"node\\", software.amazon.jsii.NativeType.forClass(software.constructs.Node.class));
-        }
-
-        /**
-         * The environment this resource belongs to.
-         * <p>
-         * For resources that are created and managed in a Stack (those created by
-         * creating new class instances like <code>new Role()</code>, <code>new Bucket()</code>, etc.), this
-         * is always the same as the environment of the stack they belong to.
-         * <p>
-         * For referenced resources (those obtained from referencing methods like
-         * <code>Role.fromRoleArn()</code>, <code>Bucket.fromBucketName()</code>, etc.), they might be
-         * different than the stack they were imported into.
-         */
-        @Override
-        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
-        public final @org.jetbrains.annotations.NotNull software.amazon.awscdk.interfaces.ResourceEnvironment getEnv() {
-            return software.amazon.jsii.Kernel.get(this, \\"env\\", software.amazon.jsii.NativeType.forClass(software.amazon.awscdk.interfaces.ResourceEnvironment.class));
-        }
-
-        /**
-         * The stack in which this resource is defined.
-         */
-        @Override
-        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
-        public final @org.jetbrains.annotations.NotNull software.amazon.awscdk.Stack getStack() {
-            return software.amazon.jsii.Kernel.get(this, \\"stack\\", software.amazon.jsii.NativeType.forClass(software.amazon.awscdk.Stack.class));
-        }
-
-        @Override
-        public final @org.jetbrains.annotations.NotNull java.lang.String getCloudFormationStackArn() {
-            return software.amazon.jsii.Kernel.get(this, \\"cloudFormationStackArn\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
-        }
-
-        @Override
-        public final @org.jetbrains.annotations.NotNull java.lang.String getDownloadKeyCommand() {
-            return software.amazon.jsii.Kernel.get(this, \\"downloadKeyCommand\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
-        }
-
-        @Override
-        public final @org.jetbrains.annotations.NotNull java.lang.String getIPAddress() {
-            return software.amazon.jsii.Kernel.get(this, \\"iPAddress\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
-        }
-
-        @Override
-        public final @org.jetbrains.annotations.NotNull java.lang.String getProvisionedProductId() {
-            return software.amazon.jsii.Kernel.get(this, \\"provisionedProductId\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
-        }
-
-        @Override
-        public final @org.jetbrains.annotations.NotNull java.lang.String getRecordId() {
-            return software.amazon.jsii.Kernel.get(this, \\"recordId\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
-        }
-
-        @Override
-        public final @org.jetbrains.annotations.NotNull java.lang.String getSshcommand() {
-            return software.amazon.jsii.Kernel.get(this, \\"sshcommand\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
-        }
-
-        /**
-         * Apply the given removal policy to this resource.
-         * <p>
-         * The Removal Policy controls what happens to this resource when it stops
-         * being managed by CloudFormation, either because you've removed it from the
-         * CDK application or because you've made a change that requires the resource
-         * to be replaced.
-         * <p>
-         * The resource can be deleted (<code>RemovalPolicy.DESTROY</code>), or left in your AWS
-         * account for data recovery and cleanup later (<code>RemovalPolicy.RETAIN</code>).
-         * <p>
-         * @param policy This parameter is required.
-         */
-        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
-        @Override
-        public final void applyRemovalPolicy(final @org.jetbrains.annotations.NotNull software.amazon.awscdk.RemovalPolicy policy) {
-            software.amazon.jsii.Kernel.call(this, \\"applyRemovalPolicy\\", software.amazon.jsii.NativeType.VOID, new Object[] { java.util.Objects.requireNonNull(policy, \\"policy is required\\") });
-        }
     }
 
     /**
@@ -6707,41 +6623,6 @@ public interface IEc2ComputeInstance extends software.amazon.jsii.JsiiSerializab
      */
     @software.amazon.jsii.Internal
     interface Jsii$Default extends IEc2ComputeInstance, software.amazon.awscdk.IResource.Jsii$Default {
-
-        /**
-         * The tree node.
-         */
-        @Override
-        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
-        default @org.jetbrains.annotations.NotNull software.constructs.Node getNode() {
-            return software.amazon.jsii.Kernel.get(this, \\"node\\", software.amazon.jsii.NativeType.forClass(software.constructs.Node.class));
-        }
-
-        /**
-         * The environment this resource belongs to.
-         * <p>
-         * For resources that are created and managed in a Stack (those created by
-         * creating new class instances like <code>new Role()</code>, <code>new Bucket()</code>, etc.), this
-         * is always the same as the environment of the stack they belong to.
-         * <p>
-         * For referenced resources (those obtained from referencing methods like
-         * <code>Role.fromRoleArn()</code>, <code>Bucket.fromBucketName()</code>, etc.), they might be
-         * different than the stack they were imported into.
-         */
-        @Override
-        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
-        default @org.jetbrains.annotations.NotNull software.amazon.awscdk.interfaces.ResourceEnvironment getEnv() {
-            return software.amazon.jsii.Kernel.get(this, \\"env\\", software.amazon.jsii.NativeType.forClass(software.amazon.awscdk.interfaces.ResourceEnvironment.class));
-        }
-
-        /**
-         * The stack in which this resource is defined.
-         */
-        @Override
-        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
-        default @org.jetbrains.annotations.NotNull software.amazon.awscdk.Stack getStack() {
-            return software.amazon.jsii.Kernel.get(this, \\"stack\\", software.amazon.jsii.NativeType.forClass(software.amazon.awscdk.Stack.class));
-        }
 
         @Override
         default @org.jetbrains.annotations.NotNull java.lang.String getCloudFormationStackArn() {
@@ -6771,25 +6652,6 @@ public interface IEc2ComputeInstance extends software.amazon.jsii.JsiiSerializab
         @Override
         default @org.jetbrains.annotations.NotNull java.lang.String getSshcommand() {
             return software.amazon.jsii.Kernel.get(this, \\"sshcommand\\", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
-        }
-
-        /**
-         * Apply the given removal policy to this resource.
-         * <p>
-         * The Removal Policy controls what happens to this resource when it stops
-         * being managed by CloudFormation, either because you've removed it from the
-         * CDK application or because you've made a change that requires the resource
-         * to be replaced.
-         * <p>
-         * The resource can be deleted (<code>RemovalPolicy.DESTROY</code>), or left in your AWS
-         * account for data recovery and cleanup later (<code>RemovalPolicy.RETAIN</code>).
-         * <p>
-         * @param policy This parameter is required.
-         */
-        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Stable)
-        @Override
-        default void applyRemovalPolicy(final @org.jetbrains.annotations.NotNull software.amazon.awscdk.RemovalPolicy policy) {
-            software.amazon.jsii.Kernel.call(this, \\"applyRemovalPolicy\\", software.amazon.jsii.NativeType.VOID, new Object[] { java.util.Objects.requireNonNull(policy, \\"policy is required\\") });
         }
     }
 }
@@ -6854,7 +6716,7 @@ class CfnCluster(
 
     def __init__(
         self,
-        scope: _constructs_77d1e7e8.Construct,
+        scope: \\"_constructs_77d1e7e8.Construct\\",
         id: builtins.str,
         *,
         resources_vpc_config: typing.Union[\\"CfnClusterPropsResourcesVpcConfig\\", typing.Dict[builtins.str, typing.Any]],
@@ -8078,7 +7940,7 @@ class Ec2ComputeInstance(
 
     def __init__(
         self,
-        scope: _constructs_77d1e7e8.Construct,
+        scope: \\"_constructs_77d1e7e8.Construct\\",
         id: builtins.str,
         *,
         instance_type: typing.Optional[\\"Ec2ComputeInstance.InstanceType\\"] = None,

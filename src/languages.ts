@@ -61,7 +61,7 @@ export async function renderCode(options: RenderCodeOptions) {
     case 'csharp':
       srcmakopts.csharp = {
         outdir: options.outdir,
-        namespace: options.csharpNamespace!,
+        namespace: sanitizeCsharpNamespace(options.csharpNamespace!),
       };
       break;
 
@@ -83,7 +83,7 @@ export async function renderCode(options: RenderCodeOptions) {
 
       srcmakopts.golang = {
         outdir: options.outdir,
-        packageName: caseutil.lower(options.typeName, '-'),
+        packageName: sanitizeGoPackageName(options.typeName),
         moduleName: options.goModule,
       };
       break;
@@ -93,4 +93,22 @@ export async function renderCode(options: RenderCodeOptions) {
   }
 
   await srcmak(options.srcdir, srcmakopts);
+}
+
+/**
+ * Sanitizes a type name to be a valid Go package name.
+ * Go package names must be lowercase and cannot contain hyphens or special characters.
+ */
+function sanitizeGoPackageName(typeName: string): string {
+  // Replace :: with empty string, convert to lowercase, replace non-alphanumeric with empty string
+  return typeName.replace(/::/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+/**
+ * Sanitizes a namespace to be a valid C# namespace.
+ * C# namespaces use dots as separators and cannot contain :: or other special characters.
+ */
+function sanitizeCsharpNamespace(namespace: string): string {
+  // Replace :: with . to create valid C# namespace hierarchy
+  return namespace.replace(/::/g, '.');
 }
