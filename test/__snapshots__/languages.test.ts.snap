@@ -1575,7 +1575,7 @@ namespace AWSQS.EKS.Cluster
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.126.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.263]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[48.20.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[50.4.0]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -1896,6 +1896,19 @@ namespace AWS.FOO.BAR
             {
                 InvokeInstanceVoidMethod(new System.Type[]{typeof(Amazon.CDK.RemovalPolicy)}, new object[]{policy});
             }
+
+            /// <summary>Applies one or more mixins to this construct.</summary>
+            /// <param name=\\"mixins\\">The mixins to apply.</param>
+            /// <returns>This construct for chaining</returns>
+            /// <remarks>
+            /// Mixins are applied in order. The list of constructs is captured at the
+            /// start of the call, so constructs added by a mixin will not be visited.
+            /// </remarks>
+            [JsiiMethod(name: \\"with\\", returnsJson: \\"{\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"constructs.IConstruct\\\\\\"}}\\", parametersJson: \\"[{\\\\\\"docs\\\\\\":{\\\\\\"summary\\\\\\":\\\\\\"The mixins to apply.\\\\\\"},\\\\\\"name\\\\\\":\\\\\\"mixins\\\\\\",\\\\\\"type\\\\\\":{\\\\\\"fqn\\\\\\":\\\\\\"constructs.IMixin\\\\\\"},\\\\\\"variadic\\\\\\":true}]\\")]
+            public Constructs.IConstruct With(params Constructs.IMixin[] mixins)
+            {
+                return InvokeInstanceMethod<Constructs.IConstruct>(new System.Type[]{typeof(Constructs.IMixin[])}, new object[]{mixins})!;
+            }
         }
     }
 }
@@ -2057,7 +2070,7 @@ namespace AWS.FOO.BAR.Internal.DependencyResolution
     <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.126.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.263]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[48.20.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[50.4.0]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2291,6 +2304,15 @@ type CfnCluster interface {
 	// Returns: a string representation of this resource.
 	ToString() *string
 	ValidateProperties(_properties interface{})
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple \`with()\` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for CfnCluster
@@ -2919,6 +2941,24 @@ func (c *jsiiProxy_CfnCluster) ValidateProperties(_properties interface{}) {
 	)
 }
 
+func (c *jsiiProxy_CfnCluster) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		c,
+		\\"with\\",
+		args,
+		&returns,
+	)
+
+	return returns
+}
+
 ",
   "awsqsekscluster/CfnClusterProps.go" => "package awsqsekscluster
 
@@ -3344,7 +3384,7 @@ import (
 	constructs                \\"github.com/aws/constructs-go/constructs/v10/jsii\\"
 	awscliv1                  \\"github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2/jsii\\"
 	nodeproxyagentv6          \\"github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2/jsii\\"
-	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v48/jsii\\"
+	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v50/jsii\\"
 )
 
 //go:embed 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz
@@ -3424,6 +3464,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: \\"updatedProperties\\", GoGetter: \\"UpdatedProperties\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"validateProperties\\", GoMethod: \\"ValidateProperties\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"version\\", GoGetter: \\"Version\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"with\\", GoMethod: \\"With\\"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CfnCluster{}
@@ -3547,6 +3588,15 @@ type Ec2ComputeInstance interface {
 	GetResourceNameAttribute(nameAttr *string) *string
 	// Returns a string representation of this construct.
 	ToString() *string
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple \`with()\` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for Ec2ComputeInstance
@@ -3821,6 +3871,24 @@ func (e *jsiiProxy_Ec2ComputeInstance) ToString() *string {
 		e,
 		\\"toString\\",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_Ec2ComputeInstance) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		e,
+		\\"with\\",
+		args,
 		&returns,
 	)
 
@@ -4117,7 +4185,7 @@ import (
 	constructs                \\"github.com/aws/constructs-go/constructs/v10/jsii\\"
 	awscliv1                  \\"github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2/jsii\\"
 	nodeproxyagentv6          \\"github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2/jsii\\"
-	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v48/jsii\\"
+	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v50/jsii\\"
 )
 
 //go:embed 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz
@@ -4166,6 +4234,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: \\"sshcommand\\", GoGetter: \\"Sshcommand\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"stack\\", GoGetter: \\"Stack\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"toString\\", GoMethod: \\"ToString\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"with\\", GoMethod: \\"With\\"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Ec2ComputeInstance{}
@@ -4211,6 +4280,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: \\"recordId\\", GoGetter: \\"RecordId\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"sshcommand\\", GoGetter: \\"Sshcommand\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"stack\\", GoGetter: \\"Stack\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"with\\", GoMethod: \\"With\\"},
 		},
 		func() interface{} {
 			j := jsiiProxy_IEc2ComputeInstance{}
