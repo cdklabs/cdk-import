@@ -1572,10 +1572,10 @@ namespace AWSQS.EKS.Cluster
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.126.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.127.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.263]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[50.4.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.1]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[52.2.0]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2067,10 +2067,10 @@ namespace AWS.FOO.BAR.Internal.DependencyResolution
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.126.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.127.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.263]\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.0]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[50.4.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.1]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[52.2.0]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2310,8 +2310,6 @@ type CfnCluster interface {
 	// start of the call, so constructs added by a mixin will not be visited.
 	// Use multiple \`with()\` calls if subsequent mixins should apply to added
 	// constructs.
-	//
-	// Returns: This construct for chaining.
 	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
@@ -3384,7 +3382,7 @@ import (
 	constructs                \\"github.com/aws/constructs-go/constructs/v10/jsii\\"
 	awscliv1                  \\"github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2/jsii\\"
 	nodeproxyagentv6          \\"github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2/jsii\\"
-	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v50/jsii\\"
+	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v52/jsii\\"
 )
 
 //go:embed 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz
@@ -3594,8 +3592,6 @@ type Ec2ComputeInstance interface {
 	// start of the call, so constructs added by a mixin will not be visited.
 	// Use multiple \`with()\` calls if subsequent mixins should apply to added
 	// constructs.
-	//
-	// Returns: This construct for chaining.
 	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
@@ -4185,7 +4181,7 @@ import (
 	constructs                \\"github.com/aws/constructs-go/constructs/v10/jsii\\"
 	awscliv1                  \\"github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2/jsii\\"
 	nodeproxyagentv6          \\"github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2/jsii\\"
-	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v50/jsii\\"
+	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v52/jsii\\"
 )
 
 //go:embed 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz
