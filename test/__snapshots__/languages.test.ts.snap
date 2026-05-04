@@ -1572,10 +1572,10 @@ namespace AWSQS.EKS.Cluster
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.128.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.129.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.273]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.1]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[53.18.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[53.20.0]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2067,10 +2067,10 @@ namespace AWS.FOO.BAR.Internal.DependencyResolution
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.128.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.129.0,2.0.0)\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.273]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.1]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[53.18.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[53.20.0]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2120,6 +2120,7 @@ type CfnCluster interface {
 	// Options for this resource, such as condition, update policy etc.
 	CfnOptions() awscdk.ICfnResourceOptions
 	CfnProperties() *map[string]interface{}
+	CfnPropertyNames() *map[string]*string
 	// AWS resource type.
 	CfnResourceType() *string
 	// Returns: the stack trace of the point where this Resource was created from, sourced
@@ -2264,6 +2265,7 @@ type CfnCluster interface {
 	// See: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html#aws-attribute-deletionpolicy-options
 	//
 	ApplyRemovalPolicy(policy awscdk.RemovalPolicy, options *awscdk.RemovalPolicyOptions)
+	CfnPropertyName(cdkPropertyName *string) *string
 	// Returns a token for an runtime attribute of this resource.
 	//
 	// Ideally, use generated attribute accessors (e.g. \`resource.arn\`), but this can be used for future compatibility
@@ -2393,6 +2395,16 @@ func (j *jsiiProxy_CfnCluster) CfnProperties() *map[string]interface{} {
 	_jsii_.Get(
 		j,
 		\\"cfnProperties\\",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnCluster) CfnPropertyNames() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		\\"cfnPropertyNames\\",
 		&returns,
 	)
 	return returns
@@ -2795,6 +2807,22 @@ func (c *jsiiProxy_CfnCluster) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, o
 	)
 }
 
+func (c *jsiiProxy_CfnCluster) CfnPropertyName(cdkPropertyName *string) *string {
+	if err := c.validateCfnPropertyNameParameters(cdkPropertyName); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		\\"cfnPropertyName\\",
+		[]interface{}{cdkPropertyName},
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_CfnCluster) GetAtt(attributeName *string, typeHint awscdk.ResolutionTypeHint) awscdk.Reference {
 	if err := c.validateGetAttParameters(attributeName); err != nil {
 		panic(err)
@@ -3137,6 +3165,14 @@ func (c *jsiiProxy_CfnCluster) validateApplyRemovalPolicyParameters(options *aws
 	return nil
 }
 
+func (c *jsiiProxy_CfnCluster) validateCfnPropertyNameParameters(cdkPropertyName *string) error {
+	if cdkPropertyName == nil {
+		return fmt.Errorf(\\"parameter cdkPropertyName is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CfnCluster) validateGetAttParameters(attributeName *string) error {
 	if attributeName == nil {
 		return fmt.Errorf(\\"parameter attributeName is required, but nil was provided\\")
@@ -3276,6 +3312,10 @@ func (c *jsiiProxy_CfnCluster) validateAddPropertyOverrideParameters(propertyPat
 }
 
 func (c *jsiiProxy_CfnCluster) validateApplyRemovalPolicyParameters(options *awscdk.RemovalPolicyOptions) error {
+	return nil
+}
+
+func (c *jsiiProxy_CfnCluster) validateCfnPropertyNameParameters(cdkPropertyName *string) error {
 	return nil
 }
 
@@ -3432,6 +3472,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: \\"attrOIDCIssuerURL\\", GoGetter: \\"AttrOIDCIssuerURL\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"cfnOptions\\", GoGetter: \\"CfnOptions\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"cfnProperties\\", GoGetter: \\"CfnProperties\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"cfnPropertyName\\", GoMethod: \\"CfnPropertyName\\"},
+			_jsii_.MemberProperty{JsiiProperty: \\"cfnPropertyNames\\", GoGetter: \\"CfnPropertyNames\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"cfnResourceType\\", GoGetter: \\"CfnResourceType\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"creationStack\\", GoGetter: \\"CreationStack\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"enabledClusterLoggingTypes\\", GoGetter: \\"EnabledClusterLoggingTypes\\"},
