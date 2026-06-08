@@ -1572,10 +1572,10 @@ namespace AWSQS.EKS.Cluster
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.133.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.273]\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.134.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.282]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.2]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[53.28.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[54.2.0]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2067,10 +2067,10 @@ namespace AWS.FOO.BAR.Internal.DependencyResolution
     <EmbeddedResource Include=\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz\\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.133.0,2.0.0)\\" />
-    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.273]\\" />
+    <PackageReference Include=\\"Amazon.JSII.Runtime\\" Version=\\"[1.134.0,2.0.0)\\" />
+    <PackageReference Include=\\"Amazon.CDK.Asset.AwsCliV1\\" Version=\\"[2.2.282]\\" />
     <PackageReference Include=\\"Amazon.CDK.Asset.NodeProxyAgentV6\\" Version=\\"[2.1.2]\\" />
-    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[53.28.0]\\" />
+    <PackageReference Include=\\"Amazon.CDK.CloudAssembly.Schema\\" Version=\\"[54.2.0]\\" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Silence [Obsolete] warnings -->
@@ -2250,6 +2250,11 @@ type CfnCluster interface {
 	//
 	// Syntactic sugar for \`addOverride(\\"Properties.<...>\\", value)\`.
 	AddPropertyOverride(propertyPath *string, value interface{})
+	// Sets the cross-stack reference strength for this resource.
+	//
+	// When set, any cross-stack reference to this resource will use the specified
+	// strength instead of the global default from the consuming stack's context.
+	ApplyCrossStackReferenceStrength(strength awscdk.ReferenceStrength)
 	// Sets the deletion policy of the resource based on the removal policy specified.
 	//
 	// The Removal Policy controls what happens to this resource when it stops
@@ -2796,6 +2801,17 @@ func (c *jsiiProxy_CfnCluster) AddPropertyOverride(propertyPath *string, value i
 	)
 }
 
+func (c *jsiiProxy_CfnCluster) ApplyCrossStackReferenceStrength(strength awscdk.ReferenceStrength) {
+	if err := c.validateApplyCrossStackReferenceStrengthParameters(strength); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		\\"applyCrossStackReferenceStrength\\",
+		[]interface{}{strength},
+	)
+}
+
 func (c *jsiiProxy_CfnCluster) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, options *awscdk.RemovalPolicyOptions) {
 	if err := c.validateApplyRemovalPolicyParameters(options); err != nil {
 		panic(err)
@@ -3157,6 +3173,14 @@ func (c *jsiiProxy_CfnCluster) validateAddPropertyOverrideParameters(propertyPat
 	return nil
 }
 
+func (c *jsiiProxy_CfnCluster) validateApplyCrossStackReferenceStrengthParameters(strength awscdk.ReferenceStrength) error {
+	if strength == \\"\\" {
+		return fmt.Errorf(\\"parameter strength is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CfnCluster) validateApplyRemovalPolicyParameters(options *awscdk.RemovalPolicyOptions) error {
 	if err := _jsii_.ValidateStruct(options, func() string { return \\"parameter options\\" }); err != nil {
 		return err
@@ -3311,6 +3335,10 @@ func (c *jsiiProxy_CfnCluster) validateAddPropertyOverrideParameters(propertyPat
 	return nil
 }
 
+func (c *jsiiProxy_CfnCluster) validateApplyCrossStackReferenceStrengthParameters(strength awscdk.ReferenceStrength) error {
+	return nil
+}
+
 func (c *jsiiProxy_CfnCluster) validateApplyRemovalPolicyParameters(options *awscdk.RemovalPolicyOptions) error {
 	return nil
 }
@@ -3422,7 +3450,7 @@ import (
 	constructs                \\"github.com/aws/constructs-go/constructs/v10/jsii\\"
 	awscliv1                  \\"github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2/jsii\\"
 	nodeproxyagentv6          \\"github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2/jsii\\"
-	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v53/jsii\\"
+	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v54/jsii\\"
 )
 
 //go:embed 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz
@@ -3463,6 +3491,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: \\"addOverride\\", GoMethod: \\"AddOverride\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"addPropertyDeletionOverride\\", GoMethod: \\"AddPropertyDeletionOverride\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"addPropertyOverride\\", GoMethod: \\"AddPropertyOverride\\"},
+			_jsii_.MemberMethod{JsiiMethod: \\"applyCrossStackReferenceStrength\\", GoMethod: \\"ApplyCrossStackReferenceStrength\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"applyRemovalPolicy\\", GoMethod: \\"ApplyRemovalPolicy\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"attrArn\\", GoGetter: \\"AttrArn\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"attrCertificateAuthorityData\\", GoGetter: \\"AttrCertificateAuthorityData\\"},
@@ -3602,6 +3631,14 @@ type Ec2ComputeInstance interface {
 	Sshcommand() *string
 	// The stack in which this resource is defined.
 	Stack() awscdk.Stack
+	// Override the cross-stack reference strength for this resource.
+	//
+	// When set, any cross-stack reference to this resource will use the specified
+	// mechanism instead of the global default determined by the
+	// \`@aws-cdk/core:defaultCrossStackReferences\` context key. This is useful for
+	// selectively weakening specific references to avoid the \\"deadly embrace\\" problem
+	// without changing the app-wide default.
+	ApplyCrossStackReferenceStrength(strength awscdk.ReferenceStrength)
 	// Apply the given removal policy to this resource.
 	//
 	// The Removal Policy controls what happens to this resource when it stops
@@ -3846,6 +3883,17 @@ func Ec2ComputeInstance_IsResource(construct constructs.IConstruct) *bool {
 	return returns
 }
 
+func (e *jsiiProxy_Ec2ComputeInstance) ApplyCrossStackReferenceStrength(strength awscdk.ReferenceStrength) {
+	if err := e.validateApplyCrossStackReferenceStrengthParameters(strength); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		\\"applyCrossStackReferenceStrength\\",
+		[]interface{}{strength},
+	)
+}
+
 func (e *jsiiProxy_Ec2ComputeInstance) ApplyRemovalPolicy(policy awscdk.RemovalPolicy) {
 	if err := e.validateApplyRemovalPolicyParameters(policy); err != nil {
 		panic(err)
@@ -4006,6 +4054,14 @@ import (
 	\\"github.com/aws/constructs-go/constructs/v10\\"
 )
 
+func (e *jsiiProxy_Ec2ComputeInstance) validateApplyCrossStackReferenceStrengthParameters(strength awscdk.ReferenceStrength) error {
+	if strength == \\"\\" {
+		return fmt.Errorf(\\"parameter strength is required, but nil was provided\\")
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ComputeInstance) validateApplyRemovalPolicyParameters(policy awscdk.RemovalPolicy) error {
 	if policy == \\"\\" {
 		return fmt.Errorf(\\"parameter policy is required, but nil was provided\\")
@@ -4086,6 +4142,10 @@ func validateNewEc2ComputeInstanceParameters(scope constructs.Construct, id *str
 package ec2computeinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
+
+func (e *jsiiProxy_Ec2ComputeInstance) validateApplyCrossStackReferenceStrengthParameters(strength awscdk.ReferenceStrength) error {
+	return nil
+}
 
 func (e *jsiiProxy_Ec2ComputeInstance) validateApplyRemovalPolicyParameters(policy awscdk.RemovalPolicy) error {
 	return nil
@@ -4223,7 +4283,7 @@ import (
 	constructs                \\"github.com/aws/constructs-go/constructs/v10/jsii\\"
 	awscliv1                  \\"github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2/jsii\\"
 	nodeproxyagentv6          \\"github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2/jsii\\"
-	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v53/jsii\\"
+	awscdkcloudassemblyschema \\"github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v54/jsii\\"
 )
 
 //go:embed 1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6-0.0.0.tgz
@@ -4257,6 +4317,7 @@ func init() {
 		\\"1bc04b5291c26a46d918139138b992d2de976d6851d0893b0476b85bfbdfc6e6.Ec2ComputeInstance\\",
 		reflect.TypeOf((*Ec2ComputeInstance)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: \\"applyCrossStackReferenceStrength\\", GoMethod: \\"ApplyCrossStackReferenceStrength\\"},
 			_jsii_.MemberMethod{JsiiMethod: \\"applyRemovalPolicy\\", GoMethod: \\"ApplyRemovalPolicy\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"cloudFormationStackArn\\", GoGetter: \\"CloudFormationStackArn\\"},
 			_jsii_.MemberProperty{JsiiProperty: \\"downloadKeyCommand\\", GoGetter: \\"DownloadKeyCommand\\"},
@@ -6788,22 +6849,8 @@ import jsii
 import publication
 import typing_extensions
 
-import typeguard
-from importlib.metadata import version as _metadata_package_version
-TYPEGUARD_MAJOR_VERSION = int(_metadata_package_version('typeguard').split('.')[0])
+from jsii._type_checking import check_type
 
-def check_type(argname: str, value: object, expected_type: typing.Any) -> typing.Any:
-    if TYPEGUARD_MAJOR_VERSION <= 2:
-        return typeguard.check_type(argname=argname, value=value, expected_type=expected_type) # type:ignore
-    else:
-        if isinstance(value, jsii._reference_map.InterfaceDynamicProxy): # pyright: ignore [reportAttributeAccessIssue]
-           pass
-        else:
-            if TYPEGUARD_MAJOR_VERSION == 3:
-                typeguard.config.collection_check_strategy = typeguard.CollectionCheckStrategy.ALL_ITEMS # type:ignore
-                typeguard.check_type(value=value, expected_type=expected_type) # type:ignore
-            else:
-                typeguard.check_type(value=value, expected_type=expected_type, collection_check_strategy=typeguard.CollectionCheckStrategy.ALL_ITEMS) # type:ignore
 
 from ._jsii import *
 
@@ -7796,22 +7843,8 @@ import jsii
 import publication
 import typing_extensions
 
-import typeguard
-from importlib.metadata import version as _metadata_package_version
-TYPEGUARD_MAJOR_VERSION = int(_metadata_package_version('typeguard').split('.')[0])
+from jsii._type_checking import check_type
 
-def check_type(argname: str, value: object, expected_type: typing.Any) -> typing.Any:
-    if TYPEGUARD_MAJOR_VERSION <= 2:
-        return typeguard.check_type(argname=argname, value=value, expected_type=expected_type) # type:ignore
-    else:
-        if isinstance(value, jsii._reference_map.InterfaceDynamicProxy): # pyright: ignore [reportAttributeAccessIssue]
-           pass
-        else:
-            if TYPEGUARD_MAJOR_VERSION == 3:
-                typeguard.config.collection_check_strategy = typeguard.CollectionCheckStrategy.ALL_ITEMS # type:ignore
-                typeguard.check_type(value=value, expected_type=expected_type) # type:ignore
-            else:
-                typeguard.check_type(value=value, expected_type=expected_type, collection_check_strategy=typeguard.CollectionCheckStrategy.ALL_ITEMS) # type:ignore
 
 import aws_cdk._jsii
 import aws_cdk.asset_awscli_v1._jsii
@@ -7852,22 +7885,8 @@ import jsii
 import publication
 import typing_extensions
 
-import typeguard
-from importlib.metadata import version as _metadata_package_version
-TYPEGUARD_MAJOR_VERSION = int(_metadata_package_version('typeguard').split('.')[0])
+from jsii._type_checking import check_type
 
-def check_type(argname: str, value: object, expected_type: typing.Any) -> typing.Any:
-    if TYPEGUARD_MAJOR_VERSION <= 2:
-        return typeguard.check_type(argname=argname, value=value, expected_type=expected_type) # type:ignore
-    else:
-        if isinstance(value, jsii._reference_map.InterfaceDynamicProxy): # pyright: ignore [reportAttributeAccessIssue]
-           pass
-        else:
-            if TYPEGUARD_MAJOR_VERSION == 3:
-                typeguard.config.collection_check_strategy = typeguard.CollectionCheckStrategy.ALL_ITEMS # type:ignore
-                typeguard.check_type(value=value, expected_type=expected_type) # type:ignore
-            else:
-                typeguard.check_type(value=value, expected_type=expected_type, collection_check_strategy=typeguard.CollectionCheckStrategy.ALL_ITEMS) # type:ignore
 
 from ._jsii import *
 
@@ -8175,22 +8194,8 @@ import jsii
 import publication
 import typing_extensions
 
-import typeguard
-from importlib.metadata import version as _metadata_package_version
-TYPEGUARD_MAJOR_VERSION = int(_metadata_package_version('typeguard').split('.')[0])
+from jsii._type_checking import check_type
 
-def check_type(argname: str, value: object, expected_type: typing.Any) -> typing.Any:
-    if TYPEGUARD_MAJOR_VERSION <= 2:
-        return typeguard.check_type(argname=argname, value=value, expected_type=expected_type) # type:ignore
-    else:
-        if isinstance(value, jsii._reference_map.InterfaceDynamicProxy): # pyright: ignore [reportAttributeAccessIssue]
-           pass
-        else:
-            if TYPEGUARD_MAJOR_VERSION == 3:
-                typeguard.config.collection_check_strategy = typeguard.CollectionCheckStrategy.ALL_ITEMS # type:ignore
-                typeguard.check_type(value=value, expected_type=expected_type) # type:ignore
-            else:
-                typeguard.check_type(value=value, expected_type=expected_type, collection_check_strategy=typeguard.CollectionCheckStrategy.ALL_ITEMS) # type:ignore
 
 import aws_cdk._jsii
 import aws_cdk.asset_awscli_v1._jsii
