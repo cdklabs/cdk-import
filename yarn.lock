@@ -22,9 +22,9 @@
     semver "^7.8.5"
 
 "@aws-cdk/cloud-assembly-schema@^54.11.0":
-  version "54.19.0"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-54.19.0.tgz#5e633a61db4dcd621ccecc91a626bd94da8f395d"
-  integrity sha512-o0axGGePF7NHFv3uIjKpfgMIQ8hG6U5gg629aNmE4+l08MndUKYaya3swhP3WoOKbxisVX3bVsrhnksN0NFoag==
+  version "54.20.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-54.20.0.tgz#17d4b638ed0a016e7995739a71fe52d2ead36cd3"
+  integrity sha512-ts2dVBi0VUXOLKcqyLYsHUWYpwGPFd+xm4q+6Y4jjP8orwodjRi2mJrmpy9b0gHnbv8e/hFnmEbqrD0bBJOnPA==
   dependencies:
     jsonschema "^1.5.0"
     semver "^7.8.5"
@@ -1012,9 +1012,9 @@
     eslint-visitor-keys "^5.0.0"
 
 "@xmldom/xmldom@^0.9.11":
-  version "0.9.11"
-  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.9.11.tgz#2ed75a186886383624cf16400930ed6b9adaa656"
-  integrity sha512-tW8bcK3hsG0/uqSnNz6TK4BkcuZSezoU7DlnYssILmZDktPnSHHuDJJFM0AJv+13gz2r0iGdrj6qqKeUnxXEDg==
+  version "0.9.12"
+  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.9.12.tgz#1f84c07cb95ccf28202299f77b5fd7fc257151e8"
+  integrity sha512-5AXjrcMClTryPe9LgZrygpB1lj7s0S9E0+W+AHaVKAVyHanafK86iPSvG5xHVSp/jC+VH1UXu0TAEmY279xH7A==
 
 JSONStream@^1.3.5:
   version "1.3.5"
@@ -1264,10 +1264,10 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-aws-cdk-lib@^2.265.0:
-  version "2.265.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.265.0.tgz#da9154de47b9a061658ac3595cbf77092e989d5f"
-  integrity sha512-Ur96d/ZW+gqAW4XtqKQp//D9O/jQvyRoXhAqoHGybpV03qjckGIQcLcGkLV68+jv03TX/rOXHCsa2IEFcCXa4w==
+aws-cdk-lib@^2.266.0:
+  version "2.266.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.266.0.tgz#bb7868b95755c86f78400c0ce9f03c0185d275a7"
+  integrity sha512-sBQU42pEc9ud3yeVU2En2euQRUhCg63eaJIPEVpBtE5aPhJjN3d9MkzQ9eYGLVXP3fnohUE54BiVOdUrkEDUbg==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "2.2.292"
     "@aws-cdk/asset-node-proxy-agent-v6" "^2.1.2"
@@ -3960,10 +3960,10 @@ jsii-reflect@^1.139.0:
     oo-ascii-tree "^1.139.0"
     yargs "^17.7.3"
 
-jsii-rosetta@^5.9.61:
-  version "5.9.62"
-  resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.9.62.tgz#e985a69dc386e5b6a7c467e9cf23f7455f2f2293"
-  integrity sha512-Zvg/aZnPna8vfn00WX/V1PhmSvehonNxwb6WxwSNK2cyzehw8XmiIRiAszyKRc5NhBTk5XWvnZroBZ0EXDeEZw==
+jsii-rosetta@^5.9.62:
+  version "5.9.63"
+  resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.9.63.tgz#a5e02740bc10f14d95b1d0ed26345dd0efc11f2d"
+  integrity sha512-jv9PwK5Iold/t5qp9QutyxNWN1ZR+4tHy36DFwc8MYvQIhGgYVvAkV6XA8K5w2GqobLaXE6+AXA5qAnJf/cy+w==
   dependencies:
     "@jsii/check-node" "^1.139.0"
     "@jsii/spec" "^1.139.0"
@@ -3979,22 +3979,40 @@ jsii-rosetta@^5.9.61:
     workerpool "^6.5.1"
     yargs "^17.7.3"
 
-jsii-srcmak@^0.1.1365:
-  version "0.1.1365"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1365.tgz#17b6631b5b97edbf2133827819cd8e8aa8052259"
-  integrity sha512-IZp/Qu9Q+XafVktPQTVn7PTRBLlLqBMDIWdxCabgjUl7nwJtAQB1JgrF2NG10Kv6WmfokRkv7Nk21Ut2+ZpcFw==
+jsii-srcmak@^0.1.1366:
+  version "0.1.1366"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1366.tgz#99050ae05a8cd2564fe9359d5d369d8cab03b15f"
+  integrity sha512-iTsJKIma18vtG/O0qRhYQ5badUhdz5zBDjRZXgWw7cbmePeKgFY/D/3NR1+s1F/IFA9Vg75whPl7VsU8IHE1Nw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.9.52"
     jsii-pacmak "^1.139.0"
-    jsii-rosetta "^5.9.61"
+    jsii-rosetta "^5.9.62"
     ncp "^2.0.0"
     yargs "^17.7.3"
 
-jsii@^5.9.52, jsii@~5.9.1, jsii@~5.9.52:
+jsii@^5.9.52:
   version "5.9.52"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.9.52.tgz#aeb329e0adfe96eb066067e16a97faa3afc48578"
   integrity sha512-iOdM2f2iA6Wwr4cIapdBmmBMzE8lghZLIyvRsBT/dWBxgqWoOI0D4O/o2xJETOJ37bNdDv1dZZe9W20r+r7gjQ==
+  dependencies:
+    "@jsii/check-node" "1.139.0"
+    "@jsii/spec" "1.139.0"
+    case "^1.6.3"
+    chalk "^4"
+    fast-deep-equal "^3.1.3"
+    log4js "^6.9.1"
+    semver "^7.8.5"
+    semver-intersect "^1.5.0"
+    sort-json "^2.0.1"
+    spdx-license-list "^6.12.0"
+    typescript "~5.9"
+    yargs "^17.7.3"
+
+jsii@~5.9.1, jsii@~5.9.52:
+  version "5.9.53"
+  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.9.53.tgz#a03202cc3545f442a776e8e81f6b860091051443"
+  integrity sha512-IqNfn1EWYOL/nkgYv3meNgRz/5yCbjNJgp1qFxkAEvIUPMlgKjCINXjAv21n3pXREVT1VAsMldG0MrtKaCywgw==
   dependencies:
     "@jsii/check-node" "1.139.0"
     "@jsii/spec" "1.139.0"
