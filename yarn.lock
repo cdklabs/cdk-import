@@ -22,9 +22,9 @@
     semver "^7.8.5"
 
 "@aws-cdk/cloud-assembly-schema@^54.11.0":
-  version "54.23.0"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-54.23.0.tgz#4115e82b9aa96bd8bb60463aebea426300aadab0"
-  integrity sha512-6ymdxl2MT34iES1Qot7cWAOzJCoRMrNr/E82/eYAx1inEJXG6iqJOsoa+nTa5Q+Mk+b7Z9xLP3pc2LgNnkFJJw==
+  version "54.24.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-54.24.0.tgz#ad24c3de22e695a1579ecc4c2f9d46e8c8ed86ec"
+  integrity sha512-9sH1pBpWuqZR/9rYAveNi62B/jDrc9BNOL83alD/wtIUSbRkg1aj6JX2r1cSugQwLBjCizQscQZgAb5wWnTTMg==
   dependencies:
     jsonschema "^1.5.0"
     semver "^7.8.5"
@@ -1264,10 +1264,10 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-aws-cdk-lib@^2.269.0:
-  version "2.269.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.269.0.tgz#da6695c632fca8864abc384808996360c36cbbfe"
-  integrity sha512-Ob2EmB3faXGUMjXYhxsMvktZtaojr/aaeLqFjq9WbO+vOX1mx49OQPVB6NNNLfNKWF993Bb6nr4rsPblpUAJww==
+aws-cdk-lib@^2.270.0:
+  version "2.270.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.270.0.tgz#a1729e73d5b2a0b36f2d09fdf43263331454e840"
+  integrity sha512-xoO9FEqcVTTK39N6n+LxvAAsS5WZSGX/p+uv3l2W+LXDEIWctq6VECdluuFwdXnbyf4v4eIxo2btrkUepnEy0Q==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "2.2.292"
     "@aws-cdk/asset-node-proxy-agent-v6" "^2.1.2"
@@ -3113,9 +3113,9 @@ interpret@^1.0.0:
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
 ip-address@^10.1.1:
-  version "10.7.0"
-  resolved "https://registry.yarnpkg.com/ip-address/-/ip-address-10.7.0.tgz#9713429f16787ede8f642f6255b41fb515c825d9"
-  integrity sha512-BGFsyJd5mpXp3rK6jIdADLNgpJUK1jnjzvYF8lK+VyDab9JAmqN0YOKDdP17HlgKb2+ehPgDc8EtnRLbGCAMhA==
+  version "10.7.2"
+  resolved "https://registry.yarnpkg.com/ip-address/-/ip-address-10.7.2.tgz#5b3b2b7d46c6293861b82dfcd49cc203aa8f2c5c"
+  integrity sha512-7H/2gFSIitxc0hG3nOI1glS8QLo/EHBFFLk8vEUjXY/xu0AdL8jZ9U1IzO2PUm0d2D/ofQcAifb0g6OBkt8U7w==
 
 is-arguments@^1.0.4:
   version "1.2.0"
@@ -3960,10 +3960,10 @@ jsii-reflect@^1.140.0:
     oo-ascii-tree "^1.140.0"
     yargs "^17.7.3"
 
-jsii-rosetta@^5.9.65:
-  version "5.9.66"
-  resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.9.66.tgz#d90a35678f52cbcb92874bd58e487f9f49f606a5"
-  integrity sha512-ZItI+WD4JrFRHh52vnt3XiQ+mnMOuJDGLoyyH3qBXLFagKaR5n/61EYpLScbELDPsRlbwZnydc/0ZWsQgynYEQ==
+jsii-rosetta@^5.9.66:
+  version "5.9.67"
+  resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.9.67.tgz#0ad6cb43f94361b9a46c8f16b41a2be253c9f821"
+  integrity sha512-4g0lhZBHb+5ab+7vEZvD57kEvuEpGxvmLVI+K7OmeE6+tPoQaKhMO/Y26OrgguvgOI/EfgIQ03I8ayLD1lGDHg==
   dependencies:
     "@jsii/check-node" "^1.140.0"
     "@jsii/spec" "^1.140.0"
@@ -3974,24 +3974,24 @@ jsii-rosetta@^5.9.65:
     jsii "~5.9.1"
     semver "^7.8.5"
     semver-intersect "^1.5.0"
-    stream-json "^1.9.1"
+    stream-json "^3.6.0"
     typescript "~5.9"
     workerpool "^6.5.1"
     yargs "^17.7.3"
 
-jsii-srcmak@^0.1.1369:
-  version "0.1.1369"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1369.tgz#c13177172131c9527128de7c829f6869fd044c8b"
-  integrity sha512-xuPSfOPY7Q8Cdi8eWJ2Uv6ObvCegf5ng7YKCcYuRiKE5zk700Af+ggJoIVtu+MpnRu9rIUcAEvC2UQ0ru8fKjg==
+jsii-srcmak@^0.1.1370:
+  version "0.1.1370"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1370.tgz#927e1a3bd0b25af2ec7835bfcc02f0dfec9de12d"
+  integrity sha512-x4A/U+rqN0ubWUtQVbaEVLut0HMQcQU0FQSPHusMayhV9Hz1JRXf/ZWoN6oP21b1LFy+Mrf1XEhwMTdWbYl3qA==
   dependencies:
     fs-extra "^9.1.0"
-    jsii "~5.9.53"
+    jsii "~5.9.54"
     jsii-pacmak "^1.140.0"
-    jsii-rosetta "^5.9.65"
+    jsii-rosetta "^5.9.66"
     ncp "^2.0.0"
     yargs "^17.7.3"
 
-jsii@^5.9.54, jsii@~5.9.1, jsii@~5.9.53:
+jsii@^5.9.54, jsii@~5.9.1, jsii@~5.9.54:
   version "5.9.54"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.9.54.tgz#2b3e71689bfeea03919042e4ae298c90e25b77e4"
   integrity sha512-tkT6Ug/TR/GrZaM9AYVmc4tTG2Pe6ACv44u8184Cfm1iWxKOMDys8IaguOoVxqtHEZJuYWS+KLnDIKYEkPN83Q==
@@ -5445,17 +5445,17 @@ stop-iteration-iterator@^1.1.0:
     es-errors "^1.3.0"
     internal-slot "^1.1.0"
 
-stream-chain@^2.2.5:
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/stream-chain/-/stream-chain-2.2.5.tgz#b30967e8f14ee033c5b9a19bbe8a2cba90ba0d09"
-  integrity sha512-1TJmBx6aSWqZ4tx7aTpBDXK0/e2hhcNSTV8+CbFJtDjbb+I1mZ8lHit0Grw9GRT+6JbIrrDd8esncgBi8aBXGA==
+stream-chain@^4.2.5:
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/stream-chain/-/stream-chain-4.2.5.tgz#9061d29573ab79c49258b2cbe2f72bed7629c79f"
+  integrity sha512-Wtyq3bNE3ggLR0v2vftqvuhltym3WbZAkZpfIrkr5F/6vpeUmWmwTgXa16zD87gpahwJ/Qulq3zVfUlgIc0J2A==
 
-stream-json@^1.9.1:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/stream-json/-/stream-json-1.9.1.tgz#e3fec03e984a503718946c170db7d74556c2a187"
-  integrity sha512-uWkjJ+2Nt/LO9Z/JyKZbMusL8Dkh97uUBTv3AJQ74y07lVahLY4eEFsPsE97pxYBwr8nnjMAIch5eqI0gPShyw==
+stream-json@^3.6.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/stream-json/-/stream-json-3.7.0.tgz#49722876f93d85b82fc867b86df5da79ef699cd8"
+  integrity sha512-rCSBdcBP/bPk6T8QFcxAj1MSzAuc5i49cYW6IE7sYObNEPccBJIUiL6fU9c9BWt40aJK0siVynLX7lWaW8alXw==
   dependencies:
-    stream-chain "^2.2.5"
+    stream-chain "^4.2.5"
 
 streamroller@^3.1.5:
   version "3.1.5"
@@ -6055,7 +6055,20 @@ which-collection@^1.0.2:
     is-weakmap "^2.0.2"
     is-weakset "^2.0.3"
 
-which-typed-array@^1.1.16, which-typed-array@^1.1.19, which-typed-array@^1.1.2:
+which-typed-array@^1.1.16, which-typed-array@^1.1.2:
+  version "1.1.24"
+  resolved "https://registry.yarnpkg.com/which-typed-array/-/which-typed-array-1.1.24.tgz#211f5877c29e6213d50e8f2dce4ac9ca2d0008cf"
+  integrity sha512-wk4Mf4pR5mRP7eYuuTBCIQ9d0ud2Fv2jRLQpfgnRjbOxAFHmjKFValgTpitVKzJJS8ajnYQV2Du1SZ8j6b/EUQ==
+  dependencies:
+    available-typed-arrays "^1.0.7"
+    call-bind "^1.0.9"
+    call-bound "^1.0.4"
+    for-each "^0.3.5"
+    get-proto "^1.0.1"
+    gopd "^1.2.0"
+    has-tostringtag "^1.0.2"
+
+which-typed-array@^1.1.19:
   version "1.1.22"
   resolved "https://registry.yarnpkg.com/which-typed-array/-/which-typed-array-1.1.22.tgz#8f3cc78aefb40b437346dd40a1dbfa5d1da43fe9"
   integrity sha512-fvO4ExWMFsqyhG3AiPAObMuY1lxaqgYcxbc49CNdWDDECOJNgQyvsOWVwbZc+qf3rzRtxojBK+CMEv0Ld5CYpw==
