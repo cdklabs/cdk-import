@@ -22,9 +22,9 @@
     semver "^7.8.5"
 
 "@aws-cdk/cloud-assembly-schema@^55.0.0":
-  version "55.3.0"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-55.3.0.tgz#8060af8df3fbfadcbb3da1663833cd9d2b2137f4"
-  integrity sha512-V40A9DFnKSB8kS615QaaMxLEyWRhHhPWz6fTlssT5fr61BAPgY+dduRtgN3wEo1IyV/zURuhVEfDIKyE8JzSNw==
+  version "55.4.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-55.4.0.tgz#d75c4c3199cb5f9803e1bb928efe6082fca5f388"
+  integrity sha512-u+vZLR1ZkmUZdbNRjrHPxpcNLhBHdJwG0bFx5IvEhN1J7AOhx+olWm/7K4e953YnPHr0y3CF2UxQlARqR9/FQg==
   dependencies:
     jsonschema "^1.5.0"
     semver "^7.8.5"
@@ -3113,9 +3113,9 @@ interpret@^1.0.0:
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
 ip-address@^10.1.1:
-  version "10.7.5"
-  resolved "https://registry.yarnpkg.com/ip-address/-/ip-address-10.7.5.tgz#4c4c423f6477d0b0b5c2ea59ac77e93eff49003e"
-  integrity sha512-t2v0rkILYv9WXmSL7TpAaU3HXgaFYOPUcH3QHgwQ++gpJuH3bqyMy4Fvt/DJCTKwzH3Cf+bAp5W/mFL39KPLzA==
+  version "10.7.6"
+  resolved "https://registry.yarnpkg.com/ip-address/-/ip-address-10.7.6.tgz#e3c06961cedf352494c06c916c696cfdb11068dd"
+  integrity sha512-00LYkM6byILa9eQIx6qoaXCM40xTLd56AZ4vyaPW3YTyb49VZYPo5xsiAq4tuQ54GH4R7gVdYScJ1B7B77PuTg==
 
 is-arguments@^1.0.4:
   version "1.2.0"
@@ -4054,10 +4054,10 @@ json-stringify-safe@^5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
 
-json2jsii@^0.5.19:
-  version "0.5.19"
-  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.5.19.tgz#94e48dc80f64c4f14869bb7958b4b7997f721f19"
-  integrity sha512-MmLACPSLsINCoQETUt7/cX/jPI3jiY7waum2I+bbv9vNxR440q66FfCMlWN/8+71InA5gjzOttx+uJEef9ispg==
+json2jsii@^0.5.20:
+  version "0.5.20"
+  resolved "https://registry.yarnpkg.com/json2jsii/-/json2jsii-0.5.20.tgz#eb345839bcc742453ff80a8f78d38f718573d716"
+  integrity sha512-0DUUb+4diQ8E9i4wejc30QwEXASdVHARIOTRKsjXB7Qdf9iiHxlyoockhizobH31U65OPqb0OhhNVRy1n0msrA==
   dependencies:
     camelcase "^6.3.0"
     json-schema "^0.4.0"
