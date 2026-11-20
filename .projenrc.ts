@@ -25,6 +25,7 @@ const project = new CdklabsTypeScriptProject({
     'aws-cdk-lib',
     'constructs@^10',
     'cdklabs-projen-project-types',
+    '@types/minimist',
   ],
   bin: {
     'cdk-import': 'lib/cli.js',
